@@ -20,6 +20,7 @@ Before starting any extraction task:
    - `raw/x-github-repos/`
 3. **Verify ffmpeg is installed** — run `ffmpeg -version` to confirm
 4. **Check OpenAI API key is available** in environment variables
+5. **Check Gemini API key is available** — set as `$GEMINI_API_KEY`
 
 ---
 
@@ -28,9 +29,11 @@ Before starting any extraction task:
 ```
 raw/
 ├── x-article-images/       # All images from tweets and articles
+├── x-image-analyses/       # Gemini Vision JSON analysis for images
+├── x-video-analyses/       # Gemini Vision JSON analysis for videos (≤2 min)
 ├── articles/               # Full X native article content (markdown)
 ├── x-threads/              # Thread snapshots (text only)
-└── x-video-transcripts/   # Video transcripts (from any source)
+└── x-video-transcripts/   # Video transcripts (from videos >2 min)
 ```
 
 ### File Naming Conventions
@@ -70,6 +73,18 @@ Example: `noisyb0y1-2041454862425047268-link-telegram.txt`
 {author-handle}-{tweet-id}-github-{repo-name}.md
 ```
 Example: `noisyb0y1-2041454862425047268-github-langchain.md`
+
+**Image Analyses** (`raw/x-image-analyses/`):
+```
+{author-handle}-{tweet-id}-image-{sequence-number}-analysis.json
+```
+Example: `godofprompt-2041853939302461554-image-1-analysis.json`
+
+**Video Analyses** (`raw/x-video-analyses/`):
+```
+{author-handle}-{tweet-id}-video-analysis.json
+```
+Example: `HeyGen-2041893905042743425-video-analysis.json`
 
 ---
 
@@ -136,6 +151,20 @@ Key changes:
 const tweet = document.querySelector('[data-testid="tweet"]');
 const tweetText = tweet?.textContent || '';
 
+// Check for repost (RT @)
+const isRepost = tweetText.includes('RT @') || tweetText.match(/^RT\s+@/);
+let originalAuthor = null;
+let originalTweetId = null;
+
+if (isRepost) {
+  // Extract original author and tweet ID from repost
+  const rtMatch = tweetText.match(/RT\s+@(\w+):.*\/status\/(\d+)/);
+  if (rtMatch) {
+    originalAuthor = rtMatch[1];
+    originalTweetId = rtMatch[2];
+  }
+}
+
 // Check for thread (multiple posts)
 const allPosts = document.querySelectorAll('[data-testid="cellInnerDiv"]');
 const postCount = allPosts.length;
@@ -153,6 +182,9 @@ const links = document.querySelectorAll('[data-testid="tweet"] a[href*="://"]');
 const externalLink = links.length > 0 ? links[0].href : null;
 
 console.log(JSON.stringify({
+  isRepost: isRepost,
+  originalAuthor: originalAuthor,
+  originalTweetId: originalTweetId,
   hasThread: postCount > 1,
   postCount: postCount,
   imageCount: imageCount,
@@ -166,12 +198,46 @@ console.log(JSON.stringify({
 
 | If... | Then... |
 |-------|---------|
+| isRepost = true | Process as repost: create 2 wiki entries (repost spin + original), use Step 2.1 |
 | postCount > 1 | Go to STEP 3: Extract Thread |
-| hasVideo = true | Go to STEP 4: Handle Video |
+| hasVideo = true | Go to STEP 4: Handle Video (check duration for Gemini vs Whisper) |
 | externalLink exists AND is NOT x.com | Go to STEP 5: Handle External Link |
 | Content appears to be X Article | Go to STEP 6: Handle Articles |
 | imageCount > 0 | Go to STEP 7: Extract Images |
 | Single tweet only (no media, no links) | Go to STEP 8: Confirm & Exit (already in FT bookmarks) |
+
+---
+
+### STEP 2.1: Handle Reposts
+
+**When to use:** When `isRepost = true` in Step 2 evaluation
+
+**CRITICAL:** A repost = TWO wiki entries:
+1. **Repost entry** — The reposter's spin/commentary (what they added)
+2. **Original entry** — The original tweet content (processed as standalone)
+
+**Process:**
+
+1. **Extract original tweet info:**
+   - `originalAuthor` = the @handle before the colon
+   - `originalTweetId` = the tweet ID in the embedded URL
+
+2. **Create repost source summary** in `wiki/sources/`:
+   - Filename: `{reposter-handle}-{repost-tweet-id}.md`
+   - Content includes reposter's commentary + link to `[[original-author-tweet-id]]`
+   - Add `type: source`, `tags: [repost, {category}]`
+
+3. **Process the original tweet** (create separate source):
+   - Navigate to `https://x.com/{originalAuthor}/status/{originalTweetId}`
+   - Process through Steps 1-8 as normal
+   - Add backlink to reposter's spin in the original's summary
+   - This counts as an ADDITIONAL item in the batch (batch_size = 10 + reposts)
+
+4. **Cross-reference both entries:**
+   - Repost summary links to `[[original-author-tweet-id]]`
+   - Original summary links back to `[[reposter-handle-tweet-id]]`
+
+**Batch sizing:** If batch has 3 reposts among 10 bookmarks, process 13 items total (10 originals + 3 originals from reposts).
 
 ---
 
@@ -252,11 +318,11 @@ console.log(JSON.stringify({
 
 ---
 
-### STEP 4: Handle Video Content (ScrapeCreators + Whisper)
+### STEP 4: Handle Video Content (ScrapeCreators + Whisper + Gemini Vision)
 
 **When to use:** When `hasVideo = true` or when the tweet mentions "Embedded video" or "Play Video"
 
-**CRITICAL:** Do NOT try to transcribe via browser. Use ScrapeCreators API + Whisper.
+**CRITICAL:** Do NOT try to transcribe via browser. Use ScrapeCreators API + Whisper OR Gemini Vision.
 
 #### Step 4a: Get Video URL via ScrapeCreators
 
@@ -277,6 +343,26 @@ legacy.extended_entities.media[].video_info.variants[]
 - 256000 (480x270) — lowest, use this
 - 832000 (640x360) — second option
 - Higher bitrates — avoid, unnecessary cost
+
+#### Step 4b: Check Video Duration (Decision Point)
+
+**Action:** Before downloading or transcribing, determine video duration to choose the right approach.
+
+```bash
+# Get video duration using ffprobe
+ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "/tmp/{author}-video.mp4"
+```
+
+**Decision Logic:**
+
+| Video Duration | Processing Method |
+|---------------|-------------------|
+| ≤ 2 minutes (120 sec) | **Gemini 2.5 Pro Vision** — provides transcript + visual analysis |
+| > 2 minutes | **Whisper only** — audio transcription only |
+
+**Go to appropriate section:**
+- **If ≤2 min:** Skip to STEP 4g: Gemini Vision Analysis
+- **If >2 min:** Continue to STEP 4c: Download Video → Whisper transcription
 
 #### Step 4b: Download Video
 
@@ -333,6 +419,88 @@ rm /tmp/{author}-video.mp4 /tmp/{author}-audio.mp3
 **If cleanup fails:**
 - Files may be in use — check with `lsof /tmp/{author}-*`
 - Manual delete if needed: `rm -f /tmp/{author}-*`
+
+---
+
+#### Step 4g: Gemini Vision Video Analysis (Videos ≤2 min ONLY)
+
+**When to use:** When video duration is ≤2 minutes (120 seconds)
+
+**CRITICAL:** For short videos, Gemini 2.5 Pro Vision provides both transcript + visual analysis. No need to run Whisper separately.
+
+**Prerequisites:**
+- `$GEMINI_API_KEY` environment variable must be set
+- Video has been downloaded to `/tmp/{author}-video.mp4`
+
+**Action:**
+
+1. **Check API key is set:**
+```bash
+echo $GEMINI_API_KEY
+```
+If empty, ask user for the API key or skip Gemini analysis.
+
+2. **Send video to Gemini Vision:**
+```bash
+curl -s -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-pro:generateContent?key=$GEMINI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "contents": [{
+      "parts": [
+        {"text": "Analyze this video thoroughly. Provide: 1) A complete transcript of any spoken content, 2) Description of all visual elements, 3) Any text visible in the video, 4) Overall context and topic. Return as JSON with keys: transcript, visual_description, visible_text, summary."},
+        {"video_data": "'"$(base64 -w0 /tmp/${author}-video.mp4)"'"}
+      ]
+    }],
+    "generationConfig": {
+      "responseMimeType": "application/json",
+      "temperature": 0.2
+    }
+  }'
+```
+
+3. **Save raw JSON response:**
+```bash
+# Save to raw/x-video-analyses/
+curl_output > "raw/x-video-analyses/{author}-{tweet-id}-video-analysis.json"
+```
+
+**File naming:** `{author-handle}-{tweet-id}-video-analysis.json`
+
+4. **Create wiki page from analysis:**
+```markdown
+---
+title: "Video Analysis: {author} - {tweet-id}"
+date_created: YYYY-MM-DD
+date_modified: YYYY-MM-DD
+summary: "Gemini Vision analysis of {tweet-id} video from {author}"
+tags: [video-analysis, {category}]
+type: source
+status: draft
+---
+
+# Video Analysis: {author} - {tweet-id}
+
+**Source:** [Tweet](https://x.com/{author}/status/{tweet-id})
+
+## Transcript
+{transcript_from_json}
+
+## Visual Description
+{visual_description_from_json}
+
+## Visible Text
+{visible_text_from_json}
+
+## Summary
+{summary_from_json}
+```
+
+5. **Cleanup temp files:**
+```bash
+rm /tmp/{author}-video.mp4
+```
+
+**Note:** For videos >2 minutes, continue with Whisper-only transcription (Steps 4c-4f) — skip this step.
 
 ---
 
@@ -556,6 +724,91 @@ console.log(JSON.stringify(allLinks));
 - **Thread has images in multiple posts:** Extract all from each post
 - **Article has inline images:** Extract these separately, append to the same image sequence
 - **Tab mismatch:** If `tab_list` shows wrong count, try navigating directly to the URL you clicked instead of relying on tab switching
+
+---
+
+### STEP 7b: Image Analysis with Gemini Vision
+
+**When to use:** After Step 7 when images have been successfully extracted
+
+**CRITICAL:** Analyze ALL extracted images with Gemini 2.5 Pro Vision. Each image gets its own analysis.
+
+**Prerequisites:**
+- `$GEMINI_API_KEY` environment variable must be set
+- Images have been downloaded to `raw/x-article-images/`
+- `image-analysis` skill is available
+
+**Action:**
+
+1. **Check API key is set:**
+```bash
+echo $GEMINI_API_KEY
+```
+If empty, ask user for the API key or skip Gemini analysis.
+
+2. **Invoke the image-analysis skill:**
+
+For each extracted image, invoke the `image-analysis` skill with:
+- `image_path`: Path to the downloaded image
+- `author`: Author handle
+- `tweet_id`: Tweet ID
+- `image_number`: Sequence number (1, 2, 3, etc.)
+- `category`: Primary category from the bookmark
+
+```bash
+# The skill will:
+# 1. Read the analysis prompt from .claude/skills/image-analysis/prompts/analysis.md
+# 2. Send image + prompt to Gemini 2.5 Pro Vision
+# 3. Save raw JSON to raw/x-image-analyses/{author}-{tweet-id}-image-{n}-analysis.json
+# 4. Create wiki page in wiki/x-image-analyses/{author}-{tweet-id}-image-{n}-analysis.md
+```
+
+**File naming:** `{author-handle}-{tweet-id}-image-{n}-analysis.json`
+
+**Output locations:**
+- Raw JSON: `raw/x-image-analyses/{author}-{tweet-id}-image-{n}-analysis.json`
+- Wiki page: `wiki/x-image-analyses/{author}-{tweet-id}-image-{n}-analysis.md`
+
+**Note:** The image-analysis skill uses the comprehensive analysis framework from [image-analysis skill](.claude/skills/image-analysis/) which includes:
+- Metadata (confidence_score, image_type, primary_purpose)
+- Composition (rule_applied, focal_points, visual_hierarchy, balance)
+- Color profile (dominant_colors with hex values, palette, temperature, saturation)
+- Lighting (type, direction, quality, shadows, highlights)
+- Technical specs (medium, style, texture, sharpness, depth_of_field)
+- Subject analysis (primary_subject, facial_expression, hair, hands, body_positioning)
+- Background (setting_type, elements_detailed, wall_surface)
+- Generation parameters (prompts, keywords, technical_settings)
+
+4. **Create wiki page from analysis:**
+```markdown
+---
+title: "Image Analysis: {author} - {tweet-id} - Image {n}"
+date_created: YYYY-MM-DD
+date_modified: YYYY-MM-DD
+summary: "Gemini Vision analysis of image {n} from {tweet-id} by {author}"
+tags: [image-analysis, {category}]
+type: source
+status: draft
+---
+
+# Image Analysis: {author} - {tweet-id} - Image {n}
+
+**Source:** [Tweet](https://x.com/{author}/status/{tweet-id})
+
+## Visual Description
+{visual_description_from_json}
+
+## Visible Text
+{visible_text_from_json}
+
+## Context
+{context_from_json}
+
+## Notable Details
+{notable_details_from_json}
+```
+
+**Note:** Process ALL images — don't skip any. If tweet has 4 images, create 4 separate analysis files.
 
 ---
 
