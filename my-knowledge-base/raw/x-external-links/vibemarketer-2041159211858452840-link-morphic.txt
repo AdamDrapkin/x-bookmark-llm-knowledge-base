@@ -1,0 +1,32 @@
+# External Link - Morphic Workflows
+
+## Source
+- **Author**: J.B. (@VibeMarketer_)
+- **Tweet ID**: 2041159211858452840
+- **URL**: https://x.com/VibeMarketer_/status/2041159211858452840
+
+## Link Details
+- **Domain**: morphic.com
+- **Path**: /workflows
+
+## Content
+Morphic is an AI tool that has introduced "Workflows" - a feature that allows users to create pre-configured workflows for tasks like:
+- Storyboarding (three clicks)
+- UGC ads (no prompting required)
+- Color grading (in seconds)
+
+The quoted tweet from @jdkanani (Jaynti Kanani, Founder & CEO at Morphic) announces 72 workflows live on the platform.
+
+## Key Points
+- Morphic is an AI tool WITH a learning curve
+- Workflows solve the "don't know how to prompt" problem
+- Users can capture repeatable creative tasks and reuse them
+- Minimal prompts required - no nodes required
+
+## Related Strategy
+This aligns with J.B.'s "play": find AI tools with learning curves, build pre-configured workflows on top, sell to people who don't want to learn prompting.
+
+## Links
+- Main site: https://morphic.com/workflows
+- J.B.'s tweet: https://x.com/VibeMarketer_/status/2041159211858452840
+- Quoted tweet: https://x.com/jdkanani/status/2041154028034490867

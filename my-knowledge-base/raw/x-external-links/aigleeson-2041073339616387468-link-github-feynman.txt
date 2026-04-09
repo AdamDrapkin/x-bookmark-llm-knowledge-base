@@ -1,0 +1,35 @@
+# External Link - Feynman AI Research Agent
+
+## Source
+- **Author**: Louis Gleeson (@aigleeson)
+- **Tweet ID**: 2041073339616387468
+- **URL**: https://x.com/aigleeson/status/2041073339616387468
+
+## Link Details
+- **Domain**: github.com
+- **Path**: /getcompanion-ai/feynman
+
+## Content
+
+This is the GitHub repository for **Feynman**, an open-source AI research agent.
+
+### Key Features:
+- Multi-agent research system (Researcher, Reviewer, Writer, Verifier)
+- Searches papers, synthesizes findings, verifies every claim against real sources
+- Generates cited research briefs
+- Can replicate experiments on local/cloud GPUs
+- MIT License
+
+### From the README:
+Feynman is not a chatbot or summary tool—it's a full multi-agent research system that runs from your terminal. Type a topic, and it searches papers, synthesizes findings, verifies claims, and hands you a cited research brief.
+
+## Related Concepts
+
+- [[feynman]] - The AI research agent
+- [[open-source]] - Open source tools
+- [[research-automation]] - Research automation
+- [[ai-agents]] - AI agent systems
+
+## Links
+- GitHub: https://github.com/getcompanion-ai/feynman
+- Tweet: https://x.com/aigleeson/status/2041073339616387468

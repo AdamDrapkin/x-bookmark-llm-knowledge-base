@@ -1,0 +1,23 @@
+# Meng To Tweet Video - DESIGN.md Tool Demo
+
+## Source
+- **Author**: Meng To (@MengTo)
+- **Tweet ID**: 2041141824283365521
+- **URL**: https://x.com/MengTo/status/2041141824283365521
+
+## Video Details
+- **Duration**: 50 seconds
+- **Resolution**: 360x270 (lowest), available up to 2880x2160
+- **Type**: Silent video (no audio track)
+- **Content**: Demo of the DESIGN.md generation tool
+
+## Notes
+This is a silent video showing a demo of the tool that generates DESIGN.md from any URL. The tool recreates sites accurately as a starting point for learning design systems.
+
+## Related Content
+- Tool generates DESIGN.md specification from any URL
+- Useful for learning design systems and avoiding poor design choices (like purple gradients)
+- The tool is now live on aura.build
+
+## Source Tweet
+https://x.com/MengTo/status/2041141824283365521

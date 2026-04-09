@@ -1,0 +1,28 @@
+# J.B. Tweet Video Transcript
+
+## Source
+- **Author**: J.B. (@VibeMarketer_)
+- **Tweet ID**: 2041159211858452840
+- **URL**: https://x.com/VibeMarketer_/status/2041159211858452840
+
+## Video Details
+- **Duration**: 11.7 seconds
+- **Resolution**: 396x270
+- **Bitrate**: 256000 (lowest available)
+
+## Transcript
+
+```
+I need to know now, know now, can you love me again?
+```
+
+## Notes
+This appears to be a short video clip used as a visual complement to the tweet about the "AI wrapper" business strategy. The audio is a music snippet, not related to the main content.
+
+## Related Content
+- This tweet quotes @jdkanani's tweet about Morphic Workflows
+- Morphic is an AI tool with a learning curve
+- J.B.'s strategy: build pre-configured workflows on top and sell to users who don't want to learn prompting
+
+## Source Tweet
+https://x.com/VibeMarketer_/status/2041159211858452840

@@ -1,0 +1,32 @@
+# External Link - n8n Workflow
+
+## Source
+- **Author**: n8n.io (@n8n_io)
+- **Tweet ID**: 2041078519623520666
+- **URL**: https://x.com/n8n_io/status/2041078519623520666
+
+## Link Details
+- **Domain**: n8n.io
+- **Path**: /workflows/11763-website-downtime-monitoring-with-smart-alerts-via-telegram-and-email/
+
+## Content
+
+This is an n8n workflow template for **website downtime monitoring with smart alerts**.
+
+### Key Features:
+- Waits 5 minutes before alerting (filters out temporary hiccups)
+- Sends alerts via email OR Telegram
+- Full user control over notification settings
+
+### Use Case:
+Most monitoring tools alert on every tiny hiccup. This workflow solves that problem by waiting 5 minutes, which helps cut down on unnecessary notifications while still catching real issues.
+
+## Related Concepts
+
+- [[n8n]] - The workflow automation platform
+- [[workflow-automation]] - The practice
+- [[alerting]] - Notification systems
+
+## Links
+- Workflow template: https://n8n.io/workflows/11763-website-downtime-monitoring-with-smart-alerts-via-telegram-and-email/
+- Tweet: https://x.com/n8n_io/status/2041078519623520666
