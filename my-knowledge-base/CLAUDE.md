@@ -18,6 +18,7 @@ maintenance, and queries.
 - wiki/syntheses/ — Cross-cutting analysis articles
 - wiki/outputs/ — Filed answers to my queries
 - wiki/qa-pairs/ — Generated QA pairs from wiki articles for fine-tuning
+- wiki/backlog-log.md — Tracking processed bookmarks from the backlog
 
 ## File Conventions
 - All filenames: kebab-case, lowercase (e.g., active-inference.md)
