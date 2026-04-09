@@ -2,6 +2,7 @@
 title: "A Reality Filter - prompt that reduces AI hallucinations"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+date_posted: 2025-09-07
 summary: "A prompt designed to reduce AI hallucinations by making models label unverified content and admit when they don't know"
 tags: [prompt-engineering, ai-prompts, tutorial, hallucinations, reality-filter]
 type: source
@@ -12,6 +13,7 @@ status: draft
 
 **Author:** @rohanpaul_ai
 **Category:** prompt-engineering
+**Date posted:** 2025-09-07
 **Date ingested:** 2026-04-09
 **Type:** bookmark
 

@@ -10,7 +10,7 @@ status: draft
 
 # Wiki Index
 
-## Sources (9)
+## Sources (16)
 
 - [[robert-youssef-2026-claude-ai-business]] — Claude can build AI agent businesses following Andrew Ng's agentic AI framework
 - [[jb-2026-workflow-play]] — Build pre-configured workflows on top of AI tools with learning curves
@@ -21,21 +21,31 @@ status: draft
 - [[minchoi-1964716900660965644-hallucination-prompt]] — ChatGPT prompt that stops ChatGPT from hallucinating
 - [[rohanpaul_ai-1964529285282086967-reality-filter]] — Prompt that reduces ChatGPT hallucinations
 - [[alex_prompter-1953861679248560379-ai-prompt-library]] — AI prompt library your competitors don't want you to find
+- [[godofprompt-1970101500396634129-ai-prompt-library]] — God of Prompt's AI prompt library with text & image prompts
+- [[godofprompt-1970086539402121690-prompt-engineer-protocol]] — Protocol for Designing Prompts - 6-step process
+- [[mindbranches-1974621848844616006-video-prompt-styles]] — Styles to try in your AI video prompts
+- [[godofprompt-1974425241582796820-anthropic-prompting-style]] — Anthropic's internal prompting style after 3 weeks of analysis
+- [[godofprompt-1974102012670407035-depth-prompt-framework]] — D-E-P-T-H Prompt Framework for effective AI prompts
+- [[shushant_l-1974097166454174149-perplexity-research-prompts]] — 10 Perplexity Deep Research prompts for superhuman research
 
-## Concepts (5)
+## Concepts (6)
 
 - [[agentic-ai]] — AI systems that plan, execute, and adapt multi-step tasks autonomously
 - [[ai-business]] — Business models leveraging AI agents (agent-as-a-service, wrappers, vertical AI)
 - [[workflow-automation]] — Automating business processes through visual workflows
 - [[prompt-engineering]] — Crafting effective AI instructions (zero-shot, few-shot, chain-of-thought)
 - [[research-automation]] — Using AI to automate literature search, synthesis, and verification
+- [[video-prompting]] — Crafting effective prompts for AI video generation tools
 
-## Entities (4)
+## Entities (7)
 
 - [[claude]] — Anthropic's AI assistant for complex reasoning and task execution
 - [[andrew-ng]] — Leading AI researcher who created the Agentic AI framework
 - [[n8n]] — Open-source workflow automation platform
 - [[feynman]] — Open source AI research agent for paper synthesis
+- [[anthropic]] — AI company behind Claude, known for constitutional AI and prompt engineering
+- [[perplexity]] — AI-powered search engine with Deep Research capability
+- [[god-of-prompt]] — Prominent X creator sharing prompt engineering techniques
 
 ## Categories
 
@@ -55,11 +65,25 @@ status: draft
 ### Engineering & Tools
 - [[prompt-engineering]]
 - [[research-automation]]
+- [[video-prompting]]
 - [[meng-to-2026-designmd-tool]]
 - [[louis-gleeson-2026-feynman-agent]]
+- [[godofprompt-1970086539402121690-prompt-engineer-protocol]]
+- [[godofprompt-1974102012670407035-depth-prompt-framework]]
+- [[godofprompt-1974425241582796820-anthropic-prompting-style]]
+- [[shushant_l-1974097166454174149-perplexity-research-prompts]]
+
+### AI Video & Media
+- [[video-prompting]]
+- [[mindbranches-1974621848844616006-video-prompt-styles]]
 
 ### Business Strategy
 - [[ai-business]]
 - [[andrew-ng]]
 - [[jb-2026-workflow-play]]
 - [[robert-youssef-2026-claude-ai-business]]
+
+### Notable Creators
+- [[god-of-prompt]]
+- [[anthropic]]
+- [[perplexity]]

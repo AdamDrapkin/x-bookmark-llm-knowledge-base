@@ -2,6 +2,7 @@
 title: "This ChatGPT prompt literally stops ChatGPT from hallucinating"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+date_posted: 2025-09-07
 summary: "A prompt designed to reduce AI hallucinations by making models more likely to admit when they don't know something"
 tags: [prompt-engineering, ai-prompts, tutorial, hallucinations, chatgpt]
 type: source
@@ -12,6 +13,7 @@ status: draft
 
 **Author:** @minchoi
 **Category:** prompt-engineering
+**Date posted:** 2025-09-07
 **Date ingested:** 2026-04-09
 **Type:** bookmark
 

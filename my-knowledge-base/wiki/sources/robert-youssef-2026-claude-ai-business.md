@@ -2,6 +2,7 @@
 title: "Claude Can Now Build Your AI Agent Business"
 date_created: 2026-04-08
 date_modified: 2026-04-09
+date_posted: 2026-04-06
 summary: "Robert Youssef's 7-part thread about building AI agent businesses with Claude and Andrew Ng's framework. Includes 6 detailed prompts for Plan, Build, Deploy, Price, Sell, Scale stages."
 tags: [ai-business, agentic-ai, claude, andrew-ng, marketing-automation, growth]
 type: source
@@ -10,7 +11,7 @@ status: draft
 
 # Claude Can Now Build Your AI Agent Business
 
-Source: [Robert Youssef](https://x.com/rryssf_/status/2041169193140408574) | Date: Mon Apr 06 2026
+Source: [Robert Youssef](https://x.com/rryssf_/status/2041169193140408574) | Date posted: 2026-04-06
 
 ## Summary
 

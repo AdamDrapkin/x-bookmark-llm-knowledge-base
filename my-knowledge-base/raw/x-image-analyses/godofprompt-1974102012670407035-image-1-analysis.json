@@ -1,0 +1,77 @@
+{
+  "headlines": [
+    "The D-E-P-T-H Prompt Framewok",
+    "D - Define Multiple Perspectives",
+    "E - Establish Success Metrics",
+    "P - Provide Context Layers",
+    "T - Task Breakdown",
+    "H - Human Feedback Loop",
+    "TD;LR"
+  ],
+  "body_text": [
+    "Instead of single role, use multiple expert viewpoints collaborating",
+    "Example: \"You are three experts: behavioral psychologist, copywriter, and data analyst\"",
+    "Prevents generic single-role outputs",
+    "Creates richer, more nuanced responses",
+    "Define specific, measurable outcomes upfront",
+    "Instead of \"make it good\" -> \"optimize for 40% open rate, 12% CTR, include 3 psychological triggers\"",
+    "No metrics = no optimization",
+    "Gives AI clear targets to hit",
+    "Stack multiple context elements: business type, budget, audience, past performance",
+    "Example: \"B2B SaaS, $200/mo product, targeting overworked founders, previous emails got 20% opens\"",
+    "Context dramatically improves relevance",
+    "More detail = more targeted output",
+    "Break requests into sequential steps instead of one big ask",
+    "Example: \"Step 1: Identify pain points. Step 2: Create hook. Step 3: Build value. Step 4: Soft CTA\"",
+    "Prevents AI confusion and generic responses",
+    "Creates logical flow in output",
+    "Don't accept first output - build in self-critique",
+    "Example: \"Rate your response 1-10 on clarity, persuasion, and actionability. Improve anything below 8\"",
+    "Self-critique produces 10x better results",
+    "Iterative improvement built into single prompt",
+    "1. Single-role prompts = generic outputs - Always use multiple perspectives",
+    "2. No metrics = no optimization - Specify exact success criteria",
+    "3. Context is king - More background = better relevance",
+    "4. Break down tasks - Step-by-step prevents confusion",
+    "5. Force self-evaluation - AI critiquing itself improves quality dramatically",
+    "The D-E-P-T-H Prompt Framewok",
+    "1"
+  ],
+  "visible_urls": [],
+  "visual_analysis": {
+    "image_type": "Informational Document / Cheat Sheet",
+    "primary_purpose": "To educate and provide a structured guide on how to write effective prompts for AI models using the 'D-E-P-T-H' framework.",
+    "prompt_structure_and_components": {
+      "framework_name": "D-E-P-T-H",
+      "components": [
+        {
+          "letter": "D",
+          "meaning": "Define Multiple Perspectives",
+          "description": "Use multiple expert roles instead of a single one to get richer outputs."
+        },
+        {
+          "letter": "E",
+          "meaning": "Establish Success Metrics",
+          "description": "Provide specific, measurable outcomes for the AI to target."
+        },
+        {
+          "letter": "P",
+          "meaning": "Provide Context Layers",
+          "description": "Give detailed background information (business type, audience, history) to improve relevance."
+        },
+        {
+          "letter": "T",
+          "meaning": "Task Breakdown",
+          "description": "Break a large request into smaller, sequential steps to avoid confusion."
+        },
+        {
+          "letter": "H",
+          "meaning": "Human Feedback Loop",
+          "description": "Instruct the AI to self-critique its output based on given criteria."
+        }
+      ],
+      "summary_section": "A 'TD;LR' (Too Long; Didn't Read) section summarizes the five key principles of the framework."
+    },
+    "formatting_and_organization": "The document uses a clean, minimalist design with a clear visual hierarchy. A main title is at the top, followed by sections for each letter of the D-E-P-T-H acronym. The content is organized using bold section headers and bullet points for easy readability. The first four sections (D, E, P, T) are arranged in a two-column layout, while the H and TD;LR sections span the full width. A footer contains the document title and a page number."
+  }
+}

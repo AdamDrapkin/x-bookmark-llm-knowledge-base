@@ -2,6 +2,7 @@
 title: "Steal my Claude Opus 4.1 Prompt to automate writing an entire book"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+date_posted: 2025-09-15
 summary: "A comprehensive Claude Opus prompt that acts as a Book Writing Coach, guiding users through creating a complete book from concept to final chapter with adaptive phase-based structure"
 tags: [prompt-engineering, ai-prompts, tutorial, book-writing, claude]
 type: source
@@ -12,6 +13,7 @@ status: draft
 
 **Author:** @godofprompt
 **Category:** prompt-engineering
+**Date posted:** 2025-09-15
 **Date ingested:** 2026-04-09
 **Type:** bookmark
 

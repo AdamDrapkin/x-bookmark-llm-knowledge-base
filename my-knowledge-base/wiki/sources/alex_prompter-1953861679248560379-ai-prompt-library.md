@@ -2,6 +2,7 @@
 title: "The AI prompt library your competitors don't want you to find"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+date_posted: 2025-08-08
 summary: "Promotional tweet for God of Prompt's AI prompt library with pricing tiers: $15/month unlimited, $3.99 starter, $9.99 pro bundle"
 tags: [prompt-engineering, ai-prompts, product, god-of-prompt, pricing]
 type: source
@@ -12,6 +13,7 @@ status: draft
 
 **Author:** @alex_prompter
 **Category:** prompt-engineering
+**Date posted:** 2025-08-08
 **Date ingested:** 2026-04-09
 **Type:** bookmark
 

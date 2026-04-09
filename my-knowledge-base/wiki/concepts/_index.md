@@ -10,7 +10,7 @@ status: draft
 
 # Concepts Index
 
-## All Concepts (5)
+## All Concepts (6)
 
 | Page | Summary | Date Added |
 |------|---------|------------|
@@ -19,6 +19,7 @@ status: draft
 | [[workflow-automation]] | Automating business processes through workflows | 2026-04-08 |
 | [[prompt-engineering]] | Crafting effective AI instructions | 2026-04-08 |
 | [[research-automation]] | Using AI to automate research processes | 2026-04-08 |
+| [[video-prompting]] | Crafting effective prompts for AI video generation tools | 2026-04-09 |
 
 ## Category Breakdown
 
@@ -32,3 +33,4 @@ status: draft
 ### Engineering
 - [[prompt-engineering]]
 - [[research-automation]]
+- [[video-prompting]]

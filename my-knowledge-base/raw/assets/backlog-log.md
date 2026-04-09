@@ -17,10 +17,10 @@ status: draft
 | Total Bookmarks | 874 |
 | Classified | 874 |
 | Unclassified | 0 |
-| Processed | 5 |
-| Remaining | 869 |
+| Processed | 15 |
+| Remaining | 859 |
 
-## Already Processed (5 bookmarks)
+## Already Processed (15 bookmarks)
 
 | ID | Category | Author | Title |
 |----|----------|--------|-------|
@@ -29,21 +29,32 @@ status: draft
 | 2041073339616387468 | open-source |-aigleeson | Feynman - Open Source AI Research Agent |
 | 2038175502138253725 | productivity | alex_prompter | Claude Can Now Build Your Newsletter |
 | 2034756815737823465 | prompt-engineering | godofprompt | Claude Can Now Build Your YouTube Channel |
+| 1967590989062664316 | prompt-engineering | godofprompt | Book Writing Prompt |
+| 1964716900660965644 | prompt-engineering | minchoi | Hallucination Prompt |
+| 1964529285282086967 | prompt-engineering | rohanpaul_ai | Reality Filter |
+| 1953861679248560379 | prompt-engineering | alex_prompter | AI Prompt Library |
+| 1970101500396634129 | prompt-engineering | godofprompt | AI Prompt Library |
+| 1970086539402121690 | prompt-engineering | godofprompt | Prompt Engineer Protocol |
+| 1974621848844616006 | ai-video | MindBranches | Video Prompt Styles |
+| 1974425241582796820 | prompt-engineering | godofprompt | Anthropic Prompting Style |
+| 1974102012670407035 | prompt-engineering | godofprompt | D-E-P-T-H Framework |
+| 1974097166454174149 | ai-research | shushant_l | Perplexity Research Prompts |
 
 ## Batch Progress
 
 | Batch | Date | Processed | Total Processed | QA Pairs Generated |
 |-------|------|-----------|-----------------|---------------------|
+| Batch 1 | 2026-04-09 | 10 | 15 | No (total not divisible by 10) |
 
 ## Category Breakdown
 
 | Category | Total | Processed | Remaining |
 |----------|-------|-----------|-----------|
-| prompt-engineering | 132 | 2 | 130 |
+| prompt-engineering | 132 | 10 | 122 |
 | productivity | 95 | 1 | 94 |
 | ai-business | 91 | 1 | 90 |
 | content-creation | 74 | 0 | 74 |
-| ai-research | 73 | 0 | 73 |
+| ai-research | 73 | 1 | 72 |
 | open-source | 59 | 1 | 58 |
 | ai-agents | 51 | 0 | 51 |
 | web-development | 51 | 0 | 51 |
@@ -53,7 +64,7 @@ status: draft
 | unclassified | 28 | 0 | 28 |
 | claude-code | 24 | 0 | 24 |
 | ai-tools-comparison | 22 | 0 | 22 |
-| video-generation | 17 | 0 | 17 |
+| video-generation | 17 | 1 | 16 |
 | image-generation | 16 | 0 | 16 |
 | philosophy | 15 | 0 | 15 |
 | seo-marketing | 14 | 0 | 14 |

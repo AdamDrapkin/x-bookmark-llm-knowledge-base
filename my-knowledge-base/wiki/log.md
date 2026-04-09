@@ -1,7 +1,7 @@
 ---
 title: "Wiki Log"
 date_created: 2026-04-08
-date_modified: 2026-04-08
+date_modified: 2026-04-09
 summary: "Changelog of all wiki operations"
 tags: [log, changelog]
 type: log
@@ -10,7 +10,45 @@ status: draft
 
 # Wiki Log
 
-## 2026-04-08 - Initial Ingest (5 sources)
+## 2026-04-09 - Batch 1 | 10 Sources Processed
+
+### Operation: BACKLOG PROCESS
+
+Processed first 10 classified bookmarks from prompt-engineering category.
+
+#### Sources Created (10)
+
+| File | Author | Topic |
+|------|--------|-------|
+| [[godofprompt-1967590989062664316-book-writing-prompt]] | godofprompt | Claude Opus 4.1 Prompt to automate writing an entire book |
+| [[minchoi-1964716900660965644-hallucination-prompt]] | minchoi | ChatGPT prompt that stops hallucinations |
+| [[rohanpaul_ai-1964529285282086967-reality-filter]] | rohanpaul_ai | Prompt that reduces ChatGPT hallucinations |
+| [[alex_prompter-1953861679248560379-ai-prompt-library]] | alex_prompter | AI prompt library |
+| [[godofprompt-1970101500396634129-ai-prompt-library]] | godofprompt | AI prompt library |
+| [[godofprompt-1970086539402121690-prompt-engineer-protocol]] | godofprompt | Protocol for Designing Prompts |
+| [[mindbranches-1974621848844616006-video-prompt-styles]] | MindBranches | Styles to try in AI video prompts |
+| [[godofprompt-1974425241582796820-anthropic-prompting-style]] | godofprompt | Anthropic's internal prompting style |
+| [[godofprompt-1974102012670407035-depth-prompt-framework]] | godofprompt | D-E-P-T-H Prompt Framework |
+| [[shushant_l-1974097166454174149-perplexity-research-prompts]] | shushant_l | 10 Perplexity Deep Research prompts |
+
+#### Concepts Updated (2)
+- [[prompt-engineering]] — Added new techniques from batch 1
+- [[video-prompting]] — New concept from MindBranches video prompt styles
+
+#### Entities Added (3)
+- [[anthropic]] — From godofprompt's Anthropic prompting style analysis
+- [[perplexity]] — From shushant_l's Perplexity Deep Research prompts
+- [[god-of-prompt]] — From multiple godofprompt sources
+
+#### Media Analyses
+- **Images:** 7 analyzed (gemini-2.0-pro-vision)
+- **Videos:** 2 analyzed
+
+#### Index Updates
+- Master wiki/index.md updated (16 sources, 6 concepts, 7 entities)
+- wiki/sources/_index.md updated (16 sources)
+- wiki/concepts/_index.md updated (6 concepts)
+- wiki/entities/_index.md updated (7 entities)
 
 ### Operation: INGEST
 
