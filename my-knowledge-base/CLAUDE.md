@@ -1,5 +1,8 @@
 # LLM Knowledge Base — Schema
 
+## Core Instruction
+- **Execute exactly what is asked** — Do not seek simpler approaches or shortcuts. The given command is the task. Follow it as specified.
+
 ## Quick Reference
 - **Memory:** See [`.claude/memory.md`](.claude/memory.md) for operational rules and learnings. Update it when:
   - Discovering new patterns or errors in the workflow

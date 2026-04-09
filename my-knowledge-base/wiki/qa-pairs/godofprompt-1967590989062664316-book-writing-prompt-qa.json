@@ -1,35 +1,22 @@
 {
   "source_article": "godofprompt-1967590989062664316-book-writing-prompt",
+  "generated_date": "2026-04-09",
+  "patterns_covered": ["C1","C2","C3","FP1","FP2","FP3","E1","E2","E3","O1","O2","O3","X1","X2","X3"],
   "qa_pairs": [
-    {
-      "question": "What is Claude Opus?",
-      "answer": "Claude Opus 4.1 book writing prompt from @godofprompt.",
-      "type": "factual",
-      "source": "[[godofprompt-1967590989062664316-book-writing-prompt]]"
-    },
-    {
-      "question": "Who is the author of godofprompt-1967590989062664316-book-writing-prompt?",
-      "answer": "@godofprompt.",
-      "type": "factual",
-      "source": "[[godofprompt-1967590989062664316-book-writing-prompt]]"
-    },
-    {
-      "question": "Why is Claude important?",
-      "answer": "It provides practical value for AI practitioners by claude opus 4.1 book writing prompt.",
-      "type": "reasoning",
-      "source": "[[godofprompt-1967590989062664316-book-writing-prompt]]"
-    },
-    {
-      "question": "How does this source relate to other AI tools?",
-      "answer": "This adds to the growing body of prompt engineering and AI tool knowledge in the wiki.",
-      "type": "reasoning",
-      "source": "[[godofprompt-1967590989062664316-book-writing-prompt]]"
-    },
-    {
-      "question": "How does godofprompt-1967590989062664316-book-writing-prompt connect to existing wiki concepts?",
-      "answer": "The source relates to prompt-engineering and AI tools concepts already in the wiki.",
-      "type": "synthesis",
-      "source": "[[godofprompt-1967590989062664316-book-writing-prompt]]"
-    }
+    {"question": "What conditions cause this book writing prompt to fail?", "answer": "The prompt may fail if the user provides insufficient input to establish their writing goals, genre, target length, or available time. Without this foundational information, the adaptive system cannot dynamically adjust the writing process. The prompt also requires Claude Opus 4.1 specifically to function as designed.", "pattern": "C1", "search_terms": ["fail", "conditions", "Claude Opus 4.1", "insufficient input"]},
+    {"question": "What tradeoffs exist between using this phased approach versus traditional writing methods?", "answer": "The phased approach offers structured guidance that traditional writing lacks, but may reduce spontaneous creativity. It dynamically adapts to the writer's voice rather than forcing a particular style, which preserves authenticity while providing framework. Traditional methods offer more flexibility but less systematic support for completing long-form projects.", "pattern": "C2", "search_terms": ["phased approach", "traditional writing", "tradeoffs", "dynamic adapt"]},
+    {"question": "What common mistakes do users make when using AI prompts for book writing?", "answer": "Common mistakes include using corporate jargon and buzzwords that undermine authentic voice. The source explicitly lists words to avoid: opt, dive, unlock, unleash, transformative, proactive, and similar terms. Users may also fail to engage with voice discovery, instead trying to impose a specific formula rather than finding their natural writing voice.", "pattern": "C3", "search_terms": ["mistakes", "avoid words", "corporate jargon", "buzzwords", "authentic voice"]},
+    {"question": "What is the core mechanism of this book writing prompt?", "answer": "The core mechanism is a phased approach using 5-15 phases depending on book length. The prompt acts as a Book Architect & Writing Coach, guiding writers through creating a complete book from concept to final chapter with adaptive structure. It dynamically adapts based on the writer's natural voice, target length, genre, available writing time, and desired reader experience.", "pattern": "FP1", "search_terms": ["core mechanism", "phased approach", "Book Architect", "Writing Coach"]},
+    {"question": "What specific problem does this prompt solve?", "answer": "This prompt solves the problem of completing a full book by providing structured guidance through all phases of book creation. It addresses writer's block, organizational challenges, and voice inconsistency by offering adaptive, phase-based structure while maintaining focus on discovering the writer's authentic voice rather than imposing a formula.", "pattern": "FP2", "search_terms": ["problem solved", "complete book", "writer's block", "structured guidance"]},
+    {"question": "How does the adaptive phase system work in simple terms?", "answer": "The system works by matching phase count to book length: 5-7 phases for short books under 30k words, 8-10 for standard 30-60k books, 11-13 for full-length 60-100k works, and 14-15 for epic 100k+ books. Based on user input about their voice, goals, time, and genre, the prompt dynamically adjusts the writing process to suit the writer's needs.", "pattern": "FP3", "search_terms": ["adaptive phase", "book length", "phases", "5-7 phases", "dynamic adapt"]},
+    {"question": "How does this book writing prompt transfer across different genres and content types?", "answer": "The prompt is genre-agnostic because it dynamically adapts based on the writer's input about target book length, genre preferences, and desired reader experience. Whether writing fiction, non-fiction, or educational content, the phase-based structure remains consistent while the content and approach adjust to the specific genre requirements.", "pattern": "E1", "search_terms": ["cross-domain", "genre", "transfer", "different genres"]},
+    {"question": "What happens when you combine voice discovery with the phased approach?", "answer": "When combining voice discovery with the phased approach, the system helps writers find their authentic voice while maintaining structured progress through book phases. Voice discovery is prioritized over imposing a particular style, so the phased structure supports rather than constrains the writer's natural expression. Specific commands like 'voice check' allow ongoing voice alignment.", "pattern": "E2", "search_terms": ["voice discovery", "combine", "phased approach", "authentic voice"]},
+    {"question": "How does the system handle scaling up to epic-length works?", "answer": "For epic works (100k+ words), the system uses 14-15 phases to accommodate the longer writing journey. The adaptive structure scales proportionally, providing more phases and checkpoints to maintain momentum and quality across the extended project timeline. This prevents overwhelm while ensuring comprehensive coverage of all book components.", "pattern": "E3", "search_terms": ["scale", "epic works", "100k", "14-15 phases", "scaling"]},
+    {"question": "How would someone with no technical background use this prompt effectively?", "answer": "The prompt includes specific adaptation rules for different user scenarios including minimal input situations. Even users providing only basic information can receive adaptive guidance. The system handles the technical complexity while the writer focuses on creative decisions. Simple commands like 'continue', 'rework', 'voice check', 'energy', and 'pace' enable easy interaction.", "pattern": "O1", "search_terms": ["no technical background", "plain language", "minimal input", "simple commands"]},
+    {"question": "What other names or aliases describe this approach to AI-assisted writing?", "answer": "The source refers to it as a 'Book Architect & Writing Coach' approach. The method is described as a 'phased approach' for book creation. Related concepts include 'prompt-engineering' for AI writing assistance and 'voice discovery' for finding authentic writing style.", "pattern": "O2", "search_terms": ["alternative names", "Book Architect", "Writing Coach", "phased approach"]},
+    {"question": "What motivates writers to adopt this prompt instead of traditional writing methods?", "answer": "Writers are motivated by the structured support for completing long-form projects, the prioritization of authentic voice discovery, and the adaptive nature that responds to their specific needs. The explicit word avoidance list helps maintain quality, while the phased approach provides momentum without sacrificing creativity or authenticity.", "pattern": "O3", "search_terms": ["motivation", "why use", "traditional methods", "authentic voice"]},
+    {"question": "What is the first action to take when using this book writing prompt?", "answer": "The first action is to provide initial input about your writing goals, including target book length, genre, available writing time, and desired reader experience. This information allows the adaptive system to configure the appropriate number of phases and tailor the approach to your specific needs. Even minimal input triggers the adaptation rules.", "pattern": "X1", "search_terms": ["first action", "start", "initial input", "begin"]},
+    {"question": "What prerequisites are needed before starting with this prompt?", "answer": "The only explicit prerequisite is access to Claude Opus 4.1, which is required for the prompt to function as designed. Beyond that, the writer needs basic information about their book project: target length, genre, time availability, and reader goals. The adaptation rules handle scenarios from minimal input to fully specified projects.", "pattern": "X2", "search_terms": ["prerequisites", "required", "Claude Opus 4.1", "before starting"]},
+    {"question": "Can you provide a working example of how this prompt guides book creation?", "answer": "Example: A writer wanting a 50k word business book would receive 8-10 phases. Phase 1 establishes concept and voice through targeted questions. Each subsequent phase builds systematically toward completion, with the writer able to use commands like 'rework' to refine sections or 'voice check' to ensure consistency. The system adapts if the writer indicates time pressure or gets stuck, offering alternative approaches.", "pattern": "X3", "search_terms": ["working example", "example", "business book", "50k word", "phase"]}
   ]
 }
