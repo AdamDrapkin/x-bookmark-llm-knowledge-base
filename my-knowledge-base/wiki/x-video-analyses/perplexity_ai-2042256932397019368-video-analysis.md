@@ -1,0 +1,69 @@
+---
+title: "Video Analysis: perplexity_ai - 2042256932397019368"
+date_created: 2026-04-09
+date_modified: 2026-04-09
+summary: "Gemini Vision analysis of Perplexity's Personal Finance feature launch video demonstrating Plaid integration and AI-powered financial tools"
+tags: [video-analysis, fintech, perplexity, ai, plaid, personal-finance]
+type: source
+status: draft
+---
+
+# Video Analysis: perplexity_ai - 2042256932397019368
+
+**Source:** [Tweet](https://x.com/perplexity_ai/status/2042256932397019368)
+
+**Duration:** 63 seconds (~1 minute)
+
+## Transcript
+[Upbeat, rhythmic electronic music plays throughout the video. There is no spoken dialogue.]
+
+## Visual Description
+The video opens with a clean, white background. Text appears, first reading 'Introducing', then 'Personal Finance', and finally 'on Computer' with a small computer icon.
+
+Next, logos of various financial institutions (Chase, Discover, Wells Fargo, Citibank, Capital One, TD, Bank of America, Robinhood, American Express) appear in a circle around the central text. A black button labeled 'Connect Accounts' with 'Secured by PLAID' underneath is shown, and a cursor clicks it.
+
+An abstract black and white logo animates and transitions into a blue and green gradient logo. This is followed by a 3x3 grid of various dark-mode financial dashboards filled with charts and graphs.
+
+A search interface appears, and the cursor selects the 'Computer' option. A text input box is shown where a user types a prompt asking the AI to build a personalized budgeting tool with an interactive heat map. The AI, identified as Claude Opus 4.6, responds with its plan, showing a step-by-step process of finding Plaid tools, fetching data, and building the interface.
+
+The resulting 'Spending Heatmap' is displayed. It's a grid of blue squares of varying shades, representing daily spending over several months. A cursor hovers over the squares, revealing tooltips with spending details. The cursor then selects a range of dates, and a summary panel below updates to show total spend, spending by category (e.g., Housing, Transportation), and top transactions with company logos (Lowe's, Lyft).
+
+A new prompt is typed, asking the AI to create a tool for simulating debt repayment strategies. The video then shows a 'LoanTrack' dashboard with a 'Repayment Strategy' section, including a line graph illustrating the 'Balance Over Time' decreasing.
+
+Another prompt asks for a monthly budget tracker. A dark-mode dashboard called 'Ledger' appears, showing a 'Monthly View' with income, total spending, net savings, and bar charts comparing budget vs. actual spending for categories like rent and groceries.
+
+The video then displays the text 'All your finances in one place' over a montage of different financial dashboards, including a portfolio tracker showing stock performance.
+
+The video concludes with the Perplexity logo and name appearing on the white background.
+
+## Visible Text (Key UI Elements)
+- "Introducing" → "Personal Finance" → "on Computer"
+- "Connect your bank accounts, credit cards, and loans to Computer with Plaid."
+- Bank logos: Chase, Discover, Wells Fargo, Citibank, Capital One, TD, Bank of America, Robinhood, American Express
+- "Connect Accounts" / "Secured by PLAID"
+- "Build a personalized budgeting tool that tracks my daily, weekly, and monthly spend, identifies patterns, and displays it all in an interactive heat map."
+- "Claude Opus 4.6" (AI model used)
+- "Spending Heatmap", "LoanTrack", "Ledger"
+- Various financial metrics: "$14,338 TOTAL SPEND", "$422 PER DAY", "$153.9k YEARLY PACE"
+- Category breakdowns: Housing, Transportation, Food & Dining, Entertainment, Shopping
+- "All your finances in one place"
+- Perplexity branding
+
+## Summary
+This video is a product demonstration for a new feature called 'Personal Finance on Computer' from Perplexity. It showcases the ability to connect various financial accounts (bank accounts, credit cards, loans) using Plaid and then use natural language prompts to have an AI (Claude Opus 4.6) build custom, interactive financial dashboards. The examples include a spending heatmap, a debt repayment simulator, a monthly budget tracker, and a portfolio overview, highlighting the platform's capability to serve as a centralized, AI-powered hub for managing all personal finances.
+
+## Key Features Demonstrated
+1. **Plaid Integration** — Connect bank accounts, credit cards, loans
+2. **AI-Powered Dashboard Building** — Natural language prompts create custom tools
+3. **Spending Heatmap** — Interactive visualization of daily spending patterns
+4. **Debt Repayment Simulator** — "LoanTrack" tool for planning debt payoff
+5. **Monthly Budget Tracker** — "Ledger" with budget vs actual spending comparison
+6. **Portfolio Tracking** — Investment performance visualization
+
+## Source References
+- Related: [[perplexity-personal-finance]]
+- Related: [[plaid-integration]]
+- Related: [[ai-financial-tools]]
+
+---
+*Analysis generated by Gemini 2.5 Pro Vision*

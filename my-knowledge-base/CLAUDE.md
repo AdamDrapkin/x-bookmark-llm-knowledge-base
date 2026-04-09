@@ -1,5 +1,11 @@
 # LLM Knowledge Base — Schema
 
+## Quick Reference
+- **Memory:** See [`.claude/memory.md`](.claude/memory.md) for operational rules and learnings. Update it when:
+  - Discovering new patterns or errors in the workflow
+  - Making process changes that affect future work
+  - Learning what NOT to do from failed attempts
+
 ## Overview
 Personal knowledge base on my X (previously Twitter) bookmarks across various topics. Raw sources live in `raw/`. Bookmarks live in `~/.ft-bookmarks/bookmarks.db` (SQLite). The compiled wiki lives in `wiki/`. You (the AI) maintain all wiki content.
 
