@@ -2,6 +2,7 @@
 title: "Feynman - Open Source AI Research Agent"
 date_created: 2026-04-08
 date_modified: 2026-04-09
+date_posted: 2026-04-06
 summary: "Louis Gleeson discovered Feynman, an open source AI research agent that searches papers, synthesizes findings, verifies claims against real sources, and produces cited research briefs in seconds."
 tags: [open-source, ai-agents, research, tools, github, paper-synthesis]
 type: source
@@ -10,7 +11,7 @@ status: draft
 
 # Feynman - Open Source AI Research Agent
 
-Source: [Louis Gleeson](https://x.com/aigleeson/status/2041073339616387468) | Date: Mon Apr 06 2026
+Source: [Louis Gleeson](https://x.com/aigleeson/status/2041073339616387468) | Date posted: 2026-04-06
 
 ## Summary
 

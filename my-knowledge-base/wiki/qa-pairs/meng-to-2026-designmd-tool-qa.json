@@ -1,0 +1,35 @@
+{
+  "source_article": "meng-to-2026-designmd-tool",
+  "qa_pairs": [
+    {
+      "question": "What is DESIGN.md tool?",
+      "answer": "DESIGN.md tool for site recreation from @MengTo.",
+      "type": "factual",
+      "source": "[[meng-to-2026-designmd-tool]]"
+    },
+    {
+      "question": "Who is the author of meng-to-2026-designmd-tool?",
+      "answer": "@MengTo.",
+      "type": "factual",
+      "source": "[[meng-to-2026-designmd-tool]]"
+    },
+    {
+      "question": "Why is DESIGN.md important?",
+      "answer": "It provides practical value for AI practitioners by design.md tool for site recreation.",
+      "type": "reasoning",
+      "source": "[[meng-to-2026-designmd-tool]]"
+    },
+    {
+      "question": "How does this source relate to other AI tools?",
+      "answer": "This adds to the growing body of prompt engineering and AI tool knowledge in the wiki.",
+      "type": "reasoning",
+      "source": "[[meng-to-2026-designmd-tool]]"
+    },
+    {
+      "question": "How does meng-to-2026-designmd-tool connect to existing wiki concepts?",
+      "answer": "The source relates to prompt-engineering and AI tools concepts already in the wiki.",
+      "type": "synthesis",
+      "source": "[[meng-to-2026-designmd-tool]]"
+    }
+  ]
+}

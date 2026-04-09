@@ -1,0 +1,35 @@
+{
+  "source_article": "jb-2026-workflow-play",
+  "qa_pairs": [
+    {
+      "question": "What is AI wrapper?",
+      "answer": "AI wrapper business strategy from @jb.",
+      "type": "factual",
+      "source": "[[jb-2026-workflow-play]]"
+    },
+    {
+      "question": "Who is the author of jb-2026-workflow-play?",
+      "answer": "@jb.",
+      "type": "factual",
+      "source": "[[jb-2026-workflow-play]]"
+    },
+    {
+      "question": "Why is AI important?",
+      "answer": "It provides practical value for AI practitioners by ai wrapper business strategy.",
+      "type": "reasoning",
+      "source": "[[jb-2026-workflow-play]]"
+    },
+    {
+      "question": "How does this source relate to other AI tools?",
+      "answer": "This adds to the growing body of prompt engineering and AI tool knowledge in the wiki.",
+      "type": "reasoning",
+      "source": "[[jb-2026-workflow-play]]"
+    },
+    {
+      "question": "How does jb-2026-workflow-play connect to existing wiki concepts?",
+      "answer": "The source relates to prompt-engineering and AI tools concepts already in the wiki.",
+      "type": "synthesis",
+      "source": "[[jb-2026-workflow-play]]"
+    }
+  ]
+}

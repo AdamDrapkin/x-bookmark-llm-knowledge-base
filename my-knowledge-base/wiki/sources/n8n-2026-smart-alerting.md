@@ -2,6 +2,7 @@
 title: "n8n Workflow - Smart Alert Filtering"
 date_created: 2026-04-08
 date_modified: 2026-04-09
+date_posted: 2026-04-06
 summary: "n8n.io shares a workflow that reduces alert noise by waiting 5 minutes before sending notifications. Includes image and external link to workflow template."
 tags: [n8n, workflow-automation, automation, alerting, monitoring]
 type: source
@@ -10,7 +11,7 @@ status: draft
 
 # n8n Workflow - Smart Alert Filtering
 
-Source: [n8n.io](https://x.com/n8n_io/status/2041078519623520666) | Date: Mon Apr 06 2026
+Source: [n8n.io](https://x.com/n8n_io/status/2041078519623520666) | Date posted: 2026-04-06
 
 ## Summary
 

@@ -10,11 +10,8 @@ status: draft
 
 # Outputs Index
 
-## All Outputs (0)
+## All Outputs (1)
 
-No outputs yet. Outputs include lint reports, QA pairs, and other generated content.
-
-## Coming Soon
-- Lint reports from wiki-lint
-- QA pairs from synthetic data generation
-- Query responses
+| Page | Description | Date Added |
+|------|-------------|------------|
+| [[lint-2026-04-09]] | Lint report with 5 broken links | 2026-04-09 |

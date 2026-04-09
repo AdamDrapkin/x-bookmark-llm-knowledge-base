@@ -1,0 +1,35 @@
+{
+  "source_article": "robert-youssef-2026-claude-ai-business",
+  "qa_pairs": [
+    {
+      "question": "Who developed the Agentic AI framework mentioned in this source?",
+      "answer": "Andrew Ng developed the Agentic AI framework.",
+      "type": "factual",
+      "source": "[[robert-youssef-2026-claude-ai-business]]"
+    },
+    {
+      "question": "What can Claude build using the Agentic AI framework?",
+      "answer": "Claude can build AI agent businesses using the Agentic AI framework.",
+      "type": "factual",
+      "source": "[[robert-youssef-2026-claude-ai-business]]"
+    },
+    {
+      "question": "Why is the Agentic AI framework important for building AI businesses?",
+      "answer": "The framework provides a structured approach for AI agents to plan, execute, and adapt multi-step tasks autonomously, enabling scalable business applications.",
+      "type": "reasoning",
+      "source": "[[robert-youssef-2026-claude-ai-business]]"
+    },
+    {
+      "question": "How does Andrew Ng's framework compare to traditional AI approaches?",
+      "answer": "Unlike traditional AI that responds to single prompts, the Agentic AI framework enables AI systems to autonomously plan and execute complex, multi-step workflows.",
+      "type": "reasoning",
+      "source": "[[robert-youssef-2026-claude-ai-business]]"
+    },
+    {
+      "question": "How does this source connect to the concept of ai-business?",
+      "answer": "This source exemplifies the ai-business concept by showing how AI agents (Claude) combined with structured frameworks (Agentic AI) can create viable business models.",
+      "type": "synthesis",
+      "source": "[[robert-youssef-2026-claude-ai-business]]"
+    }
+  ]
+}

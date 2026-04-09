@@ -2,6 +2,7 @@
 title: "Design.md - Generate DesignSpecs from Any URL"
 date_created: 2026-04-08
 date_modified: 2026-04-09
+date_posted: 2026-04-06
 summary: "Meng To created a tool that generates DESIGN.md from any URL and accurately recreates the site. Useful for learning design systems. Includes 50-second demo video and now live on aura.build."
 tags: [prompt-engineering, design-systems, ai-prompts, tutorial, tool, aura-build]
 type: source
@@ -10,7 +11,7 @@ status: draft
 
 # Design.md - Generate DesignSpecs from Any URL
 
-Source: [Meng To](https://x.com/MengTo/status/2041141824283365521) | Date: Mon Apr 06 2026
+Source: [Meng To](https://x.com/MengTo/status/2041141824283365521) | Date posted: 2026-04-06
 
 ## Summary
 

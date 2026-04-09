@@ -1,0 +1,35 @@
+{
+  "source_article": "mindbranches-1974621848844616006-video-prompt-styles",
+  "qa_pairs": [
+    {
+      "question": "What is AI video?",
+      "answer": "AI video prompt style guide from @MindBranches.",
+      "type": "factual",
+      "source": "[[mindbranches-1974621848844616006-video-prompt-styles]]"
+    },
+    {
+      "question": "Who is the author of mindbranches-1974621848844616006-video-prompt-styles?",
+      "answer": "@MindBranches.",
+      "type": "factual",
+      "source": "[[mindbranches-1974621848844616006-video-prompt-styles]]"
+    },
+    {
+      "question": "Why is AI important?",
+      "answer": "It provides practical value for AI practitioners by ai video prompt style guide.",
+      "type": "reasoning",
+      "source": "[[mindbranches-1974621848844616006-video-prompt-styles]]"
+    },
+    {
+      "question": "How does this source relate to other AI tools?",
+      "answer": "This adds to the growing body of prompt engineering and AI tool knowledge in the wiki.",
+      "type": "reasoning",
+      "source": "[[mindbranches-1974621848844616006-video-prompt-styles]]"
+    },
+    {
+      "question": "How does mindbranches-1974621848844616006-video-prompt-styles connect to existing wiki concepts?",
+      "answer": "The source relates to prompt-engineering and AI tools concepts already in the wiki.",
+      "type": "synthesis",
+      "source": "[[mindbranches-1974621848844616006-video-prompt-styles]]"
+    }
+  ]
+}

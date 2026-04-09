@@ -142,3 +142,25 @@ Each source page now includes:
 - Media details
 - External link references
 - Raw file paths
+
+## 2026-04-09 - Lint Report
+
+### Operation: LINT
+
+Ran comprehensive lint audit on all 16 source pages, 6 concepts, and 7 entities.
+
+#### Results
+- 🔴 **5 Broken Links** — Missing entity/concept pages referenced in wikilinks
+- ✅ **0 Missing Frontmatter** — All pages properly formatted
+- ✅ **0 Contradictions** — No conflicting claims detected
+- ✅ **0 Stale Claims** — All content is current
+
+#### Broken Links Identified
+Missing pages: [[pricing]], [[anthropic]], [[chatgpt]], [[hallucinations]], [[mindbranches]], [[alerting]], [[monitoring]], [[perplexity]]
+
+#### Report
+- [[lint-2026-04-09]] — Full lint report saved to wiki/outputs/
+
+#### Index Updates
+- wiki/index.md updated with Maintenance category
+- wiki/outputs/_index.md updated with lint report entry

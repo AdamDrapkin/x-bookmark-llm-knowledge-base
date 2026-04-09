@@ -2,6 +2,7 @@
 title: "The Play: Build Workflows on Top of Complex AI Tools"
 date_created: 2026-04-08
 date_modified: 2026-04-09
+date_posted: 2026-04-06
 summary: "J.B. explains a business strategy: find AI tools with learning curves, build pre-configured workflows on top, sell to users who don't want to learn prompting. Includes video and quotes @jdkanani about Morphic Workflows."
 tags: [productivity, workflow, business-strategy, no-code, automation, morphic]
 type: source
@@ -10,7 +11,7 @@ status: draft
 
 # The Play: Build Workflows on Top of Complex AI Tools
 
-Source: [J.B.](https://x.com/VibeMarketer_/status/2041159211858452840) | Date: Mon Apr 06 2026
+Source: [J.B.](https://x.com/VibeMarketer_/status/2041159211858452840) | Date posted: 2026-04-06
 
 ## Summary
 
