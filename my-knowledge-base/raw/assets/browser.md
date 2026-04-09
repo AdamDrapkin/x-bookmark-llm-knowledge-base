@@ -143,7 +143,22 @@ Key changes:
 
 ### STEP 2: Analyze What Content Exists on Page
 
-**Action:** Take a snapshot and evaluate the page to determine content types present.
+**CRITICAL:** ALWAYS take a snapshot FIRST, then evaluate. Do not skip the snapshot — it reveals content that JavaScript evaluation may miss.
+
+**Action:**
+1. **First:** Take a snapshot to visually understand the page
+2. **Then:** Run evaluation script to extract structured data
+
+**What to look for in the snapshot (visual indicators):**
+
+| Indicator | What It Means |
+|-----------|---------------|
+| "Quote" or "Repost" label before a username | This is a repost/quote tweet |
+| "RT @username" in the text | Classic repost format |
+| Multiple posts visible | Thread present |
+| Video thumbnail or "Play Video" text | Video content |
+| "Article" badge | X native article |
+| External link (non-x.com URL) | External link to process |
 
 **Use this evaluation script:**
 ```javascript
@@ -442,7 +457,7 @@ If empty, ask user for the API key or skip Gemini analysis.
 
 2. **Send video to Gemini Vision:**
 ```bash
-curl -s -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-pro:generateContent?key=$GEMINI_API_KEY" \
+curl -s -X POST "https://generativelanguage.googleapis.com/v1/models/gemini-2.5-pro-preview-06-05:generateContent?key=$GEMINI_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "contents": [{

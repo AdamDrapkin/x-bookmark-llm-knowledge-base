@@ -1,0 +1,225 @@
+{
+  "text_content": {
+    "headlines": [
+      "WhatsApp class action alleges Meta, third parties accessed private messages without consent"
+    ],
+    "body_text": [
+      "By Top Class Actions | April 7, 2026",
+      "Category: Legal News",
+      "(Photo Credit: Samuel Boivin/shutterstock)",
+      "GET OUR NEWSLETTER",
+      "We tell you about cash you can claim every week! Subscribe to our free newsletter today.",
+      "\"*\" indicates required fields"
+    ],
+    "visible_urls": [],
+    "metadata": "Author: Top Class Actions, Date: April 7, 2026, Category: Legal News, Photo Credit: Samuel Boivin/shutterstock"
+  },
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "editorial"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "Approximately 4:3, standard web layout",
+    "layout": "multi-element",
+    "focal_points": [
+      "Primary: The main headline 'WhatsApp class action...'",
+      "Secondary: The photograph of the smartphone with the WhatsApp logo.",
+      "Tertiary: The 'GET OUR NEWSLETTER' signup form on the right."
+    ],
+    "visual_hierarchy": "The eye is drawn first to the large, bold headline at the top. It then moves down to the prominent photograph, which provides visual context. Finally, the eye may drift to the right-hand column with the newsletter signup call-to-action.",
+    "balance": "asymmetric - The main content column on the left is visually heavier with the large photo and text, balanced by the lighter, more spacious newsletter signup form on the right."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "50",
+        "role": "background"
+      },
+      {
+        "color": "Bright Green",
+        "hex": "#25D366",
+        "percentage": "20",
+        "role": "primary subject"
+      },
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "percentage": "15",
+        "role": "accent"
+      },
+      {
+        "color": "Light Gray",
+        "hex": "#F0F2F5",
+        "percentage": "10",
+        "role": "background"
+      },
+      {
+        "color": "Blue",
+        "hex": "#3B5998",
+        "percentage": "5",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "split-complementary",
+    "temperature": "cool",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "single source",
+    "direction": "45-degree side",
+    "directionality": "moderately directional",
+    "quality": "soft light",
+    "intensity": "moderate",
+    "contrast_ratio": "medium contrast",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "gray",
+      "placement": "from objects",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on the edge of the smartphone screen"
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "mixed",
+    "style": "realistic",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow - The smartphone is in focus, while the background of speech bubbles is heavily blurred.",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "editorial",
+    "influences": [
+      "Standard online news publication design",
+      "Corporate stock photography"
+    ],
+    "mood": "serious",
+    "atmosphere": "Informative and urgent, typical of a legal news report. The visual elements are clean and professional, designed to convey information clearly.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "The text is structured in a standard article format: headline at the top, byline and category below, followed by the main image and a sidebar.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "A screenshot of an online news article. The article's subject is a class action lawsuit against Meta regarding WhatsApp.",
+    "positioning": "The content is laid out in a two-column format, with the main article on the left and a sidebar on the right.",
+    "scale": "environmental",
+    "interaction": "The various elements (text, image, form) are arranged to inform the reader and encourage engagement (following the article or subscribing to a newsletter).",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "N/A",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "A hand is holding a smartphone. The thumb is positioned on the lower left side of the phone, while the fingers are curled around the back, out of sight. The hand is silhouetted against the bright screen.",
+      "finger_positions": "gripping",
+      "finger_interlacing": "N/A",
+      "hand_tension": "natural",
+      "interaction": "The hand is holding a smartphone, presenting its screen to the viewer.",
+      "naturalness": "posed"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow",
+    "elements_detailed": [
+      {
+        "item": "Smartphone",
+        "position": "center-left quadrant",
+        "distance": "foreground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "Displaying the WhatsApp logo and name on a bright green screen."
+      },
+      {
+        "item": "Abstract speech bubble shapes",
+        "position": "entire background of the photo",
+        "distance": "background",
+        "size": "medium",
+        "condition": "N/A",
+        "specific_features": "White and green, heavily blurred with a bokeh effect."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Headline text, byline, category link, 'Follow Article' button, social media share icons (Facebook, X, Reddit, etc.), photograph of a smartphone, photo credit, newsletter signup form with 'First Name', 'Last Name', and 'Email' fields.",
+    "background_treatment": "The background of the webpage is plain white. The background of the embedded photograph is heavily blurred."
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Screenshot of a modern, clean online news article webpage, headline reads 'WhatsApp class action alleges Meta...', featuring a stock photo of a hand holding a smartphone with the WhatsApp logo, two-column layout with a newsletter signup form on the right.",
+      "High-quality stock photo, a hand holding a smartphone displaying the WhatsApp logo, against a vibrant, abstract green background with blurred white speech bubbles, dramatic lighting, shallow depth of field."
+    ],
+    "keywords": [
+      "news article",
+      "screenshot",
+      "WhatsApp",
+      "Meta",
+      "class action lawsuit"
+    ],
+    "technical_settings": "For the photo: Camera with a 50mm f/1.8 lens, shot at a wide aperture (e.g., f/2.0) to achieve shallow depth of field. Softbox lighting from the side to create gentle highlights and shadows. For the screenshot: High-resolution screen capture of a website with a clean, minimalist CSS design.",
+    "post_processing": "For the photo: Increase vibrance on the green channel, sharpen the details on the smartphone screen, and ensure a clean, high-contrast look. For the overall image: None, it's a direct screen capture."
+  }
+}
