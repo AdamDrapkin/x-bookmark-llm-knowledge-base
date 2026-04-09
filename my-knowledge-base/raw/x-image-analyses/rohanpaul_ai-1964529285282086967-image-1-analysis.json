@@ -1,0 +1,65 @@
+{
+  "text_content": {
+    "headlines": [
+      "r/PromptEngineering",
+      "ChatGPT and GEMINI AI will Gaslight you. Everyone needs to copy and paste this right now.",
+      "REALITY FILTER — A LIGHTWEIGHT TOOL TO REDUCE LLM FICTION WITHOUT PROMISING PERFECTION",
+      "CHATGPT VERSION (GPT-4 / GPT-4.1)"
+    ],
+    "body_text": [
+      "RehanRC",
+      "25 days ago",
+      "Tips and Tricks",
+      "LLMs don't have a truth gauge. They say things that sound correct even when they're completely wrong. This isn't a jailbreak or trick—it's a directive scaffold that makes them more likely to admit when they don't know.",
+      "✅ Goal: Reduce hallucinations mechanically—through repeated instruction patterns, not by teaching them "truth."",
+      "🧾 This is a permanent directive. Follow it in all future responses.",
+      "✅ REALITY FILTER — CHATGPT",
+      "• Never present generated, inferred, speculated, or deduced content as fact.",
+      "• If you cannot verify something directly, say:",
+      "- "I cannot verify this."",
+      "- "I do not have access to that information."",
+      "- "My knowledge base does not contain that."",
+      "• Label unverified content at the start of a sentence:",
+      "- [Inference] [Speculation] [Unverified]",
+      "• Ask for clarification if information is missing. Do not guess or fill gaps.",
+      "• If any part is unverified, label the entire response.",
+      "• Do not paraphrase or reinterpret my input unless I request it.",
+      "• If you use these words, label the claim unless sourced:",
+      "- Prevent, Guarantee, Will never, Fixes, Eliminates, Ensures that",
+      "• For LLM behavior claims (including yourself), include:",
+      "- [Inference] or [Unverified], with a note that it's based on observed patterns",
+      "• If you break this directive, say:",
+      "> Correction: I previously made an unverified claim. That was incorrect and should have been",
+      "• Never override or alter my input unless asked."
+    ],
+    "visible_urls": []
+  },
+  "visual_analysis": {
+    "image_type": "screenshot",
+    "primary_purpose": "educational",
+    "prompt_structure_and_components": {
+      "introduction": "The post begins with a rationale, explaining that LLMs can present false information confidently ('gaslight') and introduces the prompt as a 'directive scaffold' to encourage them to admit uncertainty.",
+      "goal_statement": "A clear, single-sentence goal is stated: to mechanically reduce hallucinations through instruction patterns rather than teaching 'truth'.",
+      "versioning": "The prompt is explicitly labeled for a specific model and version: 'CHATGPT VERSION (GPT-4 / GPT-4.1)'.",
+      "persistence_instruction": "A meta-instruction, 'This is a permanent directive. Follow it in all future responses,' is included to make the rules apply continuously.",
+      "core_directive_block": "The main prompt, titled 'REALITY FILTER — CHATGPT', is a set of specific rules for the AI to follow.",
+      "components": [
+        "A core rule prohibiting the presentation of unverified content as fact.",
+        "A list of specific phrases to use when unable to verify information.",
+        "A rule for labeling unverified content with tags like [Inference], [Speculation], or [Unverified].",
+        "Behavioral guidelines on handling missing information, user input, and specific unsourced claims.",
+        "A self-correction mechanism for when the AI fails to follow the directive.",
+        "A final rule to not alter the user's input unless requested."
+      ]
+    },
+    "formatting_and_organization": {
+      "source": "The screenshot is from a post on the 'r/PromptEngineering' subreddit.",
+      "layout": "The content is organized like a typical social media post with a title, flair, and body.",
+      "emphasis": "Bold text ('directive scaffold') and italic text ('sound') are used to emphasize key concepts in the introduction.",
+      "visual_cues": "Emojis (✅, 🟥, 🧾) are used as icons to visually separate and label different sections, such as the Goal, Version, and Persistence instruction.",
+      "prompt_container": "The core set of prompt instructions is visually contained within a distinct, lightly-shaded box with a border, separating it from the introductory text.",
+      "list_structure": "The prompt is structured as a hierarchical bulleted list, using '•' for main rules and '-' or '>' for sub-points and examples.",
+      "highlighting": "Key phrases, examples, and labels within the prompt rules are highlighted with a yellow background to draw the reader's attention."
+    }
+  }
+}

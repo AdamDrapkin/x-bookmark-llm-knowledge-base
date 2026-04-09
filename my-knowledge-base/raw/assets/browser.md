@@ -19,8 +19,8 @@ Before starting any extraction task:
    - `raw/x-external-links/`
    - `raw/x-github-repos/`
 3. **Verify ffmpeg is installed** — run `ffmpeg -version` to confirm
-4. **Check OpenAI API key is available** in environment variables
-5. **Check Gemini API key is available** — set as `$GEMINI_API_KEY`
+4. **Check OpenAI API key is available** — check environment or `~/.ft-bookmarks/.env`
+5. **Check Gemini API key is available** — check environment or `~/.ft-bookmarks/.env`
 
 ---
 
@@ -444,7 +444,7 @@ rm /tmp/{author}-video.mp4 /tmp/{author}-audio.mp3
 **CRITICAL:** For short videos, Gemini 2.5 Pro Vision provides both transcript + visual analysis. No need to run Whisper separately.
 
 **Prerequisites:**
-- `$GEMINI_API_KEY` environment variable must be set
+- `$GEMINI_API_KEY` environment variable must be set (check `~/.ft-bookmarks/.env` if not in environment)
 - Video has been downloaded to `/tmp/{author}-video.mp4`
 
 **Action:**
@@ -452,8 +452,10 @@ rm /tmp/{author}-video.mp4 /tmp/{author}-audio.mp3
 1. **Check API key is set:**
 ```bash
 echo $GEMINI_API_KEY
+# If empty, check .env file:
+cat ~/.ft-bookmarks/.env | grep GEMINI
 ```
-If empty, ask user for the API key or skip Gemini analysis.
+If empty, source from .env or ask user for the API key.
 
 2. **Send video to Gemini Vision:**
 ```bash
@@ -749,7 +751,7 @@ console.log(JSON.stringify(allLinks));
 **CRITICAL:** Analyze ALL extracted images with Gemini 2.5 Pro Vision. Each image gets its own analysis.
 
 **Prerequisites:**
-- `$GEMINI_API_KEY` environment variable must be set
+- `$GEMINI_API_KEY` environment variable must be set (check `~/.ft-bookmarks/.env` if not in environment)
 - Images have been downloaded to `raw/x-article-images/`
 - `image-analysis` skill is available
 
@@ -758,8 +760,10 @@ console.log(JSON.stringify(allLinks));
 1. **Check API key is set:**
 ```bash
 echo $GEMINI_API_KEY
+# If empty, check .env file:
+cat ~/.ft-bookmarks/.env | grep GEMINI
 ```
-If empty, ask user for the API key or skip Gemini analysis.
+If empty, source from .env or ask user for the API key.
 
 2. **Invoke the image-analysis skill:**
 

@@ -1,0 +1,23 @@
+{
+  "headlines": [
+    "THIS PROMPT WILL TURN YOU INTO A PROMPT ENGINEER",
+    "Golden Rule",
+    "Your AI Superpowers In One Click"
+  ],
+  "body_text": [
+    "5. Build Examples: Use \u201cfew-shot\u201d learning by embedding sample responses if necessary.",
+    "6. Test and Refine: Predict how the LLM will respond, run a trial, and improve the prompt.",
+    "Always ask: Would this prompt give the best result for a non-expert user?",
+    "If not, revise.",
+    "=> godofprompt.ai"
+  ],
+  "visible_urls": [
+    "godofprompt.ai"
+  ],
+  "visual_analysis": {
+    "image_type": "Informational Graphic / Educational Content",
+    "primary_purpose": "To provide tips on prompt engineering and to promote the website godofprompt.ai.",
+    "prompt_structure_and_components": "The image itself is a guide on how to improve prompts. It outlines a process that includes: 1. Building Examples: Using 'few-shot' learning. 2. Testing and Refining: A cycle of prediction, trial, and improvement. 3. The 'Golden Rule': A core principle for evaluation, focusing on usability for a non-expert user.",
+    "formatting_and_organization": "The image has a clean, minimalist layout with a lot of white space. It uses a monospaced font throughout, giving it a technical feel. Key phrases ('PROMPT ENGINEER', 'Golden Rule', 'AI Superpowers') are highlighted with a yellow background for emphasis. The content is structured with a main headline, a numbered list for actionable steps, a distinct section for the 'Golden Rule', and a footer containing a tagline and URL. A stylized icon of a bearded figure is in the top-left corner."
+  }
+}

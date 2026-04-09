@@ -1,7 +1,7 @@
 ---
 title: "Wiki Index"
 date_created: 2026-04-08
-date_modified: 2026-04-08
+date_modified: 2026-04-09
 summary: "Master index of all wiki pages with one-line summaries"
 tags: [index, wiki]
 type: index
@@ -10,13 +10,17 @@ status: draft
 
 # Wiki Index
 
-## Sources (5)
+## Sources (9)
 
 - [[robert-youssef-2026-claude-ai-business]] — Claude can build AI agent businesses following Andrew Ng's agentic AI framework
 - [[jb-2026-workflow-play]] — Build pre-configured workflows on top of AI tools with learning curves
 - [[meng-to-2026-designmd-tool]] — Tool generates DESIGN.md from any URL to recreate sites
 - [[n8n-2026-smart-alerting]] — n8n workflow waits 5 minutes to filter alert noise
 - [[louis-gleeson-2026-feynman-agent]] — Open source AI research agent that searches papers and verifies claims
+- [[godofprompt-1967590989062664316-book-writing-prompt]] — Claude Opus 4.1 Prompt to automate writing an entire book
+- [[minchoi-1964716900660965644-hallucination-prompt]] — ChatGPT prompt that stops ChatGPT from hallucinating
+- [[rohanpaul_ai-1964529285282086967-reality-filter]] — Prompt that reduces ChatGPT hallucinations
+- [[alex_prompter-1953861679248560379-ai-prompt-library]] — AI prompt library your competitors don't want you to find
 
 ## Concepts (5)
 
