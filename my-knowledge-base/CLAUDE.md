@@ -19,6 +19,7 @@ maintenance, and queries.
 - wiki/outputs/ — Filed answers to my queries
 - wiki/qa-pairs/ — Generated QA pairs from wiki articles for fine-tuning
 - wiki/backlog-log.md — Tracking processed bookmarks from the backlog
+- wiki/decisions/ — Decision log for process changes (add entry when strategy shifts)
 
 ## File Conventions
 - All filenames: kebab-case, lowercase (e.g., active-inference.md)
