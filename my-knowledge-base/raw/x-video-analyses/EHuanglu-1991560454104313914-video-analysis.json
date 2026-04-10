@@ -1,0 +1,38 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"transcript\": \"\",\n  \"visual_description\": \"The video is a screen recording of a software interface, presented as a fast-paced time-lapse. It begins with a close-up on a node-based workflow editor. An initial node labeled \\\"Product image\\\" contains a picture of a golden-yellow satin dress. This node is connected by numerous lines to many other nodes. The view quickly zooms out to reveal a vast and complex flowchart, showing that the single input image is being processed through dozens of parallel tasks. The placeholder nodes then begin to populate with generated images. The product in focus changes from the dress to a black leather jacket. The system generates a wide variety of images featuring the jacket: on diverse models, in different lifestyle settings (city streets, cafes), as flat-lay product shots, and in detailed close-ups of the material, zippers, and collar. The camera zooms in on several columns of these generated images, showcasing the variety and quality of the output. The user interface is clean and modern, with a light grey background and white rectangular nodes.\",\n  \"visible_text\": [\n    \"Batch Generation 1_v...\",\n    \"Automated at 12:37\",\n    \"Product image\",\n    \"Upload\",\n    \"Creative instruction\",\n    \"You are an expert E-commerce Visual Designer and Art Director, specializing in creating compelling, branded product visuals...\",\n    \"Choose AI Model(s)\",\n    \"GPT-4o\",\n    \"Results\",\n    \"Image Describer\",\n    \"Describe this product in detail...\",\n    \"Tasks\",\n    \"All active\",\n    \"Compare All\",\n    \"**Image Prompt:** Scale Callout\",\n    \"Certainly! Here's a detailed image prompt for shot 17 extracted from the shot list: **Shot 17**...\",\n    \"Download\",\n    \"Run History\",\n    \"GPT Image 1\",\n    \"Limited Offer New Remix up to 50% off\",\n    \"Edit\",\n    \"Share\",\n    \"Shop\"\n  ],\n  \"summary\": \"This video demonstrates an AI-powered software platform designed for large-scale generation of e-commerce and marketing visuals. It showcases a node-based workflow where a single product image (a black leather jacket) is used as an input to automatically create a diverse array of high-quality images. The system generates various types of content simultaneously, including models wearing the product, lifestyle shots, flat lays, and detailed close-ups, highlighting the tool's capability to automate and scale visual content production for brands and retailers.\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 8015,
+    "candidatesTokenCount": 560,
+    "totalTokenCount": 9621,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 63
+      },
+      {
+        "modality": "VIDEO",
+        "tokenCount": 7101
+      },
+      {
+        "modality": "AUDIO",
+        "tokenCount": 851
+      }
+    ],
+    "thoughtsTokenCount": 1046
+  },
+  "modelVersion": "gemini-2.5-pro",
+  "responseId": "eHPYaeKNGP32jrEP-ar-iAE"
+}

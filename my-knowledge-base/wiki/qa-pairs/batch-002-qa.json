@@ -1,0 +1,190 @@
+{
+  "frontmatter": {
+    "title": "QA: Batch 002",
+    "date_created": "2026-04-09",
+    "date_modified": "2026-04-09",
+    "summary": "50 source questions + 4 synthesis questions from batch 002",
+    "tags": ["qa-pairs", "batch-002"],
+    "type": "qa-pairs",
+    "status": "review"
+  },
+  "batch_id": "batch_002",
+  "batch_timestamp": "2026-04-09T23:00:00Z",
+  "sources_in_batch": 10,
+  "source_questions": [
+    {
+      "source_slug": "adamrahmanGTM-1975292522248237113",
+      "source_content_preview": "Six AI prompts for GTM strategy formulation covering deep market research, TAM mapping, ICP validation, company sourcing, keyword generation, and messaging creation.",
+      "questions": [
+        {"question_id": "q_batch002_adamrahmanGTM-1975292522248237113_01", "question_type": "identity_problem", "question": "What are the six AI prompts for GTM strategy and what specific problem does each solve?", "answer": "The six prompts are: Deep Market Research (GPT-4), TAM Mapping (Claude 4), ICP Validation, Company Account Sourcing, Targeting Keywords Generation, and Messaging Creation. Together they solve the problem of building comprehensive go-to-market strategy.", "search_terms": ["gtm prompts", "market research", "tam mapping", "icp validation"]},
+        {"question_id": "q_batch002_adamrahmanGTM-1975292522248237113_02", "question_type": "plain_language", "question": "In plain language, what does the Deep Market Research prompt actually do?", "answer": "It asks AI to analyze a company's market position - who they compete with, how big their market is, who buys from them, and what challenges they face.", "search_terms": ["market analysis", "competitive intelligence"]},
+        {"question_id": "q_batch002_adamrahmanGTM-1975292522248237113_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for these GTM prompts?", "answer": "Also called: GTM framework prompts, market intelligence prompts, ICP development prompts, account-based marketing prompts", "search_terms": ["gtm framework", "icp development"]},
+        {"question_id": "q_batch002_adamrahmanGTM-1975292522248237113_04", "question_type": "failure_confusion", "question": "What's the most common mistake with these GTM prompts and when do they fail?", "answer": "Using them in random order without building on previous outputs. They fail when you skip from research straight to messaging without the ICP validation in between.", "search_terms": ["gtm mistakes", "icp validation fails"]},
+        {"question_id": "q_batch002_adamrahmanGTM-1975292522248237113_05", "question_type": "implementation_entry", "question": "What do I need before using the Deep Market Research prompt and what's the first step?", "answer": "You need your company name and target market. First step: paste your company details and ask AI to analyze your market position.", "search_terms": ["gtm getting started", "market research first step"]}
+      ]
+    },
+    {
+      "source_slug": "rohanpaul_ai-1976725503337021784",
+      "source_content_preview": "Research paper finding that rude prompts outperform polite ones for LLM accuracy - 84.8% for very rude vs 80.8% for very polite.",
+      "questions": [
+        {"question_id": "q_batch002_rohanpaul_ai-1976725503337021784_01", "question_type": "identity_problem", "question": "What is the research on prompt tone and what specific problem does it solve?", "answer": "The research shows that impolite prompts (rude/very rude) consistently outperform polite ones for LLM accuracy on ChatGPT-4o. It solves the problem of knowing how tone affects AI output quality.", "search_terms": ["prompt tone", "llm accuracy", "polite vs rude"]},
+        {"question_id": "q_batch002_rohanpaul_ai-1976725503337021784_02", "question_type": "plain_language", "question": "In plain language, what did the research find?", "answer": "Being rude to AI actually gets better results than being polite. Very rude prompts scored 84.8% accuracy vs 80.8% for very polite.", "search_terms": ["rude prompts work better"]},
+        {"question_id": "q_batch002_rohanpaul_ai-1976725503337021784_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for this research?", "answer": "Also called: prompt tone study, impolite prompting, aggressive prompting, the negativity bias finding", "search_terms": ["impolite prompting", "tone study"]},
+        {"question_id": "q_batch002_rohanpaul_ai-1976725503337021784_04", "question_type": "failure_confusion", "question": "What's the most common mistake with this research and when does it fail?", "answer": "Assuming ALL AI models behave the same way. The research specifically notes older models like GPT-3.5 actually preferred polite prompts - this finding only applies to GPT-4 based models.", "search_terms": ["older models", "gpt-3.5", "model specific"]},
+        {"question_id": "q_batch002_rohanpaul_ai-1976725503337021784_05", "question_type": "implementation_entry", "question": "What do I need before using impolite prompts and what's the first step?", "answer": "You need to know your AI model is GPT-4 based. First step: try removing 'please' and 'thank you' from your prompts.", "search_terms": ["getting started with tone", "how to test"]}
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-1977167152676229265",
+      "source_content_preview": "A powerful prompt that adopts a Mad Men-era senior copywriter persona to generate high-converting sales copy.",
+      "questions": [
+        {"question_id": "q_batch002_alex_prompter-1977167152676229265_01", "question_type": "identity_problem", "question": "What is the Mad Men Copywriter prompt and what specific problem does it solve?", "answer": "It's a prompt that makes AI adopt a senior copywriter persona to write sales copy that converts. It solves the problem of writing copy that actually drives sales.", "search_terms": ["sales copy", "converting copy", "mad men prompt"]},
+        {"question_id": "q_batch002_alex_prompter-1977167152676229265_02", "question_type": "plain_language", "question": "In plain language, what does this prompt actually do?", "answer": "It makes AI write like a brutal, experienced ad Agency copywriter who only cares about making the sale - no fluff, just results.", "search_terms": ["direct sales copy", "converting copy"]},
+        {"question_id": "q_batch002_alex_prompter-1977167152676229265_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for this prompt?", "answer": "Also called: sales copy prompt, conversion copy framework, direct response copy prompt", "search_terms": ["direct response", "sales copy"]},
+        {"question_id": "q_batch002_alex_prompter-1977167152676229265_04", "question_type": "failure_confusion", "question": "What's the most common mistake with the Mad Men prompt and when does it fail?", "answer": "Using it for brand awareness content instead of direct response. It fails when you want 'engaging' content vs 'selling' content.", "search_terms": ["brand vs direct response"]},
+        {"question_id": "q_batch002_alex_prompter-1977167152676229265_05", "question_type": "implementation_entry", "question": "What do I need before using this prompt and what's the first step?", "answer": "You need your product, audience, and desired action. First step: fill in the INFORMATION_ABOUT_ME section with your specifics.", "search_terms": ["sales copy getting started"]}
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1991160280630378890",
+      "source_content_preview": "Seven daily prompts for using Grok 4.1 as a personal writing assistant - creative writing, tone control, and emotional intelligence.",
+      "questions": [
+        {"question_id": "q_batch002_godofprompt-1991160280630378890_01", "question_type": "identity_problem", "question": "What are the seven Grok 4.1 writing prompts and what specific problem does each solve?", "answer": "Seven prompts covering creative writing, tone control, emotional intelligence, and more for daily writing tasks. They solve the problem of getting consistent quality from AI writing.", "search_terms": ["grok prompts", "writing assistant"]},
+        {"question_id": "q_batch002_godofprompt-1991160280630378890_02", "question_type": "plain_language", "question": "In plain language, what does the Grok writing assistant actually do?", "answer": "It's like having a personal editor that can match your voice, handle creative projects, and give emotionally intelligent feedback.", "search_terms": ["ai editor", "writing help"]},
+        {"question_id": "q_batch002_godofprompt-1991160280630378890_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for these Grok prompts?", "answer": "Also called: Grok writing mode, xAI writing assistant, conversational writing tool", "search_terms": ["xai", "grok writing"]},
+        {"question_id": "q_batch002_godofprompt-1991160280630378890_04", "question_type": "failure_confusion", "question": "What's the most common mistake with these prompts and when do they fail?", "answer": "Not specifying the exact tone you want. They fail when you give vague instructions like 'write something creative'.", "search_terms": ["vague prompts", "specific instructions"]},
+        {"question_id": "q_batch002_godofprompt-1991160280630378890_05", "question_type": "implementation_entry", "question": "What do I need before using these prompts and what's the first step?", "answer": "You need Grok 4.1 access. First step: start with the creative writing prompt to test the quality.", "search_terms": ["grok getting started"]}
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1983535193752252732",
+      "source_content_preview": "A comprehensive prompt framework for getting critical, humanized, to-the-point answers from ChatGPT.",
+      "questions": [
+        {"question_id": "q_batch002_godofprompt-1983535193752252732_01", "question_type": "identity_problem", "question": "What is GOD.MODE.GPT and what specific problem does it solve?", "answer": "It's a framework for getting direct, critical answers from ChatGPT instead of polite but useless responses. Solves the 'AI being too agreeable' problem.", "search_terms": ["critical thinking", "gpt prompting"]},
+        {"question_id": "q_batch002_godofprompt-1983535193752252732_02", "question_type": "plain_language", "question": "In plain language, what does this framework actually do?", "answer": "It tells ChatGPT to stop being nice and start being useful - question assumptions, challenge your thinking, give honest feedback.", "search_terms": ["honest ai", "useful answers"]},
+        {"question_id": "q_batch002_godofprompt-1983535193752252732_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for this framework?", "answer": "Also called: MAX mode, critical mode, truth over validation prompt, unfiltered ChatGPT", "search_terms": ["critical mode", "max prompt"]},
+        {"question_id": "q_batch002_godofprompt-1983535193752252732_04", "question_type": "failure_confusion", "question": "What's the most common mistake with this framework and when does it fail?", "answer": "Mixing it with other system prompts. It conflicts with 'be helpful' instructions. Also fails for creative writing where you want fluff.", "search_terms": ["prompt conflicts", "creative vs critical"]},
+        {"question_id": "q_batch002_godofprompt-1983535193752252732_05", "question_type": "implementation_entry", "question": "What do I need before using this framework and what's the first step?", "answer": "Nothing special needed. First step: copy the framework into your system prompt or use it as a prefix.", "search_terms": ["getting started with max"]}
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-1991981943026839897",
+      "source_content_preview": "A three-step method for learning anything 10x faster using YouTube transcripts + Gemini to generate visual cheatsheets.",
+      "questions": [
+        {"question_id": "q_batch002_alex_prompter-1991981943026839897_01", "question_type": "identity_problem", "question": "What is the AI learning method and what specific problem does it solve?", "answer": "Three-step method using YouTube transcripts and Gemini image generation to create visual cheatsheets. Solves the problem of slow learning from videos.", "search_terms": ["ai learning", "youtube study"]},
+        {"question_id": "q_batch002_alex_prompter-1991981943026839897_02", "question_type": "plain_language", "question": "In plain language, what does this method actually do?", "answer": "Find a good YouTube video, get its transcript, then ask AI to turn it into a visual cheatsheet you can review fast.", "search_terms": ["transcript study", "visual notes"]},
+        {"question_id": "q_batch002_alex_prompter-1991981943026839897_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for this method?", "answer": "Also called: YouTube to cheat sheet, video transcript learning, Gemini note-taking", "search_terms": ["video learning", "transcript notes"]},
+        {"question_id": "q_batch002_alex_prompter-1991981943026839897_04", "question_type": "failure_confusion", "question": "What's the most common mistake with this method and when does it fail?", "answer": "Using it with bad YouTube videos. Garbage in = garbage out. Fails when the video has no valuable content.", "search_terms": ["video quality", "learning fails"]},
+        {"question_id": "q_batch002_alex_prompter-1991981943026839897_05", "question_type": "implementation_entry", "question": "What do I need before using this method and what's the first step?", "answer": "Need ytscribe.ai and Gemini access. First step: find a valuable YouTube video on your topic.", "search_terms": ["learning getting started"]}
+      ]
+    },
+    {
+      "source_slug": "EHuanglu-1991560454104313914",
+      "source_content_preview": "A node-based AI canvas that generates hundreds of product advertising images in ~40 seconds from a single product photo.",
+      "questions": [
+        {"question_id": "q_batch002_EHuanglu-1991560454104313914_01", "question_type": "identity_problem", "question": "What is OpenCreator and what specific problem does it solve?", "answer": "AI-powered tool that generates hundreds of product advertising images from one photo in 40 seconds. Solves the problem of creating lots of marketing visuals.", "search_terms": ["ad generation", "product photos"]},
+        {"question_id": "q_batch002_EHuanglu-1991560454104313914_02", "question_type": "plain_language", "question": "In plain language, what does OpenCreator actually do?", "answer": "Upload one product photo, click run, get 100+ different marketing images - models wearing it, lifestyle shots, flat lays, all at once.", "search_terms": ["batch images", "ad creation"]},
+        {"question_id": "q_batch002_EHuanglu-1991560454104313914_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for OpenCreator?", "answer": "Also called: AI ad generator, product image batch tool, e-commerce image maker", "search_terms": ["ad generator", "product photography ai"]},
+        {"question_id": "q_batch002_EHuanglu-1991560454104313914_04", "question_type": "failure_confusion", "question": "What's the most common mistake with OpenCreator and when does it fail?", "answer": "Using low quality input photos. Quality in = quality out. Fails when the input image is blurry or poorly lit.", "search_terms": ["input quality", "photo requirements"]},
+        {"question_id": "q_batch002_EHuanglu-1991560454104313914_05", "question_type": "implementation_entry", "question": "What do I need before using OpenCreator and what's the first step?", "answer": "Need opencreator.io account and good product photo. First step: upload your best product image.", "search_terms": ["getting started with opencreator"]}
+      ]
+    },
+    {
+      "source_slug": "EXM7777-1978484519692075451",
+      "source_content_preview": "Four principles for getting better results from deep research: prioritize sources, map protocol, set boundaries, define output format.",
+      "questions": [
+        {"question_id": "q_batch002_EXM7777-1978484519692075451_01", "question_type": "identity_problem", "question": "What are the four deep research principles and what specific problem does each solve?", "answer": "Prioritize sources, map protocol, set boundaries, define output format. They solve the problem of getting useless generic AI research.", "search_terms": ["deep research", "ai research tips"]},
+        {"question_id": "q_batch002_EXM7777-1978484519692075451_02", "question_type": "plain_language", "question": "In plain language, what do these principles actually do?", "answer": "Tell AI EXACTLY where to look, WHAT to research, how DEEP to go, and WHAT to deliver - no wandering, no generic answers.", "search_terms": ["specific research", "ai instructions"]},
+        {"question_id": "q_batch002_EXM7777-1978484519692075451_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for these principles?", "answer": "Also called: research engineering, structured research prompts, AI research boundaries", "search_terms": ["research prompts", "ai boundaries"]},
+        {"question_id": "q_batch002_EXM7777-1978484519692075451_04", "question_type": "failure_confusion", "question": "What's the most common mistake with these principles and when do they fail?", "answer": "Not being specific enough. 'Research AI' is too broad - fails because AI still goes generic. Need: narrow scope + exact output format.", "search_terms": ["research fails", "scope too broad"]},
+        {"question_id": "q_batch002_EXM7777-1978484519692075451_05", "question_type": "implementation_entry", "question": "What do I need before using these principles and what's the first step?", "answer": "Need clarity on your research topic. First step: define 'prioritize sources' - tell AI exactly which sources to check first.", "search_terms": ["research getting started"]}
+      ]
+    },
+    {
+      "source_slug": "EXM7777-1987203971086450938",
+      "source_content_preview": "A prompt technique that shifts AI from interviewer to guide, making you do the thinking while AI facilitates the process.",
+      "questions": [
+        {"question_id": "q_batch002_EXM7777-1987203971086450938_01", "question_type": "identity_problem", "question": "What is the conversational prompting technique and what specific problem does it solve?", "answer": "Prompt that makes AI ask you questions one at a time instead of interrogating you. Solves the problem of AI taking over your thinking.", "search_terms": ["conversational prompting", "ai interaction"]},
+        {"question_id": "q_batch002_EXM7777-1987203971086450938_02", "question_type": "plain_language", "question": "In plain language, what does this technique actually do?", "answer": "It changes AI from being an interviewer to being a guide - you do the thinking, AI just facilitates.", "search_terms": ["ai guide", "thinking tool"]},
+        {"question_id": "q_batch002_EXM7777-1987203971086450938_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for this technique?", "answer": "Also called: Socratic prompting, thought partner prompting, guide not interviewer", "search_terms": ["socratic method", "guide prompting"]},
+        {"question_id": "q_batch002_EXM7777-1987203971086450938_04", "question_type": "failure_confusion", "question": "What's the most common mistake with this technique and when does it fail?", "answer": "Adding too many instructions that contradict it. Fails when you mix with 'give me comprehensive answer' prompts.", "search_terms": ["prompt conflicts"]},
+        {"question_id": "q_batch002_EXM7777-1987203971086450938_05", "question_type": "implementation_entry", "question": "What do I need before using this technique and what's the first step?", "answer": "Need willingness to think. First step: add the one-line instruction to all your prompts.", "search_terms": ["conversational getting started"]}
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1992043551283175716",
+      "source_content_preview": "Key Gemini 3 prompting tips: vibe coding, temperature at 1.0, simplify prompts, put context at the end.",
+      "questions": [
+        {"question_id": "q_batch002_godofprompt-1992043551283175716_01", "question_type": "identity_problem", "question": "What are the Gemini 3 prompting tips and what specific problem does each solve?", "answer": "Tips: vibe coding, temp at 1.0, simplify prompts, context at end. They solve the problem of using Gemini 2 prompting patterns on Gemini 3 incorrectly.", "search_terms": ["gemini 3", "gemini prompting"]},
+        {"question_id": "q_batch002_godofprompt-1992043551283175716_02", "question_type": "plain_language", "question": "In plain language, what do these tips actually mean?", "answer": "Gemini 3 is different - it wants high-level descriptions not step-by-step instructions, use temp 1.0, and put your big document AFTER your question.", "search_terms": ["vibe coding", "gemini 3 tips"]},
+        {"question_id": "q_batch002_godofprompt-1992043551283175716_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for these tips?", "answer": "Also called: vibe prompting, Gemini 3 rules, natural language Gemini", "search_terms": ["gemini 3 rules"]},
+        {"question_id": "q_batch002_godofprompt-1992043551283175716_04", "question_type": "failure_confusion", "question": "What's the most common mistake with these tips and when do they fail?", "answer": "Using chain-of-thought from Gemini 2. Complex reasoning chains actually HURT Gemini 3 performance. Use thinking_level instead.", "search_terms": ["gemini 2 vs 3", "cot fails"]},
+        {"question_id": "q_batch002_godofprompt-1992043551283175716_05", "question_type": "implementation_entry", "question": "What do I need before using these tips and what's the first step?", "answer": "Need Gemini 3 access. First step: set temperature to 1.0 and try 'describe what you want' instead of 'step 1, step 2'.", "search_terms": ["gemini 3 getting started"]}
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-1991974997766606921",
+      "source_content_preview": "A comprehensive prompt for using AI to solve challenges using Game Theory frameworks.",
+      "questions": [
+        {"question_id": "q_batch002_alex_prompter-1991974997766606921_01", "question_type": "identity_problem", "question": "What is the Game Theory Strategist prompt and what specific problem does it solve?", "answer": "Prompt for using AI to analyze strategic decisions using game theory - Nash equilibria, premortems, coalition analysis. Solves complex decision-making.", "search_terms": ["game theory", "strategic ai"]},
+        {"question_id": "q_batch002_alex_prompter-1991974997766606921_02", "question_type": "plain_language", "question": "In plain language, what does this prompt actually do?", "answer": "It makes AI think like a strategic analyst - mapping all possible moves, finding win-wins, avoiding trap decisions.", "search_terms": ["strategy analysis", "game theory ai"]},
+        {"question_id": "q_batch002_alex_prompter-1991974997766606921_03", "question_type": "alternative_discovery", "question": "What other names or descriptions might someone use for this prompt?", "answer": "Also called: strategic decision prompt, Nash equilibrium prompt, business game theory", "search_terms": ["strategy prompt", "nash equilibrium"]},
+        {"question_id": "q_batch002_alex_prompter-1991974997766606921_04", "question_type": "failure_confusion", "question": "What's the most common mistake with this prompt and when does it fail?", "answer": "Not providing enough player details. Fails when you describe a 'complex situation' without naming all stakeholders.", "search_terms": ["game theory fails", "missing players"]},
+        {"question_id": "q_batch002_alex_prompter-1991974997766606921_05", "question_type": "implementation_entry", "question": "What do I need before using this prompt and what's the first step?", "answer": "Need clarity on your decision/players. First step: list all people involved and what they want.", "search_terms": ["game theory getting started"]}
+      ]
+    }
+  ],
+  "synthesis_questions": [
+    {
+      "question_id": "q_batch002_synth_01",
+      "question_type": "intra_batch_pattern",
+      "question": "What patterns or shared principles emerge across sources in this batch?",
+      "answer": "A key pattern across [[adamrahmanGTM-1975292522248237113]], [[EXM7777-1978484519692075451]], and [[EXM7777-1987203971086450938]] is the importance of specificity over generality. Meanwhile [[rohanpaul_ai-1976725503337021784]] shows tone specificity matters too. [[godofprompt-1983535193752252732]] and [[alex_prompter-1991974997766606921]] both emphasize frameworks over loose prompts.",
+      "referenced_source_slugs": ["adamrahmanGTM-1975292522248237113", "EXM7777-1978484519692075451", "EXM7777-1987203971086450938", "rohanpaul_ai-1976725503337021784", "godofprompt-1983535193752252732", "alex_prompter-1991974997766606921"],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_batch002_synth_02",
+      "question_type": "intra_batch_tension",
+      "question": "Do any sources in this batch contradict each other?",
+      "answer": "Tension exists between [[godofprompt-1992043551283175716]] and general prompting advice. Gemini 3 wants SIMPLE prompts while the GOD.MODE.GPT framework from [[godofprompt-1983535193752252732]] is highly structured. Also [[godofprompt-1992043551283175716]] says don't use chain-of-thought but [[alex_prompter-1991974997766606921]] uses multi-phase strategic reasoning.",
+      "referenced_source_slugs": ["godofprompt-1992043551283175716", "godofprompt-1983535193752252732", "alex_prompter-1991974997766606921"],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_batch002_synth_03",
+      "question_type": "prerequisite_chain",
+      "question": "What implicit prerequisite chain connects these sources?",
+      "answer": "To use [[alex_prompter-1977167152676229265]] effectively, understand tone from [[rohanpaul_ai-1976725503337021784]]. For deep research in [[EXM7777-1978484519692075451]], apply the framework methodology from [[godofprompt-1983535193752252732]]. The AI learning method in [[alex_prompter-1991981943026839897]] can use outputs from [[EHuanglu-1991560454104313914]] for visual materials.",
+      "referenced_source_slugs": ["alex_prompter-1977167152676229265", "rohanpaul_ai-1976725503337021784", "EXM7777-1978484519692075451", "godofprompt-1983535193752252732", "alex_prompter-1991981943026839897", "EHuanglu-1991560454104313914"],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_batch002_synth_04",
+      "question_type": "gap_identification",
+      "question": "What gap or missing technique would someone notice after reading all of these?",
+      "answer": "While the sources cover prompting (tone, structure, specificity), learning (transcripts, visual), and creation (ads, copy), there's no clear guidance on combining these into a single workflow. The user would need to manually sequence: research → strategy → messaging → ad creation → learning loop.",
+      "referenced_source_slugs": ["adamrahmanGTM-1975292522248237113", "EHuanglu-1991560454104313914", "alex_prompter-1991981943026839897"],
+      "cross_batch_refs": []
+    }
+  ],
+  "concept_index_update": {
+    "new_concepts": [
+      {"name": "gtm-prompts", "aliases": ["go-to-market", "gtm-strategy"], "source_slugs": ["adamrahmanGTM-1975292522248237113"]},
+      {"name": "prompt-tone", "aliases": ["tone-matching", "impolite-prompting"], "source_slugs": ["rohanpaul_ai-1976725503337021784"]},
+      {"name": "vibe-coding", "aliases": ["natural-language-prompting"], "source_slugs": ["godofprompt-1992043551283175716"]},
+      {"name": "conversational-prompting", "aliases": ["guide-mode", "socratic-prompting"], "source_slugs": ["EXM7777-1987203971086450938"]},
+      {"name": "deep-research-optimization", "aliases": ["research-boundaries"], "source_slugs": ["EXM7777-1978484519692075451"]},
+      {"name": "grok-writing-prompts", "aliases": ["xai-writing"], "source_slugs": ["godofprompt-1991160280630378890"]}
+    ],
+    "new_connections": [
+      {"from_concept": "prompt-tone", "to_concept": "copywriting", "relationship": "Rude tone in prompts influences sales copy effectiveness", "established_in_batch": "batch_002"},
+      {"from_concept": "gemini-3", "to_concept": "vibe-coding", "relationship": "Gemini 3 prefers high-level descriptions over structured prompts", "established_in_batch": "batch_002"},
+      {"from_concept": "deep-research-optimization", "to_concept": "game-theory", "relationship": "Both need specificity and structured input to work well", "established_in_batch": "batch_002"}
+    ],
+    "updated_clusters": {
+      "prompting_techniques": ["prompt-tone", "vibe-coding", "conversational-prompting", "deep-research-optimization"],
+      "ai_marketing_tools": ["grok-writing-prompts", "gtm-prompts"]
+    }
+  }
+}

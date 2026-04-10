@@ -1,7 +1,7 @@
 ---
 title: "Wiki Index"
 date_created: 2026-04-08
-date_modified: 2026-04-09
+date_modified: 2026-04-10
 summary: "Master index of all wiki pages with one-line summaries"
 tags: [index, wiki]
 type: index
@@ -91,3 +91,4 @@ status: draft
 ## Maintenance
 
 - [[lint-2026-04-09]] (2026-04-09) — Lint report: 5 broken links, 0 missing frontmatter
+- [[lint-2026-04-10]] (2026-04-10) — Lint report: 11 missing concept pages
