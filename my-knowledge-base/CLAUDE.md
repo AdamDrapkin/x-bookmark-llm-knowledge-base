@@ -36,7 +36,7 @@ Personal knowledge base on my X (previously Twitter) bookmarks across various to
 
 ### INGEST
 1. Read new source document
-2. If bookmark unclassified → read @bookmark-classification first
+2. If bookmark unclassified → read @bookmark-classification.md first
 3. Read @browser.md for extraction details
 4. Create source summary in wiki/sources/
 5. Identify concepts/entities → create/update pages
