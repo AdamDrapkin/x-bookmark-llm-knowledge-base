@@ -1,0 +1,26 @@
+# External Link - God Mode GPT Prompt Resources
+
+## Source
+- **Author**: God of Prompt (@godofprompt)
+- **Tweet ID**: 1983535193752252732
+- **URL**: https://x.com/godofprompt/status/1983535193752252732
+
+## Link Details
+- **Domain**: t.co (shortened links)
+- **Paths**: /Uvpr6DBDjV, /w3oVSp3UfD, /79Nww87i87
+
+## Content
+
+Links referenced in the "GOD.MODE.GPT :: MAX" prompt:
+1. Coworker.not.bot link
+2. t.work link
+3. Help.win link
+
+These are companion resources for the prompt framework shown in the tweet image.
+
+## Related Concepts
+- [[prompt-engineering]] - The prompt framework detailed
+- [[gpt-prompting]] - Advanced prompting techniques
+
+## Links
+- Tweet: https://x.com/godofprompt/status/1983535193752252732

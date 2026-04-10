@@ -1,0 +1,28 @@
+# External Link - ytscribe.ai
+
+## Source
+- **Author**: Alex Prompter (@alex_prompter)
+- **Tweet ID**: 1991981943026839897
+- **URL**: https://x.com/alex_prompter/status/1991981943026839897
+
+## Link Details
+- **Domain**: ytscribe.ai
+- **Path**: (root)
+
+## Content
+
+**Service**: YouTube video transcript extractor
+
+**How to use**:
+1/ Find a value-packed YT video
+2/ Get transcript from ytscribe.ai
+3/ Use prompt in Gemini: "Generate an image by turning this transcript into a concise cheatsheet with key takeaways."
+
+## Related Concepts
+- [[youtube-transcription]] - Converting video to text
+- [[ai-learning]] - Using AI to learn faster
+- [[gemini-prompting]] - Using Gemini for image generation
+
+## Links
+- Service: https://ytscribe.ai
+- Tweet: https://x.com/alex_prompter/status/1991981943026839897

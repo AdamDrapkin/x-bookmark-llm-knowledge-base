@@ -14,6 +14,48 @@ Personal knowledge base on my X (previously Twitter) bookmarks across various to
 
 **Full directory structure:** See [SCHEMA.md](SCHEMA.md)
 
+## Backlog Processing Workflow
+
+Reference the wiki-backlog skill for full process: ~/.claude/skills/wiki-backlog/SKILL.md
+When wiki-backlog skill is activated, the following workflow applies:
+
+Step 1 - Read backlog-log.md: Identify batches, what's processed, target batch
+Step 2 - Get batch IDs: Extract specific bookmark IDs from backlog-log.md
+Step 3 - Query database: Fetch ONLY those IDs from ~/.ft-bookmarks/bookmarks.db
+Step 4 - Read browser.md: Load extraction process before any processing
+Step 5 - Extract each bookmark individually:
+  5a. Navigate to tweet URL in browser
+  5b. Take browser SNAPSHOT (NOT from FT bookmarks)
+  5c. Evaluate the SNAPSHOT for: isRepost, isReply, hasImage, hasVideo, hasExternalLinks
+  5d. If image → download to raw/x-article-images/
+  5e. If video → download to raw/x-video-transcripts/ + transcript
+  5f. If external link → save as .txt to raw/x-external-links/
+  5g. Verify file saved (ls confirmation)
+  5h. Mark TODO complete → THEN next bookmark
+  5i. TODO: AFTER ALL bookmarks extracted → Review all snapshots for missing media:
+       - Check temp snapshots for any missed images, videos, links
+       - Create TODO for each missing item found
+       - Mark TODO complete
+       - Only then move to Step 6
+Step 6 - Process media BEFORE wiki-ingest:
+  6a. For each image → run image-analysis skill
+  6b. For each video → run video-analysis skill
+  6c. Verify analysis saved to wiki/x-image-analyses/ or wiki/x-video-analyses/
+Step 7 - Run qa-council: One run per source, verify QA pair created
+Step 8 - Run wiki-lint: One run per category, fix issues found
+Step 9 - Update all wiki indexes: wiki/index.md, wiki/sources/, wiki/concepts/, wiki/entities/, wiki/log.md
+Step 10 - Update backlog-log.md: Mark batch IDs as processed
+
+VERIFICATION AFTER EACH SUB-STEP:
+- File exists in correct location (ls to confirm)
+- Only then mark TODO complete
+- Only then move to next item
+
+CRITICAL MEDIA RULE:
+- NEVER trust the database for media detection (isRepost, hasImage, hasVideo, hasExternalLinks)
+- The browser SNAPSHOT is the ONLY source of truth for media identification
+- Ignore database media fields - evaluate the snapshot only
+
 ## File Conventions
 - All filenames: kebab-case, lowercase (e.g., active-inference.md)
 - Source summaries: `{author}-{year}-{short-title}.md`

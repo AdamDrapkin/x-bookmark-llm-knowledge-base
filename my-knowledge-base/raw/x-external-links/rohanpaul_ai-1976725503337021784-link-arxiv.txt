@@ -1,0 +1,32 @@
+# External Link - Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy
+
+## Source
+- **Author**: Rohan Paul (@rohanpaul_ai)
+- **Tweet ID**: 1976725503337021784
+- **URL**: https://x.com/rohanpaul_ai/status/1976725503337021784
+
+## Link Details
+- **Domain**: arxiv.org
+- **Path**: /abs/2510.04950
+
+## Content
+
+**Paper Title**: "Mind Your Tone: Investigating How Prompt Politeness Affects LLM Accuracy"
+
+**Key Findings**:
+- Very polite and polite tones REDUCED accuracy
+- Neutral, rude, and very rude tones IMPROVED accuracy
+- Statistical tests confirmed differences were significant, not random
+- Top score: 84.8% for very rude prompts
+- Lowest score: 80.8% for very polite prompts
+- Older models (GPT-3.5, Llama-2) behaved differently
+- GPT-4-based models (ChatGPT-4o) show clear reversal where harsh tone works better
+
+## Related Concepts
+- [[prompt-engineering]] - The practice of optimizing LLM inputs
+- [[llm-accuracy]] - Factors affecting LLM output quality
+- [[prompt-tone]] - How tone affects LLM performance
+
+## Links
+- Paper: https://arxiv.org/abs/2510.04950
+- Tweet: https://x.com/rohanpaul_ai/status/1976725503337021784
