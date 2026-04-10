@@ -948,10 +948,8 @@ status: draft
 
 ## AFTER COMPLETION
 
-**When you finish extracting all content from the tweet:**
+**When you finish extracting ALL content from ALL tweets in the batch:**
 
-➡️ **Move on to creating a source summary in `wiki/sources/`**
+➡️ **Return to wiki-backlog skill for Step 3: wiki-ingest**
 
-Follow the wiki sources step in CLAUDE.md to create the source summary markdown file.
-
-This source summary becomes part of the LLM Knowledge Base for future reference.
+(wiki-backlog will create source summaries in wiki/sources/)
