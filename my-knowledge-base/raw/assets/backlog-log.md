@@ -126,7 +126,7 @@ status: draft
 29. 1992887472557342779 | alex_prompter | R.I.P Gartner - generate full industry reports with AI
 30. 1997307729543823785 | alex_prompter | Claude Opus 4.5 just killed consulting - 3 prompts for McKinsey-level output
 
-### Batch 4 (IDs 31-40)
+### Batch 4 (IDs 31-40) ✅ done
 31. 1997233746630893733 | aigleeson | OpenAI, Anthropic, and Google use 10 internal prompting techniques
 32. 1997137131958096224 | TensorPoet | Screenshots beat prompts - key takeaways from MengTo
 33. 1996673781243564046 | EHuanglu | Gemini 3 can create interactive 3D webpage in mins

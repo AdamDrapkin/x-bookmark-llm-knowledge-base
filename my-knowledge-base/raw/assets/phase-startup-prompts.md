@@ -90,22 +90,30 @@ After Phase 2 finishes:
 
 ---
 
-## Phase 3 Prompt (Step 6)
+## Phase 3 Prompt (Steps 6 + wiki-ingest)
 
-**Use for:** Continuing to Q&A generation (same conversation as Phase 2)
+**Use for:** Create source summaries THEN run qa-council (same conversation as Phase 2)
+
+**CRITICAL FIX:** Sources must be created BEFORE qa-council can run. wiki-ingest creates sources.
 
 ```
 For batch #BATCH_NUM, you are continuing wiki backlog processing.
 
-## TARGET: Phase 3 - Execute wiki-backlog skill Step 6
+## TARGET: Phase 3 - Create sources + Execute wiki-backlog skill Step 6
 
-Execute Step 6 from the wiki-backlog skill:
+**CRITICAL:** Sources must exist in wiki/sources/ BEFORE qa-council can run.
 
 1. Check temp directory for this batch: /tmp/wiki-backlog-batch-{BATCH_NUM}/
    - Review Phase 1/2 progress to confirm media analysis completed
 
-2. **Step 6** - Run qa-council on each source:
-   - Sources are in wiki/sources/ (10 sources from this batch)
+2. **Phase 3a** - Create source summaries (wiki-ingest):
+   - Execute wiki-ingest for EACH of the 10 bookmark IDs in this batch
+   - Create source summary in wiki/sources/{author}-{tweet-id}.md
+   - MUST create sources BEFORE qa-council can run
+   - DO NOT batch - process ONE source at a time
+
+3. **Phase 3b** - Run qa-council on each source:
+   - Sources now exist in wiki/sources/ (10 sources from this batch)
    - For EACH source: run qa-council skill, verify QA pair in wiki/qa-pairs/
    - DO NOT batch - process ONE source at a time
 
@@ -175,5 +183,5 @@ After Phase 4 finishes:
 | Batch 1 | 1-10 | done |
 | Batch 2 | 11-20 | done |
 | Batch 3 | 21-30 | next |
-| Batch 4 | 31-40 | - |
+| Batch 4 | 31-40 | done |
 | Batch 5 | 41-50 | - |
