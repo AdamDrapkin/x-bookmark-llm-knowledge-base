@@ -1,0 +1,30 @@
+# External Link - OpenCreator
+
+## Source
+- **Author**: Emma Huang (@EHuanglu)
+- **Tweet ID**: 1991560454104313914
+- **URL**: https://x.com/EHuanglu/status/1991560454104313914
+
+## Link Details
+- **Domain**: opencreator.io
+- **Path**: / (homepage)
+
+## Content
+
+**OpenCreator** is an AI-powered content creation platform.
+
+### Key Features:
+- AI-powered content creation for various formats
+- Tools for generating and editing content
+- Platform for creators to produce AI-assisted content
+
+### Use Case:
+For creators looking to leverage AI for content production across different formats.
+
+## Related Concepts
+- [[ai-content-creation]] - AI-assisted content creation
+- [[content-creation-tools]] - Tools for content creators
+
+## Links
+- Tool: https://opencreator.io
+- Tweet: https://x.com/EHuanglu/status/1991560454104313914

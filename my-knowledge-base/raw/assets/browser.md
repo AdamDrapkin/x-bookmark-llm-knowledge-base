@@ -186,6 +186,14 @@ if (isRepost) {
 const allPosts = document.querySelectorAll('[data-testid="cellInnerDiv"]');
 const postCount = allPosts.length;
 
+// Check for same-author first comment (author adds follow-up in comments)
+const firstComment = document.querySelector('[data-testid="cellInnerDiv"]');
+const mainAuthor = document.querySelector('[data-testid="tweet"] a[href*="/"]')?.href || '';
+const hasSameAuthorComment = firstComment && mainAuthor && firstComment.href && firstComment.href.includes(mainAuthor.split('/').pop());
+
+// Skip GIFs - they add no value
+const hasGif = tweetText.includes('GIF') || document.querySelector('button[data-testid="playGif"]');
+
 // Check for images
 const images = document.querySelectorAll('img[src*="twimg.com"]');
 const imageCount = images.length;
@@ -206,6 +214,8 @@ console.log(JSON.stringify({
   postCount: postCount,
   imageCount: imageCount,
   hasVideo: hasVideo,
+  hasGif: hasGif,
+  hasSameAuthorComment: hasSameAuthorComment,
   externalLink: externalLink,
   tweetText: tweetText.substring(0, 200)
 }));
@@ -217,6 +227,8 @@ console.log(JSON.stringify({
 |-------|---------|
 | isRepost = true | Process as repost: create 2 wiki entries (repost spin + original), use Step 2.1 |
 | postCount > 1 | Go to STEP 3: Extract Thread |
+| hasGif = true | Skip GIF - Go to STEP 8: Confirm & Exit |
+| hasSameAuthorComment = true | Check first comment for link - if link exists, go to STEP 5: Handle External Link |
 | hasVideo = true | Use ScrapeCreators to get video URLs → Go to STEP 4: Handle Video |
 | externalLink exists AND is NOT x.com | Go to STEP 5: Handle External Link |
 | Content appears to be X Article | Go to STEP 6: Handle Articles |
@@ -620,14 +632,33 @@ console.log(JSON.stringify({
    ```
 
 4. **Save to `raw/x-external-links/`:**
+   Use this template:
+
    ```
    Filename: {author}-{tweet-id}-link-{domain}.txt
    
-   Content:
-   Title: {page title}
-   URL: {actual URL}
-   Content Preview: {extracted text}
-   Source Tweet: https://x.com/{author}/status/{tweet-id}
+   # External Link - {short title}
+   
+   ## Source
+   - **Author**: {author_name} (@{author_handle})
+   - **Tweet ID**: {tweet_id}
+   - **URL**: https://x.com/{author_handle}/status/{tweet_id}
+   
+   ## Link Details
+   - **Domain**: {domain.com}
+   - **Path**: {URL path}
+   
+   ## Content
+   
+   {Description of linked content - what it is, key features, use case}
+   
+   ## Related Concepts
+   - [[concept1]] - Description
+   - [[concept2]] - Description
+   
+   ## Links
+   - Link: {actual URL}
+   - Tweet: https://x.com/{author_handle}/status/{tweet_id}
    ```
 
 **Also check thread comments for external links:**

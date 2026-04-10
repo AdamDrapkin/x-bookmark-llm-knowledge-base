@@ -1,0 +1,33 @@
+# External Link - AI-First Brain Newsletter
+
+## Source
+- **Author**: Machina (@EXM7777)
+- **Tweet ID**: 1978484519692075451
+- **URL**: https://x.com/EXM7777/status/1978484519692075451
+
+## Link Details
+- **Domain**: aifirstbrain.com
+- **Path**: / (newsletter signup)
+
+## Content
+
+This is a **weekly AI newsletter** by EXM7777 (Machina).
+
+### Key Features:
+- Weekly AI insights delivered every Monday
+- Focuses on practical AI deployment and working systems
+- No spam, no ads - pure value
+- 30-minute reads to keep you current on AI
+
+### From the Link:
+Every Monday I'll tell you what actually matters in AI and how to use in 30min. So you stop feeling behind and start deploying working systems every week. No spam - No ads - Pure value delivered in your inbox
+
+## Related Concepts
+
+- [[ai-newsletter]] - AI-focused newsletters
+- [[content-creation]] - Content creation
+- [[machina]] - The author
+
+## Links
+- Newsletter: https://aifirstbrain.com/
+- Tweet: https://x.com/EXM7777/status/1978484519692075451
