@@ -19,8 +19,8 @@ Before starting any extraction task:
    - `raw/x-external-links/`
    - `raw/x-github-repos/`
 3. **Verify ffmpeg is installed** — run `ffmpeg -version` to confirm
-4. **Check OpenAI API key is available** — check environment or `~/.ft-bookmarks/.env`
-5. **Check Gemini API key is available** — check environment or `~/.ft-bookmarks/.env`
+4. **Check OpenAI API key is available** — check environment or `/Users/adamdrapkin/Obsidian/synteo-intelligence/.env`
+5. **Check Gemini API key is available** — check environment or `/Users/adamdrapkin/Obsidian/synteo-intelligence/.env`
 
 ---
 
@@ -416,6 +416,51 @@ ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:no
 - **If ≤2 min:** Go to STEP 4i: Gemini Vision Analysis
 - **If >2 min:** Continue to STEP 4d: Download Video → Whisper transcription
 
+---
+
+#### Step 4c-ALT: YouTube Video Detection & Extraction
+
+**When to use:** When video is detected AND the video source is YouTube (youtube.com or youtu.be URL)
+
+**CRITICAL:** YouTube videos should NOT be processed via Gemini Vision or Whisper. Use ScrapeCreators YouTube transcript endpoint instead.
+
+**Detection:**
+- Check if video URL contains `youtube.com`, `youtu.be`, or `yewtu.be`
+- Or check if the tweet contains YouTube link in entities
+
+**YouTube Processing Path:**
+
+| YouTube Video Type | Processing Method |
+|-------------------|-------------------|
+| Any duration | **ScrapeCreators YouTube Transcript** — use `mcp__scrape-creators__v1_youtube_video_transcript` |
+
+**Action:**
+1. Extract YouTube video URL from the tweet
+2. Use ScrapeCreators endpoint: `mcp__scrape-creators__v1_youtube_video_transcript`
+3. Save transcript to `raw/x-video-transcripts/{author}-{tweet-id}-transcript.txt`
+4. **DO NOT** run Gemini Vision on YouTube videos
+5. **DO NOT** run Whisper on YouTube videos — transcript is already extracted
+
+**Endpoint:**
+```
+mcp__scrape-creators__v1_youtube_video_transcript
+- url: YouTube video URL
+- language: (optional) 2-letter language code, defaults to 'en'
+```
+
+**Example:**
+```python
+# ScrapeCreators call for YouTube transcript
+mcp__scrape-creators__v1_youtube_video_transcript(
+    url="https://www.youtube.com/watch?v=VIDEO_ID",
+    language="en"
+)
+```
+
+**Output:** Transcript text saved to `raw/x-video-transcripts/{author}-{tweet-id}-transcript.txt`
+
+---
+
 #### Step 4d: Download Video
 
 ```bash
@@ -481,7 +526,7 @@ rm /tmp/{author}-video.mp4 /tmp/{author}-audio.mp3
 **CRITICAL:** For short videos, Gemini 2.5 Pro Vision provides both transcript + visual analysis. No need to run Whisper separately.
 
 **Prerequisites:**
-- `$GEMINI_API_KEY` environment variable must be set (check `~/.ft-bookmarks/.env` if not in environment)
+- `$GEMINI_API_KEY` environment variable must be set (check `/Users/adamdrapkin/Obsidian/synteo-intelligence/.env` if not in environment)
 - Video has been downloaded to `/tmp/{author}-video.mp4`
 
 **Action:**
@@ -489,8 +534,9 @@ rm /tmp/{author}-video.mp4 /tmp/{author}-audio.mp3
 1. **Check API key is set:**
 ```bash
 echo $GEMINI_API_KEY
-# If empty, check .env file:
-cat ~/.ft-bookmarks/.env | grep GEMINI
+# If empty, source .env file:
+source /Users/adamdrapkin/Obsidian/synteo-intelligence/.env
+echo $GEMINI_API_KEY
 ```
 If empty, source from .env or ask user for the API key.
 
@@ -807,7 +853,7 @@ console.log(JSON.stringify(allLinks));
 **CRITICAL:** Analyze ALL extracted images with Gemini 2.5 Pro Vision. Each image gets its own analysis.
 
 **Prerequisites:**
-- `$GEMINI_API_KEY` environment variable must be set (check `~/.ft-bookmarks/.env` if not in environment)
+- `$GEMINI_API_KEY` environment variable must be set (check `/Users/adamdrapkin/Obsidian/synteo-intelligence/.env` if not in environment)
 - Images have been downloaded to `raw/x-article-images/`
 - `image-analysis` skill is available
 
@@ -816,8 +862,9 @@ console.log(JSON.stringify(allLinks));
 1. **Check API key is set:**
 ```bash
 echo $GEMINI_API_KEY
-# If empty, check .env file:
-cat ~/.ft-bookmarks/.env | grep GEMINI
+# If empty, source .env file:
+source /Users/adamdrapkin/Obsidian/synteo-intelligence/.env
+echo $GEMINI_API_KEY
 ```
 If empty, source from .env or ask user for the API key.
 
