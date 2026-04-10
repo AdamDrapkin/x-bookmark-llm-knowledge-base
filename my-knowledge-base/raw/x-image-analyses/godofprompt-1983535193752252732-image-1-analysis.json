@@ -1,0 +1,245 @@
+```json
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "social media"
+  },
+  "text_content": {
+    "headlines": [
+      "Personalization",
+      "Enable customization",
+      "ChatGPT personality",
+      "Custom instructions",
+      "About you",
+      "Nickname"
+    ],
+    "body_text": [
+      "General",
+      "Notifications",
+      "Personalization",
+      "Apps & Connectors",
+      "Schedules",
+      "Data controls",
+      "Security",
+      "Account",
+      "Customize how ChatGPT responds to you. Learn more",
+      "Set the style and tone ChatGPT uses when responding.",
+      "Default",
+      "GOD.MODE.GPT :: MAX",
+      "<THINK>",
+      "Strip assumptions | Invert | 2nd/3rd order | (partially obscured)",
+      "Chatty",
+      "Witty",
+      "Straight shooting",
+      "Encouraging",
+      "Gen Z",
+      "...",
+      "What should ChatGPT call you? (partially obscured)",
+      "Cancel",
+      "Save"
+    ],
+    "visible_urls": [
+      "Learn more (styled as a link)"
+    ],
+    "metadata": "N/A"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "Approximately 1:1 (square)",
+    "layout": "multi-element",
+    "focal_points": [
+      "Primary: The 'Custom instructions' text box containing 'GOD.MODE.GPT :: MAX', highlighted by a black box.",
+      "Secondary: The main heading 'Personalization' and the 'Save' button at the bottom right."
+    ],
+    "visual_hierarchy": "The eye is drawn to the main heading 'Personalization', then moves down the content column to the highlighted 'Custom instructions' text box. The left navigation menu is secondary, and the action buttons ('Cancel', 'Save') at the bottom are the final point of interaction.",
+    "balance": "asymmetric - A narrow vertical navigation menu on the left is balanced by a wider main content area on the right."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "70%",
+        "role": "background"
+      },
+      {
+        "color": "Light Gray",
+        "hex": "#F0F4F8",
+        "percentage": "15%",
+        "role": "accent"
+      },
+      {
+        "color": "Dark Gray / Near Black",
+        "hex": "#101828",
+        "percentage": "10%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Royal Blue",
+        "hex": "#3B82F6",
+        "percentage": "1%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "monochromatic with a single accent color (blue)",
+    "temperature": "neutral",
+    "saturation": "desaturated",
+    "contrast": "medium contrast"
+  },
+  "lighting": {
+    "type": "N/A",
+    "source_count": "N/A",
+    "direction": "N/A",
+    "directionality": "diffused",
+    "quality": "even",
+    "intensity": "high-key",
+    "contrast_ratio": "low contrast (flat)",
+    "mood": "professional",
+    "shadows": {
+      "type": "minimal",
+      "density": "faint",
+      "placement": "under some UI elements like buttons to create depth",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "N/A",
+      "placement": "N/A"
+    },
+    "ambient_fill": "N/A",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow - The main settings modal is in sharp focus, while the content behind it is slightly blurred.",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "UI/UX Design",
+    "influences": [
+      "Modern minimalist design",
+      "Flat design principles",
+      "Corporate software interface design"
+    ],
+    "mood": "functional",
+    "atmosphere": "The image conveys a sense of clean, organized functionality and user control. It feels modern, straightforward, and professional.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "medium",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "integrated - Text is systematically placed within a grid layout to define sections, labels, and buttons.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "A settings screen for 'Personalization' within a software application, likely ChatGPT.",
+    "positioning": "center",
+    "scale": "close-up",
+    "interaction": "The image displays a user interface designed for interaction, featuring toggles, text fields, and buttons.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "N/A",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "digital environment - A software application interface.",
+    "spatial_depth": "shallow - A settings modal window is layered on top of a blurred main application window.",
+    "elements_detailed": [
+      {
+        "item": "Settings Modal Window",
+        "position": "center",
+        "distance": "foreground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "Contains a left navigation pane and a right content area."
+      },
+      {
+        "item": "Blurred Application Content",
+        "position": "right and bottom edges",
+        "distance": "background",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Indistinct text and UI elements are visible, suggesting the main application view."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Close icon (top-left), navigation menu with icons and labels (left), 'Personalization' title (top-center), 'Enable customization' toggle (top-right), 'ChatGPT personality' dropdown (center), 'Custom instructions' text field (center), suggestion buttons ('Chatty', 'Witty', etc.), 'Nickname' text field (bottom-center), 'Cancel' button (bottom-right), 'Save' button (bottom-right).",
+    "background_treatment": "blurred"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Screenshot of a modern AI chatbot settings screen, light mode UI, focused on the 'Custom Instructions' feature, minimalist design, sans-serif font.",
+      "UI/UX design of a personalization modal window for a software application, clean and professional aesthetic, with a highlighted text input field and action buttons. The modal is in focus over a blurred application background."
+    ],
+    "keywords": [
+      "UI",
+      "UX",
+      "Screenshot",
+      "ChatGPT",
+      "Settings"
+    ],
+    "technical_settings": "Digital screen capture, 1:1 aspect ratio, sharp focus on the foreground modal, shallow depth of field effect for the background.",
+    "post_processing": "No color grading or filters. The image is a direct representation of a software interface."
+  }
+}
+```

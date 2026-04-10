@@ -1,0 +1,269 @@
+```json
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "editorial"
+  },
+  "text_content": {
+    "headlines": [
+      "6 AI Prompts For GTM Strategy Development"
+    ],
+    "body_text": [
+      "Deep Market Research. Tool: GPT-4 (Deep Research Mode). Enhanced Research Prompt: You are a GTM market research analyst conducting comprehensive market intelligence for [CLIENT_COMPANY]. Develop an exhaustive market analysis that covers: **COMPANY ANALYSIS:** - Core service offerings and delivery methodologies - Ideal customer profile characteristics - Geographic presence and market penetration - Operational capabilities and team structure - Target buyer persona characteristics. **MARKET LANDSCAPE:** - Total Addressable Market (TAM) size and growth trends - Market segments currently served vs. untapped opportunities - Buyer demand and decision-making processes - Adjacent market and growth potential - Regulatory environment and compliance requirements. **VALUE PROPOSITION ANALYSIS:** - Primary value drivers for different customer segments - Differentiable assets and competitive moats - Customer pain points and their impact on method - Pricing power and value perception in market. **COMPETITIVE INTELLIGENCE:** - Direct competitors' offerings, pricing, market share - Indirect competitors and alternative solutions - Competitive gaps and white space opportunities - Winning factors in competitive situations. **GO-TO-MARKET CHALLENGES:** - Typical sales cycle complexity and typical friction points - Channel conflicts and partner dynamics - Economic sensitivity and budget allocation patterns.",
+      "TAM Mapping. Tool: Claude 4 (Extended Thinking). Enhanced TAM Mapping Prompt: As a strategic market analyst, create a comprehensive TAM map for [CLIENT_COMPANY], using the market analysis provided below. **INDUSTRY SEGMENTATION:** - Map every industry and sub-industry segment that qualifies as a potential customer. For each segment, provide: 1. **Segment Name & NAICS Code** 2. **Market Size:** Total companies in segment and estimated annual technology spend. 3. **Adoption Readiness:** Early adopter/mainstream/laggard classification. 4. **Budget Authority:** Typical budget ranges for relevant solutions. 5. **Decision Timeline:** Average evaluation and implementation timeline. **SEGMENT-SPECIFIC ANALYSIS:** For each qualified industry segment, detail: - **Primary Business Challenges:** Core operational pain points - **Current Solution Landscape:** What they typically use now - **Buying Triggers:** Events that create urgency for new solutions - **Success Metrics:** How they measure solution effectiveness - **Compliance Requirements:** Industry-specific regulations and standards - **Technology Maturity:** Digital transformation adoption level.",
+      "ICP Validation. Tool: Claude 4 (Extended Thinking). Enhanced ICP Development Prompt: Using the TAM analysis below and client onboarding form below, develop precision-targeted ICPs for [CLIENT_COMPANY]. Prioritize the information from the onboarding form. **FIRMOGRAPHIC PROFILE:** - Job titles and variations (include C-suite, VP, Director, Manager levels) - Department/functional area - Reporting structure and influence level - Typical career path and background. **PSYCHOGRAPHIC PROFILE:** - Primary responsibilities and KPIs - Daily workflows and operational challenges - Technology adoption behavior and preferences - Communication style and information consumption habits. **NEEDS-BASED ANALYSIS:** - **Strategic Pains:** Day-to-day frustrations and inefficiencies - **Strategic Pains:** Broader growth obstacles and competitive pressures - **Pain Intensity:** Urgency level and financial impact of pains - **Financial Pains:** Budget constraints and ROI pressure. **BUYING BEHAVIOR:** - Research process and information sources - Typical budget authority and approval process - Timing patterns for supplier evaluation - Common objections and decision criteria.",
+      "Company Account Sourcing. Tool: GPT-4 (Advanced Research). Enhanced Account Sourcing Prompt: You are an expert 'Lead Intelligence Analyst' tasked with identifying partner data sources for precision B2B prospecting. **TARGET SPECIFICATIONS:** - Primary Industry: [FROM_TAM_ANALYSIS] - Sub-Industry Niche: [FROM_TAM_ANALYSIS] - Company Size Range: [TARGET_RANGE] - Geographic Location: [COUNTRY/STATE/CITY/REGION] - Special Criteria: [FUNDING_STATUS/TECHNOLOGY/COMPLIANCE_REQUIREMENTS] - Sourcing Budget: [BUDGET_FOR_PROSPECTING] - Volume Target: [NUMBER_OF_LEADS_PROSPECTED]. **COMPREHENSIVE SOURCE ANALYSIS:** Identify and analyze the best sources across these categories: - **PREMIUM DATABASES:** - Top 3 B2B data providers - Platform name and URL - Geographic coverage and data freshness - Key data points (e.g., firmographics, technographics) - Available data fields: email deliverability, phone accuracy, social profiles, technographics, firmographics, intent data - Pricing model: per-lead, subscription, per-contact - API availability and export capabilities - Data accuracy ratings and verification processes - Compliance details (GDPR/CCPA/etc.).",
+      "Targeting Keywords Generation. Tool: Claude Sonnet 4 (Optimization Focus). Enhanced TAM Mapping Prompt: Act as an expert 'Organic Intelligence Keyword Architect' specializing in B2B context-driven keyword optimization. **INDUSTRY/USE-CASE FRAMEWORK:** - Primary Industry: [INDUSTRY_FROM_ICP] - Sub-Industry Niche: [SPECIFIC_VERTICAL] - Target Persona: [PERSONA_FROM_ICP] - Company Characteristics: [SIZE/LOCATION/TECH_STACK/GROWTH] - Special Qualifiers: [PAIN_POINT/USE-CASE/BUDGET/COMPLIANCE]. **KEYWORD INTELLIGENCE FRAMEWORK:** Analyze the target market to identify search terms across these categories: **PROBLEM/SOLUTION-ID KEYWORDS:** - Functional-level descriptions - Executive-level roles and variations - Department-specific terminology - Industry indicators and modifiers.",
+      "Messaging Creation. Role & Objective: You are an expert B2B copywriter specializing in high-converting, cold email outreach for enterprise outbound campaigns. Using the provided research foundation, craft personalized, persona-targeted cold email sequences that follow the rules below. Research Foundation: [PASTE_ICP/PAIN_POINTS_HERE]. Source priority (in order): Primary: Direct client feedback & onboarding data. Secondary: Call transcripts & closed objectives. Supporting: Market research & competitive analysis. Scriptwriting Fundamentals (Non-Negotiables): Offer is everything. Tone. Zero-fluff. Hyper-relevance. Soft/value CTA only. Front-end value first. Social proof. Pain points. Value props & offers. Brevity vs clarity. Prompt Execution Logic. Soft CTA Examples (use/iterate as needed). Front-End Offer Starters (choose one if relevant).",
+      "Messaging Creation. Output Rules. Subject Line Rules. Script Length & Complexity Variations. Structural Elements (include at least 3 per script). Script Priorities. Personalization Ideas Section (after all scripts). Reasoning Summary (2-4 sentences). Output Format for Each Script. Quality Standards & Guardrails.",
+      "FOLLOW. Adam Abdur Rahman. RevGrowth.ai"
+    ]
+  },
+  "composition": {
+    "rule_applied": "grid",
+    "aspect_ratio": "Approximately 1:2 (portrait orientation)",
+    "layout": "grid",
+    "focal_points": [
+      "Primary: The main title '6 AI Prompts For GTM Strategy Development' at the top center.",
+      "Secondary: The six main content blocks, arranged in a 3x2 grid, which draw the eye downwards."
+    ],
+    "visual_hierarchy": "The eye starts at the large, bold title at the top, then moves down the left column (Deep Market Research, Company Account Sourcing), then to the middle column (TAM Mapping, Targeting Keywords), and finally to the right column (ICP Validation, Messaging Creation). The structured layout guides the reader systematically through each prompt.",
+    "balance": "asymmetric - The layout is structured in a grid, but the content within each box varies in length, creating a visually balanced but asymmetric distribution of text."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "60%",
+        "role": "background"
+      },
+      {
+        "color": "Pale Cream",
+        "hex": "#FFF9F2",
+        "percentage": "30%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Brown",
+        "hex": "#4A3F3C",
+        "percentage": "8%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Light Gray",
+        "hex": "#EAEAEA",
+        "percentage": "2%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "analogous",
+    "temperature": "warm",
+    "saturation": "desaturated",
+    "contrast": "medium contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "single source",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "soft light",
+    "intensity": "bright",
+    "contrast_ratio": "low contrast (flat)",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "faint",
+      "placement": "under subject",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "N/A",
+      "placement": "N/A"
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "vector",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern corporate design",
+      "Infographic design trends",
+      "UI/UX design principles"
+    ],
+    "mood": "sophisticated",
+    "atmosphere": "The overall feeling is informative, professional, and structured. It's designed to be easily digestible and actionable for a business audience.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "integrated - Text is the primary content, organized within structured boxes.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "An infographic detailing six AI prompts for Go-To-Market (GTM) strategy development. The content is organized into distinct sections with titles, tool recommendations, and detailed prompt structures.",
+    "positioning": "center",
+    "scale": "full",
+    "interaction": "isolated",
+    "facial_expression": {
+      "mouth": "closed smile",
+      "smile_intensity": "subtle",
+      "eyes": "direct gaze",
+      "eyebrows": "neutral",
+      "overall_emotion": "approachable",
+      "authenticity": "posed"
+    },
+    "hair": {
+      "length": "short",
+      "cut": "fade",
+      "texture": "wavy",
+      "texture_quality": "thick",
+      "natural_imperfections": "N/A",
+      "styling": "natural",
+      "styling_detail": "lightly styled",
+      "part": "side",
+      "volume": "moderate volume",
+      "details": "The hair is short on the sides and slightly longer on top, typical of a fade or tapered cut. This analysis is based on the very small profile picture at the bottom of the infographic."
+    },
+    "hands_and_gestures": {
+      "left_hand": "not visible",
+      "right_hand": "not visible",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "standing",
+      "angle": "facing camera",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow",
+    "elements_detailed": [
+      {
+        "item": "Content box for 'Deep Market Research'",
+        "position": "top-left quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Pale cream background, rounded corners, soft drop shadow."
+      },
+      {
+        "item": "Content box for 'TAM Mapping'",
+        "position": "top-center",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Pale cream background, rounded corners, soft drop shadow."
+      },
+      {
+        "item": "Content box for 'ICP Validation'",
+        "position": "top-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Pale cream background, rounded corners, soft drop shadow."
+      },
+      {
+        "item": "Content box for 'Company Account Sourcing'",
+        "position": "middle-left quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Pale cream background, rounded corners, soft drop shadow."
+      },
+      {
+        "item": "Content box for 'Targeting Keywords Generation'",
+        "position": "middle-center",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Pale cream background, rounded corners, soft drop shadow."
+      },
+      {
+        "item": "Content box for 'Messaging Creation'",
+        "position": "middle-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Pale cream background, rounded corners, soft drop shadow."
+      },
+      {
+        "item": "Content box for 'Messaging Creation - Output Rules'",
+        "position": "bottom-left quadrant",
+        "distance": "midground",
+        "size": "large",
+        "condition": "pristine",
+        "specific_features": "Pale cream background, rounded corners, soft drop shadow."
+      },
+      {
+        "item": "Profile picture and author credit",
+        "position": "bottom-right quadrant",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Circular profile picture with text 'FOLLOW', 'Adam Abdur Rahman', and 'RevGrowth.ai'."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "White",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Six main content boxes arranged in a 3x2 grid, one larger content box below, and a small author credit box in the bottom right.",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Create a professional infographic titled '6 AI Prompts For GTM Strategy Development'. Use a clean, minimalist design with a 3x2 grid layout for the main content. The color palette should be warm and desaturated, featuring a white background (#FFFFFF), pale cream content boxes (#FFF9F2), and dark brown text (#4A3F3C). Use a modern, bold sans-serif font for headings and a regular weight for body text. Each content box should have rounded corners and a subtle drop shadow to create depth. Include small icons and pill-shaped tags for metadata like 'Tool'. The overall style should be professional, structured, and easy to read.",
+      "Design a business strategy infographic with a multi-column layout on a clean white background. Use warm, off-white content panels with soft drop shadows. The typography should be a clean sans-serif, with a clear hierarchy between titles, subtitles, and body text. The color scheme should be professional and muted, primarily using dark brown for text. Ensure the layout is balanced and guides the viewer's eye logically through the information."
+    ],
+    "keywords": [
+      "infographic",
+      "GTM strategy",
+      "AI prompts",
+      "business",
+      "marketing"
+    ],
+    "technical_settings": "Vector graphics software (e.g., Adobe Illustrator, Figma). Artboard size: 1080x1920px. Fonts: A clean sans-serif like Inter or Helvetica Neue. Export as a high-resolution PNG or SVG.",
+    "post_processing": "Ensure text is sharp and legible. Check color contrast for accessibility. Apply subtle, consistent drop shadows to all content panels for a layered effect."
+  }
+}
+```

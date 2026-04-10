@@ -1,0 +1,243 @@
+```json
+{
+  "text_content": {
+    "headlines": [
+      "SuperGrok"
+    ],
+    "body_text": [
+      "What do you want to know?",
+      "DeepSearch",
+      "Create Image",
+      "Auto",
+      "Chooses Fast or Expert",
+      "Fast",
+      "Quick responses",
+      "Expert",
+      "Thinks hard",
+      "Grok 4.1",
+      "Beta",
+      "Heavy",
+      "Team of experts",
+      "Custom Instructions",
+      "Not set",
+      "Customize",
+      "Models",
+      "Grok 4.1 Beta",
+      "Grok 4.1 Thinking Beta",
+      "Grok 3",
+      "Legacy",
+      "Grok 4",
+      "Expert",
+      "Grok 4 Fast",
+      "Fast Thinking",
+      "Private"
+    ],
+    "visible_urls": [],
+    "metadata": "User interface screenshot"
+  },
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "product"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "approx 16:9, widescreen desktop screenshot",
+    "layout": "layered",
+    "focal_points": [
+      "Primary: The two overlapping dropdown menus in the center-right, showing AI model options.",
+      "Secondary: The 'SuperGrok' logo and the main text input bar below it."
+    ],
+    "visual_hierarchy": "The eye is first drawn to the bright white 'SuperGrok' logo, then down to the central input bar, and finally settles on the layered dropdown menus which contain the most detailed information and are the clear subject of the screenshot.",
+    "balance": "asymmetric"
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Near Black",
+        "hex": "#121212",
+        "percentage": "80%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Gray",
+        "hex": "#2D2D2D",
+        "percentage": "15%",
+        "role": "background"
+      },
+      {
+        "color": "Off-White",
+        "hex": "#EAEAEA",
+        "percentage": "5%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "monochromatic",
+    "temperature": "neutral",
+    "saturation": "desaturated",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "N/A",
+    "direction": "N/A",
+    "directionality": "diffused",
+    "quality": "even",
+    "intensity": "moderate",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "transparent",
+      "placement": "from objects",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on text/icons"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "graphic design",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern UI/UX design",
+      "Dark mode interfaces",
+      "Minimalist software design"
+    ],
+    "mood": "sophisticated",
+    "atmosphere": "A clean, focused, and modern digital workspace. The dark theme minimizes distractions and creates a professional, tech-oriented feel.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "integrated",
+    "integration": "prominent"
+  },
+  "subject_analysis": {
+    "primary_subject": "A screenshot of the user interface for an AI application named 'SuperGrok', showing the model selection dropdown menus.",
+    "positioning": "center",
+    "scale": "close-up",
+    "interaction": "The image captures a state of user interaction, where two nested dropdown menus have been opened to select an AI model.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "N/A",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "indoor",
+    "spatial_depth": "shallow",
+    "elements_detailed": [
+      {
+        "item": "Main application window",
+        "position": "full screen",
+        "distance": "background",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "Contains the logo, input bar, and side navigation."
+      },
+      {
+        "item": "Primary dropdown menu",
+        "position": "center-right",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Lists options like 'Auto', 'Fast', 'Expert', 'Grok 4.1'."
+      },
+      {
+        "item": "Secondary dropdown menu",
+        "position": "right",
+        "distance": "foreground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Lists specific model versions like 'Grok 4.1 Thinking', 'Grok 3'."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "SuperGrok logo (top center), text input bar (center), left sidebar with icons, two layered dropdown menus (center-right), user profile icon (bottom left), 'Private' button (top right).",
+    "background_treatment": "sharp"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "UI screenshot of a modern AI chat application called 'SuperGrok', dark mode, clean sans-serif font, centered layout, with a dropdown menu open showing different AI models like 'Grok 4.1', 'Fast', and 'Expert'. The color palette is near-black, dark gray, and white. Minimalist icons on a left sidebar. Professional and sophisticated aesthetic.",
+      "A high-fidelity mockup of a dark-themed AI interface, featuring a prominent logo 'SuperGrok' and a central query bar. A layered dropdown menu system is the focal point, showcasing model selection options with clear typography and icons. The design is minimalist, sharp, and user-friendly."
+    ],
+    "keywords": [
+      "UI design",
+      "dark mode",
+      "AI application",
+      "chatbot interface",
+      "minimalist UI"
+    ],
+    "technical_settings": "For recreation: Use a vector design tool like Figma or Sketch. Font: A modern sans-serif like Inter or SF Pro. Background color: #121212. UI elements: #2D2D2D. Text: #EAEAEA. Export as a high-resolution PNG.",
+    "post_processing": "None required, the image is a direct screen capture."
+  }
+}
+```
