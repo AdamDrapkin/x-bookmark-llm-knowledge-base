@@ -1,7 +1,7 @@
 ---
 title: Backlog Log
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-10
 summary: Tracking processed bookmarks from the backlog
 tags: [backlog, tracking]
 type: output
@@ -10,15 +10,15 @@ status: draft
 
 # Backlog Processing Log
 
-## Current Status (as of 2026-04-09)
+## Current Status (as of 2026-04-10)
 
 | Metric | Count |
 |--------|-------|
 | Total Bookmarks | 874 |
 | Classified | 874 |
 | Unclassified | 0 |
-| Processed | 15 |
-| Remaining | 859 |
+| Processed | 35 |
+| Remaining | 839 |
 
 ## Already Processed (15 bookmarks)
 
@@ -40,12 +40,28 @@ status: draft
 | 1974102012670407035 | prompt-engineering | godofprompt | D-E-P-T-H Framework |
 | 1974097166454174149 | ai-research | shushant_l | Perplexity Research Prompts |
 
+### Batch 3 (IDs 21-30) - 2026-04-10
+
+| ID | Category | Author | Title | Media |
+|----|----------|--------|-------|-------|-------|
+| 1991528477775032628 | prompt-engineering | EXM7777 | System prompt Gemini 3.0 | 1 image |
+| 1991489885690364187 | prompt-engineering | MengTo | 37-min Gemini 3 tutorial | video transcript |
+| 1982479013638767087 | prompt-engineering | godofprompt | 5 prompts thinking partner | 1 image |
+| 1995470595241193726 | prompt-engineering | alex_prompter | Image to JSON generator | 2 images |
+| 1994058991106969950 | prompt-engineering | MengTo | 45-min animation tutorial | video transcript |
+| 1994005617246368095 | prompt-engineering | alex_prompter | JSON prompt mega | 1 image |
+| 1993654485223367013 | prompt-engineering | godofprompt | Elon Musk prompts | 1 image |
+| 1993275220342481039 | prompt-engineering | godofprompt | Robert Greene prompts | 1 image |
+| 1992887472557342779 | prompt-engineering | alex_prompter | Gemini market research | 1 image |
+| 1997307729543823785 | prompt-engineering | alex_prompter | Claude McKinsey prompts | - |
+
 ## Batch Progress
 
 | Batch | Date | Processed | Total Processed | QA Pairs Generated |
 |-------|------|-----------|-----------------|---------------------|
 | Batch 1 | 2026-04-09 | 15 | 15 | Yes |
 | Batch 2 | 2026-04-10 | 10 | 25 | Yes |
+| Batch 3 | 2026-04-10 | 10 | 35 | **Phase 2 complete** (8 images analyzed, 2 video transcripts processed) |
 
 ## Category Breakdown
 

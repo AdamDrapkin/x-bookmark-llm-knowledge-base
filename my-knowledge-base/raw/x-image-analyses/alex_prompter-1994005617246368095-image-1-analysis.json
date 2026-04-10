@@ -1,0 +1,232 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "product"
+  },
+  "text_content": {
+    "headlines": [
+      "Ready when you are."
+    ],
+    "body_text": [
+      "You are a JSON-only prompt generator.",
+      "Your job:",
+      "When I give you any task, any command, or any outcome I want, you will return a perfectly structured prompt in JSON.",
+      "Rules:",
+      "1. Always respond ONLY in JSON.",
+      "2. Never explain or add commentary.",
+      "3. Never guess missing info; add a placeholder instead.",
+      "4. Every prompt you generate must include these fields:",
+      "+"
+    ],
+    "visible_urls": [],
+    "metadata": "N/A"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "Approximately 16:9, wide landscape format",
+    "layout": "single subject",
+    "focal_points": [
+      "Primary: The central text box containing the instructions.",
+      "Secondary: The headline 'Ready when you are.' above the text box."
+    ],
+    "visual_hierarchy": "The eye is first drawn to the bold headline at the top, then moves down to the main text box, reading the content from top to bottom. The icons in the bottom right are the final elements in the hierarchy.",
+    "balance": "symmetric - The main elements are centered along the vertical axis, creating a stable and balanced composition."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "85",
+        "role": "background"
+      },
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "percentage": "10",
+        "role": "primary subject"
+      },
+      {
+        "color": "Light Gray",
+        "hex": "#EAEAEA",
+        "percentage": "5",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "monochromatic",
+    "temperature": "neutral",
+    "saturation": "desaturated",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "N/A",
+    "direction": "N/A",
+    "directionality": "diffused",
+    "quality": "even",
+    "intensity": "high-key",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "faint",
+      "placement": "under subject",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "N/A",
+      "placement": "N/A"
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "vector",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow - A subtle drop shadow creates a slight separation between the text box and the background.",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern UI/UX design",
+      "Minimalist graphic design",
+      "Flat design principles"
+    ],
+    "mood": "polished",
+    "atmosphere": "The image has a clean, direct, and functional atmosphere. It conveys information clearly and without distraction, feeling modern and professional.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "The headline is centered at the top. The main body of text is contained within a central UI element, left-aligned.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "A set of instructions for an AI, displayed within a user interface element that resembles a chat or text input box.",
+    "positioning": "center",
+    "scale": "N/A",
+    "interaction": "isolated",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "N/A",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "studio - A plain, solid color digital background.",
+    "spatial_depth": "shallow - The background is a single flat plane behind the foreground UI element.",
+    "elements_detailed": [
+      {
+        "item": "Text input box",
+        "position": "center",
+        "distance": "foreground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "White box with rounded corners and a subtle drop shadow."
+      },
+      {
+        "item": "Microphone icon",
+        "position": "bottom right",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Line art style icon."
+      },
+      {
+        "item": "Send icon",
+        "position": "bottom right",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "White up-arrow inside a solid black circle."
+      },
+      {
+        "item": "Scrollbar",
+        "position": "right",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Light gray vertical bar inside the text box."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "Pure white",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Headline text, main text box, microphone icon, send icon, scrollbar.",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A UI screenshot of a minimalist chat interface on a clean white background. The design is modern and high-contrast. A bold, black sans-serif headline at the top reads 'Ready when you are.'. Below it is a centered white text box with rounded corners and a subtle drop shadow, containing a list of instructions. In the bottom right corner of the text box are a microphone icon and a black circular send button with a white arrow.",
+      "Graphic design of a software prompt, minimalist style, black and white color scheme. Centered composition with a clear visual hierarchy. The main element is a text container with instructions for a JSON generator, featuring clean typography and simple icons for user input."
+    ],
+    "keywords": [
+      "UI design",
+      "minimalist",
+      "chatbot interface",
+      "prompt instructions",
+      "graphic design"
+    ],
+    "technical_settings": "Create using vector graphics software like Figma or Adobe Illustrator. Use a modern sans-serif font like Inter or SF Pro. Export as a high-resolution PNG with a 16:9 aspect ratio. Ensure text is tack sharp and colors are pure black (#000000) and white (#FFFFFF).",
+    "post_processing": "None required. The style is clean and direct from the source."
+  }
+}

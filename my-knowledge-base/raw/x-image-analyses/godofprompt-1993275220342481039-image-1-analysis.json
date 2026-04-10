@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "mixed media",
+    "primary_purpose": "social media"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "16:9",
+    "layout": "multi-element",
+    "focal_points": [
+      "Primary: The man's face, specifically his direct and serious gaze.",
+      "Secondary: The book cover title 'POWER', and the four AI logos surrounding the man."
+    ],
+    "visual_hierarchy": "The viewer's eye is immediately drawn to the man's face in the right-center of the frame. From there, the eye scans the surrounding AI logos (Gemini, ChatGPT, Claude, Grok). Finally, the eye moves to the distinct vertical block on the left, reading the book title and author.",
+    "balance": "asymmetric - The visually dense and colorful book cover on the left third of the image is balanced by the man and the scattered logos on the right two-thirds."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "45%",
+        "role": "background"
+      },
+      {
+        "color": "Terracotta Red",
+        "hex": "#C84630",
+        "percentage": "25%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Deep Blue",
+        "hex": "#2A3B7A",
+        "percentage": "10%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Light Blue",
+        "hex": "#B3C4D1",
+        "percentage": "5%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Gold",
+        "hex": "#D4B46F",
+        "percentage": "5%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "split-complementary",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "studio",
+    "source_count": "multiple sources - A key light from camera left (45-degree angle) and a fill light from camera right.",
+    "direction": "45-degree side",
+    "directionality": "moderately directional",
+    "quality": "soft light",
+    "intensity": "bright",
+    "contrast_ratio": "medium contrast",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "gray",
+      "placement": "On the right side of the man's face, under his nose and chin, and within the folds of his shirt.",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "On the left side of his forehead, his nose, left cheek, and the top of his hair."
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "photo manipulation",
+    "style": "realistic",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow - The subject is a cutout placed on a flat background, creating maximum separation.",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern YouTube thumbnail design",
+      "Editorial graphic design"
+    ],
+    "mood": "analytical",
+    "atmosphere": "The atmosphere is intellectual and comparative, pitting the established human wisdom of Robert Greene's book against the emergent power of modern AI technologies. The man's serious expression reinforces this contemplative and analytical tone.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "serif",
+        "weight": "regular",
+        "characteristics": "classic"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "medium",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "integrated - The book title and author are part of the book cover design on the left. The AI logos are placed strategically around the subject on the right to frame him and provide context.",
+    "integration": "prominent"
+  },
+  "subject_analysis": {
+    "primary_subject": "A middle-aged Caucasian man with light brown, wavy hair and blue eyes, likely the author Robert Greene, wearing a light blue button-up shirt.",
+    "positioning": "center-right",
+    "scale": "medium",
+    "interaction": "isolated",
+    "facial_expression": {
+      "mouth": "neutral",
+      "smile_intensity": "no smile",
+      "eyes": "direct gaze",
+      "eyebrows": "neutral",
+      "overall_emotion": "serious",
+      "authenticity": "posed"
+    },
+    "hair": {
+      "length": "short",
+      "cut": "layered",
+      "texture": "wavy",
+      "texture_quality": "fine",
+      "natural_imperfections": "Visible flyaways and natural texture, not overly smoothed.",
+      "styling": "tousled",
+      "styling_detail": "lightly styled, appears dry with natural movement.",
+      "part": "no part",
+      "volume": "moderate volume",
+      "details": "Hair is styled loosely, pushed back and to the side from the forehead."
+    },
+    "hands_and_gestures": {
+      "left_hand": "Not visible.",
+      "right_hand": "In the lower center of the frame, holding a pair of thin-framed glasses.",
+      "finger_positions": "gripping - Thumb is on the inner side of the glasses' temple arm, with the index and middle fingers curled around the outer side.",
+      "finger_interlacing": "N/A",
+      "hand_tension": "relaxed",
+      "interaction": "Holding a pair of glasses.",
+      "naturalness": "organic casual"
+    },
+    "body_positioning": {
+      "posture": "standing/sitting",
+      "angle": "facing camera",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow",
+    "elements_detailed": [
+      {
+        "item": "Book cover: 'The 48 Laws of Power'",
+        "position": "left",
+        "distance": "background",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "Terracotta red cover with a central deep blue vertical band containing gold serif text."
+      },
+      {
+        "item": "Gemini logo",
+        "position": "upper right quadrant, left of subject's head",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Four-pointed star logo with gradient colors."
+      },
+      {
+        "item": "ChatGPT logo",
+        "position": "center right quadrant, left of subject's torso",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Green and white geometric logo."
+      },
+      {
+        "item": "Claude logo",
+        "position": "upper right quadrant, right of subject's head",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Orange asterisk-like logo."
+      },
+      {
+        "item": "Grok logo",
+        "position": "center right quadrant, right of subject's shoulder",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Black stylized 'G' or circular arrow logo."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "Pure white",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Book cover (left), man (center-right), Gemini logo (upper right), ChatGPT logo (center right), Claude logo (upper right), Grok logo (center right), glasses (held by man).",
+    "background_treatment": "sharp"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "YouTube thumbnail with a split-screen design. Left third: the book cover of 'The 48 Laws of Power'. Right two-thirds: a studio portrait of a serious middle-aged man with wavy brown hair, looking at the camera, holding glasses, against a pure white background. Overlay logos for Gemini, ChatGPT, Claude, and Grok around the man. Clean, high-contrast, professional aesthetic.",
+      "Editorial graphic for a blog post, 16:9 aspect ratio. A photo of author Robert Greene is cut out on a white background on the right, with a contemplative expression. To his left and right are the logos for major AI models. The left third of the image is the iconic red and blue cover of his book, 'The 48 Laws of Power'."
+    ],
+    "keywords": [
+      "Robert Greene",
+      "48 Laws of Power",
+      "AI Comparison",
+      "YouTube Thumbnail",
+      "ChatGPT"
+    ],
+    "technical_settings": "Camera: DSLR with 85mm lens at f/8. Lighting: Three-point studio setup with two large softboxes for key and fill, and a white seamless background. ISO 100.",
+    "post_processing": "Subject masked and extracted from original background. Placed on a new layer over a white background. Book cover graphic and AI logos added as separate layers. Adjust levels and curves for high contrast. Apply sharpening filter to the subject."
+  }
+}

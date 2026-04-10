@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "social media"
+  },
+  "text_content": {
+    "headlines": [
+      "use this system prompt in Gemini 3.0 to consistently write humanized content:"
+    ],
+    "body_text": [
+      "<role>\nYou transform sterile AI text into living, breathing human communication. You're that mentor everyone remembers - the one who made complex ideas click by speaking like a real person who genuinely gives a damn about their readers' success.\n</role>",
+      "<transformation_psychology>\nYour core mission: Take robotic content and infuse it with the messy, beautiful authenticity of human thought. You understand that real learning happens in the spaces between perfect sentences... in those moments where someone goes \"Oh, I get it now.\"\n</transformation_psychology>",
+      "<humanization_architecture>\n<voice_patterns>\n- Conversational rhythm: Mix punchy fragments with flowing sentences that mirror natural speech patterns\n- Authentic imperfections: Include hesitations, second thoughts, and those little \"wait, let me explain this better\" moments\n- Emotional bridges: Connect abstract concepts to real human experiences and struggles\n</voice_patterns>",
+      "<connection_framework>\n- Empathy mapping: Show you understand their specific frustrations, late-night doubts, and breakthrough moments\n- Shared journey language: Use \"we\" and \"us\" to create partnership, not hierarchy\n- Vulnerability threads: Admit when things are hard, when you've struggled too, when there's no easy answer\n</connection_framework>",
+      "<natural_flow_mechanics>\n- Conversational tangents: Let thoughts branch naturally (because that's how minds actually work)\n- Breathing spaces: Use ellipses, dashes, and varied pacing to create natural reading rhythm\n- Metaphor translation: Convert jargon into relatable, visual comparisons that stick\n</natural_flow_mechanics>\n</humanization_architecture>",
+      "<context_discovery>\nBefore transforming any content, identify: What's the reader's emotional state? What keeps them up at night about this topic? What breakthrough would change everything for them? What's their relationship with this subject - excitement, fear, confusion, skepticism?\n</context_discovery>",
+      "<implementation_method>\nTransform the provided content by weaving in authentic human elements while preserving all key information. Make it feel like the reader just sat down with someone who's been exactly where they are and knows the way forward.\n</implementation_method>",
+      "<success_criteria>\nThe transformed content should feel like discovering your favorite teacher explaining exactly what you needed to hear, exactly when you needed to hear it.\n</success_criteria>"
+    ],
+    "visible_urls": [
+      "none"
+    ],
+    "metadata": "none"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "portrait orientation, approximately 2:3",
+    "layout": "multi-element",
+    "focal_points": [
+      "Primary: The bolded headline at the top of the image.",
+      "Secondary: The color-highlighted XML-style tags that structure the document."
+    ],
+    "visual_hierarchy": "The eye is drawn first to the bold headline, then proceeds linearly down the page, with the colored tags serving as visual anchors for each new section.",
+    "balance": "asymmetric - All content is left-aligned, creating a strong vertical axis on the left and leaving negative space on the right."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Off-White",
+        "hex": "#FCFCFC",
+        "percentage": "85%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Gray",
+        "hex": "#333333",
+        "percentage": "10%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Pastel Blue",
+        "hex": "#D4E6F1",
+        "percentage": "1%",
+        "role": "accent"
+      },
+      {
+        "color": "Pastel Pink",
+        "hex": "#F5CCCC",
+        "percentage": "1%",
+        "role": "accent"
+      },
+      {
+        "color": "Pastel Green",
+        "hex": "#D5E8D4",
+        "percentage": "1%",
+        "role": "accent"
+      },
+      {
+        "color": "Pastel Yellow",
+        "hex": "#FFF2CC",
+        "percentage": "1%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "split-complementary",
+    "temperature": "neutral",
+    "saturation": "desaturated",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "N/A",
+    "direction": "diffused from above",
+    "directionality": "omni-directional",
+    "quality": "even",
+    "intensity": "high-key",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "professional",
+    "shadows": {
+      "type": "absent",
+      "density": "N/A",
+      "placement": "N/A",
+      "length": "N/A"
+    },
+    "highlights": {
+      "treatment": "N/A",
+      "placement": "The colored highlights on the text tags."
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital photography",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "deep",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "editorial",
+    "influences": [
+      "Code editor syntax highlighting",
+      "Modern UI/UX design",
+      "Instructional design"
+    ],
+    "mood": "informative",
+    "atmosphere": "The image has a clear, structured, and educational atmosphere. It feels like a page from a digital notebook or a well-organized tutorial, designed for easy comprehension and application.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "The text is the primary content, arranged in a top-to-bottom, single-column layout.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "A system prompt for the AI model Gemini 3.0, designed to generate humanized content. The prompt is broken down into structured sections using XML-like tags.",
+    "positioning": "center",
+    "scale": "close-up",
+    "interaction": "isolated",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "N/A",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow",
+    "elements_detailed": [],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "Off-white",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "The image contains only text elements on a plain background.",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Create a clean, minimalist screenshot of a system prompt for an AI model. The prompt is structured with XML-style tags like `<role>` and `<transformation_psychology>`. The headline is bold, and key tags are highlighted with soft pastel colors (blue, pink, green, yellow). The font is a modern, legible sans-serif. The background is a solid off-white. The layout is single-column and left-aligned.",
+      "Design an informational graphic for a social media post, displaying a long-form AI prompt. Use a clean sans-serif font, with a bolded headline. Structure the prompt into logical sections using colored highlights on section titles, mimicking code editor syntax highlighting. The color palette for highlights should be soft and desaturated. White background, black text."
+    ],
+    "keywords": [
+      "AI prompt",
+      "system prompt",
+      "instructional graphic",
+      "text screenshot",
+      "Gemini 3.0"
+    ],
+    "technical_settings": "Graphic design software (e.g., Figma, Canva). Canvas: 1080x1920px. Background: #FCFCFC. Font: A system sans-serif like Inter or Arial, regular and bold weights. Text color: #333333. Use colored rectangles behind text for highlights.",
+    "post_processing": "None required. The style is clean and direct."
+  }
+}

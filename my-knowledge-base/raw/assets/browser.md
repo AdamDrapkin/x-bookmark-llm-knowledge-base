@@ -519,6 +519,26 @@ rm /tmp/{author}-video.mp4 /tmp/{author}-audio.mp3
 
 ---
 
+#### Handling Large Outputs
+
+**When to use:** When a tool response shows "Output too large" and provides a file path (e.g., "Output too large (29.5KB). Full output saved to: /Users/adamdrapkin/.claude/projects/.../tool-results/filename.txt")
+
+**Steps:**
+1. Read the full output file from the path provided in the error message
+2. Use the complete content from that file as the actual output
+3. **DO NOT use the preview/partial output** — the full content is in the saved file
+4. Save the full content to the appropriate location:
+   - Video transcripts → `raw/x-video-transcripts/{author}-{tweet-id}-transcript.txt`
+   - Video analysis → `raw/x-video-analyses/{author}-{tweet-id}-video-analysis.json`
+
+**Example:**
+```
+Output too large (29.5KB). Full output saved to: /Users/adamdrapkin/.claude/projects/.../tool-results/b8ezm2zg7.txt
+```
+→ Read `/Users/adamdrapkin/.claude/projects/.../tool-results/b8ezm2zg7.txt` → Use full content
+
+---
+
 #### Step 4i: Gemini Vision Video Analysis (Videos ≤2 min ONLY)
 
 **When to use:** When video duration is ≤2 minutes (120 seconds)

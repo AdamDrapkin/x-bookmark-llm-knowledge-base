@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "photograph",
+    "primary_purpose": "social media"
+  },
+  "composition": {
+    "rule_applied": "rule of thirds",
+    "aspect_ratio": "1:1 (square)",
+    "layout": "single subject",
+    "focal_points": [
+      "Primary: The woman's head, hair, and left hand adorned with gold rings, located on the upper left third.",
+      "Secondary: The bright red seatbelt crossing the frame, and the Porsche steering wheel on the right third."
+    ],
+    "visual_hierarchy": "The eye is first drawn to the woman's gesture of her hand in her hair. The curve of her hair leads the eye down. The vibrant red seatbelt acts as a strong diagonal line, guiding the viewer's gaze across the composition towards the steering wheel and dashboard details on the right.",
+    "balance": "asymmetric - The main subject is weighted on the left side of the frame, balanced by the visual interest and details of the car's interior on the right."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Jet Black",
+        "hex": "#1A1A1A",
+        "percentage": "40",
+        "role": "primary subject"
+      },
+      {
+        "color": "Dark Charcoal Gray",
+        "hex": "#3D3D3D",
+        "percentage": "25",
+        "role": "background"
+      },
+      {
+        "color": "Ash Brown",
+        "hex": "#8B6B4D",
+        "percentage": "15",
+        "role": "primary subject"
+      },
+      {
+        "color": "Bright Red",
+        "hex": "#D81E2C",
+        "percentage": "5",
+        "role": "accent"
+      },
+      {
+        "color": "Light Gray",
+        "hex": "#A9A9A9",
+        "percentage": "10",
+        "role": "background"
+      }
+    ],
+    "color_palette": "achromatic with a strong accent color",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "medium contrast"
+  },
+  "lighting": {
+    "type": "natural window",
+    "source_count": "multiple sources - primary from the passenger side window, secondary from the sunroof.",
+    "direction": "90-degree side light and diffused from above",
+    "directionality": "diffused",
+    "quality": "soft light",
+    "intensity": "moderate",
+    "contrast_ratio": "medium contrast",
+    "mood": "sophisticated, casual, luxurious",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "gray",
+      "placement": "On the subject's back, within the folds of her jacket, and in the crevices of the car interior.",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "On her hair, the shoulder of her leather jacket, her gold rings, and the car's exterior visible in the side mirror."
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital photography",
+    "style": "realistic",
+    "texture": "smooth",
+    "sharpness": "tack sharp on the subject and immediate interior, with motion blur in the background.",
+    "grain": "none",
+    "depth_of_field": "medium - The subject and car interior are in focus, isolating them from the motion-blurred scenery outside the windows.",
+    "perspective": "straight on, eye-level from the passenger's point of view."
+  },
+  "artistic_elements": {
+    "genre": "lifestyle",
+    "influences": [
+      "Modern influencer aesthetic",
+      "Luxury brand marketing",
+      "Automotive photography"
+    ],
+    "mood": "sophisticated",
+    "atmosphere": "The image evokes a sense of effortless luxury and freedom. It feels aspirational, capturing a candid moment within a high-end, polished environment.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": false,
+    "fonts": [],
+    "placement": "N/A",
+    "integration": "N/A"
+  },
+  "subject_analysis": {
+    "primary_subject": "A woman with long, highlighted brown hair, wearing a black leather jacket and sunglasses, seated in the driver's seat of a luxury sports car.",
+    "positioning": "rule of thirds placement, occupying the left and central part of the frame.",
+    "scale": "medium shot",
+    "interaction": "The subject is interacting with her environment by driving the car and with herself by touching her hair.",
+    "facial_expression": {
+      "mouth": "Not visible",
+      "smile_intensity": "Not visible",
+      "eyes": "Not visible, wearing sunglasses and facing away.",
+      "eyebrows": "Not visible",
+      "overall_emotion": "Appears relaxed and confident from body language.",
+      "authenticity": "posed"
+    },
+    "hair": {
+      "length": "mid-back",
+      "cut": "long layers",
+      "texture": "wavy",
+      "texture_quality": "smooth",
+      "natural_imperfections": "A few minor flyaways are visible, adding a touch of realism. The color is a professional balayage with varied tones.",
+      "styling": "tousled",
+      "styling_detail": "Lightly styled to look like a natural, voluminous blowout with soft waves. No heavy product is visible.",
+      "part": "Not clearly visible, appears to be a side part.",
+      "volume": "voluminous",
+      "details": "Features extensive blonde and light brown balayage highlights on a darker brown base."
+    },
+    "hands_and_gestures": {
+      "left_hand": "Raised to her head, fingers gently running through her hair behind her ear. She wears three gold rings: two on her ring finger (one thick, one thin band) and one chunky ring on her index finger.",
+      "right_hand": "Resting on the lower right side of the steering wheel (approx. 4 o'clock position), with fingers gently curled around it. Her fingernails are painted a red/dark pink color.",
+      "finger_positions": "Left hand fingers are slightly spread and curled into her hair. Right hand fingers are relaxed and gripping the wheel.",
+      "finger_interlacing": "N/A",
+      "hand_tension": "relaxed",
+      "interaction": "Left hand is styling/touching hair. Right hand is steering the car.",
+      "naturalness": "deliberately posed to appear candid and casual."
+    },
+    "body_positioning": {
+      "posture": "sitting",
+      "angle": "profile/back to camera, with her head turned slightly away from the camera.",
+      "weight_distribution": "centered in the driver's seat.",
+      "shoulders": "relaxed and level."
+    }
+  },
+  "background": {
+    "setting_type": "indoor - inside a luxury car, likely a Porsche Taycan or 911 GTS.",
+    "spatial_depth": "medium - The composition has three distinct layers: the subject in the foreground, the car interior in the midground, and the blurred scenery in the background.",
+    "elements_detailed": [
+      {
+        "item": "Driver's seat",
+        "position": "left and center",
+        "distance": "foreground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "Black leather with red contrast stitching and a red embroidered 'GTS' logo on the headrest."
+      },
+      {
+        "item": "Steering wheel",
+        "position": "right",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Covered in dark gray Alcantara/suede with a central Porsche crest."
+      },
+      {
+        "item": "Red seatbelt",
+        "position": "center, crossing the subject's body",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Vibrant, saturated red fabric."
+      },
+      {
+        "item": "Sunroof",
+        "position": "top",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Glass panel showing a bright, overcast sky."
+      },
+      {
+        "item": "Side mirror",
+        "position": "right midground",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Reflecting a red car behind."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Driver's seat, steering wheel, center console, dashboard screen, red seatbelt, sunroof, side mirror, passenger headrest (partially visible).",
+    "background_treatment": "blurred"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A candid lifestyle photo from the passenger seat of a woman with long, voluminous balayage hair driving a Porsche GTS. She wears a black leather jacket and sunglasses, her left hand with gold rings is running through her hair. The car interior is black leather and grey Alcantara with a striking red seatbelt. Soft, natural light from the side. The scenery outside is motion-blurred. Cinematic, high-end editorial style.",
+      "Interior shot of a luxury sports car, a woman in the driver's seat turned away from the camera. Focus on the textures: her wavy hair, the leather jacket, the Alcantara steering wheel. A bright red seatbelt cuts across the frame. The mood is sophisticated and cool. Soft, diffused daylight fills the cabin. 35mm lens, shallow depth of field."
+    ],
+    "keywords": [
+      "woman driving",
+      "luxury car",
+      "Porsche interior",
+      "lifestyle photography",
+      "candid portrait"
+    ],
+    "technical_settings": "Camera: Full-frame DSLR. Lens: 35mm f/1.8. Aperture: f/2.8. Shutter Speed: 1/125s. ISO: 200. Use a circular polarizer to reduce glare on windows.",
+    "post_processing": "Apply a cinematic LUT with slightly desaturated tones, boost the saturation of the red channel, add a subtle S-curve for contrast, and sharpen key details like the hair, rings, and car logo."
+  }
+}

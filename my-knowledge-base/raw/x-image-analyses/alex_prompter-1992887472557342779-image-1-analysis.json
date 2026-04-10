@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "marketing"
+  },
+  "composition": {
+    "rule_applied": "symmetry",
+    "aspect_ratio": "Wide format, approximately 16:9",
+    "layout": "multi-element",
+    "focal_points": [
+      "Primary: Gartner logo, centered on the left half of the image.",
+      "Primary: Gemini logo, centered on the right half of the image."
+    ],
+    "visual_hierarchy": "The eye is drawn equally to both logos due to the symmetrical, side-by-side layout and high contrast. The sharp vertical line dividing the two colored backgrounds creates a clear separation, encouraging a comparison or association between the two entities.",
+    "balance": "symmetric - The image is perfectly balanced, split vertically down the center. Each half contains a logo of similar visual weight, creating a stable and formal composition."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Dark Navy Blue",
+        "hex": "#1A2E5A",
+        "percentage": "50",
+        "role": "background"
+      },
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "48",
+        "role": "background"
+      },
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "percentage": "1",
+        "role": "primary subject"
+      },
+      {
+        "color": "Gradient Mix (Blue, Green, Yellow, Red)",
+        "hex": "N/A",
+        "percentage": "<1",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "split-complementary",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "N/A",
+    "source_count": "N/A",
+    "direction": "N/A",
+    "directionality": "N/A",
+    "quality": "even",
+    "intensity": "bright",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "professional",
+    "shadows": {
+      "type": "absent",
+      "density": "N/A",
+      "placement": "N/A",
+      "length": "N/A"
+    },
+    "highlights": {
+      "treatment": "N/A",
+      "placement": "N/A"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "vector",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Corporate branding",
+      "Minimalist design",
+      "Swiss Style / International Typographic Style"
+    ],
+    "mood": "professional",
+    "atmosphere": "The atmosphere is formal, clean, and direct, suggesting a significant announcement, partnership, or comparison between two major entities. The stark contrast and simple layout convey clarity and importance.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "medium",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "The 'Gartner' logotype is centered horizontally and vertically within the left blue panel. The 'Gemini' logotype and icon are centered horizontally and vertically within the right white panel.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "The logos for two companies: Gartner and Gemini.",
+    "positioning": "The Gartner logo is in the center-left. The Gemini logo is in the center-right.",
+    "scale": "N/A",
+    "interaction": "The two logos are presented side-by-side in a comparative or associative layout, isolated from each other by a hard vertical line but unified within the same frame.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "N/A",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow",
+    "elements_detailed": [
+      {
+        "item": "Gartner logotype",
+        "position": "center-left quadrant",
+        "distance": "foreground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "White sans-serif text with a registered trademark symbol (\u00ae)."
+      },
+      {
+        "item": "Gemini logotype and icon",
+        "position": "center-right quadrant",
+        "distance": "foreground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "A four-pointed star icon with rounded corners and a color gradient (blue, green, yellow, red), followed by the word 'Gemini' in black sans-serif text."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "The left half is a solid dark navy blue. The right half is solid white.",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Gartner logo (left), Gemini logo (right).",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A minimalist graphic design for a corporate partnership announcement, split vertically in the center. The left side has a dark navy blue background (#1A2E5A) with the 'Gartner' logo in a bold, white sans-serif font, centered. The right side has a pure white background (#FFFFFF) with the 'Gemini' logo, featuring its colorful four-pointed star icon and black sans-serif text, centered. 16:9 aspect ratio, clean vector style.",
+      "Side-by-side logo comparison graphic. Left panel: Gartner logo in white on a deep blue field. Right panel: Gemini logo in black with its multi-color gradient icon on a white field. Symmetrical composition, high contrast, professional and modern aesthetic."
+    ],
+    "keywords": [
+      "Gartner",
+      "Gemini",
+      "logo",
+      "partnership",
+      "graphic design"
+    ],
+    "technical_settings": "Vector illustration software (e.g., Adobe Illustrator, Figma). Artboard: 1920x1080px. Fonts: Modern sans-serif like Helvetica Neue (for Gartner) and Google Sans/Product Sans (for Gemini). Export as SVG for scalability or high-resolution PNG for web use.",
+    "post_processing": "None required. Ensure color accuracy and crisp vector lines."
+  }
+}

@@ -36,7 +36,13 @@ Execute the wiki-backlog skill following Steps 1, 2, 3, and 4 in order:
 
 4. **Step 4** - Read browser.md: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/assets/browser.md
 
-5. **Step 4** - Extract each bookmark in the batch:
+5. **Step 4** - **CRITICAL: Inject cookies into browser BEFORE any navigation**
+   - Per browser.md "AUTHENTICATION" section:
+     1. Navigate to x.com FIRST (any page)
+     2. Then inject cookies via browser JavaScript (use `.x.com` domain prefix)
+     3. Verify logged in before proceeding to extraction
+
+6. **Step 5** - Extract each bookmark in the batch:
    - For EACH bookmark: navigate, snapshot, extract media (images→raw/x-article-images, videos→raw/x-video-transcripts, links→raw/x-external-links as .txt)
    - After ALL extracted: count images (N) and videos (M), generate per-item TODOs
 

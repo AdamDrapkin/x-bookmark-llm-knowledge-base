@@ -1,0 +1,8 @@
+{
+  "error": {
+    "message": "413: Maximum content size limit (26214400) exceeded (26335016 bytes read)",
+    "type": "server_error",
+    "param": null,
+    "code": null
+  }
+}

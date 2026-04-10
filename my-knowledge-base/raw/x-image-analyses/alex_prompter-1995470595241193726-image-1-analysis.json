@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "photograph",
+    "primary_purpose": "social media"
+  },
+  "composition": {
+    "rule_applied": "rule of thirds",
+    "aspect_ratio": "1:1 (square)",
+    "layout": "single subject",
+    "focal_points": [
+      "Primary: The woman's face, specifically her sunglasses and profile.",
+      "Secondary: The red seatbelt and the Porsche steering wheel."
+    ],
+    "visual_hierarchy": "The eye is first drawn to the woman on the left, then follows the strong diagonal of the red seatbelt. The hand on the steering wheel and the Porsche logo create a secondary point of interest, leading the eye to the view out the window.",
+    "balance": "asymmetric - The main subject occupies the left two-thirds of the frame, balanced by the visual weight of the car's interior details and the view out the window on the right."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Black",
+        "hex": "#1B1A1D",
+        "percentage": "50",
+        "role": "primary subject"
+      },
+      {
+        "color": "Dark Gray/Charcoal",
+        "hex": "#3C3C3E",
+        "percentage": "20",
+        "role": "background"
+      },
+      {
+        "color": "Bright Red",
+        "hex": "#D81E2C",
+        "percentage": "5",
+        "role": "accent"
+      },
+      {
+        "color": "Blonde/Ash Brown",
+        "hex": "#BEA88B",
+        "percentage": "10",
+        "role": "primary subject"
+      },
+      {
+        "color": "Forest Green",
+        "hex": "#4A5C3D",
+        "percentage": "10",
+        "role": "background"
+      }
+    ],
+    "color_palette": "achromatic with a strong accent",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "medium contrast"
+  },
+  "lighting": {
+    "type": "natural window",
+    "source_count": "multiple sources - primary from driver's side window, fill from windshield.",
+    "direction": "90-degree side",
+    "directionality": "diffused",
+    "quality": "soft light",
+    "intensity": "moderate",
+    "contrast_ratio": "medium contrast",
+    "mood": "sophisticated",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "gray",
+      "placement": "on the right side of the subject's face (away from the window), on her clothing, and within the car's interior.",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on her hair, cheekbone, sunglasses, and the leather jacket's shoulder."
+    },
+    "ambient_fill": "present",
+    "light_temperature": "cool"
+  },
+  "technical_specs": {
+    "medium": "digital photography",
+    "style": "realistic",
+    "texture": "smooth (leather), soft (suede), sharp (car details)",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow - The subject and immediate car interior are in sharp focus, while the road and trees seen through the window are softly blurred.",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "portrait",
+    "influences": [
+      "Lifestyle photography",
+      "Social media influencer aesthetic",
+      "Luxury automotive advertising"
+    ],
+    "mood": "confident",
+    "atmosphere": "The image evokes a feeling of casual luxury, freedom, and effortless style. It captures a moment of a scenic drive in a high-performance vehicle.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": false,
+    "fonts": [],
+    "placement": "N/A",
+    "integration": "N/A"
+  },
+  "subject_analysis": {
+    "primary_subject": "A woman with long, wavy, balayage hair, wearing a black leather jacket and sunglasses, driving a high-end sports car.",
+    "positioning": "rule of thirds placement",
+    "scale": "medium",
+    "interaction": "interacting with environment",
+    "facial_expression": {
+      "mouth": "neutral",
+      "smile_intensity": "no smile",
+      "eyes": "looking away, forward towards the road, obscured by sunglasses.",
+      "eyebrows": "neutral",
+      "overall_emotion": "confident",
+      "authenticity": "posed"
+    },
+    "hair": {
+      "length": "shoulder-length",
+      "cut": "layered",
+      "texture": "wavy",
+      "texture_quality": "fine",
+      "natural_imperfections": "A few flyaways are visible where her hand is in her hair, and the waves have a natural, slightly imperfect separation.",
+      "styling": "tousled",
+      "styling_detail": "lightly styled, appears to have been professionally waved and is now being lived in, showing natural movement.",
+      "part": "side part, obscured by her hand.",
+      "volume": "moderate volume",
+      "details": "Balayage color with dark roots blending into sandy blonde ends. Some face-framing pieces are visible."
+    },
+    "hands_and_gestures": {
+      "left_hand": "Raised to her head, fingers gently running through the top of her hair in a relaxed, casual manner.",
+      "right_hand": "Resting on the top left of the steering wheel, with a light, relaxed grip. Thumb rests on top, fingers curl around the side.",
+      "finger_positions": "relaxed",
+      "finger_interlacing": "N/A",
+      "hand_tension": "relaxed",
+      "interaction": "Left hand is styling/touching hair; right hand is steering the car.",
+      "naturalness": "deliberately posed"
+    },
+    "body_positioning": {
+      "posture": "sitting",
+      "angle": "profile",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "indoor - inside a Porsche Cayenne GTS",
+    "spatial_depth": "medium",
+    "elements_detailed": [
+      {
+        "item": "Driver's seat headrest",
+        "position": "upper left quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Black leather with red contrast stitching and an embroidered red 'GTS' logo."
+      },
+      {
+        "item": "Steering wheel",
+        "position": "center right",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Black suede/Alcantara grip, Porsche crest logo in the center, red stitching."
+      },
+      {
+        "item": "Center console",
+        "position": "bottom center",
+        "distance": "foreground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Suede armrest, Porsche key fob visible in a holder."
+      },
+      {
+        "item": "Winding road and forest",
+        "position": "upper right quadrant (through window)",
+        "distance": "background",
+        "size": "large",
+        "condition": "thriving",
+        "specific_features": "Asphalt road curving through a dense green forest."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Woman in driver's seat, black leather jacket, red seatbelt, Porsche steering wheel, center console with key fob, car door panel, side mirror, winding road, trees.",
+    "background_treatment": "blurred"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Candid lifestyle photo of a stylish woman with wavy blonde balayage hair driving a Porsche Cayenne GTS, viewed from the passenger seat. She wears a black leather jacket and large sunglasses, with one hand in her hair and the other on the suede steering wheel. The interior features black leather with red stitching. Soft, diffused natural light from the side window. Shallow depth of field blurs the winding forest road outside. Shot on a 35mm lens, f/2.8, cinematic style.",
+      "Medium shot, profile view of a confident woman in the driver's seat of a luxury SUV. The interior is dark and premium, with a bright red seatbelt as a color pop. The lighting is natural and soft, creating a sophisticated mood. The background through the window is a blurred green forest. High-end commercial photography aesthetic."
+    ],
+    "keywords": [
+      "woman driving",
+      "luxury car",
+      "Porsche",
+      "lifestyle photography",
+      "scenic drive"
+    ],
+    "technical_settings": "Camera: Full-frame DSLR/Mirrorless. Lens: 35mm or 50mm prime. Aperture: f/2.8-f/4. ISO: 100-400. Shutter Speed: 1/250s+. Focus Mode: Single-point AF on the subject's eye/face.",
+    "post_processing": "Cinematic color grade with slightly desaturated greens, enhanced contrast, and a saturation boost on the red channel. Maintain natural skin tones. Add subtle clarity and sharpening to the subject."
+  }
+}

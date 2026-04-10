@@ -1,0 +1,207 @@
+{
+  "text_content": {
+    "headlines": [
+      "5 PROMPTS TO USE CHATGPT AS YOUR THINKING PARTNER",
+      "Your AI Superpowers In One Click"
+    ],
+    "body_text": [
+      "1. Challenge My Thinking\nPrompt:\nI'm planning: [insert idea, plan, or strategy].\nAct like a critical thinker-question my assumptions, logic, or blind spots. Don't rewrite anything; I want to test my own thinking, not get new ideas.",
+      "2. Reframe Through a Different Lens\nPrompt:\nHere's the core idea I'm working with: [insert idea].\nReframe it through another lens-like a new audience perspective, emotional trigger, or brand positioning angle.",
+      "3. Translate My Gut Feeling\nPrompt:\nSomething about this feels off, but I can't explain why: [describe situation, message, or tactic].\nHelp me put words to the tension I'm sensing. What might be unclear or misaligned?",
+      "4. Structure My Messy Thinking\nPrompt:\nHere's a brainstorm of what I'm thinking: [insert notes, fragments, or rough ideas].\nOrganize this into a clear outline or structure-don't change the voice or add new ideas.",
+      "5. Help Me Face the Decision\nPrompt:\nHere's the context I'm working with: [insert project/situation].\nWhat decision am I avoiding or overcomplicating? Reflect back where I might be hesitating or dragging things out."
+    ],
+    "visible_urls": [
+      "=> godofprompt.ai"
+    ],
+    "metadata": "none"
+  },
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "social media"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "4:5 Portrait",
+    "layout": "multi-element",
+    "focal_points": [
+      "Primary: The main headline '5 PROMPTS TO USE CHATGPT AS YOUR THINKING PARTNER' at the top.",
+      "Secondary: The numbered list of prompts, the icon in the top left, and the URL at the bottom."
+    ],
+    "visual_hierarchy": "The eye is drawn first to the large, bold headline at the top, emphasized by the yellow highlight. It then moves down the numbered list, guided by the highlighted titles for each point. The icon provides branding context at the start, and the URL at the bottom serves as a final call to action.",
+    "balance": "asymmetric - The icon on the top left is balanced by the large block of text to its right. The overall composition is top-heavy but well-structured."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Off-White",
+        "hex": "#FCFCFC",
+        "percentage": "80%",
+        "role": "background"
+      },
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "percentage": "15%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Warm Yellow",
+        "hex": "#F9E090",
+        "percentage": "5%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "split-complementary",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "N/A",
+    "source_count": "N/A",
+    "direction": "N/A",
+    "directionality": "N/A",
+    "quality": "The yellow highlights simulate a 'highlighter' effect, drawing attention like a light source would.",
+    "intensity": "high-key",
+    "contrast_ratio": "high contrast (design)",
+    "mood": "professional",
+    "shadows": {
+      "type": "absent",
+      "density": "N/A",
+      "placement": "N/A",
+      "length": "N/A"
+    },
+    "highlights": {
+      "treatment": "The yellow blocks act as stylized highlights for text.",
+      "placement": "on headline text and list item titles"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "N/A"
+  },
+  "technical_specs": {
+    "medium": "graphic design",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern web design",
+      "Social media infographics",
+      "Minimalist graphic design"
+    ],
+    "mood": "informative",
+    "atmosphere": "The image has a clear, helpful, and actionable atmosphere. It's designed to be a practical tool or 'cheat sheet' for users, conveying authority and utility.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "black",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "overlay - Text is the primary element, structured in a top-to-bottom hierarchy with a headline, a numbered list, and a footer.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "A list of five text prompts for using ChatGPT as a thinking partner. A secondary subject is the stylized icon in the top left.",
+    "positioning": "center",
+    "scale": "N/A",
+    "interaction": "The icon and text are thematically linked by the topic of AI and prompts.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "N/A",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "The icon has stylized, long, flowing hair and a beard made of swirling lines."
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow",
+    "elements_detailed": [
+      {
+        "item": "Stylized icon of a bearded figure with sunglasses",
+        "position": "top-left quadrant",
+        "distance": "foreground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Black and white line art. Sunglasses have a '>' symbol in the right lens and a filled rectangle in the left."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "Off-white",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Icon (top-left), Headline Text (top-center), List of Prompts (center), URL (bottom-center)",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A minimalist social media infographic with a clean off-white background (#FCFCFC). Headline in a bold, black, condensed sans-serif font: '5 PROMPTS TO USE CHATGPT AS YOUR THINKING PARTNER'. A numbered list of 5 items using a regular sans-serif font. Key phrases and titles are highlighted with a warm yellow (#F9E090) block with slightly textured edges. In the top left, a black and white line art icon of a wise, bearded figure with sunglasses. At the bottom, a call to action with a URL. The style is modern, clean, and highly legible.",
+      "Create a high-contrast, educational graphic for Instagram, 4:5 aspect ratio. The design features a list of 5 prompts for AI. Use a strong typographic hierarchy with a large, bold sans-serif headline and a clear, readable body font. Use a single accent color, warm yellow, to highlight important text. Include a simple, stylized brand icon in the top-left corner."
+    ],
+    "keywords": [
+      "infographic",
+      "ChatGPT prompts",
+      "minimalist design",
+      "AI assistant",
+      "social media graphic"
+    ],
+    "technical_settings": "Design software (e.g., Figma, Canva, Illustrator). Canvas: 1080x1350px. Fonts: Bold condensed sans-serif for headlines (e.g., Anton, Bebas Neue), clean sans-serif for body (e.g., Inter, Helvetica Neue). Colors: Background #FCFCFC, Text #000000, Accent #F9E090.",
+    "post_processing": "None required, direct digital creation."
+  }
+}
