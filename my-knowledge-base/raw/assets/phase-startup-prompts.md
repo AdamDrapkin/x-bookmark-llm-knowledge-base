@@ -23,30 +23,78 @@ For batch #BATCH_NUM, you are processing a wiki backlog batch.
 
 ## TARGET: Phase 1 - Execute wiki-backlog skill
 
+**CRITICAL: BEFORE ANY ACTION - Read CLAUDE.md**
+- Read: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/CLAUDE.md
+- Follow ALL instructions in Core Instruction, Overview, and File Conventions sections
+- Do NOT proceed until CLAUDE.md is read and understood
+
 Execute the wiki-backlog skill following Steps 1, 2, 3, and 4 in order:
 
-1. **Step 1** - Read backlog-log.md: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/assets/backlog-log.md
+1. **Step 1** - Create temp directory for this batch:
+   ```
+   mkdir -p /tmp/wiki-backlog-batch-{BATCH_NUM}/{snapshots,scrapes,videos}
+   ```
+   - This temp directory must persist through ALL 4 phases
+   - DO NOT delete any files until Phase 4 cleanup
+
+2. **Step 2** - Read backlog-log.md: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/assets/backlog-log.md
    - Identify the next unprocessed batch
    - Extract the batch IDs
 
-2. **Step 2** - Identify the specific bookmark IDs for this batch from backlog-log.md
+3. **Step 3** - Identify the specific bookmark IDs for this batch from backlog-log.md
 
-3. **Step 3** - Query the database:
+4. **Step 4** - Query the database:
    sqlite3 ~/.ft-bookmarks/bookmarks.db "SELECT id, text, author_handle, primary_category, categories, synced_at FROM bookmarks WHERE id IN ('{batch_ids}');"
 
-4. **Step 4** - Read browser.md: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/assets/browser.md
+5. **Step 5** - Read browser.md: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/assets/browser.md
 
-5. **Step 4** - **CRITICAL: Inject cookies into browser BEFORE any navigation**
+6. **Step 5** - **CRITICAL: Inject cookies into browser BEFORE any navigation**
    - Per browser.md "AUTHENTICATION" section:
      1. Navigate to x.com FIRST (any page)
      2. Then inject cookies via browser JavaScript (use `.x.com` domain prefix)
      3. Verify logged in before proceeding to extraction
 
-6. **Step 5** - Extract each bookmark in the batch:
-   - For EACH bookmark: navigate, snapshot, extract media (images→raw/x-article-images, videos→raw/x-video-transcripts, links→raw/x-external-links as .txt)
-   - After ALL extracted: count images (N) and videos (M), generate per-item TODOs
+7. **Step 6** - Extract each bookmark in the batch:
+   - For EACH bookmark: navigate, snapshot, evaluate content type
+
+   **EXTERNAL OUTPUT LOCATIONS (save here, NOT temp):**
+
+   | Content Type | Final Location | Naming |
+   |------------|-------------|--------|
+   | Images | `raw/x-article-images/` | `{author}-{tweet-id}-image-{n}.{ext}` |
+   | Videos | `raw/x-video-transcripts/` | `{author}-{tweet-id}-transcript.txt` |
+   | Threads | `raw/x-threads/` | `{author}-{tweet-id}-thread.md` |
+   | Articles | `raw/articles/` | `{author}-{tweet-id}-article.md` |
+   | External Links | `raw/x-external-links/` | `{author}-{tweet-id}-link-{domain}.txt` |
+   | GitHub Repos | `raw/x-github-repos/` | `{author}-{tweet-id}-github-{repo-name}.md` |
+
+   **TEMP LOCATIONS (until Phase 4 cleanup):**
+
+   | Content Type | Temp Location |
+   |------------|------------|
+   | Browser Snapshots | `/tmp/wiki-backlog-batch-{BATCH_NUM}/snapshots/` |
+   | ScrapeCreators JSON | `/tmp/wiki-backlog-batch-{BATCH_NUM}/scrapes/` |
+   | Downloaded Videos | `/tmp/wiki-backlog-batch-{BATCH_NUM}/videos/` |
+
+   **For EACH bookmark:**
+   1. Navigate to tweet URL in browser
+   2. Take snapshot → save to temp/snapshots/
+   3. Use ScrapeCreators to get media URLs → save JSON to temp/scrapes/
+   4. Evaluate content type and save to final location (see table above)
+   5. **CRITICAL: Per browser.md Step 3 - If thread detected (postCount > 1):**
+      - Scroll through ALL replies
+      - Save thread content to `raw/x-threads/{author}-{tweet-id}-thread.md`
+      - If images in thread: save to `raw/x-article-images/`
+      - If videos in thread: save to `raw/x-video-transcripts/`
+   6. **CRITICAL: Per browser.md Step 4c - If video detected:**
+      - Check if YouTube → use ScrapeCreators YouTube transcript endpoint
+      - If NOT YouTube ≤2min → process via video-analysis skill
+      - If NOT YouTube >2min → process via Whisper
+   7. Create ONE TODO per item → process ONE at a time
+   8. After ALL extracted: count images (N), videos (M), threads (T), generate per-item TODOs
 
 Temp dir: /tmp/wiki-backlog-batch-{BATCH_NUM}/{snapshots,scrapes,videos}
+**DO NOT DELETE - this persists through Phase 4**
 
 ## PHASE COMPLETION
 After Phase 1 finishes:
@@ -65,12 +113,21 @@ For batch #BATCH_NUM, you are continuing wiki backlog processing.
 
 ## TARGET: Phase 2 - Execute wiki-backlog skill Step 5
 
+**CRITICAL: BEFORE ANY ACTION - Read CLAUDE.md**
+- Read: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/CLAUDE.md
+- Follow ALL instructions
+- Do NOT proceed until CLAUDE.md is read and understood
+
 Execute Step 5 from the wiki-backlog skill:
 
-1. Check temp directory for this batch: /tmp/wiki-backlog-batch-{BATCH_NUM}/
+1. **DO NOT DELETE temp directory** - /tmp/wiki-backlog-batch-{BATCH_NUM}/
+   - This temp directory persists from Phase 1
+   - **DO NOT cleanup or delete any files until Phase 4**
+
+2. Check temp directory for this batch: /tmp/wiki-backlog-batch-{BATCH_NUM}/
    - Review snapshots from Phase 1 to identify all images and videos extracted
 
-2. Load API keys: source /Users/adamdrapkin/Obsidian/synteo-intelligence/.env
+3. Load API keys: source /Users/adamdrapkin/Obsidian/synteo-intelligence/.env
 
 3. **Step 5** - Process all extracted images:
    - The images are in raw/x-article-images/ (count N from Phase 1)
@@ -101,9 +158,17 @@ For batch #BATCH_NUM, you are continuing wiki backlog processing.
 
 ## TARGET: Phase 3 - Create sources + Execute wiki-backlog skill Step 6
 
+**CRITICAL: BEFORE ANY ACTION - Read CLAUDE.md**
+- Read: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/CLAUDE.md
+- Follow ALL instructions
+- Do NOT proceed until CLAUDE.md is read and understood
+
 **CRITICAL:** Sources must exist in wiki/sources/ BEFORE qa-council can run.
 
-1. Check temp directory for this batch: /tmp/wiki-backlog-batch-{BATCH_NUM}/
+1. **DO NOT DELETE temp directory** - /tmp/wiki-backlog-batch-{BATCH_NUM}/
+   - **DO NOT cleanup or delete any files until Phase 4**
+
+2. Check temp directory for this batch: /tmp/wiki-backlog-batch-{BATCH_NUM}/
    - Review Phase 1/2 progress to confirm media analysis completed
 
 2. **Phase 3a** - Create source summaries (wiki-ingest):
@@ -133,10 +198,16 @@ For batch #BATCH_NUM, you are continuing wiki backlog processing.
 
 ## TARGET: Phase 4 - Execute wiki-backlog skill Steps 7, 8, and 9
 
+**CRITICAL: BEFORE ANY ACTION - Read CLAUDE.md**
+- Read: /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/CLAUDE.md
+- Follow ALL instructions
+- Do NOT proceed until CLAUDE.md is read and understood
+
 Execute Steps 7, 8, and 9 from the wiki-backlog skill:
 
 1. Check temp directory for this batch: /tmp/wiki-backlog-batch-{BATCH_NUM}/
    - Confirm Phase 3 QA generation completed
+   - **Temp directory should still have all Phase 1 files (snapshots, scrapes, videos)**
 
 2. **Step 7** - Run wiki-lint:
    - Run /wiki-lint skill
