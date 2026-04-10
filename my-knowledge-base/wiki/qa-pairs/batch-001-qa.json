@@ -1,0 +1,740 @@
+{
+  "frontmatter": {
+    "title": "QA: Batch 001",
+    "date_created": "2026-04-09",
+    "date_modified": "2026-04-09",
+    "summary": "75 source questions + 4 synthesis questions from batch 001",
+    "tags": ["qa-pairs", "batch-001"],
+    "type": "qa-pairs",
+    "status": "review"
+  },
+  "batch_id": "batch_001",
+  "batch_timestamp": "2026-04-09T19:50:00Z",
+  "sources_in_batch": 15,
+  "cumulative_sources": 15,
+  "source_questions": [
+    {
+      "source_slug": "alex_prompter-1953861679248560379-ai-prompt-library",
+      "source_content_preview": "Promotional tweet for God of Prompt's AI prompt library with pricing tiers: $15/month unlimited, $3.99 starter, $9.99 pro bundle",
+      "questions": [
+        {
+          "question_id": "q_batch001_alex_prompter-1953861679248560379-ai-prompt-library_01",
+          "question_type": "identity_problem",
+          "question": "What is the God of Prompt AI prompt library and what specific problem does it solve?",
+          "answer": "The God of Prompt AI prompt library is a commercial collection of AI prompts and resources designed to help users access pre-made prompts for various AI tasks. It solves the problem of users having to write prompts from scratch by providing a library of ready-to-use prompts across different categories.",
+          "search_terms": ["prompt library", "ai prompts", "god of prompt"]
+        },
+        {
+          "question_id": "q_batch001_alex_prompter-1953861679248560379-ai-prompt-library_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the God of Prompt AI prompt library actually do?",
+          "answer": "Think of it like a restaurant menu for AI prompts - instead of cooking (writing prompts) yourself, you can pick from a list of ready-made options. It's a subscription service where you pay monthly to access thousands of prompts for tasks like writing, coding, and content creation.",
+          "search_terms": ["ai prompt subscription", "ready-made prompts", "prompt marketplace"]
+        },
+        {
+          "question_id": "q_batch001_alex_prompter-1953861679248560379-ai-prompt-library_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for prompt libraries?",
+          "answer": "Also called: prompt marketplace, prompt store, AI prompt subscription, prompt vault, prompt collection, prompt toolkit, prompt pack",
+          "search_terms": ["prompt marketplace", "prompt vault", "ai prompt store"]
+        },
+        {
+          "question_id": "q_batch001_alex_prompter-1953861679248560379-ai-prompt-library_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with using prompt libraries and when do they fail?",
+          "answer": "People often think buying prompts means they'll work perfectly out of the box. They fail when the prompts don't match your specific use case, when the AI model has been updated and the prompt no longer works, or when users copy prompts without understanding how to adapt them.",
+          "search_terms": ["prompt library problems", "when prompts fail", "prompt limitations"]
+        },
+        {
+          "question_id": "q_batch001_alex_prompter-1953861679248560379-ai-prompt-library_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the God of Prompt library and what's the first step?",
+          "answer": "You need an account with an AI tool like ChatGPT or Claude. First step: visit godofprompt.ai/pricing, choose a plan (starter at $3.99/month or unlimited at $15/month), then browse the library for prompts matching your needs.",
+          "search_terms": ["how to use prompt library", "getting started with prompts", "prompt library setup"]
+        }
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1967590989062664316-book-writing-prompt",
+      "source_content_preview": "A comprehensive Claude Opus prompt that acts as a Book Writing Coach, guiding users through creating a complete book from concept to final chapter with adaptive phase-based structure",
+      "questions": [
+        {
+          "question_id": "q_batch001_godofprompt-1967590989062664316-book-writing-prompt_01",
+          "question_type": "identity_problem",
+          "question": "What is the Book Writing Coach prompt and what specific problem does it solve?",
+          "answer": "The Book Writing Coach prompt is a detailed Claude Opus 4.1 prompt that acts as an expert writing mentor guiding users through creating entire books. It solves the problem of writers facing blank pages and not knowing how to structure or complete a full book by providing a phased, adaptive framework.",
+          "search_terms": ["book writing prompt", "claude prompt", "writing coach"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1967590989062664316-book-writing-prompt_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the Book Writing Coach prompt actually do?",
+          "answer": "It's like having a professional editor and writing coach sitting next to you while you write. You tell it what kind of book you want to write, and it guides you step-by-step through the entire process - from brainstorming ideas to finishing your final chapter. It adapts to your writing style and pace.",
+          "search_terms": ["ai book writer", "writing assistant", "book creation help"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1967590989062664316-book-writing-prompt_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for book writing AI prompts?",
+          "answer": "Also called: book architect prompt, writing mentor AI, manuscript assistant, book creation tool, chapter-by-chapter writing guide",
+          "search_terms": ["ai book assistant", "writing buddy", "manuscript helper"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1967590989062664316-book-writing-prompt_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the Book Writing Coach prompt and when does it fail?",
+          "answer": "People expect the AI to write the entire book for them. It fails when users don't provide enough context about their book idea, when they skip the voice discovery phase (which is crucial for authentic writing), or when they try to rush through phases instead of letting the process unfold naturally.",
+          "search_terms": ["book prompt problems", "ai writing failures", "writing prompt limitations"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1967590989062664316-book-writing-prompt_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the Book Writing Coach prompt and what's the first step?",
+          "answer": "You need Claude Opus 4.1 (or newer Claude version). First step: Copy the full prompt into Claude, then provide your book concept including: book length preference, genre, target audience, and your available writing time. The prompt will then guide you through the voice discovery phase.",
+          "search_terms": ["how to use book prompt", "claude book writing", "getting started with writing prompts"]
+        }
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1970086539402121690-prompt-engineer-protocol",
+      "source_content_preview": "God of Prompt's Protocol for Designing Prompts showing 6-step process and Golden Rule for effective prompt engineering",
+      "questions": [
+        {
+          "question_id": "q_batch001_godofprompt-1970086539402121690-prompt-engineer-protocol_01",
+          "question_type": "identity_problem",
+          "question": "What is the Protocol for Designing Prompts and what specific problem does it solve?",
+          "answer": "The Protocol for Designing Prompts is a 6-step systematic methodology for creating effective AI prompts. It solves the problem of users writing prompts randomly without structure, resulting in inconsistent or poor quality AI outputs.",
+          "search_terms": ["prompt design", "prompt protocol", "prompt engineering method"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970086539402121690-prompt-engineer-protocol_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the Protocol for Designing Prompts actually do?",
+          "answer": "It's a checklist for writing good prompts. Instead of just typing 'write something good,' you follow six steps: define your goal, know your audience, choose a role, set tone/style, add examples, then test and refine. The Golden Rule asks: 'Would this give the best result for a non-expert?'",
+          "search_terms": ["prompt creation steps", "how to write prompts", "prompt checklist"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970086539402121690-prompt-engineer-protocol_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for prompt design methodologies?",
+          "answer": "Also called: prompt framework, prompt methodology, prompt template, prompt workflow, prompt building steps, prompt best practices",
+          "search_terms": ["prompt building", "prompt structure", "prompt creation method"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970086539402121690-prompt-engineer-protocol_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the Protocol for Designing Prompts and when does it fail?",
+          "answer": "People skip steps or treat them as optional. It fails when users don't include examples (step 5 - few-shot learning), when they define vague goals instead of specific ones, or when they skip testing entirely and assume the first version works.",
+          "search_terms": ["prompt design mistakes", "why prompts fail", "prompt protocol problems"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970086539402121690-prompt-engineer-protocol_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the Protocol for Designing Prompts and what's the first step?",
+          "answer": "You need a clear task you want the AI to perform. First step: Write down your goal in one sentence - what exactly do you want the AI to produce? Then move through the six steps in order, starting with identifying who will use the output.",
+          "search_terms": ["how to design prompts", "prompt protocol steps", "starting prompt engineering"]
+        }
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1970101500396634129-ai-prompt-library",
+      "source_content_preview": "God of Prompt promotional tweet showcasing their AI prompt library with key features: biggest collection of text & image prompts, unlimited custom prompts, lifetime access",
+      "questions": [
+        {
+          "question_id": "q_batch001_godofprompt-1970101500396634129-ai-prompt-library_01",
+          "question_type": "identity_problem",
+          "question": "What is God of Prompt's AI prompt library and what specific problem does it solve?",
+          "answer": "God of Prompt's AI prompt library is a commercial collection of text and image prompts claimed to be the largest available. It solves the problem of finding and creating effective prompts by providing unlimited custom prompts with lifetime access and updates.",
+          "search_terms": ["prompt library", "ai prompts", "text and image prompts"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970101500396634129-ai-prompt-library_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does God of Prompt's AI prompt library actually do?",
+          "answer": "It's like a giant spreadsheet of ready-to-use instructions for AI tools. You get unlimited access to use and customize prompts for both text-based AI (like ChatGPT) and image generation AI (like Midjourney). Pay once, keep it forever.",
+          "search_terms": ["ai prompt collection", "prompt subscription", "lifetime prompts"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970101500396634129-ai-prompt-library_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this type of prompt resource?",
+          "answer": "Also called: prompt vault, prompt mega-collection, ai resource library, prompt bundle, lifetime prompt access",
+          "search_terms": ["prompt collection", "ai resource hub", "prompt database"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970101500396634129-ai-prompt-library_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with prompt libraries and when do they fail?",
+          "answer": "Users treat the library as a magic solution. They fail when they copy prompts without understanding how they work, when the prompts don't fit their specific needs, or when they expect lifetime updates but the library becomes outdated as AI models evolve.",
+          "search_terms": ["prompt library issues", "when prompts don't work", "library limitations"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1970101500396634129-ai-prompt-library_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using God of Prompt's library and what's the first step?",
+          "answer": "You need an AI tool (ChatGPT, Claude, Midjourney, etc.) and a godofprompt.ai account. First step: Visit the pricing page, choose a plan, then search or browse the library for prompts matching your task - start with simple prompts to understand the format before trying complex ones.",
+          "search_terms": ["using prompt library", "getting started with prompts", "prompt search"]
+        }
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1974102012670407035-depth-prompt-framework",
+      "source_content_preview": "God of Prompt's comprehensive prompt framework acronym: Define Multiple Perspectives, Establish Success Metrics, Provide Context Layers, Task Breakdown, Human Feedback Loop",
+      "questions": [
+        {
+          "question_id": "q_batch001_godofprompt-1974102012670407035-depth-prompt-framework_01",
+          "question_type": "identity_problem",
+          "question": "What is the D-E-P-T-H Prompt Framework and what specific problem does it solve?",
+          "answer": "The D-E-P-T-H framework is a five-component system for writing effective AI prompts: Define Multiple Perspectives, Establish Success Metrics, Provide Context Layers, Task Breakdown, and Human Feedback Loop. It solves the problem of generic, low-quality AI outputs by providing structure and measurable criteria.",
+          "search_terms": ["prompt framework", "depth prompt", "D-E-P-T-H"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974102012670407035-depth-prompt-framework_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the D-E-P-T-H framework actually do?",
+          "answer": "Think of it as building a better prompt sandwich: D (multiple experts instead of one), E (know what success looks like), P (layer in context like building blocks), T (don't dump everything at once - break it up), H (have the AI rate and improve its own work).",
+          "search_terms": ["prompt structure", "better prompts", "prompt improvement"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974102012670407035-depth-prompt-framework_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for the D-E-P-T-H framework?",
+          "answer": "Also called: depth framework, comprehensive prompting, structured prompting, multi-layer prompt design, prompt architecture",
+          "search_terms": ["prompt methodology", "prompt systems", "structured prompt writing"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974102012670407035-depth-prompt-framework_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the D-E-P-T-H framework and when does it fail?",
+          "answer": "People apply only one or two letters instead of the full framework. It fails when users skip the feedback loop (H), use vague success metrics like 'make it good' instead of specific numbers, or overwhelm the AI with too much context without breaking tasks into steps.",
+          "search_terms": ["depth framework problems", "prompt framework mistakes", "framework failures"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974102012670407035-depth-prompt-framework_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the D-E-P-T-H framework and what's the first step?",
+          "answer": "You need a clear task you want the AI to accomplish. First step: Start with D - define 2-3 different expert perspectives that should approach your problem. For example: 'You are three experts: behavioral psychologist, copywriter, and data analyst working together.'",
+          "search_terms": ["how to use depth framework", "starting with D-E-P-T-H", "prompt framework tutorial"]
+        }
+      ]
+    },
+    {
+      "source_slug": "godofprompt-1974425241582796820-anthropic-prompting-style",
+      "source_content_preview": "God of Prompt's analysis of Anthropic's internal prompting style after 3 weeks of analyzing official documentation and prompt library",
+      "questions": [
+        {
+          "question_id": "q_batch001_godofprompt-1974425241582796820-anthropic-prompting-style_01",
+          "question_type": "identity_problem",
+          "question": "What is Anthropic's internal prompting style and what specific problem does it solve?",
+          "answer": "Anthropic's internal prompting style refers to the methods Anthropic uses internally to get the best results from their own AI models. The analysis reveals techniques not typically taught publicly, solving the problem of users not knowing the advanced methods AI companies use internally.",
+          "search_terms": ["anthropic prompting", "claude prompting", "internal ai methods"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974425241582796820-anthropic-prompting-style_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does Anthropic's internal prompting style actually involve?",
+          "answer": "It's the 'secret sauce' that Anthropic's own engineers use when writing prompts for Claude. Think of it like a chef's private recipe - not the public cookbook. The analysis took 3 weeks of studying their documentation, prompt library, and API examples to reverse-engineer what works best.",
+          "search_terms": ["claude best prompts", "anthropic techniques", "expert prompting"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974425241582796820-anthropic-prompting-style_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for advanced prompting methods?",
+          "answer": "Also called: expert prompting, advanced prompt engineering, insider prompting techniques, professional prompt writing, ai model optimization",
+          "search_terms": ["pro level prompting", "expert prompt techniques", "advanced prompt methods"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974425241582796820-anthropic-prompting-style_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake when trying to apply Anthropic's internal methods and when does it fail?",
+          "answer": "People assume there's one magic technique. It fails when users try to copy patterns without understanding why they work, when they apply techniques meant for internal models to different AI systems, or when they focus on formatting instead of the underlying principles.",
+          "search_terms": ["anthropic style problems", "insider technique mistakes", "prompt analysis failures"]
+        },
+        {
+          "question_id": "q_batch001_godofprompt-1974425241582796820-anthropic-prompting-style_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before studying Anthropic's internal prompting style and what's the first step?",
+          "answer": "You need a basic understanding of prompt engineering and experience using Claude. First step: Read the publicly available Anthropic documentation and prompt library examples, then compare them against the analysis to identify gaps in your current approach.",
+          "search_terms": ["learning anthropic methods", "claude prompting tutorial", "prompt analysis start"]
+        }
+      ]
+    },
+    {
+      "source_slug": "jb-2026-workflow-play",
+      "source_content_preview": "J.B. explains a business strategy: find AI tools with learning curves, build pre-configured workflows on top, sell to users who don't want to learn prompting",
+      "questions": [
+        {
+          "question_id": "q_batch001_jb-2026-workflow-play_01",
+          "question_type": "identity_problem",
+          "question": "What is the workflow wrapper business strategy and what specific problem does it solve?",
+          "answer": "The workflow wrapper strategy is a business model where you find AI tools with steep learning curves, create simplified pre-configured workflows on top of them, and sell to users who don't want to learn prompting. It solves the problem of powerful AI tools being too complex for everyday users.",
+          "search_terms": ["ai workflow business", "wrapper strategy", "no-code ai"]
+        },
+        {
+          "question_id": "q_batch001_jb-2026-workflow-play_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the workflow wrapper strategy actually involve?",
+          "answer": "It's like selling 'easy mode' versions of complicated software. Find an AI tool that's powerful but hard to use (like a complex workflow automation tool), build a simple interface that does the common tasks with one click, then sell that simpler version to people who find the original too confusing.",
+          "search_terms": ["simplify ai tools", "easy workflow", "user friendly ai"]
+        },
+        {
+          "question_id": "q_batch001_jb-2026-workflow-play_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this business strategy?",
+          "answer": "Also called: workflow wrapper model, no-code ai business, ai tool simplification, pre-built workflow selling, automation-as-a-service",
+          "search_terms": ["ai wrapper business", "simplified automation", "workflow selling"]
+        },
+        {
+          "question_id": "q_batch001_jb-2026-workflow-play_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the workflow wrapper strategy and when does it fail?",
+          "answer": "People build workflows for problems that don't exist. It fails when the underlying AI tool changes its API (breaking your wrapper), when you can't compete with the original tool adding 'easy mode' features, or when your simplified version doesn't actually solve real user problems.",
+          "search_terms": ["workflow business failures", "wrapper model problems", "ai business mistakes"]
+        },
+        {
+          "question_id": "q_batch001_jb-2026-workflow-play_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before implementing the workflow wrapper strategy and what's the first step?",
+          "answer": "You need knowledge of at least one complex AI tool and ability to create simple interfaces. First step: Research AI tools with steep learning curves (like n8n, Zapier, or complex LLMs) and identify common pain points - what do users struggle with most?",
+          "search_terms": ["starting workflow business", "wrapper strategy steps", "finding ai tool gaps"]
+        }
+      ]
+    },
+    {
+      "source_slug": "louis-gleeson-2026-feynman-agent",
+      "source_content_preview": "Louis Gleeson discovered Feynman, an open source AI research agent that searches papers, synthesizes findings, verifies claims against real sources, and produces cited research briefs in seconds",
+      "questions": [
+        {
+          "question_id": "q_batch001_louis-gleeson-2026-feynman-agent_01",
+          "question_type": "identity_problem",
+          "question": "What is the Feynman AI research agent and what specific problem does it solve?",
+          "answer": "Feynman is an open source AI research agent that accomplishes in seconds what typically takes PhDs hours. It searches academic papers, synthesizes findings, verifies every claim against real sources, and delivers cited research briefs. It solves the problem of time-consuming academic research.",
+          "search_terms": ["feynman ai", "ai research agent", "paper synthesis"]
+        },
+        {
+          "question_id": "q_batch001_louis-gleeson-2026-feynman-agent_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the Feynman AI research agent actually do?",
+          "answer": "Think of it as a super-powered research assistant. You type a topic, and it automatically finds relevant academic papers, reads them, pulls out the key findings, checks that the claims are actually supported by the sources, and writes you a summary with citations - all in seconds.",
+          "search_terms": ["ai research tool", "academic paper ai", "research automation"]
+        },
+        {
+          "question_id": "q_batch001_louis-gleeson-2026-feynman-agent_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for AI research agents?",
+          "answer": "Also called: ai research assistant, paper reading ai, academic synthesis tool, research automation bot, citation generator",
+          "search_terms": ["ai research helper", "academic ai", "paper summarizing ai"]
+        },
+        {
+          "question_id": "q_batch001_louis-gleeson-2026-feynman-agent_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with using Feynman and when does it fail?",
+          "answer": "People think it replaces human judgment entirely. It fails when users accept outputs without reviewing citations, when the topic is too narrow (not enough papers exist), or when the verification system encounters paywalled papers it cannot fully verify.",
+          "search_terms": ["feynman problems", "ai research limitations", "research agent failures"]
+        },
+        {
+          "question_id": "q_batch001_louis-gleeson-2026-feynman-agent_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Feynman and what's the first step?",
+          "answer": "You need access to the GitHub repository (getcompanion-ai/feynman) and either local GPU or cloud computing resources. First step: Visit the GitHub page, follow the installation instructions, then enter your research topic and let the multi-agent system (Researcher, Reviewer, Writer, Verifier) process your query.",
+          "search_terms": ["how to use feynman", "ai research agent setup", "getting started with feynman"]
+        }
+      ]
+    },
+    {
+      "source_slug": "meng-to-2026-designmd-tool",
+      "source_content_preview": "Meng To created a tool that generates DESIGN.md from any URL and accurately recreates the site. Useful for learning design systems",
+      "questions": [
+        {
+          "question_id": "q_batch001_meng-to-2026-designmd-tool_01",
+          "question_type": "identity_problem",
+          "question": "What is the Design.md tool and what specific problem does it solve?",
+          "answer": "The Design.md tool generates a DESIGN.md specification document from any URL, accurately recreating the site's design. It solves the problem of designers and developers not understanding design systems behind existing websites, making it hard to learn from or replicate good design.",
+          "search_terms": ["design md tool", "design specs", "design system learning"]
+        },
+        {
+          "question_id": "q_batch001_meng-to-2026-designmd-tool_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the Design.md tool actually do?",
+          "answer": "You give it any website URL, and it analyzes the design and spits out a document that explains the design system - colors, fonts, spacing, components, everything. It's like having an AI that reverse-engineers a website's design rules so you can learn from or recreate it.",
+          "search_terms": ["website design analysis", "design reverse engineering", "ai design tool"]
+        },
+        {
+          "question_id": "q_batch001_meng-to-2026-designmd-tool_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this type of tool?",
+          "answer": "Also called: design system extractor, website design analyzer, design documentation tool, design spec generator, reverse design engineer",
+          "search_terms": ["design analysis tool", "design learning tool", "website design ai"]
+        },
+        {
+          "question_id": "q_batch001_meng-to-2026-designmd-tool_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the Design.md tool and when does it fail?",
+          "answer": "People expect pixel-perfect recreation. It fails on websites with complex animations, heavily interactive elements, or dynamically generated content. It also may miss subtle design decisions that are obvious to humans but hard for AI to detect.",
+          "search_terms": ["design md limitations", "tool failures", "design analysis problems"]
+        },
+        {
+          "question_id": "q_batch001_meng-to-2026-designmd-tool_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the Design.md tool and what's the first step?",
+          "answer": "You need access to aura.build (where the tool is hosted). First step: Go to aura.build, enter the URL of a website you want to analyze, and the tool will generate a DESIGN.md file with the complete design specification you can use for learning or replication.",
+          "search_terms": ["how to use design md", "aura.build tool", "getting design specs"]
+        }
+      ]
+    },
+    {
+      "source_slug": "minchoi-1964716900660965644-hallucination-prompt",
+      "source_content_preview": "A prompt designed to reduce AI hallucinations by making models more likely to admit when they don't know something",
+      "questions": [
+        {
+          "question_id": "q_batch001_minchoi-1964716900660965644-hallucination-prompt_01",
+          "question_type": "identity_problem",
+          "question": "What is the Reality Filter prompt for hallucinations and what specific problem does it solve?",
+          "answer": "The Reality Filter prompt is a directive scaffold that makes AI models more likely to admit when they don't know something rather than fabricating information. It solves the hallucination problem - AI models making up plausible-sounding but incorrect information.",
+          "search_terms": ["reality filter", "hallucination prompt", "ai reliability"]
+        },
+        {
+          "question_id": "q_batch001_minchoi-1964716900660965644-hallucination-prompt_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the Reality Filter prompt actually do?",
+          "answer": "It teaches the AI to say 'I don't know' instead of making things up. The prompt forces the model to tag anything that's not directly verifiable with labels like [Unverified] or [Inference], and requires saying 'I cannot verify this' when it lacks data.",
+          "search_terms": ["anti-hallucination", "ai honesty", "reduce ai lies"]
+        },
+        {
+          "question_id": "q_batch001_minchoi-1964716900660965644-hallucination-prompt_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for anti-hallucination prompts?",
+          "answer": "Also called: hallucination reducer, uncertainty prompt, truth enforcement, fact-checking prompt, ai honesty prompt",
+          "search_terms": ["anti-hallucination", "ai uncertainty", "truth prompt"]
+        },
+        {
+          "question_id": "q_batch001_minchoi-1964716900660965644-hallucination-prompt_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the Reality Filter and when does it fail?",
+          "answer": "People expect 100% accuracy. It fails when the model is genuinely confident but wrong, when it can't access real-time information, or when users don't understand that [Inference]标记 doesn't guarantee accuracy - it just flags uncertainty.",
+          "search_terms": ["reality filter problems", "hallucination prompt failures", "ai truth limitations"]
+        },
+        {
+          "question_id": "q_batch001_minchoi-1964716900660965644-hallucination-prompt_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the Reality Filter prompt and what's the first step?",
+          "answer": "You need access to ChatGPT, Claude, or Gemini. First step: Copy the Reality Filter prompt and prepend it to your queries. The prompt instructs the model to label unverified content and explicitly state when it cannot verify information.",
+          "search_terms": ["how to use reality filter", "hallucination prompt setup", "reducing ai hallucinations"]
+        }
+      ]
+    },
+    {
+      "source_slug": "mindbranches-1974621848844616006-video-prompt-styles",
+      "source_content_preview": "MindBranches' comprehensive guide to AI video prompt styles covering cinematic, surveillance, vintage, and experimental categories",
+      "questions": [
+        {
+          "question_id": "q_batch001_mindbranches-1974621848844616006-video-prompt-styles_01",
+          "question_type": "identity_problem",
+          "question": "What are AI video prompt styles and what specific problem do they solve?",
+          "answer": "AI video prompt styles are specific visual and aesthetic descriptors that help guide AI video generation tools to produce videos with particular looks. They solve the problem of users getting generic, uninspired videos by providing categories like cinematic, surveillance, vintage, and experimental.",
+          "search_terms": ["ai video prompts", "video styles", "video generation"]
+        },
+        {
+          "question_id": "q_batch001_mindbranches-1974621848844616006-video-prompt-styles_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what do AI video prompt styles actually involve?",
+          "answer": "It's like telling a director how you want your video to look. Instead of just saying 'make a video,' you specify 'cinematic film shot with dramatic lighting' or 'VHS footage from the 1980s' or 'TikTok style with fast cuts.' These style keywords tell the AI the aesthetic you're going for.",
+          "search_terms": ["video generation styles", "ai video aesthetics", "video prompt keywords"]
+        },
+        {
+          "question_id": "q_batch001_mindbranches-1974621848844616006-video-prompt-styles_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for video style descriptors?",
+          "answer": "Also called: video aesthetics, visual style keywords, video generation modifiers, cinematic prompts, look and feel descriptors",
+          "search_terms": ["video style terms", "ai video descriptors", "prompting video"]
+        },
+        {
+          "question_id": "q_batch001_mindbranches-1974621848844616006-video-prompt-styles_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with video prompt styles and when do they fail?",
+          "answer": "People use too many conflicting styles at once. They fail when contradictory styles are combined (e.g., 'cinematic' and 'iPhone vlog'), when the style doesn't exist in the AI's training data, or when the prompt is too long and the AI focuses on content over style.",
+          "search_terms": ["video prompt problems", "style mixing failures", "video generation issues"]
+        },
+        {
+          "question_id": "q_batch001_mindbranches-1974621848844616006-video-prompt-styles_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using video prompt styles and what's the first step?",
+          "answer": "You need access to an AI video generation tool (Runway, Pika, Sora, etc.). First step: Pick one category from the guide (e.g., Cinematic, Vintage, or Social Media) and practice combining 2-3 style descriptors with your main video subject before adding more complexity.",
+          "search_terms": ["how to use video styles", "ai video prompting", "video prompt guide"]
+        }
+      ]
+    },
+    {
+      "source_slug": "n8n-2026-smart-alerting",
+      "source_content_preview": "n8n.io shares a workflow that reduces alert noise by waiting 5 minutes before sending notifications",
+      "questions": [
+        {
+          "question_id": "q_batch001_n8n-2026-smart-alerting_01",
+          "question_type": "identity_problem",
+          "question": "What is n8n smart alert filtering and what specific problem does it solve?",
+          "answer": "n8n smart alert filtering is a workflow automation approach that reduces alert noise by implementing a 5-minute delay before sending notifications. It solves the problem of monitoring tools alerting on every minor issue, causing alert fatigue and missed critical issues.",
+          "search_terms": ["n8n workflow", "smart alerts", "workflow automation"]
+        },
+        {
+          "question_id": "q_batch001_n8n-2026-smart-alerting_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does n8n smart alert filtering actually do?",
+          "answer": "It's like a bouncer for your notifications. Instead of alerting you every time something minor goes wrong, the workflow waits 5 minutes. If the issue resolves itself (a temporary hiccup), you never get bothered. Only persistent problems trigger an email or Telegram message.",
+          "search_terms": ["reduce alert noise", "smart notifications", "workflow alerting"]
+        },
+        {
+          "question_id": "q_batch001_n8n-2026-smart-alerting_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for smart alerting?",
+          "answer": "Also called: intelligent alerts, alert filtering, noise reduction monitoring, smart notifications, delayed alerting, threshold-based alerts",
+          "search_terms": ["alert management", "monitoring automation", "notification filtering"]
+        },
+        {
+          "question_id": "q_batch001_n8n-2026-smart-alerting_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with smart alerting and when does it fail?",
+          "answer": "People set the wrong delay time. It fails when the delay is too long (critical issues aren't reported in time) or too short (too many false positives get through). It also fails when the conditions for 'resolving' are too loose, masking real problems.",
+          "search_terms": ["smart alert problems", "alert workflow failures", "monitoring issues"]
+        },
+        {
+          "question_id": "q_batch001_n8n-2026-smart-alerting_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before implementing n8n smart alerting and what's the first step?",
+          "answer": "You need an n8n account and some monitoring system to connect. First step: Import the workflow template from n8n.io/workflows/11763, customize the 5-minute delay to match your needs, and connect your monitoring tools and notification channels (email, Telegram).",
+          "search_terms": ["n8n alert setup", "smart alerting tutorial", "workflow automation start"]
+        }
+      ]
+    },
+    {
+      "source_slug": "robert-youssef-2026-claude-ai-business",
+      "source_content_preview": "Robert Youssef's 7-part thread about building AI agent businesses with Claude and Andrew Ng's framework. Includes 6 detailed prompts for Plan, Build, Deploy, Price, Sell, Scale stages",
+      "questions": [
+        {
+          "question_id": "q_batch001_robert-youssef-2026-claude-ai-business_01",
+          "question_type": "identity_problem",
+          "question": "What is the Claude AI Agent Business framework and what specific problem does it solve?",
+          "answer": "The Claude AI Agent Business framework is a 6-stage system (Plan, Build, Deploy, Price, Sell, Scale) using Andrew Ng's agentic AI approach. It solves the problem of entrepreneurs not knowing how to build and sell AI agent services by providing detailed prompts for each business stage.",
+          "search_terms": ["ai agent business", "claude business", "andrew ng framework"]
+        },
+        {
+          "question_id": "q_batch001_robert-youssef-2026-claude-ai-business_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the Claude AI Agent Business framework actually do?",
+          "answer": "It's a step-by-step guide for turning Claude into a business partner. Instead of figuring out how to build an AI business from scratch, you use specific prompts to have Claude help you plan, build your agent, deploy it, price your service, find customers, and scale up.",
+          "search_terms": ["ai business building", "claude for business", "agent business guide"]
+        },
+        {
+          "question_id": "q_batch001_robert-youssef-2026-claude-ai-business_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for AI agent business frameworks?",
+          "answer": "Also called: ai business blueprint, agent monetization, ai service business, prompt-based business, llm business framework",
+          "search_terms": ["ai business model", "claude entrepreneurship", "agent business plan"]
+        },
+        {
+          "question_id": "q_batch001_robert-youssef-2026-claude-ai-business_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the AI Agent Business framework and when does it fail?",
+          "answer": "People think the prompts do everything automatically. It fails when users skip the 'Sell' stage (focusing only on building), when they don't have actual business knowledge to complement the AI assistance, or when they try to scale before validating demand.",
+          "search_terms": ["ai business problems", "claude business failures", "framework limitations"]
+        },
+        {
+          "question_id": "q_batch001_robert-youssef-2026-claude-ai-business_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the AI Agent Business framework and what's the first step?",
+          "answer": "You need Claude access and basic business knowledge. First step: Read Robert Youssef's thread to get all 6 prompts, then start with the 'Plan' prompt - describe your business idea and let Claude guide you through the remaining stages in order.",
+          "search_terms": ["using ai business framework", "claude business steps", "getting started with ai business"]
+        }
+      ]
+    },
+    {
+      "source_slug": "rohanpaul_ai-1964529285282086967-reality-filter",
+      "source_content_preview": "A prompt designed to reduce AI hallucinations by making models label unverified content and admit when they don't know",
+      "questions": [
+        {
+          "question_id": "q_batch001_rohanpaul_ai-1964529285282086967-reality-filter_01",
+          "question_type": "identity_problem",
+          "question": "What is the Reality Filter prompt and what specific problem does it solve?",
+          "answer": "The Reality Filter is a permanent directive prompt that makes AI models label unverified content with [Unverified] or [Inference] tags and mandates saying 'I cannot verify this' when lacking data. It solves the hallucination problem mechanically through repeated instruction patterns rather than hoping for better reasoning.",
+          "search_terms": ["reality filter", "hallucination reduction", "ai truth"]
+        },
+        {
+          "question_id": "q_batch001_rohanpaul_ai-1964529285282086967-reality-filter_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the Reality Filter prompt actually do?",
+          "answer": "It works like a fact-checker riding shotgun. Every time the AI is about to say something, the prompt forces it to think: 'Can I actually verify this?' If not, it must tag the statement as [Unverified] or [Inference] instead of presenting it as fact.",
+          "search_terms": ["anti-hallucination", "ai fact checking", "reduce hallucinations"]
+        },
+        {
+          "question_id": "q_batch001_rohanpaul_ai-1964529285282086967-reality-filter_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for the Reality Filter?",
+          "answer": "Also called: uncertainty tagger, verification prompt, hallucination enforcer, truth labeling, ai skepticism prompt",
+          "search_terms": ["ai uncertainty", "hallucination fix", "truth enforcement"]
+        },
+        {
+          "question_id": "q_batch001_rohanpaul_ai-1964529285282086967-reality-filter_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with the Reality Filter and when does it fail?",
+          "answer": "People think it's a complete solution. It fails when the model has been fine-tuned to be overly confident, when users don't understand [Inference] still means 'could be wrong,' or when the prompt is too long and gets ignored by the model.",
+          "search_terms": ["reality filter problems", "hallucination prompt issues", "ai reliability limitations"]
+        },
+        {
+          "question_id": "q_batch001_rohanpaul_ai-1964529285282086967-reality-filter_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the Reality Filter and what's the first step?",
+          "answer": "You need access to any AI model (GPT-4, Gemini Pro, Claude, or the universal version). First step: Copy the Reality Filter prompt and prepend it to your conversations as a system instruction, or use the model-specific version for your particular AI tool.",
+          "search_terms": ["how to use reality filter", "hallucination reduction setup", "getting started with verification"]
+        }
+      ]
+    },
+    {
+      "source_slug": "shushant_l-1974097166454174149-perplexity-research-prompts",
+      "source_content_preview": "Shushant Lakhyani's collection of 10 Perplexity Deep Research prompts designed to enhance research capabilities",
+      "questions": [
+        {
+          "question_id": "q_batch001_shushant_l-1974097166454174149-perplexity-research-prompts_01",
+          "question_type": "identity_problem",
+          "question": "What are Perplexity Deep Research prompts and what specific problem do they solve?",
+          "answer": "Perplexity Deep Research prompts are a collection of 10 specialized prompts designed to enhance research capabilities when using Perplexity's Deep Research mode. They solve the problem of users not knowing how to get the most out of Perplexity's research-focused features.",
+          "search_terms": ["perplexity prompts", "deep research", "ai research"]
+        },
+        {
+          "question_id": "q_batch001_shushant_l-1974097166454174149-perplexity-research-prompts_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what do Perplexity Deep Research prompts actually do?",
+          "answer": "They're like cheat codes for Perplexity's research mode. Instead of just typing a question, you use specially crafted prompts that tell Perplexity exactly how to structure its research - making it dig deeper, cite sources better, and produce more comprehensive results.",
+          "search_terms": ["perplexity tips", "research prompts", "ai research help"]
+        },
+        {
+          "question_id": "q_batch001_shushant_l-1974097166454174149-perplexity-research-prompts_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for research prompts?",
+          "answer": "Also called: research prompts, investigation prompts, deep search prompts, academic prompts, knowledge queries",
+          "search_terms": ["research automation", "ai research tips", "perplexity help"]
+        },
+        {
+          "question_id": "q_batch001_shushant_l-1974097166454174149-perplexity-research-prompts_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake with Perplexity Deep Research prompts and when do they fail?",
+          "answer": "People copy prompts without understanding their structure. They fail when the prompts are used for non-research tasks (they're optimized for deep analysis, not quick answers), or when users expect the AI to have knowledge it doesn't have.",
+          "search_terms": ["perplexity problems", "research prompt issues", "ai research limitations"]
+        },
+        {
+          "question_id": "q_batch001_shushant_l-1974097166454174149-perplexity-research-prompts_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Perplexity Deep Research prompts and what's the first step?",
+          "answer": "You need a Perplexity account with access to Deep Research mode. First step: Access Shushant Lakhyani's collection (via the original tweet's image/link), then start with the simpler research prompts before moving to more complex multi-step research queries.",
+          "search_terms": ["using perplexity prompts", "deep research setup", "getting started with research"]
+        }
+      ]
+    }
+  ],
+  "synthesis_questions": [
+    {
+      "question_id": "q_batch001_synth_01",
+      "question_type": "intra_batch_pattern",
+      "question": "What patterns or shared principles emerge across sources in this batch?",
+      "answer": "A shared pattern across this batch is the focus on structured prompting. [[godofprompt-1974102012670407035-depth-prompt-framework]] demonstrates the D-E-P-T-H framework, while [[godofprompt-1970086539402121690-prompt-engineer-protocol]] shows the 6-step protocol - both emphasize systematic approaches over ad-hoc prompting. Another pattern is the commercial angle: multiple sources ([[alex_prompter-1953861679248560379-ai-prompt-library]], [[godofprompt-1970101500396634129-ai-prompt-library]], [[jb-2026-workflow-play]]) discuss monetizing AI capabilities. The hallucination problem appears twice ([[minchoi-1964716900660965644-hallucination-prompt]], [[rohanpaul_ai-1964529285282086967-reality-filter]]) showing this is a key concern for practitioners.",
+      "referenced_source_slugs": ["godofprompt-1974102012670407035-depth-prompt-framework", "godofprompt-1970086539402121690-prompt-engineer-protocol", "alex_prompter-1953861679248560379-ai-prompt-library", "godofprompt-1970101500396634129-ai-prompt-library", "jb-2026-workflow-play", "minchoi-1964716900660965644-hallucination-prompt", "rohanpaul_ai-1964529285282086967-reality-filter"],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_batch001_synth_02",
+      "question_type": "intra_batch_tension",
+      "question": "Do any sources in this batch contradict each other or create tension?",
+      "answer": "There's tension between commercial prompt libraries and open-source approaches. [[alex_prompter-1953861679248560379-ai-prompt-library]] and [[godofprompt-1970101500396634129-ai-prompt-library]] promote paid prompt libraries ($3.99-$15/month), while [[louis-gleeson-2026-feynman-agent]] presents a completely free, open-source MIT-licensed research agent. This creates tension around the question: should users pay for prompts or build their own? Additionally, there's tension between structured frameworks (the D-E-P-T-H method) and simpler 'just write a good prompt' approaches - though both claim to improve results.",
+      "referenced_source_slugs": ["alex_prompter-1953861679248560379-ai-prompt-library", "godofprompt-1970101500396634129-ai-prompt-library", "louis-gleeson-2026-feynman-agent"],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_batch001_synth_03",
+      "question_type": "prerequisite_chain",
+      "question": "What implicit prerequisite chain connects these sources?",
+      "answer": "To get value from advanced frameworks like [[godofprompt-1974102012670407035-depth-prompt-framework]] or business applications like [[robert-youssef-2026-claude-ai-business]], one should first understand basic prompting through [[godofprompt-1970086539402121690-prompt-engineer-protocol]]. To build reliable AI systems, understanding hallucination problems via [[minchoi-1964716900660965644-hallucination-prompt]] or [[rohanpaul_ai-1964529285282086967-reality-filter]] is essential. Before monetizing AI through [[jb-2026-workflow-play]], practical skills from prompt libraries are useful. The chain: basic prompting → structured frameworks → reliability techniques → practical applications → monetization.",
+      "referenced_source_slugs": ["godofprompt-1974102012670407035-depth-prompt-framework", "robert-youssef-2026-claude-ai-business", "godofprompt-1970086539402121690-prompt-engineer-protocol", "minchoi-1964716900660965644-hallucination-prompt", "rohanpaul_ai-1964529285282086967-reality-filter", "jb-2026-workflow-play"],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_batch001_synth_04",
+      "question_type": "gap_identification",
+      "question": "What gap or missing technique would someone notice after reading all of these?",
+      "answer": "While the sources cover prompt design, frameworks, and various AI tools, there's no clear guidance on evaluating AI outputs - how to objectively measure if a prompt or framework actually works. [[godofprompt-1974102012670407035-depth-prompt-framework]] mentions 'success metrics' but doesn't detail measurement methods. Additionally, most sources focus on text AI, leaving a gap in multimedia prompt optimization beyond the brief [[mindbranches-1974621848844616006-video-prompt-styles]]. No source addresses prompt versioning or A/B testing approaches for systematic prompt improvement.",
+      "referenced_source_slugs": ["godofprompt-1974102012670407035-depth-prompt-framework", "mindbranches-1974621848844616006-video-prompt-styles"],
+      "cross_batch_refs": []
+    }
+  ],
+  "concept_index_update": {
+    "new_concepts": [
+      {
+        "name": "prompt library",
+        "aliases": ["prompt vault", "prompt collection", "ai prompt subscription"],
+        "source_slugs": ["alex_prompter-1953861679248560379-ai-prompt-library", "godofprompt-1970101500396634129-ai-prompt-library"]
+      },
+      {
+        "name": "D-E-P-T-H Framework",
+        "aliases": ["depth prompt framework", "comprehensive prompting"],
+        "source_slugs": ["godofprompt-1974102012670407035-depth-prompt-framework"]
+      },
+      {
+        "name": "Reality Filter",
+        "aliases": ["hallucination reducer", "anti-hallucination prompt", "truth labeling"],
+        "source_slugs": ["minchoi-1964716900660965644-hallucination-prompt", "rohanpaul_ai-1964529285282086967-reality-filter"]
+      },
+      {
+        "name": "AI research agent",
+        "aliases": ["paper synthesis tool", "academic ai assistant"],
+        "source_slugs": ["louis-gleeson-2026-feynman-agent"]
+      },
+      {
+        "name": "Workflow automation",
+        "aliases": ["workflow wrapper", "no-code automation"],
+        "source_slugs": ["jb-2026-workflow-play", "n8n-2026-smart-alerting"]
+      },
+      {
+        "name": "Video prompt styles",
+        "aliases": ["ai video aesthetics", "visual style keywords"],
+        "source_slugs": ["mindbranches-1974621848844616006-video-prompt-styles"]
+      },
+      {
+        "name": "Design system extraction",
+        "aliases": ["design reverse engineering", "design spec generator"],
+        "source_slugs": ["meng-to-2026-designmd-tool"]
+      },
+      {
+        "name": "AI agent business",
+        "aliases": ["agentic ai business", "llm business framework"],
+        "source_slugs": ["robert-youssef-2026-claude-ai-business"]
+      },
+      {
+        "name": "Perplexity deep research",
+        "aliases": ["ai research prompts", "investigation prompts"],
+        "source_slugs": ["shushant_l-1974097166454174149-perplexity-research-prompts"]
+      }
+    ],
+    "new_connections": [
+      {
+        "from_concept": "prompt frameworks",
+        "to_concept": "hallucination reduction",
+        "relationship": "Structured prompting frameworks like D-E-P-T-H can incorporate Reality Filter techniques to improve output reliability",
+        "established_in_batch": "batch_001"
+      },
+      {
+        "from_concept": "prompt libraries",
+        "to_concept": "workflow automation",
+        "relationship": "Prompt libraries can be packaged into pre-configured workflows for the wrapper business model",
+        "established_in_batch": "batch_001"
+      },
+      {
+        "from_concept": "AI research agents",
+        "to_concept": "Perplexity deep research",
+        "relationship": "Both automate research tasks but Feynman is open-source while Perplexity is a commercial product",
+        "established_in_batch": "batch_001"
+      }
+    ],
+    "updated_clusters": {
+      "prompt_engineering_tools": ["prompt libraries", "D-E-P-T-H Framework", "Reality Filter", "prompt protocols"],
+      "ai_business": ["workflow automation", "AI agent business", "wrapper strategy"],
+      "research_automation": ["AI research agents", "Perplexity deep research", "paper synthesis"]
+    }
+  }
+}
