@@ -344,18 +344,32 @@ console.log(JSON.stringify({
 - **"Show more" appears:** Click it and continue extracting
 - **Images in thread:** Note which posts have images for later extraction
 - **Videos in thread:** Handle each video separately (go to STEP 4 for each)
+- **THREAD WITH MULTIPLE IMAGES/VIDEOS — Treat like a repost:**
+  1. Scroll through each page of the thread
+  2. For EACH post in the thread that has images OR videos:
+     - Get the specific tweet ID for that post (format: /status/{thread-id}/{post-index})
+     - Run ScrapeCreators ONCE for that specific tweet ID
+     - Extract all image URLs AND video URLs from that single post
+  3. If thread has 6 posts with media → run ScrapeCreators 6 times (once per post)
+  4. Process EACH image and video separately:
+     - **Images:** Use image-analysis skill with Gemini Vision
+     - **Videos:** ≤2 min → Gemini Vision, >2 min → Whisper
+  5. Extract ALL images and videos present across the entire thread
 
 ---
 
-### STEP 4: Handle Video Content (ScrapeCreators + Whisper + Gemini Vision)
+### STEP 4: Handle Image and Video Content (ScrapeCreators + Gemini Vision + Whisper)
 
-**When to use:** When `hasVideo = true` or when the tweet mentions "Embedded video" or "Play Video"
+**When to use:** When `hasImage = true` OR `hasVideo = true` or when the tweet shows images/videos
 
-**CRITICAL:** Do NOT try to transcribe via browser. Use ScrapeCreators API + Whisper OR Gemini Vision.
+**CRITICAL:** Do NOT try to analyze via browser snapshot. Use ScrapeCreators API to get actual URLs.
 
-#### Step 4a: Get Video URL via ScrapeCreators
+#### Step 4a: Get Image/Video URLs via ScrapeCreators
 
-**Action:** Use `mcp__scrape-creators__v1_twitter_tweet` to get the tweet data, then extract video URL.
+**Action:** Use `mcp__scrape-creators__v1_twitter_tweet` to get the tweet data, then extract media URLs.
+
+For **IMAGES**: Extract from `media[].media_url` where `type === "photo"`
+For **VIDEOS**: Extract from `media[].video_info.variants[]` where `type === "video"`
 
 ```bash
 # Use the MCP tool - it returns JSON with video_info.variants[]
@@ -373,7 +387,16 @@ legacy.extended_entities.media[].video_info.variants[]
 - 832000 (640x360) — second option
 - Higher bitrates — avoid, unnecessary cost
 
-#### Step 4b: Check Video Duration (Decision Point)
+#### Step 4b: Handle Images (Gemini Vision)
+
+**If hasImage = true:**
+1. Download each image URL to `/tmp/{author}-image-{n}.jpg`
+2. Use `image-analysis` skill for each image
+3. Save analysis to `wiki/x-image-analyses/{author}-{tweet-id}-image-{n}-analysis.md`
+
+**Then continue to video handling below.**
+
+#### Step 4c: Check Video Duration (Decision Point)
 
 **Action:** Before downloading or transcribing, determine video duration to choose the right approach.
 
@@ -390,10 +413,10 @@ ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:no
 | > 2 minutes | **Whisper only** — audio transcription only |
 
 **Go to appropriate section:**
-- **If ≤2 min:** Skip to STEP 4g: Gemini Vision Analysis
-- **If >2 min:** Continue to STEP 4c: Download Video → Whisper transcription
+- **If ≤2 min:** Go to STEP 4i: Gemini Vision Analysis
+- **If >2 min:** Continue to STEP 4d: Download Video → Whisper transcription
 
-#### Step 4b: Download Video
+#### Step 4d: Download Video
 
 ```bash
 curl -L "VIDEO_URL" -o /tmp/{author}-video.mp4
@@ -404,7 +427,7 @@ curl -L "VIDEO_URL" -o /tmp/{author}-video.mp4
 - Try with `-L` flag for redirects
 - Verify internet connection
 
-#### Step 4c: Extract Audio
+#### Step 4e: Extract Audio
 
 ```bash
 ffmpeg -i /tmp/{author}-video.mp4 -vn -acodec libmp3lame -q:a 2 /tmp/{author}-audio.mp3
@@ -415,7 +438,7 @@ ffmpeg -i /tmp/{author}-video.mp4 -vn -acodec libmp3lame -q:a 2 /tmp/{author}-au
 - Check video file exists and is valid: `ls -la /tmp/{author}-video.mp4`
 - Try different audio codec: `-acodec aac` instead of `libmp3lame`
 
-#### Step 4d: Transcribe with Whisper
+#### Step 4f: Transcribe with Whisper
 
 ```bash
 curl -s -X POST https://api.openai.com/v1/audio/transcriptions \
@@ -431,14 +454,14 @@ curl -s -X POST https://api.openai.com/v1/audio/transcriptions \
 - Verify audio file exists: `ls -la /tmp/{author}-audio.mp3`
 - If "file too large" — audio file may be too long; Whisper supports up to 25MB
 
-#### Step 4e: Save Transcript
+#### Step 4g: Save Transcript
 
 ```bash
 # Save to raw/x-video-transcripts/
 echo "$TRANSCRIPT" > "raw/x-video-transcripts/{author}-{tweet-id}-transcript.txt"
 ```
 
-#### Step 4f: CLEANUP (MANDATORY)
+#### Step 4h: CLEANUP (MANDATORY)
 
 **Delete temp files after every transcription:**
 ```bash
@@ -451,7 +474,7 @@ rm /tmp/{author}-video.mp4 /tmp/{author}-audio.mp3
 
 ---
 
-#### Step 4g: Gemini Vision Video Analysis (Videos ≤2 min ONLY)
+#### Step 4i: Gemini Vision Video Analysis (Videos ≤2 min ONLY)
 
 **When to use:** When video duration is ≤2 minutes (120 seconds)
 
@@ -605,7 +628,7 @@ console.log(JSON.stringify({
 
 **If TELEGRAM link (t.me):**
 1. **Note the channel** — Cannot extract content from Telegram without API access
-2. **Save to `raw/x-external-links/`:**
+2. **Save to `raw/x-external-links/` as .txt file (NOT .md):**
    ```
    Filename: {author}-{tweet-id}-link-telegram.txt
    
@@ -631,7 +654,12 @@ console.log(JSON.stringify({
    console.log('Content preview: ' + document.body.innerText.substring(0, 2000));
    ```
 
-4. **Save to `raw/x-external-links/`:**
+4. **Save to `raw/x-external-links/` as .txt file (NOT .md):**
+   
+   **CRITICAL FORMAT REQUIREMENTS:**
+   - Filename MUST end with `.txt` (not .md)
+   - Use the EXACT format below — no variations
+   
    Use this template:
 
    ```
