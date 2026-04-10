@@ -139,6 +139,8 @@ Key changes:
 - Navigate again
 - Take a snapshot to verify login form is not present
 
+**CRITICAL:** You MUST navigate in browser FIRST before using any other tools. This allows you to detect whether images or videos exist on the page.
+
 ---
 
 ### STEP 2: Analyze What Content Exists on Page
@@ -215,10 +217,10 @@ console.log(JSON.stringify({
 |-------|---------|
 | isRepost = true | Process as repost: create 2 wiki entries (repost spin + original), use Step 2.1 |
 | postCount > 1 | Go to STEP 3: Extract Thread |
-| hasVideo = true | Go to STEP 4: Handle Video (check duration for Gemini vs Whisper) |
+| hasVideo = true | Use ScrapeCreators to get video URLs → Go to STEP 4: Handle Video |
 | externalLink exists AND is NOT x.com | Go to STEP 5: Handle External Link |
 | Content appears to be X Article | Go to STEP 6: Handle Articles |
-| imageCount > 0 | Go to STEP 7: Extract Images |
+| imageCount > 0 | Use ScrapeCreators to get image URLs → Go to STEP 7: Extract Images |
 | Single tweet only (no media, no links) | Go to STEP 8: Confirm & Exit (already in FT bookmarks) |
 
 ---
@@ -694,30 +696,33 @@ console.log(JSON.stringify(allLinks));
 
 **When to use:** When `imageCount > 0` OR when returning from handling an Article (Step 6) — images can exist in both tweets AND articles.
 
-**CRITICAL:** Extract images BEFORE navigating away from any page. If you just opened an article, extract images from that page first before switching tabs.
+**CRITICAL:** Use ScrapeCreators to get actual image URLs. Browser snapshot only shows relative links like `/photo/1`, NOT actual image URLs.
 
 **Action:**
 
-1. **Check for multiple tabs (if article opened in new tab):**
-   ```javascript
-   // First, check if there's more than one tab
-   console.log('Current URL: ' + window.location.href);
-   console.log('Page title: ' + document.title);
+1. **Use ScrapeCreators `twitter_tweet` endpoint to get image URLs:**
    ```
-   
-   **If article opened in new tab and you need to switch:**
-   - Use `mcp__glance__browser_tab_list` to see actual open tabs
-   - If there are 2 tabs but only 1 shows, try switching to the second tab using `mcp__glance__browser_tab_select` with the tab ID
-   - If tabs cannot be reliably detected, navigate directly to the article URL instead
+   mcp__scrape-creators__v1_twitter_tweet
+   ```
+   With parameter: `url: "https://twitter.com/{author_handle}/status/{tweet_id}"`
 
-2. **Get all image URLs from current page:**
-   ```javascript
-   const images = document.querySelectorAll('img[src*="twimg.com"], img[src*="pbs.twimg.com"], img[src*="pic.x.com"]');
-   images.forEach((img, i) => {
-     const ext = img.src.split('.').pop().split('?')[0] || 'jpg';
-     console.log(`${i+1}|${ext}|${img.src}`);
-   });
+2. **Extract image URLs from response:**
+   The API returns `media` array with actual image URLs:
+   ```json
+   {
+     "media": [
+       {
+         "type": "photo",
+         "media_url": "https://pbs.twimg.com/media/xxx.jpg?format=jpg&name=large",
+         "url": "https://twitter.com/i/spaces/..."
+       }
+     ]
+   }
    ```
+
+   Extract from:
+   - `media[].media_url` — direct image URL
+   - Or build from: `https://pbs.twimg.com/media/{id}.jpg`
 
 3. **Download each image:**
    ```bash
@@ -726,21 +731,13 @@ console.log(JSON.stringify(allLinks));
 
 **Naming:** `{author-handle}-{tweet-id}-image-{sequence-number}.{extension}`
 
-**Workflow for Article Images:**
-
-| If... | Then... |
-|-------|---------|
-| Click article → opens in same tab | Extract images BEFORE navigating back |
-| Click article → opens in new tab | Switch to new tab, extract images, then close it |
-| Multiple tabs detected | Use `tab_list` to find the article tab, extract images, close article tab |
-| Can't detect article tab | Navigate back to original tweet, note that article images need manual extraction |
+**DO NOT use browser snapshot for image URLs** — it only shows relative links like `/photo/1`, not downloadable URLs.
 
 **Edge cases:**
 - **Image download fails:** Retry once, check URL is complete
 - **Multiple images in one tweet:** Number sequentially (image-1, image-2, etc.)
-- **Thread has images in multiple posts:** Extract all from each post
-- **Article has inline images:** Extract these separately, append to the same image sequence
-- **Tab mismatch:** If `tab_list` shows wrong count, try navigating directly to the URL you clicked instead of relying on tab switching
+- **Thread has images in multiple posts:** Use ScrapeCreators for each post to get images
+- **Article has inline images:** Same process — use ScrapeCreators to get URLs
 
 ---
 
