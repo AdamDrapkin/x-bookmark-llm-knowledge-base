@@ -44,13 +44,14 @@ status: draft
 
 | Batch | Date | Processed | Total Processed | QA Pairs Generated |
 |-------|------|-----------|-----------------|---------------------|
-| Batch 1 | 2026-04-09 | 10 | 15 | No (total not divisible by 10) |
+| Batch 1 | 2026-04-09 | 15 | 15 | Yes |
+| Batch 2 | 2026-04-10 | 10 | 25 | Yes |
 
 ## Category Breakdown
 
 | Category | Total | Processed | Remaining |
 |----------|-------|-----------|-----------|
-| prompt-engineering | 132 | 10 | 122 |
+| prompt-engineering | 132 | 20 | 112 |
 | productivity | 95 | 1 | 94 |
 | ai-business | 91 | 1 | 90 |
 | content-creation | 74 | 0 | 74 |

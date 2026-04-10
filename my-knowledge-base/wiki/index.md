@@ -10,8 +10,22 @@ status: draft
 
 # Wiki Index
 
-## Sources (16) — Sorted by Post Date (newest first)
+## Sources (26) — Sorted by Post Date (newest first)
 
+### Batch 2 Sources (10)
+- [[adamrahmanGTM-1975292522248237113]] (2025-11-20) — Six AI prompts for GTM strategy formulation
+- [[rohanpaul_ai-1976725503337021784]] (2025-11-19) — Research: rude prompts outperform polite for LLM accuracy
+- [[alex_prompter-1977167152676229265]] (2025-11-15) — Mad Men copywriter prompt for sales copy
+- [[godofprompt-1991160280630378890]] (2025-11-14) — Grok 4.1 writing prompts for daily use
+- [[godofprompt-1983535193752252732]] (2025-11-10) — GOD.MODE.GPT for critical, humanized answers
+- [[alex_prompter-1991981943026839897]] (2025-11-09) — Learn anything 10x faster with YouTube + Gemini
+- [[EHuanglu-1991560454104313914]] (2025-11-08) — OpenCreator: mass ad production from one photo
+- [[EXM7777-1978484519692075451]] (2025-10-15) — Deep research optimization principles
+- [[EXM7777-1987203971086450938]] (2025-11-08) — Conversational prompting technique
+- [[godofprompt-1992043551283175716]] (2025-11-22) — Gemini 3.0 prompting tips
+- [[alex_prompter-1991974997766606921]] (2025-11-21) — Grok 4.1 Game Theory strategist
+
+### Batch 1 Sources (15)
 - [[robert-youssef-2026-claude-ai-business]] (2026-04-06) — Claude can build AI agent businesses following Andrew Ng's agentic AI framework
 - [[jb-2026-workflow-play]] (2026-04-06) — Build pre-configured workflows on top of AI tools with learning curves
 - [[meng-to-2026-designmd-tool]] (2026-04-06) — Tool generates DESIGN.md from any URL to recreate sites
@@ -28,14 +42,34 @@ status: draft
 - [[godofprompt-1974102012670407035-depth-prompt-framework]] (2025-10-03) — D-E-P-T-H Prompt Framework for effective AI prompts
 - [[shushant_l-1974097166454174149-perplexity-research-prompts]] (2025-10-03) — 10 Perplexity Deep Research prompts for superhuman research
 
-## Concepts (6)
+## Concepts (17)
 
+### AI & Agents
 - [[agentic-ai]] — AI systems that plan, execute, and adapt multi-step tasks autonomously
+
+### Business
 - [[ai-business]] — Business models leveraging AI agents (agent-as-a-service, wrappers, vertical AI)
 - [[workflow-automation]] — Automating business processes through visual workflows
+- [[gtm-strategy]] — Go-to-market strategy for product launches
+- [[icp-development]] — Ideal Customer Profile development
+- [[tam-analysis]] — Total Addressable Market sizing
+- [[conversion-optimization]] — Maximizing desired user actions
+
+### Models
+- [[chatgpt]] — OpenAI's conversational AI assistant
+- [[grok]] — xAI's AI assistant with real-time knowledge
+
+### Engineering
 - [[prompt-engineering]] — Crafting effective AI instructions (zero-shot, few-shot, chain-of-thought)
 - [[research-automation]] — Using AI to automate literature search, synthesis, and verification
 - [[video-prompting]] — Crafting effective prompts for AI video generation tools
+- [[critical-thinking]] — Truth-seeking analysis over validation
+- [[reasoning-frameworks]] — Structured approaches to analysis
+- [[deep-research]] — AI-powered comprehensive research
+
+### Marketing
+- [[copywriting]] — Persuasive marketing text that drives action
+- [[ai-ad-generation]] — AI-powered advertising imagery at scale
 
 ## Entities (7)
 
@@ -51,10 +85,12 @@ status: draft
 
 ### AI & Agents
 - [[agentic-ai]]
-- [[ai-business]]
+- [[chatgpt]]
+- [[grok]]
 - [[claude]]
 - [[andrew-ng]]
 - [[feynman]]
+- [[perplexity]]
 
 ### Automation & Workflows
 - [[workflow-automation]]
@@ -62,20 +98,32 @@ status: draft
 - [[jb-2026-workflow-play]]
 - [[n8n-2026-smart-alerting]]
 
-### Engineering & Tools
+### Prompt Engineering
 - [[prompt-engineering]]
-- [[research-automation]]
+- [[critical-thinking]]
+- [[reasoning-frameworks]]
+- [[deep-research]]
 - [[video-prompting]]
-- [[meng-to-2026-designmd-tool]]
-- [[louis-gleeson-2026-feynman-agent]]
 - [[godofprompt-1970086539402121690-prompt-engineer-protocol]]
 - [[godofprompt-1974102012670407035-depth-prompt-framework]]
 - [[godofprompt-1974425241582796820-anthropic-prompting-style]]
 - [[shushant_l-1974097166454174149-perplexity-research-prompts]]
 
-### AI Video & Media
+### Research & Learning
+- [[research-automation]]
+- [[deep-research]]
+
+### Video & Media
 - [[video-prompting]]
 - [[mindbranches-1974621848844616006-video-prompt-styles]]
+
+### Marketing & Sales
+- [[gtm-strategy]]
+- [[icp-development]]
+- [[tam-analysis]]
+- [[conversion-optimization]]
+- [[copywriting]]
+- [[ai-ad-generation]]
 
 ### Business Strategy
 - [[ai-business]]
@@ -88,7 +136,23 @@ status: draft
 - [[anthropic]]
 - [[perplexity]]
 
+## Image Analyses (7)
+
+- [[rohanpaul_ai-1964529285282086967-image-1-analysis]] — Reality Filter tweet analysis
+- [[shushant_l-1974097166454174149-image-1-analysis]] — Perplexity prompts analysis
+- [[mindbranches-1974621848844616006-image-1-analysis]] — Video prompt styles analysis
+- [[godofprompt-1974102012670407035-image-1-analysis]] — DEPTH framework analysis
+- [[godofprompt-1970086539402121690-image-2-analysis]] — Prompt protocol analysis
+- [[godofprompt-1974425241582796820-image-1-analysis]] — Anthropic style analysis
+- [[cb_doge-2042287443018477975-image-1-analysis]] — Meme analysis
+
+## Video Analyses (3)
+
+- [[EHuanglu-1991560454104313914-video-analysis]] — OpenCreator product demo (26.5 sec) [Batch 2]
+- [[perplexity_ai-2042256932397019368-video-analysis]] — Perplexity Deep Research demo (63 sec) [Batch 1]
+- [[vadimstrizheus-2042274292058988673-video-analysis]] — Finance workflow demo (10 sec) [Batch 1]
+
 ## Maintenance
 
 - [[lint-2026-04-09]] (2026-04-09) — Lint report: 5 broken links, 0 missing frontmatter
-- [[lint-2026-04-10]] (2026-04-10) — Lint report: 11 missing concept pages
+- [[lint-2026-04-10]] (2026-04-10) — Lint report: 0 errors, 11 concept pages created

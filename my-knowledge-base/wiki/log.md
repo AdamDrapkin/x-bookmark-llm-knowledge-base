@@ -1,7 +1,7 @@
 ---
 title: "Wiki Log"
 date_created: 2026-04-08
-date_modified: 2026-04-09
+date_modified: 2026-04-10
 summary: "Changelog of all wiki operations"
 tags: [log, changelog]
 type: log
@@ -164,3 +164,66 @@ Missing pages: [[pricing]], [[anthropic]], [[chatgpt]], [[hallucinations]], [[mi
 #### Index Updates
 - wiki/index.md updated with Maintenance category
 - wiki/outputs/_index.md updated with lint report entry
+
+## 2026-04-10 - Batch 2 | 10 Sources Processed
+
+### Operation: BACKLOG PROCESS
+
+Processed second batch of 10 classified bookmarks from prompt-engineering category.
+
+#### Sources Created (10)
+
+| File | Author | Topic |
+|------|--------|-------|
+| [[adamrahmanGTM-1975292522248237113]] | AdamrahmanGTM | GTM prompts for market strategy |
+| [[rohanpaul_ai-1976725503337021784]] | rohanpaul_ai | Tone research - rude prompts work better |
+| [[alex_prompter-1977167152676229265]] | alex_prompter | Mad Men copywriter prompt |
+| [[godofprompt-1991160280630378890]] | godofprompt | Grok 4.1 writing prompts |
+| [[godofprompt-1983535193752252732]] | godofprompt | GOD.MODE.GPT critical thinking framework |
+| [[alex_prompter-1991981943026839897]] | alex_prompter | AI learning method with YouTube transcripts |
+| [[EHuanglu-1991560454104313914]] | EHuanglu | OpenCreator batch ad generation |
+| [[EXM7777-1978484519692075451]] | EXM7777 | Deep research optimization principles |
+| [[EXM7777-1987203971086450938]] | EXM7777 | Conversational prompting technique |
+| [[godofprompt-1992043551283175716]] | godofprompt | Gemini 3.0 prompting tips |
+| [[alex_prompter-1991974997766606921]] | alex_prompter | Game Theory strategist prompt |
+
+#### Media Extracted
+
+Images: 5 analyzed via Gemini Vision
+- AdamrahmanGTM, rohanpaul_ai, godofprompt (2), alex_prompter
+
+Videos: 1 analyzed via Gemini Vision  
+- EHuanglu (26.5 sec product demo)
+
+External Links: 4 saved
+- rohanpaul_ai (academic paper), godofprompt (resources), alex_prompter (ytscribe), EHuanglu (opencreator)
+
+#### QA Pairs Generated
+
+| Batch | Sources | Questions | Status |
+|-------|---------|-----------|--------|
+| batch_001 | 15 | 75 + 4 synthesis | ✅ Complete |
+| batch_002 | 10 | 50 + 4 synthesis | ✅ Complete |
+
+- [[batch-001-qa.json]] — Layer 1 (5 questions/source) + Layer 2 (4 synthesis)
+- [[batch-002-qa.json]] — Layer 1 (5 questions/source) + Layer 2 (4 synthesis)
+
+#### Wiki Lint
+
+Ran lint audit on all wiki content (batch 1 + batch 2 sources).
+
+#### Results
+- 🔴 **0 Errors** — No broken links or missing frontmatter
+- 🟡 **0 Warnings** — No contradictions or stale content
+- 🔵 **11 Missing Concept Pages** — Referenced but no dedicated pages:
+  - chatgpt, grok, copywriting, conversion-optimization
+  - gtm-strategy, icp-development, tam-analysis
+  - ai-ad-generation, critical-thinking, reasoning-frameworks, deep-research
+
+#### Report
+- [[lint-2026-04-10]] — Full lint report saved to wiki/outputs/
+
+#### Index Updates
+- wiki/index.md — Maintenance section updated with lint-2026-04-10
+- wiki/qa-pairs/_index.md — QA pair counts verified
+- raw/assets/backlog-log.md — Batch 2 marked as processed
