@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 """Standalone wiki lint runner."""
+# SKILL: wiki-lint (wiki/outputs/)
+# Reads: ~/.claude/skills/wiki-lint/SKILL.md
+# Reads: All wiki/**/*.md pages for inventory
+# Writes: wiki/outputs/lint-{date}.md
+# Writes: wiki/outputs/_index.md (updated)
+# Writes: wiki/index.md (maintenance section)
+# Writes: wiki/log.md (appended)
+# Writes: wiki/entities/*.md or wiki/concepts/*.md (stub pages for broken links)
+# API: MiniMax M2.7 via MINIMAX_API_KEY (contradiction detection only)
+# Schedule: Daily 8 PM EST
+
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pipeline_core import init_environment, run_phase4, create_manifest, full_path, today_str, append_to_file
