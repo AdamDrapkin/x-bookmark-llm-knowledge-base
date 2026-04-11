@@ -116,4 +116,4 @@ status: draft
 - [[mindbranches-1974621848844616006-video-prompt-styles]]
 - [[godofprompt-1974425241582796820-anthropic-prompting-style]]
 - [[godofprompt-1974102012670407035-depth-prompt-framework]]
-- [[shushant_l-1974097166454174149-perplexity-research-prompts]]
+- [[shushant_l-1974097166454174149-perplexity-research-prompts]]- [[EXM7777-1991528477775032628]] — use this system prompt in Gemini 3.0 to consistently write humanized content _(added 2026-04-11)_

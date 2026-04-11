@@ -962,41 +962,76 @@ def load_skill_prompt(skill_path: str) -> str:
     return content
 
 
-def analyze_image_gemini(image_path: str, gemini_key: str, skill_prompt: str,
+def analyze_image_gemini(image_path: str, gemini_key: str, skill_prompt: str = None,
                           model: str = "gemini-2.5-flash") -> Optional[Dict]:
-    """Analyze an image with Gemini 2.5 Flash Vision."""
+    """Analyze an image with Gemini. First classifies as text vs visual, then runs appropriate analysis."""
     try:
+        from pathlib import Path
+
+        # Step 1: Read image and encode
         with open(image_path, "rb") as f:
             image_b64 = base64.b64encode(f.read()).decode()
-
-        # Determine mime type
         ext = os.path.splitext(image_path)[1].lower()
-        mime_map = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png",
-                    ".gif": "image/gif", ".webp": "image/webp"}
+        mime_map = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png", ".gif": "image/gif", ".webp": "image/webp"}
         mime = mime_map.get(ext, "image/jpeg")
 
-        resp = requests.post(
-            f"{GEMINI_BASE}/{model}:generateContent?key={gemini_key}",
+        # Step 2: Classify the image (text document vs visual)
+        classify_prompt_path = os.path.expanduser("~/.claude/skills/image-analysis/prompts/classify-image.md")
+        classify_prompt = Path(classify_prompt_path).read_text().strip() if os.path.exists(classify_prompt_path) else "Is this image primarily text or visual? Respond with only: TEXT_DOCUMENT or VISUAL_IMAGE"
+
+        classify_resp = requests.post(
+            f"https://generativelanguage.googleapis.com/v1/models/{model}:generateContent?key={gemini_key}",
             headers={"Content-Type": "application/json"},
-            json={
-                "contents": [{"parts": [
-                    {"text": skill_prompt or "Analyze this image thoroughly. Provide: 1) Visual description, 2) Any visible text, 3) Context and topic, 4) Notable details. Return as JSON."},
-                    {"inline_data": {"mime_type": mime, "data": image_b64}},
-                ]}],
-                "generationConfig": {"temperature": 0.2},
-            },
+            json={"contents": [{"parts": [
+                {"text": classify_prompt},
+                {"inline_data": {"mime_type": mime, "data": image_b64}},
+            ]}], "generationConfig": {"temperature": 0.1}},
+            timeout=30,
+        )
+
+        image_class = "VISUAL_IMAGE"  # default
+        if classify_resp.status_code == 200:
+            class_text = classify_resp.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "").strip()
+            if "TEXT_DOCUMENT" in class_text.upper():
+                image_class = "TEXT_DOCUMENT"
+
+        # Step 3: Run appropriate analysis
+        if image_class == "TEXT_DOCUMENT":
+            prompt_path = os.path.expanduser("~/.claude/skills/image-analysis/prompts/text-analysis.md")
+        else:
+            prompt_path = os.path.expanduser("~/.claude/skills/image-analysis/prompts/visual-analysis.md")
+
+        if os.path.exists(prompt_path):
+            analysis_prompt = Path(prompt_path).read_text().strip()
+        else:
+            analysis_prompt = skill_prompt or "Analyze this image. Return JSON."
+
+        analysis_resp = requests.post(
+            f"https://generativelanguage.googleapis.com/v1/models/{model}:generateContent?key={gemini_key}",
+            headers={"Content-Type": "application/json"},
+            json={"contents": [{"parts": [
+                {"text": analysis_prompt},
+                {"inline_data": {"mime_type": mime, "data": image_b64}},
+            ]}], "generationConfig": {"temperature": 0.2}},
             timeout=60,
         )
-        if resp.status_code == 200:
-            data = resp.json()
-            text = data.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "{}")
-            # Strip markdown code fences before JSON parsing
+
+        if analysis_resp.status_code == 200:
+            text = analysis_resp.json().get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "{}")
             text = text.strip()
             if text.startswith("```"):
-                text = re.sub(r"^```[a-z]*\n|```$", "", text, flags=re.MULTILINE).strip()
-            return json.loads(text) if text.startswith("{") else {"raw": text}
-        print(f"  ⚠ Gemini Flash returned {resp.status_code}")
-        return None
+                text = re.sub(r"^```[a-z]*\n?", "", text)
+                text = re.sub(r"\n?```$", "", text)
+                text = text.strip()
+            try:
+                result = json.loads(text)
+                result["image_class"] = image_class
+                return result
+            except:
+                return {"raw": text, "image_class": image_class}
+        else:
+            print(f"  ⚠ Gemini returned {analysis_resp.status_code}")
+            return None
     except Exception as e:
         print(f"  ✗ Gemini image analysis failed: {e}")
         return None
@@ -1055,7 +1090,11 @@ def llm_call(client: Anthropic, system_prompt: str, user_content: str,
         system=system_prompt,
         messages=[{"role": "user", "content": user_content}],
     )
-    return response.content[0].text
+    # Handle both TextBlock and ThinkingBlock response types
+    for block in response.content:
+        if hasattr(block, 'text') and block.text:
+            return block.text
+    raise ValueError(f"LLM returned no text content. Block types: {[type(b).__name__ for b in response.content]}")
 
 
 # ─────────────────────────────────────────────
@@ -1691,16 +1730,19 @@ def run_phase2(manifest: Dict, config: Dict):
 # ─────────────────────────────────────────────
 
 
-def run_phase3(manifest: Dict, config: Dict):
+def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
     wiki_root = config["wiki_root"]
     minimax_key = os.environ.get("MINIMAX_API_KEY") or os.environ.get("ANTHROPIC_API_KEY", "")
     mm_client = get_minimax_client(minimax_key)
+
+    manifest.setdefault("qa_council", {"status": "pending", "batch_qa_path": None, "concept_index_updated": False})
 
     # ── Step 3.1: Create wiki pages from Phase 2 analyses ──
     print("  Step 3.1: Creating wiki pages for media analyses...")
     all_entries = manifest["bookmarks"] + manifest.get("repost_originals", [])
 
     for entry in all_entries:
+        entry.setdefault("phase3", {"status": "pending", "source_summary": None, "entities_created": [], "concepts_created": [], "backlinks_added": []})
         author = entry["author_handle"]
         tweet_id = entry["id"]
         category = entry.get("primary_category", "unclassified")
@@ -1835,82 +1877,86 @@ def run_phase3(manifest: Dict, config: Dict):
             entry["phase3"]["status"] = "failed"
 
     # ── Step 3.3: QA Council ──
-    print("\n  Step 3.3: Running QA Council...")
-    qa_skill = load_skill_prompt(config["skills"]["qa_council"])
-    batch_id = manifest["batch_id"]
+    if skip_qa:
+        print("\n  Step 3.3: QA Council — SKIPPED")
+        manifest["qa_council"]["status"] = "skipped"
+    else:
+        print("\n  Step 3.3: Running QA Council...")
+        qa_skill = load_skill_prompt(config["skills"]["qa_council"])
+        batch_id = manifest["batch_id"]
 
-    # Collect all source summaries
-    source_contents = []
-    for entry in all_entries:
-        source_path = entry.get("phase3", {}).get("source_summary")
-        if source_path and os.path.exists(source_path):
-            source_contents.append({
-                "slug": os.path.splitext(os.path.basename(source_path))[0],
-                "content": Path(source_path).read_text(),
-            })
+        # Collect all source summaries
+        source_contents = []
+        for entry in all_entries:
+            source_path = entry.get("phase3", {}).get("source_summary")
+            if source_path and os.path.exists(source_path):
+                source_contents.append({
+                    "slug": os.path.splitext(os.path.basename(source_path))[0],
+                    "content": Path(source_path).read_text(),
+                })
 
-    if source_contents:
-        # Load existing concept index
-        concept_index_path = full_path(wiki_root, "wiki/qa-pairs/concept-index.json")
-        concept_index = {}
-        if os.path.exists(concept_index_path):
-            concept_index = json.loads(Path(concept_index_path).read_text())
+        if source_contents:
+            # Load existing concept index
+            concept_index_path = full_path(wiki_root, "wiki/qa-pairs/concept-index.json")
+            concept_index = {}
+            if os.path.exists(concept_index_path):
+                concept_index = json.loads(Path(concept_index_path).read_text())
 
-        # Format input
-        qa_input = f"Batch ID: {batch_id}\nSources in batch: {len(source_contents)}\n\n"
-        for sc in source_contents:
-            qa_input += f"### {sc['slug']}\n{sc['content']}\n\n---\n\n"
-        if concept_index:
-            qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
+            # Format input
+            qa_input = f"Batch ID: {batch_id}\nSources in batch: {len(source_contents)}\n\n"
+            for sc in source_contents:
+                qa_input += f"### {sc['slug']}\n{sc['content']}\n\n---\n\n"
+            if concept_index:
+                qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
 
-        try:
-            qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=8192)
+            try:
+                qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=8192)
 
-            # Parse JSON from response
-            # Strip markdown fences if present
-            clean = qa_response.strip()
-            if clean.startswith("```"):
-                clean = re.sub(r"^```\w*\n?", "", clean)
-                clean = re.sub(r"\n?```$", "", clean)
+                # Parse JSON from response
+                # Strip markdown fences if present
+                clean = qa_response.strip()
+                if clean.startswith("```"):
+                    clean = re.sub(r"^```\w*\n?", "", clean)
+                    clean = re.sub(r"\n?```$", "", clean)
 
-            qa_json = json.loads(clean)
+                qa_json = json.loads(clean)
 
-            # Validate
-            valid, errors = _validate_qa(qa_json, source_contents, wiki_root)
-            if not valid:
-                print(f"    ⚠ QA validation failed: {errors[:3]}...")
-                print(f"    Retrying QA council...")
-                error_feedback = f"Previous attempt had validation errors:\n{chr(10).join(errors[:5])}\n\nPlease fix these issues and regenerate."
-                qa_response2 = llm_call(mm_client, qa_skill, qa_input + "\n\n" + error_feedback, max_tokens=8192)
-                clean2 = qa_response2.strip()
-                if clean2.startswith("```"):
-                    clean2 = re.sub(r"^```\w*\n?", "", clean2)
-                    clean2 = re.sub(r"\n?```$", "", clean2)
-                qa_json = json.loads(clean2)
+                # Validate
+                valid, errors = _validate_qa(qa_json, source_contents, wiki_root)
+                if not valid:
+                    print(f"    ⚠ QA validation failed: {errors[:3]}...")
+                    print(f"    Retrying QA council...")
+                    error_feedback = f"Previous attempt had validation errors:\n{chr(10).join(errors[:5])}\n\nPlease fix these issues and regenerate."
+                    qa_response2 = llm_call(mm_client, qa_skill, qa_input + "\n\n" + error_feedback, max_tokens=8192)
+                    clean2 = qa_response2.strip()
+                    if clean2.startswith("```"):
+                        clean2 = re.sub(r"^```\w*\n?", "", clean2)
+                        clean2 = re.sub(r"\n?```$", "", clean2)
+                    qa_json = json.loads(clean2)
 
-            # Save
-            qa_path = full_path(wiki_root, f"wiki/qa-pairs/{batch_id}-qa.json")
-            os.makedirs(os.path.dirname(qa_path), exist_ok=True)
-            with open(qa_path, "w") as f:
-                json.dump(qa_json, f, indent=2)
+                # Save
+                qa_path = full_path(wiki_root, f"wiki/qa-pairs/{batch_id}-qa.json")
+                os.makedirs(os.path.dirname(qa_path), exist_ok=True)
+                with open(qa_path, "w") as f:
+                    json.dump(qa_json, f, indent=2)
 
-            # Merge concept index
-            if qa_json.get("concept_index_update"):
-                _merge_concept_index(qa_json["concept_index_update"], concept_index_path, concept_index)
+                # Merge concept index
+                if qa_json.get("concept_index_update"):
+                    _merge_concept_index(qa_json["concept_index_update"], concept_index_path, concept_index)
 
-            # Update QA index
-            update_index_file(
-                full_path(wiki_root, "wiki/qa-pairs/_index.md"),
-                batch_id, f"{len(source_contents)} sources, QA generated"
-            )
+                # Update QA index
+                update_index_file(
+                    full_path(wiki_root, "wiki/qa-pairs/_index.md"),
+                    batch_id, f"{len(source_contents)} sources, QA generated"
+                )
 
-            manifest["qa_council"]["status"] = "complete"
-            manifest["qa_council"]["batch_qa_path"] = qa_path
-            manifest["qa_council"]["concept_index_updated"] = True
-            print(f"    ✓ QA → {batch_id}-qa.json")
-        except Exception as e:
-            print(f"    ✗ QA Council failed: {e}")
-            manifest["qa_council"]["status"] = "failed"
+                manifest["qa_council"]["status"] = "complete"
+                manifest["qa_council"]["batch_qa_path"] = qa_path
+                manifest["qa_council"]["concept_index_updated"] = True
+                print(f"    ✓ QA → {batch_id}-qa.json")
+            except Exception as e:
+                print(f"    ✗ QA Council failed: {e}")
+                manifest["qa_council"]["status"] = "failed"
 
     manifest["phase_status"]["phase3_compile"] = "complete"
     manifest["status"] = "phase3_complete"
@@ -2784,7 +2830,7 @@ def run_full_pipeline(bookmarks: List[Dict], config: Dict, batch_id: str,
         # For live mode, skip QA council here — it runs via event trigger
         if skip_qa:
             manifest["qa_council"]["status"] = "deferred_to_event_trigger"
-        run_phase3(manifest, config)
+        run_phase3(manifest, config, skip_qa=skip_qa)
         save_manifest(manifest, manifest_path)
 
     # ── PHASE 4 ──
