@@ -28,4 +28,4 @@ All images from X bookmarks are analyzed using Gemini 2.5 Pro Vision for:
 - Color profile
 - Visual hierarchy
 - Subject analysis
-- Technical details
+- Technical details- [[EXM7777-1991528477775032628-image-1-analysis]] — Image analysis _(added 2026-04-11)_

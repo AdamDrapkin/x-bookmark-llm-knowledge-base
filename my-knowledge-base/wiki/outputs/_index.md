@@ -14,4 +14,4 @@ status: draft
 
 | Page | Description | Date Added |
 |------|-------------|------------|
-| [[lint-2026-04-09]] | Lint report with 5 broken links | 2026-04-09 |
+| [[lint-2026-04-09]] | Lint report with 5 broken links | 2026-04-09 |- [[lint-2026-04-11]] — Lint report _(added 2026-04-11)_

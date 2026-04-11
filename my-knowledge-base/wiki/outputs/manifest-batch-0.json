@@ -1,0 +1,81 @@
+{
+  "batch_id": "test_single",
+  "batch_number": 0,
+  "wiki_root": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base",
+  "bookmarks": [
+    {
+      "id": "1991528477775032628",
+      "author_handle": "EXM7777",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "use this system prompt in Gemini 3.0 to consistently write humanized content",
+      "created_at": "2025-11-20T15:26:04.000Z",
+      "tweet_url": "https://x.com/EXM7777/status/1991528477775032628",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_images"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [
+            "raw/x-article-images/EXM7777-1991528477775032628-image-1.jpg"
+          ],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [
+          {
+            "image_path": "raw/x-article-images/EXM7777-1991528477775032628-image-1.jpg",
+            "analysis_json": "raw/x-image-analyses/EXM7777-1991528477775032628-image-1-analysis.json",
+            "status": "complete"
+          }
+        ],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "wiki/sources/EXM7777-1991528477775032628.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    }
+  ],
+  "repost_originals": [],
+  "phase_status": {
+    "phase1_extract": "complete",
+    "phase2_analyze": "complete",
+    "phase3_compile": "complete",
+    "phase4_finalize": "pending"
+  },
+  "qa_council": {
+    "status": "skipped",
+    "batch_qa_path": null,
+    "concept_index_updated": false
+  },
+  "lint": {
+    "status": "complete",
+    "report_path": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/outputs/lint-2026-04-11.md"
+  },
+  "indexes_updated": true,
+  "backlog_updated": true,
+  "cleanup_complete": false
+}

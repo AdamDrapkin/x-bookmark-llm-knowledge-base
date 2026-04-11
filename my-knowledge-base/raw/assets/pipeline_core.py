@@ -1755,28 +1755,118 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
             img_basename = os.path.splitext(os.path.basename(ia["image_path"]))[0]
             wiki_path = full_path(wiki_root, f"wiki/x-image-analyses/{img_basename}-analysis.md")
 
-            write_frontmatter_page(
-                wiki_path,
-                f"Image Analysis: {author} - {tweet_id}",
-                f"Gemini Vision analysis of image from {tweet_id} by {author}",
-                ["image-analysis", category],
-                "source",
-                f"""# Image Analysis: {author} - {tweet_id}
+            # Check image_type to determine which format to use
+            image_type = analysis.get("image_type", analysis.get("image_class", "")).upper()
+
+            if image_type in ("TEXT_DOCUMENT", "text_document"):
+                # Text document format
+                document_type = analysis.get("document_type", "unknown")
+                visible_text = analysis.get("visible_text_full", analysis.get("visible_text", "N/A"))
+                summary = analysis.get("summary", "N/A")
+                key_concepts = analysis.get("key_concepts", [])
+
+                body = f"""# Image Analysis: {author} - {tweet_id}
 
 **Source:** [Tweet](https://x.com/{author}/status/{tweet_id})
 
+## Image Type: Text Document
+
+**Document Type:** {document_type}
+
+## Extracted Text
+
+{visible_text}
+
+## Summary
+
+{summary}
+
+## Key Concepts
+
+"""
+                for concept in key_concepts:
+                    body += f"- {concept}\n"
+
+            else:
+                # Visual image format
+                visual_desc = analysis.get("visual_description", "N/A")
+                visible_text = analysis.get("visible_text", "N/A")
+                context = analysis.get("context", "N/A")
+                notable = analysis.get("notable_details", "N/A")
+
+                body = f"""# Image Analysis: {author} - {tweet_id}
+
+**Source:** [Tweet](https://x.com/{author}/status/{tweet_id})
+
+## Image Type: Visual Image
+
 ## Visual Description
-{analysis.get('visual_description', analysis.get('raw', 'N/A'))}
+
+{visual_desc}
 
 ## Visible Text
-{analysis.get('visible_text', 'N/A')}
+
+{visible_text}
 
 ## Context
-{analysis.get('context', 'N/A')}
+
+{context}
 
 ## Notable Details
-{analysis.get('notable_details', 'N/A')}
+
+{notable}
 """
+
+                # Optional sections if data exists
+                if analysis.get("composition"):
+                    comp = analysis["composition"]
+                    body += f"""
+## Composition
+
+- **Rule Applied:** {comp.get('rule_applied', 'N/A')}
+- **Aspect Ratio:** {comp.get('aspect_ratio', 'N/A')}
+- **Layout:** {comp.get('layout', 'N/A')}
+- **Focal Points:** {comp.get('focal_points', 'N/A')}
+- **Visual Hierarchy:** {comp.get('visual_hierarchy', 'N/A')}
+- **Balance:** {comp.get('balance', 'N/A')}
+"""
+
+                if analysis.get("color_profile"):
+                    cp = analysis["color_profile"]
+                    body += f"""
+## Color Profile
+
+- **Dominant Colors:** {', '.join(cp.get('dominant_colors', []))}
+- **Color Palette:** {cp.get('color_palette', 'N/A')}
+- **Temperature:** {cp.get('temperature', 'N/A')}
+- **Saturation:** {cp.get('saturation', 'N/A')}
+- **Contrast:** {cp.get('contrast', 'N/A')}
+"""
+
+                if analysis.get("subject_analysis"):
+                    sa = analysis["subject_analysis"]
+                    body += f"""
+## Subject Analysis
+
+- **Primary Subject:** {sa.get('primary_subject', 'N/A')}
+- **Positioning:** {sa.get('positioning', 'N/A')}
+- **Scale:** {sa.get('scale', 'N/A')}
+- **Expression:** {sa.get('facial_expression', 'N/A')}
+"""
+
+            # Determine summary based on type
+            if image_type in ("TEXT_DOCUMENT", "text_document"):
+                page_summary = f"Text document analysis ({document_type}) from {tweet_id} by {author}"
+            else:
+                page_summary = f"Gemini Vision analysis of image from {tweet_id} by {author}"
+
+            write_frontmatter_page(
+                wiki_path,
+                f"Image Analysis: {author} - {tweet_id}",
+                page_summary,
+                ["image-analysis", category],
+                "source",
+                body
             )
 
         # Video analysis wiki pages
@@ -1786,28 +1876,52 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
             analysis = json.loads(Path(va["analysis_json"]).read_text())
             wiki_path = full_path(wiki_root, f"wiki/x-video-analyses/{author}-{tweet_id}-video-analysis.md")
 
+            # Determine what sections to include based on what's available
+            transcript = analysis.get("transcript", "N/A")
+            visual_desc = analysis.get("visual_description", "N/A")
+            visible_text = analysis.get("visible_text", "N/A")
+            summary = analysis.get("summary", "N/A")
+
+            body = f"""# Video Analysis: {author} - {tweet_id}
+
+**Source:** [Tweet](https://x.com/{author}/status/{tweet_id})
+
+"""
+
+            if transcript != "N/A":
+                body += f"""## Transcript
+
+{transcript}
+
+"""
+
+            if visual_desc != "N/A":
+                body += f"""## Visual Description
+
+{visual_desc}
+
+"""
+
+            if visible_text != "N/A":
+                body += f"""## Visible Text
+
+{visible_text}
+
+"""
+
+            if summary != "N/A":
+                body += f"""## Summary
+
+{summary}
+"""
+
             write_frontmatter_page(
                 wiki_path,
                 f"Video Analysis: {author} - {tweet_id}",
                 f"Gemini Vision analysis of video from {tweet_id} by {author}",
                 ["video-analysis", category],
                 "source",
-                f"""# Video Analysis: {author} - {tweet_id}
-
-**Source:** [Tweet](https://x.com/{author}/status/{tweet_id})
-
-## Transcript
-{analysis.get('transcript', 'N/A')}
-
-## Visual Description
-{analysis.get('visual_description', 'N/A')}
-
-## Visible Text
-{analysis.get('visible_text', 'N/A')}
-
-## Summary
-{analysis.get('summary', 'N/A')}
-"""
+                body
             )
 
         # GitHub repo wiki pages
@@ -1818,18 +1932,55 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
             repo_name = os.path.basename(gh_path).replace(".md", "")
             wiki_gh_path = full_path(wiki_root, f"wiki/x-github-repos/{repo_name}.md")
 
+            # Extract repo info from the markdown content
+            lines = raw_content.split("\n")
+            repo_url = ""
+            description = ""
+            readme_content = ""
+
+            for i, line in enumerate(lines):
+                if line.startswith("## Repository:"):
+                    repo_url = line.replace("## Repository:", "").strip()
+                elif line.startswith("## Description:"):
+                    description = line.replace("## Description:", "").strip()
+                elif line.startswith("## README"):
+                    readme_content = "\n".join(lines[i+1:]).strip()[:2000]
+
+            body = f"""# GitHub: {repo_name}
+
+**Repository:** {repo_url or 'N/A'}
+**Source Tweet:** [Tweet](https://x.com/{author}/status/{tweet_id})
+
+## Description
+
+{description or 'No description available'}
+
+## README
+
+{readme_content or 'No README available'}
+
+## Source Tweet
+
+This repository was shared by @{author} in [tweet](https://x.com/{author}/status/{tweet_id}).
+"""
+
             write_frontmatter_page(
                 wiki_gh_path,
                 f"GitHub: {repo_name}",
                 f"GitHub repository referenced in tweet {tweet_id}",
                 ["github", category],
                 "source",
-                raw_content,
+                body
             )
 
     # ── Step 3.2: Wiki-ingest via MiniMax ──
     print("\n  Step 3.2: Running wiki-ingest for each bookmark...")
-    ingest_skill = load_skill_prompt(config["skills"]["wiki_ingest"])
+    # Check for API version of the prompt first, fall back to SKILL.md
+    api_prompt_path = os.path.expanduser("~/.claude/skills/wiki-ingest/prompts/api-ingest.md")
+    if os.path.exists(api_prompt_path):
+        ingest_skill = load_skill_prompt(api_prompt_path)
+    else:
+        ingest_skill = load_skill_prompt(config["skills"]["wiki_ingest"])
 
     for entry in all_entries:
         if entry.get("phase3", {}).get("status") == "complete":
@@ -1857,12 +2008,12 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
             entry["phase3"]["source_summary"] = source_path
             print(f"    ✓ Source → {slug}.md")
 
-            # Extract wikilinks and create stubs
+            # Extract wikilinks — do NOT auto-create stubs
+            # Rule: Full page for 2+ sources, stub only for entities from single source
+            # Lint phase will detect frequently-referenced missing pages (3+ mentions)
             links = extract_wikilinks(response)
-            for link in links:
-                if not page_exists(link, wiki_root):
-                    create_stub_page(link, wiki_root)
-                    entry["phase3"].setdefault("entities_created", []).append(link)
+            # No auto-creation — let lint catch pages that need creation
+            # (Skipping stub creation per CLAUDE.md rules)
 
             # Update sources index
             summary_line = entry.get("text", "")[:100]
@@ -1882,7 +2033,12 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
         manifest["qa_council"]["status"] = "skipped"
     else:
         print("\n  Step 3.3: Running QA Council...")
-        qa_skill = load_skill_prompt(config["skills"]["qa_council"])
+        # Check for API version of the prompt first, fall back to SKILL.md
+        api_prompt_path = os.path.expanduser("~/.claude/skills/qa-council/prompts/api-qa.md")
+        if os.path.exists(api_prompt_path):
+            qa_skill = load_skill_prompt(api_prompt_path)
+        else:
+            qa_skill = load_skill_prompt(config["skills"]["qa_council"])
         batch_id = manifest["batch_id"]
 
         # Collect all source summaries
@@ -2134,7 +2290,10 @@ def run_phase4(manifest: Dict, config: Dict):
 
     # ── Step 4.5: Update backlog-log.md ──
     print("  Step 4.5: Updating backlog-log.md...")
-    mark_batch_done(wiki_root, config["backlog_log"], manifest["batch_number"])
+    if manifest.get("batch_number") and manifest["batch_number"] > 0:
+        mark_batch_done(wiki_root, config["backlog_log"], manifest["batch_number"])
+    else:
+        print("  Skipping backlog update (no batch number)")
     manifest["backlog_updated"] = True
 
     # ── Step 4.6: Verification ──
@@ -2144,12 +2303,14 @@ def run_phase4(manifest: Dict, config: Dict):
     # ── Step 4.7: Cleanup ──
     if passed:
         print("  Step 4.7: Cleaning up temp files...")
-        # Archive manifest before deleting temp
-        archive_path = full_path(wiki_root, f"wiki/outputs/manifest-batch-{manifest['batch_number']}.json")
-        save_manifest(manifest, archive_path)
+        # Archive manifest before deleting temp (only if batch_number exists)
+        if manifest.get("batch_number") and manifest["batch_number"] > 0:
+            archive_path = full_path(wiki_root, f"wiki/outputs/manifest-batch-{manifest['batch_number']}.json")
+            save_manifest(manifest, archive_path)
 
-        temp_dir = manifest["temp_dir"]
-        if os.path.exists(temp_dir):
+        # Clean up temp directory if it exists
+        temp_dir = manifest.get("temp_dir")
+        if temp_dir and os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
         manifest["cleanup_complete"] = True
     else:
@@ -2224,9 +2385,15 @@ def _run_lint_checks(wiki_root: str) -> Tuple[List[Dict], List[Dict], List[Dict]
     ninety_ago = (datetime.now() - timedelta(days=90)).strftime("%Y-%m-%d")
     for slug, page in inventory.items():
         mod_date = page["frontmatter"].get("date_modified", "")
-        if mod_date and mod_date < ninety_ago:
-            if stale_re.search(page["content"]):
-                warnings.append({"type": "stale", "page": slug, "date_modified": mod_date})
+        # Handle both string and date types
+        if mod_date:
+            if hasattr(mod_date, 'strftime'):
+                mod_date_str = mod_date.strftime("%Y-%m-%d")
+            else:
+                mod_date_str = str(mod_date)
+            if mod_date_str < ninety_ago:
+                if stale_re.search(page["content"]):
+                    warnings.append({"type": "stale", "page": slug, "date_modified": mod_date_str})
 
     # Missing concept pages (3+ references)
     link_counts = {}
@@ -2671,7 +2838,12 @@ def check_and_run_qa_if_needed(config: Dict):
     # Run QA council
     minimax_key = os.environ.get("MINIMAX_API_KEY") or os.environ.get("ANTHROPIC_API_KEY", "")
     mm_client = get_minimax_client(minimax_key)
-    qa_skill = load_skill_prompt(config["skills"]["qa_council"])
+    # Check for API version of the prompt first, fall back to SKILL.md
+    api_prompt_path = os.path.expanduser("~/.claude/skills/qa-council/prompts/api-qa.md")
+    if os.path.exists(api_prompt_path):
+        qa_skill = load_skill_prompt(api_prompt_path)
+    else:
+        qa_skill = load_skill_prompt(config["skills"]["qa_council"])
     batch_id = f"qa_{today_str()}_{len(source_contents)}"
 
     qa_input = f"Batch ID: {batch_id}\nSources in batch: {len(source_contents)}\n\n"

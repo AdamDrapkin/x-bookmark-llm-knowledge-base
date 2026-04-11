@@ -227,3 +227,18 @@ Ran lint audit on all wiki content (batch 1 + batch 2 sources).
 - wiki/index.md — Maintenance section updated with lint-2026-04-10
 - wiki/qa-pairs/_index.md — QA pair counts verified
 - raw/assets/backlog-log.md — Batch 2 marked as processed
+
+## [2026-04-11] backlog-process | Batch test_single | 1 sources
+Sources: EXM7777-1991528477775032628
+Concepts: none
+Entities: none
+
+## [2026-04-11] backlog-process | Batch test_single | 1 sources
+Sources: EXM7777-1991528477775032628
+Concepts: none
+Entities: none
+
+## [2026-04-11] backlog-process | Batch test_single | 1 sources
+Sources: EXM7777-1991528477775032628
+Concepts: none
+Entities: none
