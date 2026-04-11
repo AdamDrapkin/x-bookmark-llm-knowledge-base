@@ -13,7 +13,14 @@
 raw/
 ├── assets/                      # SOPs and reference documents
 │   ├── bookmark-classification.md
-│   └── browser.md               # Browser automation SOP
+│   ├── browser.md               # Browser automation SOP
+│   ├── backlog-log.md           # Batch tracking for backlog processing
+│   ├── pipeline.py             # Main pipeline orchestration
+│   ├── pipeline_core.py         # Core pipeline logic and API client
+│   ├── pipeline_live.py         # Live pipeline runner
+│   ├── phase-startup-prompts.md # Startup prompts for each phase
+│   ├── x-api-v2-research.md    # X API v2 research and documentation
+│   └── hooeem-llm-knowledge-base-guide.md  # Reference guide
 ├── bookmarks.md                # Raw bookmark data
 ├── x-article-images/            # All images extracted from tweets and articles
 ├── x-image-analyses/            # Gemini Vision JSON analysis for images
@@ -37,6 +44,8 @@ wiki/
 ├── entities/                    # People, organisations, tools
 ├── syntheses/                   # Cross-cutting analysis
 ├── outputs/                     # Filed query answers
+│   ├── pipeline-live.log        # Append-only log of live pipeline runs
+│   └── manifest-batch-*.json   # Archived batch manifests from completed pipeline runs
 ├── qa-pairs/                    # QA pairs for fine-tuning
 ├── attachments/                  # Wiki attachments
 ├── x-image-analyses/            # Gemini Vision analysis wiki pages for images
@@ -78,4 +87,4 @@ Operations: init, ingest, query, update, lint, backlog-process
 
 ## Key File Locations
 - Bookmark database: `~/.ft-bookmarks/bookmarks.db`
-- Raw assets: `raw/assets/bookmark-classification.md`, `raw/assets/browser.md`
+- Raw assets: `raw/assets/` (includes pipeline scripts, SOPs, and backlog-log)

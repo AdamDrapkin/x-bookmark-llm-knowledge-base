@@ -1,15 +1,17 @@
 # Bookmark Classification
 
 ## Overview
-Process X bookmarks from `~/.ft-bookmarks/bookmarks.db` into the LLM Knowledge Base. Bookmarks need classification BEFORE wiki indexing.
+Tag taxonomy for X bookmarks in `~/.ft-bookmarks/bookmarks.db`. The pipeline script reads this file at runtime to classify bookmarks. Add new tags here — never hardcode them in Python.
 
 ## Source
-- **Raw data**: `~/.ft-bookmarks/bookmarks.db` (SQLite)
+- **Database**: `~/.ft-bookmarks/bookmarks.db` (SQLite)
 - **Query**: `sqlite3 ~/.ft-bookmarks/bookmarks.db "<SQL>"`
+- **Pipeline reads**: This file is loaded by `pipeline.py` at startup for topic classification.
 
-## Existing Tags
+---
 
-### Primary Categories (from `primary_category` field)
+## Primary Categories
+
 ```
 ai-agents
 ai-business
@@ -33,7 +35,8 @@ video-generation
 web-development
 ```
 
-### Sub-Tags (from `tags_json` field)
+## Sub-Tags
+
 ```
 ai-business, marketing-automation, growth
 productivity, self-improvement, career
@@ -42,86 +45,126 @@ n8n, workflow-automation, automation
 open-source, tools, github
 claude-code, ai-development, vibe-coding
 ai-tools, comparison, reviews
+content-creation, video-editing, short-form
+image-generation, midjourney, stable-diffusion, dall-e
+ai-research, papers, benchmarks
+learning, courses, resources
+local-ai, ollama, self-hosted
+philosophy, mindset, strategy
+pricing-costs, api-pricing, token-costs
+seo-marketing, social-media, analytics
+tool-releases, announcements, updates
+video-generation, sora, runway, kling
+web-development, frontend, backend, deployment
 ```
 
-## Classification Workflow — Agent Scaling
+---
 
-### Level 1: Single Agent (1 agent)
-**When**: <10 new unclassified bookmarks
-- One agent processes all bookmarks
-- Quick tag discovery and SQL update
+## Content Type Classification (API-derived)
 
-### Level 2: Two Agents (2 agents)
-**When**: 10-50 new unclassified bookmarks
-- Agent 1: First half of bookmarks
-- Agent 2: Second half of bookmarks
-- Peer review between them
+These are NOT tags — they describe WHAT the tweet contains. Detected automatically from X API response signals. The pipeline handles this internally.
 
-### Level 3: Three Agents (3 agents)
-**When**: 50-150 bookmarks
-- Agent 1: Batch 1, Agent 2: Batch 2, Agent 3: Batch 3
-- One agent reviews all outputs (chairman)
+| Content Type | API Signal | Processing |
+|---|---|---|
+| standalone | No refs, conversation_id == tweet_id | Text only |
+| thread_starter | conversation_id == tweet_id, has self-replies | Walk thread |
+| thread_reply | conversation_id != tweet_id | Walk upward |
+| retweet | referenced_tweets contains type: retweeted | Fetch original, 2 entries |
+| quote_tweet | referenced_tweets contains type: quoted | Include quoted content |
+| reply | referenced_tweets replied_to, different author | Walk to parent |
 
-### Level 4: Four Agents (4 agents)
-**When**: 150-300 bookmarks
-- 3 agents process batches, 1 agent synthesizes
+| Content Flag | API Signal | Processing |
+|---|---|---|
+| has_images | media type photo | Download + Gemini Flash |
+| has_video | media type video | Download + Gemini Pro (≤2m) or Whisper (>2m) |
+| has_gif | media type animated_gif | Skip |
+| has_youtube | entities.urls youtube.com/youtu.be | ScrapeCreators transcript |
+| has_github | entities.urls github.com | Fetch README |
+| has_x_article | entities.urls x.com article | Fetch content |
+| has_external_link | entities.urls non-X domain | Fetch + extract |
+| no_media | No attachments, no links | Text-only source |
 
-### Level 5: Five Agents (5 agents)
-**When**: 300+ bookmarks OR initial full classification
-- 4 agents process quarters, 1 chairman synthesizes master tag list with SQL updates
+---
 
-### Agent Prompt Template
-```
-You are a Bookmark Analyst.
+## Classification Rules
 
-Your job: Analyze your assigned batch of bookmarks and DISCOVER tags organically.
-DO NOT use predefined tags — look at what the bookmarks actually contain.
+### For Already-Classified Bookmarks
+If `primary_category` exists in bookmarks.db, use it. The pipeline does not reclassify.
 
-For each bookmark, identify:
-1. What TOPIC is this about?
-2. What TOOLS are mentioned?
-3. What TECHNIQUE or METHOD is shown?
-4. What CONTENT TYPE: news/insight, tool release, tutorial, opinion, announcement?
+### For Unclassified Bookmarks
+1. Check tweet text against Primary Categories above
+2. Check against Sub-Tags for more specific classification
+3. If no existing tag fits, add a new sub-tag to this file
+4. Update bookmarks.db: `UPDATE bookmarks SET primary_category = 'X', categories = '["X", "Y"]' WHERE id = '...';`
 
-Output JSON:
-{
-  "agent_id": X,
-  "tags_discovered": [{"tag": "tag-name", "why": "because bookmarks mention X"}],
-  "bookmarks": [{"id": "...", "discovered_tags": ["tag1", "tag2"]}],
-  "patterns": "Any patterns you notice"
-}
-```
+### Adding New Tags
+When the pipeline encounters content that doesn't fit existing categories:
+1. The pipeline appends the new tag to the Sub-Tags section above
+2. The tag follows naming convention: `lowercase-hyphenated`
+3. Tags are never removed — only added
+4. New primary categories require manual review (rare)
 
-### Query Command
+---
+
+## Query Commands
+
 ```bash
-sqlite3 ~/.ft-bookmarks/bookmarks.db "SELECT id, text, author_handle, primary_category FROM bookmarks ORDER BY synced_at DESC LIMIT N OFFSET X"
+# Get unclassified bookmarks
+sqlite3 ~/.ft-bookmarks/bookmarks.db "SELECT id, text, author_handle FROM bookmarks WHERE primary_category IS NULL OR primary_category = '' LIMIT 10;"
+
+# Get bookmarks by category
+sqlite3 ~/.ft-bookmarks/bookmarks.db "SELECT id, text, author_handle FROM bookmarks WHERE primary_category = 'ai-agents' LIMIT 10;"
+
+# Count by category
+sqlite3 ~/.ft-bookmarks/bookmarks.db "SELECT primary_category, COUNT(*) FROM bookmarks GROUP BY primary_category ORDER BY COUNT(*) DESC;"
+
+# Update classification
+sqlite3 ~/.ft-bookmarks/bookmarks.db "UPDATE bookmarks SET primary_category = 'prompt-engineering', categories = '[\"prompt-engineering\", \"tutorial\"]' WHERE id = 'TWEET_ID';"
 ```
 
-## Execute Classification SQL
+---
 
-Run the SQL updates to populate:
-- `primary_category` — main topic
-- `categories` — JSON array of all applicable tags
-- `tags_json` — sub-tags
+## Keyword Clusters
 
-## Ongoing Classification (New Bookmarks)
+Used by the pipeline's auto-classification. URL signals (strongest) + multi-word keyword matches (additive).
+Edit these to tune classification accuracy. The pipeline reads this section at runtime.
 
-1. **Check for unclassified**:
-   ```bash
-   sqlite3 ~/.ft-bookmarks/bookmarks.db "SELECT id, text, author_handle, primary_category FROM bookmarks WHERE primary_category IS NULL OR primary_category = '' LIMIT 10;"
-   ```
+```
+ai-agents: ai agent, autonomous agent, agent framework, agentic, multi-agent, crew ai, autogen
+ai-business: ai startup, saas, monetize ai, ai service, ai agency, client acquisition
+ai-research: arxiv, research paper, benchmark, state of the art, fine-tuning, fine tuning, transformer, attention mechanism
+ai-tools-comparison: vs , versus, compared to, alternative to, better than, which is better
+claude-code: claude code, claude.ai, anthropic, claude sonnet, claude opus, claude haiku
+content-creation: video editing, short form, content creator, tiktok, reels, content strategy, hook
+image-generation: midjourney, stable diffusion, dall-e, flux, image generation, comfyui, controlnet
+learning: tutorial, course, learn how, step by step, beginner guide, explained, walkthrough
+local-ai: ollama, self-hosted, local llm, run locally, on-device, llama.cpp, private ai
+n8n-automation: n8n, workflow automation, automation workflow, zapier alternative, make.com
+open-source: open source, open-source, github.com, self hosted, foss, mit license, apache license
+philosophy: mindset, philosophy, stoic, first principles, mental model, think and grow rich
+pricing-costs: pricing, api cost, token cost, per month, free tier, pay as you go
+productivity: productivity, time management, workflow, second brain, notion, obsidian, pkm
+prompt-engineering: system prompt, prompt engineering, chain of thought, few-shot, prompt template, jailbreak
+seo-marketing: seo, marketing, growth hack, social media strategy, analytics, conversion
+tool-releases: just launched, now available, announcing, introducing, new release, just shipped
+video-generation: sora, runway, kling, video generation, text to video, luma, pika
+web-development: react, nextjs, next.js, frontend, backend, api endpoint, typescript, tailwind, vercel
+```
 
-2. **Match to existing tags** (ALWAYS check existing tags first):
-   - Scan bookmark text against PRIMARY CATEGORIES list above
-   - Scan against SUB-TAGS list above
-   - If existing tag fits, use it — DO NOT create duplicate tags
-   - If no existing tag fits, create new tag following naming convention
+### URL Signal Overrides (highest priority)
 
-3. **Assign category**:
-   - Match content to existing tags from the lists above
-   - If no match, create new tag following naming convention
-   - Update: `UPDATE bookmarks SET primary_category = 'X', categories = '["X", "Y"]' WHERE id = '...';`
+```
+github.com → open-source
+arxiv.org → ai-research
+huggingface.co → ai-research
+n8n.io → n8n-automation
+youtube.com → content-creation (weak signal, 0.5)
+```
 
-## Wiki Indexing After Classification
+### Processed Tag
 
-Handled by the LLM Knowledge Base #Operations section in CLAUDE.md.
+After a bookmark completes the full pipeline, the script adds `"processed"` to its `categories` JSON array in bookmarks.db. Query for unprocessed:
+
+```sql
+SELECT * FROM bookmarks WHERE categories NOT LIKE '%processed%' OR categories IS NULL;
+```
