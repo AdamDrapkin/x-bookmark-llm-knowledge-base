@@ -75,10 +75,12 @@ def load_config(config_path: str = "config.yaml") -> Dict[str, Any]:
             "wiki_lint": os.path.expanduser("~/.claude/skills/wiki-lint/SKILL.md"),
             "image_analysis": os.path.expanduser("~/.claude/skills/image-analysis/SKILL.md"),
             "video_analysis": os.path.expanduser("~/.claude/skills/video-analysis/SKILL.md"),
+            "image_analysis_prompt": os.path.expanduser("~/.claude/skills/image-analysis/prompts/analysis.md"),
+            "video_analysis_prompt": os.path.expanduser("~/.claude/skills/video-analysis/prompts/analysis.md"),
         },
         "api": {
-            "gemini_flash_model": "gemini-2.5-flash-preview-05-20",
-            "gemini_pro_model": "gemini-2.5-pro-preview-06-05",
+            "gemini_flash_model": "gemini-2.5-flash",
+            "gemini_pro_model": "gemini-2.5-pro",
             "whisper_model": "whisper-1",
             "minimax_model": "MiniMax-M2.7",
             "max_retries": 3,
@@ -241,6 +243,11 @@ def classify_content_flags(tweet: Dict, includes: Dict) -> Set[str]:
         elif mtype == "animated_gif":
             flags.add("has_gif")
 
+    # Fallback: if no attachments key (DB-sourced data), use media_count hint
+    if not tweet.get("attachments", {}).get("media_keys"):
+        if int(tweet.get("media_count", 0)) > 0:
+            flags.add("has_images")  # Pre-hint; API lookup confirms actual type
+
     # Check URLs in entities
     for url_entity in tweet.get("entities", {}).get("urls", []):
         expanded = url_entity.get("expanded_url") or url_entity.get("unwound_url") or ""
@@ -360,46 +367,56 @@ def add_new_tag(wiki_root: str, classification_path: str, tag: str, section: str
 
 def parse_backlog_log(wiki_root: str, backlog_path: str) -> Dict[int, Dict]:
     """Parse backlog-log.md to extract batch definitions.
-    Returns {batch_number: {"ids": [...], "status": "done"|"next"|"-"}}
+    Returns {batch_number: {"ids": [...], "status": "processed"|"not_started"|"next"}}
+
+    Status values:
+    - processed: batch has been completed
+    - not_started: batch has not been started yet
+    - next: the next batch to be processed (only one should have this status)
     """
     path = full_path(wiki_root, backlog_path)
     content = Path(path).read_text()
     batches = {}
 
-    # Parse markdown table rows like: | Batch 3 | 21-30 | next |
+    # Parse markdown table rows like: | Batch 4 | 31-40 | - | 10 | 45 | not_started |
     for line in content.split("\n"):
-        m = re.match(r"\|\s*Batch\s+(\d+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|", line)
+        # Match 6 columns: Batch | IDs Range | Date | Processed | Total Processed | Status
+        m = re.match(r"\|\s*Batch\s+(\d+)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|\s*(.+?)\s*\|", line)
         if m:
             batch_num = int(m.group(1))
             ids_str = m.group(2).strip()
-            status = m.group(3).strip()
+            status = m.group(6).strip()
             batches[batch_num] = {"ids_raw": ids_str, "status": status}
 
     return batches
 
 
 def get_batch_ids_from_backlog(wiki_root: str, backlog_path: str, batch_num: int) -> List[str]:
-    """Get the actual bookmark IDs for a specific batch from bookmarks.db.
-    The backlog-log stores ranges or explicit IDs. This resolves them.
+    """Get the actual bookmark IDs for a specific batch.
+
+    First tries to extract from detailed batch sections in the markdown.
+    Falls back to row range if no detailed section found.
     """
     batches = parse_backlog_log(wiki_root, backlog_path)
     if batch_num not in batches:
         raise ValueError(f"Batch {batch_num} not found in backlog-log.md")
 
     batch = batches[batch_num]
-    if batch["status"] == "done":
-        raise ValueError(f"Batch {batch_num} is already marked done")
+    if batch["status"] == "processed":
+        raise ValueError(f"Batch {batch_num} is already marked processed")
 
+    # Try to extract from detailed markdown sections first
+    ids = extract_ids_from_detailed_section(wiki_root, backlog_path, batch_num)
+    if ids:
+        return ids
+
+    # Fallback: use row range from the table
     ids_raw = batch["ids_raw"]
-
-    # Handle range format like "21-30" or explicit IDs
     if re.match(r"^\d+-\d+$", ids_raw):
         start, end = ids_raw.split("-")
-        # These are row numbers, not tweet IDs. Query DB with OFFSET/LIMIT.
         return _query_batch_by_range(int(start), int(end))
 
-    # Handle comma-separated IDs
-    return [id.strip().strip("'\"") for id in ids_raw.split(",") if id.strip()]
+    return []
 
 
 def _query_batch_by_range(start: int, end: int) -> List[str]:
@@ -410,24 +427,84 @@ def _query_batch_by_range(start: int, end: int) -> List[str]:
     return []  # Placeholder — filled by query_bookmarks_db
 
 
+def extract_ids_from_detailed_section(wiki_root: str, backlog_path: str, batch_num: int) -> List[str]:
+    """Extract tweet IDs from detailed batch markdown sections.
+
+    Example format:
+    ### Batch 4 (IDs 31-40)
+    31. 1997233746630893733 | aigleeson | OpenAI, Anthropic, and Google...
+    """
+    path = full_path(wiki_root, backlog_path)
+    content = Path(path).read_text()
+
+    # Find the section for this batch
+    pattern = rf"###\s+Batch\s+{batch_num}\s+\([^)]+\)"
+    match = re.search(pattern, content)
+    if not match:
+        return []
+
+    # Extract lines until next ### Batch or end of section
+    start_pos = match.end()
+    next_section = re.search(r"\n###\s+Batch\s+\d+", content[start_pos:])
+    end_pos = start_pos + next_section.start() if next_section else len(content)
+
+    section = content[start_pos:end_pos]
+
+    # Extract all tweet IDs (first column before |)
+    ids = []
+    for line in section.split("\n"):
+        # Match lines like: 31. 1997233746630893733 | aigleelon | ...
+        m = re.match(r"^\d+\.\s+(\d{19,})", line.strip())
+        if m:
+            ids.append(m.group(1))
+
+    return ids
+
+
 def find_next_batch(wiki_root: str, backlog_path: str) -> int:
-    """Find the first batch with status 'next' or '-' (not 'done')."""
+    """Find the batch with status 'next'. Raises if none found.
+
+    The 'next' status indicates which batch should be processed.
+    If no batch has 'next' status, falls back to first 'not_started' batch.
+    """
     batches = parse_backlog_log(wiki_root, backlog_path)
+
+    # First: find explicit 'next' batch
     for num in sorted(batches.keys()):
-        if batches[num]["status"] not in ("done",):
+        if batches[num]["status"] == "next":
             return num
-    raise ValueError("All batches in backlog-log.md are marked done")
+
+    # Fallback: find first 'not_started' batch
+    for num in sorted(batches.keys()):
+        if batches[num]["status"] == "not_started":
+            return num
+
+    raise ValueError("All batches in backlog-log.md are processed")
 
 
 def mark_batch_done(wiki_root: str, backlog_path: str, batch_num: int):
-    """Update backlog-log.md to mark a batch as done."""
+    """Update backlog-log.md to mark a batch as processed and promote next batch to 'next'.
+
+    - Marks current batch as 'processed'
+    - Finds next sequential batch marked 'not_started' and promotes to 'next'
+    """
     path = full_path(wiki_root, backlog_path)
     content = Path(path).read_text()
-    # Replace the status field for this batch
-    pattern = rf"(\|\s*Batch\s+{batch_num}\s*\|[^|]+\|)\s*[^|]+\s*\|"
-    replacement = rf"\1 done |"
+
+    # 1. Mark current batch as processed
+    # Pattern: | Batch N | IDs | Date | Processed | Total | not_started | → | Batch N | IDs | Date | Processed | Total | processed |
+    pattern = rf"(\|\s*Batch\s+{batch_num}\s*\|[^|]+\|[^|]+\|[^|]+\|[^|]+\|)\s*not_started\s*\|"
+    replacement = rf"\1 processed |"
     content = re.sub(pattern, replacement, content)
+
+    # 2. Find next batch that is 'not_started' and promote to 'next'
+    next_batch = batch_num + 1
+    pattern_next = rf"(\|\s*Batch\s+{next_batch}\s*\|[^|]+\|[^|]+\|[^|]+\|[^|]+\|)\s*not_started\s*\|"
+    replacement_next = rf"\1 next |"
+    content = re.sub(pattern_next, replacement_next, content)
+
     Path(path).write_text(content)
+    print(f"  ✅ Batch {batch_num} marked processed, Batch {next_batch} promoted to next")
 
 
 # ─────────────────────────────────────────────
@@ -441,8 +518,7 @@ def query_bookmarks_db(db_path: str, ids: List[str]) -> List[Dict]:
     conn.row_factory = sqlite3.Row
     placeholders = ",".join(["?"] * len(ids))
     cursor = conn.execute(
-        f"SELECT id, text, author_handle, primary_category, categories, synced_at "
-        f"FROM bookmarks WHERE id IN ({placeholders})",
+        f"SELECT * FROM bookmarks WHERE id IN ({placeholders})",
         ids
     )
     results = [dict(row) for row in cursor.fetchall()]
@@ -887,7 +963,7 @@ def load_skill_prompt(skill_path: str) -> str:
 
 
 def analyze_image_gemini(image_path: str, gemini_key: str, skill_prompt: str,
-                          model: str = "gemini-2.5-flash-preview-05-20") -> Optional[Dict]:
+                          model: str = "gemini-2.5-flash") -> Optional[Dict]:
     """Analyze an image with Gemini 2.5 Flash Vision."""
     try:
         with open(image_path, "rb") as f:
@@ -907,13 +983,17 @@ def analyze_image_gemini(image_path: str, gemini_key: str, skill_prompt: str,
                     {"text": skill_prompt or "Analyze this image thoroughly. Provide: 1) Visual description, 2) Any visible text, 3) Context and topic, 4) Notable details. Return as JSON."},
                     {"inline_data": {"mime_type": mime, "data": image_b64}},
                 ]}],
-                "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
+                "generationConfig": {"temperature": 0.2},
             },
             timeout=60,
         )
         if resp.status_code == 200:
             data = resp.json()
             text = data.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "{}")
+            # Strip markdown code fences before JSON parsing
+            text = text.strip()
+            if text.startswith("```"):
+                text = re.sub(r"^```[a-z]*\n|```$", "", text, flags=re.MULTILINE).strip()
             return json.loads(text) if text.startswith("{") else {"raw": text}
         print(f"  ⚠ Gemini Flash returned {resp.status_code}")
         return None
@@ -923,7 +1003,7 @@ def analyze_image_gemini(image_path: str, gemini_key: str, skill_prompt: str,
 
 
 def analyze_video_gemini(video_path: str, gemini_key: str, skill_prompt: str,
-                          model: str = "gemini-2.5-pro-preview-06-05") -> Optional[Dict]:
+                          model: str = "gemini-2.5-pro") -> Optional[Dict]:
     """Analyze a short video (≤2min) with Gemini 2.5 Pro Vision."""
     try:
         with open(video_path, "rb") as f:
@@ -937,13 +1017,17 @@ def analyze_video_gemini(video_path: str, gemini_key: str, skill_prompt: str,
                     {"text": skill_prompt or "Analyze this video thoroughly. Provide: 1) Complete transcript, 2) Visual elements, 3) Visible text, 4) Summary. Return as JSON with keys: transcript, visual_description, visible_text, summary."},
                     {"inline_data": {"mime_type": "video/mp4", "data": video_b64}},
                 ]}],
-                "generationConfig": {"responseMimeType": "application/json", "temperature": 0.2},
+                "generationConfig": {"temperature": 0.2},
             },
             timeout=120,
         )
         if resp.status_code == 200:
             data = resp.json()
             text = data.get("candidates", [{}])[0].get("content", {}).get("parts", [{}])[0].get("text", "{}")
+            # Strip markdown code fences before JSON parsing
+            text = text.strip()
+            if text.startswith("```"):
+                text = re.sub(r"^```[a-z]*\n|```$", "", text, flags=re.MULTILINE).strip()
             return json.loads(text) if text.startswith("{") else {"raw": text}
         print(f"  ⚠ Gemini Pro returned {resp.status_code}")
         return None
@@ -1487,9 +1571,18 @@ def run_phase2(manifest: Dict, config: Dict):
     gemini_key = os.environ["GEMINI_API_KEY"]
     openai_key = os.environ.get("OPENAI_API_KEY", "")
 
-    # Load skill prompts
-    image_skill = load_skill_prompt(config["skills"]["image_analysis"])
-    video_skill = load_skill_prompt(config["skills"]["video_analysis"])
+    # Load skill prompts (use prompts/analysis.md if available)
+    image_skill_path = config["skills"].get("image_analysis_prompt", config["skills"]["image_analysis"])
+    if os.path.exists(image_skill_path):
+        image_skill = Path(image_skill_path).read_text()
+    else:
+        image_skill = load_skill_prompt(config["skills"]["image_analysis"])
+
+    video_skill_path = config["skills"].get("video_analysis_prompt", config["skills"]["video_analysis"])
+    if os.path.exists(video_skill_path):
+        video_skill = Path(video_skill_path).read_text()
+    else:
+        video_skill = load_skill_prompt(config["skills"]["video_analysis"])
 
     all_entries = manifest["bookmarks"] + manifest.get("repost_originals", [])
 
