@@ -18,6 +18,8 @@ raw/
 │   ├── pipeline.py             # Main pipeline orchestration
 │   ├── pipeline_core.py         # Core pipeline logic and API client
 │   ├── pipeline_live.py         # Live pipeline runner
+│   ├── pipeline_monitor.py     # Monitors X list + watchlist
+│   ├── watchlist.md             # Extra accounts to track
 │   ├── phase-startup-prompts.md # Startup prompts for each phase
 │   ├── x-api-v2-research.md    # X API v2 research and documentation
 │   └── hooeem-llm-knowledge-base-guide.md  # Reference guide
@@ -45,6 +47,7 @@ wiki/
 ├── syntheses/                   # Cross-cutting analysis
 ├── outputs/                     # Filed query answers
 │   ├── pipeline-live.log        # Append-only log of live pipeline runs
+│   ├── pipeline-monitor.log      # Append-only log of monitor runs
 │   └── manifest-batch-*.json   # Archived batch manifests from completed pipeline runs
 ├── qa-pairs/                    # QA pairs for fine-tuning
 ├── attachments/                  # Wiki attachments
