@@ -40,7 +40,8 @@ wiki/
 ├── qa-pairs/                    # QA pairs for fine-tuning
 ├── attachments/                  # Wiki attachments
 ├── x-image-analyses/            # Gemini Vision analysis wiki pages for images
-└── x-video-analyses/            # Gemini Vision analysis wiki pages for videos
+├── x-video-analyses/            # Gemini Vision analysis wiki pages for videos
+└── x-github-repos/             # GitHub repository analysis pages
 ```
 
 ## Page Frontmatter
