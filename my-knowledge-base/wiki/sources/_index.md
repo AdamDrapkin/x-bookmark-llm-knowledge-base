@@ -117,3 +117,28 @@ status: draft
 - [[godofprompt-1974425241582796820-anthropic-prompting-style]]
 - [[godofprompt-1974102012670407035-depth-prompt-framework]]
 - [[shushant_l-1974097166454174149-perplexity-research-prompts]]- [[EXM7777-1991528477775032628]] — use this system prompt in Gemini 3.0 to consistently write humanized content _(added 2026-04-11)_
+- [[MengTo-1991489885690364187]] — I recorded a 37-min tutorial on how to prompt with Gemini 3 to get the best UIs https://t.co/LEhYqdX _(added 2026-04-11)_
+- [[godofprompt-1982479013638767087]] — 5 prompts to use ChatGPT as your thinking partner
+
+🔖 Bookmark for later. https://t.co/gWzTAMNdua _(added 2026-04-11)_
+- [[alex_prompter-1995470595241193726]] — Steal my Gemini prompt to analyze and convert an image into a detailed JSON prompt.
+
+--------------- _(added 2026-04-11)_
+- [[MengTo-1994058991106969950]] — I recorded a 45-min tutorial on how to prompt animations with Gemini 3 https://t.co/ng3o2pUrxh _(added 2026-04-11)_
+- [[alex_prompter-1994005617246368095]] — JSON prompt writing is the easiest thing ever.
+
+You can just copy this mega prompt below and paste i _(added 2026-04-11)_
+- [[godofprompt-1993654485223367013]] — I used Elon Musk's actual thinking framework as AI prompts.
+
+It's the closest thing to having a bill _(added 2026-04-11)_
+- [[godofprompt-1993275220342481039]] — Robert Greene reverse engineered 3,000 years of human psychology into timeless rules of power.
+
+I tu _(added 2026-04-11)_
+- [[alex_prompter-1992887472557342779]] — R.I.P Gartner.
+
+You don’t need expensive analyst subscriptions anymore.
+
+You can now generate full i _(added 2026-04-11)_
+- [[alex_prompter-1997307729543823785]] — Claude Opus 4.5 just killed consulting as we know it.
+
+Here are the 3 prompts I use to get McKinsey- _(added 2026-04-11)_

@@ -1833,10 +1833,15 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
 
                 if analysis.get("color_profile"):
                     cp = analysis["color_profile"]
+                    # Handle both string and dict formats
+                    dom_colors = cp.get('dominant_colors', [])
+                    if dom_colors:
+                        if isinstance(dom_colors[0], dict):
+                            dom_colors = [c.get('name', c.get('hex', str(c))) for c in dom_colors]
                     body += f"""
 ## Color Profile
 
-- **Dominant Colors:** {', '.join(cp.get('dominant_colors', []))}
+- **Dominant Colors:** {', '.join(str(c) for c in dom_colors)}
 - **Color Palette:** {cp.get('color_palette', 'N/A')}
 - **Temperature:** {cp.get('temperature', 'N/A')}
 - **Saturation:** {cp.get('saturation', 'N/A')}
@@ -2269,11 +2274,13 @@ def run_phase4(manifest: Dict, config: Dict):
     print("  Step 4.1: Running wiki-lint...")
     errors, warnings, info_items = _run_lint_checks(wiki_root)
 
-    # ── Step 4.2: Auto-fix broken links ──
+    # ── Step 4.2: Auto-fix lint issues ──
     print("  Step 4.2: Auto-fixing lint issues...")
     for err in errors:
+        # Only auto-fix missing frontmatter — do NOT create stub pages
+        # Broken links are expected and resolve as more sources are ingested
         if err.get("type") == "broken_link":
-            create_stub_page(err["target"], wiki_root)
+            pass  # Report only. Do NOT auto-create stub pages.
         elif err.get("type") == "missing_frontmatter":
             _fix_frontmatter(err["page"], err["missing_fields"], wiki_root)
 

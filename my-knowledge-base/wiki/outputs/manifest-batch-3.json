@@ -1,0 +1,516 @@
+{
+  "batch_id": "batch_003_remaining",
+  "batch_number": 3,
+  "wiki_root": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base",
+  "bookmarks": [
+    {
+      "id": "1991489885690364187",
+      "author_handle": "MengTo",
+      "primary_category": "design",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "I recorded a 37-min tutorial on how to prompt with Gemini 3 to get the best UIs https://t.co/LEhYqdXnNI",
+      "created_at": "Thu Nov 20 12:52:43 +0000 2025",
+      "tweet_url": "https://x.com/MengTo/status/1991489885690364187",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_videos"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [
+            "raw/x-video-transcripts/MengTo-1991489885690364187-transcript.txt"
+          ],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": [
+          {
+            "path": "raw/x-video-transcripts/MengTo-1991489885690364187-transcript.txt",
+            "status": "complete"
+          }
+        ]
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/MengTo-1991489885690364187.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1982479013638767087",
+      "author_handle": "godofprompt",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "5 prompts to use ChatGPT as your thinking partner\n\n\ud83d\udd16 Bookmark for later. https://t.co/gWzTAMNdua",
+      "created_at": "Sun Oct 26 16:06:44 +0000 2025",
+      "tweet_url": "https://x.com/godofprompt/status/1982479013638767087",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_images"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [
+            "raw/x-article-images/godofprompt-1982479013638767087-image-1.jpg"
+          ],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [
+          {
+            "image_path": "raw/x-article-images/godofprompt-1982479013638767087-image-1.jpg",
+            "analysis_json": "raw/x-image-analyses/godofprompt-1982479013638767087-image-1-analysis.json",
+            "status": "complete"
+          }
+        ],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/godofprompt-1982479013638767087.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1995470595241193726",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "Steal my Gemini prompt to analyze and convert an image into a detailed JSON prompt.\n\n--------------------------------\nIMAGE TO JSON GENERATOR\n--------------------------------\n\n[ATTACH AN IMAGE]\n\n## Context &amp; Goal\nYou are an expert visual analysis specialist with 15+ years of https://t.co/fsCt0IGQuQ",
+      "created_at": "Mon Dec 01 12:30:38 +0000 2025",
+      "tweet_url": "https://x.com/alex_prompter/status/1995470595241193726",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_images"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [
+            "raw/x-article-images/alex_prompter-1995470595241193726-image-1.jpg",
+            "raw/x-article-images/alex_prompter-1995470595241193726-image-2.jpg"
+          ],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [
+          {
+            "image_path": "raw/x-article-images/alex_prompter-1995470595241193726-image-1.jpg",
+            "analysis_json": "raw/x-image-analyses/alex_prompter-1995470595241193726-image-1-analysis.json",
+            "status": "complete"
+          },
+          {
+            "image_path": "raw/x-article-images/alex_prompter-1995470595241193726-image-2.jpg",
+            "analysis_json": "raw/x-image-analyses/alex_prompter-1995470595241193726-image-2-analysis.json",
+            "status": "complete"
+          }
+        ],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-1995470595241193726.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1994058991106969950",
+      "author_handle": "MengTo",
+      "primary_category": "design",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "I recorded a 45-min tutorial on how to prompt animations with Gemini 3 https://t.co/ng3o2pUrxh",
+      "created_at": "Thu Nov 27 15:01:25 +0000 2025",
+      "tweet_url": "https://x.com/MengTo/status/1994058991106969950",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_videos"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [
+            "raw/x-video-transcripts/MengTo-1994058991106969950-transcript.txt"
+          ],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": [
+          {
+            "path": "raw/x-video-transcripts/MengTo-1994058991106969950-transcript.txt",
+            "status": "complete"
+          }
+        ]
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/MengTo-1994058991106969950.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1994005617246368095",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "JSON prompt writing is the easiest thing ever.\n\nYou can just copy this mega prompt below and paste it in ChatGPT. After that, you can say something like \"write a prompt for this [add the command],\" and it will generate it for you.\n\nSteal it here \ud83d\udc47 https://t.co/LwLCFSIxcL",
+      "created_at": "Thu Nov 27 11:29:20 +0000 2025",
+      "tweet_url": "https://x.com/alex_prompter/status/1994005617246368095",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_images"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [
+            "raw/x-article-images/alex_prompter-1994005617246368095-image-1.jpg"
+          ],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [
+          {
+            "image_path": "raw/x-article-images/alex_prompter-1994005617246368095-image-1.jpg",
+            "analysis_json": "raw/x-image-analyses/alex_prompter-1994005617246368095-image-1-analysis.json",
+            "status": "complete"
+          }
+        ],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-1994005617246368095.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1993654485223367013",
+      "author_handle": "godofprompt",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "I used Elon Musk's actual thinking framework as AI prompts.\n\nIt's the closest thing to having a billionaire engineer rip apart your ideas and rebuild them from physics.\n\nHere are the 15 prompts that changed how I solve problems: https://t.co/tmOV7EeGes",
+      "created_at": "Wed Nov 26 12:14:04 +0000 2025",
+      "tweet_url": "https://x.com/godofprompt/status/1993654485223367013",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_images"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [
+            "raw/x-article-images/godofprompt-1993654485223367013-image-1.jpg"
+          ],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [
+          {
+            "image_path": "raw/x-article-images/godofprompt-1993654485223367013-image-1.jpg",
+            "analysis_json": "raw/x-image-analyses/godofprompt-1993654485223367013-image-1-analysis.json",
+            "status": "complete"
+          }
+        ],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/godofprompt-1993654485223367013.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1993275220342481039",
+      "author_handle": "godofprompt",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "Robert Greene reverse engineered 3,000 years of human psychology into timeless rules of power.\n\nI turned those rules into 7 AI prompts that make you sharper, harder to manipulate, and impossible to ignore.\n\nHere\u2019s how to use LLMs to apply Greene\u2019s principles in real life: https://t.co/V7v560nrgU",
+      "created_at": "Tue Nov 25 11:07:00 +0000 2025",
+      "tweet_url": "https://x.com/godofprompt/status/1993275220342481039",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_images"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [
+            "raw/x-article-images/godofprompt-1993275220342481039-image-1.jpg"
+          ],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [
+          {
+            "image_path": "raw/x-article-images/godofprompt-1993275220342481039-image-1.jpg",
+            "analysis_json": "raw/x-image-analyses/godofprompt-1993275220342481039-image-1-analysis.json",
+            "status": "complete"
+          }
+        ],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/godofprompt-1993275220342481039.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1992887472557342779",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "R.I.P Gartner.\n\nYou don\u2019t need expensive analyst subscriptions anymore.\n\nYou can now generate full industry reports using Gemini 3 and public data.\n\nHere\u2019s the prompt that turns Gemini 3 into a full-stack market research analyst: https://t.co/S1biVAycYz",
+      "created_at": "Mon Nov 24 09:26:14 +0000 2025",
+      "tweet_url": "https://x.com/alex_prompter/status/1992887472557342779",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_images"
+        ]
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [
+            "raw/x-article-images/alex_prompter-1992887472557342779-image-1.jpg"
+          ],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [
+          {
+            "image_path": "raw/x-article-images/alex_prompter-1992887472557342779-image-1.jpg",
+            "analysis_json": "raw/x-image-analyses/alex_prompter-1992887472557342779-image-1-analysis.json",
+            "status": "complete"
+          }
+        ],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-1992887472557342779.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "1997307729543823785",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": [
+        "prompt-engineering",
+        "ai-prompts",
+        "tutorial"
+      ],
+      "text": "Claude Opus 4.5 just killed consulting as we know it.\n\nHere are the 3 prompts I use to get McKinsey-level answers instantly:\n\n(Comment \"Claude\" and I'll DM you my complete Claude Mastery guide for free) \u2193",
+      "created_at": "Sat Dec 06 14:10:45 +0000 2025",
+      "tweet_url": "https://x.com/alex_prompter/status/1997307729543823785",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": []
+      },
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": []
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-1997307729543823785.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    }
+  ],
+  "repost_originals": [],
+  "phase_status": {
+    "phase1_extract": "complete",
+    "phase2_analyze": "complete",
+    "phase3_compile": "complete",
+    "phase4_finalize": "pending"
+  },
+  "qa_council": {
+    "status": "skipped",
+    "batch_qa_path": null,
+    "concept_index_updated": false
+  },
+  "lint": {
+    "status": "complete",
+    "report_path": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/outputs/lint-2026-04-11.md"
+  },
+  "indexes_updated": true,
+  "backlog_updated": true,
+  "cleanup_complete": false,
+  "status": "phase3_complete"
+}

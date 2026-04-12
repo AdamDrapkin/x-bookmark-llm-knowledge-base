@@ -27,7 +27,7 @@ status: draft
 | Batch 1 | 1-10 | 2026-04-09 | 10 | 10 | processed |
 | Batch 2 | 11-20 | 2026-04-10 | 10 | 20 | processed |
 | Batch 3 | 21-30 | 2026-04-10 | 10 | 30 | processed |
-| Batch 4 | 31-40 | - | - | 40 | not_started |
+| Batch 4 | 31-40 | - | - | 40 | next |
 | Batch 5 | 41-50 | - | - | 50 | not_started |
 | Batch 6 | 51-60 | - | - | 60 | not_started |
 | Batch 7 | 61-70 | - | - | 70 | not_started |
