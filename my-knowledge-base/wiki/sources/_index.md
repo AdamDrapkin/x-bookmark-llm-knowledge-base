@@ -142,3 +142,31 @@ You can now generate full i _(added 2026-04-11)_
 - [[alex_prompter-1997307729543823785]] — Claude Opus 4.5 just killed consulting as we know it.
 
 Here are the 3 prompts I use to get McKinsey- _(added 2026-04-11)_
+- [[om_patel5-2041040306078912653]] — THIS GUY AUDITED 926 CLAUDE CODE SESSIONS AND FOUND MOST OF THE TOKEN WASTE WAS ON HIS SIDE
+
+everyon _(added 2026-04-14)_
+- [[HowToAI_-2041026315051262048]] — 🚨 BREAKING: Someone just open-sourced a fully autonomous AI RED TEAM.
+
+It's called PentAGI. A autono _(added 2026-04-14)_
+- [[ErickSky-2040999023230751048]] — 🚨 Esto no tiene derecho a ser open source.
+
+Este es tu nuevo dashboard potenciado por IA sobre cualq _(added 2026-04-14)_
+- [[heynavtoor-2040995726088671608]] — 🚨 47 hours of footage. One sentence. The exact clip.
+
+Someone made it possible to Google Search your _(added 2026-04-14)_
+- [[ihtesham2005-2040864758145167373]] — This feels like cheating.
+
+I just found a GitHub repo that runs a full contract review in under 60 s _(added 2026-04-14)_
+- [[coreyganim-2040842449384276268]] — Best breakdown of Karpathy's "second brain" system I've seen. My co-founder turned it into an actual _(added 2026-04-14)_
+- [[ErickSky-2040824372793930063]] — 🚨 Esto va a romper internet para los creadores de contenido.
+
+OpenMontage: el primer sistema open-so _(added 2026-04-14)_
+- [[socialwithaayan-2040804154533368144]] — 🚨 BREAKING: Someone just open-sourced the exact tool powering thousands of faceless YouTube channels _(added 2026-04-14)_
+- [[KanikaBK-2040764115501908175]] — 😱 ONE DISTRIBUTION STRATEGY equals $60K/MONTH from pages YOU BUILD ONCE.
+
+GREG ISENBERG just dropped _(added 2026-04-14)_
+- [[ArchiveExplorer-2040727747966668939]] — "Claude usage limit reached. Your limit will reset at 7pm"
+
+every. fucking. day.
+
+was about to pay $ _(added 2026-04-14)_

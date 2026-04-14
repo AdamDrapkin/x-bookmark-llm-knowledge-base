@@ -165,3 +165,13 @@ status: draft
 - [[godofprompt-1993275220342481039]] — Source from batch batch_003_remaining _(added 2026-04-11)_
 - [[alex_prompter-1992887472557342779]] — Source from batch batch_003_remaining _(added 2026-04-11)_
 - [[alex_prompter-1997307729543823785]] — Source from batch batch_003_remaining _(added 2026-04-11)_
+- [[om_patel5-2041040306078912653]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[HowToAI_-2041026315051262048]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[ErickSky-2040999023230751048]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[heynavtoor-2040995726088671608]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[ihtesham2005-2040864758145167373]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[coreyganim-2040842449384276268]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[ErickSky-2040824372793930063]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[socialwithaayan-2040804154533368144]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[KanikaBK-2040764115501908175]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[ArchiveExplorer-2040727747966668939]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_

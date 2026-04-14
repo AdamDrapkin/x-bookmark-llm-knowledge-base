@@ -1344,17 +1344,24 @@ def update_index_file(index_path: str, slug: str, summary: str):
 def run_phase1(manifest: Dict, config: Dict):
     wiki_root = config["wiki_root"]
     temp_dir = manifest["temp_dir"]
-
-    print("  Step 1.1: Reading backlog-log.md...")
     batch_num = manifest["batch_number"]
 
-    print("  Step 1.2: Getting batch IDs...")
-    batch_ids = get_batch_ids_from_backlog(wiki_root, config["backlog_log"], batch_num)
+    # Live mode (batch_num=0): use bookmarks already in manifest, skip backlog-log reading
+    is_live_mode = batch_num == 0 and manifest.get("bookmarks")
 
-    print("  Step 1.3: Querying bookmarks.db...")
-    bookmarks = query_bookmarks_db(config["bookmarks_db"], batch_ids)
-    if not bookmarks:
-        bookmarks = query_bookmarks_by_offset(config["bookmarks_db"], int(batch_ids[0]) if batch_ids else 1, len(batch_ids))
+    if is_live_mode:
+        print("  Step 1.1: Live mode - using bookmarks from pipeline...")
+        bookmarks = manifest["bookmarks"]
+    else:
+        print("  Step 1.1: Reading backlog-log.md...")
+        print("  Step 1.2: Getting batch IDs...")
+        batch_ids = get_batch_ids_from_backlog(wiki_root, config["backlog_log"], batch_num)
+
+        print("  Step 1.3: Querying bookmarks.db...")
+        bookmarks = query_bookmarks_db(config["bookmarks_db"], batch_ids)
+        if not bookmarks:
+            bookmarks = query_bookmarks_by_offset(config["bookmarks_db"], int(batch_ids[0]) if batch_ids else 1, len(batch_ids))
+
     print(f"    Found {len(bookmarks)} bookmarks")
 
     print("  Step 1.4: Checking for duplicates...")

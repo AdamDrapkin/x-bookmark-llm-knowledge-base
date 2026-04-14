@@ -1,0 +1,17 @@
+{
+  "image_type": "text_document",
+  "document_type": "code",
+  "visible_text_full": "elebumm / RedditVideoMakerBot\nSearch\n+\nCode Issues 16 Pull requests 10 Actions Projects Security and quality Insights\n\nRedditVideoMakerBot Public\nWatch 88 Fork 2.1K Star 8.4K\n\nmaster Go to file + Code\n\ncyteon Merge pull request #2473 ... 569f250 \u00b7 3 weeks ago\n\n.github FIX: Stop CI from closing ... 2 years ago\nGUI fix: fixed the GUI 3 years ago\nTTS chore: release 3.4.0 (#24... 6 months ago\nassets fancy title screen 2 years ago\nfonts Added the story mode wit... 4 years ago\nreddit lint 3 weeks ago\nutils blocked words 3 weeks ago\nvideo_creation chore: release 3.4.0 (#24... 6 months ago\n.dockerignore chore: release 3.4.0 (#24... 6 months ago\n.gitattributes chore(*): Add devcontain... 4 years ago\n.gitignore fancy title screen 2 years ago\n.pylintrc Remove init-hook from py... 4 years ago\n.python-version chore: release 3.4.0 (#24... 6 months ago\nCODE_OF_CONDUCT.... Add code of conduct co... 4 years ago\n\nAbout\nCreate Reddit Videos with\njust one command\n\nReadme\nGPL-3.0 license\nCode of conduct\nContributing\nActivity\n8.4K stars\n88 watching\n2.1K forks\nReport repository\n\nReleases 16\n3.4.0 Latest\non Oct 29, 2025\n+ 15 releases\n\nPackages\nNo packages published\n\nContributors 94",
+  "summary": "This document is a screenshot of a GitHub repository page for the project \"RedditVideoMakerBot\" by elebumm. It displays the project's file structure, recent commit history, and an \"About\" section highlighting its purpose: creating Reddit videos with a single command. The page also provides repository statistics such as stars, forks, releases, and contributors, along with links to documentation and licensing information.",
+  "key_concepts": [
+    "GitHub repository",
+    "RedditVideoMakerBot",
+    "Codebase navigation",
+    "Version control (commits)",
+    "Project metadata (stars, forks, releases, contributors)",
+    "Open-source licensing (GPL-3.0)",
+    "Automated video creation"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

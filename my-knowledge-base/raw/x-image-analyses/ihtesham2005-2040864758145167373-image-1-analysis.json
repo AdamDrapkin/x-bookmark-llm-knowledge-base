@@ -1,0 +1,20 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "README\n\nAI-Powered Legal Analysis for Claude Code\n\nlegal-assistant\n$ /legal review <file>\n$ /legal risks <file>\n$ /legal plain <file>\n$ /legal negotiate <file>\n$ /legal compare <f1> <f2>\n$ /legal compliance <url>\n$ /legal nda <desc>\n$ /legal terms <url>\n$ /legal report-pdf\n\n14 skills \u00b7 5 parallel agents \u00b7 PDF reports\n\nAI-powered contract review and legal document generation. Review contracts, flag risks,\ngenerate NDAs, check compliance, negotiate terms, and produce client-ready PDF reports \u2014 all from Claude Code.\n\nEvery contract has hidden risks. This tool finds them in 60 seconds.\n\nWhy This Matters\n\nMetric\nAverage legal review cost\nBasic contract review\nFreelancers who don't read contracts\nCost of one bad clause\nSmall businesses without legal review\nTime to review with this tool\n\nValue\n$300-$500/hour\n$1,500-$3,000\n82%\n$10,000+\n67%\nUnder 60 seconds",
+  "summary": "This document introduces an AI-powered legal assistant built with Claude Code designed for rapid contract review and legal document generation. It highlights the tool's capabilities in identifying risks, checking compliance, negotiating terms, and producing various legal documents and reports. The document emphasizes the significant time and cost savings offered by the tool compared to traditional legal processes.",
+  "key_concepts": [
+    "AI-powered legal analysis",
+    "Contract review",
+    "Legal document generation",
+    "Risk flagging",
+    "Compliance checking",
+    "Negotiating terms",
+    "PDF reports",
+    "Claude Code",
+    "Efficiency (60-second review)",
+    "Cost savings"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

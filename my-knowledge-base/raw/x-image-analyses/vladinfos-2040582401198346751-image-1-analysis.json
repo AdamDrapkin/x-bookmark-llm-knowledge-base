@@ -1,0 +1,15 @@
+{
+  "image_type": "text_document",
+  "document_type": "other",
+  "visible_text_full": "Views             Comments             Likes (vs. dislikes)\n\n1,568,820         7,161                97.6%\n                                     95,278 likes\n\n3,983,511         3,934                97.0%\n                                     196,330 likes\n\n233,195           708                  97.9%\n                                     18,013 likes\n\n221,821           41                   92.1%\n                                     6,996 likes",
+  "summary": "This document is a table displaying performance metrics, likely for different content pieces such as videos or posts. It shows the number of views, comments, and the percentage of likes versus dislikes, along with the total number of likes for each entry. The data provides a snapshot of engagement and audience reception.",
+  "key_concepts": [
+    "Views",
+    "Comments",
+    "Likes (vs. dislikes)",
+    "Engagement metrics",
+    "Performance data"
+  ],
+  "confidence_score": 0.98,
+  "image_class": "TEXT_DOCUMENT"
+}

@@ -1,0 +1,23 @@
+{
+  "image_type": "text_document",
+  "document_type": "tutorial",
+  "visible_text_full": "ANDREJ KARPATHY\nHow LLMs Turn Raw Research\nInto a Living Knowledge Base\nCollect sources. Let the LLM organize them. Ask questions. Every answer makes the wiki smarter.\n\nCORE INSIGHT\nYou never write the wiki. The LLM writes everything. You just steer \u2014 and every answer compounds.\n\nMAIN PIPELINE\nSTEP 01\nCollect Sources\nDump articles, papers, repos, datasets, and\nimages into a raw/ folder. Use Obsidian Web\nClipper to save articles as markdown with\nimages downloaded locally.\n\n\u25cf Obsidian Web Clipper for articles\n\u25cf Save related images locally\n\u25cf arXiv, GitHub, datasets, repos\n\nINDEX\n\nSTEP 02\nLLM Organizes Wiki\nThe LLM reads everything in raw/ and builds a\nstructured wiki of .md files \u2014 summaries,\nconcept articles, and links between related\nideas across all your sources.\n\n\u25cf Auto-generated index file\n\u25cf Concept articles per topic\n\u25cf Links between related ideas\n\nORGANIZE\n\nSTEP 03\nAsk Questions\nQuery the wiki with complex questions. The\nLLM reads its own index files and finds\nanswers across your entire collection. No\ncomplex retrieval system needed.\n\n\u25cf ~100 articles / ~400K words\n\u25cf LLM maintains its own index\n\u25cf Multi-step research queries\n\nQUERY - RENDER - FILE BACK\n\nSTEP 04\nRender Outputs\nOutputs go beyond text \u2014 the LLM renders markdown\nfiles, Marp slide decks, Matplotlib charts, and images.\nAll viewable directly inside Obsidian.\n\n\u25cf Markdown articles\n\u25cf Marp slide decks\n\u25cf Matplotlib charts and plots\n\nRENDER\n\nSTEP 05\nFile Back to Wiki\nEvery output gets filed back into the wiki. Every\nquestion you ask makes the knowledge base smarter.\nThe loop compounds \u2014 your research builds on itself.\n\n\u25cf Outputs go back to wiki/\n\u25cf Knowledge compounds over time\n\u25cf The loop never stops\n\nFiled Back \u2014 Knowledge Compounds\nThis is the real insight. The wiki grows from both sides: what you save AND what you ask. Every interaction makes the system smarter. This is a second brain that builds itself.\n\nSUPPORT LAYER\n\nObsidian (Frontend)\nView raw data, the compiled wiki, and visualizations all in one\nplace. The human reads here. The LLM writes here. Marp\nplugin renders slide decks.\n\nLint + Heal\nThe LLM runs \"health checks\" \u2014 finds bad data, fills gaps via\nweb search, suggests new connections and articles. The wiki\ncleans and improves itself.\n\nSearch + CLI Tools\nVibe coded search engine over the wiki. Web UI for direct use.\nCLI interface so the LLM can search its own knowledge base\nas a tool for bigger queries.\n\nLOOKING AHEAD\nTrain a Custom Model on Wiki Data\nThe next step: train the LLM on the research itself so it knows the material in its weights \u2014\nnot just in the context window. Knowledge becomes permanent, not just referenced every\nsession.\n\nSTARTER PROMPT - PASTE INTO ANY AGENT\nTry This Workflow Yourself\n# Point at any folder of research\nRead everything in /raw and organize\ninto a wiki of .md files in /wiki.\nCreate an index.md with summaries\nand links between related concepts.\nWhen I ask questions, use the wiki\nto answer. File responses back so\nit grows with every query.\nRun a health check: find gaps,\nfix errors, suggest new links.\n\nArchitecture based on @karpathy's workflow 11M views 42K likes April 2026",
+  "summary": "This document outlines a five-step workflow for leveraging Large Language Models (LLMs) to transform raw research into a dynamic, self-improving \"living knowledge base.\" The process involves LLMs collecting, organizing, querying, rendering, and filing back information, with each interaction making the wiki smarter. The core idea is that the LLM handles the content creation, while the user guides the process, leading to a continuously growing and refined knowledge system.",
+  "key_concepts": [
+    "LLMs (Large Language Models)",
+    "Living Knowledge Base",
+    "Research Workflow",
+    "Obsidian (Frontend)",
+    "Data Collection (Sources)",
+    "Data Organization (Wiki structure)",
+    "Querying and Answering",
+    "Content Rendering (Markdown, Marp, Matplotlib)",
+    "Knowledge Compounding (Feedback loop)",
+    "Linting and Healing (Health checks)",
+    "Search and CLI Tools",
+    "Custom Model Training",
+    "Starter Prompt"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

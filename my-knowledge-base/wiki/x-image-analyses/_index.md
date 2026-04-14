@@ -36,3 +36,5 @@ All images from X bookmarks are analyzed using Gemini 2.5 Pro Vision for:
 - [[godofprompt-1993654485223367013-image-1-analysis]] — Image analysis _(added 2026-04-11)_
 - [[godofprompt-1993275220342481039-image-1-analysis]] — Image analysis _(added 2026-04-11)_
 - [[alex_prompter-1992887472557342779-image-1-analysis]] — Image analysis _(added 2026-04-11)_
+- [[ihtesham2005-2040864758145167373-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[socialwithaayan-2040804154533368144-image-1-analysis]] — Image analysis _(added 2026-04-14)_

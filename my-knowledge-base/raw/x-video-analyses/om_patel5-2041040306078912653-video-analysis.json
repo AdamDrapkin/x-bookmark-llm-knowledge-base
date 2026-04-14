@@ -1,0 +1,319 @@
+{
+  "video_analysis": {
+    "analysis_mode": "visual_only",
+    "frame_observations": [
+      {
+        "timestamp": "00:00",
+        "timestamp_seconds": 0,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Static wide shot of the top section of a dark-themed data analytics dashboard. The dashboard features multiple panels with key performance indicators (KPIs) and charts. The color palette is dark purple/blue with highlights in teal, green, and red.",
+        "on_screen_text": "Claude Code \u2014 Token Insights\nThis dashboard is a work-in-progress and is not meant for production.\nTotal Tokens\n926\nTotal Cost\n20.2K\nTotal Users\n8.9M\nTotal API Calls\n94.1%\n249\n$1678.86\n4.2%",
+        "transcript_segment": "None",
+        "audio_notes": "Subtle, ambient electronic music with a slow, pulsing rhythm begins.",
+        "emotional_tone": "Informational, Analytical, Professional",
+        "pacing": "STATIC",
+        "narrative_function": "BEGINNING",
+        "notable_elements": "The video opens by establishing the subject: a complex data dashboard for a product named 'Claude Code'."
+      },
+      {
+        "timestamp": "00:01",
+        "timestamp_seconds": 1,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The view begins a slow, smooth vertical scroll down the dashboard. The top KPI panels move partially out of frame, revealing more detailed sections below titled 'Key Metrics' and 'What Changed'.",
+        "on_screen_text": "WEEK-ON-WEEK TRENDS\nKey Metrics\nCycle Response\nCode Review\nContext Quality/Response\nAgent Action/Tool Response\nTool Drive: Read\nTool Drive: Log\nWhat Changed\nImprovement\n# Code Review - 75.2%\n# Context Quality/Response - 70.4%\n# Agent Action/Tool Response - 56.3%\nRegression\n# Tool Drive: Read - -12.3%\n# Tool Drive: Log [partially visible]",
+        "transcript_segment": "None",
+        "audio_notes": "Ambient electronic music continues with a steady, low-tempo beat.",
+        "emotional_tone": "Informational, Analytical, Detailed",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The scroll motion begins, indicating a tour of the dashboard's features."
+      },
+      {
+        "timestamp": "00:02",
+        "timestamp_seconds": 2,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The slow vertical scroll continues. The 'Key Metrics' and 'What Changed' sections are now fully in view, showing lists of data points with associated numbers and color-coded indicators (green for positive, red for negative).",
+        "on_screen_text": "WEEK-ON-WEEK TRENDS\nKey Metrics\nCycle Response\nCode Review\nContext Quality/Response\nAgent Action/Tool Response\nTool Drive: Read\nTool Drive: Log\nWhat Changed\nImprovement\n# Code Review - 75.2%\n# Context Quality/Response - 70.4%\n# Agent Action/Tool Response - 56.3%\nRegression\n# Tool Drive: Read - -12.3%\n# Tool Drive: Log - -20.5%\nNew Edits\n# agent streaming\n# pydantic models",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music remains consistent, creating a focused, data-centric mood.",
+        "emotional_tone": "Informational, Data-driven, Methodical",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:03",
+        "timestamp_seconds": 3,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues downward, bringing the 'Window Summary' and 'Work Performance Deltas' sections into view. The upper sections are now mostly off-screen.",
+        "on_screen_text": "New Edits\n# agent streaming\n# pydantic models\n# client streaming\n# testing support\n# function models\n# benchmark design\n# git api connection\n# fix linter issues\nWindow Summary\nWork Performance Deltas",
+        "transcript_segment": "None",
+        "audio_notes": "Steady, ambient electronic music continues.",
+        "emotional_tone": "Informational, Dense, Technical",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The amount of text and data on screen is high, emphasizing complexity."
+      },
+      {
+        "timestamp": "00:04",
+        "timestamp_seconds": 4,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, revealing a large bar chart titled 'Requests by Day' at the bottom of the frame. The 'Window Summary' and 'Work Performance Deltas' tables are centered.",
+        "on_screen_text": "Window Summary\nWork Performance Deltas\nOVERVIEW\nRequests by Day",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues, unchanged in tone or tempo.",
+        "emotional_tone": "Informational, Visual, Analytical",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The first major graphical chart (bar chart) comes into full view."
+      },
+      {
+        "timestamp": "00:05",
+        "timestamp_seconds": 5,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, showing four distinct chart panels. Top left: 'Requests by Day' (bar chart). Top right: 'Top Tools' (horizontal bar chart). Bottom left: 'Token Composition by Time' (stacked bar chart). Bottom right is partially visible.",
+        "on_screen_text": "OVERVIEW\nRequests by Day\nToken Composition by Time\nTop Tools",
+        "transcript_segment": "None",
+        "audio_notes": "The consistent, low-key electronic music track plays on.",
+        "emotional_tone": "Informational, Comprehensive, Graphical",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The dashboard's visual variety is showcased with multiple chart types."
+      },
+      {
+        "timestamp": "00:06",
+        "timestamp_seconds": 6,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues. The four panels are now centered. They are: 'Token Composition by Time', 'Top Tools', 'Successful Edits', and 'Cost by Day' (a line graph).",
+        "on_screen_text": "Token Composition by Time\nTop Tools\nSuccessful Edits\nCost by Day",
+        "transcript_segment": "None",
+        "audio_notes": "Ambient electronic music continues its steady, unobtrusive rhythm.",
+        "emotional_tone": "Informational, Analytical, Clean",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:07",
+        "timestamp_seconds": 7,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues downward. The previous set of charts moves up, revealing new panels below. Visible are 'Function Prepositions', 'Authorized Claude Pairs', and two other partially visible charts.",
+        "on_screen_text": "Successful Edits\nCost by Day\nCONTEXT MANAGEMENT\nFunction Prepositions\nAuthorized Claude Pairs",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music remains constant.",
+        "emotional_tone": "Informational, Technical, Structured",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "A new section header 'CONTEXT MANAGEMENT' appears, organizing the dashboard content."
+      },
+      {
+        "timestamp": "00:08",
+        "timestamp_seconds": 8,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, centering on four new chart panels. Top left: 'Function Prepositions' (line graph). Top right: 'Authorized Claude Pairs' (stacked horizontal bar chart). Bottom left and right are partially visible line and bar charts.",
+        "on_screen_text": "Function Prepositions\nAuthorized Claude Pairs\nToken Affordability\nTool Error Rates",
+        "transcript_segment": "None",
+        "audio_notes": "The steady, ambient electronic music continues.",
+        "emotional_tone": "Informational, Complex, Data-rich",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:09",
+        "timestamp_seconds": 9,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, revealing a new section titled 'SEQUENTIAL PATTERNS'. Two charts are visible: 'Tool Frequency' (bar chart) and 'Tool Response Time' (bar chart).",
+        "on_screen_text": "SEQUENTIAL PATTERNS\nTool Frequency\nTool Response Time",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues without change.",
+        "emotional_tone": "Informational, Analytical, Structured",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "Another section header 'SEQUENTIAL PATTERNS' provides more structure to the dashboard."
+      },
+      {
+        "timestamp": "00:10",
+        "timestamp_seconds": 10,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues. A large horizontal bar chart titled 'Ranked Trigrams' is now the dominant visual element, taking up the middle of the screen.",
+        "on_screen_text": "Ranked Trigrams\nPercent of Edits by Epoch",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues, maintaining a focused mood.",
+        "emotional_tone": "Informational, Detailed, Granular",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:11",
+        "timestamp_seconds": 11,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, showing two charts side-by-side: 'Per-Project Tool Speed' (horizontal bar chart) and 'Per-Project Tool Proliferation' (stacked bar chart).",
+        "on_screen_text": "Per-Project Tool Speed\nPer-Project Tool Proliferation\nCLAUDE CODE ECOSYSTEM",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music remains consistent.",
+        "emotional_tone": "Informational, Comparative, Analytical",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "A new section header 'CLAUDE CODE ECOSYSTEM' is introduced."
+      },
+      {
+        "timestamp": "00:12",
+        "timestamp_seconds": 12,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, focusing on a large horizontal bar chart titled 'Skill Usage'. The chart has many entries, indicating a high level of detail.",
+        "on_screen_text": "CLAUDE CODE ECOSYSTEM\nSkill Usage",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues its steady, pulsing beat.",
+        "emotional_tone": "Informational, Granular, Comprehensive",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The length of this bar chart emphasizes the breadth of 'skills' being tracked."
+      },
+      {
+        "timestamp": "00:13",
+        "timestamp_seconds": 13,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues down the long 'Skill Usage' bar chart. A new section at the bottom of the frame, 'Skills to Consider Deprecating', starts to come into view.",
+        "on_screen_text": "Skill Usage\n[various skill names, e.g., 'extract_from_text', 'search_web']\nSkills to Consider Deprecating",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues unchanged.",
+        "emotional_tone": "Informational, Detailed, Evaluative",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The dashboard includes prescriptive analytics ('Skills to Consider Deprecating')."
+      },
+      {
+        "timestamp": "00:14",
+        "timestamp_seconds": 14,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, now showing a large table for 'Skills to Consider Deprecating'. The table has columns for the skill name and various metrics.",
+        "on_screen_text": "Skills to Consider Deprecating\n[Table with headers: SKILL, USES, ERRORS, LATENCY]",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues its consistent, low-key presence.",
+        "emotional_tone": "Informational, Analytical, Actionable",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:15",
+        "timestamp_seconds": 15,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues down the 'Skills to Consider Deprecating' table. The bottom of the frame reveals two new charts: 'Agent Rollouts' and 'Code Performance'.",
+        "on_screen_text": "Skills to Consider Deprecating\n[Table with various skill names, e.g., 'search_internal', 'testing_support']\nAgent Rollouts\nCode Performance",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues.",
+        "emotional_tone": "Informational, Data-driven, Comprehensive",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:16",
+        "timestamp_seconds": 16,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, centering the 'Agent Rollouts' and 'Code Performance' charts. Below them, a new section titled 'FINDINGS' begins to appear.",
+        "on_screen_text": "Agent Rollouts\nCode Performance\nFINDINGS",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues steadily.",
+        "emotional_tone": "Informational, Summarizing, Insightful",
+        "pacing": "SLOW",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The dashboard transitions from raw data visualization to textual findings/summaries."
+      },
+      {
+        "timestamp": "00:17",
+        "timestamp_seconds": 17,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, revealing four text boxes under the 'FINDINGS' section. Each box has a title and a paragraph of text. The titles are 'Life-Bug Report', 'New Schemas', 'Context XML', and 'Redundant Routes'.",
+        "on_screen_text": "FINDINGS\nLife-Bug Report\nNew Schemas\nContext XML\nRedundant Routes",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues.",
+        "emotional_tone": "Informational, Narrative, Conclusive",
+        "pacing": "SLOW",
+        "narrative_function": "END",
+        "notable_elements": "This section provides human-readable interpretations of the data shown above."
+      },
+      {
+        "timestamp": "00:18",
+        "timestamp_seconds": 18,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll continues, showing more text boxes under 'FINDINGS'. Titles visible are 'Sanctuary Dreams' and 'Tooling Improvements'. Below this, a final section 'RECOMMENDATIONS' appears.",
+        "on_screen_text": "FINDINGS\nSanctuary Dreams\nTooling Improvements\nRECOMMENDATIONS",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music continues, nearing the end of the video.",
+        "emotional_tone": "Informational, Prescriptive, Actionable",
+        "pacing": "SLOW",
+        "narrative_function": "END",
+        "notable_elements": "The dashboard concludes with actionable recommendations."
+      },
+      {
+        "timestamp": "00:19",
+        "timestamp_seconds": 19,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The scroll comes to a stop at the bottom of the dashboard, showing the 'RECOMMENDATIONS' section, which contains several lines of text formatted like code or logs. The video ends on this static shot.",
+        "on_screen_text": "RECOMMENDATIONS\n[Multiple lines of text with colored icons, resembling log entries or action items]",
+        "transcript_segment": "None",
+        "audio_notes": "The ambient electronic music fades out as the video ends.",
+        "emotional_tone": "Informational, Final, Conclusive",
+        "pacing": "STATIC",
+        "narrative_function": "END",
+        "notable_elements": "The video concludes by showing the final, actionable output of the entire data analysis."
+      }
+    ],
+    "music_analysis": {
+      "background_music_present": true,
+      "music_style": "Ambient, minimalist electronic with a slow, pulsing rhythm",
+      "music_prominence": "BACKGROUND",
+      "music_shifts": "The music is consistent throughout and fades out in the final second.",
+      "speech_present": false,
+      "speech_style": "None",
+      "audio_quality_overall": "CLEAN",
+      "recommendation": "The audio is purely atmospheric and supportive. No audio editing or leveling is required. It effectively sets a professional, focused tone."
+    },
+    "overall_summary": {
+      "total_duration_observed": "00:20",
+      "primary_subject": "A product demonstration of a complex, dark-themed data analytics dashboard titled 'Claude Code \u2014 Token Insights'.",
+      "content_type": "PRODUCT_DEMO",
+      "dominant_emotion": "Informational",
+      "pacing_profile": "Consistently slow and methodical, driven by a single, smooth vertical scroll.",
+      "narrative_arc": "The video presents a comprehensive tour of a data dashboard. It begins by showing top-level KPIs, then slowly scrolls down to reveal increasingly granular data visualizations, including various charts and tables, before concluding with qualitative findings and actionable recommendations at the bottom.",
+      "key_moments": [
+        {
+          "timestamp": "00:00",
+          "significance": "Establishes the context and subject: the 'Claude Code \u2014 Token Insights' dashboard."
+        },
+        {
+          "timestamp": "00:05",
+          "significance": "Showcases the visual variety of the dashboard with multiple distinct chart types displayed simultaneously."
+        },
+        {
+          "timestamp": "00:17",
+          "significance": "Marks a narrative shift from quantitative data visualization to qualitative, human-readable 'FINDINGS'."
+        },
+        {
+          "timestamp": "00:19",
+          "significance": "The video concludes on the 'RECOMMENDATIONS' section, framing the entire dashboard as a tool for generating actionable insights."
+        }
+      ],
+      "on_screen_text_summary": [
+        "Claude Code \u2014 Token Insights",
+        "WEEK-ON-WEEK TRENDS",
+        "Key Metrics",
+        "What Changed",
+        "Window Summary",
+        "Work Performance Deltas",
+        "OVERVIEW",
+        "CONTEXT MANAGEMENT",
+        "SEQUENTIAL PATTERNS",
+        "CLAUDE CODE ECOSYSTEM",
+        "Skills to Consider Deprecating",
+        "FINDINGS",
+        "RECOMMENDATIONS"
+      ],
+      "analyst_notes": "The video is a highly effective and clean demonstration of a sophisticated UI. The slow, deliberate scroll allows a viewer to absorb the density and breadth of the information presented without feeling rushed. The lack of voiceover or narration places the full emphasis on the visual design and data content of the dashboard itself."
+    }
+  }
+}

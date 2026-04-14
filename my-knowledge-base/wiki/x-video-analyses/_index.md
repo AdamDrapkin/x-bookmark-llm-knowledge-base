@@ -40,4 +40,8 @@ Videos from X bookmarks are processed based on duration:
 
 ### Batch 1 (2026-04-09)
 - [[perplexity_ai-2042256932397019368-video-analysis]] — Perplexity Deep Research demo
-- [[vadimstrizheus-2042274292058988673-video-analysis]] — Finance workflow demo
+- [[vadimstrizheus-2042274292058988673-video-analysis]] — Finance workflow demo- [[om_patel5-2041040306078912653-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[HowToAI_-2041026315051262048-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[heynavtoor-2040995726088671608-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[ErickSky-2040824372793930063-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[ArchiveExplorer-2040727747966668939-video-analysis]] — Video analysis _(added 2026-04-14)_
