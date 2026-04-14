@@ -1,7 +1,7 @@
 ---
 title: "Image Analysis: alex_prompter - 1994005617246368095"
-date_created: 2026-04-11
-date_modified: 2026-04-11
+date_created: 2026-04-13
+date_modified: 2026-04-13
 summary: "Gemini Vision analysis of image from 1994005617246368095 by alex_prompter"
 tags: [image-analysis, prompt-engineering]
 type: source
@@ -14,21 +14,47 @@ status: draft
 
 ## Image Type: Visual Image
 
+
 ## Visual Description
 
-N/A
+The image has a clean, direct, and functional atmosphere. It conveys information clearly and without distraction, feeling modern and professional.
+
 
 ## Visible Text
 
-N/A
+**Headlines:**
+- Ready when you are.
+
+**Body:**
+- You are a JSON-only prompt generator.
+- Your job:
+- When I give you any task, any command, or any outcome I want, you will return a perfectly structured...
+- Rules:
+- 1. Always respond ONLY in JSON.
+- 2. Never explain or add commentary.
+- 3. Never guess missing info; add a placeholder instead.
+- 4. Every prompt you generate must include these fields:
+- +
+
 
 ## Context
 
-N/A
+This is a commercial styled image with polished mood.
+
 
 ## Notable Details
 
-N/A
+- Visual Style: clean
+- Genre: commercial
+- Influences: Modern UI/UX design, Minimalist graphic design, Flat design principles
+
+
+## Typography
+
+- **Fonts:** sans-serif (bold), sans-serif (regular)
+- **Placement:** The headline is centered at the top. The main body of text is contained within a central UI element, left-aligned.
+- **Integration:** dominant
+
 
 ## Composition
 

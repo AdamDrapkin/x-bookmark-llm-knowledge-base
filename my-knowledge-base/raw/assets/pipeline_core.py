@@ -1789,15 +1789,26 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
             img_basename = os.path.splitext(os.path.basename(ia["image_path"]))[0]
             wiki_path = full_path(wiki_root, f"wiki/x-image-analyses/{img_basename}-analysis.md")
 
-            # Check image_type to determine which format to use
-            image_type = analysis.get("image_type", analysis.get("image_class", "")).upper()
+            # Check image_type to determine which format - look in metadata first
+            metadata = analysis.get("metadata", {})
+            image_type = metadata.get("image_type", analysis.get("image_type", analysis.get("image_class", ""))).upper()
 
-            if image_type in ("TEXT_DOCUMENT", "text_document"):
-                # Text document format
-                document_type = analysis.get("document_type", "unknown")
-                visible_text = analysis.get("visible_text_full", analysis.get("visible_text", "N/A"))
-                summary = analysis.get("summary", "N/A")
-                key_concepts = analysis.get("key_concepts", [])
+            # Determine if this is a text document or visual image
+            is_text_document = image_type in ("TEXT_DOCUMENT", "TEXT", "SYSTEM_PROMPT", "CODE", "INSTRUCTIONS", "DOCUMENT")
+
+            if is_text_document:
+                # Text document format - get text_content
+                text_content = analysis.get("text_content", {})
+                visible_text = ""
+                if text_content.get("headlines"):
+                    visible_text += "## Headlines\n" + "\n".join(f"- {h}" for h in text_content.get("headlines", [])) + "\n\n"
+                if text_content.get("body_text"):
+                    visible_text += "## Body Text\n" + "\n".join(f"- {t}" for t in text_content.get("body_text", [])) + "\n\n"
+                if text_content.get("visible_urls"):
+                    visible_text += "## URLs\n" + "\n".join(f"- {u}" for u in text_content.get("visible_urls", [])) + "\n\n"
+
+                document_type = metadata.get("image_type", "text content")
+                summary = analysis.get("artistic_elements", {}).get("atmosphere", "Text content from image")
 
                 body = f"""# Image Analysis: {author} - {tweet_id}
 
@@ -1809,46 +1820,75 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
 
 ## Extracted Text
 
-{visible_text}
+{visible_text if visible_text else "N/A"}
 
 ## Summary
 
 {summary}
 
-## Key Concepts
-
 """
-                for concept in key_concepts:
-                    body += f"- {concept}\n"
-
             else:
-                # Visual image format
-                visual_desc = analysis.get("visual_description", "N/A")
-                visible_text = analysis.get("visible_text", "N/A")
-                context = analysis.get("context", "N/A")
-                notable = analysis.get("notable_details", "N/A")
-
+                # Visual image format - build from available sections
                 body = f"""# Image Analysis: {author} - {tweet_id}
 
 **Source:** [Tweet](https://x.com/{author}/status/{tweet_id})
 
 ## Image Type: Visual Image
 
+"""
+
+                # Visual description from artistic_elements
+                artistic = analysis.get("artistic_elements", {})
+                if artistic.get("atmosphere"):
+                    body += f"""
 ## Visual Description
 
-{visual_desc}
+{artistic.get('atmosphere', 'N/A')}
 
+"""
+
+                # Visible text from text_content
+                text_content = analysis.get("text_content", {})
+                if text_content.get("headlines") or text_content.get("body_text"):
+                    body += f"""
 ## Visible Text
 
-{visible_text}
+"""
+                    if text_content.get("headlines"):
+                        body += "**Headlines:**\n" + "\n".join(f"- {h}" for h in text_content.get("headlines", [])) + "\n\n"
+                    if text_content.get("body_text"):
+                        body += "**Body:**\n" + "\n".join(f"- {t[:100]}..." if len(t) > 100 else f"- {t}" for t in text_content.get("body_text", [])) + "\n\n"
 
+                # Context from artistic_elements genre
+                if artistic.get("genre"):
+                    body += f"""
 ## Context
 
-{context}
+This is a {artistic.get('genre')} styled image with {artistic.get('mood', 'N/A')} mood.
 
+"""
+
+                # Notable details
+                if artistic.get("visual_style"):
+                    body += f"""
 ## Notable Details
 
-{notable}
+- Visual Style: {artistic.get('visual_style')}
+- Genre: {artistic.get('genre', 'N/A')}
+- Influences: {', '.join(artistic.get('influences', []))}
+
+"""
+
+                # Typography section
+                typography = analysis.get("typography", {})
+                if typography.get("present"):
+                    body += f"""
+## Typography
+
+- **Fonts:** {', '.join([f"{t.get('type', 'unknown')} ({t.get('weight', 'N/A')})" for t in typography.get('fonts', [])])}
+- **Placement:** {typography.get('placement', 'N/A')}
+- **Integration:** {typography.get('integration', 'N/A')}
+
 """
 
                 # Optional sections if data exists
@@ -1871,7 +1911,7 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
                     dom_colors = cp.get('dominant_colors', [])
                     if dom_colors:
                         if isinstance(dom_colors[0], dict):
-                            dom_colors = [c.get('name', c.get('hex', str(c))) for c in dom_colors]
+                            dom_colors = [c.get('hex', c.get('color', str(c))) for c in dom_colors]
                     body += f"""
 ## Color Profile
 
@@ -1894,9 +1934,10 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
 """
 
             # Determine summary based on type
-            if image_type in ("TEXT_DOCUMENT", "text_document"):
+            if is_text_document:
                 page_summary = f"Text document analysis ({document_type}) from {tweet_id} by {author}"
             else:
+                # Get from metadata
                 page_summary = f"Gemini Vision analysis of image from {tweet_id} by {author}"
 
             write_frontmatter_page(
