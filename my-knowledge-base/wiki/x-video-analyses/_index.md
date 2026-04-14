@@ -45,3 +45,6 @@ Videos from X bookmarks are processed based on duration:
 - [[heynavtoor-2040995726088671608-video-analysis]] — Video analysis _(added 2026-04-14)_
 - [[ErickSky-2040824372793930063-video-analysis]] — Video analysis _(added 2026-04-14)_
 - [[ArchiveExplorer-2040727747966668939-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[om_patel5-2040690741198889104-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[andrewfarah-2040535589771149379-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[DataChaz-2041041292520833400-video-analysis]] — Video analysis _(added 2026-04-14)_

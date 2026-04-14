@@ -2613,62 +2613,15 @@ def _update_all_indexes(manifest: Dict, config: Dict):
     new_sources = []
     new_concepts = []
     new_entities = []
-
-    # Load existing entities and concepts for deduplication
-    entities_folder = full_path(wiki_root, "wiki/entities")
-    concepts_folder = full_path(wiki_root, "wiki/concepts")
-    existing_entities = set()
-    existing_concepts = set()
-    if os.path.exists(entities_folder):
-        for f in os.listdir(entities_folder):
-            if f.endswith(".md") and not f.startswith("_"):
-                existing_entities.add(f[:-3])
-    if os.path.exists(concepts_folder):
-        for f in os.listdir(concepts_folder):
-            if f.endswith(".md") and not f.startswith("_"):
-                existing_concepts.add(f[:-3])
-
     for entry in all_entries:
         if entry.get("phase3", {}).get("source_summary"):
             slug = os.path.splitext(os.path.basename(entry["phase3"]["source_summary"]))[0]
             new_sources.append(slug)
 
-            # Extract entities/concepts from source content
-            source_path = entry["phase3"]["source_summary"]
-            if os.path.exists(source_path):
-                source_content = Path(source_path).read_text()
-                # Find [[wikilinks]] - these reference entities/concepts
-                matches = re.findall(r'\[\[([^\]]+)\]\]', source_content)
-                for match in matches:
-                    # Skip if already exists as entity vs concept
-                    if match in existing_concepts and match not in existing_entities:
-                        if match not in new_concepts:
-                            new_concepts.append(match)
-                    elif match in existing_entities:
-                        if match not in new_entities:
-                            new_entities.append(match)
-                    # For new ones, try to create as entity first (more common)
-                    elif match not in new_entities and match not in new_concepts:
-                        # Default to entity, will be reclassified if needed
-                        if match not in new_entities:
-                            new_entities.append(match)
-
-        # Also check phase3 fields if set by wiki-ingest
-        for c in entry.get("phase3", {}).get("concepts_created", []):
-            if c not in new_concepts:
-                new_concepts.append(c)
-        for e in entry.get("phase3", {}).get("entities_created", []):
-            if e not in new_entities:
-                new_entities.append(e)
-
     # 1. wiki/index.md
     master_index = full_path(wiki_root, "wiki/index.md")
     for slug in new_sources:
         update_index_file(master_index, slug, f"Source from batch {batch_id}")
-    for slug in new_concepts:
-        update_index_file(master_index, slug, "Concept (stub)")
-    for slug in new_entities:
-        update_index_file(master_index, slug, "Entity (stub)")
 
     # 2-4. Folder indexes
     for slug in new_concepts:

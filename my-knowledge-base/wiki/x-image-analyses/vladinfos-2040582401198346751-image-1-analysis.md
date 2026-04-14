@@ -22,6 +22,6 @@ N/A
 
 ## Summary
 
-Text content from image
+Text document (text content)
 
 

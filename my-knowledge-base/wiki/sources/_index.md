@@ -188,3 +188,18 @@ Most people still ship average UI and blame t _(added 2026-04-14)_
 - [[DataChaz-2041041292520833400]] — 🚨 this guy built an insane AI job-hunting agent for Claude Code.
 
 He used it to rip through 700+ app _(added 2026-04-14)_
+- [[DataChaz-2040921945269801003]] — Creating a cinematic short drama shouldn't require a master's degree in software engineering.
+
+It sh _(added 2026-04-14)_
+- [[vladinfos-2040582401198346751]] — If you understand this principle, you’ll go viral 100%
+
+It’s called trust factor
+
+If you’ve ever won _(added 2026-04-14)_
+- [[kloss_xyz-2040546099711401993]] — let me explain what Karpathy just shared
+
+he’s spending way less time using AI to write code and mor _(added 2026-04-14)_
+- [[AmirMushich-2040518438662164525]] — Why do businesses pay for visuals?
+
+In the X AI space, we always speak “how much they pay”
+And never _(added 2026-04-14)_

@@ -175,3 +175,13 @@ status: draft
 - [[socialwithaayan-2040804154533368144]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
 - [[KanikaBK-2040764115501908175]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
 - [[ArchiveExplorer-2040727747966668939]] — Source from batch live_2026-04-14_001 _(added 2026-04-14)_
+- [[noisyb0y1-2040707651089178792]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[om_patel5-2040690741198889104]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[startupideaspod-2040599043362214351]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[andrewfarah-2040535589771149379]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[PrajwalTomar_-2024097242387235026]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[DataChaz-2041041292520833400]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[DataChaz-2040921945269801003]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[vladinfos-2040582401198346751]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[kloss_xyz-2040546099711401993]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
+- [[AmirMushich-2040518438662164525]] — Source from batch live_2026-04-14_002 _(added 2026-04-14)_
