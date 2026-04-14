@@ -1,0 +1,199 @@
+{
+  "video_analysis": {
+    "analysis_mode": "visual_plus_transcript",
+    "frame_observations": [
+      {
+        "timestamp": "00:00",
+        "timestamp_seconds": 0,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Extreme close-up of a man's face (Willem Dafoe) shot with a fisheye lens, causing significant distortion. He has a thick mustache and is staring intensely into the camera. The setting is a dimly lit hallway with yellow-orange brick walls. The lighting is harsh and warm.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "A powerful female voice begins singing a classic French song ('Non, je ne regrette rien' by \u00c9dith Piaf) with orchestral accompaniment. The audio has a vintage quality.",
+        "emotional_tone": "Unsettling, intense, surreal",
+        "pacing": "STATIC",
+        "narrative_function": "BEGINNING",
+        "notable_elements": "The fisheye lens creates a grotesque and highly stylized look, making the subject's face dominate the frame. The subject is actor Willem Dafoe."
+      },
+      {
+        "timestamp": "00:01",
+        "timestamp_seconds": 1,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, distorted close-up of the man's face continues. His expression is fixed and intense, with a slight frown. The background remains a blurry, warm-toned hallway with what appears to be a barred door far behind him.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "The female vocalist holds the note 'Non' with a powerful, emotional vibrato. The orchestra swells slightly.",
+        "emotional_tone": "Unsettling, intense, defiant",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The direct, unbroken eye contact with the camera is a key feature of the shot, creating a confrontational mood."
+      },
+      {
+        "timestamp": "00:02",
+        "timestamp_seconds": 2,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The shot remains unchanged. The man's face, distorted by the wide-angle lens, fills the screen. His eyes are wide and his gaze is unwavering. The lighting casts deep shadows on his face.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "The vocalist continues to sing, her voice full of emotion and conviction. The orchestral music provides a dramatic backdrop.",
+        "emotional_tone": "Intense, surreal, melancholic",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:03",
+        "timestamp_seconds": 3,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, distorted close-up persists. The man's features, particularly his nose and forehead, are exaggerated by the lens. He does not blink or move.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "rien de rien",
+        "audio_notes": "The vocalist sings the next line, 'rien de rien,' with the same powerful, emotional delivery. The music continues its somber, sweeping melody.",
+        "emotional_tone": "Intense, defiant, unsettling",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The combination of the strange visual and the classic, emotional song creates a strong sense of cognitive dissonance."
+      },
+      {
+        "timestamp": "00:04",
+        "timestamp_seconds": 4,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "No change in the visual. The man's intense, unblinking stare into the fisheye lens continues. The warm, almost sickly yellow lighting saturates the scene.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "rien de rien",
+        "audio_notes": "The song continues, with the orchestra providing a rich, full-bodied accompaniment to the singer's voice.",
+        "emotional_tone": "Surreal, intense, unwavering",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:05",
+        "timestamp_seconds": 5,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The shot remains completely static. The distorted close-up of the man's face, with its deep wrinkles and prominent mustache, is the sole focus.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "rien...",
+        "audio_notes": "The vocalist finishes the phrase 'rien de rien'. The music continues to build a dramatic and emotional atmosphere.",
+        "emotional_tone": "Unsettling, hypnotic, intense",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:06",
+        "timestamp_seconds": 6,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The visual remains unchanged. The man's unwavering, intense gaze continues to be the central point of the distorted frame.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "The vocalist begins the next line, starting again with a powerful 'Non'. The song's structure is repetitive and emphatic.",
+        "emotional_tone": "Intense, defiant, surreal",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:07",
+        "timestamp_seconds": 7,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, distorted close-up of the man's face persists. The background hallway is out of focus but suggests a confined, institutional space.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "The vocalist holds the note, her voice conveying a sense of profound conviction. The orchestra supports this emotional weight.",
+        "emotional_tone": "Unwavering, intense, unsettling",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:08",
+        "timestamp_seconds": 8,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "No change in the visual. The man's face, exaggerated by the fisheye lens, continues to stare directly at the viewer.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "je ne regrette rien",
+        "audio_notes": "The vocalist sings the iconic line 'je ne regrette rien' ('I regret nothing'). This is the emotional core of the song.",
+        "emotional_tone": "Defiant, powerful, intense",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The main lyrical hook of the song is delivered, providing a strong emotional anchor to the strange visual."
+      },
+      {
+        "timestamp": "00:09",
+        "timestamp_seconds": 9,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The shot remains completely static. The man's intense expression and the distorted perspective are maintained.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "je ne regrette rien",
+        "audio_notes": "The song continues, the vocalist's voice soaring over the orchestral arrangement. The tone is one of finality and strength.",
+        "emotional_tone": "Intense, surreal, resolute",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:10",
+        "timestamp_seconds": 10,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The visual is unchanged. The distorted close-up of the man's face continues to hold the frame.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "rien...",
+        "audio_notes": "The vocalist finishes the line, her voice resonating with emotion. The music swells, emphasizing the declaration.",
+        "emotional_tone": "Unsettling, powerful, final",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:11",
+        "timestamp_seconds": 11,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static shot of the man's face continues, holding the intense gaze until the video presumably cuts.",
+        "on_screen_text": "litteralyme0",
+        "transcript_segment": "None",
+        "audio_notes": "The orchestral music continues, carrying the emotional weight of the lyrics that were just sung. The vocalist is silent.",
+        "emotional_tone": "Intense, lingering, surreal",
+        "pacing": "STATIC",
+        "narrative_function": "END",
+        "notable_elements": "The video ends abruptly on this sustained, uncomfortable shot."
+      }
+    ],
+    "music_analysis": {
+      "background_music_present": true,
+      "music_style": "Classic French chanson; dramatic, emotional, orchestral ballad",
+      "music_prominence": "DOMINANT",
+      "music_shifts": "No, the music maintains a consistent tone and arrangement throughout.",
+      "speech_present": true,
+      "speech_style": "Singing (archival recording)",
+      "audio_quality_overall": "ADEQUATE",
+      "recommendation": "The audio is the primary driver of the video's mood. It's a famous, emotionally charged song that is intentionally juxtaposed with a bizarre visual. Any editing should preserve the integrity of the song's phrasing."
+    },
+    "overall_summary": {
+      "total_duration_observed": "00:12",
+      "primary_subject": "A man, actor Willem Dafoe, stares intensely and unblinkingly into a fisheye camera lens while a classic French song plays.",
+      "content_type": "OTHER",
+      "dominant_emotion": "Unsettling intensity",
+      "pacing_profile": "Completely static; the video is a single, unmoving shot with no cuts or camera movement.",
+      "narrative_arc": "There is no narrative arc. The video establishes a single, surreal, and intense mood and sustains it for the entire duration without change or resolution.",
+      "key_moments": [
+        {
+          "timestamp": "00:00",
+          "significance": "Establishes the unsettling visual of a distorted face staring into the camera, immediately setting a strange and intense tone."
+        },
+        {
+          "timestamp": "00:03",
+          "significance": "The first line of the song, 'Non, rien de rien,' is sung, introducing the theme of defiance that contrasts with the bizarre visual."
+        },
+        {
+          "timestamp": "00:08",
+          "significance": "The song's most famous line, 'Non, je ne regrette rien' (I regret nothing), is delivered, marking the emotional peak of the clip."
+        }
+      ],
+      "on_screen_text_summary": [
+        "litteralyme0"
+      ],
+      "analyst_notes": "This video is a typical example of a short-form 'edit' or meme, where a specific visual is paired with a well-known audio track to create a new, often surreal or humorous, meaning. The subject is actor Willem Dafoe, and the song is \u00c9dith Piaf's 'Non, je ne regrette rien'. The power of the clip comes from the juxtaposition of the uncomfortable, distorted visual and the powerful, defiant song."
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "photograph",
+    "primary_purpose": "editorial"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "approximately 2:1 (wide landscape)",
+    "layout": "multi-element",
+    "focal_points": [
+      "Elon Musk's face (left-center)",
+      "Steve Jobs' face (center)",
+      "Bill Gates' face (right-center)"
+    ],
+    "visual_hierarchy": "The eye is drawn to the central figure (Steve Jobs) first, then moves to the left (Elon Musk) and right (Bill Gates), giving equal visual weight to all three subjects.",
+    "balance": "asymmetric - three distinct subjects are arranged horizontally, creating a balanced visual weight across the frame despite individual variations."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Red",
+        "hex": "#E01B24",
+        "percentage": "50%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Gray",
+        "hex": "#333333",
+        "percentage": "20%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Medium Gray",
+        "hex": "#808080",
+        "percentage": "20%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Light Gray",
+        "hex": "#CCCCCC",
+        "percentage": "10%",
+        "role": "primary subject"
+      }
+    ],
+    "color_palette": "split-complementary",
+    "temperature": "warm",
+    "saturation": "highly saturated",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "multiple sources - likely two main lights per subject (key and fill)",
+    "direction": "45-degree side",
+    "directionality": "moderately directional",
+    "quality": "soft light",
+    "intensity": "bright",
+    "contrast_ratio": "medium contrast",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "gray",
+      "placement": "under chins, along jawlines, on sides of noses, under brow bones",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on foreheads, cheekbones, noses, and glasses"
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital photography",
+    "style": "realistic",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow - subjects are sharply in focus against a solid, undetailed background",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "editorial",
+    "influences": [
+      "Modern corporate portraiture"
+    ],
+    "mood": "confident",
+    "atmosphere": "direct, impactful, and focused on the individuals' presence",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": false,
+    "fonts": [],
+    "placement": "N/A",
+    "integration": "N/A"
+  },
+  "subject_analysis": {
+    "primary_subject": "Three prominent male figures: Elon Musk (left), Steve Jobs (center), and Bill Gates (right), presented as head-and-shoulder portraits.",
+    "positioning": "Each subject is centered within their respective vertical third of the image, arranged horizontally across the frame.",
+    "scale": "medium close-up",
+    "interaction": "isolated - subjects are presented individually but composited together, not interacting with each other or the environment.",
+    "facial_expression": {
+      "mouth": "closed smile",
+      "smile_intensity": "subtle",
+      "eyes": "direct gaze",
+      "eyebrows": "relaxed",
+      "overall_emotion": "content",
+      "authenticity": "posed"
+    },
+    "hair": {
+      "length": "short",
+      "cut": "layered",
+      "texture": "straight",
+      "texture_quality": "medium",
+      "natural_imperfections": "flyaways, slight disarray on top (Elon Musk); receding hairline, thinning (Steve Jobs); natural volume (Bill Gates)",
+      "styling": "lightly styled",
+      "styling_detail": "lightly styled, natural appearance, minimal product visibility",
+      "part": "no part",
+      "volume": "moderate volume",
+      "details": "Elon Musk: slightly spiky texture on top. Steve Jobs: prominent receding hairline. Bill Gates: hair covers top of ears."
+    },
+    "hands_and_gestures": {
+      "left_hand": "Not visible",
+      "right_hand": "Not visible",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "standing",
+      "angle": "facing camera",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow - subjects are clearly separated from the solid background",
+    "elements_detailed": [],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "None",
+    "background_treatment": "gradient"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Studio portrait of Elon Musk, black and white, head and shoulders, looking slightly to the right, serious expression, against a solid red background, soft lighting, medium close-up, editorial style.",
+      "Studio portrait of Steve Jobs, black and white, head and shoulders, subtle smile, direct gaze, wearing glasses, against a solid red background, soft lighting, medium close-up, editorial style.",
+      "Studio portrait of Bill Gates, black and white, head and shoulders, moderate smile, direct gaze, wearing glasses, against a solid red background, soft lighting, medium close-up, editorial style.",
+      "Composite image of three prominent tech CEOs (Elon Musk, Steve Jobs, Bill Gates), black and white portraits, arranged horizontally, against a vibrant solid red background, editorial style, professional lighting."
+    ],
+    "keywords": [
+      "Tech Leaders",
+      "CEOs",
+      "Innovation",
+      "Portraits",
+      "Red Background"
+    ],
+    "technical_settings": "Studio lighting setup, large softboxes for diffused light, 85mm lens, f/2.8-f/4 aperture for shallow depth of field, ISO 100, shutter speed 1/125s, post-processed to grayscale for subjects and vibrant red for background.",
+    "post_processing": "Color grading to desaturate subjects to grayscale, vibrant red color overlay for the background, seamless composite of multiple images, minor skin retouching, sharpening of facial features."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

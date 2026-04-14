@@ -34,6 +34,14 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 # ─────────────────────────────────────────────
+# FORK SAFETY FIX (macOS Network.framework crash)
+# Set before any subprocess calls to prevent SIGSEGV after fork()
+# See: https://github.com/urllib3/urllib3/issues/3020
+# ─────────────────────────────────────────────
+if sys.platform == "darwin":
+    os.environ.setdefault("OBJC_DISABLE_INITIALIZE_FORK_SAFETY", "YES")
+
+# ─────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────
 
@@ -899,10 +907,14 @@ def fetch_external_link_content(url: str) -> Dict[str, str]:
 def get_video_duration(video_path: str) -> float:
     """Get video duration in seconds via ffprobe."""
     try:
+        # Use start_new_session=True to create a new process group,
+        # avoiding the macOS Network.framework fork crash
         result = subprocess.run(
             ["ffprobe", "-v", "error", "-show_entries", "format=duration",
              "-of", "default=noprint_wrappers=1:nokey=1", video_path],
-            capture_output=True, text=True, timeout=30
+            capture_output=True, text=True, timeout=30,
+            start_new_session=True,
+            env={**os.environ, "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"}
         )
         return float(result.stdout.strip())
     except Exception:
@@ -912,10 +924,13 @@ def get_video_duration(video_path: str) -> float:
 def extract_audio(video_path: str, audio_path: str) -> bool:
     """Extract audio from video via ffmpeg."""
     try:
+        # Use start_new_session=True to create a new process group
         subprocess.run(
             ["ffmpeg", "-y", "-i", video_path, "-vn", "-acodec", "libmp3lame",
              "-q:a", "2", audio_path],
-            capture_output=True, timeout=120
+            capture_output=True, timeout=120,
+            start_new_session=True,
+            env={**os.environ, "OBJC_DISABLE_INITIALIZE_FORK_SAFETY": "YES"}
         )
         return os.path.exists(audio_path)
     except Exception as e:

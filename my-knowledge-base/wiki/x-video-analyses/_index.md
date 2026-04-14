@@ -50,3 +50,12 @@ Videos from X bookmarks are processed based on duration:
 - [[DataChaz-2041041292520833400-video-analysis]] — Video analysis _(added 2026-04-14)_
 - [[NickSpisak_-2037598275658760543-video-analysis]] — Video analysis _(added 2026-04-14)_
 - [[hooeem-2041436826406170880-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[stephenhaney-2036485780961669214-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[gregisenberg-2037262467684864075-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[jacobgrowth-2037192439199375856-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[JaynitMakwana-2036358672033710370-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[Motion_Viz-2036213665645597034-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[TukiFromKL-2036131611649994863-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[andresmatte-2036061707529834773-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[DataChaz-2036018412590375281-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[mattwelter-2036098546827747464-video-analysis]] — Video analysis _(added 2026-04-14)_

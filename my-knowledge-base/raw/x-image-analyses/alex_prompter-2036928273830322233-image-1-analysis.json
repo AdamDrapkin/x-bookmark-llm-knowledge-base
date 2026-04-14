@@ -1,0 +1,176 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "illustration",
+    "primary_purpose": "artistic"
+  },
+  "composition": {
+    "rule_applied": "symmetry",
+    "aspect_ratio": "approximately 2:1 (width:height)",
+    "layout": "symmetrical, multi-element, integrated",
+    "focal_points": [
+      "Left face profile (eyes and nose)",
+      "Right face profile (eyes and nose)",
+      "Central organic, flame-like element"
+    ],
+    "visual_hierarchy": "The eyes of both profiles immediately draw attention, followed by the distinct facial features, then the intricate details of the central organic element and the flowing hair/beards.",
+    "balance": "symmetric - two identical, mirrored profiles flank a central, vertically oriented organic element, creating perfect visual equilibrium."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "60%",
+        "role": "background"
+      },
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "percentage": "40%",
+        "role": "primary subject"
+      }
+    ],
+    "color_palette": "monochromatic",
+    "temperature": "neutral",
+    "saturation": "desaturated",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "stylized",
+    "source_count": "implied multiple sources or diffused",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "stylized, graphic, line-based",
+    "intensity": "moderate",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "mysterious",
+    "shadows": {
+      "type": "harsh defined edges",
+      "density": "deep black",
+      "placement": "under facial features (nose, chin, brow), within the central foliage/hair",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on forehead, nose bridge, cheekbones, and the main body of the central element"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital illustration",
+    "style": "engraving",
+    "texture": "line-based, cross-hatching",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "deep - all elements are rendered with equal sharpness, creating a flat but detailed appearance",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "fine art",
+    "influences": [
+      "Renaissance engravings",
+      "woodcut prints",
+      "classical mythology",
+      "Albrecht D\u00fcrer"
+    ],
+    "mood": "mysterious",
+    "atmosphere": "Evokes a sense of ancient wisdom, duality, and intricate craftsmanship, with a contemplative and symbolic tone.",
+    "visual_style": "structured, detailed, linear, organic forms within a symmetrical arrangement"
+  },
+  "typography": {
+    "present": false,
+    "fonts": [],
+    "placement": "N/A",
+    "integration": "N/A"
+  },
+  "subject_analysis": {
+    "primary_subject": "Two mirrored male profiles, facing outwards, with long flowing hair and beards that merge into a central organic, flame-like or foliage-like element.",
+    "positioning": "center",
+    "scale": "medium",
+    "interaction": "The two subjects are intrinsically connected and integrated by the central organic element, suggesting a shared identity or duality rather than separate entities.",
+    "facial_expression": {
+      "mouth": "pursed",
+      "smile_intensity": "no smile",
+      "eyes": "relaxed",
+      "eyebrows": "neutral",
+      "overall_emotion": "serious",
+      "authenticity": "stylized"
+    },
+    "hair": {
+      "length": "mid-back",
+      "cut": "undefined, flowing",
+      "texture": "wavy",
+      "texture_quality": "thick",
+      "natural_imperfections": "none",
+      "styling": "heavily styled",
+      "styling_detail": "heavily styled, with clear, defined waves and curls, no product visibility, very deliberate artistic rendering of hair",
+      "part": "no part",
+      "volume": "voluminous",
+      "details": "Long, flowing beards that merge with the central organic element. Hair on the head also flows into this central element, creating a unified, organic mass."
+    },
+    "hands_and_gestures": {
+      "left_hand": "not visible",
+      "right_hand": "not visible",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "implied bust or head-and-shoulders, upright",
+      "angle": "profile view for each face, mirrored",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "abstract",
+    "spatial_depth": "shallow - the subject appears as a single, flat layer against the plain white background, with depth implied only through the line work within the subject itself.",
+    "elements_detailed": [
+      {
+        "item": "Organic, flame-like or foliage-like central element",
+        "position": "center",
+        "distance": "midground",
+        "size": "dominant",
+        "condition": "N/A",
+        "specific_features": "Composed of swirling, elongated leaf-like or flame-like shapes, rendered with parallel lines and cross-hatching, connecting the two facial profiles."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "white",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Two mirrored male profiles, central organic/foliage element.",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Highly detailed black and white engraving of two mirrored male profiles, facing outwards, with long flowing beards and hair merging into a central organic, flame-like or foliage-like motif, inspired by Renaissance woodcuts and classical mythology, intricate cross-hatching, clean white background, high contrast, D\u00fcrer style, vector art.",
+      "Symmetrical line art illustration of Janus-like figures, black ink on white, detailed hair and beard texture, central abstract organic element, clean edges, conceptual art."
+    ],
+    "keywords": [
+      "engraving",
+      "duality",
+      "classical",
+      "line art",
+      "black and white"
+    ],
+    "technical_settings": "High resolution vector illustration, black ink, white canvas, no gradients, crisp lines, intricate hatching for shading, 1-bit color depth.",
+    "post_processing": "None, pure line art."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

@@ -257,3 +257,99 @@ The simplest way to connect and monitor AI agents to hundreds of apps.
 And we’re  _(added 2026-04-14)_
 - [[ideabrowser-2037176334510702624]] — Make this $19.99 and you’d make $1,000,000 https://t.co/Fk41ZqoRSr _(added 2026-04-14)_
 - [[rexorganic-2037168928204460119]] — https://t.co/eutR8bPjuj _(added 2026-04-14)_
+- [[heynavtoor-2037158617519186144]] — 🚨 One photo of your face. That's all someone needs to become you on a live video call. In real time. _(added 2026-04-14)_
+- [[stephenhaney-2036485780961669214]] — Stay ahead
+
+Today we're announcing Paper Snapshot
+
+Snapshot your live website and paste it into Pape _(added 2026-04-14)_
+- [[nerougc-2036138676246421518]] — https://t.co/uKihWD1zuL _(added 2026-04-14)_
+- [[ihtesham2005-2036458108516712548]] — 🚨Sales teams are going to love this.
+
+Someone just open sourced a full Salesforce alternative built  _(added 2026-04-14)_
+- [[DataChaz-2032396544545378421]] — Wow.
+
+@GarryTan (@ycombinator's CEO) just dropped the ultimate cheat code for software engineers. 🔥
+ _(added 2026-04-14)_
+- [[godofprompt-2036457238198362154]] — Creative teams don't have a talent problem.
+They have a file problem.
+
+The best work your team ever  _(added 2026-04-14)_
+- [[aiedge_-2037348914496766297]] — wtf... how is this free...
+
+A complete cheatsheet of every single Claude Code command ever deployed. _(added 2026-04-14)_
+- [[gregisenberg-2037262467684864075]] — I met the guy behind Paperclip. he won't show his face, but he just built one of the FASTEST growing _(added 2026-04-14)_
+- [[heygurisingh-2036405684355616874]] — 🚨 BREAKING: Someone just weaponized OpenClaw for sales.
+
+It's called Claw GTM and it's already repla _(added 2026-04-14)_
+- [[jacobgrowth-2037192439199375856]] — me on my way to quit my 9-5 job after reading this article about tiktok slideshows: https://t.co/T9X _(added 2026-04-14)_
+- [[JaynitMakwana-2036358672033710370]] — 🚨BREAKING: one piece of content can now become your next 20 posts
+
+Ribbi just dropped the most power _(added 2026-04-14)_
+- [[dr_cintas-2036272248567353441]] — Alibaba just launched Accio Work 🤯
+
+Zero setup. Zero code. A full squad of AI agents runs your opera _(added 2026-04-14)_
+- [[Motion_Viz-2036213665645597034]] — feels like someone cooked hard!
+
+&gt; designer and prompters would love this https://t.co/P2UFKgsXlL _(added 2026-04-14)_
+- [[elliott__potter-2036179677014900796]] — We’ve raised $27M for this moment: starting today, your agent gets an iPhone and can talk like a fri _(added 2026-04-14)_
+- [[TukiFromKL-2036131611649994863]] — 🚨 Do you understand what just happened..
+
+an AI that finds bugs in your code before you ship it.. 64 _(added 2026-04-14)_
+- [[pritopian-2037167928114896987]] — Billions of $$ raised to generate images, and none of them let you actually edit what you get.
+
+You  _(added 2026-04-14)_
+- [[andresmatte-2036061707529834773]] — Today we are launching the Kapso CLI:
+
+WhatsApp numbers for agents.
+
+1️⃣ npm install -g @kapso/cli
+2 _(added 2026-04-14)_
+- [[DataChaz-2036018412590375281]] — This guy (@louisvarge) literally got Claude sessions to chat with each other locally 🤯
+
+Meet `claude _(added 2026-04-14)_
+- [[DataChaz-2037166381196861824]] — Holy cow.
+
+Someone literally built a Claude Code skill that clones any website in one prompt 🤯
+
+Ever _(added 2026-04-14)_
+- [[alex_prompter-2037123157602296130]] — 🚨You paid $100,000 for a degree that taught you how to memorize.
+
+These 6 Claude prompts teach you h _(added 2026-04-14)_
+- [[alexxgrowth-2037035092992733624]] — DAY 1 UPDATE (we're cooking, wtf?)
+
+so yesterday i posted 21 videos across 1.5 days on a completely  _(added 2026-04-14)_
+- [[om_patel5-2037014741692961141]] — THIS GUY MADE A CLAUDE CODE SKILL THAT CLONES ANY WEBSITE IN ONE PROMPT
+
+everyone tries to clone web _(added 2026-04-14)_
+- [[alex_prompter-2036928273830322233]] — Most people think in straight lines, but Janusian thinking allows for having two contradictory opini _(added 2026-04-14)_
+- [[godofprompt-2036863105871823116]] — Steal my prompt to turn Claude into your virtual CEO. For free.
+
+------------------------
+STRATEGIC  _(added 2026-04-14)_
+- [[damienghader-2036851187765698577]] — This update was CRAZY.
+
+I can basically replace my entire stack.
+
+Research &gt; Build &gt; Scale in  _(added 2026-04-14)_
+- [[kloss_xyz-2036835501089739068]] — if you’re building with AI agents, you need to read this article.  
+
+most CLIs were designed for hum _(added 2026-04-14)_
+- [[thedankoe-2036824811712942576]] — https://t.co/tXCgwBIopZ _(added 2026-04-14)_
+- [[spwfeijen-2036779399014416846]] — https://t.co/2mr9VYHJJE _(added 2026-04-14)_
+- [[JamesEbringer-2036733267018133667]] — It’s pretty interesting to see people now are discovering the power of mass content generation and m _(added 2026-04-14)_
+- [[gregisenberg-2036542601617350709]] — how to use firecrawl to give your AI eyes and actually build startups that outperform 99% of apps:
+
+ _(added 2026-04-14)_
+- [[barckcode-2036427754443329740]] — Pero qué clase de barbaridad es esta 🤯
+
+Desde mi ignorancia máxima de edición de vídeo, junto con Re _(added 2026-04-14)_
+- [[kloss_xyz-2036356467629162772]] — https://t.co/p2ldwjt7kj _(added 2026-04-14)_
+- [[mattwelter-2036098546827747464]] — i wasted my entire life because nobody told me i could do this https://t.co/Rjw4JEPGHN _(added 2026-04-14)_
+- [[MitcheIl-2036098438908293349]] — https://t.co/1AX8svq17s _(added 2026-04-14)_
+- [[contraben-2036525455017218205]] — holy 👀 https://t.co/dFlKLcNWmJ _(added 2026-04-14)_
+- [[TukiFromKL-2036492094936666431]] — 🚨 Do you understand what just happened to the design industry..
+
+a company just raised $7.5 million  _(added 2026-04-14)_
+- [[sharbel-2036463312666247485]] — &gt; you download a therapy app because youre struggling
+&gt; you tell it your darkest fears, your t _(added 2026-04-14)_

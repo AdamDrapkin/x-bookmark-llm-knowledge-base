@@ -1,0 +1,16 @@
+{
+  "image_type": "text_document",
+  "document_type": "system_prompt",
+  "visible_text_full": "* Welcome, God\n\nHow can I help you today?\n\n+\n\nSonnet 4.6\n\nWrite\nLearn\nCode\nLife stuff\nFrom Drive",
+  "summary": "This image displays the welcome screen of an AI assistant, greeting the user as 'God' and asking 'How can I help you today?'. It presents a text input field and several predefined categories for interaction, including writing, learning, coding, life-related tasks, and accessing content from Google Drive, indicating the capabilities of the 'Sonnet 4.6' model.",
+  "key_concepts": [
+    "AI assistant interface",
+    "User greeting",
+    "Interactive prompt",
+    "Task categories (Write, Learn, Code, Life stuff)",
+    "Integration with Google Drive",
+    "AI model version (Sonnet 4.6)"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}
