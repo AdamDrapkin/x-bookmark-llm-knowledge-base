@@ -1456,7 +1456,7 @@ def run_phase1(manifest: Dict, config: Dict):
                         "external_links": [], "github_repos": [], "articles": [],
                     }},
                     "phase2": {"status": "pending", "image_analyses": [], "video_analyses": [], "video_transcripts": []},
-                    "phase3": {"status": "pending", "source_summary": None},
+                    "phase3": {"status": "pending", "source_summary": None, "entities_created": [], "concepts_created": [], "backlinks_added": []},
                     "phase4": {"status": "pending"},
                 }
                 manifest["repost_originals"].append(orig_entry)
@@ -1552,11 +1552,17 @@ def _extract_content(client: XClient, tweet: Dict, includes: Dict, entry: Dict,
         for url_entity in tweet.get("entities", {}).get("urls", []):
             expanded = url_entity.get("expanded_url", "")
             if "github.com" in expanded or "github.io" in expanded:
-                print(f"    Fetching GitHub repo: {expanded}")
-                repo_info = fetch_github_repo(expanded)
-                path = write_github_repo_file(repo_info, author, tweet_id, wiki_root)
-                entry["phase1"]["files_created"]["github_repos"].append(path)
-                print(f"    ✓ GitHub → {path}")
+                try:
+                    print(f"    Fetching GitHub repo: {expanded}")
+                    repo_info = fetch_github_repo(expanded)
+                    if repo_info and repo_info.get("repo"):
+                        path = write_github_repo_file(repo_info, author, tweet_id, wiki_root)
+                        entry["phase1"]["files_created"]["github_repos"].append(path)
+                        print(f"    ✓ GitHub → {path}")
+                    else:
+                        print(f"    ⚠ GitHub repo info unavailable")
+                except Exception as e:
+                    print(f"    ⚠ GitHub fetch failed: {e}")
 
     # External links (general, excluding telegram)
     if "has_external_link" in flags:
@@ -1815,7 +1821,13 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
                     visible_text += "## URLs\n" + "\n".join(f"- {u}" for u in text_content.get("visible_urls", [])) + "\n\n"
 
                 document_type = metadata.get("image_type", "text content")
-                summary = analysis.get("artistic_elements", {}).get("atmosphere", "Text content from image")
+                # For text documents, construct summary from headlines
+                if text_content.get("headlines"):
+                    summary = text_content["headlines"][0][:100]
+                elif text_content.get("body_text"):
+                    summary = text_content["body_text"][0][:100]
+                else:
+                    summary = f"Text document ({document_type})"
 
                 body = f"""# Image Analysis: {author} - {tweet_id}
 
@@ -1964,10 +1976,38 @@ This is a {artistic.get('genre')} styled image with {artistic.get('mood', 'N/A')
             wiki_path = full_path(wiki_root, f"wiki/x-video-analyses/{author}-{tweet_id}-video-analysis.md")
 
             # Determine what sections to include based on what's available
-            transcript = analysis.get("transcript", "N/A")
-            visual_desc = analysis.get("visual_description", "N/A")
-            visible_text = analysis.get("visible_text", "N/A")
-            summary = analysis.get("summary", "N/A")
+            # Handle both JSON formats: Format A (nested video_analysis) and Format B (top-level)
+            if "video_analysis" in analysis:
+                # Format A: New nested format
+                vi = analysis["video_analysis"]
+                transcript = vi.get("transcript", "N/A")
+
+                # Aggregate visual_text from frame_observations
+                frame_texts = []
+                for f in vi.get("frame_observations", []):
+                    ot = f.get("on_screen_text", "")
+                    if ot and ot != "None.":
+                        ts = f.get("timestamp", "")
+                        frame_texts.append(f"[{ts}] {ot}" if ts else ot)
+                visible_text = "\n".join(frame_texts) if frame_texts else "N/A"
+
+                # Summary from overall_summary
+                overall = vi.get("overall_summary", {})
+                summary = overall.get("primary_subject", overall.get("summary", "N/A"))
+                if summary == "N/A" and overall.get("narrative_arc"):
+                    summary = overall.get("narrative_arc", "N/A")
+
+                # Visual description from key moments
+                visual_desc = "N/A"
+                if vi.get("frame_observations"):
+                    first_frame = vi["frame_observations"][0]
+                    visual_desc = first_frame.get("visual", "N/A")
+            else:
+                # Format B: Old top-level format
+                transcript = analysis.get("transcript", "N/A")
+                visible_text = "\n".join(analysis.get("visible_text", [])) if analysis.get("visible_text") else "N/A"
+                summary = analysis.get("summary", "N/A")
+                visual_desc = analysis.get("visual_description", "N/A")
 
             body = f"""# Video Analysis: {author} - {tweet_id}
 
@@ -1975,28 +2015,28 @@ This is a {artistic.get('genre')} styled image with {artistic.get('mood', 'N/A')
 
 """
 
-            if transcript != "N/A":
+            if transcript and transcript != "N/A":
                 body += f"""## Transcript
 
 {transcript}
 
 """
 
-            if visual_desc != "N/A":
+            if visual_desc and visual_desc != "N/A":
                 body += f"""## Visual Description
 
 {visual_desc}
 
 """
 
-            if visible_text != "N/A":
-                body += f"""## Visible Text
+            if visible_text and visible_text != "N/A":
+                body += f"""## On-Screen Text
 
 {visible_text}
 
 """
 
-            if summary != "N/A":
+            if summary and summary != "N/A":
                 body += f"""## Summary
 
 {summary}
@@ -2574,14 +2614,52 @@ def _update_all_indexes(manifest: Dict, config: Dict):
     new_concepts = []
     new_entities = []
 
+    # Load existing entities and concepts for deduplication
+    entities_folder = full_path(wiki_root, "wiki/entities")
+    concepts_folder = full_path(wiki_root, "wiki/concepts")
+    existing_entities = set()
+    existing_concepts = set()
+    if os.path.exists(entities_folder):
+        for f in os.listdir(entities_folder):
+            if f.endswith(".md") and not f.startswith("_"):
+                existing_entities.add(f[:-3])
+    if os.path.exists(concepts_folder):
+        for f in os.listdir(concepts_folder):
+            if f.endswith(".md") and not f.startswith("_"):
+                existing_concepts.add(f[:-3])
+
     for entry in all_entries:
         if entry.get("phase3", {}).get("source_summary"):
             slug = os.path.splitext(os.path.basename(entry["phase3"]["source_summary"]))[0]
             new_sources.append(slug)
+
+            # Extract entities/concepts from source content
+            source_path = entry["phase3"]["source_summary"]
+            if os.path.exists(source_path):
+                source_content = Path(source_path).read_text()
+                # Find [[wikilinks]] - these reference entities/concepts
+                matches = re.findall(r'\[\[([^\]]+)\]\]', source_content)
+                for match in matches:
+                    # Skip if already exists as entity vs concept
+                    if match in existing_concepts and match not in existing_entities:
+                        if match not in new_concepts:
+                            new_concepts.append(match)
+                    elif match in existing_entities:
+                        if match not in new_entities:
+                            new_entities.append(match)
+                    # For new ones, try to create as entity first (more common)
+                    elif match not in new_entities and match not in new_concepts:
+                        # Default to entity, will be reclassified if needed
+                        if match not in new_entities:
+                            new_entities.append(match)
+
+        # Also check phase3 fields if set by wiki-ingest
         for c in entry.get("phase3", {}).get("concepts_created", []):
-            new_concepts.append(c)
+            if c not in new_concepts:
+                new_concepts.append(c)
         for e in entry.get("phase3", {}).get("entities_created", []):
-            new_entities.append(e)
+            if e not in new_entities:
+                new_entities.append(e)
 
     # 1. wiki/index.md
     master_index = full_path(wiki_root, "wiki/index.md")

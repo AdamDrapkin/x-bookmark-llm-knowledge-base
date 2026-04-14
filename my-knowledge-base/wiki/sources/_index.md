@@ -170,3 +170,21 @@ GREG ISENBERG just dropped _(added 2026-04-14)_
 every. fucking. day.
 
 was about to pay $ _(added 2026-04-14)_
+- [[noisyb0y1-2040707651089178792]] — https://t.co/z9C2n9lfgB _(added 2026-04-14)_
+- [[om_patel5-2040690741198889104]] — THIS IS HOW A SENIOR ENGINEER ACTUALLY SCALES THEMSELVES WITH CLAUDE CODE
+
+the biggest change with A _(added 2026-04-14)_
+- [[startupideaspod-2040599043362214351]] — This is the best time in history to build a startup.
+
+Here's why:
+- Build cost is basically zero. 
+- _(added 2026-04-14)_
+- [[andrewfarah-2040535589771149379]] — sharing my first open source project
+
+a CLI for downloading and syncing your X bookmarks locally so  _(added 2026-04-14)_
+- [[PrajwalTomar_-2024097242387235026]] — I’ve shipped 45+ SaaS with @Lovable in the past year.
+
+Most people still ship average UI and blame t _(added 2026-04-14)_
+- [[DataChaz-2041041292520833400]] — 🚨 this guy built an insane AI job-hunting agent for Claude Code.
+
+He used it to rip through 700+ app _(added 2026-04-14)_

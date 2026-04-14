@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "mixed media",
+    "primary_purpose": "marketing"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "1:1 square",
+    "layout": "multi-element/layered",
+    "focal_points": [
+      "Primary: The smiling woman's face (upper-middle, slightly right)",
+      "Secondary: The McDonald's paper bag and drink (center-left)",
+      "Tertiary: The large white text 'FUEL YOUR JOURNEY.' (center-right)"
+    ],
+    "visual_hierarchy": "The eye is drawn first to the woman's smiling face, then to the McDonald's products she holds, followed by the prominent white text, and finally to the skateboard and the graphic background elements.",
+    "balance": "asymmetric - The visual weight of the subject and text on the right side is dynamically balanced by the bold, geometric graphic pattern in the lower-left quadrant."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Sky Blue",
+        "hex": "#2196F3",
+        "percentage": "40%",
+        "role": "background"
+      },
+      {
+        "color": "McDonald's Yellow",
+        "hex": "#FFC72C",
+        "percentage": "25%",
+        "role": "accent/primary subject"
+      },
+      {
+        "color": "McDonald's Red",
+        "hex": "#DB0007",
+        "percentage": "15%",
+        "role": "accent/typography"
+      },
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "10%",
+        "role": "typography/accent"
+      },
+      {
+        "color": "Tan/Beige",
+        "hex": "#A0785A",
+        "percentage": "5%",
+        "role": "primary subject/background"
+      }
+    ],
+    "color_palette": "triadic",
+    "temperature": "warm - overall feeling, due to golden light on subject and prominent yellow/red, despite the cool blue sky.",
+    "saturation": "highly saturated",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "natural window",
+    "source_count": "single source - sun",
+    "direction": "45-degree side - from the upper right",
+    "directionality": "highly directional",
+    "quality": "hard light",
+    "intensity": "bright",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "energetic/cheerful",
+    "shadows": {
+      "type": "harsh defined edges",
+      "density": "gray",
+      "placement": "under subject's feet, cast by skateboard onto ramp, and subtle shadows on the subject's left side",
+      "length": "medium"
+    },
+    "highlights": {
+      "treatment": "preserved/specular",
+      "placement": "on face (forehead, nose, cheeks), hair, and the McDonald's cup"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "warm (golden)"
+  },
+  "technical_specs": {
+    "medium": "digital photography/graphic design",
+    "style": "commercial/vibrant",
+    "texture": "smooth (sky, graphics), sharp (subject's hair, denim), slightly rough (concrete ramp)",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "medium - subject is tack sharp, immediate background (ramp) is sharp, distant background (sky) is sharp, providing moderate subject isolation.",
+    "perspective": "low angle"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern advertising photography",
+      "Pop Art (due to bold colors and graphic patterns)"
+    ],
+    "mood": "energetic/cheerful/confident",
+    "atmosphere": "Bright, optimistic, dynamic, youthful and adventurous.",
+    "visual_style": "clean/structured/vibrant/geometric"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "black",
+        "characteristics": "modern/bold/impactful"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern/clean"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern/clean"
+      }
+    ],
+    "placement": "overlay - main headline in mid-right, tagline below it, logo top-right, button bottom-right, text on bag center-left.",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "A young Black woman with voluminous curly hair, wearing a denim jacket and dark jeans, holding a McDonald's paper bag and a drink, standing on a skateboard on a concrete ramp.",
+    "positioning": "upper-middle, slightly right of center, with her body extending diagonally across the frame from upper left to lower right.",
+    "scale": "medium",
+    "interaction": "interacting with environment (skateboard ramp) and products (McDonald's bag and drink)",
+    "facial_expression": {
+      "mouth": "open smile",
+      "smile_intensity": "broad",
+      "eyes": "direct gaze/wide/happy",
+      "eyebrows": "relaxed",
+      "overall_emotion": "happy/cheerful/confident/approachable",
+      "authenticity": "genuine/posed"
+    },
+    "hair": {
+      "length": "shoulder-length (when stretched, appears chin-length due to curl pattern)",
+      "cut": "natural afro/curly style, likely layered to enhance volume",
+      "texture": "coily/curly",
+      "texture_quality": "thick",
+      "natural_imperfections": "visible flyaways around the edges and crown, natural frizz, slight unevenness in curl definition",
+      "styling": "natural/lightly styled (to enhance curls, possibly with a curl-defining product)",
+      "styling_detail": "lightly styled, minimal product visibility, natural movement",
+      "part": "no part",
+      "volume": "voluminous",
+      "details": "no bangs, face-framing curls"
+    },
+    "hands_and_gestures": {
+      "left_hand": "Holding a brown McDonald's paper bag by the top edge, fingers curled around the bag, thumb on top.",
+      "right_hand": "Holding a white McDonald's drink cup with a straw, fingers wrapped around the cup, thumb visible.",
+      "finger_positions": "curled/relaxed/gripping",
+      "finger_interlacing": "N/A",
+      "hand_tension": "relaxed/natural",
+      "interaction": "holding and presenting the McDonald's food and drink",
+      "naturalness": "organic casual/caught mid-motion"
+    },
+    "body_positioning": {
+      "posture": "standing/leaning - leaning slightly forward and to her left, as if in motion or balancing on the skateboard.",
+      "angle": "body angled slightly to the left, head turned towards the camera",
+      "weight_distribution": "shifted onto her left leg, balancing on the skateboard",
+      "shoulders": "left shoulder slightly higher and forward, right shoulder slightly back and lower, indicating dynamic posture"
+    }
+  },
+  "background": {
+    "setting_type": "outdoor/urban environment - skateboard park/ramp",
+    "spatial_depth": "medium - subject in midground, ramp in foreground/midground, sky in background.",
+    "elements_detailed": [
+      {
+        "item": "Skateboard ramp",
+        "position": "lower right to mid-right",
+        "distance": "foreground/midground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "smooth, light beige concrete surface"
+      },
+      {
+        "item": "Skateboard",
+        "position": "lower right, on the ramp",
+        "distance": "foreground/midground",
+        "size": "medium",
+        "condition": "new",
+        "specific_features": "black deck, light-colored wheels, red accents on trucks"
+      },
+      {
+        "item": "Graphic pattern (arches and circles)",
+        "position": "lower left quadrant",
+        "distance": "background",
+        "size": "dominant",
+        "condition": "N/A",
+        "specific_features": "bold red, yellow, and blue geometric shapes"
+      },
+      {
+        "item": "Stylized clouds",
+        "position": "top left and mid-right",
+        "distance": "background",
+        "size": "small",
+        "condition": "N/A",
+        "specific_features": "simple, cartoon-like white outlines"
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "concrete",
+      "color": "light beige/tan",
+      "pattern": "solid"
+    },
+    "objects_catalog": "Young woman (mid-right), McDonald's paper bag (center-left), McDonald's drink cup (center), Skateboard (lower right), Skateboard ramp (lower right), McDonald's 'M' logo (top right), Graphic arches and circles (lower left), Stylized clouds (top left, mid-right).",
+    "background_treatment": "mixed - clear blue sky with gradient, sharp concrete ramp, and sharp, stylized graphic elements."
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A vibrant, low-angle outdoor commercial photograph of a joyful young Black woman with voluminous curly hair, wearing a denim jacket and dark jeans. She is dynamically balancing on a skateboard on a smooth concrete ramp, holding a McDonald's paper bag and a drink. The background is a clear, bright blue sky with stylized white cartoon clouds. The lower-left quadrant features a bold, geometric graphic pattern in red, yellow, and blue. The lighting is bright, hard sunlight from the upper right, creating distinct shadows. Emphasize a cheerful, energetic mood and a modern advertising aesthetic.",
+      "A high-contrast, highly saturated image for a fast-food campaign, featuring a diverse model in an urban skate park setting. Incorporate prominent brand elements (McDonald's logo, products) and a graphic overlay. Use a wide-angle lens from a low perspective to capture the dynamic action and expansive sky."
+    ],
+    "keywords": [
+      "McDonald's",
+      "Skateboard",
+      "Youth",
+      "Urban",
+      "Advertising",
+      "Joyful",
+      "Curly Hair",
+      "Fast Food",
+      "Vibrant",
+      "Dynamic"
+    ],
+    "technical_settings": "Camera: DSLR/Mirrorless, Lens: 24-50mm equivalent (wide-angle to standard), Aperture: f/4-f/5.6 (for medium depth of field), Shutter Speed: 1/1000s or faster (to freeze motion), ISO: 100-200, White Balance: Daylight, Lighting: Natural hard sunlight.",
+    "post_processing": "Vibrant color grading, increased saturation, selective sharpening on the subject, subtle vignette, seamless integration of graphic overlays and text, minor contrast adjustments."
+  },
+  "image_class": "VISUAL_IMAGE"
+}
