@@ -1,0 +1,18 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "README MIT license\n\nClaude Subconscious\n\nA background agent that whispers to Claude Code. A Letta agent that watches your sessions, reads your files, builds up memory over time, and whispers guidance back.\n\nImportant\nClaude Subconscious is an experimental way to extend Claude Code (a closed source / black box agent) with the power of Letta's memory system, tool access, and context engineering.\n\nIf you're looking for a coding agent that's memory-first, model agnostic, and fully open source, we recommend using Letta Code.\n\nMeet Claude's subconscious - an experimental plugin for Claude Code that gives your Claude a split brain.\nClaude's subconscious watches everything Claude does, forming memories in the background while whispering hidden messages back to \"main Claude\".",
+  "summary": "This document introduces \"Claude Subconscious,\" an experimental plugin for Claude Code that acts as a background agent. It functions as a \"split brain\" for Claude, watching sessions, reading files, building memory, and providing guidance by whispering messages back to the main Claude agent. The plugin leverages Letta's memory system, tool access, and context engineering to extend Claude Code's capabilities.",
+  "key_concepts": [
+    "Claude Subconscious",
+    "Claude Code",
+    "Letta agent",
+    "Memory system",
+    "Tool access",
+    "Context engineering",
+    "Background agent",
+    "Split brain functionality"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

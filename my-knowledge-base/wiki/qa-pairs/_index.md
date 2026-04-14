@@ -36,4 +36,4 @@ status: review
 - Layer 1: 5 questions per source (retrieval) = 75 questions
 - Layer 2: 4 synthesis questions per batch (discovery)
 - Concept index tracks cross-batch connections via wikilinks
-- batch_001: First batch covering prompt engineering, AI agents, research tools, and business applications
+- batch_001: First batch covering prompt engineering, AI agents, research tools, and business applications- [[test_2026-04-14]] — 2 sources, QA generated _(added 2026-04-14)_

@@ -1,0 +1,18 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "README Contributing MIT license\n\ngstack\n\n\"I don't think I've typed like a line of code probably since December, basically, which is an extremely large\nchange.\" \u2014 Andrej Karpathy, No Priors podcast, March 2026\n\nWhen I heard Karpathy say this, I wanted to find out how. How does one person ship like a team of twenty? Peter\nSteinberger built OpenClaw \u2014 247K GitHub stars \u2014 essentially solo with AI agents. The revolution is here. A single\nbuilder with the right tooling can move faster than a traditional team.\n\nI'm Garry Tan, President & CEO of Y Combinator. I've worked with thousands of startups \u2014 Coinbase, Instacart,\nRippling \u2014 when they were one or two people in a garage. Before YC, I was one of the first eng/PM/designers at\nPalantir, cofounded Posterous (sold to Twitter), and built Bookface, YC's internal social network.\n\ngstack is my answer. I've been building products for twenty years, and right now I'm shipping more code than I\never have. In the last 60 days: 600,000+ lines of production code (35% tests), 10,000-20,000 lines per day,\npart-time, while running YC full-time. Here's my last /retro across 3 projects: 140,751 lines added, 362\ncommits, ~115k net LOC in one week.\n\n2026 \u2014 1,237 contributions and counting:\n\n1,237 contributions in the last year\nContribution settings\nMar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar\nMon\nWed\nFri\nLearn how we count contributions\nLess More\n\n2013 \u2014 when I built Bookface at YC (772 contributions):\n\n772 contributions in 2013\nContribution settings\nJan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec\nMon\nWed\nFri",
+  "summary": "This document, titled \"gstack,\" is a personal reflection by Garry Tan, President & CEO of Y Combinator, on achieving high individual productivity in software development. He details his recent code output, including 600,000+ lines of production code in 60 days, attributing this to his \"gstack\" approach while also managing YC full-time. The article includes GitHub contribution graphs illustrating his coding activity in 2026 and 2013.",
+  "key_concepts": [
+    "Individual productivity",
+    "AI agents",
+    "High code output",
+    "Y Combinator",
+    "Garry Tan",
+    "gstack",
+    "GitHub contributions",
+    "OpenClaw"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

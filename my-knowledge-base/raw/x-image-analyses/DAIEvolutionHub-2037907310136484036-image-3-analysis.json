@@ -1,0 +1,22 @@
+{
+  "image_type": "text_document",
+  "document_type": "other",
+  "visible_text_full": "claude-mem\n\n\u4e2d\u6587 \u2022 \u7e41\u9ad4\u4e2d\u6587 \u2022 \u65e5\u672c\u8a9e \u2022 Portugu\u00eas \u2022 Portugu\u00eas \u2022 \ud55c\uad6d\uc5b4 \u2022 Espa\u00f1ol \u2022 Deutsch \u2022 Fran\u00e7ais \u2022\n\u05e2\u05d1\u05e8\u05d9\u05ea \u2022 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u2022 \u0420\u0443\u0441\u0441\u043a\u0438\u0439 \u2022 Polski \u2022 \u010ce\u0161tina \u2022 Nederlands \u2022 T\u00fcrk\u00e7e \u2022 \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 \u2022 Ti\u1ebfng\nVi\u1ec7t \u2022 Tagalog \u2022 Indonesia \u2022 \u0e44\u0e17\u0e22 \u2022 \u0939\u093f\u0928\u094d\u0926\u0940 \u2022 \u09ac\u09be\u0982\u09b2\u09be \u2022 \u0627\u0631\u062f\u0648 \u2022 Rom\u00e2n\u0103 \u2022 Svenska \u2022 Italiano \u2022\n\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac \u2022 Magyar \u2022 Suomi \u2022 Dansk \u2022 Norsk\n\nPersistent memory compression system built for Claude Code.\n\nLicense AGPL 3.0 version 6.5.0 node >=18.0.0 mentioned in\nawesome\n\n1 GITHUB TRENDING\n#1 Repository Of The Day\n\nnode docs/\nFiles Created\nThe documentation I created includes:\n- docs/CLIENT-IDENTITY-SETUP.md - Identity configuration steps\n- docs/CLIENT-CMS-OVERVIEW.md - Comprehensive CMS user guide for clients\n- docs/CMS-QUICK-REFERENCE.md - Quick reference card for common tasks\n- docs/WELCOME-EMAIL-TEMPLATE.md - Email templates for onboarding\n\nWould you like me to open any specific file for you to review, or would you\nprefer a summary of what's in each document?\n\nModel: Sonnet 4.5 (Ctx): 15.4S (Ct): 12.3S Block: 43s (main)\n+ or escape (shift-tab to cycle)\n\n~/scripts/con-dermatology main*\n+ Response received (8 chars) [promptNumber=1]\n+ Response received (8 chars) [promptNumber=1] [INFO] [SDK] [session=15205]\n+ claude-mem-worker [2023-11-08 01:54:02.272] [INFO] [SDK] [session=15205]\n+ claude-mem-worker [2023-11-08 01:54:02.279] [INFO] [SDK] [session=15205]\n+ Response received (8 chars) [promptNumber=0]\n+ Response received (8 chars) [promptNumber=0] [INFO] [CHRON_SYNC] Syncing au\n+ claude-mem-worker [2023-11-08 01:54:02.813] [INFO] [SDK] [session=15205]\n+ claude-mem-worker [2023-11-08 01:54:02.819] [INFO] [SDK] [session=15205]\n+ Summary saved (\n+ claude-mem-worker [2023-11-08 01:54:02.827] [INFO] [SDK] [session=15205]\n+ claude-mem-worker [2023-11-08 01:54:02.834] [INFO] [SDK] [session=15205]\n+ Response received (1132 chars) [promptNumber=0]\n+ Response received (1132 chars) [promptNumber=0] [INFO] [SDK] [session=13941]\n\nclaude-mem\nlocalhost:3777\nAll Projects\n\nSUMMARY: con-dermatology\nRequest: How to view the work that was done in a previous session\nInvestigated: No investigation was performed. This was a user question about accessing\nprevious work, not a development task.\n\nCompleted: No work was completed. No code was written, modified, or deployed. This was an\ninformational request.\n\nNext: Awaiting clarification from the user about what specific previous work they want to view, or\nwhat project/repository they're working with. User may need to specify what session or changes\nthey want to review.\n\n* 11/7/2023, 8:41:44 PM\n\ncon-dermatology\ncan you tell me how to view the work u did please\n* 11/7/2023, 8:41:44 PM\n\nFEATURE: con-dermatology\nWelcome Email Template Library Created\nSix email templates with formal and casual variants covering onboarding, follow-up,\ntroubleshooting, and maintenance communications\n* 11/7/2023, 8:30:26 PM",
+  "summary": "This document is a project showcase for \"claude-mem,\" a persistent memory compression system built for Claude Code, highlighted as a #1 GitHub Trending repository. It demonstrates the system's multi-language support and functionality through screenshots of a code editor and a web UI, showing capabilities like documentation generation and project management. The examples illustrate how the system assists with tasks such as creating documentation and managing email templates, along with user interaction for reviewing past work.",
+  "key_concepts": [
+    "claude-mem",
+    "Persistent memory compression",
+    "Claude Code",
+    "GitHub Trending",
+    "Multi-language support",
+    "Documentation generation",
+    "Code interaction",
+    "AI assistance",
+    "Project management",
+    "Email templates",
+    "AGPL 3.0 license",
+    "Node.js"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

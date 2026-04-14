@@ -22,4 +22,8 @@ _(none yet — processing required)_
 
 ## Recent Activity
 
-- 2026-04-11: Index created
+- 2026-04-11: Index created- [[DAIEvolutionHub-2037907310136484036-github-claude-mem]] — GitHub repository _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036-github-ui-ux-pro-max-skill]] — GitHub repository _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036-github-n8n-mcp]] — GitHub repository _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036-github-obsidian-skills]] — GitHub repository _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036-github-LightRAG]] — GitHub repository _(added 2026-04-14)_

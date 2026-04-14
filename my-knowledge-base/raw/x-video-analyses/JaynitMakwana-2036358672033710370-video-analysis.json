@@ -1,0 +1,294 @@
+{
+  "video_analysis": {
+    "analysis_mode": "visual_plus_transcript",
+    "frame_observations": [
+      {
+        "timestamp": "00:00",
+        "timestamp_seconds": 0,
+        "context_classification": "CONTEXT_BRIDGE",
+        "visual": "A wide shot of a dark, sterile interrogation room. A man is seen from behind, sitting at a table. The camera is positioned outside the room, looking through a doorway.",
+        "on_screen_text": "You expect me to believe you analyzed the data",
+        "transcript_segment": "You expect me to believe you analyzed the data",
+        "audio_notes": "A man's voice, deep and skeptical, begins speaking. The audio has a slight reverb, suggesting a sparse room.",
+        "emotional_tone": "ominous, tense",
+        "pacing": "SLOW",
+        "narrative_function": "BEGINNING",
+        "notable_elements": "The scene is set with classic crime drama tropes: a dark interrogation room, cool blue/grey color palette, and a sense of isolation."
+      },
+      {
+        "timestamp": "00:01",
+        "timestamp_seconds": 1,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "A sudden cut to a close-up of an interrogator in a suit and tie. He slams his hand down on the table, his face contorted with anger as he leans forward and yells.",
+        "on_screen_text": "edited ten videos",
+        "transcript_segment": "edited ten videos",
+        "audio_notes": "A loud thud as a hand hits a table, followed by the interrogator's voice escalating to a shout. The audio is clear and aggressive.",
+        "emotional_tone": "aggressive, accusatory",
+        "pacing": "RAPID",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The sudden cut and loud sound effect create a jolt, immediately escalating the scene's intensity."
+      },
+      {
+        "timestamp": "00:02",
+        "timestamp_seconds": 2,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The interrogator continues to yell, pointing his finger emphatically. The shot is a medium close-up, focusing on his enraged expression. A suspect is partially visible in the foreground.",
+        "on_screen_text": "edited ten videos",
+        "transcript_segment": "edited ten videos",
+        "audio_notes": "The interrogator's shouting continues, his tone is incredulous and angry.",
+        "emotional_tone": "furious, intense",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:03",
+        "timestamp_seconds": 3,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The interrogator's face is still the focus, his mouth open mid-shout. The lighting is harsh from above, creating dramatic shadows.",
+        "on_screen_text": "and posted them all last night between 8 PM",
+        "transcript_segment": "and posted them all last night between 8 PM",
+        "audio_notes": "The interrogator's speech is fast-paced and aggressive, listing the accusations.",
+        "emotional_tone": "incredulous, enraged",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:04",
+        "timestamp_seconds": 4,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The interrogator continues his tirade, his expression unwavering. The shot remains a tight medium close-up.",
+        "on_screen_text": "and midnight?!",
+        "transcript_segment": "and midnight?!",
+        "audio_notes": "The interrogator's voice peaks in volume and intensity as he finishes the question.",
+        "emotional_tone": "disbelieving, confrontational",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:05",
+        "timestamp_seconds": 5,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Cut to a close-up of the suspect, a young man in a grey hoodie. His eyes are wide with fear and he looks panicked, his mouth open as if to speak.",
+        "on_screen_text": "and midnight?!",
+        "transcript_segment": "and midnight?!",
+        "audio_notes": "The interrogator's final word, \"midnight?!\", echoes slightly. A moment of tense silence follows.",
+        "emotional_tone": "panicked, fearful",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The cut to the suspect's reaction heightens the drama."
+      },
+      {
+        "timestamp": "00:06",
+        "timestamp_seconds": 6,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The suspect leans forward, shouting his response with a desperate expression. The shot is an over-the-shoulder view from the interrogator's perspective.",
+        "on_screen_text": "Yes! I swear!",
+        "transcript_segment": "Yes! I swear!",
+        "audio_notes": "The suspect's voice is high-pitched and strained, conveying desperation.",
+        "emotional_tone": "desperate, frantic",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:07",
+        "timestamp_seconds": 7,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Cut back to the interrogator, who now has a slight, cynical smile. He picks up a clipboard from the table.",
+        "on_screen_text": "Yes! I swear!",
+        "transcript_segment": "None",
+        "audio_notes": "The sound of paper rustling as the clipboard is handled.",
+        "emotional_tone": "cynical, triumphant",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The interrogator's shift in expression suggests he has a trump card."
+      },
+      {
+        "timestamp": "00:08",
+        "timestamp_seconds": 8,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The interrogator throws a photograph onto the table. The photo is in motion, showing the suspect at a crowded party holding a beer.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "A sharp whooshing sound followed by the slap of the photo hitting the table.",
+        "emotional_tone": "confrontational, dramatic",
+        "pacing": "RAPID",
+        "narrative_function": "BRIDGE",
+        "notable_elements": "This is the introduction of the conflicting evidence, a key turning point in the interrogation."
+      },
+      {
+        "timestamp": "00:09",
+        "timestamp_seconds": 9,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The interrogator leans forward again, pointing aggressively at the photograph on the table.",
+        "on_screen_text": "Then explain this.",
+        "transcript_segment": "Then explain this.",
+        "audio_notes": "The interrogator's voice is a low, menacing growl.",
+        "emotional_tone": "menacing, challenging",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:10",
+        "timestamp_seconds": 10,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Extreme close-up on the suspect's face. His eyes are wide with a look of sudden, terrified realization. His mouth opens in shock.",
+        "on_screen_text": "It was the browser!",
+        "transcript_segment": "It was the browser!",
+        "audio_notes": "The suspect's voice is filled with panicked revelation. A faint, tense musical sting begins.",
+        "emotional_tone": "shocked realization",
+        "pacing": "MODERATE",
+        "narrative_function": "BRIDGE",
+        "notable_elements": "This is the pivotal moment where the true 'culprit' is revealed."
+      },
+      {
+        "timestamp": "00:11",
+        "timestamp_seconds": 11,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The suspect continues to look terrified, his eyes darting as he shouts his explanation.",
+        "on_screen_text": "Ribbi did everything!",
+        "transcript_segment": "Ribbi did everything!",
+        "audio_notes": "The suspect shouts the name \"Ribbi\". The tense musical score swells.",
+        "emotional_tone": "frantic, revelatory",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The product name, 'Ribbi', is introduced for the first time."
+      },
+      {
+        "timestamp": "00:12",
+        "timestamp_seconds": 12,
+        "context_classification": "TRANSITION",
+        "visual": "A rapid whip pan/cut to a dark room. A computer monitor is glowing in the center of the frame, illuminating a desk and chair.",
+        "on_screen_text": "Ribbi did everything!",
+        "transcript_segment": "Ribbi did everything!",
+        "audio_notes": "The suspect's voice continues over the shot. The tense music continues to build with a fast-paced, rhythmic element.",
+        "emotional_tone": "urgent, mysterious",
+        "pacing": "RAPID",
+        "narrative_function": "BRIDGE",
+        "notable_elements": "This shot visually connects the suspect's claim to a technological source."
+      },
+      {
+        "timestamp": "00:13",
+        "timestamp_seconds": 13,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Extreme close-up of a computer screen. A mouse cursor moves over and clicks a grey button with the word \"Publish\" on it.",
+        "on_screen_text": "Marcalim\nPublish",
+        "transcript_segment": "None",
+        "audio_notes": "A distinct mouse click sound effect. The tense music reaches a crescendo and then abruptly stops.",
+        "emotional_tone": "decisive, technological",
+        "pacing": "RAPID",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "This action visually confirms the suspect's story of automated posting."
+      },
+      {
+        "timestamp": "00:14",
+        "timestamp_seconds": 14,
+        "context_classification": "INFORMATIONAL",
+        "visual": "Cut to a clean white background. A logo appears: a stylized green frog head with large eyes. Next to it is the word \"Ribbi\" in a bold, black font. Below it is a tagline.",
+        "on_screen_text": "Ribbi\nGet a life.\nGive your Ribbi a job.",
+        "transcript_segment": "Get a life. Give your Ribbi a job.",
+        "audio_notes": "A cartoonish, slightly high-pitched, friendly female voice reads the tagline. A subtle, upbeat sound effect plays.",
+        "emotional_tone": "comedic, surprising",
+        "pacing": "STATIC",
+        "narrative_function": "END",
+        "notable_elements": "A complete tonal shift from a tense crime drama to a lighthearted product advertisement."
+      },
+      {
+        "timestamp": "00:15",
+        "timestamp_seconds": 15,
+        "context_classification": "INFORMATIONAL",
+        "visual": "The Ribbi logo and tagline remain static on the white screen.",
+        "on_screen_text": "Ribbi\nGet a life.\nGive your Ribbi a job.",
+        "transcript_segment": "None",
+        "audio_notes": "A final, playful sound effect, like a digital 'boing'.",
+        "emotional_tone": "playful, informative",
+        "pacing": "STATIC",
+        "narrative_function": "END",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:16",
+        "timestamp_seconds": 16,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Cut back to the interrogation room. A close-up on the interrogator, who is now leaning forward with a look of intense, serious interest, no longer angry.",
+        "on_screen_text": "Can it write police reports?",
+        "transcript_segment": "Can it write police reports?",
+        "audio_notes": "The interrogator's voice is now calm, curious, and serious. The ambient room tone has returned.",
+        "emotional_tone": "intrigued, humorous",
+        "pacing": "MODERATE",
+        "narrative_function": "END",
+        "notable_elements": "This is the punchline of the ad, using the interrogator's own needs to highlight the product's potential."
+      },
+      {
+        "timestamp": "00:17",
+        "timestamp_seconds": 17,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The shot holds on the interrogator's intrigued face as he finishes his question. The video ends.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "Silence.",
+        "emotional_tone": "curious, comedic",
+        "pacing": "STATIC",
+        "narrative_function": "END",
+        "notable_elements": "None"
+      }
+    ],
+    "music_analysis": {
+      "background_music_present": true,
+      "music_style": "Tense, suspenseful electronic sting that builds briefly.",
+      "music_prominence": "MODERATE",
+      "music_shifts": "A short, tense musical cue begins at 00:10 during the suspect's realization and ends abruptly at 00:13.",
+      "speech_present": true,
+      "speech_style": "Scripted dramatic dialogue, shifting to a cartoonish voiceover, then back to dialogue.",
+      "audio_quality_overall": "CLEAN",
+      "recommendation": "The audio is well-produced. The key elements are the shift from dramatic, reverberant dialogue to a clean, centered voiceover, and then back. This tonal shift is central to the ad's humor."
+    },
+    "overall_summary": {
+      "total_duration_observed": "00:17",
+      "primary_subject": "A comedic advertisement for a browser or software tool called 'Ribbi' that can automate complex digital tasks.",
+      "content_type": "PRODUCT_DEMO",
+      "dominant_emotion": "comedic tension",
+      "pacing_profile": "The video starts slow, rapidly accelerates into a high-tension confrontation, has a quick montage, and ends on a static, comedic punchline.",
+      "narrative_arc": "The video sets up a classic, high-stakes police interrogation scene where a suspect has an impossible alibi. The tension peaks as he's confronted with evidence, only for him to reveal his alibi is a software tool called 'Ribbi'. The narrative resolves with a comedic twist, as the interrogator becomes interested in the product for his own work.",
+      "key_moments": [
+        {
+          "timestamp": "00:01",
+          "significance": "Establishes the high-stakes, aggressive tone of the interrogation, creating the dramatic setup."
+        },
+        {
+          "timestamp": "00:10",
+          "significance": "The narrative pivot where the suspect reveals the true 'culprit' is technology, shifting the story's direction."
+        },
+        {
+          "timestamp": "00:14",
+          "significance": "The full product reveal, which completely changes the video's tone from a serious drama to a comedic advertisement."
+        },
+        {
+          "timestamp": "00:16",
+          "significance": "The punchline, which humorously reinforces the product's utility by having the antagonist become a potential customer."
+        }
+      ],
+      "on_screen_text_summary": [
+        "You expect me to believe you analyzed the data",
+        "edited ten videos",
+        "and posted them all last night between 8 PM",
+        "and midnight?!",
+        "Yes! I swear!",
+        "Then explain this.",
+        "It was the browser!",
+        "Ribbi did everything!",
+        "Marcalim",
+        "Publish",
+        "Ribbi",
+        "Get a life.",
+        "Give your Ribbi a job.",
+        "Can it write police reports?"
+      ],
+      "analyst_notes": "This is a highly effective short-form ad that uses a familiar genre trope (police interrogation) to create a memorable and humorous product reveal. The sharp tonal shift at 00:14 is the central creative device. The final line serves as a perfect punchline, demonstrating the product's broad applicability in an unexpected way."
+    }
+  }
+}

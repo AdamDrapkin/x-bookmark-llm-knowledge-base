@@ -1,0 +1,18 @@
+{
+  "image_type": "text_document",
+  "document_type": "tutorial",
+  "visible_text_full": "README\nMIT license\nSecurity\n\nGET SHIT DONE\n\nEnglish | \u7b80\u4f53\u4e2d\u6587\n\nA light-weight and powerful meta-prompting, context engineering and spec-driven development system for\nClaude Code, OpenCode, Gemini CLI, Codex, Copilot, and Antigravity.\n\nSolves context rot \u2014 the quality degradation that happens as Claude fills its context window.\n\nEnglish | \u7b80\u4f53\u4e2d\u6587\n\nNPM V1.27.0 DOWNLOADS 159K/MONTH TESTS PASSING DISCORD JOIN\n\nX @GSD_FOUNDATION $GSD DEXSCREENER STARS 37K LICENSE MIT\n\nnpx get-shit-done-cc@latest\n\nWorks on Mac, Windows, and Linux.\n\nTerminal\n\n~ $ npx get-shit-done-cc\n\n\u250c\u2500\u2510 \u250c\u2500\u2510 \u250c\u2500\u2510\n\u2502 \u2502 \u2502 \u2502 \u2502 \u2502\n\u251c\u2500\u2518 \u2514\u2500\u2510 \u251c\u2500\u2518\n\u2502   \u250c\u2500\u2518 \u2502\n\u2514\u2500\u2518 \u2514\u2500\u2518 \u2514\u2500\u2518\n\nGet Shit Done V1.0.1\nA meta-prompting, context engineering and spec-driven\ndevelopment system for Claude Code by T\u00c2CHES.\n\n\u2713 Installed commands/gsd\n\u2713 Installed get-shit-done\n\nDone! Run /gsd:help to get started.\n\n~ $ |",
+  "summary": "This document introduces \"Get Shit Done\" (GSD), a meta-prompting, context engineering, and spec-driven development system designed for AI models like Claude Code. It aims to prevent \"context rot\" and provides instructions on how to install and get started with the tool using `npx`. The system is compatible with Mac, Windows, and Linux.",
+  "key_concepts": [
+    "Meta-prompting",
+    "Context engineering",
+    "Spec-driven development",
+    "Claude Code",
+    "Context rot",
+    "npx installation",
+    "GSD (Get Shit Done)",
+    "AI development system"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

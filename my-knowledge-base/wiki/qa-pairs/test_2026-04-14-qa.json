@@ -1,0 +1,275 @@
+{
+  "frontmatter": {
+    "title": "QA: Batch test_2026-04-14",
+    "date_created": "2026-04-14",
+    "date_modified": "2026-04-14",
+    "summary": "10 source questions + 4 synthesis questions from test batch",
+    "tags": [
+      "qa-pairs",
+      "test-batch"
+    ],
+    "type": "qa-pairs",
+    "status": "review"
+  },
+  "batch_id": "test_2026-04-14",
+  "batch_timestamp": "2026-04-14T12:00:00Z",
+  "sources_in_batch": 2,
+  "cumulative_sources": 17,
+  "source_questions": [
+    {
+      "source_slug": "hooeem-2041436826406170880",
+      "source_content_preview": "This tweet outlines a straightforward business opportunity: building personalized knowledge bases for clients and selling them as a service. The creator positions this as a path to becoming a millionaire in 1-3 years, with the core strategy being a two-step process.",
+      "questions": [
+        {
+          "question_id": "q_test_batch_hooeem-2041436826406170880_01",
+          "question_type": "identity_problem",
+          "question": "What is the business opportunity described in this tweet and what specific problem does it solve?",
+          "answer": "The business opportunity is selling personalized knowledge bases as a service. It solves the problem that cash-rich, time-poor professionals (lawyers, doctors) struggle with information overload and inefficient knowledge retrieval systems. These professionals have money to spend but lack time to build or manage their own AI-powered information systems.",
+          "search_terms": [
+            "knowledge base business",
+            "LLM services",
+            "AI consulting",
+            "personalized knowledge bases"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_hooeem-2041436826406170880_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does building a knowledge base business actually involve?",
+          "answer": "It means learning to create AI-powered systems that organize and search through someone's information, then selling that skill as a service. Think of it as becoming a librarian who builds custom filing systems powered by AI. You take a client's scattered documents, emails, and data, and make it instantly searchable using large language models.",
+          "search_terms": [
+            "simple explanation",
+            "knowledge base service",
+            "what do you actually do"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_hooeem-2041436826406170880_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this type of business?",
+          "answer": "Also called: LLM consultant, AI knowledge architect, personalized AI builder, knowledge management as a service (KMaaS), AI systems integrator for professionals, custom chatbot creator for businesses, document intelligence service.",
+          "search_terms": [
+            "alternative names",
+            "synonyms",
+            "similar services"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_hooeem-2041436826406170880_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with this business model and when does it fail?",
+          "answer": "The most common mistake is learning the technical skills without understanding how to find and close clients. Many builders spend months mastering the technology but never figure out how to reach lawyers, doctors, or other high-value professionals. It fails when you can't bridge from 'I can build this' to 'someone will pay me to build it for them.'",
+          "search_terms": [
+            "common mistakes",
+            "why this fails",
+            "business model pitfalls"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_hooeem-2041436826406170880_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before starting this business and what's the first step?",
+          "answer": "You need to master LLM knowledge base development first. This includes learning vector databases, RAG systems, prompt engineering, and document chunking. The first step is completing at least one end-to-end project building a knowledge base from scratch, even if it's for a fictional client or yourself, to understand the full technical workflow before seeking paid work.",
+          "search_terms": [
+            "prerequisites",
+            "getting started",
+            "how to begin",
+            "first steps"
+          ]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2043992940855615716",
+      "source_content_preview": "This thread opens with a reference to Bobby Fischer's approach to chess\u2014mentally occupying his opponent's perspective before the game even began. The author argues this same principle, applied systematically through AI, can give entrepreneurs a decisive edge.",
+      "questions": [
+        {
+          "question_id": "q_test_batch_alex_prompter-2043992940855615716_01",
+          "question_type": "identity_problem",
+          "question": "What are these six AI prompts and what specific problem do they solve?",
+          "answer": "These are six role-prompt templates that turn AI into strategic intelligence tools. Each prompt casts the AI as a different type of specialist (client intelligence, competitive intelligence, partnership intelligence, audience intelligence, negotiation intelligence, and strategic intelligence architect). They solve the problem of making strategic thinking systematic and consistent rather than relying on intuition or ad hoc analysis.",
+          "search_terms": [
+            "strategic AI prompts",
+            "business intelligence tools",
+            "opponent thinking AI"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_alex_prompter-2043992940855615716_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what do these prompts actually do?",
+          "answer": "These prompts make AI think like your opponents before you enter any business situation. Instead of asking AI to generate content, you ask it to predict what clients will object to, what competitors are optimizing for, what partners fear, and what makes audiences scroll past. It's like having a spy who maps everyone's psychology before you walk into a meeting.",
+          "search_terms": [
+            "simple explanation",
+            "what these prompts do",
+            "AI role prompting"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_alex_prompter-2043992940855615716_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or frameworks might someone use for this approach?",
+          "answer": "Also called: adversarial prompting, role-play intelligence, perspective-taking prompts, chess thinking for business, pre-meeting intelligence prep, strategic AI coaching, behavioral prediction prompts, opponent mapping tools.",
+          "search_terms": [
+            "alternative names",
+            "similar concepts",
+            "adversarial prompts"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_alex_prompter-2043992940855615716_04",
+          "question_type": "failure_confusion",
+          "question": "What's the most common mistake when using these prompts and when do they fail?",
+          "answer": "The most common mistake is using these prompts sporadically rather than making them a habit. People try them once, find the outputs interesting, then forget to use them before important meetings. They also fail when users don't provide enough specific context\u2014generic questions get generic intelligence. The framework only works when it's integrated into actual decision-making processes.",
+          "search_terms": [
+            "common mistakes",
+            "why prompts fail",
+            "pitfalls"
+          ]
+        },
+        {
+          "question_id": "q_test_batch_alex_prompter-2043992940855615716_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using these prompts effectively and what's the first step?",
+          "answer": "You need a specific business situation to prepare for (a client call, negotiation, competitor to analyze, or audience to reach). You don't need prior experience with AI prompts. The first step is choosing one role prompt that matches your most upcoming business situation and running it with as much specific context as possible\u2014include the actual person you're dealing with, their situation, and what you know about them.",
+          "search_terms": [
+            "prerequisites",
+            "getting started",
+            "how to use these prompts",
+            "first step"
+          ]
+        }
+      ]
+    }
+  ],
+  "synthesis_questions": [
+    {
+      "question_id": "q_test_batch_synth_01",
+      "question_type": "intra_batch_pattern",
+      "question": "What patterns or shared principles emerge across sources in this batch?",
+      "answer": "Both sources share a 'master the skill first, then sell it' principle. [[hooeem-2041436826406170880]] explicitly states that mastering LLM knowledge base development is the prerequisite for the business, while [[alex_prompter-2043992940855615716]] implies systematic mastery of strategic role-prompting before applying it to real business situations. Both also target professionals seeking competitive advantages\u2014buyers want to outpace rivals, whether through better information retrieval or better strategic intelligence.",
+      "referenced_source_slugs": [
+        "hooeem-2041436826406170880",
+        "alex_prompter-2043992940855615716"
+      ],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_test_batch_synth_02",
+      "question_type": "intra_batch_tension",
+      "question": "Do any sources in this batch contradict each other or create tension?",
+      "answer": "There's a subtle tension between the two sources. [[hooeem-2041436826406170880]] positions LLM knowledge base development as the foundational skill that enables the business, while [[alex_prompter-2043992940855615716]] demonstrates that prompt design and role-framing (which might be considered secondary skills) can already solve complex strategic problems. The tension is: is technical knowledge base building truly the prerequisite, or can someone with excellent prompting skills succeed without deep technical knowledge?",
+      "referenced_source_slugs": [
+        "hooeem-2041436826406170880",
+        "alex_prompter-2043992940855615716"
+      ],
+      "cross_batch_refs": []
+    },
+    {
+      "question_id": "q_test_batch_synth_03",
+      "question_type": "cross_batch_connection",
+      "question": "What concepts from prior batches does this batch extend, refine, or challenge?",
+      "answer": "This batch extends [[AI role-prompting]] (from previous concept work) by showing six concrete, specialized applications for business intelligence rather than general content generation. It also challenges the [[workflow wrapper strategy]] concept by suggesting that 'prompt-based intelligence services' might be as valuable as 'workflow-based automation services'\u2014the value is in the strategic thinking, not just the automation.",
+      "referenced_source_slugs": [
+        "alex_prompter-2043992940855615716"
+      ],
+      "cross_batch_refs": [
+        "AI role-prompting",
+        "workflow wrapper strategy"
+      ]
+    },
+    {
+      "question_id": "q_test_batch_synth_04",
+      "question_type": "gap_identification",
+      "question": "What gap or missing technique would someone notice after reading all of these?",
+      "answer": "The batch doesn't address how to actually find and close high-value clients (the [[client acquisition]] gap). [[hooeem-2041436826406170880]] says to target lawyers and doctors but doesn't explain how. Meanwhile, [[alex_prompter-2043992940855615716]] gives tools for understanding clients but doesn't address outreach. Someone reading both would realize: there's a missing piece between 'build the skill' and 'find the people willing to pay for it.'",
+      "referenced_source_slugs": [
+        "hooeem-2041436826406170880",
+        "alex_prompter-2043992940855615716"
+      ],
+      "cross_batch_refs": []
+    }
+  ],
+  "concept_index_update": {
+    "new_concepts": [
+      {
+        "name": "strategic opponent thinking",
+        "aliases": [
+          "adversarial perspective-taking",
+          "chess thinking for business",
+          "opponent mapping"
+        ],
+        "source_slugs": [
+          "alex_prompter-2043992940855615716"
+        ]
+      },
+      {
+        "name": "AI intelligence specialist prompts",
+        "aliases": [
+          "role-based intelligence tools",
+          "strategic AI role prompts",
+          "specialist persona prompts"
+        ],
+        "source_slugs": [
+          "alex_prompter-2043992940855615716"
+        ]
+      },
+      {
+        "name": "knowledge base service business",
+        "aliases": [
+          "personalized KB as service",
+          "LLM knowledge management service",
+          "AI knowledge architect"
+        ],
+        "source_slugs": [
+          "hooeem-2041436826406170880"
+        ]
+      },
+      {
+        "name": "cash-rich time-poor targeting",
+        "aliases": [
+          "high-value client targeting",
+          "professional client acquisition",
+          "B2B AI services"
+        ],
+        "source_slugs": [
+          "hooeem-2041436826406170880"
+        ]
+      }
+    ],
+    "new_connections": [
+      {
+        "from_concept": "AI role-prompting",
+        "to_concept": "strategic opponent thinking",
+        "relationship": "The six specialist prompts extend generic role-prompting into adversarial business intelligence applications",
+        "established_in_batch": "test_2026-04-14"
+      },
+      {
+        "from_concept": "workflow wrapper strategy",
+        "to_concept": "knowledge base service business",
+        "relationship": "Both represent ways to monetize AI skills as service offerings, but knowledge base services require more technical depth than workflow wrappers",
+        "established_in_batch": "test_2026-04-14"
+      }
+    ],
+    "updated_clusters": {
+      "prompt_engineering_tools": [
+        "prompt library",
+        "D-E-P-T-H Framework",
+        "Reality Filter",
+        "Protocol for Designing Prompts",
+        "AI intelligence specialist prompts"
+      ],
+      "ai_business": [
+        "workflow automation",
+        "AI agent business",
+        "workflow wrapper strategy",
+        "knowledge base service business",
+        "cash-rich time-poor targeting"
+      ],
+      "strategic_tools": [
+        "strategic opponent thinking",
+        "AI research agent"
+      ]
+    }
+  }
+}

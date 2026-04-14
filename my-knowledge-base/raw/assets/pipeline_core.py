@@ -1792,7 +1792,7 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
         entry.setdefault("phase3", {"status": "pending", "source_summary": None, "entities_created": [], "concepts_created": [], "backlinks_added": []})
         author = entry["author_handle"]
         tweet_id = entry["id"]
-        category = entry.get("primary_category", "unclassified")
+        category = entry.get("primary_category") or "knowledge-base"
 
         # Image analysis wiki pages
         for ia in entry.get("phase2", {}).get("image_analyses", []):
@@ -1810,9 +1810,15 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
             is_text_document = image_type in ("TEXT_DOCUMENT", "TEXT", "SYSTEM_PROMPT", "CODE", "INSTRUCTIONS", "DOCUMENT")
 
             if is_text_document:
-                # Text document format - get text_content
+                # Text document format - check visible_text_full first (newer format), then text_content (older)
+                visible_text_full = analysis.get("visible_text_full", "")
                 text_content = analysis.get("text_content", {})
+
                 visible_text = ""
+                # Try visible_text_full first
+                if visible_text_full:
+                    visible_text += f"## Extracted Text\n\n{visible_text_full[:5000]}\n\n"
+                # Then add structured fields if available
                 if text_content.get("headlines"):
                     visible_text += "## Headlines\n" + "\n".join(f"- {h}" for h in text_content.get("headlines", [])) + "\n\n"
                 if text_content.get("body_text"):
@@ -1821,8 +1827,11 @@ def run_phase3(manifest: Dict, config: Dict, skip_qa: bool = False):
                     visible_text += "## URLs\n" + "\n".join(f"- {u}" for u in text_content.get("visible_urls", [])) + "\n\n"
 
                 document_type = metadata.get("image_type", "text content")
-                # For text documents, construct summary from headlines
-                if text_content.get("headlines"):
+                # For text documents, construct summary - prefer visible_text_full
+                if visible_text_full:
+                    # First 100 chars of extracted text
+                    summary = visible_text_full[:100].replace("\n", " ")
+                elif text_content.get("headlines"):
                     summary = text_content["headlines"][0][:100]
                 elif text_content.get("body_text"):
                     summary = text_content["body_text"][0][:100]

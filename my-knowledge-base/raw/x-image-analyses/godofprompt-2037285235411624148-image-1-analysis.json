@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "branding/marketing"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "approximately 2:1 (wide landscape)",
+    "layout": "single subject",
+    "focal_points": [
+      "Geometric icon (left of center)",
+      "Perplexity wordmark (center-right)"
+    ],
+    "visual_hierarchy": "The eye is drawn first to the unique geometric icon on the left, then naturally follows to the adjacent wordmark 'perplexity' on the right, forming a cohesive visual unit.",
+    "balance": "asymmetric - the icon and wordmark form a cohesive unit that is horizontally centered, creating a balanced visual weight despite the left-to-right arrangement."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "75%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Teal",
+        "hex": "#004D54",
+        "percentage": "25%",
+        "role": "primary subject"
+      }
+    ],
+    "color_palette": "monochromatic",
+    "temperature": "cool",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "N/A",
+    "source_count": "N/A",
+    "direction": "N/A",
+    "directionality": "N/A",
+    "quality": "N/A",
+    "intensity": "N/A",
+    "contrast_ratio": "N/A",
+    "mood": "professional",
+    "shadows": {
+      "type": "absent",
+      "density": "absent",
+      "placement": "absent",
+      "length": "absent"
+    },
+    "highlights": {
+      "treatment": "N/A",
+      "placement": "N/A"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "N/A"
+  },
+  "technical_specs": {
+    "medium": "vector",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "N/A",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "minimalist design",
+      "geometric abstraction"
+    ],
+    "mood": "professional, clean, sophisticated, modern",
+    "atmosphere": "crisp, clear, straightforward, intelligent",
+    "visual_style": "clean, minimal, geometric, structured"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern, clean, technical"
+      }
+    ],
+    "placement": "integrated - the wordmark is placed directly to the right of the geometric icon, forming a single logo unit.",
+    "integration": "prominent - the wordmark is a key identifier of the brand, equally important as the icon."
+  },
+  "subject_analysis": {
+    "primary_subject": "The Perplexity AI logo, composed of a geometric line-art icon and the wordmark 'perplexity'. The icon resembles a stylized star, snowflake, or a complex, interconnected structure, with lines extending outwards and inwards.",
+    "positioning": "The entire logo unit is horizontally centered within the frame, positioned slightly above the vertical midpoint.",
+    "scale": "medium - the logo occupies a significant portion of the image's width, leaving ample negative space around it.",
+    "interaction": "isolated - the logo stands alone on a plain background, without interaction with any environment or other subjects.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "no smile",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow - the background is a flat, uniform white plane, creating no sense of depth.",
+    "elements_detailed": [],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "None",
+    "background_treatment": "minimal - a solid, uniform white background that provides high contrast and emphasizes the logo."
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A minimalist logo for an AI company named 'perplexity', featuring a geometric, abstract icon resembling a star or a complex snowflake, rendered in a dark teal color (#004D54), placed to the left of the wordmark 'perplexity' in a clean sans-serif font of the same dark teal color, all against a pure white background. The icon should have thin lines and sharp angles, suggesting interconnectedness or knowledge.",
+      "Design a modern brand identity logo with a professional aesthetic. The logo should combine a unique, abstract geometric symbol with a simple, legible sans-serif wordmark. Use a cool, dark teal color (#004D54) for both elements on a stark white canvas, emphasizing clarity, sophistication, and intelligence. Vector art, clean lines, no gradients."
+    ],
+    "keywords": [
+      "Perplexity AI logo",
+      "geometric icon",
+      "dark teal branding",
+      "minimalist wordmark",
+      "modern tech logo"
+    ],
+    "technical_settings": "Vector graphic, high resolution, RGB color profile, clean lines, no gradients or textures, aspect ratio 2:1.",
+    "post_processing": "None (clean digital rendering, no filters or color grading applied beyond initial color choice)."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

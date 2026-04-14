@@ -1,0 +1,21 @@
+{
+  "image_type": "text_document",
+  "document_type": "other",
+  "visible_text_full": "HERETIC\nv1.0.0\nhttps://github.com/p-e-w/heretic\n\nGPU type: NVIDIA A100 80GB PCIe\n\nLoading model openai/gpt-oss-20b... Ok\n* Transformer model with 24 layers\n* Abliterable components:\n  * attn.o_proj: 1 matrices per layer\n  * mlp.down_proj: 1 matrices per layer\n\nLoading good prompts from mlabonne/harmless_alpaca...\n* 400 prompts loaded\n\nLoading bad prompts from mlabonne/harmful_behaviors...\n* 400 prompts loaded\n\nDetermining optimal batch size...\n* Trying batch size 1... Ok (27 tokens/s)\n* Trying batch size 2... Ok (52 tokens/s)\n* Trying batch size 4... Ok (99 tokens/s)\n* Trying batch size 8... Ok (183 tokens/s)\n* Trying batch size 16... Ok (303 tokens/s)\n* Trying batch size 32... Ok (506 tokens/s)\n* Trying batch size 64... Ok (692 tokens/s)\n* Trying batch size 128... Ok (874 tokens/s)\n* Chosen batch size: 128\n\nLoading good evaluation prompts from mlabonne/harmless_alpaca...\n* 100 prompts loaded\n* Obtaining first-token probability distributions...\n\nLoading bad evaluation prompts from mlabonne/harmful_behaviors...\n* 100 prompts loaded\n* Counting model refusals...\n* Initial refusals: 97/100",
+  "summary": "This document displays the console output of a program named HERETIC, version 1.0.0, running on an NVIDIA A100 GPU. It details the process of loading a large language model (openai/gpt-oss-20b), loading both good and bad prompts, determining an optimal batch size for processing, and then loading evaluation prompts to count model refusals. The process concludes with an initial refusal count of 97 out of 100 for harmful behaviors.",
+  "key_concepts": [
+    "HERETIC program",
+    "NVIDIA A100 GPU",
+    "Model loading (openai/gpt-oss-20b)",
+    "Transformer model architecture",
+    "Abliterable components (attn.o_proj, mlp.down_proj)",
+    "Prompt loading (harmless_alpaca, harmful_behaviors)",
+    "Batch size optimization",
+    "Tokens per second (tokens/s)",
+    "Model evaluation",
+    "First-token probability distributions",
+    "Model refusals"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

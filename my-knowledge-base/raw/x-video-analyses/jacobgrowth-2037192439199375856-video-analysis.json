@@ -1,0 +1,236 @@
+{
+  "video_analysis": {
+    "analysis_mode": "visual_only",
+    "frame_observations": [
+      {
+        "timestamp": "00:00",
+        "timestamp_seconds": 0,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Extreme close-up, blurry, chaotic motion of what appears to be metallic armor. The lighting is dark and dramatic, with red and silver highlights. The camera is shaking violently.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "Loud, aggressive electronic music with a heavy, distorted bassline and a repetitive, high-pitched vocal sample. The beat is fast and driving.",
+        "emotional_tone": "Chaotic, aggressive, intense",
+        "pacing": "RAPID",
+        "narrative_function": "BEGINNING",
+        "notable_elements": "The video starts with disorienting, high-energy visuals that establish a mood of conflict and intensity."
+      },
+      {
+        "timestamp": "00:01",
+        "timestamp_seconds": 1,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Another rapid, blurry close-up of a knight's armor in motion. A red-clad arm and a silver gauntlet are briefly visible. The scene is dark and filled with motion blur.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The driving electronic music continues with the same intensity and repetitive vocal sample.",
+        "emotional_tone": "Violent, chaotic, energetic",
+        "pacing": "RAPID",
+        "narrative_function": "BEGINNING",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:02",
+        "timestamp_seconds": 2,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "A quick cut to a shot from behind a knight in full plate armor, moving through a dense crowd of other soldiers. The lighting is dim and cool-toned.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The aggressive electronic music continues, maintaining its high energy.",
+        "emotional_tone": "Anticipatory, tense, powerful",
+        "pacing": "RAPID",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "This is the first moment where the context of an army is becoming clear."
+      },
+      {
+        "timestamp": "00:03",
+        "timestamp_seconds": 3,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The camera pulls back slightly, revealing a massive army of knights in formation. They are densely packed, holding flags and weapons. The color palette is desaturated, mostly greys and blues, under an overcast sky.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The driving electronic music continues, perfectly scoring the intimidating reveal of the army.",
+        "emotional_tone": "Intimidating, epic, formidable",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The scale of the army is revealed, creating a sense of overwhelming force."
+      },
+      {
+        "timestamp": "00:04",
+        "timestamp_seconds": 4,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The camera continues to move through the ranks of the marching army. The shot is filled with helmets, armor, and the tops of banners against a grey sky.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The electronic music continues with its heavy beat and vocal sample loop.",
+        "emotional_tone": "Unyielding, powerful, disciplined",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:05",
+        "timestamp_seconds": 5,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The shot continues, panning across the endless sea of soldiers. The sheer number of them is the primary focus. The movement is steady and relentless.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The music's intensity remains constant, driving the scene forward.",
+        "emotional_tone": "Overwhelming, relentless, epic",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:06",
+        "timestamp_seconds": 6,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The camera continues its movement through the army, showing more soldiers in various types of armor. The mood is grim and determined.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The electronic music continues its driving rhythm.",
+        "emotional_tone": "Grim, determined, powerful",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:07",
+        "timestamp_seconds": 7,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "A quick cut to a medium shot of a specific knight. This one wears ornate silver armor with a distinctive red, tassel-like plume on their helmet.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The music continues, but the visual cut gives this beat a sense of emphasis.",
+        "emotional_tone": "Commanding, focused, important",
+        "pacing": "MODERATE",
+        "narrative_function": "BRIDGE",
+        "notable_elements": "The video shifts focus from the anonymous army to a clear leader or main character."
+      },
+      {
+        "timestamp": "00:08",
+        "timestamp_seconds": 8,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "A close-up on the leader's helmet. The shot is steady, highlighting the intricate design of the armor and the red plume. The background is blurred.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The music hits a beat drop or a significant percussive sound, emphasizing the knight's presence. A metallic clanking sound effect is faintly audible.",
+        "emotional_tone": "Authoritative, intimidating, resolute",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "This static shot serves as a moment of focus and power before the action continues."
+      },
+      {
+        "timestamp": "00:09",
+        "timestamp_seconds": 9,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The knight turns and begins to walk away from the camera, which follows. The vast army is visible in the background.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The driving electronic music continues, now scoring the forward movement of the leader.",
+        "emotional_tone": "Purposeful, determined, leading",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:10",
+        "timestamp_seconds": 10,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The knight continues walking through the ranks. Another person is seen leading a horse with ornate red tack nearby. The environment is bleak and wet.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The music continues with its relentless, heavy beat.",
+        "emotional_tone": "Unyielding, preparatory, grim",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:11",
+        "timestamp_seconds": 11,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The shot continues to follow the leader knight as they walk past other soldiers and horses. The camera movement is smooth.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The electronic music continues, building a sense of impending action.",
+        "emotional_tone": "Relentless, marching, focused",
+        "pacing": "MODERATE",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None"
+      },
+      {
+        "timestamp": "00:12",
+        "timestamp_seconds": 12,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Quick cut to an extreme close-up of a metal stirrup. The detail is sharp, and the metal appears dark and weathered. The background is out of focus.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The music continues its driving beat.",
+        "emotional_tone": "Detailed, gritty, preparatory",
+        "pacing": "RAPID",
+        "narrative_function": "FILLER",
+        "notable_elements": "This cut to a detail shot breaks the rhythm and emphasizes the gear of war."
+      },
+      {
+        "timestamp": "00:13",
+        "timestamp_seconds": 13,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Another quick cut to an extreme close-up, this time of a spiked metal spur on the heel of a boot. The spur is wet, reflecting the dim light.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The music continues, with the beat feeling like it's building towards a climax.",
+        "emotional_tone": "Menacing, sharp, ready",
+        "pacing": "RAPID",
+        "narrative_function": "END",
+        "notable_elements": "The spur is a classic symbol of a knight or cavalry, signaling readiness to ride into battle."
+      },
+      {
+        "timestamp": "00:14",
+        "timestamp_seconds": 14,
+        "context_classification": "TRANSITION",
+        "visual": "The shot of the spur holds for a moment before the video abruptly cuts to black.",
+        "on_screen_text": "None",
+        "transcript_segment": "None",
+        "audio_notes": "The music cuts off abruptly as the video ends.",
+        "emotional_tone": "Abrupt, final, sharp",
+        "pacing": "STATIC",
+        "narrative_function": "END",
+        "notable_elements": "The sudden end leaves the viewer with a sense of unresolved tension."
+      }
+    ],
+    "music_analysis": {
+      "background_music_present": true,
+      "music_style": "Aggressive, fast-paced electronic phonk with a distorted bassline and repetitive vocal sample.",
+      "music_prominence": "DOMINANT",
+      "music_shifts": "The music is consistent throughout but has a subtle beat drop at 00:08 to emphasize the leader knight.",
+      "speech_present": false,
+      "speech_style": "None",
+      "audio_quality_overall": "CLEAN",
+      "recommendation": "The music is the primary audio element and dictates the entire mood and pacing of the video. Any re-editing should be done with the music's rhythm as the top priority."
+    },
+    "overall_summary": {
+      "total_duration_observed": "00:15",
+      "primary_subject": "A cinematic montage of a massive medieval army and its leader preparing for battle, set to aggressive electronic music.",
+      "content_type": "MONTAGE",
+      "dominant_emotion": "Aggressive",
+      "pacing_profile": "The video starts and ends with rapid cuts, with a moderately paced middle section that establishes the scale of the army. The overall feel is fast and high-energy.",
+      "narrative_arc": "The video builds a powerful and intimidating atmosphere. It begins with chaotic close-ups of armor, reveals the overwhelming scale of an army, focuses on its commanding leader, and ends on details that signify readiness for war.",
+      "key_moments": [
+        {
+          "timestamp": "00:03",
+          "significance": "The first wide shot reveals the massive scale of the army, establishing the video's epic and intimidating tone."
+        },
+        {
+          "timestamp": "00:08",
+          "significance": "A focused close-up on the leader's helmet, which serves as a narrative anchor and establishes a central character amidst the chaos."
+        },
+        {
+          "timestamp": "00:13",
+          "significance": "An extreme close-up on a spur, a classic symbol of knighthood and cavalry, which acts as the final beat signifying the army is ready for battle."
+        }
+      ],
+      "on_screen_text_summary": [],
+      "analyst_notes": "This video is a typical example of a 'phonk edit,' where cinematic footage (likely from a film or video game) is re-cut to a high-energy, aggressive electronic music track. The editing is entirely driven by the music's rhythm and mood, prioritizing style and impact over a linear narrative."
+    }
+  }
+}

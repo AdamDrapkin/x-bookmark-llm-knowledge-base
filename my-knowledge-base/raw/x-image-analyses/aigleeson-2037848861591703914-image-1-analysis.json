@@ -1,0 +1,25 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "README MIT license\n\n7/24 Office -- Self-Evolving AI Agent System\n\nA production-running AI agent built in ~3,500 lines of pure Python with zero framework dependency. No\nLangChain, no LlamaIndex, no CrewAI -- just the standard library + 3 small packages ( croniter , lancedb ,\nwebsocket-client ).\n\n26 tools. 8 files. Runs 24/7.\n\nBuilt solo with AI co-development tools in under 3 months. Production 24/7.\n\nFeatures\n\n*   Tool Use Loop -- OpenAI-compatible function calling with automatic retry, up to 20 iterations per conversation\n*   Three-Layer Memory -- Session history + LLM-compressed long-term memory + LanceDB vector retrieval\n*   MCP/Plugin System -- Connect external MCP servers via JSON-RPC (stdio or HTTP), hot-reload without\n    restart\n*   Runtime Tool Creation -- The agent can write, save, and load new Python tools at runtime ( create_tool )\n*   Self-Repair -- Daily self-check, session health diagnostics, error log analysis, auto-notification on failure\n*   Cron Scheduling -- One-shot and recurring tasks, persistent across restarts, timezone-aware\n*   Multi-Tenant Router -- Docker-based auto-provisioning, one container per user, health-checked\n*   Multimodal -- Image/video/file/voice/link handling, ASR (speech-to-text), vision via base64\n*   Web Search -- Multi-engine (Tavily, web search, GitHub, HuggingFace) with auto-routing\n*   Video Processing -- Trim, add BGM, AI video generation -- all via ffmpeg + API, exposed as tools\n*   Messaging Integration -- WeChat Work (Enterprise WeChat) with debounce, message splitting, media\n    upload/download\n\nArchitecture\n\n    +-----------------+\n    |    Messaging    |\n    |    Platform     |\n    +-----------------+\n            |\n            v\n    +-----------------+ Multi-tenant routing\n    |    router.py    | Auto-provision containers\n    |   (per-user     |\n    |   containers)   |\n    +-----------------+\n",
+  "summary": "This document describes a \"Self-Evolving AI Agent System\" built in pure Python with minimal dependencies, designed for 24/7 production. It details the system's extensive features, including advanced memory management, runtime tool creation, self-repair capabilities, multimodal processing, and a multi-tenant architecture. The system was developed rapidly using AI co-development tools.",
+  "key_concepts": [
+    "Self-Evolving AI Agent System",
+    "Pure Python (zero framework dependency)",
+    "Tool Use Loop",
+    "Three-Layer Memory",
+    "MCP/Plugin System",
+    "Runtime Tool Creation",
+    "Self-Repair",
+    "Cron Scheduling",
+    "Multi-Tenant Router",
+    "Multimodal Processing",
+    "Web Search",
+    "Video Processing",
+    "Messaging Integration",
+    "Docker-based auto-provisioning",
+    "AI co-development tools"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

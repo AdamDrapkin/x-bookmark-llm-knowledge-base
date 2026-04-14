@@ -1,0 +1,20 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "README\nCode of conduct\nContributing\nMIT license\nSecurity\n\nSuperpowers\n\nSuperpowers is a complete software development workflow for your coding agents, built on top of a set of\ncomposable \"skills\" and some initial instructions that make sure your agent uses them.\n\nHow it works\n\nIt starts from the moment you fire up your coding agent. As soon as it sees that you're building something, it\ndoesn't just jump into trying to write code. Instead, it steps back and asks you what you're really trying to do.\n\nOnce it's teased a spec out of the conversation, it shows it to you in chunks short enough to actually read and\ndigest.\n\nAfter you've signed off on the design, your agent puts together an implementation plan that's clear enough for an\nenthusiastic junior engineer with poor taste, no judgement, no project context, and an aversion to testing to follow.\nIt emphasizes true red/green TDD, YAGNI (You Aren't Gonna Need It), and DRY.\n\nNext up, once you say \"go\", it launches a subagent-driven-development process, having agents work through each\nengineering task, inspecting and reviewing their work, and continuing forward. It's not uncommon for Claude to be\nable to work autonomously for a couple hours at a time without deviating from the plan you put together.\n\nThere's a bunch more to it, but that's the core of the system. And because the skills trigger automatically, you don't\nneed to do anything special. Your coding agent just has Superpowers.\n\nSponsorship\n\nIf Superpowers has helped you do stuff that makes money and you are so inclined, I'd greatly appreciate it if you'd\nconsider sponsoring my opensource work.\n\nThanks!\n\n* Jesse\n\nInstallation",
+  "summary": "This document describes \"Superpowers,\" a software development workflow designed for coding agents. It outlines a process where agents first understand the user's intent, then generate and refine a specification, create an implementation plan, and finally execute a subagent-driven development process emphasizing TDD, YAGNI, and DRY principles.\nIt also includes a section for sponsorship, encouraging users to support the open-source project if they find it valuable.",
+  "key_concepts": [
+    "Superpowers",
+    "Coding agents",
+    "Software development workflow",
+    "Composable skills",
+    "Subagent-driven development",
+    "TDD (Test-Driven Development)",
+    "YAGNI (You Aren't Gonna Need It)",
+    "DRY (Don't Repeat Yourself)",
+    "Sponsorship",
+    "Open-source work"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

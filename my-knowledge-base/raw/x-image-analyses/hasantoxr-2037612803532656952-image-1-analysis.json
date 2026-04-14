@@ -1,0 +1,19 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "Insanely Fast Whisper\n\nAn opinionated CLI to transcribe Audio files w/ Whisper on-device! Powered by \ud83e\udd16 Transformers, Optimum & flash-\nattn\n\nTL;DR - Transcribe 150 minutes (2.5 hours) of audio in less than 98 seconds - with OpenAI's Whisper Large v3.\nBlazingly fast transcription is now a reality!\u26a1\n\npipx install insanely-fast-whisper==0.0.15 --force\n\nNot convinced? Here are some benchmarks we ran on a Nvidia A100 - 80GB \u26a1\n\nOptimisation type\n\nTime to Transcribe (150 mins of\nAudio)\n\nlarge-v3 (Transformers) (fp32)\n\n~31 (31 min 1 sec)\n\nlarge-v3 (Transformers) (fp16 + batching [24] +\nbettertransformer )\n\n~5 (5 min 2 sec)\n\nlarge-v3 (Transformers) (fp16 + batching [24] + Flash\nAttention 2 )\n\n~2 (1 min 38 sec)\n\ndistil-large-v2 (Transformers) (fp16 + batching [24] +\nbettertransformer )\n\n~3 (3 min 16 sec)\n\ndistil-large-v2 (Transformers) (fp16 + batching [24] + Flash\nAttention 2 )\n\n~1 (1 min 18 sec)\n\nlarge-v2 (Faster Whisper) (fp16 + beam_size [1] )\n\n~9.23 (9 min 23 sec)\n\nlarge-v2 (Faster Whisper) (8-bit + beam_size [1] )\n\n~8 (8 min 15 sec)",
+  "summary": "This document introduces \"Insanely Fast Whisper,\" a command-line interface (CLI) tool for rapid on-device audio transcription using Whisper models. It highlights its ability to transcribe 2.5 hours of audio in under 98 seconds and provides a detailed benchmark table showcasing various optimization types and their performance on an Nvidia A100 GPU. The tool leverages technologies like Transformers, Optimum, and flash-attn for its speed.",
+  "key_concepts": [
+    "Insanely Fast Whisper",
+    "Audio transcription",
+    "Whisper models (OpenAI's Whisper Large v3, distil-large-v2, large-v2)",
+    "On-device processing",
+    "Performance optimization (fp16, batching, bettertransformer, Flash Attention 2, 8-bit, beam_size)",
+    "Transformers",
+    "Optimum",
+    "flash-attn",
+    "Benchmarking (Nvidia A100)"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

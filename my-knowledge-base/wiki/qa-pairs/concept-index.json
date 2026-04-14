@@ -1,6 +1,6 @@
 {
   "total_sources_processed": 15,
-  "total_batches_processed": 1,
+  "total_batches_processed": 2,
   "concepts": [
     {
       "name": "prompt library",
@@ -171,6 +171,50 @@
       "source_slugs": [
         "n8n-2026-smart-alerting"
       ]
+    },
+    {
+      "name": "strategic opponent thinking",
+      "aliases": [
+        "adversarial perspective-taking",
+        "chess thinking for business",
+        "opponent mapping"
+      ],
+      "source_slugs": [
+        "alex_prompter-2043992940855615716"
+      ]
+    },
+    {
+      "name": "AI intelligence specialist prompts",
+      "aliases": [
+        "role-based intelligence tools",
+        "strategic AI role prompts",
+        "specialist persona prompts"
+      ],
+      "source_slugs": [
+        "alex_prompter-2043992940855615716"
+      ]
+    },
+    {
+      "name": "knowledge base service business",
+      "aliases": [
+        "personalized KB as service",
+        "LLM knowledge management service",
+        "AI knowledge architect"
+      ],
+      "source_slugs": [
+        "hooeem-2041436826406170880"
+      ]
+    },
+    {
+      "name": "cash-rich time-poor targeting",
+      "aliases": [
+        "high-value client targeting",
+        "professional client acquisition",
+        "B2B AI services"
+      ],
+      "source_slugs": [
+        "hooeem-2041436826406170880"
+      ]
     }
   ],
   "concept_clusters": {
@@ -178,12 +222,15 @@
       "prompt library",
       "D-E-P-T-H Framework",
       "Reality Filter",
-      "Protocol for Designing Prompts"
+      "Protocol for Designing Prompts",
+      "AI intelligence specialist prompts"
     ],
     "ai_business": [
       "workflow automation",
       "AI agent business",
-      "workflow wrapper strategy"
+      "workflow wrapper strategy",
+      "knowledge base service business",
+      "cash-rich time-poor targeting"
     ],
     "research_automation": [
       "AI research agent",
@@ -196,6 +243,10 @@
     ],
     "design_tools": [
       "design system extraction"
+    ],
+    "strategic_tools": [
+      "strategic opponent thinking",
+      "AI research agent"
     ]
   },
   "existing_connections": [
@@ -216,7 +267,19 @@
       "to_concept": "Perplexity deep research",
       "relationship": "Both automate research tasks but Feynman is open-source while Perplexity is a commercial product",
       "established_in_batch": "batch_001"
+    },
+    {
+      "from_concept": "AI role-prompting",
+      "to_concept": "strategic opponent thinking",
+      "relationship": "The six specialist prompts extend generic role-prompting into adversarial business intelligence applications",
+      "established_in_batch": "test_2026-04-14"
+    },
+    {
+      "from_concept": "workflow wrapper strategy",
+      "to_concept": "knowledge base service business",
+      "relationship": "Both represent ways to monetize AI skills as service offerings, but knowledge base services require more technical depth than workflow wrappers",
+      "established_in_batch": "test_2026-04-14"
     }
   ],
-  "sources_since_last_qa": 60
+  "sources_since_last_qa": 140
 }

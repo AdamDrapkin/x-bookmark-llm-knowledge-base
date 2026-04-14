@@ -203,3 +203,57 @@ he’s spending way less time using AI to write code and mor _(added 2026-04-14)
 
 In the X AI space, we always speak “how much they pay”
 And never _(added 2026-04-14)_
+- [[alex_prompter-2038554554334314713]] — 🚨 BREAKING: Claude can now protect your money from banks, inflation, and seizure like Ray Dalio's $1 _(added 2026-04-14)_
+- [[eng_khairallah1-2038541344847823322]] — https://t.co/Bzk9b6BJ99 _(added 2026-04-14)_
+- [[IslamRashi2000-2038481198616596885]] — someone built a tool that REMOVES LLM CENSORSHIP in 45 minutes with a SINGLE command
+
+its called HER _(added 2026-04-14)_
+- [[shabnam_774-2038318128187458004]] — In 2019, a legendary MIT lecture quietly changed how the smartest people communicate.
+
+Most people s _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036]] — Best GitHub repos for Claude code that will 10x your next project in 2026:
+
+1. Claude Mem
+https://t. _(added 2026-04-14)_
+- [[_chenglou-2037713766205608234]] — My dear front-end developers (and anyone who’s interested in the future of interfaces):
+
+I have craw _(added 2026-04-14)_
+- [[hooeem-2037250422403113188]] — https://t.co/KW3rQbdBJT _(added 2026-04-14)_
+- [[damienghader-2015790037120491939]] — https://t.co/LXISEHhHLU _(added 2026-04-14)_
+- [[adamlyttleapps-2038535497828733177]] — Designing App Store screenshots takes too long
+
+So I made a Claude Skill that does it for me
+
+Instea _(added 2026-04-14)_
+- [[Aiwithkumail-2038531965230682393]] — POV: Your Kling 3.0 timeline
+
+Top: ‘Bro this model is insane, look at this 4K cinematic I made’ (1.2 _(added 2026-04-14)_
+- [[aigleeson-2037848861591703914]] — This literally feels like cheating.
+
+A developer just open-sourced a self-evolving AI agent that run _(added 2026-04-14)_
+- [[MillieMarconnni-2037848645949898979]] — We just crossed a line nobody was paying attention to.
+
+The CEO of Y Combinator the organization tha _(added 2026-04-14)_
+- [[hasantoxr-2037612803532656952]] — 🚨 BREAKING: Someone just made OpenAI's Whisper transcribe 2.5 hours of audio in 98 seconds. 100% OPE _(added 2026-04-14)_
+- [[adiix_official-2037604599398322682]] — https://t.co/tZJw0URrhg _(added 2026-04-14)_
+- [[NickSpisak_-2037598275658760543]] — what you're looking at is a $3,000 service you can deliver in one sitting.  
+
+1. set up Claude Cowor _(added 2026-04-14)_
+- [[Suryanshti777-2037558286137143591]] — 🚨Breaking: The guy who created Claude Code (@bcherny) just revealed how his team actually trains the _(added 2026-04-14)_
+- [[alexxgrowth-2037514725274308840]] — talked to one of our creators yesterday who went from $0 to $6,800/mo in 2 months 
+
+and i asked him  _(added 2026-04-14)_
+- [[ihtesham2005-2037484864090644653]] — 🚨BREAKING: Someone built a second brain for Claude Code that runs silently in the background and nev _(added 2026-04-14)_
+- [[Hesamation-2037329163212726272]] — btw this is the app that has generated $5000 in just 3 days, organically. it uses your Mac’s acceler _(added 2026-04-14)_
+- [[godofprompt-2037285235411624148]] — BREAKING: Perplexity Computer just made finance analysts, consultants, and research teams look like  _(added 2026-04-14)_
+- [[hooeem-2041436826406170880]] — when you become a millionaire in 1-3 years because you sell personalised knowledge bases and it’s al _(added 2026-04-14)_
+- [[alex_prompter-2043992940855615716]] — BREAKING: Bobby Fischer became World Chess Champion at 29 by doing one thing nobody else did.
+
+He th _(added 2026-04-14)_
+- [[katibmoe-2037214796962291987]] — Introducing One.
+
+The simplest way to connect and monitor AI agents to hundreds of apps.
+
+And we’re  _(added 2026-04-14)_
+- [[ideabrowser-2037176334510702624]] — Make this $19.99 and you’d make $1,000,000 https://t.co/Fk41ZqoRSr _(added 2026-04-14)_
+- [[rexorganic-2037168928204460119]] — https://t.co/eutR8bPjuj _(added 2026-04-14)_

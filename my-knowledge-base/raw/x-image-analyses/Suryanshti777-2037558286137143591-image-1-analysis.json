@@ -1,0 +1,28 @@
+{
+  "image_type": "text_document",
+  "document_type": "instructions",
+  "visible_text_full": "### 1. Plan Node Default\n- Enter plan mode for ANY non-trivial task (3+ steps or architectural decisions)\n- If something goes sideways, STOP and re-plan immediately - don't keep pushing\n- Use plan mode for verification steps, not just building\n- Write detailed specs upfront to reduce ambiguity\n\n### 2. Subagent Strategy\n- Use subagents liberally to keep main contect window clean\n- Offload research, exploration, and parallel analysis to subagents\n- For complex problems, throw more compute at it via subagents\n- One tack per subagent for focused execution\n\n### 3. Self-Improvement Loop\n- After ANY correction from the user: update `tasks/lessons.md` with the pattern\n- Write rules for yourself that prevent the same mistake\n- Ruthlessly iterate on these lessons until mistake rate drops\n- Review lessons at session start for relevant project\n\n### 4. Verification Before Done\n- Never mark a task complete without proving it works\n- Diff behavior between main and your changes when relevant\n- Ask yourself: \"Would a staff engineer approve this?\"\n- Run tests, check logs, demonstrate correctness\n\n### 5. Demand Elegance (Balanced)\n- For non-trivial changes: pause and ask \"is there a more elegant way?\"\n- If a fix feels hacky: \"Knowing everything I know now, implement the elegant solution\"\n- Skip this for simple, chvious fixes - don't over-engineer\n- Challenge your own work before presenting it\n\n### 6. Autonomous Bug Fixing\n- When given a bug report: just fix it. Don't ask for hand-holding\n- Point at logs, errors, failing tests - then resolve them\n- Zero context switching required from the user\n- Go fix failing CI tests without being told how\n\n## Task Management\n1. **Plan First**: Write plan to `tasks/todo.md` with checkable items\n2. **Verify Plan**: Check in before starting implementation\n3. **Track Progress**: Mark items complete as you go\n4. **Explain Changes**: High-level summary at each step\n5. **Document Results**: Add review section to `tasks/todo.md`\n6. **Capture Lessons**: Update `tasks/lessons.md` after corrections\n\n## Core Principles\n- **Simplicity First**: Make every change as simple as possible. Inpact minimal code.\n- **No Laziness**: Find root causes. No temporary fixes. Senior developer standards.",
+  "summary": "This document outlines a comprehensive set of principles and strategies for an agent or developer, covering task planning, execution, verification, and continuous improvement. It emphasizes structured planning, the use of subagents for complex problems, rigorous verification, elegant solutions, and autonomous bug fixing. The document also includes a detailed task management workflow and core principles like simplicity and thoroughness.",
+  "key_concepts": [
+    "Plan Node Default",
+    "Subagent Strategy",
+    "Self-Improvement Loop",
+    "Verification Before Done",
+    "Demand Elegance (Balanced)",
+    "Autonomous Bug Fixing",
+    "Task Management",
+    "Core Principles",
+    "Structured Planning",
+    "Subagents",
+    "Continuous Learning",
+    "Rigorous Verification",
+    "Elegant Solutions",
+    "Root Cause Analysis",
+    "Simplicity First",
+    "Senior Developer Standards",
+    "`tasks/lessons.md`",
+    "`tasks/todo.md`"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

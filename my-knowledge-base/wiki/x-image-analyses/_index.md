@@ -41,3 +41,15 @@ All images from X bookmarks are analyzed using Gemini 2.5 Pro Vision for:
 - [[vladinfos-2040582401198346751-image-1-analysis]] — Image analysis _(added 2026-04-14)_
 - [[kloss_xyz-2040546099711401993-image-1-analysis]] — Image analysis _(added 2026-04-14)_
 - [[AmirMushich-2040518438662164525-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[alex_prompter-2038554554334314713-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[IslamRashi2000-2038481198616596885-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036-image-2-analysis]] — Image analysis _(added 2026-04-14)_
+- [[DAIEvolutionHub-2037907310136484036-image-3-analysis]] — Image analysis _(added 2026-04-14)_
+- [[aigleeson-2037848861591703914-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[MillieMarconnni-2037848645949898979-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[hasantoxr-2037612803532656952-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[Suryanshti777-2037558286137143591-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[ihtesham2005-2037484864090644653-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[godofprompt-2037285235411624148-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[alex_prompter-2043992940855615716-image-1-analysis]] — Image analysis _(added 2026-04-14)_

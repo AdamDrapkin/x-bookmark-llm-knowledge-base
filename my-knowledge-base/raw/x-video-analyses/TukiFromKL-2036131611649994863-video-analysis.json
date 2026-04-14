@@ -1,0 +1,195 @@
+{
+  "video_analysis": {
+    "analysis_mode": "visual_plus_transcript",
+    "frame_observations": [
+      {
+        "timestamp": "00:00",
+        "timestamp_seconds": 0,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "Extreme close-up of a man's face (actor Willem Dafoe) shot with a fisheye lens, creating significant distortion. He has a mustache and a serious, intense expression, looking directly into the camera. The setting is a dimly lit corridor with yellowish brick walls. The lighting is warm and harsh.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "None.",
+        "audio_notes": "The opening orchestral notes of a dramatic, classic song begin to play. The song is sung in French by a female vocalist.",
+        "emotional_tone": "Intense, melancholic, dramatic",
+        "pacing": "STATIC",
+        "narrative_function": "BEGINNING",
+        "notable_elements": "The use of a fisheye lens creates a feeling of unsettling intimacy and distortion."
+      },
+      {
+        "timestamp": "00:01",
+        "timestamp_seconds": 1,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "A powerful female voice begins to sing in French, holding the first note. The orchestral music swells slightly.",
+        "emotional_tone": "Intense, melancholic, dramatic",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:02",
+        "timestamp_seconds": 2,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "The female vocalist continues to sing the dramatic French song. The music is clear and has a vintage quality.",
+        "emotional_tone": "Intense, melancholic, dramatic",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:03",
+        "timestamp_seconds": 3,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "rien de rien",
+        "audio_notes": "The vocalist sings the phrase \"rien de rien\" with emotional weight. The orchestral backing continues.",
+        "emotional_tone": "Intense, melancholic, resolute",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:04",
+        "timestamp_seconds": 4,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "The vocalist begins the next line of the song, repeating the word \"Non\".",
+        "emotional_tone": "Intense, melancholic, resolute",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:05",
+        "timestamp_seconds": 5,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "rien de rien",
+        "audio_notes": "The vocalist continues singing the French song. The music maintains its dramatic and sweeping tone.",
+        "emotional_tone": "Intense, melancholic, resolute",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:06",
+        "timestamp_seconds": 6,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "(Music continues)",
+        "audio_notes": "The orchestral music continues, bridging a vocal phrase. The mood is consistently dramatic.",
+        "emotional_tone": "Intense, melancholic, contemplative",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:07",
+        "timestamp_seconds": 7,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "Non...",
+        "audio_notes": "The vocalist sings \"Non\" again, beginning a new, powerful phrase.",
+        "emotional_tone": "Intense, melancholic, contemplative",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:08",
+        "timestamp_seconds": 8,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "je ne regrette rien",
+        "audio_notes": "The vocalist sings the iconic line \"je ne regrette rien\" (\"I regret nothing\").",
+        "emotional_tone": "Defiant, resolute, melancholic",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "The lyrics directly translate to \"I regret nothing,\" which strongly colors the interpretation of the man's expression."
+      },
+      {
+        "timestamp": "00:09",
+        "timestamp_seconds": 9,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "(Music continues)",
+        "audio_notes": "The vocalist holds the final note of the phrase \"rien\" as the orchestra supports the powerful declaration.",
+        "emotional_tone": "Defiant, resolute, melancholic",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:10",
+        "timestamp_seconds": 10,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "(Music continues)",
+        "audio_notes": "The dramatic orchestral music continues, filling the space after the vocal line with a sweeping, emotional sound.",
+        "emotional_tone": "Defiant, resolute, melancholic",
+        "pacing": "STATIC",
+        "narrative_function": "MIDDLE",
+        "notable_elements": "None."
+      },
+      {
+        "timestamp": "00:11",
+        "timestamp_seconds": 11,
+        "context_classification": "VIDEO_CONTENT",
+        "visual": "The static, extreme close-up fisheye shot of Willem Dafoe's face continues. His expression is unwavering and intense. The background remains a blurry, warm-toned corridor. The video cuts abruptly at the end of the second.",
+        "on_screen_text": "literallyme0",
+        "transcript_segment": "(Music continues)",
+        "audio_notes": "The orchestral music continues its dramatic swell, then is cut off as the video ends.",
+        "emotional_tone": "Defiant, resolute, melancholic",
+        "pacing": "STATIC",
+        "narrative_function": "END",
+        "notable_elements": "The video ends abruptly, cutting the music mid-phrase."
+      }
+    ],
+    "music_analysis": {
+      "background_music_present": true,
+      "music_style": "Classic French chanson with dramatic, sweeping orchestral arrangement.",
+      "music_prominence": "DOMINANT",
+      "music_shifts": "None. The music maintains a consistent dramatic and emotional tone throughout.",
+      "speech_present": true,
+      "speech_style": "Sung lyrics (operatic/chanson style).",
+      "audio_quality_overall": "ADEQUATE",
+      "recommendation": "The audio is the primary driver of the video's mood. The specific song, \u00c9dith Piaf's 'Non, je ne regrette rien,' is crucial to the clip's meaning and likely use as a meme."
+    },
+    "overall_summary": {
+      "total_duration_observed": "00:12",
+      "primary_subject": "A short, static clip of actor Willem Dafoe staring intensely into a fisheye lens, set to the dramatic French song 'Non, je ne regrette rien' by \u00c9dith Piaf.",
+      "content_type": "OTHER",
+      "dominant_emotion": "Intense melancholy",
+      "pacing_profile": "The video is entirely static, with no camera movement or change in the subject's action, creating a slow, contemplative pace.",
+      "narrative_arc": "This clip does not have a narrative arc; it establishes and holds a single, powerful mood of intense, melancholic introspection from beginning to end. The combination of the actor's severe expression and the defiant lyrics of the song creates a feeling of stoic endurance.",
+      "key_moments": [
+        {
+          "timestamp": "00:00",
+          "significance": "Establishes the unsettling, intimate fisheye shot and introduces the dramatic musical theme, setting the video's entire tone."
+        },
+        {
+          "timestamp": "00:08",
+          "significance": "The iconic lyric 'je ne regrette rien' ('I regret nothing') is sung, providing the central emotional and thematic statement of the clip."
+        }
+      ],
+      "on_screen_text_summary": [
+        "literallyme0"
+      ],
+      "analyst_notes": "This video is a classic example of a 'reaction' or 'mood' meme, often used to convey feelings of stoicism, introspection, or enduring hardship. The subject is actor Willem Dafoe, known for intense roles, which adds to the clip's effect. The watermark 'literallyme0' reinforces its use as a self-expressive meme format."
+    }
+  }
+}
