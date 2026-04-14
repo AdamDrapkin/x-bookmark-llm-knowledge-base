@@ -1217,12 +1217,35 @@ def write_external_link_file(link_info: Dict, author: str, tweet_id: str,
 
 
 def write_transcript_file(transcript: str, author: str, tweet_id: str,
-                           wiki_root: str) -> str:
-    """Write video transcript to raw/x-video-transcripts/."""
-    path = full_path(wiki_root, f"raw/x-video-transcripts/{author}-{tweet_id}-transcript.txt")
+                           wiki_root: str, duration: str = None, source_url: str = None) -> str:
+    """Write video transcript to raw/x-video-transcripts/ with frontmatter."""
+    path = full_path(wiki_root, f"raw/x-video-transcripts/{author}-{tweet_id}-transcript.md")
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    Path(path).write_text(transcript)
-    validate_written_file(path, f"Transcript {author}-{tweet_id}", min_bytes=50)
+    today = today_str()
+
+    # Build metadata header
+    duration_info = f"\n- **Duration:** {duration}" if duration else ""
+    source_info = f"\n- **Source:** [{source_url}]({source_url})" if source_url else ""
+
+    content = f"""---
+title: "Video Transcript: {author} - {tweet_id}"
+date_created: {today}
+date_modified: {today}
+summary: "Full transcript of video from tweet {tweet_id} by @{author}"
+tags: [video-transcript, {author}]
+type: source
+status: draft
+---
+
+**Author:** @{author}
+**Tweet ID:** {tweet_id}{duration_info}{source_info}
+
+## Transcript
+
+{transcript}
+"""
+    Path(path).write_text(content)
+    # Update path to .md extension
     return path
 
 
@@ -1508,7 +1531,10 @@ def _extract_content(client: XClient, tweet: Dict, includes: Dict, entry: Dict,
                     print(f"    Fetching YouTube transcript: {expanded}")
                     transcript = fetch_youtube_transcript(sc_key, expanded)
                     if transcript:
-                        path = write_transcript_file(transcript, author, tweet_id, wiki_root)
+                        path = write_transcript_file(
+                            transcript, author, tweet_id, wiki_root,
+                            source_url=expanded
+                        )
                         entry["phase1"]["files_created"]["youtube_transcripts"].append(path)
                         print(f"    ✓ YouTube transcript → {path}")
                     else:
@@ -1702,7 +1728,11 @@ def run_phase2(manifest: Dict, config: Dict):
 
                     # Also save transcript from analysis if present
                     if analysis.get("transcript"):
-                        t_path = write_transcript_file(analysis["transcript"], author, tweet_id, wiki_root)
+                        t_path = write_transcript_file(
+                            analysis["transcript"], author, tweet_id, wiki_root,
+                            duration=f"{duration:.0f}s",
+                            source_url=f"https://x.com/{author}/status/{tweet_id}"
+                        )
                         entry["phase2"]["video_transcripts"].append({"path": t_path, "method": "gemini_pro"})
             else:
                 # >2 min → Whisper
@@ -1711,7 +1741,11 @@ def run_phase2(manifest: Dict, config: Dict):
                 if extract_audio(vid_path, audio_path):
                     transcript = transcribe_whisper(audio_path, openai_key)
                     if transcript:
-                        t_path = write_transcript_file(transcript, author, tweet_id, wiki_root)
+                        t_path = write_transcript_file(
+                            transcript, author, tweet_id, wiki_root,
+                            duration=f"{duration:.0f}s",
+                            source_url=f"https://x.com/{author}/status/{tweet_id}"
+                        )
                         entry["phase2"]["video_transcripts"].append({"path": t_path, "method": "whisper"})
                         print(f"    ✓ Transcript → {os.path.basename(t_path)}")
                     # Cleanup audio
