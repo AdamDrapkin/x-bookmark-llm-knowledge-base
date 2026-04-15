@@ -353,3 +353,24 @@ Desde mi ignorancia máxima de edición de vídeo, junto con Re _(added 2026-04-
 a company just raised $7.5 million  _(added 2026-04-14)_
 - [[sharbel-2036463312666247485]] — &gt; you download a therapy app because youre struggling
 &gt; you tell it your darkest fears, your t _(added 2026-04-14)_
+- [[adxtyahq-2027662487785808134]] — https://t.co/KZyKqkbMnH _(added 2026-04-15)_
+- [[AlbiaHossain-2027648600097054727]] — Design websites that should be illegal to know:
+
+Backgrounds → grainient. supply
+Inspiration → curat _(added 2026-04-15)_
+- [[itsandrewgao-2027579200635605058]] — you can instantly 10x your vibecoded frontends by just learning what different ui components are cal _(added 2026-04-15)_
+- [[noahvnct-2027435582461259997]] — https://t.co/MpSGVYBF2x _(added 2026-04-15)_
+- [[alex_prompter-2027684564324548951]] — Here's the mega prompt for building SKILLS in Claude:
+
+(Copy and paste this prompt in Claude. After  _(added 2026-04-15)_
+- [[godofprompt-2027662791763759504]] — Repo link: https://t.co/0LIKJa8JHZ _(added 2026-04-15)_
+- [[alex_prompter-2027659595599253892]] — This is AMAZING.. someone just built an App Store for Claude Code.
+
+It's called SkillsMP and there a _(added 2026-04-15)_
+- [[Meer_AIIT-2027509711722188976]] — https://t.co/A5FeXovAzK _(added 2026-04-15)_
+- [[JamesEbringer-2027504630817603638]] — TIKTOK SLIDESHOW CLONER JUST DROPPED IN STUNT
+
+Paste any viral slideshow. AI recreates it with your  _(added 2026-04-15)_
+- [[milesdeutscher-2027452429311283253]] — Perplexity just took its shot at killing OpenClaw, and I'm completely blown away.
+
+Their new Compute _(added 2026-04-15)_

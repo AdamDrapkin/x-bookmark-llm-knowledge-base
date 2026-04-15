@@ -1,0 +1,19 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "README\nContributing\nMIT license\n\nClaude Cookbooks\n\nThe Claude Cookbooks provide code and guides designed to help developers build with Claude, offering copy-able\ncode snippets that you can easily integrate into your own projects.\n\nPrerequisites\n\nTo make the most of the examples in this cookbook, you'll need a Claude API key (sign up for free here).\n\nWhile the code examples are primarily written in Python, the concepts can be adapted to any programming\nlanguage that supports interaction with the Claude API.\n\nIf you're new to working with the Claude API, we recommend starting with our Claude API Fundamentals course to\nget a solid foundation.\n\nExplore Further\n\nLooking for more resources to enhance your experience with Claude and AI assistants? Check out these helpful\nlinks:\n\n*   Anthropic developer documentation\n*   Anthropic support docs\n*   Anthropic Discord community\n\nContributing\n\nThe Claude Cookbooks thrives on the contributions of the developer community. We value your input, whether it's\nsubmitting an idea, fixing a typo, adding a new guide, or improving an existing one. By contributing, you help make\nthis resource even more valuable for everyone.",
+  "summary": "This document introduces \"Claude Cookbooks,\" a resource offering code and guides for developers to build with Claude. It outlines prerequisites, such as needing a Claude API key, and suggests a fundamentals course for new users. The document also provides links for further exploration and encourages community contributions to enhance the resource.",
+  "key_concepts": [
+    "Claude Cookbooks",
+    "Claude API",
+    "API key",
+    "Python",
+    "Claude API Fundamentals course",
+    "Anthropic developer documentation",
+    "Anthropic support docs",
+    "Anthropic Discord community",
+    "Community contributions"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "digital art",
+    "primary_purpose": "marketing"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "4:3",
+    "layout": "single subject/multi-element/layered",
+    "focal_points": [
+      "Glowing orb in the upper-middle",
+      "Text 'Create with no limitations' in the lower-middle"
+    ],
+    "visual_hierarchy": "The eye is drawn first to the bright, pixelated orb and hands, then moves down to read the text.",
+    "balance": "asymmetric - the bright visual element in the upper half is balanced by the text in the lower half and the large expanse of black."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "percentage": "80%",
+        "role": "background"
+      },
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "20%",
+        "role": "primary subject"
+      }
+    ],
+    "color_palette": "monochromatic",
+    "temperature": "neutral",
+    "saturation": "desaturated",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "single source - emanating from the orb",
+    "direction": "diffused from above",
+    "directionality": "moderately directional",
+    "quality": "soft light/dramatic/sculpted",
+    "intensity": "moderate/low-key",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "mysterious/dramatic/inspiring",
+    "shadows": {
+      "type": "minimal",
+      "density": "deep black",
+      "placement": "around the hand and orb, forming the negative space",
+      "length": "N/A"
+    },
+    "highlights": {
+      "treatment": "preserved/specular",
+      "placement": "on the orb and the contours of the hand"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital painting",
+    "style": "stylized/minimalist",
+    "texture": "grainy/dithered",
+    "sharpness": "deliberately soft/pixelated",
+    "grain": "intentional grain - high level (pixelation)",
+    "depth_of_field": "N/A - subject isolated against a flat background",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "conceptual/graphic design",
+    "influences": [
+      "Pixel art",
+      "Dithering",
+      "Retro computing graphics"
+    ],
+    "mood": "energetic/dramatic/sophisticated",
+    "atmosphere": "Evokes a sense of creation, potential, and digital artistry, with a futuristic and inspiring tone.",
+    "visual_style": "clean/geometric/structured"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "serif",
+        "weight": "regular",
+        "characteristics": "modern/elegant/serious"
+      }
+    ],
+    "placement": "overlay - centered horizontally in the lower half of the image",
+    "integration": "prominent"
+  },
+  "subject_analysis": {
+    "primary_subject": "A human hand holding a glowing, pixelated orb.",
+    "positioning": "center - the hand and orb are centered horizontally in the upper-middle section, slightly above the vertical center.",
+    "scale": "medium",
+    "interaction": "The hand is actively holding and seemingly containing the glowing orb.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "no smile",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "Cupped, holding the orb from below and the left side. The thumb is visible on the left, curled around the orb.",
+      "right_hand": "Cupped, holding the orb from below and the right side. Fingers are curled around the orb.",
+      "finger_positions": "curled/spread",
+      "finger_interlacing": "N/A",
+      "hand_tension": "relaxed/natural",
+      "interaction": "The hands are cradling and supporting the glowing orb.",
+      "naturalness": "organic casual"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "abstract",
+    "spatial_depth": "shallow - the subject is isolated against a flat black background.",
+    "elements_detailed": [],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Glowing orb (center-top), Human hands (center-top).",
+    "background_treatment": "minimal/gradient"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Dithering pixel art of hands cupping a glowing orb, black background, high contrast, white pixels only, minimalist, retro digital aesthetic.",
+      "Graphic design, human hands holding a luminous sphere, rendered in 1-bit pixel art style, stark black and white, with elegant serif text 'Create with no limitations' below, centered."
+    ],
+    "keywords": [
+      "pixel art",
+      "dithering",
+      "glowing orb",
+      "hands",
+      "black and white",
+      "minimalist",
+      "creation",
+      "limitless",
+      "digital art",
+      "retro"
+    ],
+    "technical_settings": "1-bit color depth, high resolution for pixel detail, dithered rendering, sharp pixel edges.",
+    "post_processing": "Monochromatic conversion, dithering filter application, text overlay."
+  },
+  "text_content": {
+    "headlines": [
+      "Create with no limitations"
+    ],
+    "body_text": [],
+    "visible_urls": [],
+    "metadata": "none"
+  },
+  "image_class": "VISUAL_IMAGE"
+}

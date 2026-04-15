@@ -59,3 +59,4 @@ Videos from X bookmarks are processed based on duration:
 - [[andresmatte-2036061707529834773-video-analysis]] — Video analysis _(added 2026-04-14)_
 - [[DataChaz-2036018412590375281-video-analysis]] — Video analysis _(added 2026-04-14)_
 - [[mattwelter-2036098546827747464-video-analysis]] — Video analysis _(added 2026-04-14)_
+- [[itsandrewgao-2027579200635605058-video-analysis]] — Video analysis _(added 2026-04-15)_

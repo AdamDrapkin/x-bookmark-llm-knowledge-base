@@ -1,0 +1,23 @@
+{
+  "image_type": "text_document",
+  "document_type": "other",
+  "visible_text_full": "ready ~/skillsmp\n$ ai --search\n$ cd /categories\n$ watch stats\n$ man docs\n$ api --docs\nEN\n$ Sign In ->\n\nskills.marketplace\n\n// main.ts\n\n> Agent Skills\nMarketplace|\n> for the open SKILL.md ecosystem\n\nconst skills = 269,875 ;\n// Discover open-source agent skills from GitHub\n\n/**\n* Search with AI semantics or keywords, browse by category, sort\n* by popularity. All skills use the open SKILL.md standard and are\n* ready to install\n*/\n\ntrend-analytics.tsx\n0000\n5000\n0000\n5000\n0\nDec 8 Dec 15 Dec 22 Dec 29 Jan 1 Jan 5 Jan 12 Jan 19 Jan 26 Feb 2 Feb 9 Feb 16\nBased on skill last push time, not same-day commit count\n\nMENTIONED IN\n\nThis Skills marketplace shares even more examples to\ninspire you. Explore community-built skills that extend\nwhat Claude can do--from automated testing and data\nvisualization to code review and domain name\nbrainstorming.\n\nAnthropic\nBuilding skills for Claude Code\n\n\"We've added skills to the deepagent-CLI, making it\npossible to use the large and growing collection of public\nskills.\"\n\nLangChain\nUsing Skills with Deep Agents\n\nskills --list\nready\n\n> Browse Agent Skills\n$ count: 269875 skills available --top=5000 --sort\nstars\nrecent\nBrowsing is limited to the top 5000 skills (out of 269875). Use search to find more.\n\nsearch --ai\nType to filter, or press\nfor AI search.\n+\nfor new line\n$ find Q Search 269875 skills with AI: try 'skills about trading', 'data analysis related skills'...\nQ execute\n\nverify.md\n243.3k\n\nflow.md\n243.3k\n\nfeature-flags.md\n243.3k",
+  "summary": "This document displays the interface of an \"Agent Skills Marketplace\" for the open SKILL.md ecosystem, showcasing 269,875 available open-source agent skills. It features AI-powered search, sorting options, and a trend graph illustrating skill growth over time. The marketplace is highlighted as a resource for community-built skills and is mentioned in the context of platforms like Anthropic and LangChain.",
+  "key_concepts": [
+    "Agent Skills Marketplace",
+    "SKILL.md ecosystem",
+    "Open-source agent skills",
+    "AI semantics search",
+    "Skill growth trend",
+    "Community-built skills",
+    "Automated testing",
+    "Data visualization",
+    "Code review",
+    "Domain name brainstorming",
+    "Deepagent-CLI",
+    "Anthropic",
+    "LangChain"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

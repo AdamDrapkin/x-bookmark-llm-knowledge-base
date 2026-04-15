@@ -1,0 +1,16 @@
+{
+  "image_type": "text_document",
+  "document_type": "other",
+  "visible_text_full": "Good afternoon, Alex\n\nHow can I help you today?\n\n+\nSonnet 4.6\n\nWrite\nLearn\nCode\nLife stuff\nClaude's choice",
+  "summary": "This image displays the welcome screen of an AI assistant, greeting the user 'Alex' and asking how it can help. It presents a text input field along with several predefined categories for interaction, including 'Write', 'Learn', 'Code', 'Life stuff', and 'Claude's choice'. The model version 'Sonnet 4.6' is also visible.",
+  "key_concepts": [
+    "AI assistant interface",
+    "User greeting",
+    "Prompt input",
+    "Interaction categories",
+    "AI model version (Sonnet 4.6)",
+    "Claude (AI name)"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

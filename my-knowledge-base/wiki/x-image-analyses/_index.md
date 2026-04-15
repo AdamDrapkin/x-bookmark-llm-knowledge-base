@@ -60,3 +60,9 @@ All images from X bookmarks are analyzed using Gemini 2.5 Pro Vision for:
 - [[alexxgrowth-2037035092992733624-image-2-analysis]] — Image analysis _(added 2026-04-14)_
 - [[alex_prompter-2036928273830322233-image-1-analysis]] — Image analysis _(added 2026-04-14)_
 - [[godofprompt-2036863105871823116-image-1-analysis]] — Image analysis _(added 2026-04-14)_
+- [[AlbiaHossain-2027648600097054727-image-1-analysis]] — Image analysis _(added 2026-04-15)_
+- [[alex_prompter-2027684550441377855-image-1-analysis]] — Image analysis _(added 2026-04-15)_
+- [[godofprompt-2027662779562529219-image-1-analysis]] — Image analysis _(added 2026-04-15)_
+- [[alex_prompter-2027659595599253892-image-1-analysis]] — Image analysis _(added 2026-04-15)_
+- [[JamesEbringer-2027504630817603638-image-1-analysis]] — Image analysis _(added 2026-04-15)_
+- [[JamesEbringer-2027504630817603638-image-2-analysis]] — Image analysis _(added 2026-04-15)_

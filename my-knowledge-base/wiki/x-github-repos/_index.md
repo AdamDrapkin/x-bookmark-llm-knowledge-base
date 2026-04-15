@@ -27,3 +27,4 @@ _(none yet — processing required)_
 - [[DAIEvolutionHub-2037907310136484036-github-n8n-mcp]] — GitHub repository _(added 2026-04-14)_
 - [[DAIEvolutionHub-2037907310136484036-github-obsidian-skills]] — GitHub repository _(added 2026-04-14)_
 - [[DAIEvolutionHub-2037907310136484036-github-LightRAG]] — GitHub repository _(added 2026-04-14)_
+- [[godofprompt-2027662791763759504-github-claude-cookbooks]] — GitHub repository _(added 2026-04-15)_
