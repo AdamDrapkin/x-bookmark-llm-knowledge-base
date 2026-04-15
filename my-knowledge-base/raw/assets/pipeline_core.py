@@ -870,6 +870,119 @@ def fetch_github_repo(github_url: str) -> Dict[str, str]:
     return result
 
 
+def fetch_x_article_via_api(article_tweet_id: str, api_key: str) -> Dict[str, Any]:
+    """Fetch X.com article content via TwitterAPI.io API.
+
+    Args:
+        article_tweet_id: The tweet ID of the article (from the URL like x.com/i/article/{id})
+        api_key: TwitterAPI.io API key
+
+    Returns:
+        Dict with: title, preview_text, content, cover_image_url, author, created_at, engagement
+    """
+    result = {
+        "article_tweet_id": article_tweet_id,
+        "title": "",
+        "preview_text": "",
+        "content": "",
+        "cover_image_url": "",
+        "author": {},
+        "created_at": "",
+        "engagement": {},
+        "error": None
+    }
+
+    try:
+        resp = requests.get(
+            "https://api.twitterapi.io/twitter/article",
+            params={"tweet_id": article_tweet_id},
+            headers={"X-API-Key": api_key},
+            timeout=30
+        )
+
+        if resp.status_code == 200:
+            data = resp.json()
+            if data.get("status") == "success":
+                article = data.get("article", {})
+                result["title"] = article.get("title", "")
+                result["preview_text"] = article.get("preview_text", "")
+                result["cover_image_url"] = article.get("cover_media_img_url", "")
+                result["author"] = article.get("author", {})
+                result["created_at"] = article.get("createdAt", "")
+                result["engagement"] = {
+                    "reply_count": article.get("replyCount", 0),
+                    "like_count": article.get("likeCount", 0),
+                    "quote_count": article.get("quoteCount", 0),
+                    "view_count": article.get("viewCount", 0),
+                }
+
+                # Combine content blocks into text
+                content_blocks = article.get("contents", [])
+                text_content = []
+                for block in content_blocks:
+                    block_type = block.get("type", "")
+                    if block_type == "unstyled":
+                        text_content.append(block.get("text", ""))
+                    elif block_type in ["header-one", "header-two", "header-three"]:
+                        text_content.append(f"## {block.get('text', '')}")
+                    elif block_type == "unordered-list-item":
+                        text_content.append(f"- {block.get('text', '')}")
+                    elif block_type == "ordered-list-item":
+                        text_content.append(f"1. {block.get('text', '')}")
+                result["content"] = "\n\n".join(text_content)
+            else:
+                result["error"] = data.get("message", "API returned error status")
+        else:
+            result["error"] = f"HTTP {resp.status_code}: {resp.text[:200]}"
+    except Exception as e:
+        result["error"] = str(e)
+
+    return result
+
+
+def fetch_thread_context_via_api(tweet_id: str, api_key: str, cursor: str = "") -> Dict[str, Any]:
+    """Fetch thread context (replies) via TwitterAPI.io API.
+
+    Args:
+        tweet_id: The tweet ID to get thread context for
+        api_key: TwitterAPI.io API key
+        cursor: Pagination cursor (empty string for first page)
+
+    Returns:
+        Dict with: replies, has_next_page, next_cursor, error
+    """
+    result = {
+        "tweet_id": tweet_id,
+        "replies": [],
+        "has_next_page": False,
+        "next_cursor": "",
+        "error": None
+    }
+
+    try:
+        resp = requests.get(
+            "https://api.twitterapi.io/twitter/tweet/thread_context",
+            params={"tweetId": tweet_id, "cursor": cursor},
+            headers={"X-API-Key": api_key},
+            timeout=30
+        )
+
+        if resp.status_code == 200:
+            data = resp.json()
+            if data.get("status") == "success":
+                result["replies"] = data.get("tweets", [])
+                result["has_next_page"] = data.get("has_next_page", False)
+                result["next_cursor"] = data.get("next_cursor", "")
+            else:
+                result["error"] = data.get("message", "API returned error status")
+        else:
+            result["error"] = f"HTTP {resp.status_code}: {resp.text[:200]}"
+    except Exception as e:
+        result["error"] = str(e)
+
+    return result
+
+
 def fetch_external_link_content(url: str) -> Dict[str, str]:
     """Fetch and extract main content from an external URL."""
     result = {"url": url, "title": "", "content": "", "domain": ""}
@@ -1094,17 +1207,20 @@ def get_minimax_client(api_key: str) -> Anthropic:
 def llm_call(client: Anthropic, system_prompt: str, user_content: str,
              model: str = "MiniMax-M2.7", max_tokens: int = 4096) -> str:
     """Make an LLM call to MiniMax M2.7 via Anthropic-compatible API."""
+    # Use streaming for longer requests (>10 min timeout risk)
     response = client.messages.create(
         model=model,
         max_tokens=max_tokens,
         system=system_prompt,
         messages=[{"role": "user", "content": user_content}],
+        stream=True,
     )
-    # Handle both TextBlock and ThinkingBlock response types
-    for block in response.content:
+    # Collect streaming response
+    text_parts = []
+    for block in response:
         if hasattr(block, 'text') and block.text:
-            return block.text
-    raise ValueError(f"LLM returned no text content. Block types: {[type(b).__name__ for b in response.content]}")
+            text_parts.append(block.text)
+    return "".join(text_parts)
 
 
 # ─────────────────────────────────────────────
@@ -1595,17 +1711,75 @@ def _extract_content(client: XClient, tweet: Dict, includes: Dict, entry: Dict,
 
     # X native articles
     if "has_x_article" in flags:
+        # Get TwitterAPI.io key if available
+        twitter_api_key = os.environ.get("TWITTER_API_KEY", "")
+
         for url_entity in tweet.get("entities", {}).get("urls", []):
             expanded = url_entity.get("expanded_url", "")
             if "x.com" in expanded and "/article/" in expanded:
                 print(f"    X article detected: {expanded}")
-                link_info = fetch_external_link_content(expanded)
+
+                # Extract article tweet ID from URL (format: x.com/i/article/{tweet_id})
+                article_tweet_id = expanded.split("/article/")[-1].split("/")[0].split("?")[0]
+
+                if twitter_api_key:
+                    # Use TwitterAPI.io API
+                    article_data = fetch_x_article_via_api(article_tweet_id, twitter_api_key)
+
+                    if article_data.get("error"):
+                        print(f"    ⚠ API error: {article_data['error']}")
+                        # Fall back to legacy method
+                        link_info = fetch_external_link_content(expanded)
+                    else:
+                        # Write article content
+                        title = article_data.get("title", "X Article")
+                        content = article_data.get("content", "")
+                        preview = article_data.get("preview_text", "")
+
+                        path = full_path(wiki_root, f"raw/articles/{author}-{tweet_id}-article.md")
+                        os.makedirs(os.path.dirname(path), exist_ok=True)
+
+                        # Build article content with metadata
+                        article_md = f"""# {title}
+
+**Preview:** {preview}
+
+**Author:** @{article_data.get('author', {}).get('username', author)}
+**Created:** {article_data.get('created_at', '')}
+**Engagement:** {article_data.get('engagement', {}).get('view_count', 0)} views, {article_data.get('engagement', {}).get('like_count', 0)} likes
+
+---
+
+{content}
+"""
+                        Path(path).write_text(article_md)
+                        entry["phase1"]["files_created"]["articles"].append(path)
+                        print(f"    ✓ Article (via API) → {path}")
+
+                        # Download cover image if available
+                        cover_url = article_data.get("cover_image_url", "")
+                        if cover_url:
+                            cover_ext = cover_url.split(".")[-1].split("?")[0]
+                            if cover_ext not in ("jpg", "jpeg", "png", "webp"):
+                                cover_ext = "jpg"
+                            cover_filename = f"{author}-{tweet_id}-article-cover.{cover_ext}"
+                            cover_dest = full_path(wiki_root, f"raw/x-article-images/{cover_filename}")
+                            if download_file(cover_url, cover_dest):
+                                entry["phase1"]["files_created"]["images"].append(cover_dest)
+                                print(f"    ✓ Article cover image → {cover_filename}")
+
+                        continue
+                else:
+                    # No API key - try legacy method
+                    print(f"    ⚠ No TWITTER_API_KEY - using legacy fetch")
+                    link_info = fetch_external_link_content(expanded)
+
                 if link_info.get("content") and len(link_info["content"]) > 100:
                     path = full_path(wiki_root, f"raw/articles/{author}-{tweet_id}-article.md")
                     os.makedirs(os.path.dirname(path), exist_ok=True)
                     Path(path).write_text(f"# {link_info.get('title', 'X Article')}\n\n{link_info['content']}")
                     entry["phase1"]["files_created"]["articles"].append(path)
-                    print(f"    ✓ Article → {path}")
+                    print(f"    ✓ Article (legacy) → {path}")
                 else:
                     print(f"    ⚠ X article content inaccessible — flagging for browser fallback")
                     entry["phase1"]["status"] = "needs_fallback"
@@ -2212,7 +2386,7 @@ This repository was shared by @{author} in [tweet](https://x.com/{author}/status
                 qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
 
             try:
-                qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=8192)
+                qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=32000)
 
                 # Parse JSON from response
                 # Strip markdown fences if present
@@ -2229,7 +2403,7 @@ This repository was shared by @{author} in [tweet](https://x.com/{author}/status
                     print(f"    ⚠ QA validation failed: {errors[:3]}...")
                     print(f"    Retrying QA council...")
                     error_feedback = f"Previous attempt had validation errors:\n{chr(10).join(errors[:5])}\n\nPlease fix these issues and regenerate."
-                    qa_response2 = llm_call(mm_client, qa_skill, qa_input + "\n\n" + error_feedback, max_tokens=8192)
+                    qa_response2 = llm_call(mm_client, qa_skill, qa_input + "\n\n" + error_feedback, max_tokens=32000)
                     clean2 = qa_response2.strip()
                     if clean2.startswith("```"):
                         clean2 = re.sub(r"^```\w*\n?", "", clean2)
@@ -2961,7 +3135,7 @@ def check_and_run_qa_if_needed(config: Dict):
 
     print(f"\n  ═══ QA COUNCIL TRIGGERED: {len(uncovered)} uncovered sources ═══")
 
-    # Process in batches of 20 to avoid JSON truncation
+    # Process in batches to avoid JSON truncation
     batch_size = 20
     total_batches = (len(uncovered) + batch_size - 1) // batch_size
 
@@ -3002,8 +3176,7 @@ def check_and_run_qa_if_needed(config: Dict):
         qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
 
         try:
-            qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=8192)
-            print(f"    DEBUG: QA response length = {len(qa_response)}")
+            qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=32000)
 
             # Parse JSON - handle non-JSON preamble
             clean = qa_response.strip()
@@ -3035,90 +3208,64 @@ def check_and_run_qa_if_needed(config: Dict):
         return
 
     print(f"\n  ✓ QA Council: {successful_count} sources processed in {len(all_qa_results)} batches")
-        qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=8192)
 
-        # Debug: log response length and preview
-        print(f"  DEBUG: QA response length = {len(qa_response)}")
-        print(f"  DEBUG: first 300 chars: {qa_response[:300]}")
+    # Save merged results
+    batch_id = f"qa_{today_str()}_{successful_count}_batched"
 
-        # Parse JSON - handle non-JSON preamble and common issues
-        clean = qa_response.strip()
+    # Merge all batch results into one
+    all_source_questions = []
+    all_synthesis_questions = []
+    concept_index_updates = []
 
-        # Find JSON start - look for first { or [
-        brace_pos = clean.find('{')
-        bracket_pos = clean.find('[')
-
-        if brace_pos == -1 and bracket_pos == -1:
-            print(f"  ✗ QA Council response doesn't contain JSON")
-            return
-
-        json_start = min(b for b in [brace_pos, bracket_pos] if b >= 0)
-        print(f"  DEBUG: JSON starts at position {json_start}")
-
-        if json_start > 0:
-            print(f"  DEBUG: skipping preamble: {clean[:json_start][:100]}")
-
-        clean = clean[json_start:]
-        if clean.startswith("```"):
-            clean = re.sub(r"^```\w*\n?", "", clean)
-            clean = re.sub(r"\n?```$", "", clean)
-
-        print(f"  DEBUG: cleaned response preview = {clean[:200]}")
-
-        # Try to fix common JSON issues
-        try:
-            qa_json = json.loads(clean)
-        except json.JSONDecodeError as e:
-            # Try to fix unterminated strings by truncating at the error point
-            print(f"  ⚠ JSON parse error: {e.msg} - attempting repair")
-            # Find the approximate end and try to close it
-            lines = clean.split('\n')
-            # Remove the problematic line and any after it
-            safe_lines = lines[:max(0, e.lineno - 1)] if e.lineno else lines
-            clean_fixed = '\n'.join(safe_lines)
-            # Try to close any open structures
-            if clean_fixed.count('{') > clean_fixed.count('}'):
-                clean_fixed += '}'
-            if clean_fixed.count('[') > clean_fixed.count(']'):
-                clean_fixed += ']'
-            qa_json = json.loads(clean_fixed)
-            print(f"  ✓ JSON repaired successfully")
-
-        # Validate
-        valid, errors = _validate_qa(qa_json, source_contents, wiki_root)
-        if not valid:
-            print(f"  ⚠ QA validation issues: {errors[:3]}")
-
-        # Save
-        qa_path = full_path(wiki_root, f"wiki/qa-pairs/{batch_id}-qa.json")
-        os.makedirs(os.path.dirname(qa_path), exist_ok=True)
-        with open(qa_path, "w") as f:
-            json.dump(qa_json, f, indent=2)
-
-        # Merge concept index
+    for qa_json in all_qa_results:
+        all_source_questions.extend(qa_json.get("source_questions", []))
+        all_synthesis_questions.extend(qa_json.get("synthesis_questions", []))
         if qa_json.get("concept_index_update"):
-            _merge_concept_index(qa_json["concept_index_update"], concept_index_path, concept_index)
+            concept_index_updates.append(qa_json["concept_index_update"])
 
-        # Reset counter
-        concept_index["sources_since_last_qa"] = 0
-        concept_index["total_sources_processed"] = len(all_source_slugs)
-        with open(concept_index_path, "w") as f:
-            json.dump(concept_index, f, indent=2)
+    merged_qa = {
+        "frontmatter": {
+            "title": f"QA: Batch {successful_count}",
+            "date_created": today_str(),
+            "date_modified": today_str(),
+            "summary": f"Generated from {successful_count} sources in {len(all_qa_results)} batches",
+            "tags": ["qa", "batch"],
+            "type": "output",
+            "status": "final"
+        },
+        "source_questions": all_source_questions,
+        "synthesis_questions": all_synthesis_questions,
+        "concept_index_update": concept_index_updates[0] if concept_index_updates else {}
+    }
 
-        # Update QA index
-        update_index_file(
-            full_path(wiki_root, "wiki/qa-pairs/_index.md"),
-            batch_id, f"{len(source_contents)} sources, QA generated (event trigger)"
-        )
+    # Save merged QA
+    qa_path = full_path(wiki_root, f"wiki/qa-pairs/{batch_id}-qa.json")
+    os.makedirs(os.path.dirname(qa_path), exist_ok=True)
+    with open(qa_path, "w") as f:
+        json.dump(merged_qa, f, indent=2)
 
-        # Log to outputs
-        log_msg = f"[{today_str()}] QA Council triggered: {len(source_contents)} sources → {batch_id}-qa.json\n"
-        append_to_file(full_path(wiki_root, "wiki/outputs/pipeline-live.log"), log_msg)
-        update_index_file(full_path(wiki_root, "wiki/outputs/_index.md"), batch_id, "QA batch (event trigger)")
+    # Merge concept index
+    if merged_qa.get("concept_index_update"):
+        _merge_concept_index(merged_qa["concept_index_update"], concept_index_path, concept_index)
 
-        print(f"  ✓ QA → {batch_id}-qa.json ({len(source_contents)} sources)")
-    except Exception as e:
-        print(f"  ✗ QA Council failed: {e}")
+    # Reset counter
+    concept_index["sources_since_last_qa"] = 0
+    concept_index["total_sources_processed"] = len(all_source_slugs)
+    with open(concept_index_path, "w") as f:
+        json.dump(concept_index, f, indent=2)
+
+    # Update QA index
+    update_index_file(
+        full_path(wiki_root, "wiki/qa-pairs/_index.md"),
+        batch_id, f"{successful_count} sources, QA generated in {len(all_qa_results)} batches"
+    )
+
+    # Log to outputs
+    log_msg = f"[{today_str()}] QA Council: {successful_count} sources → {batch_id}-qa.json ({len(all_qa_results)} batches)\n"
+    append_to_file(full_path(wiki_root, "wiki/outputs/pipeline-live.log"), log_msg)
+    update_index_file(full_path(wiki_root, "wiki/outputs/_index.md"), batch_id, "QA batch (event trigger)")
+
+    print(f"  ✓ QA → {batch_id}-qa.json ({successful_count} sources, {len(all_qa_results)} batches)")
 
 
 def increment_qa_source_counter(config: Dict, count: int = 1):

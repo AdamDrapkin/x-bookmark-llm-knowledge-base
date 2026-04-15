@@ -1,7 +1,7 @@
 ---
 title: Backlog Log
 date_created: 2026-04-09
-date_modified: 2026-04-11
+date_modified: 2026-04-15
 summary: Tracking processed bookmarks from the backlog
 tags: [backlog, tracking]
 type: output
@@ -10,15 +10,21 @@ status: draft
 
 # Backlog Processing Log
 
-## Current Status (as of 2026-04-11)
+## Current Status (as of 2026-04-15)
 
 | Metric | Count |
 |--------|-------|
-| Total Bookmarks | 874 |
-| Classified | 874 |
+| Total Bookmarks | 875 |
+| Classified | 875 |
 | Unclassified | 0 |
-| Processed | 35 |
-| Remaining | 839 |
+| Processed (sources in wiki) | 146 |
+| Remaining | 729 |
+
+## Issues Identified
+
+- QA Council failing: LLM JSON truncation with large batches
+- Lint errors: 1637 broken links (mostly 1-2 mention items)
+- 130 stub pages created for 3+ mention wikilinks
 
 ## Batch Progress
 
@@ -27,8 +33,19 @@ status: draft
 | Batch 1 | 1-10 | 2026-04-09 | 10 | 10 | processed |
 | Batch 2 | 11-20 | 2026-04-10 | 10 | 20 | processed |
 | Batch 3 | 21-30 | 2026-04-10 | 10 | 30 | processed |
-| Batch 4 | 31-40 | - | - | 40 | next |
-| Batch 5 | 41-50 | - | - | 50 | not_started |
+| Batch 4 | 31-40 | 2026-04-14 | 10 | 40 | processed |
+| Batch 5 | 41-50 | 2026-04-14 | 10 | 50 | processed |
+| Batch 6 | 51-60 | 2026-04-14 | 10 | 60 | processed |
+| Batch 7 | 61-70 | 2026-04-14 | 10 | 70 | processed |
+| Batch 8 | 71-80 | 2026-04-14 | 10 | 80 | processed |
+| Batch 9 | 81-90 | 2026-04-14 | 10 | 90 | processed |
+| Batch 10 | 91-100 | 2026-04-14 | 10 | 100 | processed |
+| Batch 11 | 101-110 | 2026-04-14 | 10 | 110 | processed |
+| Batch 12 | 111-120 | 2026-04-14 | 10 | 120 | processed |
+| Batch 13 | 121-130 | 2026-04-14 | 10 | 130 | processed |
+| Batch 14 | 131-140 | 2026-04-14 | 10 | 140 | processed |
+| Batch 15 | 141-146 | 2026-04-14 | 6 | 146 | processed |
+| Batch 16 | 147+ | - | 0 | 146 | next |
 | Batch 6 | 51-60 | - | - | 60 | not_started |
 | Batch 7 | 61-70 | - | - | 70 | not_started |
 | Batch 8 | 71-80 | - | - | 80 | not_started |
