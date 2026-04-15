@@ -2386,7 +2386,7 @@ This repository was shared by @{author} in [tweet](https://x.com/{author}/status
                 qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
 
             try:
-                qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=32000)
+                qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=128000)
 
                 # Parse JSON from response
                 # Strip markdown fences if present
@@ -2403,7 +2403,7 @@ This repository was shared by @{author} in [tweet](https://x.com/{author}/status
                     print(f"    ⚠ QA validation failed: {errors[:3]}...")
                     print(f"    Retrying QA council...")
                     error_feedback = f"Previous attempt had validation errors:\n{chr(10).join(errors[:5])}\n\nPlease fix these issues and regenerate."
-                    qa_response2 = llm_call(mm_client, qa_skill, qa_input + "\n\n" + error_feedback, max_tokens=32000)
+                    qa_response2 = llm_call(mm_client, qa_skill, qa_input + "\n\n" + error_feedback, max_tokens=128000)
                     clean2 = qa_response2.strip()
                     if clean2.startswith("```"):
                         clean2 = re.sub(r"^```\w*\n?", "", clean2)
@@ -3176,7 +3176,7 @@ def check_and_run_qa_if_needed(config: Dict):
         qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
 
         try:
-            qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=32000)
+            qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=128000)
 
             # Parse JSON - handle non-JSON preamble
             clean = qa_response.strip()
