@@ -1,0 +1,16 @@
+{
+  "image_type": "text_document",
+  "document_type": "system_prompt",
+  "visible_text_full": "Back at it, Alex\n\nHow can I help you today?\n+\nSonnet 4.6\n|||\nWrite\nLearn\nCode\nLife stuff\nClaude's choice\nMcKinsey\n& Company",
+  "summary": "This image displays the user interface of an AI assistant, possibly named Claude, customized for McKinsey & Company. It greets the user \"Alex\" and prompts them with \"How can I help you today?\", offering various interaction modes such as writing, learning, coding, and general assistance. The AI model currently in use is identified as \"Sonnet 4.6\".",
+  "key_concepts": [
+    "AI Assistant",
+    "Conversational UI",
+    "AI model (Sonnet 4.6)",
+    "User interaction modes",
+    "Custom branding (McKinsey & Company)",
+    "Personalization"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

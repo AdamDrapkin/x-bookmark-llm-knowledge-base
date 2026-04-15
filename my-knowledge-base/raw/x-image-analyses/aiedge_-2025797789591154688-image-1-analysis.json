@@ -1,0 +1,23 @@
+{
+  "image_type": "text_document",
+  "document_type": "tutorial",
+  "visible_text_full": "THE CLAUDE SKILLS CHEATSHEET\n\nThe Core Problem\nLong workflows suffer from context-window overload.\nContext Window Overload\n\u2022 Critical instructions can get buried or truncated.\n\u2022 The model wastes tokens on irrelevant content.\n\u2022 Responses become inconsistent or misaligned with specialized\nprocedures.\nSkills fix this by externalizing and modularizing procedural\nknowledge.\n\u2022 Loads only the metadata (name, description) upfront.\n\u2022 Pulls in task-specific instructions and code only when\nrelevant.\n\u2022 Keeps the context lightweight and focused, freeing tokens\nfor actual reasoning and user data.\nSkills give Claude on-demand access to reusable expertise, avoiding\ncontext waste while preserving precision.\n\nHow Skills Work\nDynamic Loading: Claude scans available Skills and activates\nrelevant ones automatically.\nProgressive Disclosure: Loads metadata first (name,\ndescription), then full content when needed.\nComposable: Multiple Skills can stack and coordinate.\nPortable: Same structure works across Claude Apps, Code, and\nAPI.\nExecutable: Can run code inside a sandbox for deterministic\nresults.\n\nSkill Structure\nEach Skill is a folder with:\nskill.md -\nMetadata + task\ninstructions (YAML +\nMarkdown)\nResources/ -\nReference docs,\ntemplates, brand\nassets, data files\nScripts/ -\nOptional executable\ncode (.py, .js, etc.)\n\nRequired YAML frontmatter:\n\u2022 Name: Data Cleaning\n\u2022 Description: Apply data cleaning and normalization in CSV files\n\u2022 Version: 1.0.0\n\u2022 Dependencies: python>=3.8, pandas>=1.5.0\n\nComparison to Other Claude Features\nProjects -> Background context for a workspace\nMCP -> External tool & data access\nCustom Instructions -> Global persona & preferences\nSkills -> On-demand procedural knowledge\n\nBuilt-in Anthropic Skills\nEnhanced Excel\nmanipulation\nPowerPoint generation\nWord and PDF document\ncreation\n\nCustom Skill Examples\nCRM automation\nLegal clause review\nSEO content\nstructuring\nSprint planning &\nestimation\nFinancial modeling\n(DCF, comps,\nvaluation)\n\nBest Practices\n\u2022 Start with simple Markdown instructions -> add code later.\n\u2022 Write specific descriptions (trigger precision matters).\n\u2022 Test across multiple prompt phrasings.\n\u2022 Create one focused Skill per workflow.\n\u2022 Include sample inputs/outputs for clarity.\n\u2022 Version each release for rollback.\n\nSecurity & Risks\nRuns in secure sandbox environment (no persistence).\nRisks:\n\u2022 Prompt injection, malicious packages, data leaks.\nMitigation:\n\u2022 Audit all third-party Skills before enabling.\n\u2022 Inspect all scripts/resources.\n\u2022 Never include secrets or credentials.",
+  "summary": "This document is a cheatsheet explaining Claude Skills, designed to address context-window overload by modularizing procedural knowledge. It details how Skills function through dynamic loading and progressive disclosure, their structural components, and provides examples of both built-in and custom applications. The document also outlines best practices for creating effective Skills and discusses security risks like prompt injection and data leaks, along with mitigation strategies.",
+  "key_concepts": [
+    "Claude Skills",
+    "Context Window Overload",
+    "Dynamic Loading",
+    "Progressive Disclosure",
+    "Skill Structure",
+    "YAML frontmatter",
+    "Built-in Anthropic Skills",
+    "Custom Skill Examples",
+    "Best Practices",
+    "Security & Risks",
+    "Prompt Injection",
+    "Data Leaks",
+    "Mitigation"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

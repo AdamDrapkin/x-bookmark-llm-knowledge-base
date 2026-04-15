@@ -374,3 +374,49 @@ Paste any viral slideshow. AI recreates it with your  _(added 2026-04-15)_
 - [[milesdeutscher-2027452429311283253]] — Perplexity just took its shot at killing OpenClaw, and I'm completely blown away.
 
 Their new Compute _(added 2026-04-15)_
+- [[rohit4verse-2026359771427991764]] — watched another agentic ai project crash last week. the exact same mistake everyone makes.
+
+over 40% _(added 2026-04-15)_
+- [[DataChaz-2026335537888702627]] — PowerPoint is officially dead.
+
+With Gemini Pro 3.1, anyone can now design breathtaking slide decks  _(added 2026-04-15)_
+- [[ihtesham2005-2026264341419528643]] — 🚨 Someone just built a tool that turns any GitHub repo into an interactive knowledge graph and open  _(added 2026-04-15)_
+- [[LinusEkenstam-2026263502030303290]] — No way Seedance 2.0 was trained on the Transformers franchise 
+
+ https://t.co/YFN8nGsbcL _(added 2026-04-15)_
+- [[gregisenberg-2026036464287412412]] — how to use obsidian + claude code to build a 24/7 personal operating system and build your startup:
+ _(added 2026-04-15)_
+- [[dhasandev-2009529865511555506]] — https://t.co/IQi5DOZILJ _(added 2026-04-15)_
+- [[sentient_agency-2026234384379244740]] — Fuck it.
+
+Someone just leaked the full system prompts for Claude Code, Cursor, Devin, v0, Windsurf.. _(added 2026-04-15)_
+- [[alex_prompter-2026085883019984964]] — Steal my prompt to rewire your brain for optimism using actual neuroscience.
+
+Harvard found optimist _(added 2026-04-15)_
+- [[startupideaspod-2026034752009211953]] — https://t.co/OhlXwtOMry _(added 2026-04-15)_
+- [[damienghader-2025935095064846586]] — https://t.co/nMi1ZSC6KN _(added 2026-04-15)_
+- [[fba-2025926581546352900]] — If you run a SaaS and you haven't published an llms.txt file yet, it's time.
+
+Vercel did it. 
+
+10% o _(added 2026-04-15)_
+- [[milesdeutscher-2025920070539760104]] — I've spent the past year curating the best AI feed in the space.
+
+These 50 accounts are the reason I _(added 2026-04-15)_
+- [[godofprompt-2025884386001138056]] — Steal this Openclaw mega prompt to build an agent for writing viral X articles:
+
+---
+
+## ROLE
+You ar _(added 2026-04-15)_
+- [[amirmxt-2025873165680005298]] — I genuinely cannot read anything more than a paragraph but let me tell you
+
+you should definitely re _(added 2026-04-15)_
+- [[alex_prompter-2025871696444735570]] — AI can now build financial models like McKinsey's $50,000 consultants.
+
+Prompts that generate DCF mo _(added 2026-04-15)_
+- [[aiedge_-2025797789591154688]] — My ULTIMATE Claude Skills Cheatsheet.
+
+Best practices, skills, security tips, and more.
+
+Literally e _(added 2026-04-15)_

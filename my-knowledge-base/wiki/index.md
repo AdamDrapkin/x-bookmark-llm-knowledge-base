@@ -257,3 +257,13 @@ status: draft
 - [[Meer_AIIT-2027509711722188976]] — Source from batch live_2026-04-15_001 _(added 2026-04-15)_
 - [[JamesEbringer-2027504630817603638]] — Source from batch live_2026-04-15_001 _(added 2026-04-15)_
 - [[milesdeutscher-2027452429311283253]] — Source from batch live_2026-04-15_001 _(added 2026-04-15)_
+- [[rohit4verse-2026359771427991764]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[DataChaz-2026335537888702627]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[ihtesham2005-2026264341419528643]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[LinusEkenstam-2026263502030303290]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[gregisenberg-2026036464287412412]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[dhasandev-2009529865511555506]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[sentient_agency-2026234384379244740]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[alex_prompter-2026085883019984964]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[startupideaspod-2026034752009211953]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_
+- [[damienghader-2025935095064846586]] — Source from batch live_2026-04-15_002 _(added 2026-04-15)_

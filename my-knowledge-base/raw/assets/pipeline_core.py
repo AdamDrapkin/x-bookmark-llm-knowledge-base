@@ -2961,18 +2961,9 @@ def check_and_run_qa_if_needed(config: Dict):
 
     print(f"\n  ═══ QA COUNCIL TRIGGERED: {len(uncovered)} uncovered sources ═══")
 
-    # Load source contents
-    source_contents = []
-    for slug in sorted(uncovered):
-        spath = full_path(wiki_root, f"wiki/sources/{slug}.md")
-        if os.path.exists(spath):
-            source_contents.append({
-                "slug": slug,
-                "content": Path(spath).read_text(),
-            })
-
-    if not source_contents:
-        return
+    # Process in batches of 20 to avoid JSON truncation
+    batch_size = 20
+    total_batches = (len(uncovered) + batch_size - 1) // batch_size
 
     # Run QA council
     minimax_key = os.environ.get("MINIMAX_API_KEY") or os.environ.get("ANTHROPIC_API_KEY", "")
@@ -2983,24 +2974,115 @@ def check_and_run_qa_if_needed(config: Dict):
         qa_skill = load_skill_prompt(api_prompt_path)
     else:
         qa_skill = load_skill_prompt(config["skills"]["qa_council"])
-    batch_id = f"qa_{today_str()}_{len(source_contents)}"
 
-    qa_input = f"Batch ID: {batch_id}\nSources in batch: {len(source_contents)}\n\n"
-    for sc in source_contents:
-        qa_input += f"### {sc['slug']}\n{sc['content'][:2000]}\n\n---\n\n"
+    # Load all source contents
+    source_contents_map = {}
+    for slug in sorted(uncovered):
+        spath = full_path(wiki_root, f"wiki/sources/{slug}.md")
+        if os.path.exists(spath):
+            source_contents_map[slug] = Path(spath).read_text()
 
-    qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
+    all_qa_results = []
+    successful_count = 0
 
-    try:
+    for batch_num in range(total_batches):
+        batch_start = batch_num * batch_size
+        batch_end = min(batch_start + batch_size, len(uncovered))
+        batch_slugs = sorted(uncovered)[batch_start:batch_end]
+
+        batch_id = f"qa_{today_str()}_{batch_num+1}_of_{total_batches}"
+        print(f"  Processing batch {batch_num+1}/{total_batches} ({len(batch_slugs)} sources)...")
+
+        # Build batch input
+        qa_input = f"Batch ID: {batch_id}\nSources in batch: {len(batch_slugs)}\n\n"
+        for slug in batch_slugs:
+            content = source_contents_map.get(slug, "")
+            qa_input += f"### {slug}\n{content[:2000]}\n\n---\n\n"
+
+        qa_input += f"\n## Existing Concept Index\n{json.dumps(concept_index, indent=2)}\n"
+
+        try:
+            qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=8192)
+            print(f"    DEBUG: QA response length = {len(qa_response)}")
+
+            # Parse JSON - handle non-JSON preamble
+            clean = qa_response.strip()
+            brace_pos = clean.find('{')
+            bracket_pos = clean.find('[')
+            if brace_pos == -1 and bracket_pos == -1:
+                print(f"    ✗ No JSON found in response")
+                continue
+            json_start = min(b for b in [brace_pos, bracket_pos] if b >= 0)
+            clean = clean[json_start:]
+            if clean.startswith("```"):
+                clean = re.sub(r"^```\w*\n?", "", clean)
+                clean = re.sub(r"\n?```$", "", clean)
+
+            try:
+                qa_json = json.loads(clean)
+                all_qa_results.append(qa_json)
+                successful_count += len(batch_slugs)
+                print(f"    ✓ Batch {batch_num+1} parsed successfully")
+            except json.JSONDecodeError as e:
+                print(f"    ✗ JSON parse failed: {e.msg} - skipping batch")
+
+        except Exception as e:
+            print(f"    ✗ QA batch failed: {e}")
+            continue
+
+    if not all_qa_results:
+        print("  ✗ No QA batches succeeded")
+        return
+
+    print(f"\n  ✓ QA Council: {successful_count} sources processed in {len(all_qa_results)} batches")
         qa_response = llm_call(mm_client, qa_skill, qa_input, max_tokens=8192)
 
-        # Parse JSON
+        # Debug: log response length and preview
+        print(f"  DEBUG: QA response length = {len(qa_response)}")
+        print(f"  DEBUG: first 300 chars: {qa_response[:300]}")
+
+        # Parse JSON - handle non-JSON preamble and common issues
         clean = qa_response.strip()
+
+        # Find JSON start - look for first { or [
+        brace_pos = clean.find('{')
+        bracket_pos = clean.find('[')
+
+        if brace_pos == -1 and bracket_pos == -1:
+            print(f"  ✗ QA Council response doesn't contain JSON")
+            return
+
+        json_start = min(b for b in [brace_pos, bracket_pos] if b >= 0)
+        print(f"  DEBUG: JSON starts at position {json_start}")
+
+        if json_start > 0:
+            print(f"  DEBUG: skipping preamble: {clean[:json_start][:100]}")
+
+        clean = clean[json_start:]
         if clean.startswith("```"):
             clean = re.sub(r"^```\w*\n?", "", clean)
             clean = re.sub(r"\n?```$", "", clean)
 
-        qa_json = json.loads(clean)
+        print(f"  DEBUG: cleaned response preview = {clean[:200]}")
+
+        # Try to fix common JSON issues
+        try:
+            qa_json = json.loads(clean)
+        except json.JSONDecodeError as e:
+            # Try to fix unterminated strings by truncating at the error point
+            print(f"  ⚠ JSON parse error: {e.msg} - attempting repair")
+            # Find the approximate end and try to close it
+            lines = clean.split('\n')
+            # Remove the problematic line and any after it
+            safe_lines = lines[:max(0, e.lineno - 1)] if e.lineno else lines
+            clean_fixed = '\n'.join(safe_lines)
+            # Try to close any open structures
+            if clean_fixed.count('{') > clean_fixed.count('}'):
+                clean_fixed += '}'
+            if clean_fixed.count('[') > clean_fixed.count(']'):
+                clean_fixed += ']'
+            qa_json = json.loads(clean_fixed)
+            print(f"  ✓ JSON repaired successfully")
 
         # Validate
         valid, errors = _validate_qa(qa_json, source_contents, wiki_root)
