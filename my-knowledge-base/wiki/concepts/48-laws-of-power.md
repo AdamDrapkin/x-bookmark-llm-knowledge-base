@@ -1,17 +1,26 @@
 ---
 title: "48 Laws Of Power"
-date_created: 2026-04-15
-date_modified: 2026-04-15
-summary: "Auto-generated stub for '48 Laws Of Power' - referenced in 4 sources"
-tags: [auto-generated]
+date_created: 2026-04-16
+date_modified: 2026-04-16
+summary: "This framework serves as a tactical manual for understanding and leveraging power dynamics in human interactions through strategic behavior and psychological awareness."
+tags: [concept]
 type: concept
-status: stub
+status: final
 ---
 
 # 48 Laws Of Power
 
-*This page was auto-created because it was linked from 4 sources but had no existing page.*
+**Category:** General
+**Definition:** A set of strategic principles derived from historical examples and psychological insights that guide individuals in acquiring, maintaining, and exercising power in social and professional contexts.
 
-## References
+## Overview
 
-- Referenced in 4 source pages
+The 48 Laws of Power is a philosophical framework synthesizing centuries of political strategy, manipulation tactics, and human behavior analysis into actionable guidelines for navigating power structures. Rooted in historical precedents from figures like Bismarck, Casanova, and various rulers, these laws address themes of dominance, image management, strategic deception, and social maneuvering.
+
+## Related Sources
+
+- [[godofprompt-1993275220342481039]]
+
+## Related Entities
+
+- [[robert-greene]] — Related entity

@@ -1,17 +1,27 @@
 ---
 title: "System Prompt"
-date_created: 2026-04-15
-date_modified: 2026-04-15
-summary: "Auto-generated stub for 'System Prompt' - referenced in 4 sources"
-tags: [auto-generated]
+date_created: 2026-04-16
+date_modified: 2026-04-16
+summary: "System prompts are the primary mechanism for configuring AI model behavior before user interaction begins."
+tags: [concept]
 type: concept
-status: stub
+status: final
 ---
 
 # System Prompt
 
-*This page was auto-created because it was linked from 4 sources but had no existing page.*
+**Category:** Method
+**Definition:** A set of instructions, constraints, and context provided to an AI model before user input to shape its behavior, outputs, and capabilities.
 
-## References
+## Overview
 
-- Referenced in 4 source pages
+A system prompt serves as the foundational layer of instruction for large language models, establishing role definitions, output formats, behavioral boundaries, and domain-specific knowledge. It operates prior to and independent of user queries, functioning as a persistent framework that guides all subsequent interactions within a conversation or session.
+
+## Related Sources
+
+- [[alex_prompter-1994005617246368095]]
+- [[sentient_agency-2026234384379244740]]
+
+## Related Entities
+
+- [[claude-code]] — Related entity

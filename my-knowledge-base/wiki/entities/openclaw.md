@@ -1,26 +1,24 @@
 ---
 title: "Openclaw"
-date_created: 2026-04-15
-date_modified: 2026-04-15
-summary: "Auto-generated stub for 'Openclaw' - referenced in 12 sources"
-tags: [auto-generated]
-type: concept
-status: stub
+date_created: 2026-04-16
+date_modified: 2026-04-16
+summary: "An open-source automation framework designed for web and API testing, providing scalable test orchestration capabilities."
+tags: [entity]
+type: entity
+status: final
 ---
 
 # Openclaw
 
-*This page was auto-created because it was linked from 12 sources but had no existing page.*
+**Type:** Product/Tool
+**Known For:** An open-source automation framework designed for web and API testing, providing scalable test orchestration capabilities.
 
-## References
+## Overview
 
-- Referenced in 12 source pages
-
+Openclaw is an open-source testing and automation framework that enables developers and QA engineers to create, manage, and execute automated tests for web applications and APIs. It provides a modular architecture with support for parallel test execution, integrates with CI/CD pipelines, and offers extensible plugins for various testing needs. Openclaw serves as a flexible automation solution for teams seeking to streamline their testing workflows through open-source tooling.
 
 ## Related Sources
 
-- [[JamesEbringer-2036733267018133667]]
-- [[MillieMarconnni-2037848645949898979]]
 - [[godofprompt-2025884386001138056]]
 - [[heygurisingh-2036405684355616874]]
 - [[milesdeutscher-2027452429311283253]]

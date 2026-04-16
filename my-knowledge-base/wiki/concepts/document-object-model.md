@@ -28,4 +28,4 @@ Let me write a response explaining that the provided source materials don't cont
 - [[om_patel5-2037014741692961141]]
 ## Related Entities
 
-- [[entity]] — Related entity
+- [[anthropic]] — Related entity

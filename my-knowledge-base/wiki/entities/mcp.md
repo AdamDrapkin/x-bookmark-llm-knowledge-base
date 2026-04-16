@@ -1,25 +1,22 @@
 ---
 title: "Mcp"
-date_created: 2026-04-15
-date_modified: 2026-04-15
-summary: "Auto-generated stub for 'Mcp' - referenced in 9 sources"
-tags: [auto-generated]
-type: concept
-status: stub
+date_created: 2026-04-16
+date_modified: 2026-04-16
+summary: "Enabling standardized communication between AI models and external data sources or tools."
+tags: [entity]
+type: entity
+status: final
 ---
 
 # Mcp
 
-*This page was auto-created because it was linked from 9 sources but had no existing page.*
+**Type:** Protocol/Technology Standard
+**Known For:** Enabling standardized communication between AI models and external data sources or tools.
 
-## References
+## Overview
 
-- Referenced in 9 source pages
-
+MCP (Model Context Protocol) is an open protocol designed to facilitate seamless integration between AI systems and various external resources. It provides a standardized framework that allows AI models to access context, data, and capabilities from multiple sources without requiring custom integration code for each connection. The protocol has gained adoption in the AI development community as a way to improve interoperability and reduce fragmentation in AI tooling. MCP serves as a universal adapter layer that standardizes how AI applications connect to and utilize external data, tools, and services.
 
 ## Related Sources
 
-- [[DataChaz-2036018412590375281]]
-- [[aiedge_-2025797789591154688]]
-- [[aigleeson-2037848861591703914]]
-- [[andresmatte-2036061707529834773]]
+- [[om_patel5-2037014741692961141]]

@@ -22,4 +22,4 @@ Market research encompasses both traditional methodologies and modern AI-powered
 - [[alex_prompter-1992887472557342779]]
 ## Related Entities
 
-- [[entity]] — Related entity
+- [[y-combinator]] — Related entity

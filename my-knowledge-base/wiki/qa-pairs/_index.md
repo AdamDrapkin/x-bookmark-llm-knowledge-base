@@ -1,39 +1,30 @@
 ---
-title: QA Pairs Index
-date_created: 2026-04-09
-date_modified: 2026-04-10
-summary: "Batch-mode Q&A generation for AI knowledge base"
-tags: [qa-pairs, index]
+title: "QA Pairs Index"
+date_created: 2026-04-08
+date_modified: 2026-04-16
+summary: "Index of all QA pairs batch files"
+tags: [index, qa]
 type: index
-status: review
+status: final
 ---
 
 # QA Pairs Index
 
-## Concept Index Summary
-- Total Sources Processed: 15
-- Total Batches: 1
-- Unique Concepts: 15
-- Cross-Batch Connections: 3
+## All QA Batches (14)
 
-## Batches
+- [[batch-001-qa]]
+- [[batch-002-qa]]
+- [[batch-003-qa]]
+- [[batch_004_qa]]
+- [[batch_005_qa]]
+- [[batch_006_qa]]
+- [[batch_007_qa]]
+- [[batch_008_qa]]
+- [[batch_009_qa]]
+- [[batch_010_qa]]
+- [[batch_011_qa]]
+- [[concept-index]]
+- [[synthesis_questions_patch]]
+- [[test_2026-04-14-qa]]
 
-| Batch | Sources | Date | Synthesis Questions |
-|-------|---------|------|---------------------|
-| batch_001 | 15 | 2026-04-09 | 4 ✓ |
-
-## Concept Clusters
-
-- **prompt_engineering_tools**: prompt library, D-E-P-T-H Framework, Reality Filter, Protocol for Designing Prompts
-- **ai_business**: workflow automation, AI agent business, workflow wrapper strategy
-- **research_automation**: AI research agent, Perplexity deep research, Feynman
-- **content_creation**: Book Writing Coach, video prompt styles
-- **design_tools**: design system extraction
-
-## Notes
-
-- QA pairs are generated batch-mode (once per batch of sources)
-- Layer 1: 5 questions per source (retrieval) = 75 questions
-- Layer 2: 4 synthesis questions per batch (discovery)
-- Concept index tracks cross-batch connections via wikilinks
-- batch_001: First batch covering prompt engineering, AI agents, research tools, and business applications- [[test_2026-04-14]] — 2 sources, QA generated _(added 2026-04-14)_
+## Total QA Batches (14)

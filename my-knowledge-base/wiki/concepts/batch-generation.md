@@ -22,4 +22,4 @@ Batch Generation refers to the capability of creating multiple advertising image
 - [[EHuanglu-1991560454104313914]]
 ## Related Entities
 
-- [[entity]] — Related entity
+- [[chatgpt]] — Related entity

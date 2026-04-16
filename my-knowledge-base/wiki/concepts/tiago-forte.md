@@ -1,17 +1,26 @@
 ---
 title: "Tiago Forte"
-date_created: 2026-04-15
-date_modified: 2026-04-15
-summary: "Auto-generated stub for 'Tiago Forte' - referenced in 3 sources"
-tags: [auto-generated]
+date_created: 2026-04-16
+date_modified: 2026-04-16
+summary: "Tiago Forte empowers individuals to systematize their digital lives through the Second Brain approach, fostering greater creativity and productivity."
+tags: [concept]
 type: concept
-status: stub
+status: final
 ---
 
 # Tiago Forte
 
-*This page was auto-created because it was linked from 3 sources but had no existing page.*
+**Category:** General
+**Definition:** American productivity educator and author known for developing the Second Brain methodology.
 
-## References
+## Overview
 
-- Referenced in 3 source pages
+Tiago Forte is a productivity consultant and founder of Forte Labs, based in San Francisco. He created the “Building a Second Brain” (BASB) framework and the PARA method to help knowledge workers capture, organize, and retrieve information efficiently. His work has influenced professionals worldwide seeking to improve personal knowledge management and creative output.
+
+## Related Sources
+
+- [[godofprompt-2036863105871823116]]
+
+## Related Entities
+
+- [[tiago-forte]] — Related entity

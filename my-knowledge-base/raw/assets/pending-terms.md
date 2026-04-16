@@ -1,4 +1,3 @@
----
 title: Pending Terms
 date_created: 2026-04-16
 date_modified: 2026-04-16
@@ -6,19 +5,7 @@ summary: Terms with 1-2 mentions that need more references before creating stub 
 tags: [pending, tracking]
 type: output
 status: draft
----
-
-# Pending Terms (1-2 mentions)
-
-Terms linked from sources but not yet having enough mentions (3+) to warrant stub pages.
-
-## Format
-
 Each entry: term: count (count = number of source mentions)
-
-## Terms
-
-```
 mass-posting: 2
 crm: 2
 salesforce: 2
@@ -786,10 +773,9 @@ screen-studio: 1
 mengto-1991489885690364187: 1
 whatsapp-privacy-lawsuit: 1
 meta-privacy-concerns: 1
-```
-
-## Process
-
-1. New terms with 1-2 mentions get added here
-2. When a term reaches 3+ mentions -> create stub page in wiki/concepts/ or wiki/entities/
-3. Remove from this list when stub created
+poshog: mentioned in 2-3 sources (pending stub)ui-patterns: mentioned in 2 sources (related to UI design)
+note-taking: mentioned in 1 source (related to knowledge management)
+google: mentioned in wiki (awaiting more references)
+microsoft: mentioned in wiki (awaiting more references)
+nvidia: mentioned in wiki (awaiting more references)
+openai: mentioned in wiki (awaiting more references)

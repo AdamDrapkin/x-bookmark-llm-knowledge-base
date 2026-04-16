@@ -1,65 +1,156 @@
 ---
 title: "Concepts Index"
 date_created: 2026-04-08
-date_modified: 2026-04-10
-summary: "Index of all concept pages in the wiki"
+date_modified: 2026-04-16
+summary: "Index of all concepts pages in the wiki"
 tags: [index, concepts]
 type: index
-status: draft
+status: final
 ---
 
 # Concepts Index
 
 ## All Concepts (142)
 
-| Page | Summary | Date Added |
-|------|---------|------------|
-| [[agentic-ai]] | AI systems that autonomously plan and execute multi-step tasks | 2026-04-08 |
-| [[ai-business]] | Business models leveraging AI agents | 2026-04-08 |
-| [[workflow-automation]] | Automating business processes through workflows | 2026-04-08 |
-| [[prompt-engineering]] | Crafting effective AI instructions | 2026-04-08 |
-| [[research-automation]] | Using AI to automate research processes | 2026-04-08 |
-| [[video-prompting]] | Crafting effective prompts for AI video generation tools | 2026-04-09 |
-| [[chatgpt]] | OpenAI's conversational AI assistant | 2026-04-10 |
-| [[grok]] | xAI's AI assistant with real-time knowledge | 2026-04-10 |
-| [[copywriting]] | Persuasive marketing text that drives action | 2026-04-10 |
-| [[conversion-optimization]] | Maximizing desired user actions | 2026-04-10 |
-| [[gtm-strategy]] | Go-to-market strategy for product launches | 2026-04-10 |
-| [[icp-development]] | Ideal Customer Profile development | 2026-04-10 |
-| [[tam-analysis]] | Total Addressable Market sizing | 2026-04-10 |
-| [[ai-ad-generation]] | AI-powered advertising imagery at scale | 2026-04-10 |
-| [[critical-thinking]] | Truth-seeking analysis over validation | 2026-04-10 |
-| [[reasoning-frameworks]] | Structured approaches to analysis | 2026-04-10 |
-| [[deep-research]] | AI-powered comprehensive research | 2026-04-10 |
-
-## Category Breakdown
-
-### AI & Agents
+- [[48-laws-of-power]]
 - [[agentic-ai]]
-
-### Business
-- [[ai-business]]
-- [[workflow-automation]]
-
-### Marketing & Sales
-- [[gtm-strategy]]
-- [[icp-development]]
-- [[tam-analysis]]
-- [[copywriting]]
-- [[conversion-optimization]]
+- [[ai]]
 - [[ai-ad-generation]]
-
-### AI Models
+- [[ai-agent]]
+- [[ai-agents]]
+- [[ai-assistant-interface]]
+- [[ai-assisted-coding]]
+- [[ai-assisted-development]]
+- [[ai-assisted-web-development]]
+- [[ai-automation]]
+- [[ai-business]]
+- [[ai-design-agents]]
+- [[ai-design-tools]]
+- [[ai-filmmaking]]
+- [[ai-image-generation]]
+- [[ai-powered-content-automation]]
+- [[ai-productivity]]
+- [[ai-prompts]]
+- [[ai-research]]
+- [[ai-tool-integration]]
+- [[ai-video]]
+- [[ai-video-generation]]
+- [[ai-writing]]
+- [[alerting]]
+- [[artificial-intelligence]]
+- [[autonomous-agents]]
+- [[batch-generation]]
+- [[bento-grid]]
+- [[bootstrapped-startup]]
+- [[browser-automation]]
+- [[building-a-second-brain]]
 - [[chatgpt]]
-- [[grok]]
-
-### Prompt Engineering
-- [[prompt-engineering]]
+- [[chrome-mcp]]
+- [[claude-api]]
+- [[claude-api-fundamentals-course]]
+- [[claude-code]]
+- [[claude-cowork]]
+- [[claude-opus]]
+- [[claude-skills]]
+- [[claude.md]]
+- [[competitive-intelligence]]
+- [[computer-use]]
+- [[content-creation]]
+- [[content-repurposing]]
+- [[content-rewards]]
+- [[context-engineering]]
+- [[context-window]]
+- [[conversion-optimization]]
+- [[copywriting]]
+- [[creator-economy]]
+- [[crewai]]
 - [[critical-thinking]]
+- [[css]]
+- [[custom-instructions]]
+- [[cybersecurity]]
+- [[deep-research]]
+- [[deepfake]]
+- [[divergent-thinking]]
+- [[document-object-model]]
+- [[document-object-model|dom]]
+- [[empathy-mapping]]
+- [[first-principles-thinking]]
+- [[flash-attention-2]]
+- [[flova-ai]]
+- [[frameworks]]
+- [[function-calling]]
+- [[garry-tan]]
+- [[gemini]]
+- [[gemini-pro-3.1]]
+- [[gtm-strategy]]
+- [[hallucinations]]
+- [[higher-education-costs]]
+- [[html]]
+- [[human-psychology]]
+- [[icp-development]]
+- [[indie-hacker]]
+- [[indie-hacking]]
+- [[json]]
+- [[knowledge-management]]
+- [[lancedb]]
+- [[large-language-models]]
+- [[lateral-thinking]]
+- [[letta-code]]
+- [[llamaindex]]
+- [[llm]]
+- [[llms]]
+- [[machine-learning]]
+- [[market-research]]
+- [[mengto]]
+- [[meta-prompting]]
+- [[minimax]]
+- [[monitoring]]
+- [[multi-agent-systems]]
+- [[neuralink]]
+- [[neuroplasticity]]
+- [[nvidia-a100]]
+- [[open-source]]
+- [[patrick-winston]]
+- [[persona-prompt]]
+- [[personal-knowledge-management]]
+- [[peter-lovells]]
+- [[positive-psychology]]
+- [[powerpoint]]
+- [[pricing]]
+- [[productivity]]
+- [[projects]]
+- [[prompt-engineering]]
+- [[public-speaking]]
+- [[python]]
 - [[reasoning-frameworks]]
-- [[deep-research]]
-- [[video-prompting]]
-
-### Research
 - [[research-automation]]
-- [[deep-research]]
+- [[retrieval-augmented-generation]]
+- [[robert-greene]]
+- [[saas]]
+- [[seedance-2.0]]
+- [[social-media-automation]]
+- [[sonnet-4.6]]
+- [[spacex]]
+- [[sqlite]]
+- [[strategic-thinking]]
+- [[structured-output]]
+- [[system-architecture]]
+- [[system-prompt]]
+- [[tam-analysis]]
+- [[tesla]]
+- [[tiago-forte]]
+- [[tiktok-content-strategy]]
+- [[tiktok-slideshows]]
+- [[tool-use]]
+- [[typography]]
+- [[ui-design]]
+- [[vercel]]
+- [[vibe-coding]]
+- [[vibecoding]]
+- [[video-generation]]
+- [[viral-content]]
+- [[web-scraping]]
+- [[whisper]]
+- [[workflow-automation]]
+- [[x-articles]]
+- [[zettelkasten]]

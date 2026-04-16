@@ -71,13 +71,21 @@ Run manually when you want to process historical bookmarks:
 5. Update wiki/index.md and wiki/log.md
 
 ### LINT
-1. Find contradictions between pages
-2. Find orphan pages (no inbound links)
-3. Find broken [[wikilinks]]
-4. Identify missing frontmatter fields
-5. Flag stale content (source date >6 months)
-6. Suggest new articles for unlinked concepts
-7. Output report
+1. Run qa_lint.py — QA validation
+2. Run fix_wikilinks.py — Fix broken wikilinks
+3. Run gen_pending_terms.py — Generate pending terms
+4. Run wiki-sync.py — Comprehensive sync with LLM regeneration
+5. Fix remaining issues
+6. Output lint report
+
+## Key Python Scripts (raw/assets/)
+
+| Script | Purpose |
+|-------|--------|
+| `fix_wikilinks.py` | Fix broken wikilinks (periods, piped links) |
+| `gen_pending_terms.py` | Generate pending terms from low-mention links |
+| `wiki-sync.py` | Comprehensive sync with MiniMax LLM (PARALLEL, 5 concurrent) |
+| `qa_lint.py` | QA pairs validation |
 
 ## Monitoring
 

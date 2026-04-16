@@ -1,26 +1,22 @@
 ---
 title: "Figma"
-date_created: 2026-04-15
-date_modified: 2026-04-15
-summary: "Auto-generated stub for 'Figma' - referenced in 11 sources"
-tags: [auto-generated]
-type: concept
-status: stub
+date_created: 2026-04-16
+date_modified: 2026-04-16
+summary: "A cloud‑based interface design and prototyping tool that enables real‑time collaboration among designers, developers, and stakeholders; widely used for UI/UX design, design systems, and developer handoff."
+tags: [entity]
+type: entity
+status: final
 ---
 
 # Figma
 
-*This page was auto-created because it was linked from 11 sources but had no existing page.*
+**Type:** Product/Tool
+**Known For:** A cloud‑based interface design and prototyping tool that enables real‑time collaboration among designers, developers, and stakeholders; widely used for UI/UX design, design systems, and developer handoff.
 
-## References
+## Overview
 
-- Referenced in 11 source pages
-
+Figma is a vector graphics editor and prototyping application that runs in the web browser as well as a native desktop app, allowing teams to create and edit designs collaboratively in real time. It offers powerful features such as component libraries, design tokens, interactive prototyping, version history, and built‑in commenting, all accessible through a cloud‑based infrastructure that automatically syncs changes across devices. The platform also supports a robust plugin ecosystem and integrates with popular development and project‑management tools, streamlining the transition from design to production. Figma is a cloud‑based collaborative design tool that empowers teams to design, prototype, and hand off user interfaces efficiently from concept to final implementation.
 
 ## Related Sources
 
-- [[AlbiaHossain-2027648600097054727]]
-- [[MengTo-1991489885690364187]]
 - [[MengTo-1994058991106969950]]
-- [[TukiFromKL-2036131611649994863]]
-- [[adamlyttleapps-2038535497828733177]]

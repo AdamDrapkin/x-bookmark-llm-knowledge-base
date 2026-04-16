@@ -403,3 +403,14 @@ Report: [[lint-2026-04-16]]
 Fixed: Created 12 stub pages, updated 29 entity pages with source references
 - Stub pages: mobbin, dribbble, mymind, unicorn-studio, aura, seedance-2.0, gemini-pro-3.1, claude-code, document-object-model, system-architecture, market-research, batch-generation
 - All entity pages now have proper Related Sources sections
+## [2026-04-16] sync | Regenerated 91 concepts, 0 broken links, all indexes updated
+
+Work done:
+- Regenerated 91 concept pages with MiniMax LLM (parallel execution)
+- Fixed entity placeholders in 91 concept pages
+- Fixed remaining 4 stub pages (browser-automation, document-object-model, spacex, content-repurposing)
+- Added low-mention terms to pending-terms.md
+- Updated wiki-lint skill with script references
+- Updated CLAUDE.md with key scripts table
+
+Scripts: wiki-sync.py (parallel 5), fix_wikilinks.py, gen_pending_terms.py

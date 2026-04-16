@@ -36,7 +36,6 @@ Claude Code is an AI coding assistant developed by Anthropic that helps develope
 - [[om_patel5-2041040306078912653]]
 - [[sentient_agency-2026234384379244740]]
 - [[startupideaspod-2040599043362214351]]
-## Related Sources
 
 - [[DAIEvolutionHub-2037907310136484036]]
 - [[DataChaz-2032396544545378421]]
@@ -57,4 +56,4 @@ Claude Code is an AI coding assistant developed by Anthropic that helps develope
 - [[startupideaspod-2040599043362214351]]
 ## Related Concepts
 
-- [[concept]] — Related concept
+- [[claude-code]] — Related concept

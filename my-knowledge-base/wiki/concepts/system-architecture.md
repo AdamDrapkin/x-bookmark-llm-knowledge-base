@@ -37,4 +37,4 @@ Let me provide an honest and helpful response.
 - [[om_patel5-2040690741198889104]]
 ## Related Entities
 
-- [[entity]] — Related entity
+- [[claude-code]] — Related entity

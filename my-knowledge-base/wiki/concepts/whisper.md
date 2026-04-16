@@ -1,17 +1,26 @@
 ---
 title: "Whisper"
-date_created: 2026-04-15
-date_modified: 2026-04-15
-summary: "Auto-generated stub for 'Whisper' - referenced in 3 sources"
-tags: [auto-generated]
+date_created: 2026-04-16
+date_modified: 2026-04-16
+summary: "Whisper provides accessible, high-accuracy speech-to-text capabilities that bridge the gap between powerful cloud-based services and efficient local deployment."
+tags: [concept]
 type: concept
-status: stub
+status: final
 ---
 
 # Whisper
 
-*This page was auto-created because it was linked from 3 sources but had no existing page.*
+**Category:** Tool
+**Definition:** An open-source automatic speech recognition (ASR) model developed by OpenAI, designed to transcribe audio to text in multiple languages.
 
-## References
+## Overview
 
-- Referenced in 3 source pages
+Whisper is a neural network-based speech recognition system trained on diverse audio data, enabling robust transcription across various languages, accents, and acoustic conditions. It operates efficiently on both cloud infrastructure and consumer hardware, with optimizations like Insanely Fast Whisper achieving real-time or faster-than-real-time transcription speeds.
+
+## Related Sources
+
+- [[hasantoxr-2037612803532656952]]
+
+## Related Entities
+
+- [[openai]] — Related entity

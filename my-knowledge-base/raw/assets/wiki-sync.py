@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Comprehensive Wiki Sync - With LLM Content Generation
+Comprehensive Wiki Sync - With LLM Content Generation (PARALLEL)
 
 This script ensures:
 1. All concepts/entities have updated source references from ALL sources
@@ -9,6 +9,7 @@ This script ensures:
 4. All index files are synchronized
 5. images.md reflects all X image analyses
 6. videos.md reflects all X video analyses
+7. PARALLEL execution for faster LLM regeneration
 
 Run after each batch: python3 raw/assets/wiki-sync.py
 """
@@ -19,6 +20,7 @@ import json
 from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # MiniMax imports
 try:
@@ -38,7 +40,7 @@ MINIMAX_API_KEY = os.environ.get("MINIMAX_API_KEY") or os.environ.get("ANTHROPIC
 
 
 def get_minimax_client():
-    """Create MiniMax client"""
+    """Create MiniMax client with M2.7 model settings"""
     if not MINIMAX_AVAILABLE:
         return None
     if not MINIMAX_API_KEY:
@@ -171,6 +173,10 @@ def is_placeholder_page(content):
         'add description',
         'brief description',
         'auto created',
+        'auto-generated',
+        'auto-generated stub',
+        'status: stub',
+        'was auto-created',
     ]
     content_lower = content.lower()
     return any(p in content_lower for p in placeholder_patterns)
@@ -537,23 +543,123 @@ def update_concept_sources_only(concept, source_list):
     return False
 
 
-def update_all_entities(entity_sources, sources, client):
-    """Update all entity pages"""
-    updated = []
-    for entity, source_list in entity_sources.items():
+def update_single_entity(args):
+    """Worker function for parallel entity updates"""
+    entity, source_list, sources, client = args
+    try:
         success = update_entity_with_content(entity, source_list, sources, client)
-        if success:
-            updated.append(entity)
+        return (entity, success)
+    except Exception as e:
+        print(f"   ⚠️  Error updating {entity}: {str(e)[:50]}")
+        return (entity, False)
+
+
+def update_single_concept(args):
+    """Worker function for parallel concept updates"""
+    concept, source_list, sources, client = args
+    try:
+        success = update_concept_with_content(concept, source_list, sources, client)
+        return (concept, success)
+    except Exception as e:
+        print(f"   ⚠️  Error updating {concept}: {str(e)[:50]}")
+        return (concept, False)
+
+
+# Parallelism level - adjust based on API rate limits
+MAX_PARALLEL_LLM_CALLS = 5  # Run up to 5 LLM calls concurrently
+
+
+def update_all_entities(entity_sources, sources, client):
+    """Update all entity pages (PARALLEL)"""
+    if not client or not entity_sources:
+        return []
+
+    # Filter entities that need regeneration (have placeholder content)
+    entities_needing_regen = []
+    for entity, source_list in entity_sources.items():
+        entity_file = WIKI_ROOT / 'entities' / f"{entity}.md"
+        if entity_file.exists():
+            content = entity_file.read_text()
+            if is_placeholder_page(content) or ("The user wants me to" in content):
+                entities_needing_regen.append((entity, source_list))
+        else:
+            # New entity - needs content too
+            entities_needing_regen.append((entity, source_list))
+
+    if not entities_needing_regen:
+        print("   ✅ No entities need regeneration")
+        return []
+
+    print(f"   🔄 Regenerating {len(entities_needing_regen)} entities in parallel...")
+
+    # Prepare args
+    args_list = [(e, sl, sources, client) for e, sl in entities_needing_regen]
+
+    # Run in parallel
+    updated = []
+    failed = 0
+    with ThreadPoolExecutor(max_workers=MAX_PARALLEL_LLM_CALLS) as executor:
+        futures = {executor.submit(update_single_entity, args): args[0] for args in args_list}
+
+        for future in as_completed(futures):
+            entity, success = future.result()
+            if success:
+                updated.append(entity)
+            else:
+                failed += 1
+            # Progress indicator
+            total = len(entities_needing_regen)
+            done = len(updated) + failed
+            if done % 10 == 0 or done == total:
+                print(f"      Progress: {done}/{total}")
+
+    print(f"   ✅ Regenerated {len(updated)} entities ({failed} failed)")
     return updated
 
 
 def update_all_concepts(concept_sources, sources, client):
-    """Update all concept pages"""
-    updated = []
+    """Update all concept pages (PARALLEL)"""
+    if not client or not concept_sources:
+        return []
+
+    # Filter concepts that need regeneration
+    concepts_needing_regen = []
     for concept, source_list in concept_sources.items():
-        success = update_concept_with_content(concept, source_list, sources, client)
-        if success:
-            updated.append(concept)
+        concept_file = WIKI_ROOT / 'concepts' / f"{concept}.md"
+        if concept_file.exists():
+            content = concept_file.read_text()
+            if is_placeholder_page(content) or ("The user wants me to" in content):
+                concepts_needing_regen.append((concept, source_list))
+        else:
+            concepts_needing_regen.append((concept, source_list))
+
+    if not concepts_needing_regen:
+        print("   ✅ No concepts need regeneration")
+        return []
+
+    print(f"   🔄 Regenerating {len(concepts_needing_regen)} concepts in parallel...")
+
+    # Prepare args
+    args_list = [(c, sl, sources, client) for c, sl in concepts_needing_regen]
+
+    # Run in parallel
+    updated = []
+    failed = 0
+    with ThreadPoolExecutor(max_workers=MAX_PARALLEL_LLM_CALLS) as executor:
+        futures = {executor.submit(update_single_concept, args): args[0] for args in args_list}
+
+        for future in as_completed(futures):
+            concept, success = future.result()
+            if success:
+                updated.append(concept)
+            else:
+                failed += 1
+            total = len(concepts_needing_regen)
+            done = len(updated) + failed
+            if done % 10 == 0 or done == total:
+                print(f"      Progress: {done}/{total}")
+
+    print(f"   ✅ Regenerated {len(updated)} concepts ({failed} failed)")
     return updated
 
 

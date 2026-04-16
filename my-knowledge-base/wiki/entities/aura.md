@@ -20,9 +20,8 @@ Aura is an AI-driven design tool designed to help creators generate high-quality
 ## Related Sources
 
 - [[MengTo-1991489885690364187]]
-## Related Sources
 
 - [[MengTo-1991489885690364187]]
 ## Related Concepts
 
-- [[concept]] — Related concept
+- [[ai-assistants]] — Related concept
