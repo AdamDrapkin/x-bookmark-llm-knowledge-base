@@ -18,9 +18,9 @@ Flow:
     2. Query unprocessed    → bookmarks without 'processed' tag
     3. Classify untagged    → keyword cluster matching from bookmark-classification.md
     4. Batch into 10s       → dynamic batching
-    5. Phases 1-4 per batch → extract, analyze, compile, finalize (QA skipped per-batch)
+    5. Phases 1-4 per batch → extract, analyze, compile, finalize
     6. Tag as processed     → adds 'processed' to categories in DB
-    7. QA event check       → if 20+ new sources since last QA, fires QA council
+    7. QA runs via cron    → separate cron job at 10 AM and 8 PM EST
 """
 
 import argparse
@@ -35,8 +35,6 @@ from pipeline_core import (
     get_existing_source_ids,
     run_full_pipeline,
     tag_as_processed,
-    check_and_run_qa_if_needed,
-    increment_qa_source_counter,
     chunk_list,
     full_path,
     append_to_file,
@@ -129,11 +127,6 @@ def main():
             1 for b in manifest["bookmarks"] if b.get("phase3", {}).get("source_summary")
         )
         total_sources += batch_sources
-        increment_qa_source_counter(config, batch_sources)
-
-    # ── STEP 5: QA EVENT CHECK ──
-    print(f"\n═══ QA COUNCIL CHECK ═══")
-    check_and_run_qa_if_needed(config)
 
     # ── DONE ──
     print(f"\n{'=' * 50}")

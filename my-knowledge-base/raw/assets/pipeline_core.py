@@ -1208,20 +1208,17 @@ def get_minimax_client(api_key: str) -> Anthropic:
 def llm_call(client: Anthropic, system_prompt: str, user_content: str,
              model: str = "MiniMax-M2.7", max_tokens: int = 4096) -> str:
     """Make an LLM call to MiniMax M2.7 via Anthropic-compatible API."""
-    # Use streaming for longer requests (>10 min timeout risk)
     response = client.messages.create(
         model=model,
         max_tokens=max_tokens,
         system=system_prompt,
         messages=[{"role": "user", "content": user_content}],
-        stream=True,
     )
-    # Collect streaming response
-    text_parts = []
-    for block in response:
+    # Handle both TextBlock and ThinkingBlock response types
+    for block in response.content:
         if hasattr(block, 'text') and block.text:
-            text_parts.append(block.text)
-    return "".join(text_parts)
+            return block.text
+    return ""
 
 
 # ─────────────────────────────────────────────
