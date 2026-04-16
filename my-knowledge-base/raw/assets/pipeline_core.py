@@ -29,6 +29,7 @@ from urllib.parse import urlparse
 
 import requests
 import yaml
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from anthropic import Anthropic
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
@@ -3159,13 +3160,10 @@ def check_and_run_qa_if_needed(config: Dict):
     all_qa_results = []
     successful_count = 0
 
-    for batch_num in range(total_batches):
-        batch_start = batch_num * batch_size
-        batch_end = min(batch_start + batch_size, len(uncovered))
-        batch_slugs = sorted(uncovered)[batch_start:batch_end]
-
+    def process_single_batch(batch_info):
+        """Process a single QA batch - for parallel execution."""
+        batch_num, batch_slugs = batch_info
         batch_id = f"qa_{today_str()}_{batch_num+1}_of_{total_batches}"
-        print(f"  Processing batch {batch_num+1}/{total_batches} ({len(batch_slugs)} sources)...")
 
         # Build batch input
         qa_input = f"Batch ID: {batch_id}\nSources in batch: {len(batch_slugs)}\n\n"
@@ -3183,25 +3181,57 @@ def check_and_run_qa_if_needed(config: Dict):
             brace_pos = clean.find('{')
             bracket_pos = clean.find('[')
             if brace_pos == -1 and bracket_pos == -1:
-                print(f"    ✗ No JSON found in response")
-                continue
+                return (batch_num, None, "No JSON found")
+
             json_start = min(b for b in [brace_pos, bracket_pos] if b >= 0)
             clean = clean[json_start:]
             if clean.startswith("```"):
                 clean = re.sub(r"^```\w*\n?", "", clean)
                 clean = re.sub(r"\n?```$", "", clean)
 
-            try:
-                qa_json = json.loads(clean)
-                all_qa_results.append(qa_json)
-                successful_count += len(batch_slugs)
-                print(f"    ✓ Batch {batch_num+1} parsed successfully")
-            except json.JSONDecodeError as e:
-                print(f"    ✗ JSON parse failed: {e.msg} - skipping batch")
+            qa_json = json.loads(clean)
+            return (batch_num, qa_json, None)
 
+        except json.JSONDecodeError as e:
+            return (batch_num, None, f"JSON parse failed: {e.msg}")
         except Exception as e:
-            print(f"    ✗ QA batch failed: {e}")
-            continue
+            return (batch_num, None, str(e))
+
+    # Prepare batch tasks
+    batch_tasks = []
+    for batch_num in range(total_batches):
+        batch_start = batch_num * batch_size
+        batch_end = min(batch_start + batch_size, len(uncovered))
+        batch_slugs = sorted(uncovered)[batch_start:batch_end]
+        batch_tasks.append((batch_num, batch_slugs))
+
+    print(f"  Processing {total_batches} batches in parallel...")
+
+    # Run batches in parallel (3 at a time to avoid API rate limits)
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {executor.submit(process_single_batch, task): task for task in batch_tasks}
+
+        for future in as_completed(futures):
+            batch_num, qa_json, error = future.result()
+
+            if qa_json:
+                all_qa_results.append(qa_json)
+                successful_count += len(batch_tasks[batch_num][1])
+                print(f"    ✓ Batch {batch_num+1} parsed successfully")
+
+                # Save each batch as its own JSON file
+                batch_file_id = f"qa_{today_str()}_{batch_num+1}_of_{total_batches}"
+                individual_qa_path = full_path(wiki_root, f"wiki/qa-pairs/{batch_file_id}-qa.json")
+                os.makedirs(os.path.dirname(individual_qa_path), exist_ok=True)
+                with open(individual_qa_path, "w") as f:
+                    json.dump(qa_json, f, indent=2)
+                print(f"    ✓ Saved: {batch_file_id}-qa.json")
+
+                # Update concept-index after each batch
+                if qa_json.get("concept_index_update"):
+                    _merge_concept_index(qa_json["concept_index_update"], concept_index_path, concept_index)
+            else:
+                print(f"    ✗ Batch {batch_num+1} failed: {error}")
 
     if not all_qa_results:
         print("  ✗ No QA batches succeeded")
@@ -3209,63 +3239,26 @@ def check_and_run_qa_if_needed(config: Dict):
 
     print(f"\n  ✓ QA Council: {successful_count} sources processed in {len(all_qa_results)} batches")
 
-    # Save merged results
-    batch_id = f"qa_{today_str()}_{successful_count}_batched"
-
-    # Merge all batch results into one
-    all_source_questions = []
-    all_synthesis_questions = []
-    concept_index_updates = []
-
-    for qa_json in all_qa_results:
-        all_source_questions.extend(qa_json.get("source_questions", []))
-        all_synthesis_questions.extend(qa_json.get("synthesis_questions", []))
-        if qa_json.get("concept_index_update"):
-            concept_index_updates.append(qa_json["concept_index_update"])
-
-    merged_qa = {
-        "frontmatter": {
-            "title": f"QA: Batch {successful_count}",
-            "date_created": today_str(),
-            "date_modified": today_str(),
-            "summary": f"Generated from {successful_count} sources in {len(all_qa_results)} batches",
-            "tags": ["qa", "batch"],
-            "type": "output",
-            "status": "final"
-        },
-        "source_questions": all_source_questions,
-        "synthesis_questions": all_synthesis_questions,
-        "concept_index_update": concept_index_updates[0] if concept_index_updates else {}
-    }
-
-    # Save merged QA
-    qa_path = full_path(wiki_root, f"wiki/qa-pairs/{batch_id}-qa.json")
-    os.makedirs(os.path.dirname(qa_path), exist_ok=True)
-    with open(qa_path, "w") as f:
-        json.dump(merged_qa, f, indent=2)
-
-    # Merge concept index
-    if merged_qa.get("concept_index_update"):
-        _merge_concept_index(merged_qa["concept_index_update"], concept_index_path, concept_index)
-
     # Reset counter
     concept_index["sources_since_last_qa"] = 0
     concept_index["total_sources_processed"] = len(all_source_slugs)
     with open(concept_index_path, "w") as f:
         json.dump(concept_index, f, indent=2)
 
+    print(f"  ✓ Updated concept-index.json")
+
     # Update QA index
     update_index_file(
         full_path(wiki_root, "wiki/qa-pairs/_index.md"),
-        batch_id, f"{successful_count} sources, QA generated in {len(all_qa_results)} batches"
+        f"qa_{today_str()}", f"{successful_count} sources, QA generated in {len(all_qa_results)} batches"
     )
 
     # Log to outputs
-    log_msg = f"[{today_str()}] QA Council: {successful_count} sources → {batch_id}-qa.json ({len(all_qa_results)} batches)\n"
+    log_msg = f"[{today_str()}] QA Council: {successful_count} sources → {len(all_qa_results)} batch files\n"
     append_to_file(full_path(wiki_root, "wiki/outputs/pipeline-live.log"), log_msg)
-    update_index_file(full_path(wiki_root, "wiki/outputs/_index.md"), batch_id, "QA batch (event trigger)")
+    update_index_file(full_path(wiki_root, "wiki/outputs/_index.md"), f"qa_{today_str()}", "QA batches (event trigger)")
 
-    print(f"  ✓ QA → {batch_id}-qa.json ({successful_count} sources, {len(all_qa_results)} batches)")
+    print(f"  ✓ QA complete: {successful_count} sources in {len(all_qa_results)} batches")
 
 
 def increment_qa_source_counter(config: Dict, count: int = 1):
