@@ -19,7 +19,7 @@ Web scraping involves programmatically collecting information from web pages, en
 
 ## Related Sources
 
-- [[DataChaz-2041041292520833400]]
+- [[datachaz-2041041292520833400]]
 - [[gregisenberg-2036542601617350709]]
 - [[om_patel5-2037014741692961141]]
 

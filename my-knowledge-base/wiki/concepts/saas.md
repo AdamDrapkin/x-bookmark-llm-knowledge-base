@@ -19,7 +19,7 @@ SaaS companies increasingly rely on distribution strategies that prioritize rapi
 
 ## Related Sources
 
-- [[KanikaBK-2040764115501908175]]
+- [[kanikabk-2040764115501908175]]
 - [[ideabrowser-2037176334510702624]]
 
 ## Related Entities

@@ -2,7 +2,7 @@
 title: "GitHub Repos Index"
 date_created: 2026-04-08
 date_modified: 2026-04-16
-summary: "Index of github repos from X posts"
+summary: "Index of GitHub repos from X posts"
 tags: [index, x-github-repos]
 type: index
 status: final

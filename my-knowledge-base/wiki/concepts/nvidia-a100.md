@@ -19,7 +19,7 @@ The NVIDIA A100 Tensor Core GPU delivers unprecedented acceleration for AI train
 
 ## Related Sources
 
-- [[IslamRashi2000-2038481198616596885]]
+- [[islamrashi2000-2038481198616596885]]
 - [[hasantoxr-2037612803532656952]]
 
 ## Related Entities

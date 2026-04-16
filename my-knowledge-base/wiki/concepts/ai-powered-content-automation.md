@@ -19,7 +19,7 @@ AI Powered Content Automation refers to the systematic use of machine learning m
 
 ## Related Sources
 
-- [[JamesEbringer-2036733267018133667]]
+- [[jamesebringer-2036733267018133667]]
 
 ## Related Entities
 

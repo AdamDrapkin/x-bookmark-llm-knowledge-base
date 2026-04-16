@@ -19,10 +19,10 @@ Claude Code brings the natural‑language capabilities of the Claude AI directly
 
 ## Related Sources
 
-- [[DataChaz-2032396544545378421]]
-- [[DataChaz-2041041292520833400]]
-- [[Suryanshti777-2037558286137143591]]
-- [[TukiFromKL-2036131611649994863]]
+- [[datachaz-2032396544545378421]]
+- [[datachaz-2041041292520833400]]
+- [[suryanshti777-2037558286137143591]]
+- [[tukifromkl-2036131611649994863]]
 - [[aiedge_-2037348914496766297]]
 - [[gregisenberg-2026036464287412412]]
 - [[ihtesham2005-2037484864090644653]]

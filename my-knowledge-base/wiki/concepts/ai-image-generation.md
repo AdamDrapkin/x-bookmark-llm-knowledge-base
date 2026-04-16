@@ -19,8 +19,8 @@ AI image generation harnesses deep‑learning architectures, most notably diffus
 
 ## Related Sources
 
-- [[AlbiaHossain-2027648600097054727]]
-- [[JamesEbringer-2036733267018133667]]
+- [[albiahossain-2027648600097054727]]
+- [[jamesebringer-2036733267018133667]]
 - [[pritopian-2037167928114896987]]
 
 ## Related Entities

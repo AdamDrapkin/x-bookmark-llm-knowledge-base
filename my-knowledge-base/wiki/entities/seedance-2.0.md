@@ -19,11 +19,11 @@ Seedance 2.0 is an advanced AI-powered video generation platform designed to dem
 
 ## Related Sources
 
-- [[DataChaz-2040921945269801003]]
-- [[LinusEkenstam-2026263502030303290]]
+- [[datachaz-2040921945269801003]]
+- [[linusekenstam-2026263502030303290]]
 
-- [[DataChaz-2040921945269801003]]
-- [[LinusEkenstam-2026263502030303290]]
+- [[datachaz-2040921945269801003]]
+- [[linusekenstam-2026263502030303290]]
 ## Related Concepts
 
 - [[ai-video-generation]] — Related concept

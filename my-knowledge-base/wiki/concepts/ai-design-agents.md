@@ -19,7 +19,7 @@ AI Design Agents function as intelligent assistants within design workflows, cap
 
 ## Related Sources
 
-- [[TukiFromKL-2036492094936666431]]
+- [[tukifromkl-2036492094936666431]]
 
 ## Related Entities
 

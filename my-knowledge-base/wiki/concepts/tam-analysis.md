@@ -26,7 +26,7 @@ status: draft
 
 ## Related Sources
 
-- [[adamrahmanGTM-1975292522248237113]]
+- [[adamrahmangtm-1975292522248237113]]
 ## Related Concepts
 
 - [[gtm-strategy]] — Broader market strategy

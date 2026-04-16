@@ -19,4 +19,4 @@ Cursor is an AI-first code editor built as a fork of Visual Studio Code, launche
 
 ## Related Sources
 
-- [[TukiFromKL-2036131611649994863]]
+- [[tukifromkl-2036131611649994863]]

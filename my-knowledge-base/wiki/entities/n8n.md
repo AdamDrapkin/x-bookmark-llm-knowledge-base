@@ -28,7 +28,7 @@ status: draft
 
 ## Related Sources
 
-- [[DAIEvolutionHub-2037907310136484036]]
+- [[daievolutionhub-2037907310136484036]]
 - [[n8n-2026-smart-alerting]]
 ## Related Concepts
 

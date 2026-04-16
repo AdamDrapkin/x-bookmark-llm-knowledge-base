@@ -19,8 +19,8 @@ Large Language Models are neural networks with billions to hundreds of billions 
 
 ## Related Sources
 
-- [[DataChaz-2041041292520833400]]
-- [[IslamRashi2000-2038481198616596885]]
+- [[datachaz-2041041292520833400]]
+- [[islamrashi2000-2038481198616596885]]
 - [[coreyganim-2040842449384276268]]
 - [[rohit4verse-2026359771427991764]]
 

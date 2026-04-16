@@ -19,7 +19,7 @@ TikTok’s algorithm rewards content that captures attention quickly, drives hig
 
 ## Related Sources
 
-- [[JamesEbringer-2027504630817603638]]
+- [[jamesebringer-2027504630817603638]]
 - [[jacobgrowth-2037192439199375856]]
 
 ## Related Entities

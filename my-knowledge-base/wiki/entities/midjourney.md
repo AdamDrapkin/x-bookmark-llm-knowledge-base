@@ -19,4 +19,4 @@ Midjourney is an independent research lab that developed an AI system capable of
 
 ## Related Sources
 
-- [[MengTo-1991489885690364187]]
+- [[mengto-1991489885690364187]]

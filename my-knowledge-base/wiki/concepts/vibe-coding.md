@@ -19,5 +19,5 @@ Vibe Coding emphasizes creating a cohesive atmosphere during programming session
 
 ## Related Sources
 
-- [[KanikaBK-2040764115501908175]]
+- [[kanikabk-2040764115501908175]]
 - [[itsandrewgao-2027579200635605058]]

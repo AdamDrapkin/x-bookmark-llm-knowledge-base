@@ -19,6 +19,6 @@ Gemini 3 represents a particular release, model, or version within a product lin
 
 ## Related Sources
 
-- [[MengTo-1991489885690364187]]
-- [[MengTo-1994058991106969950]]
+- [[mengto-1991489885690364187]]
+- [[mengto-1994058991106969950]]
 - [[alex_prompter-1992887472557342779]]

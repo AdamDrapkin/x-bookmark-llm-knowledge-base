@@ -19,7 +19,7 @@ Batch Generation refers to the capability of creating multiple advertising image
 
 ## Related Sources
 
-- [[EHuanglu-1991560454104313914]]
+- [[ehuanglu-1991560454104313914]]
 ## Related Entities
 
 - [[chatgpt]] — Related entity

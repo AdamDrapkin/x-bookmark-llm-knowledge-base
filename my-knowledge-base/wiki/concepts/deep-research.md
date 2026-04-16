@@ -34,7 +34,7 @@ Specify exactly what you want back.
 
 ## Related Sources
 
-- [[EXM7777-1978484519692075451]]
+- [[exm7777-1978484519692075451]]
 ## Related Concepts
 
 - [[research-automation]] — Automating research processes

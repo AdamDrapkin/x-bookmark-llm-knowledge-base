@@ -19,4 +19,4 @@ Y Combinator (YC) is a startup accelerator founded in 2005 by Paul Graham, Jessi
 
 ## Related Sources
 
-- [[DataChaz-2032396544545378421]]
+- [[datachaz-2032396544545378421]]

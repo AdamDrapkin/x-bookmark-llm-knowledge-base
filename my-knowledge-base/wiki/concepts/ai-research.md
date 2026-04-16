@@ -19,8 +19,8 @@ AI research encompasses various approaches for leveraging artificial intelligenc
 
 ## Related Sources
 
-- [[EXM7777-1978484519692075451]]
-- [[Meer_AIIT-2027509711722188976]]
+- [[exm7777-1978484519692075451]]
+- [[meer_aiit-2027509711722188976]]
 - [[adiix_official-2037604599398322682]]
 - [[damienghader-2025935095064846586]]
 - [[kloss_xyz-2036356467629162772]]

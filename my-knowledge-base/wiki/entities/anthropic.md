@@ -27,9 +27,9 @@ Anthropic is an AI safety and research company founded by former OpenAI research
 
 ## Related Sources
 
-- [[ArchiveExplorer-2040727747966668939]]
-- [[DataChaz-2032396544545378421]]
-- [[Suryanshti777-2037558286137143591]]
+- [[archiveexplorer-2040727747966668939]]
+- [[datachaz-2032396544545378421]]
+- [[suryanshti777-2037558286137143591]]
 - [[aiedge_-2037348914496766297]]
 - [[alex_prompter-2027659595599253892]]
 - [[alex_prompter-2027684564324548951]]

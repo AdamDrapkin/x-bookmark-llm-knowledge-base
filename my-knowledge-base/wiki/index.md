@@ -12,7 +12,7 @@ status: final
 
 ## Core Structure
 
-### Sources (145)
+### Sources (147)
 X/Twitter source summaries
 
 ### Entities (29)
@@ -52,7 +52,7 @@ Wiki health checks
 
 | Category | Count |
 |----------|-------|
-| Sources | 145 |
+| Sources | 146 |
 | Entities | 29 |
 | Concepts | 142 |
 | QA Batches | 14 |

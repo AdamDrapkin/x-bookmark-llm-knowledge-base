@@ -19,7 +19,7 @@ GPT (Generative Pre-trained Transformer) refers to a family of autoregressive la
 
 ## Related Sources
 
-- [[adamrahmanGTM-1975292522248237113]]
+- [[adamrahmangtm-1975292522248237113]]
 - [[alex_prompter-1994005617246368095]]
 - [[fba-2025926581546352900]]
 - [[godofprompt-1970086539402121690-prompt-engineer-protocol]]

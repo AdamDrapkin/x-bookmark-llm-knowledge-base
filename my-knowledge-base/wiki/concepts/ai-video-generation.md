@@ -19,8 +19,8 @@ AI video generation refers to the technological capability of producing video co
 
 ## Related Sources
 
-- [[Aiwithkumail-2038531965230682393]]
-- [[LinusEkenstam-2026263502030303290]]
+- [[aiwithkumail-2038531965230682393]]
+- [[linusekenstam-2026263502030303290]]
 - [[contraben-2036525455017218205]]
 
 ## Related Entities

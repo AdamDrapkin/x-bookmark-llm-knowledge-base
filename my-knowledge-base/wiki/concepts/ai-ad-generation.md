@@ -27,7 +27,7 @@ status: draft
 
 ## Related Sources
 
-- [[EHuanglu-1991560454104313914]]
+- [[ehuanglu-1991560454104313914]]
 ## Related Concepts
 
 - [[product-photography]] — Traditional alternative

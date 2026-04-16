@@ -19,7 +19,7 @@ Meta Prompting leverages the model’s reasoning capabilities to construct effec
 
 ## Related Sources
 
-- [[DAIEvolutionHub-2037907310136484036]]
+- [[daievolutionhub-2037907310136484036]]
 - [[alex_prompter-1994005617246368095]]
 - [[alex_prompter-2027684564324548951]]
 - [[godofprompt-2036863105871823116]]

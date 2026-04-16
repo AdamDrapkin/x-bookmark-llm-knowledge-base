@@ -19,9 +19,9 @@ The creator economy has emerged as a significant economic force, enabling indivi
 
 ## Related Sources
 
-- [[Aiwithkumail-2038531965230682393]]
-- [[JamesEbringer-2027504630817603638]]
-- [[JaynitMakwana-2036358672033710370]]
+- [[aiwithkumail-2038531965230682393]]
+- [[jamesebringer-2027504630817603638]]
+- [[jaynitmakwana-2036358672033710370]]
 - [[alexxgrowth-2037514725274308840]]
 - [[jacobgrowth-2037192439199375856]]
 

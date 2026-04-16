@@ -19,9 +19,9 @@ MengTo is a designer, author, and creator of the DesignCode platform, known for 
 
 ## Related Sources
 
-- [[MengTo-1991489885690364187-gemini-3-tutorial]]
-- [[MengTo-1994058991106969950]]
+- [[mengto-1991489885690364187-gemini-3-tutorial]]
+- [[mengto-1994058991106969950]]
 
 ## Related Entities
 
-- [[MengTo-1991489885690364187]] — Related entity
+- [[mengto-1991489885690364187]] — Related entity

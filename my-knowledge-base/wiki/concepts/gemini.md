@@ -19,7 +19,7 @@ Gemini is an advanced AI system capable of interpreting user intent from abstrac
 
 ## Related Sources
 
-- [[DataChaz-2026335537888702627]]
+- [[datachaz-2026335537888702627]]
 - [[alex_prompter-1991981943026839897]]
 - [[alex_prompter-1995470595241193726]]
 - [[godofprompt-1992043551283175716]]

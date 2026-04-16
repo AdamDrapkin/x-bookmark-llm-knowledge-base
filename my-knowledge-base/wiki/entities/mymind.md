@@ -19,9 +19,9 @@ Mymind is an online design resource platform that helps designers discover and g
 
 ## Related Sources
 
-- [[MengTo-1991489885690364187]]
+- [[mengto-1991489885690364187]]
 
-- [[MengTo-1991489885690364187]]
+- [[mengto-1991489885690364187]]
 ## Related Concepts
 
 - [[note-taking]] — Related concept

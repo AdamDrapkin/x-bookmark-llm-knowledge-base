@@ -19,7 +19,7 @@ Ai Writing refers to methods and approaches designed to make AI-generated conten
 
 ## Related Sources
 
-- [[EXM7777-1991528477775032628]]
+- [[exm7777-1991528477775032628]]
 - [[godofprompt-1991160280630378890]]
 
 ## Related Entities

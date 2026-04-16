@@ -19,7 +19,7 @@ No information found in the provided sources regarding Peter Lovells. The availa
 
 ## Related Sources
 
-- [[KanikaBK-2040764115501908175]]
+- [[kanikabk-2040764115501908175]]
 
 ## Related Entities
 

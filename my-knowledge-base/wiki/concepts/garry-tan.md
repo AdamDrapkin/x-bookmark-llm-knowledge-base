@@ -19,8 +19,8 @@ Garry Tan is a leading figure in the startup world, steering Y Combinator as
 
 ## Related Sources
 
-- [[DataChaz-2032396544545378421]]
-- [[MillieMarconnni-2037848645949898979]]
+- [[datachaz-2032396544545378421]]
+- [[milliemarconnni-2037848645949898979]]
 
 ## Related Entities
 

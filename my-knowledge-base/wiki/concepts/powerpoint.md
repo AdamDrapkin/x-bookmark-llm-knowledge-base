@@ -19,7 +19,7 @@ PowerPoint is a widely-used presentation software developed by Microsoft as part
 
 ## Related Sources
 
-- [[DataChaz-2026335537888702627]]
+- [[datachaz-2026335537888702627]]
 
 ## Related Entities
 

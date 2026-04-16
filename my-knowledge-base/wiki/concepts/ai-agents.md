@@ -19,10 +19,10 @@ AI agents are specialized autonomous programs that extend beyond simple chatbots
 
 ## Related Sources
 
-- [[DataChaz-2032396544545378421]]
-- [[DataChaz-2041041292520833400]]
-- [[MillieMarconnni-2037848645949898979]]
-- [[Suryanshti777-2037558286137143591]]
+- [[datachaz-2032396544545378421]]
+- [[datachaz-2041041292520833400]]
+- [[milliemarconnni-2037848645949898979]]
+- [[suryanshti777-2037558286137143591]]
 - [[andresmatte-2036061707529834773]]
 - [[andrewfarah-2040535589771149379]]
 - [[coreyganim-2040842449384276268]]

@@ -19,7 +19,7 @@ Vercel is a cloud platform designed for front-end developers, offering seamless 
 
 ## Related Sources
 
-- [[TukiFromKL-2036131611649994863]]
+- [[tukifromkl-2036131611649994863]]
 - [[fba-2025926581546352900]]
 
 ## Related Entities

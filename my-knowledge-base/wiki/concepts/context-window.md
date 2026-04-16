@@ -19,8 +19,8 @@ The context window determines how much information an AI model can consider when
 
 ## Related Sources
 
-- [[ArchiveExplorer-2040727747966668939]]
-- [[Suryanshti777-2037558286137143591]]
+- [[archiveexplorer-2040727747966668939]]
+- [[suryanshti777-2037558286137143591]]
 - [[aiedge_-2025797789591154688]]
 - [[aiedge_-2037348914496766297]]
 

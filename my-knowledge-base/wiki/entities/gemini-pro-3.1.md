@@ -19,9 +19,9 @@ Gemini Pro 3.1 is an advanced AI tool that specializes in rapid slide deck gener
 
 ## Related Sources
 
-- [[DataChaz-2026335537888702627]]
+- [[datachaz-2026335537888702627]]
 
-- [[DataChaz-2026335537888702627]]
+- [[datachaz-2026335537888702627]]
 ## Related Concepts
 
 - [[gemini]] — Related concept

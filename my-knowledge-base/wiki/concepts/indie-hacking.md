@@ -19,7 +19,7 @@ Indie hacking is the practice of a single developer or tiny team creating and sh
 
 ## Related Sources
 
-- [[Hesamation-2037329163212726272]]
+- [[hesamation-2037329163212726272]]
 
 ## Related Entities
 

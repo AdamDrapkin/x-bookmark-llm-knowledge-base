@@ -19,7 +19,7 @@ A Bento Grid breaks a page into multiple tiles of differing sizes and proportion
 
 ## Related Sources
 
-- [[AlbiaHossain-2027648600097054727]]
+- [[albiahossain-2027648600097054727]]
 
 ## Related Entities
 

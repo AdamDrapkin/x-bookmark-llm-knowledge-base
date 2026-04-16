@@ -19,7 +19,7 @@ AI video encompasses the generation and manipulation of video content using arti
 
 ## Related Sources
 
-- [[LinusEkenstam-2026263502030303290]]
+- [[linusekenstam-2026263502030303290]]
 - [[contraben-2036525455017218205]]
 - [[mindbranches-1974621848844616006-video-prompt-styles]]
 

@@ -1,3 +1,4 @@
+---
 title: Pending Terms
 date_created: 2026-04-16
 date_modified: 2026-04-16
@@ -5,7 +6,19 @@ summary: Terms with 1-2 mentions that need more references before creating stub 
 tags: [pending, tracking]
 type: output
 status: draft
+---
+
+# Pending Terms (1-2 mentions)
+
+Terms linked from sources but not yet having enough mentions (3+) to warrant stub pages.
+
+## Format
+
 Each entry: term: count (count = number of source mentions)
+
+## Terms
+
+```
 mass-posting: 2
 crm: 2
 salesforce: 2
@@ -40,6 +53,7 @@ design-inspiration: 2
 growth-mindset: 2
 communication-skills: 2
 learning: 2
+tiktok: 2
 text-to-speech: 2
 organic-growth: 2
 viral-software: 2
@@ -88,6 +102,7 @@ paperclip: 2
 agent-orchestration: 2
 business-process-automation: 2
 greg-isenberg: 2
+gitnexus: 2
 content-automation: 2
 yaml-frontmatter: 2
 ai-consulting: 2
@@ -110,6 +125,7 @@ bentogrids: 2
 harvard-medical-school: 2
 ai-assistant: 2
 optimism: 2
+ai-assistants: 2
 lightrag: 2
 coding-agents: 2
 yagni: 2
@@ -160,6 +176,7 @@ instacart: 2
 rippling: 2
 peter-steinberger: 2
 bookface: 2
+gstack: 2
 react: 2
 code-as-video: 2
 kling-3-0: 2
@@ -200,6 +217,14 @@ social-influence: 2
 client-intelligence: 2
 negotiation-preparation: 2
 ai-role-prompting: 2
+mengto-1991489885690364187-gemini-3-tutorial: 2
+islamrashi2000-2038481198616596885: 2
+nvidia: 2
+jaynitmakwana-2036358672033710370: 2
+aiwithkumail-2038531965230682393: 2
+prajwaltomar_-2024097242387235026: 2
+tukifromkl-2036492094936666431: 2
+datachaz-2036018412590375281: 2
 perplexity-personal-finance: 2
 @adiix_official: 1
 shortened-url: 1
@@ -297,7 +322,6 @@ vulnerability-assessment: 1
 exploitation: 1
 reconnaissance: 1
 threat-simulation: 1
-tiktok: 1
 short-form-content: 1
 content-monetization: 1
 9-5-to-creator-transition: 1
@@ -412,7 +436,6 @@ zero-employee-startups: 1
 autonomous-ai-systems: 1
 ai-powered-business-operations: 1
 startup-frameworks: 1
-gitnexus: 1
 knowledge-graph: 1
 github-integration: 1
 browser-based-tool: 1
@@ -496,7 +519,6 @@ neuroscience: 1
 cognitive-reframing: 1
 cardiovascular-health: 1
 longevity: 1
-ai-assistants: 1
 wellness: 1
 tdd: 1
 dry: 1
@@ -600,7 +622,6 @@ transformers-franchise: 1
 linus-ekenstam: 1
 bytedance: 1
 sora: 1
-runway: 1
 pika-labs: 1
 n8n-automation: 1
 personal-knowledge-management-system-(pkms): 1
@@ -623,7 +644,6 @@ self-hosted-solutions: 1
 data-sovereignty: 1
 dashboarding-tools: 1
 ai-agent|augmented developer: 1
-gstack: 1
 palantir: 1
 posterous: 1
 twitter: 1
@@ -707,7 +727,6 @@ anders-ericsson: 1
 visual-services-industry: 1
 cost-efficiency: 1
 elon-musk's-thinking-framework: 1
-x: 1
 reasoning-engine: 1
 engineering-first: 1
 x-(company): 1
@@ -763,6 +782,9 @@ audience-intelligence: 1
 negotiation-intelligence: 1
 strategic-intelligence-architect: 1
 solopreneur-strategy: 1
+openai: 1
+microsoft: 1
+note-taking: 1
 video-prompting: 1
 ai-models: 1
 plaid-integration: 1
@@ -770,12 +792,12 @@ ai-financial-tools: 1
 vadimstrizheus-tweet: 1
 ai-studio: 1
 screen-studio: 1
-mengto-1991489885690364187: 1
 whatsapp-privacy-lawsuit: 1
 meta-privacy-concerns: 1
-poshog: mentioned in 2-3 sources (pending stub)ui-patterns: mentioned in 2 sources (related to UI design)
-note-taking: mentioned in 1 source (related to knowledge management)
-google: mentioned in wiki (awaiting more references)
-microsoft: mentioned in wiki (awaiting more references)
-nvidia: mentioned in wiki (awaiting more references)
-openai: mentioned in wiki (awaiting more references)
+```
+
+## Process
+
+1. New terms with 1-2 mentions get added here
+2. When a term reaches 3+ mentions -> create stub page in wiki/concepts/ or wiki/entities/
+3. Remove from this list when stub created

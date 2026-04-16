@@ -19,7 +19,7 @@ AI-assisted development leverages AI systems like [[claude-code]] integrated wit
 
 ## Related Sources
 
-- [[DataChaz-2032396544545378421]]
+- [[datachaz-2032396544545378421]]
 - [[gregisenberg-2026036464287412412]]
 - [[ihtesham2005-2026264341419528643]]
 

@@ -19,5 +19,5 @@ Lovable is a SaaS solution that uses artificial intelligence to transform highâ€
 
 ## Related Sources
 
-- [[PrajwalTomar_-2024097242387235026]]
+- [[prajwaltomar_-2024097242387235026]]
 - [[damienghader-2036851187765698577]]

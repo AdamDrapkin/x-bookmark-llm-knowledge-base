@@ -19,7 +19,7 @@ Empathy mapping is a collaborative exercise typically conducted with cross-funct
 
 ## Related Sources
 
-- [[EXM7777-1991528477775032628]]
+- [[exm7777-1991528477775032628]]
 
 ## Related Entities
 

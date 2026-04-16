@@ -19,9 +19,9 @@ Open source refers to software whose source code is freely available for anyone 
 
 ## Related Sources
 
-- [[DataChaz-2032396544545378421]]
-- [[ErickSky-2040824372793930063]]
-- [[ErickSky-2040999023230751048]]
+- [[datachaz-2032396544545378421]]
+- [[ericksky-2040824372793930063]]
+- [[ericksky-2040999023230751048]]
 - [[alex_prompter-2027659595599253892]]
 - [[heynavtoor-2037158617519186144]]
 - [[ihtesham2005-2026264341419528643]]

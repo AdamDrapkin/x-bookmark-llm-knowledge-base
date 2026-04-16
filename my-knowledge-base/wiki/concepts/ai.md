@@ -19,7 +19,7 @@ Artificial intelligence encompasses a broad range of technologies that enable ma
 
 ## Related Sources
 
-- [[KanikaBK-2040764115501908175]]
+- [[kanikabk-2040764115501908175]]
 - [[amirmxt-2025873165680005298]]
 
 ## Related Entities

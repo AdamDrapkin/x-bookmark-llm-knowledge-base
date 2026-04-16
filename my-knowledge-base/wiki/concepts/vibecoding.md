@@ -19,7 +19,7 @@ Vibecoding is a paradigm where developers articulate what they want a program to
 
 ## Related Sources
 
-- [[KanikaBK-2040764115501908175]]
+- [[kanikabk-2040764115501908175]]
 - [[godofprompt-1992043551283175716]]
 - [[itsandrewgao-2027579200635605058]]
 

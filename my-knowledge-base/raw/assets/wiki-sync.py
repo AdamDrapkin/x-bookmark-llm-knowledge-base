@@ -804,6 +804,287 @@ Total: {len(analyses)} videos analyzed
     return len(analyses), len(repos)
 
 
+def update_outputs_index():
+    """Update wiki/outputs/_index.md with lint reports + logs + manifests"""
+    index_file = WIKI_ROOT / 'outputs' / '_index.md'
+    if not index_file.exists():
+        return None
+
+    outputs = sorted([f.stem for f in (WIKI_ROOT / 'outputs').glob('*.md')
+                    if not f.name.startswith('_')])
+
+    # Get logs and manifests from raw/assets
+    raw_assets = WIKI_ROOT.parent / "raw/assets"
+    logs = sorted([f.stem for f in raw_assets.glob('*log*') if f.is_file()])
+    manifests = sorted([f.stem for f in raw_assets.glob('manifest*') if f.is_file()])
+
+    content = f"""---
+title: "Outputs Index"
+date_created: 2026-04-08
+date_modified: {TODAY}
+summary: "Index of all outputs - lint reports, pipeline artifacts, logs"
+tags: [index, outputs, maintenance, logs]
+type: index
+status: final
+---
+
+# Outputs Index
+
+## Lint Reports ({len(outputs)})
+
+"""
+    for o in outputs:
+        content += f"- [[{o}]]\n"
+
+    content += f"""
+
+## Pipeline Artifacts
+
+"""
+    for m in manifests:
+        content += f"- {m}\n"
+
+    content += f"""
+
+## Pipeline Logs
+
+"""
+    for l in logs:
+        content += f"- {l}\n"
+
+    content += f"""
+
+## Summary
+
+- Lint reports: {len(outputs)}
+- Manifests: {len(manifests)}
+- Logs: {len(logs)}
+"""
+
+    index_file.write_text(content)
+    return len(outputs)
+
+
+def update_syntheses_index():
+    """Update wiki/syntheses/_index.md"""
+    index_file = WIKI_ROOT / 'syntheses' / '_index.md'
+    if not index_file.exists():
+        return None
+
+    syntheses = sorted([f.stem for f in (WIKI_ROOT / 'syntheses').glob('*.md')
+                     if not f.name.startswith('_')])
+
+    content = f"""---
+title: "Syntheses Index"
+date_created: 2026-04-08
+date_modified: {TODAY}
+summary: "Index of synthesis pages from wiki queries"
+tags: [index, synthesis]
+type: index
+status: final
+---
+
+# Syntheses Index
+
+## All Syntheses ({len(syntheses)})
+
+"""
+    for s in syntheses:
+        content += f"- [[{s}]]\n"
+
+    index_file.write_text(content)
+    return len(syntheses)
+
+
+def update_x_image_index():
+    """Update wiki/x-image-analyses/_index.md"""
+    index_file = WIKI_ROOT / 'x-image-analyses' / '_index.md'
+    if not index_file.exists():
+        return None
+
+    images = sorted([f.stem for f in (WIKI_ROOT / 'x-image-analyses').glob('*.md')
+                    if not f.name.startswith('_')])
+
+    content = f"""---
+title: "Image Analyses Index"
+date_created: 2026-04-08
+date_modified: {TODAY}
+summary: "Index of image analyses from X posts"
+tags: [index, x-image-analyses]
+type: index
+status: final
+---
+
+# Image Analyses
+
+## All Image Analyses ({len(images)})
+
+"""
+    for img in images:
+        content += f"- [[{img}]]\n"
+
+    index_file.write_text(content)
+    return len(images)
+
+
+def update_x_video_index():
+    """Update wiki/x-video-analyses/_index.md"""
+    index_file = WIKI_ROOT / 'x-video-analyses' / '_index.md'
+    if not index_file.exists():
+        return None
+
+    videos = sorted([f.stem for f in (WIKI_ROOT / 'x-video-analyses').glob('*.md')
+                   if not f.name.startswith('_')])
+
+    content = f"""---
+title: "Video Analyses Index"
+date_created: 2026-04-08
+date_modified: {TODAY}
+summary: "Index of video analyses from X posts"
+tags: [index, x-video-analyses]
+type: index
+status: final
+---
+
+# Video Analyses
+
+## All Video Analyses ({len(videos)})
+
+"""
+    for v in videos:
+        content += f"- [[{v}]]\n"
+
+    index_file.write_text(content)
+    return len(videos)
+
+
+def update_x_github_index():
+    """Update wiki/x-github-repos/_index.md"""
+    index_file = WIKI_ROOT / 'x-github-repos' / '_index.md'
+    if not index_file.exists():
+        return None
+
+    repos = sorted([f.stem for f in (WIKI_ROOT / 'x-github-repos').glob('*.md')
+                   if not f.name.startswith('_')])
+
+    content = f"""---
+title: "GitHub Repos Index"
+date_created: 2026-04-08
+date_modified: {TODAY}
+summary: "Index of GitHub repos from X posts"
+tags: [index, x-github-repos]
+type: index
+status: final
+---
+
+# GitHub Repos
+
+## All GitHub Repos ({len(repos)})
+
+"""
+    for r in repos:
+        content += f"- [[{r}]]\n"
+
+    index_file.write_text(content)
+    return len(repos)
+
+
+def update_main_index():
+    """Update the master wiki/index.md with all sections"""
+    index_file = WIKI_ROOT / 'index.md'
+
+    sources = len([f for f in (WIKI_ROOT / 'sources').glob('*.md')
+                  if not f.name.startswith('_')])
+    entities = len([f for f in (WIKI_ROOT / 'entities').glob('*.md')
+                  if not f.name.startswith('_')])
+    concepts = len([f for f in (WIKI_ROOT / 'concepts').glob('*.md')
+                  if not f.name.startswith('_')])
+    images = len([f for f in (WIKI_ROOT / 'x-image-analyses').glob('*.md')
+                if not f.name.startswith('_')])
+    videos = len([f for f in (WIKI_ROOT / 'x-video-analyses').glob('*.md')
+               if not f.name.startswith('_')])
+    github = len([f for f in (WIKI_ROOT / 'x-github-repos').glob('*.md')
+                 if not f.name.startswith('_')])
+    outputs = len([f for f in (WIKI_ROOT / 'outputs').glob('*.md')
+                  if not f.name.startswith('_')])
+    syntheses = len([f for f in (WIKI_ROOT / 'syntheses').glob('*.md')
+                   if not f.name.startswith('_')]) if (WIKI_ROOT / 'syntheses').exists() else 0
+
+    content = f"""---
+title: "Wiki Index"
+date_created: 2026-04-08
+date_modified: {TODAY}
+summary: "Master index of the AI knowledge base wiki"
+tags: [wiki, index]
+type: index
+status: final
+---
+
+# Wiki Index
+
+## Core Structure
+
+### Sources ({sources})
+X/Twitter source summaries
+
+### Entities ({entities})
+Companies, products, people
+
+### Concepts ({concepts})
+Techniques, methodologies
+
+### QA Pairs (14)
+Question-answer datasets
+
+### Syntheses ({syntheses})
+Wiki query responses
+
+## Attachments
+
+### Image Analyses ({images})
+Screenshot analyses from X
+
+### Video Analyses ({videos})
+Video analyses from X
+
+### GitHub Repos ({github})
+GitHub repository analyses
+
+## Outputs & Maintenance
+
+### Lint Reports ({outputs})
+Wiki health checks
+
+### Pipeline Logs
+- pipeline-live.log
+- qa-cron.log
+- manifest-batch-*.json
+
+## Quick Stats
+
+| Category | Count |
+|----------|-------|
+| Sources | {sources} |
+| Entities | {entities} |
+| Concepts | {concepts} |
+| QA Batches | 14 |
+| Syntheses | {syntheses} |
+| Images | {images} |
+| Videos | {videos} |
+| GitHub | {github} |
+| Lint | {outputs} |
+
+## Maintenance
+
+- [[lint-2026-04-16]] — Latest
+"""
+
+    index_file.write_text(content)
+    return {'sources': sources, 'entities': entities, 'concepts': concepts,
+            'images': images, 'videos': videos, 'github': github,
+            'outputs': outputs, 'syntheses': syntheses}
+
+
 def update_qa_pairs_index():
     """Update wiki/qa-pairs/_index.md"""
     index_file = WIKI_ROOT / 'qa-pairs' / '_index.md'
@@ -886,14 +1167,33 @@ def main():
     updated_concepts = update_all_concepts(concept_sources, sources, client)
     print(f"   Updated: {len(updated_concepts)} concept pages")
 
-    # 5. Update indexes
-    print("\n📑 Updating index files...")
+    # 5. Update core indexes
+    print("\n📑 Updating core index files...")
     ent_count = update_entities_index()
     conc_count = update_concepts_index()
+    qa_count = update_qa_pairs_index()
     print(f"   Entities index: {ent_count} entities")
     print(f"   Concepts index: {conc_count} concepts")
+    print(f"   QA pairs: {qa_count} batches")
 
-    # 6. Update SCHEMA.md
+    # 6. Update all additional indexes (NEW)
+    print("\n📑 Updating all additional indexes...")
+    outputs_count = update_outputs_index()
+    syntheses_count = update_syntheses_index()
+    images_x_count = update_x_image_index()
+    videos_x_count = update_x_video_index()
+    github_x_count = update_x_github_index()
+    print(f"   Outputs index: {outputs_count}")
+    print(f"   Syntheses index: {syntheses_count}")
+    print(f"   Image analyses index: {images_x_count}")
+    print(f"   Video analyses index: {videos_x_count}")
+    print(f"   GitHub repos index: {github_x_count}")
+
+    # 7. Update main wiki index (NEW)
+    print("\n📑 Updating master wiki index...")
+    main_stats = update_main_index()
+
+    # 8. Update SCHEMA.md
     print("\n📝 Checking SCHEMA.md...")
     new_dirs = update_schema()
     if new_dirs:

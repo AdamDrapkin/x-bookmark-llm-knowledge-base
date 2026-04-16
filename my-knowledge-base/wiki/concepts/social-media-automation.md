@@ -19,9 +19,9 @@ Social media automation leverages tools and AI to streamline the creation, sched
 
 ## Related Sources
 
-- [[JamesEbringer-2027504630817603638]]
-- [[JamesEbringer-2036733267018133667]]
-- [[JaynitMakwana-2036358672033710370]]
+- [[jamesebringer-2027504630817603638]]
+- [[jamesebringer-2036733267018133667]]
+- [[jaynitmakwana-2036358672033710370]]
 
 ## Related Entities
 

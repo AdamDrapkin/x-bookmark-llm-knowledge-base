@@ -19,8 +19,8 @@ Content creation involves producing and distributing valuable material across di
 
 ## Related Sources
 
-- [[EXM7777-1991528477775032628]]
-- [[ErickSky-2040824372793930063]]
+- [[exm7777-1991528477775032628]]
+- [[ericksky-2040824372793930063]]
 - [[alexxgrowth-2037035092992733624]]
 - [[alexxgrowth-2037514725274308840]]
 

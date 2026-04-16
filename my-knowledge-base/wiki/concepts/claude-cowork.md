@@ -19,7 +19,7 @@ Claude Cowork is a premium consulting service priced at $3,000 that enables busi
 
 ## Related Sources
 
-- [[NickSpisak_-2037598275658760543]]
+- [[nickspisak_-2037598275658760543]]
 
 ## Related Entities
 

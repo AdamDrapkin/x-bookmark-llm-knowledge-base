@@ -19,8 +19,8 @@ Typography governs how text is styled, spaced, and positioned to convey meaning 
 
 ## Related Sources
 
-- [[AlbiaHossain-2027648600097054727]]
-- [[MengTo-1991489885690364187]]
+- [[albiahossain-2027648600097054727]]
+- [[mengto-1991489885690364187]]
 
 ## Related Entities
 
