@@ -3087,6 +3087,38 @@ def run_phase4(manifest: Dict, config: Dict):
     print(f"\n  ✅ Phase 4 complete")
 
 
+def _load_pending_terms(wiki_root: str) -> Dict[str, int]:
+    """Load pending terms from raw/assets/pending-terms.md.
+    Returns dict of slug -> mention count.
+    """
+    pending_file = Path(wiki_root) / "raw" / "assets" / "pending-terms.md"
+    if not pending_file.exists():
+        return {}
+
+    content = pending_file.read_text()
+    terms = {}
+
+    # Parse terms between ``` ``` blocks
+    in_code_block = False
+    for line in content.split("\n"):
+        if line.strip() == "```":
+            in_code_block = not in_code_block
+            continue
+        if in_code_block and line.strip():
+            # Format: "term: count"
+            if ": " in line:
+                parts = line.rsplit(": ", 1)
+                if len(parts) == 2:
+                    slug = parts[0].strip()
+                    try:
+                        count = int(parts[1].strip())
+                        terms[slug] = count
+                    except ValueError:
+                        pass
+
+    return terms
+
+
 def _run_lint_checks(wiki_root: str) -> Tuple[List[Dict], List[Dict], List[Dict]]:
     """Run all deterministic lint checks."""
     errors = []
@@ -3126,11 +3158,15 @@ def _run_lint_checks(wiki_root: str) -> Tuple[List[Dict], List[Dict], List[Dict]
             if link in inventory:
                 inventory[link]["inbound"].append(slug)
 
-    # Check broken links
+    # Check broken links (excluding terms in pending-terms.md)
+    pending_terms = _load_pending_terms(wiki_root)
     for slug, page in inventory.items():
         for link in page["outbound"]:
-            if link not in inventory:
+            if link not in inventory and link not in pending_terms:
                 errors.append({"type": "broken_link", "page": slug, "target": link})
+            elif link not in inventory and link in pending_terms:
+                # Known pending term - mark as info instead of error
+                info_items.append({"type": "pending_term", "slug": link, "count": pending_terms.get(link, 0)})
 
     # Check missing frontmatter
     required = ["title", "date_created", "date_modified", "summary", "tags", "type", "status"]

@@ -50,7 +50,7 @@ From the raw analysis:
 
 ## Related Sources
 
-- [[EHuanglu-1991560454104313914]] — Source tweet
+- [[ehuanglu-1991560454104313914]] — Source tweet
 
 ## Related Concepts
 
