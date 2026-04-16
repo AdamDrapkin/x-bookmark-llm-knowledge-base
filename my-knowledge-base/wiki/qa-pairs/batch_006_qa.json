@@ -1,0 +1,590 @@
+{
+  "frontmatter": {
+    "title": "QA: Batch 006",
+    "date_created": "2026-04-16",
+    "date_modified": "2026-04-16",
+    "summary": "75 source questions from batch_006 (Layer 1 only - synthesis_questions skipped)",
+    "tags": ["qa-pairs", "batch-006"],
+    "type": "qa-pairs",
+    "status": "review"
+  },
+  "batch_id": "batch_006",
+  "batch_timestamp": "2026-04-16T11:30:00Z",
+  "sources_in_batch": 15,
+  "source_questions": [
+    {
+      "source_slug": "adamlyttleapps-2038535497828733177",
+      "source_content_preview": "Developer @adamlyttleapps has created a Claude Skill designed to automate the creation of App Store screenshots...",
+      "questions": [
+        {
+          "question_id": "q_batch006_adamlyttleapps-2038535497828733177_01",
+          "question_type": "identity_problem",
+          "question": "What is the Claude Skill for App Store screenshots and what specific problem does it solve?",
+          "answer": "The Claude Skill for App Store screenshots is a custom skill created by developer @adamlyttleapps that automates the creation of App Store screenshots. It solves the problem of spending hours manually arranging and formatting screenshots in design tools like Figma, reducing the workflow to approximately 15 minutes with minimal manual intervention.",
+          "search_terms": ["Claude Skill", "App Store screenshots", "automation", "Figma"]
+        },
+        {
+          "question_id": "q_batch006_adamlyttleapps-2038535497828733177_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does the App Store screenshot skill actually do?",
+          "answer": "Instead of designers spending hours manually creating App Store screenshots by dragging and dropping in Figma, they simply provide their raw app screenshots as input, and the skill automatically handles all the layout, formatting, and styling to create production-ready images that can be directly uploaded to App Store Connect.",
+          "search_terms": ["automate screenshots", "App Store images", "design automation"]
+        },
+        {
+          "question_id": "q_batch006_adamlyttleapps-2038535497828733177_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for this Claude Skill?",
+          "answer": "Also called: iOS screenshot automation, App Store asset generator, Claude screenshot tool, mobile app marketing image creator, iPhone screenshot designer.",
+          "search_terms": ["screenshot tool", "iOS marketing assets", "App Store Connect tools"]
+        },
+        {
+          "question_id": "q_batch006_adamlyttleapps-2038535497828733177_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with App Store screenshot automation and when does it fail?",
+          "answer": "Common mistakes include providing screenshots at wrong resolutions, not accounting for different device sizes (iPhone vs iPad), and assuming the skill understands app-specific context. It may fail when screenshots contain complex UI elements that require human judgment for effective presentation, or when Apple changes their screenshot specifications.",
+          "search_terms": ["screenshot resolution", "device sizes", "App Store requirements"]
+        },
+        {
+          "question_id": "q_batch006_adamlyttleapps-2038535497828733177_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using the App Store screenshot Claude Skill and what's the first step?",
+          "answer": "You need raw app screenshots in standard image formats (PNG or JPEG). First step: install or import the Claude Skill into your Claude Code environment, then provide your raw screenshots as input and describe any specific formatting preferences.",
+          "search_terms": ["install skill", "screenshot formats", "Claude Code setup"]
+        }
+      ]
+    },
+    {
+      "source_slug": "adiix_official-2037604599398322682",
+      "source_content_preview": "This tweet consists solely of a shortened URL (https://t.co/tZJw0URrhg) with no accompanying text...",
+      "questions": [
+        {
+          "question_id": "q_batch006_adiix_official-2037604599398322682_01",
+          "question_type": "identity_problem",
+          "question": "What is the tweet by @adiix_official and what specific problem does it solve?",
+          "answer": "This is a standalone tweet from @adiix_official containing only a shortened URL pointing to external AI research content. It serves as a link-sharing mechanism for AI research resources, though the specific content being shared is unknown without expanding the URL.",
+          "search_terms": ["AI research", "link sharing", "external content"]
+        },
+        {
+          "question_id": "q_batch006_adiix_official-2037604599398322682_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does this tweet actually do?",
+          "answer": "Someone shared a link to what appears to be AI research content. The link itself is the entire tweet - there's no explanation of what you'll find when clicking it.",
+          "search_terms": ["link tweet", "AI content", "URL share"]
+        },
+        {
+          "question_id": "q_batch006_adiix_official-2037604599398322682_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for this type of tweet?",
+          "answer": "Also called: link-only tweet, URL post, external link share, standalone link, bare link tweet, link dump.",
+          "search_terms": ["link post", "URL tweet", "external link"]
+        },
+        {
+          "question_id": "q_batch006_adiix_official-2037604599398322682_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with link-only tweets and when does it fail?",
+          "answer": "The main issue is providing no context - readers don't know what they'll find or why they should click. It fails when the shortened URL is dead, when the destination requires login/authentication, or when the content doesn't match what followers expected based on the author's niche.",
+          "search_terms": ["link context", "dead links", "URL expansion"]
+        },
+        {
+          "question_id": "q_batch006_adiix_official-2037604599398322682_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using link-only tweets effectively and what's the first step?",
+          "answer": "You need a shortened URL to share. First step: expand the URL to verify it's working and understand the destination, then consider adding at least a brief description of what the link contains.",
+          "search_terms": ["URL shortener", "link verification", "tweet best practices"]
+        }
+      ]
+    },
+    {
+      "source_slug": "adxtyahq-2027662487785808134",
+      "source_content_preview": "A standalone tweet by @adxtyahq containing only an external link (https://t.co/KZyKqkbMnH)...",
+      "questions": [
+        {
+          "question_id": "q_batch006_adxtyahq-2027662487785808134_01",
+          "question_type": "identity_problem",
+          "question": "What is the tweet by @adxtyahq and what specific problem does it solve?",
+          "answer": "This is a standalone tweet from @adxtyahq containing only a shortened external link categorized under AI research. It functions as a link-sharing format for AI research content, though the specific destination cannot be analyzed.",
+          "search_terms": ["AI research", "external link", "link sharing"]
+        },
+        {
+          "question_id": "q_batch006_adxtyahq-2027662487785808134_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does this tweet actually do?",
+          "answer": "An account sharing AI research content posted a link. That's the entire tweet - just a URL to click if you're interested in AI research topics.",
+          "search_terms": ["research link", "AI content share", "external URL"]
+        },
+        {
+          "question_id": "q_batch006_adxtyahq-2027662487785808134_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for this type of content?",
+          "answer": "Also called: link tweet, URL post, external reference, link-only share, resource link, reference link.",
+          "search_terms": ["external content", "resource share", "link format"]
+        },
+        {
+          "question_id": "q_batch006_adxtyahq-2027662487785808134_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with external link tweets and when does it fail?",
+          "answer": "The primary mistake is no context or preview. It fails when the link expires (shortened URLs often have lifespans), when the destination is paywalled, or when the topic doesn't match follower expectations.",
+          "search_terms": ["link expiry", "paywall", "follower expectations"]
+        },
+        {
+          "question_id": "q_batch006_adxtyahq-2027662487785808134_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before sharing external links on social media and what's the first step?",
+          "answer": "You need the URL you want to share. First step: use a URL expander to verify the destination works, then add a brief description or preview text to give followers context.",
+          "search_terms": ["link sharing", "URL best practices", "social media tips"]
+        }
+      ]
+    },
+    {
+      "source_slug": "aiedge_-2025797789591154688",
+      "source_content_preview": "This cheatsheet addresses a fundamental challenge in long AI workflows: context window overload...",
+      "questions": [
+        {
+          "question_id": "q_batch006_aiedge_-2025797789591154688_01",
+          "question_type": "identity_problem",
+          "question": "What is the Claude Skills Cheatsheet and what specific problem does it solve?",
+          "answer": "The Claude Skills Cheatsheet is a comprehensive guide explaining how Claude Skills solve context window overload in long AI workflows. It solves the problem of buried instructions, token waste on irrelevant content, and inconsistent responses that occur when conversations grow lengthy.",
+          "search_terms": ["Claude Skills", "context window", "cheatsheet", "token optimization"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2025797789591154688_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does Claude Skills architecture actually do?",
+          "answer": "Instead of cramming all instructions into every conversation with Claude, Skills let you store reusable instructions externally. Claude loads only the name and description upfront, then pulls in the full instructions only when needed - like having a smart assistant that knows to grab the right manual only when relevant.",
+          "search_terms": ["external prompts", "modular instructions", "AI workflow"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2025797789591154688_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for Claude Skills?",
+          "answer": "Also called: prompt modules, skill libraries, external workflows, reusable prompts, modular AI tasks, automation templates, task plugins.",
+          "search_terms": ["prompt modules", "task automation", "AI plugins"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2025797789591154688_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Claude Skills and when does it fail?",
+          "answer": "Common mistakes include creating skills that are too narrow (only useful once), overloading skills with too many instructions, or not following the proper YAML frontmatter format. Skills fail when they conflict with each other, when dependencies aren't documented, or when the skill structure doesn't match Claude's expected format.",
+          "search_terms": ["YAML format", "skill structure", "dependency errors"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2025797789591154688_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before creating Claude Skills and what's the first step?",
+          "answer": "You need a clear task you perform repeatedly and a folder with the proper structure (skill.md, optional Resources/ and Scripts/). First step: create a folder with skill.md containing proper YAML frontmatter (Name, Description, Version, Dependencies) followed by your instructions.",
+          "search_terms": ["create skill", "skill.md format", "folder structure"]
+        }
+      ]
+    },
+    {
+      "source_slug": "aiedge_-2037348914496766297",
+      "source_content_preview": "This tweet shares a comprehensive cheatsheet of every Claude Code command, organized into 12 functional categories...",
+      "questions": [
+        {
+          "question_id": "q_batch006_aiedge_-2037348914496766297_01",
+          "question_type": "identity_problem",
+          "question": "What is the Complete Claude Code Command Reference and what specific problem does it solve?",
+          "answer": "The Complete Claude Code Command Reference is a comprehensive cheatsheet covering all 93 Claude Code commands organized into 12 functional categories. It solves the problem of discovering and using Claude Code's full capabilities, from project management to integrations.",
+          "search_terms": ["Claude Code", "commands", "CLI reference", "cheatsheet"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2037348914496766297_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what do Claude Code commands actually do?",
+          "answer": "Claude Code has shortcuts you type (like /help, /model, /compact) that do things like switch AI models, manage conversation context, check costs, or run background tasks. Think of them as keyboard shortcuts for telling your AI assistant what to do.",
+          "search_terms": ["slash commands", "CLI shortcuts", "Claude Code tips"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2037348914496766297_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for Claude Code commands?",
+          "answer": "Also called: slash commands, CLI commands, / commands, keyboard shortcuts, assistant commands, Claude directives.",
+          "search_terms": ["/ commands", "CLI tools", "Claude shortcuts"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2037348914496766297_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Claude Code commands and when does it fail?",
+          "answer": "Common mistakes include using commands in wrong contexts (like /compact when not enough context exists to compress), forgetting which commands require confirmation, or mixing up similar commands like /resume vs /fork. Commands may fail if permissions are restricted or in certain CLI modes.",
+          "search_terms": ["command errors", "permission issues", "CLI mode restrictions"]
+        },
+        {
+          "question_id": "q_batch006_aiedge_-2037348914496766297_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Claude Code commands and what's the first step?",
+          "answer": "You need Claude Code installed. First step: type /help to see all available commands, or start with commonly used ones like /context to see what's in your current conversation.",
+          "search_terms": ["install Claude Code", "/help command", "getting started"]
+        }
+      ]
+    },
+    {
+      "source_slug": "aigleeson-2037848861591703914",
+      "source_content_preview": "724 Office is a production-running AI agent built in ~3,500 lines of pure Python with zero framework dependencies...",
+      "questions": [
+        {
+          "question_id": "q_batch006_aigleeson-2037848861591703914_01",
+          "question_type": "identity_problem",
+          "question": "What is 724 Office and what specific problem does it solve?",
+          "answer": "724 Office is a production-running self-evolving AI agent built in approximately 3,500 lines of pure Python with zero framework dependencies. It solves the problem of limited agent autonomy by featuring runtime tool creation, self-repair capabilities, three-layer memory, and MCP/Plugin system support - enabling an agent that can write its own tools and fix itself when broken.",
+          "search_terms": ["724 Office", "self-evolving agent", "Python AI", "autonomous agent"]
+        },
+        {
+          "question_id": "q_batch006_aigleeson-2037848861591703914_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does 724 Office actually do?",
+          "answer": "Think of 724 Office as an AI worker that runs 24/7 and can teach itself new skills. Unlike typical AI assistants that only use pre-made tools, this one can write entirely new Python programs while it's running, remember conversations long-term using a vector database, and even diagnose and fix its own problems.",
+          "search_terms": ["AI worker", "self-learning AI", "Python agent"]
+        },
+        {
+          "question_id": "q_batch006_aigleeson-2037848861591703914_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for 724 Office?",
+          "answer": "Also called: self-evolving AI agent, autonomous Python agent, runtime tool creator, 24/7 AI worker, self-repairing agent, AI office assistant.",
+          "search_terms": ["autonomous agent", "self-modifying AI", "runtime AI"]
+        },
+        {
+          "question_id": "q_batch006_aigleeson-2037848861591703914_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with self-evolving agents and when does it fail?",
+          "answer": "Risks include the agent writing poor-quality or buggy tools, security vulnerabilities from runtime code execution, and runaway self-modification loops. It fails when tool creation produces code with errors, when memory systems become corrupted, or when self-repair mechanisms misdiagnose issues.",
+          "search_terms": ["AI safety", "runtime errors", "agent failures"]
+        },
+        {
+          "question_id": "q_batch006_aigleeson-2037848861591703914_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before running 724 Office and what's the first step?",
+          "answer": "You need Python 3.8+, Docker, and three lightweight dependencies (croniter, LanceDB, websocket-client). First step: clone the repository and configure your Docker environment for the multi-tenant container system.",
+          "search_terms": ["Python requirements", "Docker setup", "LanceDB"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2025871696444735570",
+      "source_content_preview": "This tweet presents five distinct Claude prompts spanning multiple financial modeling use cases: DCF model generation...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2025871696444735570_01",
+          "question_type": "identity_problem",
+          "question": "What is AI Financial Modeling with Claude and what specific problem does it solve?",
+          "answer": "AI Financial Modeling with Claude is a collection of 5 Claude prompts designed to generate professional-grade financial models including DCF analyses, scenario planning, and board-ready projections. It solves the problem of expensive management consulting engagements by providing AI-generated financial analysis that rivals work costing $50,000+ from firms like McKinsey.",
+          "search_terms": ["financial modeling", "DCF analysis", "Claude prompts", "consulting alternatives"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2025871696444735570_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does financial modeling with AI actually do?",
+          "answer": "Instead of paying consultants huge fees to build financial models, you can now type prompts into Claude and get professional financial analysis - discounted cash flow models, what-if scenarios, and executive-ready presentations - in minutes instead of weeks.",
+          "search_terms": ["AI finance", "automated financial analysis", "financial prompts"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2025871696444735570_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for AI financial modeling?",
+          "answer": "Also called: AI financial analysis, automated DCF, AI consulting replacement, prompt-based finance, LLM financial modeling,智能财务分析.",
+          "search_terms": ["AI finance tools", "automated analysis", "financial AI"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2025871696444735570_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with AI financial modeling and when does it fail?",
+          "answer": "Common mistakes include trusting AI calculations without verification, using outdated assumptions, and not understanding the limitations of the underlying model. It fails when inputs contain errors, when market conditions change rapidly, or when complex real-world factors aren't captured in the prompts.",
+          "search_terms": ["financial errors", "calculation verification", "model limitations"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2025871696444735570_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Claude for financial modeling and what's the first step?",
+          "answer": "You need Claude access and financial data/assumptions for your analysis. First step: start with a simple DCF prompt like 'Build a discounted cash flow model for [company] with these assumptions...' and iterate from there.",
+          "search_terms": ["financial prompts", "DCF template", "getting started finance"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2026085883019984964",
+      "source_content_preview": "This tweet introduces a prompt engineering approach to cognitive reframing through an Optimism Rewiring Coach...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2026085883019984964_01",
+          "question_type": "identity_problem",
+          "question": "What is the Optimism Rewiring Prompt and what specific problem does it solve?",
+          "answer": "The Optimism Rewiring Prompt is a prompt engineering approach to cognitive reframing backed by Harvard research showing optimists live 11-15% longer with 35% lower cardiac risk. It solves the problem of fixed negative thought patterns by providing neuroscience-based techniques for mental reprogramming through an AI assistant.",
+          "search_terms": ["optimism", "cognitive reframing", "Harvard research", "neuroplasticity"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2026085883019984964_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does optimism rewiring actually do?",
+          "answer": "It's a way to train your brain to think more positively, like working out a muscle. Instead of just hoping you'll feel better, you use specific AI-guided exercises backed by brain science to actually change how your mind naturally responds to situations.",
+          "search_terms": ["positive thinking", "mental training", "brain rewiring"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2026085883019984964_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for optimism rewiring?",
+          "answer": "Also called: cognitive restructuring, positivity training, mindset reprogramming, neural rewiring, positive psychology AI, CBT AI, thought pattern changing.",
+          "search_terms": ["cognitive behavioral", "mindset", "positive psychology"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2026085883019984964_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with optimism rewiring and when does it fail?",
+          "answer": "Common mistakes include forced positivity (ignoring real problems), superficial affirmations without deeper processing, and using it as a replacement for professional mental health care. It fails when underlying depression or anxiety requires clinical treatment, or when people use it to avoid addressing legitimate negative circumstances.",
+          "search_terms": ["toxic positivity", "mental health", "appropriate use"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2026085883019984964_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using optimism rewiring prompts and what's the first step?",
+          "answer": "You need a clear willingness to work on thought patterns and realistic expectations. First step: start with a simple prompt like 'Act as an optimism rewiring coach and help me reframe [specific negative thought] using neuroscience-based techniques.'",
+          "search_terms": ["starting prompts", "cognitive reframing", "mental wellness AI"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2027659595599253892",
+      "source_content_preview": "SkillsMP is a community-driven marketplace featuring 269,875+ open-source agent skills designed to extend Claude Code...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2027659595599253892_01",
+          "question_type": "identity_problem",
+          "question": "What is SkillsMP and what specific problem does it solve?",
+          "answer": "SkillsMP is a community-driven marketplace featuring 269,875+ open-source agent skills designed to extend Claude Code's capabilities. It solves the problem of limited built-in agent capabilities by providing a standardized SKILL.md format for discovering, sharing, and installing community-built skills for tasks like PowerPoint generation, PR review, cloud deployment, and data analysis.",
+          "search_terms": ["SkillsMP", "agent skills marketplace", "Claude Code extensions", "open-source skills"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027659595599253892_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does SkillsMP actually do?",
+          "answer": "Think of SkillsMP as an App Store for Claude Code - instead of writing your own instructions for every task, you can browse and install skills other people have created for things like writing code, analyzing data, or creating presentations.",
+          "search_terms": ["skill marketplace", "Claude add-ons", "plugin store"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027659595599253892_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for SkillsMP?",
+          "answer": "Also called: Claude skills marketplace, agent skill library, Claude extensions, skill directory, AI plugin store, capability marketplace.",
+          "search_terms": ["Claude plugins", "skill library", "AI extensions"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027659595599253892_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with SkillsMP and when does it fail?",
+          "answer": "Common mistakes include installing too many skills (cluttering context), not understanding what a skill does before installing, and mixing skills that conflict. It fails when skills aren't maintained (broken by updates), when they require dependencies you don't have, or when community skills have security issues.",
+          "search_terms": ["skill conflicts", "maintenance", "security risks"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027659595599253892_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using SkillsMP and what's the first step?",
+          "answer": "You need Claude Code installed. First step: visit skills.marketplace or use the Claude Code command to search for skills with a description like 'data analysis' or 'PowerPoint generation' to find relevant capabilities.",
+          "search_terms": ["find skills", "install skills", "marketplace access"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2027684564324548951",
+      "source_content_preview": "This tweet shares a meta-prompt designed to leverage Claude's hidden SKILLS feature for reusable workflows...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2027684564324548951_01",
+          "question_type": "identity_problem",
+          "question": "What is the Claude SKILLS Architecture Mega Prompt and what specific problem does it solve?",
+          "answer": "The Claude SKILLS Architecture Mega Prompt is a meta-prompt that positions Claude as an expert SKILLS architect to create production-grade skill prompts. It solves the problem of repeatedly explaining the same context for recurring tasks by transforming one-time tasks into persistent automation that can be executed forever.",
+          "search_terms": ["SKILLS architecture", "meta-prompt", "persistent automation", "workflow automation"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027684564324548951_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does the SKILLS architecture mega prompt actually do?",
+          "answer": "Instead of explaining the same thing to Claude every time you need it done, you use this mega prompt to have Claude help you build a permanent 'skill' - like recording a macro but for AI conversations. Once built, you just trigger it and Claude knows exactly what to do.",
+          "search_terms": ["skill building", "automation templates", "persistent prompts"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027684564324548951_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for SKILLS architecture?",
+          "answer": "Also called: skill builder, automation framework, persistent prompt system, reusable workflow template, skill creator, meta-prompting.",
+          "search_terms": ["skill templates", "workflow automation", "prompt templates"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027684564324548951_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with SKILLS architecture and when does it fail?",
+          "answer": "Common mistakes include building skills that are too specific (only work for one exact situation), not testing the skill thoroughly before saving, and overcomplicating the skill instructions. It fails when the original use case changes significantly or when the skill wasn't designed with edge cases in mind.",
+          "search_terms": ["skill testing", "edge cases", "skill maintenance"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2027684564324548951_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before creating a SKILL and what's the first step?",
+          "answer": "You need a clear understanding of a task you do repeatedly. First step: copy the mega prompt and start a conversation with Claude describing the task you want to automate - Claude will help you structure the skill.",
+          "search_terms": ["create skill", "mega prompt", "skill workflow"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2036928273830322233",
+      "source_content_preview": "Janusian thinking is a cognitive technique named after Janus, the Roman deity with two faces, holding contradictory ideas...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2036928273830322233_01",
+          "question_type": "identity_problem",
+          "question": "What is the Janusian Thinking Prompt and what specific problem does it solve?",
+          "answer": "The Janusian Thinking Prompt is a prompt engineering technique based on the psychological concept of holding two contradictory ideas simultaneously as a framework for creative problem-solving. It solves the problem of creative blocks by challenging linear thinking patterns and using productive tension between opposing ideas to unlock breakthroughs.",
+          "search_terms": ["Janusian thinking", "creative blocks", "paradox", "cognitive techniques"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2036928273830322233_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does Janusian thinking actually do?",
+          "answer": "Most people think one thing must be right and its opposite wrong. Janusian thinking says: what if BOTH could be true at the same time? By deliberately holding two contradictory ideas in your head, you see possibilities that neither perspective alone could reveal.",
+          "search_terms": ["contradictory thinking", "creative problem solving", "both-and thinking"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2036928273830322233_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for Janusian thinking?",
+          "answer": "Also called: paradoxical thinking, both-and thinking, dual perspective, contradiction-based creativity, adversarial creativity, dialectical thinking.",
+          "search_terms": ["lateral thinking", "divergent thinking", "creative techniques"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2036928273830322233_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Janusian thinking and when does it fail?",
+          "answer": "Common mistakes include forcing contradictions that don't exist, using it to justify bad decisions, and not actually committing to exploring both sides. It fails when people use it to avoid making decisions rather than to explore possibilities, or when there's no actual productive tension between the ideas.",
+          "search_terms": ["false contradictions", "decision paralysis", "creative process"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2036928273830322233_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Janusian thinking prompts and what's the first step?",
+          "answer": "You need a creative problem or decision that feels stuck. First step: use a prompt like 'Act as a Janusian thinker and explore how both [option A] AND [opposite option B] could both be true or valuable for [your problem].'",
+          "search_terms": ["starting prompts", "creative thinking", "problem reframing"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2037123157602296130",
+      "source_content_preview": "This tweet makes a provocative claim about education and offers 6 Claude prompts as an alternative to a $100,000 degree...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2037123157602296130_01",
+          "question_type": "identity_problem",
+          "question": "What is the 6 Claude Prompts for Thinking and what specific problem does it solve?",
+          "answer": "6 Claude Prompts for Thinking is a tweet claiming to offer 6 free Claude prompts that teach critical thinking as an alternative to formal education. It addresses the perceived failure of higher education to teach critical thinking, positioning AI as a free alternative to expensive degree programs.",
+          "search_terms": ["critical thinking", "Claude prompts", "AI learning", "education alternatives"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2037123157602296130_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what do these thinking prompts actually do?",
+          "answer": "The idea is that instead of paying $100k for a degree that mostly teaches memorization, you can use specific AI prompts to practice critical thinking skills - analyzing arguments, questioning assumptions, and evaluating evidence.",
+          "search_terms": ["AI education", "free learning", "critical thinking practice"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2037123157602296130_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for AI thinking prompts?",
+          "answer": "Also called: AI learning prompts, critical thinking exercises, AI tutor prompts, Socratic questioning prompts, analytical thinking AI.",
+          "search_terms": ["learning prompts", "Socratic method", "AI tutor"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2037123157602296130_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with AI thinking prompts and when does it fail?",
+          "answer": "Common mistakes include over-relying on AI instead of developing independent thinking, taking AI responses as authoritative without verification, and confusing information recall with actual critical thinking. It fails when people accept AI answers uncritically rather than using AI to challenge their own thinking.",
+          "search_terms": ["AI dependency", "critical evaluation", "learning limitations"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2037123157602296130_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using AI for critical thinking and what's the first step?",
+          "answer": "You need a willingness to question your own assumptions. First step: use a prompt like 'Challenge every assumption in my following statement and provide alternative perspectives: [your statement].'",
+          "search_terms": ["critical thinking prompts", "questioning assumptions", "AI dialogue"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2038554554334314713",
+      "source_content_preview": "This tweet claims Claude can generate prompts for financial protection strategies emulating Ray Dalio's Bridgewater approach...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2038554554334314713_01",
+          "question_type": "identity_problem",
+          "question": "What is the Claude Prompt Engineering for Financial Strategies and what specific problem does it solve?",
+          "answer": "This tweet claims Claude can be used to generate prompts for financial protection strategies inspired by Ray Dalio's Bridgewater Associates approach. It addresses the desire for accessible financial planning tools, though the claims appear overstated and the content may not match the description.",
+          "search_terms": ["financial strategies", "Ray Dalio", "Claude prompts", "investment"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2038554554334314713_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does this financial strategy prompt approach actually do?",
+          "answer": "The idea is using AI to help create financial plans that supposedly mimic strategies used by big hedge funds - specifically approaches like Dalio's 'All Weather' portfolio designed to perform in different economic conditions.",
+          "search_terms": ["AI investing", "portfolio strategy", "hedge fund strategies"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2038554554334314713_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for AI financial prompts?",
+          "answer": "Also called: AI investment advisor, robo-advisor prompts, algorithmic investing AI, portfolio optimization AI, financial planning automation.",
+          "search_terms": ["AI finance", "automated investing", "robo-advisor"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2038554554334314713_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with AI financial strategy prompts and when does it fail?",
+          "answer": "Major mistakes include believing AI can replicate sophisticated hedge fund strategies, following viral financial advice without verification, and conflating simple prompts with professional financial planning. It fails when people make actual investment decisions based on unverified AI-generated advice without understanding the risks.",
+          "search_terms": ["financial misinformation", "investment risks", "AI advice verification"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2038554554334314713_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using AI for financial planning and what's the first step?",
+          "answer": "You need realistic expectations and financial literacy foundation. First step: use AI to learn financial concepts (like 'explain the All Weather portfolio') rather than to generate specific investment advice, and always verify with a qualified financial advisor.",
+          "search_terms": ["financial education", "AI limitations", "advisor verification"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alex_prompter-2043992940855615716",
+      "source_content_preview": "This thread presents Bobby Fischer's competitive philosophy as a framework for business strategy, translated into 6 AI prompts...",
+      "questions": [
+        {
+          "question_id": "q_batch006_alex_prompter-2043992940855615716_01",
+          "question_type": "identity_problem",
+          "question": "What is the Strategic AI Prompts for Business and what specific problem does it solve?",
+          "answer": "Thinking Like Your Opponent is a set of 6 AI prompts based on Bobby Fischer's chess strategy - anticipating your opponent's moves before they make them. It solves the problem of weak business strategy by helping entrepreneurs map client psychology, predict competitors, decode partnerships, read audiences, prepare for negotiations, and build systematic strategic intelligence.",
+          "search_terms": ["strategic thinking", "business intelligence", "Bobby Fischer", "competitive strategy"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2043992940855615716_02",
+          "question_type": "plain_language",
+          "question": "In plain, non-technical language, what does strategic opponent thinking actually do?",
+          "answer": "Instead of just planning your own moves in business, you use AI to think from your competitor's, client's, or partner's perspective first. What are they really optimizing for? What do they fear? What would make them say yes or no? This gives you an information advantage before you even enter a conversation.",
+          "search_terms": ["business strategy", "opponent thinking", "competitive advantage"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2043992940855615716_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names or descriptions might someone use for strategic intelligence prompts?",
+          "answer": "Also called: adversarial thinking, perspective-taking strategy, competitive analysis AI, stakeholder mapping, pre-negotiation intelligence, strategic preparation.",
+          "search_terms": ["competitive analysis", "negotiation prep", "business psychology"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2043992940855615716_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with strategic intelligence prompts and when does it fail?",
+          "answer": "Common mistakes include assuming you know what opponents want without research, using it to manipulate rather than understand, and over-analyzing to the point of paralysis. It fails when based on incorrect assumptions about the other party, when it replaces rather than supplements real relationship-building.",
+          "search_terms": ["assumptions", "manipulation", "analysis paralysis"]
+        },
+        {
+          "question_id": "q_batch006_alex_prompter-2043992940855615716_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using strategic intelligence prompts and what's the first step?",
+          "answer": "You need a specific business situation (client call, negotiation, competitive scenario). First step: use a prompt like 'Act as a client intelligence specialist and map the objections, hesitations, and unstated fears of a potential client who [describe your prospect].'",
+          "search_terms": ["intelligence prompts", "client mapping", "competitive prep"]
+        }
+      ]
+    }
+  ]
+}

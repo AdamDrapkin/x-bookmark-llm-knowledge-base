@@ -1,0 +1,631 @@
+{
+  "frontmatter": {
+    "title": "QA: Batch 007",
+    "date_created": "2026-04-16",
+    "date_modified": "2026-04-16",
+    "summary": "75 source questions from batch_007 (Layer 1 only)",
+    "tags": ["qa-pairs", "batch-007"],
+    "type": "qa-pairs",
+    "status": "review"
+  },
+  "batch_id": "batch_007",
+  "batch_timestamp": "2026-04-16T11:30:00Z",
+  "sources_in_batch": 15,
+  "source_questions": [
+    {
+      "source_slug": "alexxgrowth-2037035092992733624",
+      "source_content_preview": "Content creator @alexxgrowth shares results from posting 21 videos over 1.5 days on a completely fresh account with zero followers, achieving 390K+ views, 20/21 video approvals, 450 followers, and $80 in earnings.",
+      "questions": [
+        {
+          "question_id": "q_batch007_alexxgrowth-2037035092992733624_01",
+          "question_type": "identity_problem",
+          "question": "What is viral content strategy on fresh social media accounts and what specific problem does it solve?",
+          "answer": "Viral content strategy on fresh accounts is a technique where creators post high volumes of content (21 videos in 1.5 days) on brand-new accounts with zero followers to achieve rapid viral reach. It solves the problem of needing an existing audience to generate traction—demonstrating that fresh accounts can achieve 390K+ views through volume and engagement-optimized content themes like 'cheaters caught' stories.",
+          "search_terms": ["fresh account viral strategy", "content rewards", "viral content themes"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037035092992733624_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does posting 21 videos in 1.5 days actually do?",
+          "answer": "Think of it as casting a wide net—you're flooding the platform with content so that even if most videos don't perform, a few hit the algorithm's recommendations and explode. The creator generated $80 in earnings and 450 followers in under 2 days on a brand new account by focusing on high-engagement topics that trigger strong emotional responses.",
+          "search_terms": ["high volume posting strategy", "social media growth hack"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037035092992733624_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this approach?",
+          "answer": "Also called: viral sprint, volume posting strategy, content velocity approach, fresh account growth hack, platform hopping, content flood method. The approach is sometimes described as 'day 1 viral' or 'instant traction strategy.'",
+          "search_terms": ["volume posting", "content velocity", "rapid growth strategy"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037035092992733624_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with viral content strategies and when does it fail?",
+          "answer": "The most common mistake is posting low-quality content just to hit volume targets, which triggers the platform's spam filters and can get the account penalized. It also fails when creators pick low-engagement topics—the 'cheaters caught' theme works because it triggers strong emotional reactions (outrage, curiosity). Without understanding what makes content engage, volume alone won't produce viral results.",
+          "search_terms": ["content spam penalty", "low engagement topics", "algorithm restrictions"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037035092992733624_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using viral content strategies and what's the first step?",
+          "answer": "You need: a fresh account (or one with no restrictions), understanding of what content themes drive engagement in your target platform, and willingness to create high volumes quickly. First step: identify 3-5 content themes that consistently generate strong emotional engagement in your niche, then create batch content before posting.",
+          "search_terms": ["content themes for engagement", "viral content prerequisites", "getting started viral posting"]
+        }
+      ]
+    },
+    {
+      "source_slug": "alexxgrowth-2037514725274308840",
+      "source_content_preview": "A content creator shares that they went from $0 to $6,800/month in 2 months, and that they'd do differently: stop watching tutorials and start posting. They wasted their entire first week consuming YouTube videos about how to create content.",
+      "questions": [
+        {
+          "question_id": "q_batch007_alexxgrowth-2037514725274308840_01",
+          "question_type": "identity_problem",
+          "question": "What is tutorial paralysis and what specific problem does it solve?",
+          "answer": "Tutorial paralysis is the phenomenon where aspiring creators spend excessive time consuming learning content (YouTube tutorials, courses, guides) instead of actually creating and publishing content. It's not technically a solution—it's a problem that manifests as procrastination disguised as productivity. The 'solution' it incorrectly offers is feeling prepared before starting.",
+          "search_terms": ["tutorial paralysis", "creator procrastination", "learning vs doing"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037514725274308840_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does tutorial paralysis actually do?",
+          "answer": "It makes you feel like you're making progress when you're actually standing still. Watching videos about how to create content feels productive—but it's the 'doing' that creates results. The creator who hit $6,800/month in 2 months realized they wasted their first week watching tutorials instead of just starting.",
+          "search_terms": ["tutorial hell", "consuming vs creating", "action beats preparation"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037514725274308840_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this pattern?",
+          "answer": "Also called: tutorial hell, learning trap, preparation paralysis, analysis paralysis, course stacking, content consumption addiction. Some call it 'falling down the YouTube rabbit hole' or 'research mode as procrastination.'",
+          "search_terms": ["preparation paralysis", "learning trap", "analysis paralysis creator"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037514725274308840_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with tutorial paralysis and when does it fail?",
+          "answer": "The mistake is believing you need to learn more before starting. It fails because the only way to actually learn what works is to create, publish, and get real feedback from an audience. Tutorial consumption without implementation never leads to skill development or audience growth—it just builds false confidence.",
+          "search_terms": ["learning without doing", "when learning fails", "tutorial consumption trap"]
+        },
+        {
+          "question_id": "q_batch007_alexxgrowth-2037514725274308840_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before overcoming tutorial paralysis and what's the first step?",
+          "answer": "You need to accept that 'good enough' is enough to start. First step: publish your first piece of content today—before watching another tutorial. Set a rule: for every hour of learning content consumed, you must create and publish something first.",
+          "search_terms": ["overcoming tutorial paralysis", "start creating not learning", "first step content creation"]
+        }
+      ]
+    },
+    {
+      "source_slug": "amirmxt-2025873165680005298",
+      "source_content_preview": "AI commentator @amirmxt shares a resource predicting that artificial intelligence will produce extreme economic outcomes—either massive wealth or its inverse—framing it as a pivotal choice individuals must navigate.",
+      "questions": [
+        {
+          "question_id": "q_batch007_amirmxt-2025873165680005298_01",
+          "question_type": "identity_problem",
+          "question": "What is AI as binary economic outcome and what specific problem does it solve?",
+          "answer": "This is a framing that presents AI's economic impact as an either/or proposition—either extremely beneficial (creating massive wealth) or extremely detrimental (economic devastation). It doesn't solve a problem but frames AI adoption as a high-stakes decision requiring deliberate strategy.",
+          "search_terms": ["AI economic impact", "AI wealth creation", "AI disruption risk"]
+        },
+        {
+          "question_id": "q_batch007_amirmxt-2025873165680005298_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the binary economic outcome framing actually mean?",
+          "answer": "The idea is that AI won't have moderate effects—it'll either make you incredibly wealthy or leave you behind. It's a winner-take-all narrative that says the choices you make around AI today will determine which side you end up on.",
+          "search_terms": ["AI wealth divide", "AI economic choices", "AI future outcomes"]
+        },
+        {
+          "question_id": "q_batch007_amirmxt-2025873165680005298_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this AI economic framing?",
+          "answer": "Also called: AI winner-take-all, AI wealth gap, AI economic disruption, techno-polarization. Some frame it as 'AI lottery' or 'AI divide'—others call it accelerationist or techno-optimist rhetoric depending on which side they land on.",
+          "search_terms": ["AI economic divide", "techno-optimism", "accelerationism"]
+        },
+        {
+          "question_id": "q_batch007_amirmxt-2025873165680005298_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with binary economic framing and when does it fail?",
+          "answer": "The mistake is treating this binary framing as inevitable rather than one perspective among many. It fails because most economic outcomes from major technological shifts are more nuanced—there's typically widespread adoption with varied individual outcomes rather than a clear binary split.",
+          "search_terms": ["AI inevitability myth", "binary economic framing problems", "when binary narratives fail"]
+        },
+        {
+          "question_id": "q_batch007_amirmxt-2025873165680005298_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before evaluating AI economic outcomes and what's the first step?",
+          "answer": "You need to understand that this is one framing among many, not a fact. First step: research multiple perspectives on AI's economic impact—from both techno-optimists and those highlighting risks—rather than accepting any single binary narrative.",
+          "search_terms": ["evaluating AI economic predictions", "AI impact research", "multiple perspectives AI"]
+        }
+      ]
+    },
+    {
+      "source_slug": "andresmatte-2036061707529834773",
+      "source_content_preview": "Kapso CLI is a command-line tool that enables developers to assign dedicated WhatsApp numbers to AI agents, allowing them to communicate with users through WhatsApp. Two-command setup.",
+      "questions": [
+        {
+          "question_id": "q_batch007_andresmatte-2036061707529834773_01",
+          "question_type": "identity_problem",
+          "question": "What is Kapso CLI and what specific problem does it solve?",
+          "answer": "Kapso CLI is a command-line tool that lets developers give AI agents their own dedicated WhatsApp phone numbers. It solves the problem of AI agents needing a simple way to communicate with users through WhatsApp—abstracting away the complexity of WhatsApp Business API integration.",
+          "search_terms": ["Kapso CLI", "WhatsApp AI agents", "agent communication tools"]
+        },
+        {
+          "question_id": "q_batch007_andresmatte-2036061707529834773_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does Kapso CLI actually do?",
+          "answer": "It's a two-command tool that connects your AI agent to WhatsApp so it can send and receive messages like a real phone number. After installing it, your agent can text users directly through WhatsApp without you needing to deal with complicated API setup.",
+          "search_terms": ["WhatsApp for AI", "agent phone number", "simple WhatsApp integration"]
+        },
+        {
+          "question_id": "q_batch007_andresmatte-2036061707529834773_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for Kapso CLI?",
+          "answer": "Also called: WhatsApp agent CLI, AI phone number tool, WhatsApp bot CLI, agent messaging connector. Developers might call it 'Kapso' or 'Kapso npm package' when discussing it.",
+          "search_terms": ["WhatsApp bot", "AI messaging tool", "agent WhatsApp"]
+        },
+        {
+          "question_id": "q_batch007_andresmatte-2036061707529834773_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Kapso CLI and when does it fail?",
+          "answer": "The most common mistake is not understanding WhatsApp's business policies—using it for spam or violating WhatsApp's terms can get numbers banned. It also fails if developers expect full WhatsApp features beyond simple messaging—the tool is focused on the communication layer, not complex bot workflows.",
+          "search_terms": ["WhatsApp policy compliance", "Kapso limitations", "WhatsApp bot restrictions"]
+        },
+        {
+          "question_id": "q_batch007_andresmatte-2036061707529834773_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Kapso CLI and what's the first step?",
+          "answer": "You need: Node.js installed, an npm account for package installation, and a WhatsApp Business account ready. First step: run 'npm install -g @kapso/cli' to install globally, then run 'kapso setup' to connect your WhatsApp number.",
+          "search_terms": ["Kapso CLI setup", "npm install kapso", "WhatsApp agent prerequisites"]
+        }
+      ]
+    },
+    {
+      "source_slug": "andrewfarah-2040535589771149379",
+      "source_content_preview": "Field Theory is a CLI tool that downloads and syncs X (Twitter) bookmarks locally to a user's machine, enabling AI agents to access and interact with saved content.",
+      "questions": [
+        {
+          "question_id": "q_batch007_andrewfarah-2040535589771149379_01",
+          "question_type": "identity_problem",
+          "question": "What is Field Theory CLI and what specific problem does it solve?",
+          "answer": "Field Theory is a command-line tool that downloads and syncs your X (Twitter) bookmarks to your local machine. It solves the problem of AI agents being unable to access bookmarked content that's trapped behind the X web interface—making your bookmarks searchable and processable by LLM-powered systems.",
+          "search_terms": ["Field Theory", "X bookmarks sync", "local bookmark tool"]
+        },
+        {
+          "question_id": "q_batch007_andrewfarah-2040535589771149379_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does Field Theory actually do?",
+          "answer": "It's a tool that takes all your X bookmarks and saves them to your computer so AI can read them. Instead of bookmarks just sitting in your X account, they're now files on your machine that you can search, analyze, and use as knowledge for AI agents.",
+          "search_terms": ["bookmarks for AI", "X data local", "bookmark accessibility"]
+        },
+        {
+          "question_id": "q_batch007_andrewfarah-2040535589771149379_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for Field Theory?",
+          "answer": "Also called: FT CLI, X bookmark exporter, social bookmark sync, bookmark-to-AI pipeline. Developers might call it 'fieldtheory npm package' or 'ft' (its CLI command).",
+          "search_terms": ["X bookmarks to AI", "bookmark sync tool", "Twitter data local"]
+        },
+        {
+          "question_id": "q_batch007_andrewfarah-2040535589771149379_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Field Theory and when does it fail?",
+          "answer": "The most common mistake is not keeping bookmarks in sync—Field Theory downloads a snapshot, so new bookmarks won't appear until you run the sync command again. It also fails if authentication cookies expire, requiring re-authentication in Chrome.",
+          "search_terms": ["bookmark sync frequency", "auth token expiry", "Field Theory limitations"]
+        },
+        {
+          "question_id": "q_batch007_andrewfarah-2040535589771149379_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Field Theory and what's the first step?",
+          "answer": "You need: Node.js installed, Chrome browser for authentication, and an X account with bookmarks. First step: install with 'npm install -g fieldtheory', then authenticate by running 'ft sync' which opens Chrome for login, then download your bookmarks.",
+          "search_terms": ["Field Theory install", "ft sync setup", "X bookmarks prerequisites"]
+        }
+      ]
+    },
+    {
+      "source_slug": "barckcode-2036427754443329740",
+      "source_content_preview": "Remotion is described as the most impressive tool for creating video effects using code. It's a framework that allows developers to build videos using React components and JavaScript instead of traditional video editing tools.",
+      "questions": [
+        {
+          "question_id": "q_batch007_barckcode-2036427754443329740_01",
+          "question_type": "identity_problem",
+          "question": "What is Remotion and what specific problem does it solve?",
+          "answer": "Remotion is a framework that lets developers create videos using React components and JavaScript code. It solves the problem of video creation being inaccessible to programmers who lack traditional video editing skills—enabling anyone who knows React to programmatically generate videos.",
+          "search_terms": ["Remotion", "code-based video", "React video generation"]
+        },
+        {
+          "question_id": "q_batch007_barckcode-2036427754443329740_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does Remotion actually do?",
+          "answer": "It lets you write code that turns into video—like how a website renders from HTML and CSS, but the output is an MP4 file instead. If you know React, you can now make videos by building components instead of using complex video editing software.",
+          "search_terms": ["video as code", "programmatic video", "developer video tools"]
+        },
+        {
+          "question_id": "q_batch007_barckcode-2036427754443329740_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for Remotion?",
+          "answer": "Also called: code-as-video, programmatic video generation, React video, video in code. Some call it 'video as React components' or describe it as 'FFmpeg for developers' though that's technically different.",
+          "search_terms": ["programmatic animation", "video from code", "developer video creation"]
+        },
+        {
+          "question_id": "q_batch007_barckcode-2036427754443329740_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Remotion and when does it fail?",
+          "answer": "The most common mistake is treating it like a real-time video tool—it renders videos, not streams them live. It fails for highly artistic video projects where traditional editing tools offer more flexibility, or when developers underestimate the time needed to learn the framework's specific animation APIs.",
+          "search_terms": ["Remotion vs video editors", "render time issues", "when not to use Remotion"]
+        },
+        {
+          "question_id": "q_batch007_barckcode-2036427754443329740_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Remotion and what's the first step?",
+          "answer": "You need: Node.js, basic React knowledge, and a code editor. First step: create a new project with 'npm create remotion' and follow the getting started guide to render your first video from code.",
+          "search_terms": ["Remotion setup", "React video first steps", "getting started Remotion"]
+        }
+      ]
+    },
+    {
+      "source_slug": "contraben-2036525455017218205",
+      "source_content_preview": "@contraben shares a reaction 'holy 👀' to a video generation demonstration, indicating impressive advancement or output in AI video generation.",
+      "questions": [
+        {
+          "question_id": "q_batch007_contraben-2036525455017218205_01",
+          "question_type": "identity_problem",
+          "question": "What is an impressive video generation demo and what specific problem does it solve?",
+          "answer": "This refers to demonstrations of AI video generation capabilities that surprise viewers with their quality or advancement. These demos showcase what's possible with current AI video models, serving as both proof-of-concept and inspiration for what's coming next in the field.",
+          "search_terms": ["AI video generation demo", "video AI showcase", "impressive AI video"]
+        },
+        {
+          "question_id": "q_batch007_contraben-2036525455017218205_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does reacting to a video generation demo mean?",
+          "answer": "When someone says 'holy 👀' to a video generation demo, they're saying the output looked surprisingly good or the technology shown was more advanced than they expected. It's the AI community's way of expressing impressed surprise at what's now possible.",
+          "search_terms": ["video AI reaction", "AI video impressed", "video generation community"]
+        },
+        {
+          "question_id": "q_batch007_contraben-2036525455017218205_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for impressive AI video demos?",
+          "answer": "Also called: AI video breakthrough, video AI wow moment, generative video milestone, SOTA video demo (state-of-the-art). People might say 'wild' or 'insane' in addition to the wide-eyed emoji reaction.",
+          "search_terms": ["video AI milestone", "generative video impressive", "AI video state of art"]
+        },
+        {
+          "question_id": "q_batch007_contraben-2036525455017218205_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake when evaluating video generation demos and when does it fail?",
+          "answer": "The mistake is assuming a demo represents what anyone can actually produce—the best results in demos often represent cherry-picked outputs or require extensive prompting. It fails when people expect the same quality from the same tools without understanding the skill and iteration required.",
+          "search_terms": ["demo vs production quality", " cherry-picked AI results", "video generation expectations"]
+        },
+        {
+          "question_id": "q_batch007_contraben-2036525455017218205_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before exploring video generation demos and what's the first step?",
+          "answer": "You need: awareness that demos vary significantly in quality and accessibility. First step: follow AI video researchers and creators on social platforms to see real-time demonstrations and learn about the latest tools being released.",
+          "search_terms": ["finding video AI demos", "AI video researchers follow", "video generation resources"]
+        }
+      ]
+    },
+    {
+      "source_slug": "coreyganim-2040842449384276268",
+      "source_content_preview": "Karpathy's second brain system uses a three-folder architecture (raw/, wiki/, outputs/) paired with a CLAUDE.md schema file that enables AI to autonomously organize raw information into structured knowledge.",
+      "questions": [
+        {
+          "question_id": "q_batch007_coreyganim-2040842449384276268_01",
+          "question_type": "identity_problem",
+          "question": "What is Karpathy's second brain system and what specific problem does it solve?",
+          "answer": "It's a personal knowledge management architecture using three folders (raw/ for input, wiki/ for AI-organized content, outputs/ for query results) plus a CLAUDE.md file that tells AI how to organize everything. It solves the problem of organizing and retrieving information from accumulated notes and bookmarks.",
+          "search_terms": ["Karpathy second brain", "AI knowledge management", "CLAUDE.md system"]
+        },
+        {
+          "question_id": "q_batch007_coreyganim-2040842449384276268_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does the second brain system actually do?",
+          "answer": "Think of it like this: raw/ is where you dump everything. The AI reads everything in raw/, organizes it into the wiki/ like a well-structured wiki, and when you ask questions, the AI answers from the wiki/ in outputs/. The CLAUDE.md is just the instructions that tell the AI how to do the organizing.",
+          "search_terms": ["three folder system", "AI organize notes", "personal knowledge system"]
+        },
+        {
+          "question_id": "q_batch007_coreyganim-2040842449384276268_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this system?",
+          "answer": "Also called: AI second brain, knowledge management system, personal wiki with AI, autonomous organization. Some call it the 'Karpathy system' or 'LLM-based PKM' (personal knowledge management).",
+          "search_terms": ["AI personal wiki", "autonomous note organization", "LLM knowledge system"]
+        },
+        {
+          "question_id": "q_batch007_coreyganim-2040842449384276268_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with the second brain system and when does it fail?",
+          "answer": "The most common mistake is treating CLAUDE.md as set-it-and-forget-it—it requires iteration to refine how AI organizes things. It fails when the raw folder gets too disorganized (garbage in, garbage out), or when the CLAUDE.md instructions are too vague for AI to make consistent decisions.",
+          "search_terms": ["CLAUDE.md iteration", "raw folder organization", "second brain maintenance"]
+        },
+        {
+          "question_id": "q_batch007_coreyganim-2040842449384276268_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before setting up a second brain system and what's the first step?",
+          "answer": "You need: a text editor, basic understanding of how you want information organized, and willingness to iterate on the CLAUDE.md. First step: create the three folders (raw/, wiki/, outputs/) and write your initial CLAUDE.md with how you want content organized.",
+          "search_terms": ["second brain setup", "CLAUDE.md writing", "getting started PKM"]
+        }
+      ]
+    },
+    {
+      "source_slug": "damienghader-2015790037120491939",
+      "source_content_preview": "A link-only tweet from @damienghader sharing an external article about productivity or habits. No author commentary provided.",
+      "questions": [
+        {
+          "question_id": "q_batch007_damienghader-2015790037120491939_01",
+          "question_type": "identity_problem",
+          "question": "What is an external productivity article link and what specific problem does it solve?",
+          "answer": "This is a bookmark to an external article about productivity or habits. Without the author's commentary, the value is in the original article's content—the bookmark represents curation of a resource the author found valuable for understanding habits or productivity improvement.",
+          "search_terms": ["productivity article", "habits resource", "external link bookmark"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2015790037120491939_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does this link-only tweet actually mean?",
+          "answer": "It means @damienghader found an article about productivity or habits interesting enough to bookmark and share, but didn't add their own commentary. The value is entirely in the destination content—which would need to be visited to understand.",
+          "search_terms": ["link bookmark meaning", "productivity resources", "bookmark without commentary"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2015790037120491939_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for this type of content?",
+          "answer": "Also called: link dump, bare link, bookmark share, curated link, resource bookmark. Some call it 'link-only tweet' or 'URL-only post' when describing the format.",
+          "search_terms": ["link-only tweet", "bare link", "resource share"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2015790037120491939_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with link-only bookmarks and when does it fail?",
+          "answer": "The mistake is assuming the link will remain accessible—shortened URLs often break over time. It also fails when the article itself is paywalled or the external site is no longer available, making the bookmark worthless.",
+          "search_terms": ["link rot", "broken bookmarks", "URL expiry"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2015790037120491939_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using external link bookmarks and what's the first step?",
+          "answer": "You need: the ability to click the link and access the external content. First step: visit the linked URL to extract and save the actual content locally before the link expires or becomes inaccessible.",
+          "search_terms": ["extract link content", "save external articles", "link bookmark handling"]
+        }
+      ]
+    },
+    {
+      "source_slug": "damienghader-2025935095064846586",
+      "source_content_preview": "A link-only tweet from @damienghader sharing an external AI research link with no commentary. Categorized as ai-research.",
+      "questions": [
+        {
+          "question_id": "q_batch007_damienghader-2025935095064846586_01",
+          "question_type": "identity_problem",
+          "question": "What is an external AI research link and what specific problem does it solve?",
+          "answer": "This is a bookmark to an external AI research resource. Without author commentary, it represents curation of research content the author deemed valuable. The problem it solves is capturing AI research discoveries or resources for later reference.",
+          "search_terms": ["AI research link", "research bookmark", "AI resources"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2025935095064846586_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does this AI research link actually mean?",
+          "answer": "It means @damienghader saw something in the AI research space they wanted to remember or share, but didn't add context. The actual value is in the linked content—which could be a paper, tool, or research finding.",
+          "search_terms": ["AI research sharing", "research resource link", "link-only research"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2025935095064846586_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for AI research links?",
+          "answer": "Also called: research paper link, AI paper share, academic resource bookmark, research discovery. People often just say 'paper' or 'paper link' when discussing such content.",
+          "search_terms": ["AI paper", "research link", "academic resource"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2025935095064846586_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with AI research links and when does it fail?",
+          "answer": "The mistake is not extracting the key insights immediately—the link might be to a paywalled paper, a now-offline preprint, or behind a shortener that breaks. It fails when researchers assume the link will always work or when they forget to capture the actual content.",
+          "search_terms": ["research link rot", "paper accessibility", "research bookmark failure"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2025935095064846586_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before accessing AI research links and what's the first step?",
+          "answer": "You need: the ability to follow the link and potentially access academic databases or repositories. First step: follow the shortened URL to identify the source, then extract key findings or save the paper before the link becomes inaccessible.",
+          "search_terms": ["accessing research links", "AI paper extraction", "research link handling"]
+        }
+      ]
+    },
+    {
+      "source_slug": "damienghader-2036851187765698577",
+      "source_content_preview": "Damien Ghader expresses enthusiasm about Lovable's platform update that enables the complete software development lifecycle—from research through building to scaling—within a single tool.",
+      "questions": [
+        {
+          "question_id": "q_batch007_damienghader-2036851187765698577_01",
+          "question_type": "identity_problem",
+          "question": "What is Lovable's full-stack development platform and what specific problem does it solve?",
+          "answer": "Lovable is an AI-powered development platform that now supports the complete software development lifecycle—Research, Build, and Scale—all in one tool. It solves the problem of developers needing multiple separate tools for different stages of development by consolidating everything into one platform.",
+          "search_terms": ["Lovable platform", "AI full-stack development", "low-code platform"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2036851187765698577_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does Lovable actually do?",
+          "answer": "Think of it as having a single tool that handles everything from planning and researching what to build, to actually building the application, to deploying and scaling it. Developers describe it as potentially replacing their 'entire stack'—meaning multiple tools with one integrated solution.",
+          "search_terms": ["all-in-one development", "unified dev platform", "AI development tool"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2036851187765698577_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for Lovable?",
+          "answer": "Also called: AI coding assistant, low-code platform, no-code builder, full-stack AI tool. Developers might call it 'Lovable' or refer to the 'Research > Build > Scale' workflow.",
+          "search_terms": ["AI coding platform", "low-code AI", "development tool consolidation"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2036851187765698577_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Lovable and when does it fail?",
+          "answer": "The most common mistake is assuming it replaces all development scenarios—it works best for web apps and prototypes but may not fit complex enterprise systems. It also fails when developers don't understand its AI-assisted workflow versus traditional coding expectations.",
+          "search_terms": ["Lovable limitations", "when to not use Lovable", "platform constraints"]
+        },
+        {
+          "question_id": "q_batch007_damienghader-2036851187765698577_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Lovable and what's the first step?",
+          "answer": "You need: a web browser and account sign-up. First step: visit lovable.dev or similar to create an account and start with the basic tutorial to understand the Research > Build > Scale workflow.",
+          "search_terms": ["Lovable sign up", "getting started Lovable", "AI platform tutorial"]
+        }
+      ]
+    },
+    {
+      "source_slug": "dhasandev-2009529865511555506",
+      "source_content_preview": "A bookmark by @dhasandev containing an external AI research resource link (t.co/IQi5DOZILJ) with no text content.",
+      "questions": [
+        {
+          "question_id": "q_batch007_dhasandev-2009529865511555506_01",
+          "question_type": "identity_problem",
+          "question": "What is an external AI research resource bookmark and what specific problem does it solve?",
+          "answer": "This is a bookmark to an external AI research resource. It solves the problem of capturing AI research content (papers, tools, frameworks) for later access—the value is entirely in the destination content that would need to be retrieved.",
+          "search_terms": ["AI research resource", "external research bookmark", "AI resource curation"]
+        },
+        {
+          "question_id": "q_batch007_dhasandev-2009529865511555506_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does this bookmark actually represent?",
+          "answer": "It means @dhasandev found something in the AI research space they wanted to save. Without their commentary, we'd need to visit the link to understand what it is. It could be a paper, a tool, a dataset, or any research-related resource.",
+          "search_terms": ["research link value", "AI resources bookmark", "what the link contains"]
+        },
+        {
+          "question_id": "q_batch007_dhasandev-2009529865511555506_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for AI research resource bookmarks?",
+          "answer": "Also called: research paper, AI tool, dataset link, paper share, research resource. People might just describe it as 'a paper' or 'a resource' depending on what's actually at the destination.",
+          "search_terms": ["AI paper", "research tool", "academic resource"]
+        },
+        {
+          "question_id": "q_batch007_dhasandev-2009529865511555506_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with research resource bookmarks and when does it fail?",
+          "answer": "The mistake is not immediately extracting or noting what the resource is—shortened links often become untraceable. It fails when the link breaks or when the resource becomes inaccessible (paywalled, removed, moved).",
+          "search_terms": ["link tracking", "research resource loss", "bookmark maintenance"]
+        },
+        {
+          "question_id": "q_batch007_dhasandev-2009529865511555506_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before accessing research resource links and what's the first step?",
+          "answer": "You need: ability to follow the shortened URL. First step: expand the t.co link to identify the source, then document what the resource is and save key content before the link expires.",
+          "search_terms": ["link expansion", "research resource extraction", "bookmark verification"]
+        }
+      ]
+    },
+    {
+      "source_slug": "dr_cintas-2036272248567353441",
+      "source_content_preview": "Alibaba's Accio Work is a zero-setup, zero-code platform that deploys a complete squad of AI agents to handle core business operations including market analysis, supplier negotiations, compliance, and inventory.",
+      "questions": [
+        {
+          "question_id": "q_batch007_dr_cintas-2036272248567353441_01",
+          "question_type": "identity_problem",
+          "question": "What is Alibaba Accio Work and what specific problem does it solve?",
+          "answer": "Accio Work is Alibaba's zero-code platform that deploys multiple AI agents simultaneously to handle business operations. It solves the problem of small businesses and solo founders lacking resources for dedicated operations teams—by providing instant access to market analysis, supplier negotiation, compliance, and inventory management agents.",
+          "search_terms": ["Accio Work", "Alibaba AI agents", "zero-code business platform"]
+        },
+        {
+          "question_id": "q_batch007_dr_cintas-2036272248567353441_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does Accio Work actually do?",
+          "answer": "It's a platform where you sign up and immediately get multiple AI 'employees' working on different business tasks—in parallel. Instead of hiring a market analyst, compliance officer, and inventory manager, you get AI versions of all three from day one without writing any code.",
+          "search_terms": ["AI business team", "instant AI employees", "no-code operations"]
+        },
+        {
+          "question_id": "q_batch007_dr_cintas-2036272248567353441_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for Accio Work?",
+          "answer": "Also called: AI ops team, autonomous business operations, multi-agent business platform, zero-code AI, enterprise AI suite. Some call it 'Alibaba's AI workforce' or 'AI business-in-a-box.'",
+          "search_terms": ["AI operations platform", "business AI agents", "autonomous business"]
+        },
+        {
+          "question_id": "q_batch007_dr_cintas-2036272248567353441_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with Accio Work and when does it fail?",
+          "answer": "The most common mistake is assuming AI agents can fully replace human business judgment—they handle routine tasks but may struggle with nuanced business decisions. It also fails in highly regulated industries where human oversight is legally required, or when integration with existing systems is complex.",
+          "search_terms": ["AI limitations business", "when AI agents fail", "Accio Work constraints"]
+        },
+        {
+          "question_id": "q_batch007_dr_cintas-2036272248567353441_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using Accio Work and what's the first step?",
+          "answer": "You need: business operations to automate and willingness to try the platform. First step: search for Accio Work or visit Alibaba's AI platform to access the tool and configure which business functions you want AI agents to handle.",
+          "search_terms": ["Accio Work access", "Alibaba AI platform", "getting started Accio"]
+        }
+      ]
+    },
+    {
+      "source_slug": "elliott__potter-2036179677014900796",
+      "source_content_preview": "Elliott Potter announces $27M funding for a platform enabling AI agents to communicate via text messaging, positioning SMS as the universal interface for agent-to-human and agent-to-agent interactions.",
+      "questions": [
+        {
+          "question_id": "q_batch007_elliott__potter-2036179677014900796_01",
+          "question_type": "identity_problem",
+          "question": "What is agent text messaging platform and what specific problem does it solve?",
+          "answer": "This is a platform (backed by $27M funding) that gives AI agents the ability to communicate via SMS/text messaging. It solves the problem of AI agents lacking accessible communication channels—leveraging the universal nature of texting to enable agent-to-human and potentially agent-to-agent conversations.",
+          "search_terms": ["agent SMS platform", "AI text messaging", "agent communication funding"]
+        },
+        {
+          "question_id": "q_batch007_elliott__potter-2036179677014900796_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does this platform actually do?",
+          "answer": "It gives AI agents their own phone numbers so they can text you like a friend. Instead of using apps or complex interfaces, you just text an AI the same way you'd text anyone. The funding suggests this is being positioned as a big deal—the 'iPhone moment' for how we talk to AI.",
+          "search_terms": ["AI texting", "agent phone number", "SMS for AI"]
+        },
+        {
+          "question_id": "q_batch007_elliott__potter-2036179677014900796_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for agent text platforms?",
+          "answer": "Also called: agent SMS API, AI texting platform, conversational AI interface, text-based agents. Some call it 'SMS for AI' or describe it as 'the messaging layer for AI agents.'",
+          "search_terms": ["AI messaging API", "agent SMS", "conversational AI channel"]
+        },
+        {
+          "question_id": "q_batch007_elliott__potter-2036179677014900796_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with agent text platforms and when does it fail?",
+          "answer": "The most common mistake is underestimating SMS limitations—text is great for simple messages but lacks the richness of voice, video, or app-based interfaces. It fails for complex tasks requiring visual interfaces, or when users expect the same capabilities they'd get from dedicated apps.",
+          "search_terms": ["SMS limitations AI", "text interface constraints", "when texting AI fails"]
+        },
+        {
+          "question_id": "q_batch007_elliott__potter-2036179677014900796_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before using agent text platforms and what's the first step?",
+          "answer": "You need: a phone number for the agent and understanding of what communications are needed. First step: watch for the platform launch announcement to access the service and get your first agent phone number.",
+          "search_terms": ["agent SMS sign up", "getting agent phone number", "text AI platform access"]
+        }
+      ]
+    },
+    {
+      "source_slug": "eng_khairallah1-2038541344847823322",
+      "source_content_preview": "A bookmark linking to a comprehensive deep learning resource covering foundational mathematical concepts, neural network architectures, and practical implementation techniques.",
+      "questions": [
+        {
+          "question_id": "q_batch007_eng_khairallah1-2038541344847823322_01",
+          "question_type": "identity_problem",
+          "question": "What is a deep learning from scratch resource and what specific problem does it solve?",
+          "answer": "This is a comprehensive educational resource that teaches deep learning by building from first principles—starting with mathematical fundamentals rather than high-level frameworks. It solves the problem of people using ML libraries without understanding what's happening underneath.",
+          "search_terms": ["deep learning fundamentals", "deep learning from scratch", "neural network basics"]
+        },
+        {
+          "question_id": "q_batch007_eng_khairallah1-2038541344847823322_02",
+          "question_type": "plain_language",
+          "question": "In plain language, what does learning deep learning from scratch mean?",
+          "answer": "Instead of using libraries that do the heavy lifting for you, you build everything yourself—from basic math operations to complete neural networks. It's like learning to build an engine before learning to drive a car.",
+          "search_terms": ["build neural networks", "deep learning math", "foundational ML"]
+        },
+        {
+          "question_id": "q_batch007_eng_khairallah1-2038541344847823322_03",
+          "question_type": "alternative_discovery",
+          "question": "What other names, slang terms, or descriptions might someone use for deep learning fundamentals resources?",
+          "answer": "Also called: deep learning foundations, neural network from scratch, ML math basics, backpropagation explained, building neural networks manually. Some call it 'deep learning first principles.'",
+          "search_terms": ["ML fundamentals", "neural network building", "foundational deep learning"]
+        },
+        {
+          "question_id": "q_batch007_eng_khairallah1-2038541344847823322_04",
+          "question_type": "failure_confusion",
+          "question": "What is the most common mistake with deep learning from scratch approaches and when does it fail?",
+          "answer": "The most common mistake is spending too much time on fundamentals and never getting to practical applications—creating analysis paralysis. It also fails when people think they need to master all math before using ML libraries, which is unnecessary for most practical applications.",
+          "search_terms": ["too much theory", "fundamentals vs application", "when to stop learning"]
+        },
+        {
+          "question_id": "q_batch007_eng_khairallah1-2038541344847823322_05",
+          "question_type": "implementation_entry",
+          "question": "What do I need before learning deep learning from scratch and what's the first step?",
+          "answer": "You need: basic Python knowledge and some math comfort (linear algebra helps). First step: find the resource via the bookmark link and start with the first chapter covering the foundational math concepts before moving to network architectures.",
+          "search_terms": ["deep learning prerequisites", "starting deep learning", "learning path deep learning"]
+        }
+      ]
+    }
+  ]
+}

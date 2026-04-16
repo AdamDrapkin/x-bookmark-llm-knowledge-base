@@ -47,6 +47,7 @@ if sys.platform == "darwin":
 # ─────────────────────────────────────────────
 
 X_API_BASE = "https://api.x.com/2"
+TWITTER_APIIO_BASE = "https://api.twitterapi.io"
 MINIMAX_BASE_URL = "https://api.minimax.io/anthropic"
 GEMINI_BASE = "https://generativelanguage.googleapis.com/v1/models"
 POST_URL_RE = re.compile(
@@ -190,6 +191,301 @@ class XClient:
         if next_token:
             params["next_token"] = next_token
         return self.get("/tweets/search/recent", params=params)
+
+
+# ─────────────────────────────────────────────
+# TWITTERAPIIO CLIENT (replaces XClient for comprehensive bookmark processing)
+# ─────────────────────────────────────────────
+
+
+class TwitterAPIioClient:
+    """TwitterAPI.io client for fetching all bookmark types.
+
+    Uses X-API-Key header instead of Bearer token.
+    Covers: tweets, replies, quotes, retweeters, thread context, articles.
+    """
+
+    def __init__(self, api_key: str, max_retries: int = 3, backoff: float = 2.0):
+        self.session = requests.Session()
+        self.session.headers.update({
+            "X-API-Key": api_key,
+            "User-Agent": "x-bookmark-pipeline/3.0",
+        })
+        self.max_retries = max_retries
+        self.backoff = backoff
+        self.base_url = TWITTER_APIIO_BASE
+
+    def _request(self, method: str, path: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        url = f"{self.base_url}{path}"
+
+        def _call():
+            if method.upper() == "GET":
+                resp = self.session.get(url, params=params, timeout=30)
+            else:
+                resp = self.session.post(url, json=params, timeout=30)
+
+            if resp.status_code == 429:
+                # Rate limited - wait and retry
+                wait = 60
+                print(f"  ⏳ Rate limited. Waiting {wait}s...")
+                time.sleep(wait)
+                raise Exception("Rate limited")
+            if resp.status_code >= 400:
+                raise Exception(f"TwitterAPI.io {resp.status_code}: {resp.text[:200]}")
+
+            data = resp.json()
+            if data.get("status") == "error":
+                raise Exception(f"API error: {data.get('message', 'Unknown error')}")
+            return data
+
+        return retry(_call, self.max_retries, self.backoff, label=f"{method} {path}")
+
+    def get(self, path: str, params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        return self._request("GET", path, params)
+
+    # ─────────────────────────────────────────────
+    # CORE ENDPOINTS
+    # ─────────────────────────────────────────────
+
+    def get_tweet_by_ids(self, tweet_ids: List[str]) -> Dict[str, Any]:
+        """Fetch tweets by IDs - replaces lookup_posts.
+
+        Endpoint: GET /twitter/tweets
+        Returns: Full tweet objects with metrics (views, bookmarks, etc.)
+        """
+        return self.get("/twitter/tweets", params={
+            "tweet_ids": ",".join(tweet_ids)
+        })
+
+    def get_tweet_replies_v2(self, tweet_id: str, cursor: str = "", query_type: str = "Latest") -> Dict[str, Any]:
+        """Fetch replies to a tweet - no 7-day limit.
+
+        Endpoint: GET /twitter/tweet/replies/v2
+        Returns: Up to 20 replies per page
+        """
+        return self.get("/twitter/tweet/replies/v2", params={
+            "tweetId": tweet_id,
+            "cursor": cursor,
+            "queryType": query_type  # Relevance, Latest, Likes
+        })
+
+    def get_tweet_replies(self, tweet_id: str, cursor: str = "", since_time: Optional[int] = None,
+                          until_time: Optional[int] = None) -> Dict[str, Any]:
+        """Fetch replies with time filtering.
+
+        Endpoint: GET /twitter/tweet/replies
+        Returns: Up to 20 replies per page with time filters
+        """
+        params = {
+            "tweetId": tweet_id,
+            "cursor": cursor
+        }
+        if since_time:
+            params["sinceTime"] = since_time
+        if until_time:
+            params["untilTime"] = until_time
+        return self.get("/twitter/tweet/replies", params=params)
+
+    def get_tweet_quote(self, tweet_id: str, cursor: str = "", include_replies: bool = True) -> Dict[str, Any]:
+        """Fetch quote tweets - replaces manual quote expansion.
+
+        Endpoint: GET /twitter/tweet/quotes
+        Returns: Up to 20 quotes per page
+        """
+        return self.get("/twitter/tweet/quotes", params={
+            "tweetId": tweet_id,
+            "cursor": cursor,
+            "includeReplies": include_replies
+        })
+
+    def get_tweet_retweeter(self, tweet_id: str, cursor: str = "") -> Dict[str, Any]:
+        """Fetch who retweeted a tweet.
+
+        Endpoint: GET /twitter/tweet/retweeters
+        Returns: ~100 retweeters per page
+        """
+        return self.get("/twitter/tweet/retweeters", params={
+            "tweetId": tweet_id,
+            "cursor": cursor
+        })
+
+    def get_tweet_thread_context(self, tweet_id: str, cursor: str = "") -> Dict[str, Any]:
+        """Fetch full thread context - replaces walk_thread_upward + fetch_recent_thread.
+
+        Endpoint: GET /twitter/tweet/thread_context
+        Returns: Full thread with parent tweets and replies
+        """
+        return self.get("/twitter/tweet/thread_context", params={
+            "tweetId": tweet_id,
+            "cursor": cursor
+        })
+
+    def get_article(self, tweet_id: str) -> Dict[str, Any]:
+        """Fetch X Article content.
+
+        Endpoint: GET /twitter/article
+        Returns: Article object with content blocks
+        """
+        return self.get("/twitter/article", params={"tweet_id": tweet_id})
+
+    # ─────────────────────────────────────────────
+    # PAGINATION HELPERS
+    # ─────────────────────────────────────────────
+
+    def get_all_replies(self, tweet_id: str, max_pages: int = 10) -> List[Dict]:
+        """Fetch all replies to a tweet (paginated)."""
+        all_replies = []
+        cursor = ""
+        for _ in range(max_pages):
+            result = self.get_tweet_replies_v2(tweet_id, cursor=cursor)
+            replies = result.get("replies", [])
+            all_replies.extend(replies)
+            if not result.get("has_next_page"):
+                break
+            cursor = result.get("next_cursor", "")
+        return all_replies
+
+    def get_all_quotes(self, tweet_id: str, max_pages: int = 10) -> List[Dict]:
+        """Fetch all quote tweets (paginated)."""
+        all_quotes = []
+        cursor = ""
+        for _ in range(max_pages):
+            result = self.get_tweet_quote(tweet_id, cursor=cursor)
+            tweets = result.get("tweets", [])
+            all_quotes.extend(tweets)
+            if not result.get("has_next_page"):
+                break
+            cursor = result.get("next_cursor", "")
+        return all_quotes
+
+    def get_all_retweeters(self, tweet_id: str, max_pages: int = 10) -> List[Dict]:
+        """Fetch all retweeters (paginated)."""
+        all_users = []
+        cursor = ""
+        for _ in range(max_pages):
+            result = self.get_tweet_retweeter(tweet_id, cursor=cursor)
+            users = result.get("users", [])
+            all_users.extend(users)
+            if not result.get("has_next_page"):
+                break
+            cursor = result.get("next_cursor", "")
+        return all_users
+
+
+# ─────────────────────────────────────────────
+# HELPER: NORMALIZE TWEET RESPONSE
+# ─────────────────────────────────────────────
+
+
+def normalize_tweet_response(tweet: Dict) -> Dict:
+    """Normalize TwitterAPI.io tweet response to match pipeline expected format.
+
+    This ensures backward compatibility with existing pipeline processing.
+    """
+    # Extract author info
+    author = tweet.get("author", {})
+
+    # Extract metrics
+    metrics = tweet.get("metrics", {}) or {}
+
+    # Build normalized tweet object
+    normalized = {
+        "id": tweet.get("id", ""),
+        "text": tweet.get("text", ""),
+        "author_id": author.get("id", ""),
+        "created_at": tweet.get("createdAt", ""),
+        "conversation_id": tweet.get("conversationId", ""),
+        "in_reply_to_user_id": tweet.get("inReplyToUserId", ""),
+
+        # Metrics
+        "retweet_count": metrics.get("retweetCount", 0),
+        "reply_count": metrics.get("replyCount", 0),
+        "like_count": metrics.get("likeCount", 0),
+        "quote_count": metrics.get("quoteCount", 0),
+        "view_count": metrics.get("viewCount", 0),
+        "bookmark_count": metrics.get("bookmarkCount", 0),
+
+        # Author info
+        "author": {
+            "id": author.get("id", ""),
+            "name": author.get("name", ""),
+            "username": author.get("username", ""),
+            "profile_image_url": author.get("profile_image_url", ""),
+        },
+
+        # Entities
+        "entities": tweet.get("entities", {}),
+
+        # Referenced tweets (quoted/retweeted)
+        "referenced_tweets": [],
+    }
+
+    # Handle quoted tweet
+    if tweet.get("quoted_tweet"):
+        normalized["referenced_tweets"].append({
+            "type": "quoted",
+            "id": tweet["quoted_tweet"].get("id", "")
+        })
+
+    # Handle retweeted tweet
+    if tweet.get("retweeted_tweet"):
+        normalized["referenced_tweets"].append({
+            "type": "retweeted",
+            "id": tweet["retweeted_tweet"].get("id", "")
+        })
+
+    # Handle reply
+    if tweet.get("reply"):
+        normalized["referenced_tweets"].append({
+            "type": "replied_to",
+            "id": tweet["reply"].get("id", "")
+        })
+
+    return normalized
+
+
+def normalize_tweets_response(response: Dict) -> Dict[str, Dict]:
+    """Normalize batch tweet response into dict keyed by tweet ID."""
+    tweets = response.get("tweets", [])
+    return {t["id"]: normalize_tweet_response(t) for t in tweets}
+
+
+# ─────────────────────────────────────────────
+# HELPER: ROUTE BY TWEET TYPE
+# ─────────────────────────────────────────────
+
+
+def route_tweet_to_endpoints(tweet_type: str, tweet_id: str, client: TwitterAPIioClient) -> Dict[str, Any]:
+    """Route tweet type to appropriate API endpoint(s).
+
+    Returns dict with results from each endpoint:
+    - primary: main tweet data
+    - replies: reply tweets (if applicable)
+    - quotes: quote tweets (if applicable)
+    - retweeters: who retweeted (if applicable)
+    - thread: full thread context (if applicable)
+    """
+    results = {"primary": None, "replies": None, "quotes": None, "retweeters": None, "thread": None}
+
+    if tweet_type == "retweet":
+        # Get retweeters list
+        results["retweeters"] = client.get_tweet_retweeter(tweet_id)
+
+    elif tweet_type == "quote_tweet":
+        # Get all quotes
+        results["quotes"] = client.get_all_quotes(tweet_id)
+
+    elif tweet_type in ("reply", "thread_reply", "thread_starter"):
+        # Get replies to this tweet
+        results["replies"] = client.get_all_replies(tweet_id)
+        # Also get thread context for full picture
+        results["thread"] = client.get_tweet_thread_context(tweet_id)
+
+    elif tweet_type == "standalone":
+        # Check if it's actually a thread starter
+        results["thread"] = client.get_tweet_thread_context(tweet_id)
+
+    return results
 
 
 # ─────────────────────────────────────────────
@@ -696,9 +992,10 @@ def validate_written_file(path: str, label: str = "", min_bytes: int = 10) -> bo
 # ─────────────────────────────────────────────
 
 
-def walk_thread_upward(client: XClient, tweet: Dict, includes: Dict, max_hops: int = 30) -> List[Dict]:
+def walk_thread_upward(client, tweet: Dict, includes: Dict, max_hops: int = 30) -> List[Dict]:
     """Walk replied_to chain upward from a tweet to the thread root.
     Works for ANY tweet age (no 7-day limit).
+    Works with both XClient and TwitterAPIioClient.
     Returns ordered list root → ... → this tweet.
     """
     chain = []
@@ -723,12 +1020,17 @@ def walk_thread_upward(client: XClient, tweet: Dict, includes: Dict, max_hops: i
 
         # Fetch parent tweet
         try:
-            payload = client.lookup_posts([replied_to_id])
-            data = payload.get("data", [])
+            if isinstance(client, TwitterAPIioClient):
+                payload = client.get_tweet_by_ids([replied_to_id])
+                data = list(normalize_tweets_response(payload).values())
+            else:
+                payload = client.lookup_posts([replied_to_id])
+                data = payload.get("data", [])
+
             if not data:
                 break
             current = data[0]
-            current_includes = payload.get("includes", {})
+            current_includes = payload.get("includes", {}) if hasattr(payload, "get") else {}
         except Exception as e:
             print(f"  ⚠ Thread walk stopped at {replied_to_id}: {e}")
             break
@@ -737,8 +1039,18 @@ def walk_thread_upward(client: XClient, tweet: Dict, includes: Dict, max_hops: i
     return chain
 
 
-def fetch_recent_thread(client: XClient, conversation_id: str) -> List[Dict]:
-    """Fetch full thread via recent_search (works for tweets <7 days old)."""
+def fetch_recent_thread(client, conversation_id: str) -> List[Dict]:
+    """Fetch full thread via recent_search or thread_context.
+    Works with both XClient (7-day limit) and TwitterAPIioClient (no limit).
+    """
+    # Use TwitterAPI.io thread_context if available
+    if isinstance(client, TwitterAPIioClient):
+        # Get thread context - returns parents and replies
+        result = client.get_tweet_thread_context(conversation_id)
+        replies = result.get("replies", [])
+        return [normalize_tweet_response(r) for r in replies]
+
+    # Fall back to legacy XClient approach
     items = {}
     next_token = None
     pages = 0
@@ -782,9 +1094,10 @@ def normalize_tweet(tweet: Dict, includes: Dict) -> Dict:
 # ─────────────────────────────────────────────
 
 
-def resolve_retweet_original(client: XClient, tweet: Dict, max_depth: int = 5) -> Tuple[Dict, Dict]:
+def resolve_retweet_original(client, tweet: Dict, max_depth: int = 5) -> Tuple[Dict, Dict]:
     """Recursively follow retweet chain to find the true original.
     Handles retweets of retweets up to max_depth.
+    Works with both XClient and TwitterAPIioClient.
     Returns (original_tweet, original_includes).
     """
     current = tweet
@@ -799,13 +1112,19 @@ def resolve_retweet_original(client: XClient, tweet: Dict, max_depth: int = 5) -
         if not rt_id:
             break
 
-        payload = client.lookup_posts([rt_id])
-        data = payload.get("data", [])
+        # Check client type and use appropriate method
+        if isinstance(client, TwitterAPIioClient):
+            payload = client.get_tweet_by_ids([rt_id])
+            data = list(normalize_tweets_response(payload).values())
+        else:
+            payload = client.lookup_posts([rt_id])
+            data = payload.get("data", [])
+
         if not data:
             print(f"  ⚠ Retweet original {rt_id} not found (deleted/protected)")
             break
         current = data[0]
-        includes = payload.get("includes", {})
+        includes = payload.get("includes", {}) if hasattr(payload, "get") else {}
         depth += 1
 
     return current, includes if depth > 0 else ({}, {})
@@ -1288,6 +1607,65 @@ def write_thread_file(thread_chain: List[Dict], author: str, tweet_id: str,
     return path
 
 
+def write_quote_network_file(quotes: List[Dict], author: str, tweet_id: str,
+                              wiki_root: str) -> str:
+    """Write quote tweet network to raw/x-quote-networks/.
+
+    NEW: Tracks quote relationships for network analysis.
+    """
+    if not quotes:
+        return None
+
+    path = full_path(wiki_root, f"raw/x-quote-networks/{author}-{tweet_id}-quotes.md")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    lines = [
+        f"# Quote Network for @{author}/{tweet_id}\n",
+        f"Original: https://x.com/{author}/status/{tweet_id}",
+        f"Quote Count: {len(quotes)}\n",
+        "---\n",
+        "## Quotes\n",
+    ]
+    for i, quote in enumerate(quotes):
+        quote_author = quote.get("author", "unknown")
+        quote_id = quote.get("id", "")
+        lines.append(f"### Quote {i+1}: @{quote_author}")
+        lines.append(f"[View Tweet](https://x.com/{quote_author}/status/{quote_id})")
+        lines.append(quote.get("text", "(empty)"))
+        lines.append("")
+
+    Path(path).write_text("\n".join(lines))
+    return path
+
+
+def write_retweeter_file(retweeters: List[Dict], author: str, tweet_id: str,
+                          wiki_root: str) -> str:
+    """Write retweeter list to raw/x-retweeters/.
+
+    NEW: Tracks who amplified the content.
+    """
+    if not retweeters:
+        return None
+
+    path = full_path(wiki_root, f"raw/x-retweeters/{author}-{tweet_id}-retweeters.md")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    lines = [
+        f"# Retweeters for @{author}/{tweet_id}\n",
+        f"Original: https://x.com/{author}/status/{tweet_id}",
+        f"Retweet Count: {len(retweeters)}\n",
+        "---\n",
+        "## Who Retweeted\n",
+    ]
+    for rt in retweeters:
+        username = rt.get("username", "unknown")
+        name = rt.get("name", "")
+        lines.append(f"- [@{username}](https://x.com/{username}) ({name})")
+
+    Path(path).write_text("\n".join(lines))
+    return path
+
+
 def write_github_repo_file(repo_info: Dict, author: str, tweet_id: str,
                             wiki_root: str) -> str:
     """Write GitHub repo info to raw/x-github-repos/."""
@@ -1499,13 +1877,27 @@ def run_phase1(manifest: Dict, config: Dict):
         return
 
     print("  Step 1.5: Fetching from X API...")
-    x_client = XClient(os.environ["X_BEARER_TOKEN"])
-    tweet_ids = [b["id"] for b in bookmarks]
 
-    # Batch lookup (up to 100 at once)
-    payload = x_client.lookup_posts(tweet_ids)
-    api_tweets = {t["id"]: t for t in payload.get("data", [])}
-    api_includes = payload.get("includes", {})
+    # Prefer TwitterAPI.io (X-API-Key), fall back to Bearer token
+    twitter_api_key = os.environ.get("TWITTER_API_KEY")
+    if twitter_api_key:
+        print("    Using TwitterAPI.io (X-API-Key)")
+        x_client = TwitterAPIioClient(twitter_api_key)
+        tweet_ids = [b["id"] for b in bookmarks]
+
+        # Batch lookup via TwitterAPI.io
+        payload = x_client.get_tweet_by_ids(tweet_ids)
+        api_tweets = normalize_tweets_response(payload)
+        api_includes = {}  # TwitterAPI.io includes most data in tweet object
+    else:
+        print("    Using legacy X API (Bearer token)")
+        x_client = XClient(os.environ["X_BEARER_TOKEN"])
+        tweet_ids = [b["id"] for b in bookmarks]
+
+        # Batch lookup (up to 100 at once)
+        payload = x_client.lookup_posts(tweet_ids)
+        api_tweets = {t["id"]: t for t in payload.get("data", [])}
+        api_includes = payload.get("includes", {})
 
     print(f"    API returned {len(api_tweets)} tweets")
 
@@ -1531,6 +1923,16 @@ def run_phase1(manifest: Dict, config: Dict):
         flags = classify_content_flags(tweet, api_includes)
         print(f"    Type: {primary_type} | Flags: {flags}")
 
+        # Extract engagement metrics
+        engagement = {
+            "retweet_count": tweet.get("retweet_count", 0),
+            "reply_count": tweet.get("reply_count", 0),
+            "like_count": tweet.get("like_count", 0),
+            "quote_count": tweet.get("quote_count", 0),
+            "view_count": tweet.get("view_count", 0),
+            "bookmark_count": tweet.get("bookmark_count", 0),
+        }
+
         # Initialize manifest entry
         entry = {
             "id": tweet_id,
@@ -1542,14 +1944,54 @@ def run_phase1(manifest: Dict, config: Dict):
             "created_at": tweet.get("created_at"),
             "tweet_url": f"https://x.com/{author}/status/{tweet_id}",
             "classification": {"primary_type": primary_type, "flags": list(flags)},
+            "engagement": engagement,  # NEW: view_count, bookmark_count, etc.
+            "quotes": [],  # NEW: store all quote tweets
+            "retweeters": [],  # NEW: store who retweeted
+            "thread_replies": [],  # NEW: store ALL thread replies (no 7-day limit)
             "phase1": {"status": "in_progress", "files_created": {
                 "thread": None, "images": [], "videos": [], "youtube_transcripts": [],
                 "external_links": [], "github_repos": [], "articles": [],
+                "quote_network": None, "retweeters": None,  # NEW
             }},
             "phase2": {"status": "pending", "image_analyses": [], "video_analyses": [], "video_transcripts": []},
             "phase3": {"status": "pending", "source_summary": None, "entities_created": [], "concepts_created": [], "backlinks_added": []},
             "phase4": {"status": "pending"},
         }
+
+        # ── NEW: Fetch quotes, retweeters, thread replies via TwitterAPI.io ──
+        if isinstance(x_client, TwitterAPIioClient):
+            print(f"    Fetching additional context via TwitterAPI.io...")
+            route_results = route_tweet_to_endpoints(primary_type, tweet_id, x_client)
+
+            # Store quotes
+            if route_results.get("quotes"):
+                entry["quotes"] = [
+                    {"id": q.get("id"), "text": q.get("text"), "author": q.get("author", {}).get("username")}
+                    for q in route_results["quotes"]
+                ]
+                print(f"    Found {len(entry['quotes'])} quote tweets")
+
+            # Store retweeters
+            if route_results.get("retweeters"):
+                users = route_results["retweeters"].get("users", [])
+                entry["retweeters"] = [
+                    {"id": u.get("id"), "username": u.get("username"), "name": u.get("name")}
+                    for u in users
+                ][:50]  # Store top 50
+                print(f"    Found {len(entry['retweeters'])} retweeters")
+
+            # Store thread replies (ALL - no 7-day limit!)
+            if route_results.get("replies"):
+                entry["thread_replies"] = [
+                    {
+                        "id": r.get("id"),
+                        "text": r.get("text"),
+                        "author": r.get("author", {}).get("username"),
+                        "created_at": r.get("createdAt"),
+                    }
+                    for r in route_results["replies"]
+                ]
+                print(f"    Found {len(entry['thread_replies'])} thread replies (full history)")
 
         # ── Handle Reposts ──
         if primary_type == "retweet":
@@ -1578,6 +2020,7 @@ def run_phase1(manifest: Dict, config: Dict):
                     "phase1": {"status": "pending", "files_created": {
                         "thread": None, "images": [], "videos": [], "youtube_transcripts": [],
                         "external_links": [], "github_repos": [], "articles": [],
+                        "quote_network": None, "retweeters": None,  # NEW
                     }},
                     "phase2": {"status": "pending", "image_analyses": [], "video_analyses": [], "video_transcripts": []},
                     "phase3": {"status": "pending", "source_summary": None, "entities_created": [], "concepts_created": [], "backlinks_added": []},
@@ -1608,22 +2051,25 @@ def run_phase1(manifest: Dict, config: Dict):
                         for vid in post.get("videos", []):
                             _download_video(vid, post["author_username"], post["id"], entry, temp_dir)
 
-            # Also try recent search for fresh threads
-            created = tweet.get("created_at", "")
-            if created:
-                try:
-                    tweet_date = datetime.fromisoformat(created.replace("Z", "+00:00"))
-                    if (datetime.now(tweet_date.tzinfo) - tweet_date).days < 7:
-                        print(f"    Also fetching recent thread replies...")
-                        recent = fetch_recent_thread(x_client, conv_id)
-                        if len(recent) > 1 and not entry["phase1"]["files_created"]["thread"]:
-                            thread_path = write_thread_file(recent, author, tweet_id, wiki_root)
-                            entry["phase1"]["files_created"]["thread"] = thread_path
-                except Exception:
-                    pass
+            # NEW: Use TwitterAPI.io thread_replies (no 7-day limit!)
+            # Already fetched via route_tweet_to_endpoints() - stored in entry["thread_replies"]
+            if entry.get("thread_replies") and len(entry["thread_replies"]) > 0:
+                print(f"    Using full thread replies: {len(entry['thread_replies'])} posts (no 7-day limit)")
+                # Thread context already includes replies, nothing extra to do
 
         # ── Extract Content (images, videos, links) ──
         _extract_content(x_client, tweet, api_includes, entry, wiki_root, temp_dir, config)
+
+        # ── NEW: Write quote network and retweeter files ──
+        if entry.get("quotes"):
+            quote_path = write_quote_network_file(entry["quotes"], author, tweet_id, wiki_root)
+            entry["phase1"]["files_created"]["quote_network"] = quote_path
+            print(f"    ✓ Quote network → {quote_path}")
+
+        if entry.get("retweeters"):
+            rt_path = write_retweeter_file(entry["retweeters"], author, tweet_id, wiki_root)
+            entry["phase1"]["files_created"]["retweeters"] = rt_path
+            print(f"    ✓ Retweeters → {rt_path}")
 
         entry["phase1"]["status"] = "complete"
         manifest["bookmarks"].append(entry)
@@ -3330,6 +3776,7 @@ def run_full_pipeline(bookmarks: List[Dict], config: Dict, batch_id: str,
                 "phase1": {"status": "pending", "files_created": {
                     "thread": None, "images": [], "videos": [], "youtube_transcripts": [],
                     "external_links": [], "github_repos": [], "articles": [],
+                    "quote_network": None, "retweeters": None,  # NEW
                 }},
                 "phase2": {"status": "pending", "image_analyses": [], "video_analyses": [], "video_transcripts": []},
                 "phase3": {"status": "pending", "source_summary": None, "entities_created": [], "concepts_created": [], "backlinks_added": []},

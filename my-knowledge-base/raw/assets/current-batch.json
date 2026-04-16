@@ -1,21 +1,8 @@
 {
-  "batch_name": "batch_005",
+  "batch_name": "batch_011",
   "sources": [
-    "JamesEbringer-2036733267018133667",
-    "JaynitMakwana-2036358672033710370",
-    "KanikaBK-2040764115501908175",
-    "LinusEkenstam-2026263502030303290",
-    "Meer_AIIT-2027509711722188976",
-    "MengTo-1991489885690364187",
-    "MillieMarconnni-2037848645949898979",
-    "MitcheIl-2036098438908293349",
-    "Motion_Viz-2036213665645597034",
-    "NickSpisak_-2037598275658760543",
-    "PrajwalTomar_-2024097242387235026",
-    "Suryanshti777-2037558286137143591",
-    "TukiFromKL-2036131611649994863",
-    "TukiFromKL-2036492094936666431",
-    "_chenglou-2037713766205608234"
+    "thedankoe-2036824811712942576",
+    "vladinfos-2040582401198346751"
   ],
   "phase": "layer1"
 }
