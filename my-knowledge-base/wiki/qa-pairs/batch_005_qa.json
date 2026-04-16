@@ -547,7 +547,40 @@
       ]
     }
   ],
-  "synthesis_questions": [],
+  "synthesis_questions": [
+    {
+      "question_id": "q_cross_batch_01",
+      "question_type": "cross_batch_pattern",
+      "question": "What patterns emerge when examining persistent AI workflow systems across batches?",
+      "answer": "Across batches 004-007, a clear hierarchy of persistent AI automation emerges: [[CLAUDE.md methodology]] (batch 005) provides project-level memory, [[Skills architecture]] (batch 006) enables reusable task prompts, [[gstack]] (batch 005) offers toolchain-level automation, and [[Karpathy's second brain]] (batch 007) implements folder-based knowledge organization. These connect as: CLAUDE.md trains individual projects → Skills enable reusable workflows → Gstack orchestrates multi-tool chains → Second Brain manages accumulated knowledge. The progression shows AI moving from session-level to persistent system-level assistance.",
+      "referenced_source_slugs": ["suryanshti777-2037558286137143591", "alex_prompter-2027684564324548951", "milliemarconnni-2037848645949898979", "coreyganim-2040842449384276268"],
+      "cross_batch_refs": ["batch_004", "batch_006", "batch_007"]
+    },
+    {
+      "question_id": "q_cross_batch_02",
+      "question_type": "cross_batch_pattern",
+      "question": "How do systematized content creation approaches differ across batches?",
+      "answer": "Content creation systematization appears across batches with distinct approaches: [[4-layer factory]] (batch 004) applies to AI video with validated hooks → [[Eyeballs Method]] (batch 005) uses volume-based posting → [[Ribbi AI]] (batch 005) handles cross-format repurposing → [[Lovable]] (batch 007) enables full-stack SaaS creation. The progression shows increased abstraction: manual factory (batch 004) → automated posting (batch 005) → multi-format AI (batch 005) → no-code full-stack (batch 007). Each layer removes more human intervention while expanding output scope.",
+      "referenced_source_slugs": ["Aiwithkumail-2038531965230682393", "jamesebringer-2036733267018133667", "jaynitmakwana-2036358672033710370", "damienghader-2036851187765698577"],
+      "cross_batch_refs": ["batch_004", "batch_006", "batch_007"]
+    },
+    {
+      "question_id": "q_cross_batch_03",
+      "question_type": "cross_batch_tension",
+      "question": "Where do sources across batches contradict on AI agent autonomy?",
+      "answer": "Tension exists between agent autonomy and control across batches: [[targeted ablation]] (batch 004) removes AI safety constraints entirely, [[724 Office]] (batch 006) builds self-evolving agents with runtime tool creation, while [[CLAUDE.md methodology]] (batch 005) emphasizes human-written rules directing AI behavior. Meanwhile [[tutorial paralysis]] (batch 007) shows humans paralyzed learning about AI rather than directing it. The contradiction: some sources push for AI autonomy (ablation, self-evolving agents) while others emphasize human control (CLAUDE.md, learning frameworks). This tension mirrors broader debates about AI agency vs. human oversight.",
+      "referenced_source_slugs": ["IslamRashi2000-2038481198616596885", "aigleeson-2037848861591703914", "suryanshti777-2037558286137143591", "alexxgrowth-2037514725274308840"],
+      "cross_batch_refs": ["batch_004", "batch_006", "batch_007"]
+    },
+    {
+      "question_id": "q_cross_batch_04",
+      "question_type": "gap_identification",
+      "question": "What gap exists between agent communication and deployment across batches?",
+      "answer": "A clear gap emerges: agent communication tools exist ([[Kapso CLI]] for WhatsApp, agent SMS platform) but deployment infrastructure is missing across batches. [[Accio Work]] (batch 007) provides business operation agents, [[724 Office]] (batch 006) runs self-evolving agents, but there is no connecting layer for: agent-to-agent communication outside of SQLite/local (Kapso is human-facing), agent marketplace with verified deployment (SkillsMP exists but no deployment), or cross-platform agent orchestration (gstack is toolchain but not agent-level). The gap is not creation but coordination—how deployed agents across different platforms communicate, negotiate, and collaborate.",
+      "referenced_source_slugs": ["andresmatte-2036061707529834773", "dr_cintas-2036272248567353441", "elliott__potter-2036179677014900796"],
+      "cross_batch_refs": ["batch_004", "batch_006", "batch_007"]
+    }
+  ],
   "concept_index_update": {
     "new_concepts": [
       {

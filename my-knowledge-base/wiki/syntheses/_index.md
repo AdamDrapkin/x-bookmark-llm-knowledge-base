@@ -10,9 +10,9 @@ status: draft
 
 # Syntheses Index
 
-## All Syntheses (0)
+## All Syntheses (1)
 
-No syntheses yet. Syntheses are multi-source articles that combine information from multiple sources.
+- [[query-2026-04-16-hallucinations]] — What do we know about preventing AI hallucinations? (2026-04-16)
 
 ## Coming Soon
 - Cross-source analyses

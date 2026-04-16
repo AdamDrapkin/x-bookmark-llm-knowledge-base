@@ -277,6 +277,8 @@ IMPORTANT: Output ONLY valid JSON - no markdown, no explanations."""
             state["synthesis_complete"] = True
             state["phase"] = "done"
             save_state(state)
+            # Apply synthesis_questions to ALL batches (fix: ensure all get the patch)
+            apply_synthesis_to_all_batches()
             return True
         else:
             print(f"  ✗ Synthesis failed")
@@ -287,99 +289,175 @@ IMPORTANT: Output ONLY valid JSON - no markdown, no explanations."""
         return False
 
 
+def apply_synthesis_to_all_batches():
+    """Apply synthesis_questions patch to all batch files (fixes incomplete application)."""
+    patch_file = QA_PAIRS_DIR / "synthesis_questions_patch.json"
+    if not patch_file.exists():
+        print("  ⚠ No patch file found, skipping apply")
+        return
+
+    with open(patch_file) as f:
+        patch = json.load(f)
+
+    synthesis_qs = patch.get("synthesis_questions", [])
+    if not synthesis_qs:
+        print("  ⚠ Patch has no synthesis_questions, skipping")
+        return
+
+    # Apply to ALL batch files
+    batch_files = sorted(QA_PAIRS_DIR.glob("batch*_qa.json"))
+    for bf in batch_files:
+        try:
+            with open(bf) as f:
+                data = json.load(f)
+
+            # Only apply if empty
+            if not data.get("synthesis_questions"):
+                data["synthesis_questions"] = synthesis_qs
+                with open(bf, 'w') as f:
+                    json.dump(data, f, indent=2)
+                print(f"  ✓ Applied synthesis to {bf.name}")
+        except Exception as e:
+            print(f"  ⚠ Could not update {bf.name}: {e}")
+
+
+def check_running_process():
+    """Check if orchestrator is already running. Returns True if running (should skip)."""
+    lock_file = SCRIPT_DIR / "qa-orchestrator.lock"
+    pid_file = SCRIPT_DIR / "qa-orchestrator.pid"
+
+    if lock_file.exists():
+        # Check if process is actually running
+        try:
+            stored_pid = int(pid_file.read_text().strip())
+            # Check if process exists
+            try:
+                os.kill(stored_pid, 0)
+                # Process exists - we're running
+                print(f"\n⚠ Process already running (PID {stored_pid}). Skipping this run.")
+                return True
+            except OSError:
+                # Process doesn't exist - stale lock
+                print(f"  Removing stale lock (PID {stored_pid})")
+                lock_file.unlink()
+                pid_file.unlink()
+        except:
+            lock_file.unlink()
+            if pid_file.exists():
+                pid_file.unlink()
+
+    # Create new lock
+    with open(lock_file, 'w') as f:
+        f.write(str(os.getpid()))
+    with open(pid_file, 'w') as f:
+        f.write(str(os.getpid()))
+    return False
+
+
+def clear_running_process():
+    """Clear the running lock."""
+    lock_file = SCRIPT_DIR / "qa-orchestrator.lock"
+    pid_file = SCRIPT_DIR / "qa-orchestrator.pid"
+    for f in [lock_file, pid_file]:
+        if f.exists():
+            f.unlink()
+
+
 def main():
     print(f"\n{'='*60}")
     print(f"QA Orchestrator - Sequential Mode")
     print(f"Started: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*60}")
 
-    # Load state
-    state = load_state()
-    all_sources = get_all_sources()
-    state["total_sources"] = len(all_sources)
-
-    completed = set(state.get("completed_sources", []))
-    locked = set(state.get("locked_sources", []))
-
-    print(f"Total sources: {len(all_sources)}")
-    print(f"Completed: {len(completed)}")
-    print(f"Locked: {len(locked)}")
-    print(f"Phase: {state.get('phase', 'layer1')}")
-    print(f"Layer1 complete: {state.get('layer1_complete', False)}")
-    print(f"Synthesis complete: {state.get('synthesis_complete', False)}")
-
-    # Clear stale locks
-    state = clear_stale_locks(state)
-    save_state(state)
-
-    # Check if synthesis needed
-    if state.get("layer1_complete") and not state.get("synthesis_complete"):
-        print("\nLayer1 complete! Running synthesis...")
-        run_synthesis(state)
-        print(f"\n{'='*60}")
-        print("ALL DONE!")
-        print(f"{'='*60}")
+    # Check if already running - skip if so (for cron every 15 min scheduling)
+    if check_running_process():
         return
 
-    # Check if all done
-    if len(completed) >= len(all_sources):
-        if not state.get("synthesis_complete"):
-            print("\nAll sources processed! Running synthesis...")
-            run_synthesis(state)
-        print("All done!")
-        return
+    try:
+        # Load state
+        state = load_state()
+        all_sources = get_all_sources()
+        state["total_sources"] = len(all_sources)
 
-    # Process all remaining batches sequentially
-    remaining = len(all_sources) - len(completed)
-    batches_needed = (remaining + BATCH_SIZE - 1) // BATCH_SIZE
+        completed = set(state.get("completed_sources", []))
+        locked = set(state.get("locked_sources", []))
 
-    print(f"\nRemaining: {remaining} sources → {batches_needed} batches")
-    print("Processing sequentially...\n")
+        print(f"Total sources: {len(all_sources)}")
+        print(f"Completed: {len(completed)}")
+        print(f"Locked: {len(locked)}")
+        print(f"Phase: {state.get('phase', 'layer1')}")
+        print(f"Layer1 complete: {state.get('layer1_complete', False)}")
+        print(f"Synthesis complete: {state.get('synthesis_complete', False)}")
 
-    batch_count = 0
-    while True:
-        # Get next batch
-        batch_name, sources = get_next_batch(state, all_sources)
-
-        if not sources:
-            print("\nNo more sources to process!")
-            break
-
-        # Mark as processing
-        state["locked_sources"] = sources
-        if "batches" not in state:
-            state["batches"] = {}
-        state["batches"][batch_name] = {"sources": sources, "status": "processing"}
+        # Clear stale locks
+        state = clear_stale_locks(state)
         save_state(state)
 
-        # Run the batch
-        success = run_batch(batch_name, sources)
+        # Check if synthesis needed
+        if state.get("layer1_complete") and not state.get("synthesis_complete"):
+            print("\nLayer1 complete! Running synthesis...")
+            run_synthesis(state)
+            print(f"\n{'='*60}")
+            print("ALL DONE!")
+            print(f"{'='*60}")
+            return
 
-        if success:
-            # Update state
-            update_state_after_batch(state, batch_name, sources)
-            batch_count += 1
-            completed = set(state.get("completed_sources", []))
-            print(f"Progress: {len(completed)}/{len(all_sources)} complete")
-        else:
-            print(f"  ⚠ Batch failed, continuing to next...")
-            state["locked_sources"] = []
+        # Check if all done
+        if len(completed) >= len(all_sources):
+            if not state.get("synthesis_complete"):
+                print("\nAll sources processed! Running synthesis...")
+                run_synthesis(state)
+            print("All done!")
+            return
+
+        # Process all remaining batches sequentially
+        remaining = len(all_sources) - len(completed)
+        batches_needed = (remaining + BATCH_SIZE - 1) // BATCH_SIZE
+
+        print(f"\nRemaining: {remaining} sources → {batches_needed} batches")
+        print("Processing sequentially...\n")
+
+        batch_count = 0
+        while True:
+            batch_name, sources = get_next_batch(state, all_sources)
+
+            if not sources:
+                print("\nNo more sources to process!")
+                break
+
+            state["locked_sources"] = sources
+            if "batches" not in state:
+                state["batches"] = {}
+            state["batches"][batch_name] = {"sources": sources, "status": "processing"}
             save_state(state)
 
-        # Small delay between batches
-        time.sleep(2)
+            success = run_batch(batch_name, sources)
 
-    print(f"\nProcessed {batch_count} batches")
+            if success:
+                update_state_after_batch(state, batch_name, sources)
+                batch_count += 1
+                completed = set(state.get("completed_sources", []))
+                print(f"Progress: {len(completed)}/{len(all_sources)} complete")
+            else:
+                print(f"  ⚠ Batch failed, continuing to next...")
+                state["locked_sources"] = []
+                save_state(state)
 
-    # Check if all done and run synthesis
-    state = load_state()
-    if state.get("layer1_complete") and not state.get("synthesis_complete"):
-        run_synthesis(state)
+            time.sleep(2)
 
-    print(f"\n{'='*60}")
-    print(f"Orchestrator complete!")
-    print(f"Completed: {len(state.get('completed_sources', []))}/{len(all_sources)}")
-    print(f"{'='*60}")
+        print(f"\nProcessed {batch_count} batches")
+
+        # Check if all done and run synthesis
+        state = load_state()
+        if state.get("layer1_complete") and not state.get("synthesis_complete"):
+            run_synthesis(state)
+
+        print(f"\n{'='*60}")
+        print(f"Orchestrator complete!")
+        print(f"Completed: {len(state.get('completed_sources', []))}/{len(all_sources)}")
+        print(f"{'='*60}")
+    finally:
+        clear_running_process()
 
 
 if __name__ == "__main__":
