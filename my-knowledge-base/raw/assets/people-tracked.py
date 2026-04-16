@@ -14,11 +14,11 @@ import json
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
-# Add parent to path for imports
 import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from pipeline_monitor import XClient, load_watchlist, LIST_ID
+# Use TwitterAPI.io client from pipeline_core
+from pipeline_core import TwitterAPIioClient, load_watchlist, LIST_ID
 
 OUTPUT_FILE = "people-tracked.md"
 OUTPUT_JSON = "people-tracked.json"
@@ -27,15 +27,15 @@ LIST_FIELDS = "id,username,name,description,public_metrics,verified,created_at"
 USER_FIELDS = "id,username,name,description,public_metrics,verified,created_at,location,url,profile_image_url,protected"
 
 
-def load_env() -> str:
-    """Get bearer token from environment."""
-    token = os.environ.get("X_BEARER_TOKEN")
-    if not token:
-        raise RuntimeError("Missing X_BEARER_TOKEN env var")
-    return token
+def load_api() -> XTwitterAPI:
+    """Get TwitterAPI.io client."""
+    api_key = os.environ.get("TWITTER_API_KEY")
+    if not api_key:
+        raise RuntimeError("Missing TWITTER_API_KEY env var")
+    return XTwitterAPI(api_key)
 
 
-def fetch_list_members(client: XClient, list_id: str) -> List[Dict]:
+def fetch_list_members(client: XTwitterAPI, list_id: str) -> List[Dict]:
     """Fetch all members of a list."""
     members = []
     pagination_token = None
@@ -63,12 +63,11 @@ def fetch_list_members(client: XClient, list_id: str) -> List[Dict]:
     return members
 
 
-def fetch_user_profile(client: XClient, username: str) -> Optional[Dict]:
+def fetch_user_profile(client: XTwitterAPI, username: str) -> Optional[Dict]:
     """Fetch full profile for a user."""
     try:
-        payload = client.get(f"/users/by/username/{username}", params={
-            "user.fields": USER_FIELDS,
-        })
+        params = {"user.fields": USER_FIELDS}
+        payload = client.get(f"/users/by/username/{username}", params=params)
         return payload.get("data")
     except Exception as e:
         print(f"  ⚠ @{username}: {e}")
@@ -77,7 +76,7 @@ def fetch_user_profile(client: XClient, username: str) -> Optional[Dict]:
 
 def get_source_type(username: str, list_members: set, watchlist: List[str]) -> str:
     """Determine if user is from list or watchlist."""
-    if username in list_members:
+    if username.lower() in list_members:
         return "list"
     if username.lower() in [w.lower() for w in watchlist]:
         return "watchlist"
@@ -167,8 +166,7 @@ def main():
 
     print("📋 Fetching people tracked...")
 
-    bearer = load_env()
-    client = XClient(bearer)
+    client = load_api()
 
     # Get watchlist
     watchlist = load_watchlist(wiki_root)
