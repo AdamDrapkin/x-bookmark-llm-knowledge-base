@@ -13,6 +13,7 @@
 set -e
 
 WIKI_ROOT="/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base"
+CLAUDE_BIN="/Users/adamdrapkin/.local/bin/claude"
 cd "$WIKI_ROOT"
 
 # Run orchestrator to claim next batch
@@ -29,8 +30,8 @@ echo "---"
 # Unset CLAUDECODE to allow nested sessions
 unset CLAUDECODE
 
-# Run Claude Code with the sources
-claude -p "You are in the knowledge base wiki. Read the qa-council skill at ~/.claude/skills/qa-council/SKILL.md.
+# Run Claude Code with the sources - USE FULL PATH
+$CLAUDE_BIN -p "You are in the knowledge base wiki. Read the qa-council skill at ~/.claude/skills/qa-council/SKILL.md.
 
 Process these 15 sources as $BATCH_NAME:
 $SOURCES

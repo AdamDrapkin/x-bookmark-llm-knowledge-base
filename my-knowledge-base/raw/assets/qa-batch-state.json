@@ -55,9 +55,66 @@
         "shushant_l-1974097166454174149-perplexity-research-prompts"
       ],
       "status": "complete"
+    },
+    "batch_004": {
+      "sources": [
+        "Aiwithkumail-2038531965230682393",
+        "AlbiaHossain-2027648600097054727",
+        "AmirMushich-2040518438662164525",
+        "ArchiveExplorer-2040727747966668939",
+        "DAIEvolutionHub-2037907310136484036",
+        "DataChaz-2026335537888702627",
+        "DataChaz-2032396544545378421",
+        "DataChaz-2036018412590375281",
+        "DataChaz-2037166381196861824",
+        "DataChaz-2040921945269801003",
+        "DataChaz-2041041292520833400",
+        "ErickSky-2040824372793930063",
+        "Hesamation-2037329163212726272",
+        "IslamRashi2000-2038481198616596885",
+        "JamesEbringer-2027504630817603638"
+      ],
+      "status": "complete"
+    },
+    "batch_005": {
+      "sources": [
+        "JamesEbringer-2036733267018133667",
+        "JaynitMakwana-2036358672033710370",
+        "KanikaBK-2040764115501908175",
+        "LinusEkenstam-2026263502030303290",
+        "Meer_AIIT-2027509711722188976",
+        "MengTo-1991489885690364187",
+        "MillieMarconnni-2037848645949898979",
+        "MitcheIl-2036098438908293349",
+        "Motion_Viz-2036213665645597034",
+        "NickSpisak_-2037598275658760543",
+        "PrajwalTomar_-2024097242387235026",
+        "Suryanshti777-2037558286137143591",
+        "TukiFromKL-2036131611649994863",
+        "TukiFromKL-2036492094936666431",
+        "_chenglou-2037713766205608234"
+      ],
+      "status": "processing"
     }
   },
   "locked_sources": [
+    "JamesEbringer-2036733267018133667",
+    "JaynitMakwana-2036358672033710370",
+    "KanikaBK-2040764115501908175",
+    "LinusEkenstam-2026263502030303290",
+    "Meer_AIIT-2027509711722188976",
+    "MengTo-1991489885690364187",
+    "MillieMarconnni-2037848645949898979",
+    "MitcheIl-2036098438908293349",
+    "Motion_Viz-2036213665645597034",
+    "NickSpisak_-2037598275658760543",
+    "PrajwalTomar_-2024097242387235026",
+    "Suryanshti777-2037558286137143591",
+    "TukiFromKL-2036131611649994863",
+    "TukiFromKL-2036492094936666431",
+    "_chenglou-2037713766205608234"
+  ],
+  "completed_sources": [
     "Aiwithkumail-2038531965230682393",
     "AlbiaHossain-2027648600097054727",
     "AmirMushich-2040518438662164525",
@@ -69,18 +126,16 @@
     "DataChaz-2037166381196861824",
     "DataChaz-2040921945269801003",
     "DataChaz-2041041292520833400",
-    "ErickSky-2040824372793930063",
-    "Hesamation-2037329163212726272",
-    "IslamRashi2000-2038481198616596885",
-    "JamesEbringer-2027504630817603638"
-  ],
-  "completed_sources": [
     "EHuanglu-1991560454104313914",
     "EXM7777-1978484519692075451",
     "EXM7777-1987203971086450938",
     "EXM7777-1991528477775032628",
+    "ErickSky-2040824372793930063",
     "ErickSky-2040999023230751048",
+    "Hesamation-2037329163212726272",
     "HowToAI_-2041026315051262048",
+    "IslamRashi2000-2038481198616596885",
+    "JamesEbringer-2027504630817603638",
     "MengTo-1991489885690364187-gemini-3-tutorial",
     "MengTo-1994058991106969950",
     "adamrahmanGTM-1975292522248237113",
@@ -121,5 +176,5 @@
   "batch_size": 15,
   "layer1_complete": false,
   "synthesis_complete": false,
-  "last_updated": "2026-04-16T14:43:52Z"
+  "last_updated": "2026-04-16T15:13:46.351320+00:00"
 }

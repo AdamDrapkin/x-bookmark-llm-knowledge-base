@@ -1,0 +1,47 @@
+
+==================================================
+QA Orchestrator - 10:48:01
+==================================================
+Total sources: 147
+Completed: 40
+Locked: 0
+Phase: layer1
+Batches: ['batch_001', 'batch_002', 'batch_003']
+
+Claimed batch_004: 15 sources
+  First: Aiwithkumail-2038531965230682393
+  Last: JamesEbringer-2027504630817603638
+
+Batch info written to /Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/assets/current-batch.json
+Run Claude Code session with these sources
+Launching batch_004 with Aiwithkumail-2038531965230682393 AlbiaHossain-2027648600097054727 AmirMushich-2040518438662164525 ArchiveExplorer-2040727747966668939 DAIEvolutionHub-2037907310136484036 DataChaz-2026335537888702627 DataChaz-2032396544545378421 DataChaz-2036018412590375281 DataChaz-2037166381196861824 DataChaz-2040921945269801003 DataChaz-2041041292520833400 ErickSky-2040824372793930063 Hesamation-2037329163212726272 IslamRashi2000-2038481198616596885 JamesEbringer-2027504630817603638
+---
+/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/assets/qa_launcher.sh: line 33: claude: command not found
+
+==================================================
+QA Orchestrator - Master Cron
+Time: 11:00:00
+==================================================
+Total sources: 147
+Completed: 40
+Locked: 0
+Phase: layer1
+Batches: ['batch_001', 'batch_002', 'batch_003']
+
+Uncovered: 107 sources
+Batches needed: 8
+
+Spawning 8 sub-crons at 1-minute intervals...
+  ⚠ Sub-cron 1 failed: 
+  ⚠ Sub-cron 2 failed: 
+  ⚠ Sub-cron 3 failed: 
+  ⚠ Sub-cron 4 failed: 
+  ⚠ Sub-cron 5 failed: 
+  ⚠ Sub-cron 6 failed: 
+  ⚠ Sub-cron 7 failed: 
+  ⚠ Sub-cron 8 failed: 
+Sub-crons scheduled!
+
+==================================================
+Master cron complete!
+==================================================
