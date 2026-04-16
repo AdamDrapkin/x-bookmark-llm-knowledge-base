@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "data visualization"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "2:1",
+    "layout": "layered",
+    "focal_points": [
+      "'$1M' (center top)",
+      "'\u2191 +93.94%' (below $1M)",
+      "Purple line peaks (mid-graph)"
+    ],
+    "visual_hierarchy": "The eye is first drawn to the large '$1M' and the percentage increase, then moves down to the line graph to observe the trend over time, primarily following the prominent purple line.",
+    "balance": "asymmetric - the dynamic lines of the graph create an informal balance against the static, centered text elements."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "70%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Gray",
+        "hex": "#222222",
+        "percentage": "5%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Purple",
+        "hex": "#7B42B8",
+        "percentage": "3%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Light Gray",
+        "hex": "#CCCCCC",
+        "percentage": "10%",
+        "role": "accent"
+      },
+      {
+        "color": "Green",
+        "hex": "#34C759",
+        "percentage": "1%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "analogous",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "medium contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "diffused from above",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "even",
+    "intensity": "bright",
+    "contrast_ratio": "low contrast (flat)",
+    "mood": "professional",
+    "shadows": {
+      "type": "absent",
+      "density": "absent",
+      "placement": "absent",
+      "length": "absent"
+    },
+    "highlights": {
+      "treatment": "none",
+      "placement": "none"
+    },
+    "ambient_fill": "present",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital photography",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "deep - all elements are in sharp focus across the digital display.",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "data visualization",
+    "influences": [
+      "Modern UI/UX design",
+      "Information graphics"
+    ],
+    "mood": "professional",
+    "atmosphere": "clean, efficient, data-driven",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "bold",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "light",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "overlay - main metrics are centered at the top; axis labels are integrated along the left and bottom edges of the graph.",
+    "integration": "prominent"
+  },
+  "subject_analysis": {
+    "primary_subject": "Financial performance metrics and their trend over time.",
+    "positioning": "The main metrics are centered at the top of the image, while the line graph occupies the bottom two-thirds.",
+    "scale": "environmental",
+    "interaction": "The two line graphs (solid purple and dotted gray) interact by showing comparative trends over the same time period.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "no smile",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "digital interface / screen",
+    "spatial_depth": "shallow - the background is a flat, uniform white digital canvas.",
+    "elements_detailed": [
+      {
+        "item": "Horizontal grid lines",
+        "position": "center - spanning the width of the graph at $0M, $1M, $2M, $3M levels",
+        "distance": "background",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "thin, light gray lines"
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Gross volume (text, top center), $1M (text, top center), \u2191 +93.94% (text, top center), $964K previous period (text, top center), $3M (text, left axis), $2M (text, left axis), $1M (text, left axis), $0M (text, left axis), Mar 1 (text, bottom axis), Mar 22 (text, bottom axis), Solid purple line graph (mid-bottom), Dotted gray line graph (mid-bottom), Horizontal grid lines (background of graph).",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Minimalist UI dashboard design, showing financial gross volume metric, large bold $1M, green percentage increase, line graph with purple solid line and gray dotted line, white background, sans-serif typography, clean data visualization, screenshot style",
+      "Modern analytics dashboard snippet, time-series line chart for sales volume, prominent current value and comparison to previous period, light grey grid lines, clear axis labels, flat design"
+    ],
+    "keywords": [
+      "data visualization",
+      "dashboard",
+      "financial metrics",
+      "line graph",
+      "UI design"
+    ],
+    "technical_settings": "Digital rendering, vector graphics, high resolution, crisp text, flat design principles.",
+    "post_processing": "None apparent, clean digital output."
+  },
+  "text_content": {
+    "headlines": [
+      "Gross volume",
+      "$1M",
+      "\u2191 +93.94%",
+      "$964K previous period"
+    ],
+    "body_text": [],
+    "visible_urls": [],
+    "metadata": "Mar 1, Mar 22, $0M, $1M, $2M, $3M (axis labels)"
+  },
+  "image_class": "VISUAL_IMAGE"
+}

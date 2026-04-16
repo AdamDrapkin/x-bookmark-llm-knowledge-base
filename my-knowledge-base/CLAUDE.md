@@ -14,47 +14,20 @@ Personal knowledge base on my X (previously Twitter) bookmarks across various to
 
 **Full directory structure:** See [SCHEMA.md](SCHEMA.md)
 
-## Backlog Processing Workflow
+## Pipeline System
 
-Reference the wiki-backlog skill for full process: ~/.claude/skills/wiki-backlog/SKILL.md
-When wiki-backlog skill is activated, the following workflow applies:
+### Automatic — New Content (pipeline_live.py)
+Runs automatically via cron at 10 AM / 8 PM daily:
+1. pipeline_monitor.py checks X list (47 accounts) + watchlist (8 accounts)
+2. Inserts new posts into bookmarks.db (tagged as unprocessed)
+3. pipeline_live.py picks up unprocessed bookmarks
+4. Processes through Phases 1-4: extract → analyze → compile → finalize
 
-Step 1 - Read backlog-log.md: Identify batches, what's processed, target batch
-Step 2 - Get batch IDs: Extract specific bookmark IDs from backlog-log.md
-Step 3 - Query database: Fetch ONLY those IDs from ~/.ft-bookmarks/bookmarks.db
-Step 4 - Read browser.md: Load extraction process before any processing
-Step 5 - Extract each bookmark individually:
-  5a. Navigate to tweet URL in browser
-  5b. Take browser SNAPSHOT (NOT from FT bookmarks)
-  5c. Evaluate the SNAPSHOT for: isRepost, isReply, hasImage, hasVideo, hasExternalLinks
-  5d. If image → download to raw/x-article-images/
-  5e. If video → download to raw/x-video-transcripts/ + transcript
-  5f. If external link → save as .txt to raw/x-external-links/
-  5g. Verify file saved (ls confirmation)
-  5h. Mark TODO complete → THEN next bookmark
-  5i. TODO: AFTER ALL bookmarks extracted → Review all snapshots for missing media:
-       - Check temp snapshots for any missed images, videos, links
-       - Create TODO for each missing item found
-       - Mark TODO complete
-       - Only then move to Step 6
-Step 6 - Process media BEFORE wiki-ingest:
-  6a. For each image → run image-analysis skill
-  6b. For each video → run video-analysis skill
-  6c. Verify analysis saved to wiki/x-image-analyses/ or wiki/x-video-analyses/
-Step 7 - Run qa-council: One run per source, verify QA pair created
-Step 8 - Run wiki-lint: One run per category, fix issues found
-Step 9 - Update all wiki indexes: wiki/index.md, wiki/sources/, wiki/concepts/, wiki/entities/, wiki/log.md
-Step 10 - Update backlog-log.md: Mark batch IDs as processed
-
-VERIFICATION AFTER EACH SUB-STEP:
-- File exists in correct location (ls to confirm)
-- Only then mark TODO complete
-- Only then move to next item
-
-CRITICAL MEDIA RULE:
-- NEVER trust the database for media detection (isRepost, hasImage, hasVideo, hasExternalLinks)
-- The browser SNAPSHOT is the ONLY source of truth for media identification
-- Ignore database media fields - evaluate the snapshot only
+### Manual — Backlog (pipeline.py)
+Run manually when you want to process historical bookmarks:
+1. Read backlog-log.md to see remaining batches
+2. Run: python3 raw/assets/pipeline.py
+3. Pipeline processes batches automatically
 
 ## File Conventions
 - All filenames: kebab-case, lowercase (e.g., active-inference.md)
@@ -77,14 +50,18 @@ CRITICAL MEDIA RULE:
 ## Operations
 
 ### INGEST
-1. Read new source document
-2. If bookmark unclassified → read @bookmark-classification.md first
-3. Read @browser.md for extraction details
-4. Create source summary in wiki/sources/
-5. Identify concepts/entities → create/update pages
-6. Add [[wikilinks]] to connect content
-7. Update wiki/index.md
-8. Append to wiki/log.md
+
+#### Automatic (new bookmarks via pipeline_live.py)
+1. pipeline_live.py creates source summary in wiki/sources/
+2. Identifies concepts/entities → creates/updates pages
+3. Adds [[wikilinks]] to connect content
+4. Updates wiki/index.md
+5. Appends to wiki/log.md
+6. QA automatically generated via qa_orchestrator.py
+
+#### Manual (backlog via pipeline.py)
+- pipeline.py handles this automatically
+- Run: python3 raw/assets/pipeline.py
 
 ### QUERY
 1. Read wiki/index.md
@@ -101,6 +78,22 @@ CRITICAL MEDIA RULE:
 5. Flag stale content (source date >6 months)
 6. Suggest new articles for unlinked concepts
 7. Output report
+
+## Monitoring
+
+### Pipeline Monitor
+1. Check pipeline_monitor.py cron: crontab -l | grep pipeline
+2. Check latest insertions: sqlite3 ~/.ft-bookmarks/bookmarks.db "SELECT COUNT(*) FROM bookmarks WHERE date(created_at) > date('now','-1 day')"
+3. Run manually: python3 raw/assets/pipeline_monitor.py
+4. Check raw/assets/backlog-log.md for new entries
+
+## QA Validation
+
+### QALint
+1. Run: python3 raw/assets/qa_lint.py
+2. Check raw/assets/qa-batch-state.json for progress
+3. Review raw/assets/qa-cron.log for errors
+4. Regenerate QA if placeholder issues found
 
 ## Page Creation Threshold
 - Full page: subject appears in 2+ sources

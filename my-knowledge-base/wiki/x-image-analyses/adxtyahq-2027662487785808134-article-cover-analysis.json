@@ -1,0 +1,12 @@
+{
+  "image_type": "text_document",
+  "document_type": "tutorial",
+  "visible_text_full": "30\nBasic System Design Concepts\nEveryone Should Know",
+  "summary": "This document serves as a title page for a resource or tutorial. It indicates that the content will cover 30 fundamental concepts related to system design. The aim is to provide essential knowledge that everyone should be familiar with in this field.",
+  "key_concepts": [
+    "System Design",
+    "Basic Concepts"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

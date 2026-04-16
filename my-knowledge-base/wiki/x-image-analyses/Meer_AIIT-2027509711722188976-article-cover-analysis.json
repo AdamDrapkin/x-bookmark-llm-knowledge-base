@@ -1,0 +1,14 @@
+{
+  "image_type": "text_document",
+  "document_type": "tutorial",
+  "visible_text_full": "Claude Code Best Practices\n\n* Welcome to Claude Code\n\nCLAUDE\nCODE\n\nPress Enter to continue",
+  "summary": "This document introduces \"Claude Code\" and is titled \"Claude Code Best Practices.\" It features a terminal-like interface displaying a welcome message and the \"CLAUDE CODE\" logo, prompting the user to press Enter to proceed. The overall context suggests it's an introductory guide or tutorial for using the Claude Code environment.",
+  "key_concepts": [
+    "Claude Code",
+    "Best Practices",
+    "Introduction",
+    "Terminal Interface"
+  ],
+  "confidence_score": 0.95,
+  "image_class": "TEXT_DOCUMENT"
+}
