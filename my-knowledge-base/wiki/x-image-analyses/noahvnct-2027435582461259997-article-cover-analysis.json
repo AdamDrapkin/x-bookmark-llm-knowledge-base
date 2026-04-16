@@ -1,0 +1,200 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "mixed media",
+    "primary_purpose": "marketing"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "16:9",
+    "layout": "multi-element",
+    "focal_points": [
+      "Young man's face and eyes (left-center)",
+      "Headline text 'The Most Powerful AI Second Brain Setup' (upper right)"
+    ],
+    "visual_hierarchy": "The viewer's eye is drawn first to the subject's face due to direct gaze and human element, then moves to the prominent headline text, and finally to the application icons.",
+    "balance": "asymmetric - the visual weight of the portrait on the left is balanced by the graphic elements (text and icons) on the right."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Light Gray",
+        "hex": "#E0E0E0",
+        "percentage": "40%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Brown",
+        "hex": "#4A322B",
+        "percentage": "15%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Charcoal Gray",
+        "hex": "#222222",
+        "percentage": "20%",
+        "role": "accent"
+      },
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "5%",
+        "role": "typography"
+      },
+      {
+        "color": "Deep Purple",
+        "hex": "#6A3E9C",
+        "percentage": "5%",
+        "role": "accent"
+      },
+      {
+        "color": "Burnt Orange",
+        "hex": "#E87C4A",
+        "percentage": "5%",
+        "role": "accent"
+      },
+      {
+        "color": "Sky Blue",
+        "hex": "#6090B0",
+        "percentage": "1%",
+        "role": "primary subject"
+      }
+    ],
+    "color_palette": "analogous (grays, browns) with complementary accents (purple, orange, blue)",
+    "temperature": "neutral - with warm accents from orange and cool accents from blue/purple",
+    "saturation": "moderate - icons are highly saturated, portrait is moderately saturated",
+    "contrast": "high contrast - between text and background, and within the subject's features"
+  },
+  "lighting": {
+    "type": "natural window",
+    "source_count": "single source - from the front-left",
+    "direction": "45-degree side",
+    "directionality": "moderately directional",
+    "quality": "soft light",
+    "intensity": "moderate",
+    "contrast_ratio": "medium contrast",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "gray",
+      "placement": "under the chin, on the subject's right side of the face (viewer's right), and subtle shadows in hair",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on forehead, nose bridge, cheekbones, and hair strands"
+    },
+    "ambient_fill": "present - reducing deep shadows on the subject's right side",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "mixed",
+    "style": "realistic",
+    "texture": "smooth - on skin and graphic elements, slightly textured on hair",
+    "sharpness": "tack sharp - on the subject's face, especially the eyes, and on the graphic elements",
+    "grain": "none",
+    "depth_of_field": "shallow - isolating the subject from the slightly blurred background",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern YouTube thumbnail design",
+      "Tech tutorial aesthetics"
+    ],
+    "mood": "informative",
+    "atmosphere": "clean, direct, and educational",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "serif",
+        "weight": "bold",
+        "characteristics": "serious/authoritative"
+      }
+    ],
+    "placement": "overlay - prominently placed in the upper right quadrant of the image",
+    "integration": "dominant - the text is a primary element conveying the image's message"
+  },
+  "subject_analysis": {
+    "primary_subject": "A young adult male with brown, wavy hair and blue eyes, wearing a dark hooded garment.",
+    "positioning": "left - occupying approximately the left half of the frame",
+    "scale": "medium",
+    "interaction": "isolated - the subject is visually separated from the background, but interacts with the graphic elements by being part of the overall composition",
+    "facial_expression": {
+      "mouth": "closed smile",
+      "smile_intensity": "subtle",
+      "eyes": "direct gaze - looking straight at the viewer, relaxed",
+      "eyebrows": "neutral",
+      "overall_emotion": "confident",
+      "authenticity": "natural"
+    },
+    "hair": {
+      "length": "chin-length",
+      "cut": "layered",
+      "texture": "wavy",
+      "texture_quality": "thick",
+      "natural_imperfections": "flyaways, natural growth patterns, slight frizz",
+      "styling": "lightly styled - appears blow-dried for volume, natural movement",
+      "styling_detail": "lightly styled, no heavy product visible, natural movement",
+      "part": "deep side - on the subject's right side (viewer's left)",
+      "volume": "moderate volume - especially on top and sides",
+      "details": "hair sweeps across the forehead from the deep side part, some face-framing layers"
+    },
+    "hands_and_gestures": {
+      "left_hand": "not visible",
+      "right_hand": "not visible",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "sitting",
+      "angle": "facing camera - slightly turned to the viewer's left",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "indoor - simple room with a plain wall",
+    "spatial_depth": "shallow - the background is slightly out of focus, creating minimal depth",
+    "elements_detailed": [],
+    "wall_surface": {
+      "material": "painted drywall",
+      "surface_treatment": "smooth paint",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "light gray - with neutral undertones",
+      "color_variation": "uniform - with subtle lighting gradient",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "The background consists solely of a plain, light gray wall.",
+    "background_treatment": "blurred"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Close-up portrait of a young man with wavy brown hair and blue eyes, subtle smile, direct gaze, wearing a dark hoodie, lit by soft natural light from the front-left, against a clean light gray blurred background. Overlay on the right: a dark charcoal gray rounded rectangular tab with the white bold serif text 'The Most Powerful AI Second Brain Setup'. Below, three app icons: a purple crystal (Obsidian), an orange starburst (Readwise), and a black terminal icon, connected by black plus signs. Clean, modern aesthetic, YouTube thumbnail style.",
+      "Professional headshot of a male subject with a confident expression, shallow depth of field, paired with a graphic design overlay featuring a prominent title and three distinct software logos (Obsidian, Readwise, Terminal) with connecting '+' symbols, all on a light gray background. High contrast, informative visual."
+    ],
+    "keywords": [
+      "AI",
+      "Second Brain",
+      "Productivity",
+      "Obsidian",
+      "Readwise"
+    ],
+    "technical_settings": "Digital photography, 50mm lens, f/2.8 aperture, ISO 100, 1/160s shutter speed, softbox lighting from front-left. Graphic elements rendered in vector for sharpness.",
+    "post_processing": "Color correction for natural skin tones, subtle sharpening on subject's eyes, background cleanup, integration of graphic overlay with subtle drop shadows for depth."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

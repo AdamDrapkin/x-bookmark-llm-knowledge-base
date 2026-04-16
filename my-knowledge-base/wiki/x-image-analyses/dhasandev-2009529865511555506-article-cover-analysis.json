@@ -1,0 +1,15 @@
+{
+  "image_type": "text_document",
+  "document_type": "other",
+  "visible_text_full": "Peter Steinberger \n@steipete\n\nI smell drama\n\n* LLM request rejected: This credential is only authorized for use with\nClaude Code and cannot be used for other API requests.*\n\n6:40 PM \u00b7 Jan 8, 2026 \u00b7 123.3K Views",
+  "summary": "The document is a social media post by Peter Steinberger, who shares an error message indicating an LLM request was rejected. The rejection occurred because the API credential used is specifically authorized only for 'Claude Code' and cannot be used for other API requests. The user prefaces the error with \"I smell drama,\" suggesting a notable or problematic situation.",
+  "key_concepts": [
+    "LLM request rejection",
+    "API credentials",
+    "Authorization scope",
+    "Claude Code",
+    "API requests"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

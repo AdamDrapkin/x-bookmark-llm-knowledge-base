@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "branding/marketing"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "2.35:1 (cinematic widescreen)",
+    "layout": "multi-element/layered",
+    "focal_points": [
+      "The button group 'Chat Cowork Code' in the upper center",
+      "The text 'CLAUDE CODE' in the lower center",
+      "The pixelated monster graphic on the right"
+    ],
+    "visual_hierarchy": "The eye is first drawn to the central button group and the prominent 'CLAUDE CODE' text, then moves to the flanking graphic elements (starburst and monster) which provide visual interest and reinforce the theme.",
+    "balance": "asymmetric - The elements are distributed to create a visually balanced composition, with the central text and buttons flanked by distinct graphic shapes of similar visual weight."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Dark Charcoal Grey",
+        "hex": "#212121",
+        "percentage": "65%",
+        "role": "background"
+      },
+      {
+        "color": "Coral Orange",
+        "hex": "#ED7652",
+        "percentage": "20%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Light Beige",
+        "hex": "#EAE5D9",
+        "percentage": "10%",
+        "role": "accent"
+      },
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "3%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "limited/high-contrast",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "single source - implied from front/above",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "even",
+    "intensity": "moderate",
+    "contrast_ratio": "low contrast (flat lighting, but high color contrast)",
+    "mood": "professional/technical/playful",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "faint",
+      "placement": "subtle drop shadows beneath the button group and pixelated monster",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "subtle sheen on the button group"
+    },
+    "ambient_fill": "present - even lighting across all elements",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital art/graphic design",
+    "style": "stylized/pixelated/modern UI",
+    "texture": "smooth for background and buttons, pixelated for specific elements",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "deep - all elements are in sharp focus",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial/informational graphic",
+    "influences": [
+      "Pixel art",
+      "Retro video game aesthetics",
+      "Modern UI design"
+    ],
+    "mood": "technical/functional/approachable/slightly retro",
+    "atmosphere": "Clean, digital, structured, and engaging.",
+    "visual_style": "clean/geometric/structured"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern/clean/functional"
+      },
+      {
+        "type": "display",
+        "weight": "bold",
+        "characteristics": "pixelated/blocky/technical/retro"
+      }
+    ],
+    "placement": "The 'Chat Cowork Code' text is horizontally centered within a rounded rectangular button group. The 'CLAUDE CODE' text is horizontally centered below the button group.",
+    "integration": "prominent/dominant - the text is a key informational and branding element."
+  },
+  "subject_analysis": {
+    "primary_subject": "A graphic composition featuring a button group with 'Chat', 'Cowork', 'Code', the text 'CLAUDE CODE', an abstract starburst shape, and a pixelated monster character.",
+    "positioning": "The button group and 'CLAUDE CODE' text are centrally positioned. The starburst is on the left, and the pixelated monster is on the right.",
+    "scale": "environmental - the graphic elements are presented within a wider digital canvas.",
+    "interaction": "The various graphic and textual elements are arranged to form a cohesive branding or informational display, suggesting a digital interface or product related to 'Claude Code'."
+  },
+  "background": {
+    "setting_type": "digital environment - abstract",
+    "spatial_depth": "shallow - elements appear on a single plane with minimal depth suggested by subtle drop shadows.",
+    "elements_detailed": [
+      {
+        "item": "Abstract starburst shape",
+        "position": "left-center",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Stylized, coral orange, 10 points."
+      },
+      {
+        "item": "Button group",
+        "position": "center",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded rectangular shape, light beige, with three segments: 'Chat', 'Cowork', 'Code'. 'Cowork' segment is highlighted with a slightly darker beige."
+      },
+      {
+        "item": "Pixelated monster character",
+        "position": "right-center",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Coral orange, blocky, with two black square eyes and a white outline, reminiscent of classic arcade game sprites."
+      },
+      {
+        "item": "Text 'CLAUDE CODE'",
+        "position": "bottom-center",
+        "distance": "midground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "Pixelated font, coral orange with a thin outline, uppercase."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Starburst (left-center), button group (center), pixelated monster (right-center), 'CLAUDE CODE' text (bottom-center).",
+    "background_treatment": "textured - dark charcoal grey with a subtle, uniform grid pattern."
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A graphic design featuring a dark grey background with a subtle grid pattern, centered with a horizontal rounded rectangular button group displaying 'Chat', 'Cowork', 'Code' in a modern sans-serif font. The 'Cowork' segment is subtly highlighted. Below this, the text 'CLAUDE CODE' is rendered in a pixelated, blocky coral orange font with a thin outline. To the left, an abstract 10-point coral orange starburst shape. To the right, a pixelated coral orange monster character with two black square eyes and a white outline, reminiscent of retro video games. Apply flat, even lighting with minimal, soft drop shadows on the button group and monster. Use a limited color palette of dark grey, coral orange, light beige, and white.",
+      "Create a tech-themed branding graphic combining modern UI elements with retro pixel art, set against a dark, grid-patterned digital background. The primary text 'CLAUDE CODE' should be prominent and pixelated, flanked by abstract and character graphics in a complementary orange hue, with a central interactive-looking button bar."
+    ],
+    "keywords": [
+      "digital art",
+      "graphic design",
+      "pixel art",
+      "retro tech",
+      "UI design",
+      "branding",
+      "Claude Code",
+      "dark mode",
+      "grid pattern"
+    ],
+    "technical_settings": "Vector graphics, flat design principles, high resolution, minimal use of gradients, precise pixel alignment for retro elements.",
+    "post_processing": "Clean edges, subtle drop shadows (1-2px offset, low opacity), color grading to enhance contrast between background and foreground elements."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

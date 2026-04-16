@@ -1,0 +1,270 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "digital art",
+    "primary_purpose": "editorial"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "approximately 2.5:1 (panoramic)",
+    "layout": "multi-element, layered",
+    "focal_points": [
+      "Man's face and cigarette in the center",
+      "Notepad with '100k mrr goal' on the left",
+      "Dollar sign and Mac Mini stack on the right"
+    ],
+    "visual_hierarchy": "The eye is immediately drawn to the man's profile due to his central placement and strong contrast. It then moves to the left to the notepad, and to the right to the dollar sign and computer stack, following the desk line.",
+    "balance": "asymmetric - elements on the left and right are different but visually balanced by their weight and placement around the central subject."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Dark Gray/Black",
+        "hex": "#1A1A1A",
+        "percentage": "40%",
+        "role": "primary subject, shadows, outlines"
+      },
+      {
+        "color": "Light Gray/White",
+        "hex": "#E0E0E0",
+        "percentage": "30%",
+        "role": "highlights, screen backgrounds, paper"
+      },
+      {
+        "color": "Medium Gray",
+        "hex": "#808080",
+        "percentage": "20%",
+        "role": "midtones, desk surface, monitor bezels"
+      },
+      {
+        "color": "Pale Blue/Green",
+        "hex": "#C0D0D0",
+        "percentage": "10%",
+        "role": "accent, screen glow"
+      }
+    ],
+    "color_palette": "monochromatic",
+    "temperature": "cool - overall impression due to grayscale and faint blue/green screen glow",
+    "saturation": "desaturated - almost black and white, with very low saturation on screen elements",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "multiple sources - three monitors acting as light sources, plus an implied general room light",
+    "direction": "diffused from front/side - monitors illuminate the subject from the front/sides, but the overall lighting on the subject is somewhat directional from the top-left, creating shadows on the right side of his face",
+    "directionality": "moderately directional - strong shadows on the subject's right side, but the screen light provides some fill",
+    "quality": "sculpted - strong contrast and shadows sculpt the subject's face and body; soft - the screen light itself is soft",
+    "intensity": "moderate",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "mysterious, focused, intense, somewhat melancholic",
+    "shadows": {
+      "type": "harsh defined edges - on the subject's profile, especially the neck and arm; soft gradual edges - on the desk and background elements",
+      "density": "deep black - on the subject's shirt and the shadowed side of his face/neck",
+      "placement": "under subject's chin, on the right side of his face and neck, under his arm, and cast from objects on the desk",
+      "length": "short to medium"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on the left side of the subject's face, forehead, top of his head, and the top edges of the Mac Mini stack"
+    },
+    "ambient_fill": "present - the glow from the monitors acts as a subtle fill light, reducing shadow depth in some areas",
+    "light_temperature": "neutral - overall grayscale with a slight cool (blue/green) tint from the monitors"
+  },
+  "technical_specs": {
+    "medium": "digital painting",
+    "style": "stylized, graphic novel/comic book aesthetic",
+    "texture": "grainy - visible halftone-like dot pattern or digital noise; sharp - edges are well-defined",
+    "sharpness": "tack sharp",
+    "grain": "intentional grain - moderate level",
+    "depth_of_field": "medium - subject is sharp, immediate foreground and background monitors are slightly less sharp but still discernible",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "editorial, conceptual",
+    "influences": [
+      "Graphic novel illustration",
+      "Film noir aesthetics",
+      "Manga/Anime"
+    ],
+    "mood": "focused, determined, intense, somewhat isolated, perhaps a hint of weariness or addiction",
+    "atmosphere": "gritty, nocturnal, dedicated, solitary",
+    "visual_style": "structured, graphic, high-contrast"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "handwritten, casual"
+      }
+    ],
+    "placement": "overlay - on the notepad, appearing as if written on it",
+    "integration": "subtle - part of a small detail on the desk, not dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "A man with short hair and headphones, smoking a cigarette, sitting at a desk with multiple computer monitors.",
+    "positioning": "center",
+    "scale": "medium",
+    "interaction": "interacting with environment - using a computer mouse, looking at screens, smoking, surrounded by work-related items",
+    "facial_expression": {
+      "mouth": "pursed - holding a cigarette",
+      "smile_intensity": "no smile",
+      "eyes": "looking away - focused on the central monitor, not directly at the viewer",
+      "eyebrows": "neutral - slightly furrowed, suggesting concentration",
+      "overall_emotion": "serious, focused, determined",
+      "authenticity": "posed - as an illustration, it's a deliberate depiction of a state"
+    },
+    "hair": {
+      "length": "short - buzzed on the sides, slightly longer on top, not reaching ears",
+      "cut": "fade/undercut - very short on the sides, gradually longer towards the top",
+      "texture": "coarse - implied by the short, bristly depiction",
+      "texture_quality": "thick - dense appearance",
+      "natural_imperfections": "none explicitly visible due to stylized nature, but the short stubble suggests natural growth",
+      "styling": "unstyled - natural short cut",
+      "styling_detail": "unstyled, natural, no product visibility, no specific movement",
+      "part": "no part - hair is uniformly short across the top",
+      "volume": "flat - due to short length",
+      "details": "short stubble on the scalp, consistent with a fresh buzz cut"
+    },
+    "hands_and_gestures": {
+      "left_hand": "resting on the desk, holding a computer mouse with fingers slightly curled around it",
+      "right_hand": "resting on the desk, arm bent, fingers slightly curled and relaxed",
+      "finger_positions": "curled - around the mouse on the left, relaxed curl on the right",
+      "finger_interlacing": "N/A",
+      "hand_tension": "relaxed - fingers are not tense or gripping tightly",
+      "interaction": "left hand is actively using the mouse; right hand is resting",
+      "naturalness": "organic casual - depicts a natural posture while working"
+    },
+    "body_positioning": {
+      "posture": "sitting",
+      "angle": "45 degree turn - body is slightly angled to the right, head turned to the left, facing the central monitor",
+      "weight_distribution": "centered - sitting upright",
+      "shoulders": "level - relaxed, not hunched"
+    }
+  },
+  "background": {
+    "setting_type": "indoor - office/workspace",
+    "spatial_depth": "medium - foreground desk, midground subject and monitors, slightly blurred background on screens",
+    "elements_detailed": [
+      {
+        "item": "Monitor",
+        "position": "left-center",
+        "distance": "midground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "displays a blurred social media-like interface with profile pictures and content thumbnails"
+      },
+      {
+        "item": "Monitor",
+        "position": "center",
+        "distance": "midground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "displays a blurred interface, possibly a video editor or code editor, with dark background and light elements"
+      },
+      {
+        "item": "Monitor",
+        "position": "right-center",
+        "distance": "midground",
+        "size": "dominant",
+        "condition": "pristine",
+        "specific_features": "displays a blurred interface with charts and graphs, suggesting analytics or financial data"
+      },
+      {
+        "item": "Notepad",
+        "position": "left-bottom",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "new",
+        "specific_features": "white spiral-bound notepad with '100k mrr goal' written on it"
+      },
+      {
+        "item": "Cigarette butt",
+        "position": "left-bottom",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "used",
+        "specific_features": "one cigarette butt lying on the desk with smoke rising"
+      },
+      {
+        "item": "Cigarette butts",
+        "position": "center-bottom",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "used",
+        "specific_features": "two additional cigarette butts lying on the desk"
+      },
+      {
+        "item": "Computer mouse",
+        "position": "center-bottom",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "standard optical mouse"
+      },
+      {
+        "item": "Coffee mug",
+        "position": "right-bottom",
+        "distance": "foreground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "white ceramic mug with steam rising"
+      },
+      {
+        "item": "Dollar sign symbol",
+        "position": "right-bottom",
+        "distance": "foreground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "stylized dollar sign, possibly a paperweight or decorative item"
+      },
+      {
+        "item": "Mac Mini stack",
+        "position": "right-bottom",
+        "distance": "foreground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "four white, square Apple Mac Mini computers stacked vertically, with an Apple logo on the top unit"
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Three computer monitors (left, center, right), a man, headphones, a cigarette in his mouth, a cigarette butt with smoke, two other cigarette butts, a notepad with '100k mrr goal', a computer mouse, a coffee mug with steam, a dollar sign symbol, a stack of four Apple Mac Mini computers. All are on a desk surface.",
+    "background_treatment": "blurred - the content on the monitors is intentionally blurred to suggest activity without specific detail"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "A highly detailed, high-contrast digital illustration in the style of a graphic novel, depicting a focused man with short buzz-cut hair and over-ear headphones, smoking a cigarette, sitting at a desk with three wide computer monitors. The man is in profile, facing left, with strong shadows sculpting his face and body. The monitors display blurred interfaces: social media on the left, a dark code/video editor in the center, and analytics graphs on the right. On the desk, include a white spiral-bound notepad with '100k mrr goal' written in a casual sans-serif font, several cigarette butts with smoke rising from one, a white ceramic coffee mug with steam, a stylized dollar sign symbol, and a stack of four white Apple Mac Mini computers. Use a monochromatic color palette with subtle cool tones from the screens, and add a moderate level of digital grain for texture. Emphasize sharp edges and dramatic chiaroscuro lighting.",
+      "Close-up illustration of a determined entrepreneur working late, surrounded by technology and symbols of ambition and vice. High contrast, gritty texture, profile view, dark atmosphere, focused on a financial goal."
+    ],
+    "keywords": [
+      "entrepreneur",
+      "hustle",
+      "coding",
+      "startup",
+      "focus",
+      "smoking",
+      "monitors",
+      "goal",
+      "gritty",
+      "illustration"
+    ],
+    "technical_settings": "Digital drawing software (e.g., Procreate, Photoshop), high resolution, pen and ink brush for outlines, halftone brush for shading, strong chiaroscuro lighting setup, minimal color palette, wide aspect ratio.",
+    "post_processing": "Monochromatic color grading with a slight cool tint, added digital grain/noise, sharpening of key elements, subtle glow effect on monitor screens, vignette effect to enhance focus."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

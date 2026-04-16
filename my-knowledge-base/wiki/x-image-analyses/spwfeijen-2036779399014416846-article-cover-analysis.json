@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic_design",
+    "primary_purpose": "branding"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "2.5:1 (wide landscape)",
+    "layout": "multi-element",
+    "focal_points": [
+      "makeugc logo (left-center)",
+      "Claude logo (right-center)"
+    ],
+    "visual_hierarchy": "The eye is drawn to the two distinct logos, presented side-by-side with equal visual weight, encouraging a left-to-right reading flow.",
+    "balance": "asymmetric - The two logos have different visual styles and weights (makeugc is bolder, Claude is more delicate), but are balanced by their horizontal spacing and placement on the neutral background."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Light Gray",
+        "hex": "#E8E8E8",
+        "percentage": "85%",
+        "role": "background"
+      },
+      {
+        "color": "Black",
+        "hex": "#1A1A1A",
+        "percentage": "8%",
+        "role": "primary subject"
+      },
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "3%",
+        "role": "accent"
+      },
+      {
+        "color": "Terracotta Orange",
+        "hex": "#E08050",
+        "percentage": "2%",
+        "role": "accent"
+      },
+      {
+        "color": "Dark Gray",
+        "hex": "#333333",
+        "percentage": "2%",
+        "role": "primary subject"
+      }
+    ],
+    "color_palette": "analogous",
+    "temperature": "neutral with a warm accent",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "N/A",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "even",
+    "intensity": "moderate",
+    "contrast_ratio": "medium contrast",
+    "mood": "professional",
+    "shadows": {
+      "type": "absent",
+      "density": "absent",
+      "placement": "N/A",
+      "length": "N/A"
+    },
+    "highlights": {
+      "treatment": "absent",
+      "placement": "N/A"
+    },
+    "ambient_fill": "N/A",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "vector",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "deep - flat graphic with no discernible depth",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "modern minimalist design",
+      "corporate branding"
+    ],
+    "mood": "professional",
+    "atmosphere": "clean, direct, and informative",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "black",
+        "characteristics": "modern/technical"
+      },
+      {
+        "type": "serif",
+        "weight": "regular",
+        "characteristics": "classic/sophisticated"
+      }
+    ],
+    "placement": "overlay - horizontally aligned and centered on the canvas",
+    "integration": "dominant"
+  },
+  "subject_analysis": {
+    "primary_subject": "Two brand logos: 'makeugc' and 'Claude'",
+    "positioning": "horizontally centered, slightly below the vertical midline",
+    "scale": "medium",
+    "interaction": "multiple subjects - two distinct logos presented side-by-side, implying a relationship or comparison",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "no smile",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "studio - plain, neutral digital background",
+    "spatial_depth": "shallow - flat 2D graphic",
+    "elements_detailed": [],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "perfectly smooth",
+      "finish": "matte",
+      "color": "Light Gray with neutral undertones",
+      "color_variation": "uniform",
+      "features": "clean",
+      "wear_indicators": "pristine"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "No additional objects beyond the logos and background.",
+    "background_treatment": "minimal"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Minimalist graphic design featuring two brand logos side-by-side on a light gray background. The left logo is 'makeugc' with a bold black square icon containing a white 'M', followed by black sans-serif text 'makeugc'. The right logo is 'Claude' with a terracotta orange starburst icon, followed by dark gray serif text 'Claude'.",
+      "Clean corporate branding visual presenting two entities, makeugc and Claude, with distinct typography and simple, contrasting icons, centered on a neutral background."
+    ],
+    "keywords": [
+      "logos",
+      "branding",
+      "makeugc",
+      "Claude",
+      "minimalist"
+    ],
+    "technical_settings": "Vector graphic, flat design, high resolution, precise color matching for brand elements.",
+    "post_processing": "None apparent, clean digital render with sharp edges and solid colors."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

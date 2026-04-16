@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "digital art",
+    "primary_purpose": "educational"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "16:9",
+    "layout": "multi-element",
+    "focal_points": [
+      "Title text 'How to Start Making Real Money With Skills & Agents' in the top-left quadrant",
+      "Central brain icon acting as the core of the diagram",
+      "The man working on a laptop in the bottom-right"
+    ],
+    "visual_hierarchy": "The eye is first drawn to the large title on the left, then moves to the central 'brain' icon, and then follows the lines radiating outwards to the various skill and income stream categories, finally resting on the man at the laptop as the implied agent.",
+    "balance": "asymmetric - the heavy text block on the left is balanced by the detailed diagram and the human figure on the right, creating a dynamic visual flow."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Light Beige",
+        "hex": "#F8F4E6",
+        "percentage": "70%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Brown",
+        "hex": "#2B2B2B",
+        "percentage": "10%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Goldenrod",
+        "hex": "#D4AF37",
+        "percentage": "5%",
+        "role": "accent"
+      },
+      {
+        "color": "Olive Green",
+        "hex": "#8B8000",
+        "percentage": "3%",
+        "role": "accent"
+      },
+      {
+        "color": "Slate Gray",
+        "hex": "#708090",
+        "percentage": "3%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "analogous",
+    "temperature": "warm - overall feeling",
+    "saturation": "moderate",
+    "contrast": "medium contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "diffused from above",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "even",
+    "intensity": "moderate",
+    "contrast_ratio": "low contrast (flat)",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "gray",
+      "placement": "under objects and subject for depth",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on metallic elements like coins and laptop"
+    },
+    "ambient_fill": "present - secondary fill light reducing shadows",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital painting",
+    "style": "stylized",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "deep - all elements are in focus, creating a clear informational graphic",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "conceptual",
+    "influences": [
+      "infographic design",
+      "business illustration"
+    ],
+    "mood": "professional",
+    "atmosphere": "An informative and clear atmosphere, designed to convey a business concept effectively.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "serif",
+        "weight": "black",
+        "characteristics": "modern, serious"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "regular",
+        "characteristics": "modern, technical"
+      }
+    ],
+    "placement": "overlay - title and subtitle on the left, labels integrated into the diagram on the right",
+    "integration": "dominant - the text is crucial for understanding the diagram's content"
+  },
+  "subject_analysis": {
+    "primary_subject": "An illustrated diagram explaining how to make money with skills and agents, centered around a brain icon.",
+    "positioning": "The title is in the top-left, the central diagram element (brain) is slightly left of center, and the illustrative figure is in the bottom-right.",
+    "scale": "environmental",
+    "interaction": "The diagram elements are interconnected by lines, illustrating relationships between skills, products, and income streams. The man interacts with a laptop, symbolizing the 'agent' or 'skill' application.",
+    "facial_expression": {
+      "mouth": "neutral",
+      "smile_intensity": "no smile",
+      "eyes": "looking away",
+      "eyebrows": "neutral",
+      "overall_emotion": "focused",
+      "authenticity": "posed"
+    },
+    "hair": {
+      "length": "short",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "none",
+      "styling": "N/A",
+      "styling_detail": "unstyled, covered by bandana",
+      "part": "no part",
+      "volume": "flat",
+      "details": "A short, dark brown beard and mustache are present. The head is covered by a dark grey bandana with a lighter grey pattern, tied at the back."
+    },
+    "hands_and_gestures": {
+      "left_hand": "Fingers are positioned over the laptop keyboard, appearing to be typing.",
+      "right_hand": "Fingers are positioned over the laptop keyboard, appearing to be typing.",
+      "finger_positions": "curled",
+      "finger_interlacing": "N/A",
+      "hand_tension": "natural",
+      "interaction": "Both hands are actively typing on a silver laptop keyboard.",
+      "naturalness": "organic casual"
+    },
+    "body_positioning": {
+      "posture": "sitting",
+      "angle": "45 degree turn",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "studio",
+    "spatial_depth": "shallow - elements are layered but without significant environmental depth",
+    "elements_detailed": [
+      {
+        "item": "Stylized starburst icon",
+        "position": "top-left quadrant",
+        "distance": "background",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Eight-pointed, rust-colored"
+      },
+      {
+        "item": "Brain icon",
+        "position": "center-left quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Goldenrod color with internal lines"
+      },
+      {
+        "item": "Folder icon",
+        "position": "top-left of brain",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Brown folder with a terminal window icon"
+      },
+      {
+        "item": "Database icon",
+        "position": "mid-left of brain",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Grey cylindrical database with a human head silhouette"
+      },
+      {
+        "item": "Robot icon",
+        "position": "bottom-left of brain",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Grey robot holding a wrench"
+      },
+      {
+        "item": "Open box icon",
+        "position": "top-right of brain",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Grey cardboard box with a golden gear inside"
+      },
+      {
+        "item": "Closed box icon",
+        "position": "mid-right of brain",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Grey cardboard box with a golden gear on the side"
+      },
+      {
+        "item": "Handshake icon",
+        "position": "bottom-right of brain",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Two hands shaking, one light-skinned, one darker-skinned"
+      },
+      {
+        "item": "Gear icons",
+        "position": "right of handshake",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Two grey interlocking gears"
+      },
+      {
+        "item": "API icon",
+        "position": "bottom-center of brain",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Green sphere with a code tag icon and radiating lines"
+      },
+      {
+        "item": "Money bag icon",
+        "position": "top-right of diagram",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Brown money bag with a dollar sign"
+      },
+      {
+        "item": "Credit card icon",
+        "position": "mid-right of diagram",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Hand holding a credit card"
+      },
+      {
+        "item": "Dollar coin icon",
+        "position": "top-right corner",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Golden coin with a dollar sign"
+      },
+      {
+        "item": "Dollar coin icon",
+        "position": "bottom-right of diagram, above man",
+        "distance": "midground",
+        "size": "small",
+        "condition": "pristine",
+        "specific_features": "Golden coin with a dollar sign"
+      },
+      {
+        "item": "Laptop",
+        "position": "bottom-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Silver laptop with an Apple logo on the lid"
+      },
+      {
+        "item": "Man",
+        "position": "bottom-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Bearded man wearing a bandana and a brown jacket, sitting at a desk"
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "Starburst icon (top-left), Brain icon (center-left), Folder icon (top-left of brain), Database icon (mid-left of brain), Robot icon (bottom-left of brain), Open box icon (top-right of brain), Closed box icon (mid-right of brain), Handshake icon (bottom-right of brain), Two gear icons (right of handshake), API icon (bottom-center of brain), Money bag icon (top-right of diagram), Credit card icon (mid-right of diagram), Two dollar coin icons (top-right and bottom-right of diagram), Silver laptop (bottom-right), Man (bottom-right).",
+    "background_treatment": "minimal - a solid light beige color with a subtle paper-like texture"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Infographic illustration of business concepts, clean vector style, light beige background, dark brown text, golden accents, professional and educational tone, diagram with interconnected elements, stylized icons, man working on laptop.",
+      "Conceptual diagram showing skill monetization pathways, digital art, clear visual hierarchy, modern design, subtle paper texture, flat colors with minimal shading, business education."
+    ],
+    "keywords": [
+      "infographic",
+      "business",
+      "skills",
+      "monetization",
+      "automation"
+    ],
+    "technical_settings": "Vector illustration software, clean lines, limited color palette, subtle texture overlay, high resolution for web.",
+    "post_processing": "Subtle paper texture overlay, slight color grading to warm tones."
+  },
+  "text_content": {
+    "headlines": [
+      "How to Start Making Real Money With Skills & Agents"
+    ],
+    "body_text": [
+      "From ideation to profitable services and automation.",
+      "Platform & CLI Skills",
+      "Agent & Database Skills",
+      "Skill Development & Tools",
+      "SaaS & Software Products",
+      "Software Products",
+      "Consulting & Automation",
+      "API Monetization",
+      "Direct Project Payments",
+      "Recurring Subscription Revenue",
+      "Passive Income Streams"
+    ],
+    "visible_urls": [],
+    "metadata": "none"
+  },
+  "image_class": "VISUAL_IMAGE"
+}

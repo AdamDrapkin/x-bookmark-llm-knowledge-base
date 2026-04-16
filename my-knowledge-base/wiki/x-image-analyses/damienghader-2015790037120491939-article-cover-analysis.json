@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic_design",
+    "primary_purpose": "marketing"
+  },
+  "composition": {
+    "rule_applied": "asymmetry",
+    "aspect_ratio": "16:9",
+    "layout": "multi-element",
+    "focal_points": [
+      "Text 'Lovable Connectors' on the left",
+      "Array of app icons on the right"
+    ],
+    "visual_hierarchy": "The eye is first drawn to the large, bold text on the left, then moves to the collection of distinct app icons arranged on the right.",
+    "balance": "asymmetric - the large text block on the left is balanced by the distributed visual weight of multiple app icons on the right."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Dark Gray",
+        "hex": "#1A1A1A",
+        "percentage": "70%",
+        "role": "background"
+      },
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "10%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Gradient Blue to Pink",
+        "hex": "#6A5ACD to #FF69B4",
+        "percentage": "5%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Orange",
+        "hex": "#FF8C00",
+        "percentage": "3%",
+        "role": "accent"
+      },
+      {
+        "color": "Light Blue",
+        "hex": "#ADD8E6",
+        "percentage": "2%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "analogous",
+    "temperature": "neutral",
+    "saturation": "moderate",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "multiple sources - implied, creating subtle highlights and shadows on icons",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "soft light",
+    "intensity": "moderate",
+    "contrast_ratio": "medium contrast",
+    "mood": "professional",
+    "shadows": {
+      "type": "soft gradual edges",
+      "density": "faint",
+      "placement": "underneath and around the app icons, giving them a slight lift from the background",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on the top and left edges of the app icons, and subtly on the gradient text"
+    },
+    "ambient_fill": "present - soft fill light prevents deep black shadows, maintaining a sleek look",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital photography",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp",
+    "grain": "none",
+    "depth_of_field": "shallow - the app icons appear slightly raised and isolated from the background grid",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "Modern UI/UX design",
+      "App store aesthetics"
+    ],
+    "mood": "modern",
+    "atmosphere": "clean, high-tech, user-friendly",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "sans-serif",
+        "weight": "black",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "overlay - prominently positioned on the left side of the frame",
+    "integration": "dominant - the text serves as the primary headline and visual anchor on the left"
+  },
+  "subject_analysis": {
+    "primary_subject": "The text 'Lovable Connectors' and a collection of various app icons",
+    "positioning": "The text is positioned on the left side, occupying the left third of the image. The app icons are distributed across the right two-thirds of the image.",
+    "scale": "The text is large and dominant. The app icons are medium-small in scale relative to the overall image.",
+    "interaction": "The app icons are presented as a collection, implying a network of integrations or connections, visually supporting the 'Connectors' text.",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "no smile",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "N/A"
+    },
+    "hands_and_gestures": {
+      "left_hand": "N/A",
+      "right_hand": "N/A",
+      "finger_positions": "N/A",
+      "finger_interlacing": "N/A",
+      "hand_tension": "N/A",
+      "interaction": "N/A",
+      "naturalness": "N/A"
+    },
+    "body_positioning": {
+      "posture": "N/A",
+      "angle": "N/A",
+      "weight_distribution": "N/A",
+      "shoulders": "N/A"
+    }
+  },
+  "background": {
+    "setting_type": "abstract",
+    "spatial_depth": "medium - subtle grid lines create a sense of depth behind the floating app icons",
+    "elements_detailed": [
+      {
+        "item": "App icon (heart shape with orange to purple gradient)",
+        "position": "top-left quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded square icon with a stylized heart shape, glowing gradient"
+      },
+      {
+        "item": "App icon (white square with orange flame icon)",
+        "position": "top-center quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded square icon with a white background and a vibrant orange flame"
+      },
+      {
+        "item": "App icon (three colored cubes: yellow, blue, red)",
+        "position": "top-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded square icon with three interlocking cubes in primary colors"
+      },
+      {
+        "item": "App icon (orange asterisk/gear symbol)",
+        "position": "mid-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded dark gray square icon with a bright orange asterisk-like symbol"
+      },
+      {
+        "item": "App icon (Stripe logo on white square)",
+        "position": "mid-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded white square icon with the 'stripe' text logo in purple"
+      },
+      {
+        "item": "App icon (OpenAI logo, white on dark square)",
+        "position": "bottom-center quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded dark gray square icon with the white stylized OpenAI logo"
+      },
+      {
+        "item": "App icon (blue and white pixelated squares)",
+        "position": "bottom-right quadrant",
+        "distance": "midground",
+        "size": "medium",
+        "condition": "pristine",
+        "specific_features": "Rounded white square icon with a pattern of blue and white squares, resembling a pixelated 'F' or grid"
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "The background features a subtle, dark gray grid pattern that recedes into the distance, providing a structured yet unobtrusive backdrop for the floating app icons.",
+    "background_treatment": "textured - a subtle grid pattern is visible, providing structure without distracting from the main subjects."
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Sleek dark background with a subtle, glowing grid pattern, featuring bold sans-serif text 'Lovable' in white and 'Connectors' in a vibrant blue-to-pink gradient on the left. On the right, an array of modern, glossy 3D app icons (e.g., heart, flame, cubes, gear, Stripe, OpenAI, pixelated F) with soft, diffused lighting and subtle cast shadows, creating a sense of depth. Minimalist, high contrast, digital art, marketing graphic.",
+      "Create a promotional image for software integrations, showcasing a clean, dark mode aesthetic. Include prominent, large typography with a gradient effect for a key word, and several popular application logos rendered as slightly raised, softly lit 3D icons against a subtle geometric background. Focus on a modern, professional, and inviting mood."
+    ],
+    "keywords": [
+      "app connectors",
+      "integrations",
+      "modern UI",
+      "dark mode",
+      "gradient text",
+      "sleek design"
+    ],
+    "technical_settings": "High resolution (e.g., 1920x1080), sharp text rendering, soft box lighting simulation for app icons, subtle ambient occlusion, clean anti-aliasing, shallow depth of field to emphasize icons.",
+    "post_processing": "Subtle color grading to enhance vibrancy of gradients and icons, slight vignette to draw focus, sharpening applied to text and icon edges for crispness."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

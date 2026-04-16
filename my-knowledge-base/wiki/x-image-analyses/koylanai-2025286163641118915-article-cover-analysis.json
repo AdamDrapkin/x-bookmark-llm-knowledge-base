@@ -1,0 +1,16 @@
+{
+  "image_type": "text_document",
+  "document_type": "article",
+  "visible_text_full": "Context Engineering for Personal AI\n\nThe File System\nIs the New Database\n\n80+ files. 11 modules. Zero dependencies.\nHow I Built a Personal OS for AI Agents\n\nresearch/\ncomprehensive-bio.md\nH1\nlong-term-goals.md\nH1\nresearch/\ngoals.yaml\nvalues.yaml\ncredo.yaml\nports.json\ncontacts.json\ninteractions.json\ndecisions.json",
+  "summary": "This document introduces a concept where the file system is utilized as a database, specifically for \"Context Engineering for Personal AI.\" It highlights a project that built a \"Personal OS for AI Agents\" using a lightweight architecture of 80+ files, 11 modules, and zero dependencies, suggesting a novel approach to data management for AI.",
+  "key_concepts": [
+    "Context Engineering",
+    "Personal AI",
+    "File System as Database",
+    "Personal OS for AI Agents",
+    "Zero dependencies",
+    "Data organization (goals, values, credo, ports, contacts, interactions, decisions)"
+  ],
+  "confidence_score": 1.0,
+  "image_class": "TEXT_DOCUMENT"
+}

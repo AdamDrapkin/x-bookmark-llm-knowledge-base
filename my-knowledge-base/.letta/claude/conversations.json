@@ -38,5 +38,9 @@
   "28f87dc7-de15-4780-9c0b-08067f85f067": {
     "conversationId": "conv-6c3041c9-81cf-4546-b21d-a82deea3cdda",
     "agentId": "agent-06a88650-c85a-458d-a533-3617b462b18c"
+  },
+  "1aac7335-a417-4a2d-806b-903e7a673342": {
+    "conversationId": "conv-8565eb5a-de16-401e-975d-672ee9d76f0c",
+    "agentId": "agent-06a88650-c85a-458d-a533-3617b462b18c"
   }
 }

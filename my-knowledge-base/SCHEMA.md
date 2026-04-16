@@ -91,3 +91,46 @@ Operations: init, ingest, query, update, lint, backlog-process
 ## Key File Locations
 - Bookmark database: `~/.ft-bookmarks/bookmarks.db`
 - Raw assets: `raw/assets/` (includes pipeline scripts, SOPs, and backlog-log)
+
+## Cron Jobs
+All cron jobs are stored in the system crontab and managed via `crontab -e`.
+
+### Job Reference Table
+| Job | Script | Schedule (EST) | Purpose |
+|-----|--------|----------------|---------|
+| QA Orchestrator | `qa_orchestrator.py` | Every 15 min (`*/15 * * * *`) | Generates QA pairs for wiki sources |
+| Pipeline Live | `pipeline_live.py` | 10:15 AM – 7:45 PM, every 30 min (`15,45 10-19 * * *`) | Processes new bookmarks through Phases 1-4 |
+| QA Council Check | `qa_check.py` | 10 AM and 8 PM daily (`0 10 * * *`, `0 20 * * *`) | Runs QA validation checks |
+| Wiki Lint | `lint_check.py` | 8 PM daily (`0 20 * * *`) | Runs lint_check.py for quality assurance |
+| Pipeline Monitor | `pipeline_monitor.py` | 10 AM – 7:30 PM, every 30 min (`*/30 10-19 * * *`) | Monitors X list + watchlist, inserts new bookmarks |
+
+### Pipeline Flow
+```
+pipeline_monitor.py (every 30 min)
+        │
+        ▼
+bookmarks.db (new unprocessed bookmarks)
+        │
+        ▼
+pipeline_live.py (every 30 min at :15/:45)
+        │
+        ├── Phase 1: Extract
+        ├── Phase 2: Analyze
+        ├── Phase 3: Compile (wiki/sources/, wiki/concepts/)
+        └── Phase 4: Finalize (wikilinks, cross-references)
+        │
+        ▼
+qa_check.py (10 AM + 8 PM) ── QA validation
+        │
+        ▼
+qa_orchestrator.py (every 15 min) ── QA pairs generation
+        │
+        ▼
+lint_check.py (8 PM) ── Quality report
+```
+
+### Cron Management Commands
+- View current crontab: `crontab -l`
+- Edit crontab: `crontab -e`
+- Pause all jobs: `crontab -r` (removes all jobs)
+- Restore jobs: Apply the cron configuration file

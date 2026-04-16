@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "illustration",
+    "primary_purpose": "editorial"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "2:1 (wide landscape)",
+    "layout": "single subject",
+    "focal_points": [
+      "Primary: The farmer's back, center-bottom",
+      "Secondary: The distant farmhouses, upper right"
+    ],
+    "visual_hierarchy": "The eye is drawn first to the farmer in the foreground, then follows the path and receding corn rows towards the distant horizon, hills, and farmhouses.",
+    "balance": "asymmetric - The farmer is centrally placed along the vertical axis of the path, but the visual weight of the dense cornfield and the distant farmhouses creates an overall asymmetric balance."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "White",
+        "hex": "#FFFFFF",
+        "percentage": "60%",
+        "role": "background"
+      },
+      {
+        "color": "Black",
+        "hex": "#000000",
+        "percentage": "25%",
+        "role": "primary subject, lines, shadows"
+      },
+      {
+        "color": "Dark Gray",
+        "hex": "#333333",
+        "percentage": "15%",
+        "role": "shading"
+      }
+    ],
+    "color_palette": "monochromatic",
+    "temperature": "neutral",
+    "saturation": "desaturated (black and white)",
+    "contrast": "high contrast"
+  },
+  "lighting": {
+    "type": "natural window",
+    "source_count": "single source",
+    "direction": "diffused from above",
+    "directionality": "moderately directional",
+    "quality": "hard light",
+    "intensity": "moderate",
+    "contrast_ratio": "high contrast (dramatic shadows)",
+    "mood": "calm",
+    "shadows": {
+      "type": "harsh defined edges",
+      "density": "deep black",
+      "placement": "under subject's clothing folds, within corn stalks, under clouds",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on top of the farmer's cap, shoulders, upper corn leaves, clouds"
+    },
+    "ambient_fill": "absent",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital painting",
+    "style": "stylized",
+    "texture": "grainy",
+    "sharpness": "tack sharp",
+    "grain": "intentional grain - high level, mimicking traditional printmaking",
+    "depth_of_field": "deep - all elements from foreground to background are in focus, with greater detail in the foreground",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "fine art",
+    "influences": [
+      "Woodcut prints",
+      "Linocut prints",
+      "Vintage agricultural illustrations",
+      "WPA era art"
+    ],
+    "mood": "calm",
+    "atmosphere": "A serene and hardworking rural atmosphere, evoking a sense of timeless labor and connection to the land.",
+    "visual_style": "structured"
+  },
+  "typography": {
+    "present": false,
+    "fonts": [],
+    "placement": "N/A",
+    "integration": "N/A"
+  },
+  "subject_analysis": {
+    "primary_subject": "A farmer, seen from behind, walking away from the viewer through a cornfield, carrying a hoe over his right shoulder.",
+    "positioning": "center-bottom",
+    "scale": "medium",
+    "interaction": "interacting with environment",
+    "facial_expression": {
+      "mouth": "N/A",
+      "smile_intensity": "no smile",
+      "eyes": "N/A",
+      "eyebrows": "N/A",
+      "overall_emotion": "N/A",
+      "authenticity": "N/A"
+    },
+    "hair": {
+      "length": "N/A",
+      "cut": "N/A",
+      "texture": "N/A",
+      "texture_quality": "N/A",
+      "natural_imperfections": "N/A",
+      "styling": "N/A",
+      "styling_detail": "N/A",
+      "part": "N/A",
+      "volume": "N/A",
+      "details": "The farmer is wearing a flat cap, so hair is not visible."
+    },
+    "hands_and_gestures": {
+      "left_hand": "The left hand is gripping the wooden handle of the hoe, which rests on the farmer's left shoulder. Only the back of the hand and curled fingers are visible.",
+      "right_hand": "The right hand is gripping the wooden handle of the hoe, which rests on the farmer's right shoulder. Only the back of the hand and curled fingers are visible.",
+      "finger_positions": "curled",
+      "finger_interlacing": "N/A",
+      "hand_tension": "natural",
+      "interaction": "Both hands are holding the handle of a hoe, which is resting across the farmer's shoulders.",
+      "naturalness": "organic casual"
+    },
+    "body_positioning": {
+      "posture": "standing",
+      "angle": "back to camera",
+      "weight_distribution": "centered",
+      "shoulders": "level"
+    }
+  },
+  "background": {
+    "setting_type": "outdoor - a vast agricultural cornfield with distant farm buildings and rolling hills",
+    "spatial_depth": "deep - foreground with the farmer and large corn stalks, midground with receding rows of corn, and background with hills, farmhouses, and sky.",
+    "elements_detailed": [
+      {
+        "item": "Corn stalks (Zea mays)",
+        "position": "left, right, center - spanning foreground and midground",
+        "distance": "foreground/midground",
+        "size": "dominant",
+        "condition": "thriving",
+        "specific_features": "Tall, mature stalks with large leaves and visible ears of corn on some plants. Rendered with detailed linework and cross-hatching."
+      },
+      {
+        "item": "Dirt path",
+        "position": "center-bottom, receding towards the horizon",
+        "distance": "foreground/midground",
+        "size": "medium",
+        "condition": "worn",
+        "specific_features": "Narrow, unpaved path with textured lines indicating soil and small irregularities."
+      },
+      {
+        "item": "Farmhouses (two)",
+        "position": "upper right quadrant",
+        "distance": "background",
+        "size": "small",
+        "condition": "aged",
+        "specific_features": "Rustic, barn-like structures with pitched roofs and simple rectangular forms, indicated by dark areas for openings."
+      },
+      {
+        "item": "Rolling hills",
+        "position": "mid-background, spanning the horizon",
+        "distance": "background",
+        "size": "dominant",
+        "condition": "natural",
+        "specific_features": "Gently sloped, undulating landscape, rendered with horizontal lines to suggest contour."
+      },
+      {
+        "item": "Clouds",
+        "position": "top of the image, spanning the sky",
+        "distance": "background",
+        "size": "medium",
+        "condition": "natural",
+        "specific_features": "Wispy, streaky clouds rendered with horizontal parallel lines, suggesting movement or texture."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "dirt",
+      "color": "white with black linework",
+      "pattern": "solid"
+    },
+    "objects_catalog": "Farmer (center-bottom), hoe (over farmer's shoulders), corn stalks (foreground, midground, left, right), dirt path (center-bottom to midground), rolling hills (mid-background), two farmhouses (background, upper right), clouds (sky, top).",
+    "background_treatment": "detailed"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Vintage woodcut illustration of a farmer walking through a vast cornfield at midday, seen from behind, carrying a hoe over his shoulder, with two rustic farmhouses on a distant rolling hill under a cloudy sky. Black and white, highly detailed linework, strong cross-hatching for shading, traditional printmaking aesthetic, rural landscape, high contrast.",
+      "Engraving style artwork depicting a solitary farmer's journey through a mature cornfield, perspective from behind, focusing on the texture of the corn stalks and the distant agricultural buildings, monochrome, deep depth of field, classic Americana theme."
+    ],
+    "keywords": [
+      "woodcut",
+      "engraving",
+      "farmer",
+      "cornfield",
+      "rural",
+      "monochrome",
+      "agriculture",
+      "vintage",
+      "linework",
+      "farmhouse"
+    ],
+    "technical_settings": "High resolution (e.g., 300 DPI), black and white line art, no grayscale gradients, sharp vector-like edges, suitable for print reproduction, minimal anti-aliasing.",
+    "post_processing": "None, designed to emulate traditional printmaking techniques without digital filters or color grading."
+  },
+  "image_class": "VISUAL_IMAGE"
+}

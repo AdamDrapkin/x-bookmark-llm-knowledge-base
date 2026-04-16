@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "confidence_score": "high",
+    "image_type": "graphic design",
+    "primary_purpose": "marketing"
+  },
+  "composition": {
+    "rule_applied": "center composition",
+    "aspect_ratio": "16:9",
+    "layout": "single subject",
+    "focal_points": [
+      "Headline text 'Lovable for beginners.' in the upper center",
+      "Search bar with 'Ask Lovable to create...' and heart icon in the lower center"
+    ],
+    "visual_hierarchy": "The eye is first drawn to the prominent headline text, then moves down to the interactive search bar element, guided by the vibrant glow.",
+    "balance": "asymmetric - The central placement of the text and search bar provides a sense of balance, but the gradient glow beneath introduces a subtle asymmetry with its organic shape."
+  },
+  "color_profile": {
+    "dominant_colors": [
+      {
+        "color": "Light Gray",
+        "hex": "#F0F0F0",
+        "percentage": "60%",
+        "role": "background"
+      },
+      {
+        "color": "Dark Gray (text)",
+        "hex": "#555555",
+        "percentage": "5%",
+        "role": "primary subject"
+      },
+      {
+        "color": "Vibrant Pink",
+        "hex": "#FF007F",
+        "percentage": "10%",
+        "role": "accent"
+      },
+      {
+        "color": "Bright Orange",
+        "hex": "#FF4500",
+        "percentage": "10%",
+        "role": "accent"
+      },
+      {
+        "color": "Sky Blue",
+        "hex": "#007FFF",
+        "percentage": "10%",
+        "role": "accent"
+      }
+    ],
+    "color_palette": "split-complementary",
+    "temperature": "neutral - with warm and cool accents",
+    "saturation": "moderate - background is desaturated, accents are highly saturated",
+    "contrast": "medium contrast"
+  },
+  "lighting": {
+    "type": "artificial",
+    "source_count": "multiple sources - implied from the gradient glow",
+    "direction": "diffused from above",
+    "directionality": "diffused",
+    "quality": "soft light",
+    "intensity": "moderate",
+    "contrast_ratio": "low contrast (flat)",
+    "mood": "calm",
+    "shadows": {
+      "type": "minimal",
+      "density": "faint",
+      "placement": "subtle drop shadow under the search bar and heart icon",
+      "length": "short"
+    },
+    "highlights": {
+      "treatment": "preserved",
+      "placement": "on the edges of the search bar and heart icon"
+    },
+    "ambient_fill": "present - the background itself acts as a soft, even fill",
+    "light_temperature": "neutral"
+  },
+  "technical_specs": {
+    "medium": "digital painting",
+    "style": "minimalist",
+    "texture": "smooth",
+    "sharpness": "tack sharp - for text and UI elements, with a soft bokeh effect for the background glow",
+    "grain": "none",
+    "depth_of_field": "shallow - the background glow is blurred, isolating the sharp text and UI elements",
+    "perspective": "straight on"
+  },
+  "artistic_elements": {
+    "genre": "commercial",
+    "influences": [
+      "modern UI design",
+      "minimalist graphic design"
+    ],
+    "mood": "calm",
+    "atmosphere": "Modern, clean, and inviting, suggesting ease of use and creativity.",
+    "visual_style": "clean"
+  },
+  "typography": {
+    "present": true,
+    "fonts": [
+      {
+        "type": "serif",
+        "weight": "regular",
+        "characteristics": "modern"
+      },
+      {
+        "type": "sans-serif",
+        "weight": "light",
+        "characteristics": "modern"
+      }
+    ],
+    "placement": "overlay - headline text is centered at the top, placeholder text is within a central UI element",
+    "integration": "prominent - both text elements are key to understanding the image's message and function"
+  },
+  "subject_analysis": {
+    "primary_subject": "A user interface element resembling a search bar with a heart-shaped icon, accompanied by a headline.",
+    "positioning": "center - the headline is in the upper center, the search bar is in the lower center.",
+    "scale": "medium - the UI elements are clearly visible and occupy a significant portion of the frame.",
+    "interaction": "isolated - the UI elements are presented cleanly against an abstract background, inviting user interaction."
+  },
+  "background": {
+    "setting_type": "abstract",
+    "spatial_depth": "shallow - created by the blurred gradient glow behind the main UI element.",
+    "elements_detailed": [
+      {
+        "item": "Gradient glow",
+        "position": "center - extending from the bottom center upwards",
+        "distance": "background",
+        "size": "dominant",
+        "condition": "N/A",
+        "specific_features": "Soft, blurred concentric rings of blue, pink, and orange."
+      }
+    ],
+    "wall_surface": {
+      "material": "N/A",
+      "surface_treatment": "N/A",
+      "texture": "N/A",
+      "finish": "N/A",
+      "color": "N/A",
+      "color_variation": "N/A",
+      "features": "N/A",
+      "wear_indicators": "N/A"
+    },
+    "floor_surface": {
+      "material": "N/A",
+      "color": "N/A",
+      "pattern": "N/A"
+    },
+    "objects_catalog": "A large, soft, blurred gradient glow in concentric rings of blue, pink, and orange, positioned behind the central UI element.",
+    "background_treatment": "gradient"
+  },
+  "generation_parameters": {
+    "prompts": [
+      "Minimalist UI design for a creative application, centered headline 'Lovable for beginners.' in a modern serif font, below it a prominent search bar with rounded corners, placeholder text 'Ask Lovable to create...' in a light sans-serif font, a small heart icon on the right side of the search bar with a gradient fill of blue, pink, and orange. The background is a very light gray. Behind the search bar, a large, soft, blurred, glowing aura with concentric rings of vibrant blue, magenta, and orange, creating a sense of depth and energy. Clean, modern aesthetic.",
+      "Product landing page hero image, soft gradient background, central interactive element, inviting typography, digital art, high resolution."
+    ],
+    "keywords": [
+      "UI design",
+      "minimalist",
+      "gradient glow",
+      "search bar",
+      "modern aesthetic"
+    ],
+    "technical_settings": "Digital rendering, soft lighting, shallow depth of field, clean vector shapes for UI elements, gaussian blur for background glow, high resolution.",
+    "post_processing": "Subtle color grading to enhance vibrancy of the glow, slight drop shadow on UI elements for depth, overall clean finish."
+  },
+  "image_class": "VISUAL_IMAGE"
+}
