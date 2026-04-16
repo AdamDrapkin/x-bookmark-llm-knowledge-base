@@ -33,9 +33,8 @@ AI hallucinations refer to the phenomenon where large language models generate c
 
 ## Related Sources
 
-- [[minchoi-1964716900660965644-hallucination-prompt]] — ChatGPT prompt that stops hallucinations
-- [[rohanpaul_ai-1964529285282086967-reality-filter]] — Reality Filter prompt for reducing hallucinations
-
+- [[minchoi-1964716900660965644-hallucination-prompt]]
+- [[rohanpaul_ai-1964529285282086967-reality-filter]]
 ## Related Entities
 
 - [[chatgpt]] — Where hallucinations are commonly observed

@@ -28,8 +28,8 @@ status: draft
 
 ## Related Sources
 
-- [[n8n-2026-smart-alerting]] - Smart alert filtering workflow example
-
+- [[DAIEvolutionHub-2037907310136484036]]
+- [[n8n-2026-smart-alerting]]
 ## Related Concepts
 
 - [[workflow-automation]] - The practice n8n enables

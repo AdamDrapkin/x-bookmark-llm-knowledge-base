@@ -27,10 +27,7 @@ status: draft
 
 ## Related Sources
 
-- [[alex_prompter-1977167152676229265]] — Mad Men copywriter prompt
-- [[rohanpaul_ai-1976725503337021784]] — Tone research for AI copy
-- [[adamrahmanGTM-1975292522248237113]] — Messaging creation prompts
-
+- [[alex_prompter-1977167152676229265]]
 ## Related Concepts
 
 - [[conversion-optimization]] — Maximizing sales conversions

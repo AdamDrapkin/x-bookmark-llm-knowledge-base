@@ -28,8 +28,10 @@ Perplexity is an AI-powered search engine that provides direct answers to querie
 
 ## Related Sources
 
-- [[shushant_l-1974097166454174149-perplexity-research-prompts]] — 10 Perplexity Deep Research prompts
-
+- [[fba-2025926581546352900]]
+- [[milesdeutscher-2027452429311283253]]
+- [[sentient_agency-2026234384379244740]]
+- [[shushant_l-1974097166454174149-perplexity-research-prompts]]
 ## Related Concepts
 
 - [[ai-research]] — AI-powered research tools

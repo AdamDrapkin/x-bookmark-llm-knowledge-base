@@ -3197,6 +3197,12 @@ def _run_lint_checks(wiki_root: str) -> Tuple[List[Dict], List[Dict], List[Dict]
                 if stale_re.search(page["content"]):
                     warnings.append({"type": "stale", "page": slug, "date_modified": mod_date_str})
 
+    # ── Run comprehensive wiki sync to update all concept/entity pages ──
+    print("    Running wiki sync for concept/entity updates...")
+    sync_script = full_path(wiki_root, "raw/assets/wiki-sync.py")
+    if os.path.exists(sync_script):
+        subprocess.run(["python3", sync_script], capture_output=True, cwd=full_path(wiki_root, "."))
+
     # Missing concept pages (3+ references)
     link_counts = {}
     for slug, page in inventory.items():
@@ -3281,6 +3287,23 @@ def _update_all_indexes(manifest: Dict, config: Dict):
     today = today_str()
     batch_id = manifest["batch_id"]
     all_entries = manifest["bookmarks"] + manifest.get("repost_originals", [])
+
+    # ── Step 0: Run comprehensive wiki sync (updates ALL wiki components) ──
+    print("    Running comprehensive wiki sync...")
+    sync_script = full_path(wiki_root, "raw/assets/wiki-sync.py")
+    if os.path.exists(sync_script):
+        result = subprocess.run(
+            ["python3", sync_script],
+            capture_output=True,
+            text=True,
+            cwd=full_path(wiki_root, ".")
+        )
+        if result.returncode == 0:
+            print("    ✅ Wiki sync complete")
+        else:
+            print(f"    ⚠️ Wiki sync had issues: {result.stderr[:200]}")
+    else:
+        print("    ⚠️ wiki-sync.py not found - skipping comprehensive sync")
 
     # Collect all new pages
     new_sources = []

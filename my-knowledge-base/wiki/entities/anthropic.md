@@ -27,8 +27,15 @@ Anthropic is an AI safety and research company founded by former OpenAI research
 
 ## Related Sources
 
-- [[godofprompt-1974425241582796820-anthropic-prompting-style]] — Analysis of Anthropic's internal prompting style
-
+- [[ArchiveExplorer-2040727747966668939]]
+- [[DataChaz-2032396544545378421]]
+- [[Suryanshti777-2037558286137143591]]
+- [[aiedge_-2037348914496766297]]
+- [[alex_prompter-2027659595599253892]]
+- [[alex_prompter-2027684564324548951]]
+- [[godofprompt-1974425241582796820-anthropic-prompting-style]]
+- [[godofprompt-2027662791763759504]]
+- [[om_patel5-2041040306078912653]]
 ## Related Concepts
 
 - [[prompt-engineering]] — Crafting effective AI instructions

@@ -27,9 +27,7 @@ status: draft
 
 ## Related Sources
 
-- [[EHuanglu-1991560454104313914]] — OpenCreator tool demonstration
-- [[adamrahmanGTM-1975292522248237113]] — Marketing imagery prompts
-
+- [[EHuanglu-1991560454104313914]]
 ## Related Concepts
 
 - [[product-photography]] — Traditional alternative

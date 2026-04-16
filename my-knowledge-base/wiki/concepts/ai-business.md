@@ -32,9 +32,7 @@ AI solutions tailored for specific industries or use cases.
 
 ## Related Sources
 
-- [[robert-youssef-2026-claude-ai-business]] - Building AI agent businesses with Claude
-- [[jb-2026-workflow-play]] - The AI wrapper business strategy
-
+- [[robert-youssef-2026-claude-ai-business]]
 ## Related Concepts
 
 - [[agentic-ai]] - The AI technology enabling these businesses

@@ -26,8 +26,7 @@ Monitoring involves the continuous observation of systems, processes, or metrics
 
 ## Related Sources
 
-- [[n8n-2026-smart-alerting]] — Workflow with monitoring capabilities
-
+- [[n8n-2026-smart-alerting]]
 ## Related Concepts
 
 - [[workflow-automation]] — Automating monitoring and response

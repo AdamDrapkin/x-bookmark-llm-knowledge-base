@@ -26,8 +26,7 @@ Alerting refers to systems that notify users when specific events occur or thres
 
 ## Related Sources
 
-- [[n8n-2026-smart-alerting]] — Smart alert filtering workflow to reduce noise
-
+- [[n8n-2026-smart-alerting]]
 ## Related Entities
 
 - [[n8n]] — Workflow automation platform with alerting capabilities

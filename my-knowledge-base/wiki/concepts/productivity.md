@@ -26,8 +26,9 @@ Productivity refers to the measure of efficiency in completing tasks and achievi
 
 ## Related Sources
 
-- [[jb-2026-workflow-play]] — Building AI-powered workflow tools for productivity
-
+- [[adamlyttleapps-2038535497828733177]]
+- [[damienghader-2015790037120491939]]
+- [[jb-2026-workflow-play]]
 ## Related Concepts
 
 - [[workflow-automation]] — Automating workflows to increase productivity

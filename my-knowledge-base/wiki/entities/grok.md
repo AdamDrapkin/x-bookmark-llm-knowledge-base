@@ -21,10 +21,8 @@ status: draft
 
 ## Related Sources
 
-- [[godofprompt-1991160280630378890]] — Grok 4.1 writing prompts
-- [[alex_prompter-1991974997766606921]] — Game Theory strategist with Grok
-- [[alex_prompter-1991981943026839897]] — AI learning with Gemini (compares to Grok)
-
+- [[alex_prompter-1991974997766606921]]
+- [[godofprompt-1991160280630378890]]
 ## Related Concepts
 
 - [[prompt-engineering]] — Crafting prompts for Grok

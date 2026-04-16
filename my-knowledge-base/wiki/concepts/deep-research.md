@@ -34,10 +34,7 @@ Specify exactly what you want back.
 
 ## Related Sources
 
-- [[EXM7777-1978484519692075451]] — Deep research optimization principles
-- [[shushant_l-1974097166454174149-perplexity-research-prompts]] — Perplexity prompts
-- [[louis-gleeson-2026-feynman-agent]] — Research agent for paper synthesis
-
+- [[EXM7777-1978484519692075451]]
 ## Related Concepts
 
 - [[research-automation]] — Automating research processes

@@ -27,10 +27,7 @@ status: draft
 
 ## Related Sources
 
-- [[alex_prompter-1977167152676229265]] — High-converting sales copy
-- [[adamrahmanGTM-1975292522248237113]] — GTM messaging optimization
-- [[godofprompt-1983535193752252732]] — Critical, useful outputs (not fluff)
-
+- [[alex_prompter-1977167152676229265]]
 ## Related Concepts
 
 - [[copywriting]] — Writing persuasive text

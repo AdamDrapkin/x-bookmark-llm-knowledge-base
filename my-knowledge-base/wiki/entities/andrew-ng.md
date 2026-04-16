@@ -31,8 +31,7 @@ Ng's framework for AI agent businesses covers six stages:
 
 ## Related Sources
 
-- [[robert-youssef-2026-claude-ai-business]] - Building AI agent businesses with Ng's framework
-
+- [[robert-youssef-2026-claude-ai-business]]
 ## Related Concepts
 
 - [[agentic-ai]] - The framework he developed

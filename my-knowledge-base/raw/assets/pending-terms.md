@@ -46,11 +46,6 @@ cognitive-unmasking: 2
 decision-avoidance: 2
 design-code: 2
 spirit: 2
-mobbin: 2
-dribbble: 2
-mymind: 2
-unicorn-studio: 2
-aura: 2
 design-workflow: 2
 animation: 2
 visual-hierarchy: 2
@@ -219,10 +214,6 @@ client-intelligence: 2
 negotiation-preparation: 2
 ai-role-prompting: 2
 perplexity-personal-finance: 2
-Aura: 2
-Unicorn Studio: 2
-Cursor: 2
-Lovable: 2
 @adiix_official: 1
 shortened-url: 1
 papers: 1
@@ -785,21 +776,14 @@ audience-intelligence: 1
 negotiation-intelligence: 1
 strategic-intelligence-architect: 1
 solopreneur-strategy: 1
-ai-models: 1
 video-prompting: 1
+ai-models: 1
 plaid-integration: 1
 ai-financial-tools: 1
-ehuanglu-1991560454104313914: 1
 vadimstrizheus-tweet: 1
-Mobbin: 1
-Dribbble: 1
-MyMind: 1
-AI Studio: 1
-Gemini 3: 1
-Screen Studio: 1
-Figma: 1
-AI design tools: 1
-prompt engineering: 1
+ai-studio: 1
+screen-studio: 1
+mengto-1991489885690364187: 1
 whatsapp-privacy-lawsuit: 1
 meta-privacy-concerns: 1
 ```

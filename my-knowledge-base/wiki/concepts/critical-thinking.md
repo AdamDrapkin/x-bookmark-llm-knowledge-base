@@ -27,10 +27,9 @@ status: draft
 
 ## Related Sources
 
-- [[godofprompt-1983535193752252732]] — GOD.MODE.GPT for critical answers
-- [[rohanpaul_ai-1964529285282086967-reality-filter]] — Reducing hallucinations
-- [[minchoi-1964716900660965644-hallucination-prompt]] — Fact-first prompting
-
+- [[alex_prompter-2037123157602296130]]
+- [[godofprompt-1982479013638767087]]
+- [[godofprompt-1983535193752252732]]
 ## Related Concepts
 
 - [[reasoning-frameworks]] — Analytical approaches

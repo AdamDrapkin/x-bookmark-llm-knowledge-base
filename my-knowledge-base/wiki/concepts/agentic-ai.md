@@ -32,8 +32,10 @@ Andrew Ng's agentic AI framework provides a structured approach to building AI a
 
 ## Related Sources
 
-- [[robert-youssef-2026-claude-ai-business]] - Claude can build AI agent businesses following this framework
-
+- [[andresmatte-2036061707529834773]]
+- [[katibmoe-2037214796962291987]]
+- [[robert-youssef-2026-claude-ai-business]]
+- [[rohit4verse-2026359771427991764]]
 ## Related Concepts
 
 - [[ai-agents]] - The AI systems that implement agentic behavior

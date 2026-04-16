@@ -31,10 +31,8 @@ Break down to fundamentals.
 
 ## Related Sources
 
-- [[alex_prompter-1991974997766606921]] — Game Theory strategist
-- [[louis-gleeson-2026-feynman-agent]] — Feynman technique AI agent
-- [[godofprompt-1974102012670407035-depth-prompt-framework]] — D-E-P-T-H Framework
-
+- [[godofprompt-1983535193752252732]]
+- [[godofprompt-1993654485223367013]]
 ## Related Concepts
 
 - [[critical-thinking]] — Analysis and truth-seeking

@@ -29,10 +29,7 @@ status: draft
 
 ## Related Sources
 
-- [[adamrahmanGTM-1975292522248237113]] — Six AI prompts for GTM
-- [[EXM7777-1978484519692075451]] — Deep research for GTM insights
-- [[n8n-2026-smart-alerting]] — GTM channels with automation
-
+- [[adamrahmanGTM-1975292522248237113]]
 ## Related Concepts
 
 - [[tam-analysis]] — Market sizing analysis

@@ -35,9 +35,9 @@ status: draft
 
 ## Related Sources
 
-- [[n8n-2026-smart-alerting]] - Smart alert filtering workflow
-- [[jb-2026-workflow-play]] - Building businesses on top of AI tools
-
+- [[alex_prompter-2027684564324548951]]
+- [[jb-2026-workflow-play]]
+- [[n8n-2026-smart-alerting]]
 ## Related Concepts
 
 - [[ai-agents]] - AI can enhance workflow automation

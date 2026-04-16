@@ -26,8 +26,7 @@ status: draft
 
 ## Related Sources
 
-- [[mindbranches-1974621848844616006-video-prompt-styles]] — Styles to try in your AI video prompts
-
+- [[mindbranches-1974621848844616006-video-prompt-styles]]
 ## Related Concepts
 
 - [[video-prompting]] — Crafting effective prompts for AI video generation

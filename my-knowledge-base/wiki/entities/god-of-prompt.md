@@ -26,12 +26,11 @@ status: draft
 
 ## Related Sources
 
-- [[godofprompt-1974102012670407035-depth-prompt-framework]] — D-E-P-T-H Prompt Framework
-- [[godofprompt-1967590989062664316-book-writing-prompt]] — Book Writing Prompt
-- [[godofprompt-1970086539402121690-prompt-engineer-protocol]] — Protocol for Designing Prompts
-- [[godofprompt-1974425241582796820-anthropic-prompting-style]] — Anthropic's Internal Prompting Style
-- [[godofprompt-1970101500396634129-ai-prompt-library]] — AI Prompt Library
-
+- [[alex_prompter-1953861679248560379-ai-prompt-library]]
+- [[godofprompt-1970086539402121690-prompt-engineer-protocol]]
+- [[godofprompt-1970101500396634129-ai-prompt-library]]
+- [[godofprompt-1974102012670407035-depth-prompt-framework]]
+- [[godofprompt-1974425241582796820-anthropic-prompting-style]]
 ## Related Concepts
 
 - [[prompt-engineering]] — The core topic of their content

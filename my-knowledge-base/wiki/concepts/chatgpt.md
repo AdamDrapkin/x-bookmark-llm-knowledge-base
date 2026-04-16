@@ -28,9 +28,11 @@ ChatGPT is OpenAI's conversational AI assistant that uses large language models 
 
 ## Related Sources
 
-- [[minchoi-1964716900660965644-hallucination-prompt]] — Prompt to stop ChatGPT hallucinations
-- [[rohanpaul_ai-1964529285282086967-reality-filter]] — Reality Filter for reducing hallucinations
-
+- [[alex_prompter-1994005617246368095]]
+- [[fba-2025926581546352900]]
+- [[godofprompt-1982479013638767087]]
+- [[godofprompt-1983535193752252732]]
+- [[minchoi-1964716900660965644-hallucination-prompt]]
 ## Related Concepts
 
 - [[hallucinations]] — AI generating incorrect information

@@ -27,8 +27,7 @@ Pricing refers to the process of setting the monetary value at which products or
 
 ## Related Sources
 
-- [[alex_prompter-1953861679248560379-ai-prompt-library]] — Pricing tiers for AI prompt library
-
+- [[alex_prompter-1953861679248560379-ai-prompt-library]]
 ## Related Concepts
 
 - [[ai-business]] — Business models that may use various pricing strategies

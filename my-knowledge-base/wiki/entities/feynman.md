@@ -33,8 +33,7 @@ Feynman is not a general chatbot - it's a specialized research tool focused on a
 
 ## Related Sources
 
-- [[louis-gleeson-2026-feynman-agent]] - Original discovery of Feynman
-
+- [[louis-gleeson-2026-feynman-agent]]
 ## Related Concepts
 
 - [[ai-agents]] - The category of AI tool Feynman belongs to

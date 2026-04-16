@@ -35,8 +35,7 @@ status: draft
 
 ## Related Sources
 
-- [[louis-gleeson-2026-feynman-agent]] - Feynman, an open source research agent
-
+- [[louis-gleeson-2026-feynman-agent]]
 ## Related Concepts
 
 - [[ai-agents]] - AI systems that can execute complex multi-step tasks

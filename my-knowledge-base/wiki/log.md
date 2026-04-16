@@ -397,3 +397,9 @@ Entities: none
 Sources: 
 Concepts: none
 Entities: none
+
+## [2026-04-16] lint | 0 errors, 76 warnings, 0 info
+Report: [[lint-2026-04-16]]
+Fixed: Created 12 stub pages, updated 29 entity pages with source references
+- Stub pages: mobbin, dribbble, mymind, unicorn-studio, aura, seedance-2.0, gemini-pro-3.1, claude-code, document-object-model, system-architecture, market-research, batch-generation
+- All entity pages now have proper Related Sources sections

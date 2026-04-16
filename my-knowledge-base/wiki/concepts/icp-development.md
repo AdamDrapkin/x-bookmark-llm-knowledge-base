@@ -27,10 +27,7 @@ status: draft
 
 ## Related Sources
 
-- [[adamrahmanGTM-1975292522248237113]] — ICP validation prompt
-- [[EHuanglu-1991560454104313914]] — B2B targeting via imagery
-- [[EXM7777-1978484519692075451]] — Deep research for customer insights
-
+- [[adamrahmanGTM-1975292522248237113]]
 ## Related Concepts
 
 - [[gtm-strategy]] — Broader market strategy
