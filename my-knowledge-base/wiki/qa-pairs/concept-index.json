@@ -1,253 +1,208 @@
 {
-  "total_sources_processed": 15,
-  "total_batches_processed": 2,
+  "total_sources_processed": 30,
+  "total_batches_processed": 3,
   "concepts": [
     {
       "name": "prompt library",
-      "aliases": [
-        "prompt vault",
-        "prompt collection",
-        "ai prompt subscription"
-      ],
+      "aliases": ["prompt vault", "prompt collection", "ai prompt subscription"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "alex_prompter-1953861679248560379-ai-prompt-library",
-        "godofprompt-1970101500396634129-ai-prompt-library"
-      ]
+      "source_slugs": ["alex_prompter-1953861679248560379-ai-prompt-library", "godofprompt-1970101500396634129-ai-prompt-library"]
     },
     {
       "name": "D-E-P-T-H Framework",
-      "aliases": [
-        "depth prompt framework",
-        "comprehensive prompting"
-      ],
+      "aliases": ["depth prompt framework", "comprehensive prompting"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "godofprompt-1974102012670407035-depth-prompt-framework"
-      ]
+      "source_slugs": ["godofprompt-1974102012670407035-depth-prompt-framework"]
     },
     {
       "name": "Reality Filter",
-      "aliases": [
-        "hallucination reducer",
-        "anti-hallucination prompt",
-        "truth labeling"
-      ],
+      "aliases": ["hallucination reducer", "anti-hallucination prompt", "truth labeling"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "minchoi-1964716900660965644-hallucination-prompt",
-        "rohanpaul_ai-1964529285282086967-reality-filter"
-      ]
+      "source_slugs": ["minchoi-1964716900660965644-hallucination-prompt", "rohanpaul_ai-1964529285282086967-reality-filter"]
     },
     {
       "name": "AI research agent",
-      "aliases": [
-        "paper synthesis tool",
-        "academic ai assistant"
-      ],
+      "aliases": ["paper synthesis tool", "academic ai assistant"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "louis-gleeson-2026-feynman-agent"
-      ]
+      "source_slugs": ["louis-gleeson-2026-feynman-agent"]
     },
     {
       "name": "workflow automation",
-      "aliases": [
-        "workflow wrapper",
-        "no-code automation"
-      ],
+      "aliases": ["workflow wrapper", "no-code automation"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "jb-2026-workflow-play",
-        "n8n-2026-smart-alerting"
-      ]
+      "source_slugs": ["jb-2026-workflow-play", "n8n-2026-smart-alerting"]
     },
     {
       "name": "video prompt styles",
-      "aliases": [
-        "ai video aesthetics",
-        "visual style keywords"
-      ],
+      "aliases": ["ai video aesthetics", "visual style keywords"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "mindbranches-1974621848844616006-video-prompt-styles"
-      ]
+      "source_slugs": ["mindbranches-1974621848844616006-video-prompt-styles"]
     },
     {
       "name": "design system extraction",
-      "aliases": [
-        "design reverse engineering",
-        "design spec generator"
-      ],
+      "aliases": ["design reverse engineering", "design spec generator"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "meng-to-2026-designmd-tool"
-      ]
+      "source_slugs": ["meng-to-2026-designmd-tool"]
     },
     {
       "name": "AI agent business",
-      "aliases": [
-        "agentic ai business",
-        "llm business framework"
-      ],
+      "aliases": ["agentic ai business", "llm business framework"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "robert-youssef-2026-claude-ai-business"
-      ]
+      "source_slugs": ["robert-youssef-2026-claude-ai-business"]
     },
     {
       "name": "Perplexity deep research",
-      "aliases": [
-        "ai research prompts",
-        "investigation prompts"
-      ],
+      "aliases": ["ai research prompts", "investigation prompts"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "shushant_l-1974097166454174149-perplexity-research-prompts"
-      ]
+      "source_slugs": ["shushant_l-1974097166454174149-perplexity-research-prompts"]
     },
     {
       "name": "Book Writing Coach",
-      "aliases": [
-        "book architect prompt",
-        "manuscript assistant"
-      ],
+      "aliases": ["book architect prompt", "manuscript assistant"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "godofprompt-1967590989062664316-book-writing-prompt"
-      ]
+      "source_slugs": ["godofprompt-1967590989062664316-book-writing-prompt"]
     },
     {
       "name": "Protocol for Designing Prompts",
-      "aliases": [
-        "prompt methodology",
-        "prompt workflow"
-      ],
+      "aliases": ["prompt methodology", "prompt workflow"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "godofprompt-1970086539402121690-prompt-engineer-protocol"
-      ]
+      "source_slugs": ["godofprompt-1970086539402121690-prompt-engineer-protocol"]
     },
     {
       "name": "Anthropic prompting style",
-      "aliases": [
-        "insider prompting",
-        "expert prompt techniques"
-      ],
+      "aliases": ["insider prompting", "expert prompt techniques"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "godofprompt-1974425241582796820-anthropic-prompting-style"
-      ]
+      "source_slugs": ["godofprompt-1974425241582796820-anthropic-prompting-style"]
     },
     {
       "name": "workflow wrapper strategy",
-      "aliases": [
-        "wrapper business model",
-        "pre-built workflows"
-      ],
+      "aliases": ["wrapper business model", "pre-built workflows"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "jb-2026-workflow-play"
-      ]
+      "source_slugs": ["jb-2026-workflow-play"]
     },
     {
       "name": "Feynman",
-      "aliases": [
-        "open source research agent",
-        "paper synthesis"
-      ],
+      "aliases": ["open source research agent", "paper synthesis"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "louis-gleeson-2026-feynman-agent"
-      ]
+      "source_slugs": ["louis-gleeson-2026-feynman-agent"]
     },
     {
       "name": "smart alerting",
-      "aliases": [
-        "alert filtering",
-        "noise reduction monitoring"
-      ],
+      "aliases": ["alert filtering", "noise reduction monitoring"],
       "first_seen_batch": "batch_001",
-      "source_slugs": [
-        "n8n-2026-smart-alerting"
-      ]
+      "source_slugs": ["n8n-2026-smart-alerting"]
     },
     {
       "name": "strategic opponent thinking",
-      "aliases": [
-        "adversarial perspective-taking",
-        "chess thinking for business",
-        "opponent mapping"
-      ],
-      "source_slugs": [
-        "alex_prompter-2043992940855615716"
-      ]
+      "aliases": ["adversarial perspective-taking", "chess thinking for business", "opponent mapping"],
+      "source_slugs": ["alex_prompter-2043992940855615716"]
     },
     {
       "name": "AI intelligence specialist prompts",
-      "aliases": [
-        "role-based intelligence tools",
-        "strategic AI role prompts",
-        "specialist persona prompts"
-      ],
-      "source_slugs": [
-        "alex_prompter-2043992940855615716"
-      ]
+      "aliases": ["role-based intelligence tools", "strategic AI role prompts", "specialist persona prompts"],
+      "source_slugs": ["alex_prompter-2043992940855615716"]
     },
     {
       "name": "knowledge base service business",
-      "aliases": [
-        "personalized KB as service",
-        "LLM knowledge management service",
-        "AI knowledge architect"
-      ],
-      "source_slugs": [
-        "hooeem-2041436826406170880"
-      ]
+      "aliases": ["personalized KB as service", "LLM knowledge management service", "AI knowledge architect"],
+      "source_slugs": ["hooeem-2041436826406170880"]
     },
     {
       "name": "cash-rich time-poor targeting",
-      "aliases": [
-        "high-value client targeting",
-        "professional client acquisition",
-        "B2B AI services"
-      ],
-      "source_slugs": [
-        "hooeem-2041436826406170880"
-      ]
+      "aliases": ["high-value client targeting", "professional client acquisition", "B2B AI services"],
+      "source_slugs": ["hooeem-2041436826406170880"]
+    },
+    {
+      "name": "Gemini 3 UI prompting",
+      "aliases": ["gemini ui design", "ai web design"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["MengTo-1991489885690364187-gemini-3-tutorial", "MengTo-1994058991106969950"]
+    },
+    {
+      "name": "AI humanization",
+      "aliases": ["human-sounding ai", "conversational voice", "authentic imperfections"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["EXM7777-1991528477775032628"]
+    },
+    {
+      "name": "Socratic prompting",
+      "aliases": ["thinking partner", "critical thinking scaffold", "cognitive unmasking"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["godofprompt-1982479013638767087"]
+    },
+    {
+      "name": "Visual metadata extraction",
+      "aliases": ["image to json", "composition analysis", "color profiling"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["alex_prompter-1995470595241193726"]
+    },
+    {
+      "name": "Meta-prompting",
+      "aliases": ["prompt generation automation", "json prompt builder"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["alex_prompter-1994005617246368095"]
+    },
+    {
+      "name": "First principles thinking prompts",
+      "aliases": ["musk-style reasoning", "physics-based problem solving"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["godofprompt-1993654485223367013"]
+    },
+    {
+      "name": "Strategic psychology prompts",
+      "aliases": ["power dynamics coaching", "manipulation resistance"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["godofprompt-1993275220342481039"]
+    },
+    {
+      "name": "AI market research",
+      "aliases": ["automated analyst", "competitive intelligence ai"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["alex_prompter-1992887472557342779"]
+    },
+    {
+      "name": "Claude Code audit",
+      "aliases": ["token optimization", "usage profiling"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["om_patel5-2041040306078912653"]
+    },
+    {
+      "name": "Autonomous red teaming",
+      "aliases": ["ai penetration testing", "automated security"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["HowToAI_-2041026315051262048"]
+    },
+    {
+      "name": "Local-first AI dashboard",
+      "aliases": ["self-hosted analytics", "privacy dashboard"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["ErickSky-2040999023230751048"]
+    },
+    {
+      "name": "Natural language video search",
+      "aliases": ["visual content retrieval", "video indexing"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["heynavtoor-2040995726088671608"]
+    },
+    {
+      "name": "Prompt specificity principle",
+      "aliases": ["specificity enabling", "detailed constraints"],
+      "first_seen_batch": "batch_003",
+      "source_slugs": ["MengTo-1991489885690364187-gemini-3-tutorial", "alex_prompter-1995470595241193726", "godofprompt-1982479013638767087", "EXM7777-1991528477775032628"]
     }
   ],
   "concept_clusters": {
-    "prompt_engineering_tools": [
-      "prompt library",
-      "D-E-P-T-H Framework",
-      "Reality Filter",
-      "Protocol for Designing Prompts",
-      "AI intelligence specialist prompts"
-    ],
-    "ai_business": [
-      "workflow automation",
-      "AI agent business",
-      "workflow wrapper strategy",
-      "knowledge base service business",
-      "cash-rich time-poor targeting"
-    ],
-    "research_automation": [
-      "AI research agent",
-      "Perplexity deep research",
-      "Feynman"
-    ],
-    "content_creation": [
-      "Book Writing Coach",
-      "video prompt styles"
-    ],
-    "design_tools": [
-      "design system extraction"
-    ],
-    "strategic_tools": [
-      "strategic opponent thinking",
-      "AI research agent"
-    ]
+    "prompt_engineering_tools": ["prompt library", "D-E-P-T-H Framework", "Reality Filter", "Protocol for Designing Prompts", "AI intelligence specialist prompts"],
+    "ai_business": ["workflow automation", "AI agent business", "workflow wrapper strategy", "knowledge base service business", "cash-rich time-poor targeting"],
+    "research_automation": ["AI research agent", "Perplexity deep research", "Feynman"],
+    "content_creation": ["Book Writing Coach", "video prompt styles"],
+    "design_tools": ["design system extraction", "Gemini 3 UI prompting", "Visual metadata extraction"],
+    "strategic_tools": ["strategic opponent thinking", "AI research agent", "First principles thinking prompts", "Strategic psychology prompts"],
+    "specialized_prompts": ["Socratic prompting", "First principles thinking prompts", "Strategic psychology prompts", "AI market research", "Meta-prompting"],
+    "ai_operations": ["Claude Code audit", "Autonomous red teaming", "Natural language video search"],
+    "privacy_focused_ai": ["Local-first AI dashboard"],
+    "prompting_principles": ["Prompt specificity principle", "Meta-prompting"],
+    "ai_humanization": ["AI humanization"]
   },
   "existing_connections": [
     {
@@ -279,7 +234,31 @@
       "to_concept": "knowledge base service business",
       "relationship": "Both represent ways to monetize AI skills as service offerings, but knowledge base services require more technical depth than workflow wrappers",
       "established_in_batch": "test_2026-04-14"
+    },
+    {
+      "from_concept": "prompt specificity",
+      "to_concept": "quality output",
+      "relationship": "Specific prompts (JSON schema, style references, constraints) consistently produce better results than generic prompts across UI, analysis, and thinking partner applications",
+      "established_in_batch": "batch_003"
+    },
+    {
+      "from_concept": "meta-prompting",
+      "to_concept": "prompt library",
+      "relationship": "JSON prompt generators enable building structured prompt libraries without manual syntax writing",
+      "established_in_batch": "batch_003"
+    },
+    {
+      "from_concept": "first principles",
+      "to_concept": "strategic thinking",
+      "relationship": "Musk-inspired prompts extend Greene-based prompts by providing physics-grounded deconstruction vs. psychology-grounded pattern recognition",
+      "established_in_batch": "batch_003"
+    },
+    {
+      "from_concept": "local-first tools",
+      "to_concept": "privacy",
+      "relationship": "Dashboard and security tools increasingly emphasize local operation as privacy differentiator",
+      "established_in_batch": "batch_003"
     }
   ],
-  "sources_since_last_qa": 370
+  "sources_since_last_qa": 355
 }
