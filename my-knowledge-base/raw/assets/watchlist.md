@@ -13,3 +13,7 @@ rileybrown
 PixVerse_
 thisisgrantLee
 NoahEpstein_
+ClaudeDevs
+claudeai
+OpenAI
+Om_patel5
