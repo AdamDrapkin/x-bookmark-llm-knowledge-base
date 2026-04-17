@@ -414,3 +414,13 @@ Work done:
 - Updated CLAUDE.md with key scripts table
 
 Scripts: wiki-sync.py (parallel 5), fix_wikilinks.py, gen_pending_terms.py
+
+## [2026-04-16] backlog-process | Batch batch_006 | 10 sources
+Sources: godofprompt-2003467276406907017, alex_prompter-2011566578152661139, alex_prompter-2011572580059070556, godofprompt-2012265207335137290, alex_prompter-2012310991657185557, abxxai-2012460639260910053, alex_prompter-2012912736682774768, godofprompt-2013208842666901616, alex_prompter-2013352757831295397, godofprompt-2013390927524495438
+Concepts: none
+Entities: none
+
+## [2026-04-16] backlog-process | Batch batch_006 | 10 sources
+Sources: godofprompt-2003467276406907017, alex_prompter-2011566578152661139, alex_prompter-2011572580059070556, godofprompt-2012265207335137290, alex_prompter-2012310991657185557, abxxai-2012460639260910053, alex_prompter-2012912736682774768, godofprompt-2013208842666901616, alex_prompter-2013352757831295397, godofprompt-2013390927524495438
+Concepts: none
+Entities: none

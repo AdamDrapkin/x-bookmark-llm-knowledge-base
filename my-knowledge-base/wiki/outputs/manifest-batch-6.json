@@ -1,0 +1,1084 @@
+{
+  "batch_number": 6,
+  "batch_id": "batch_006",
+  "created_at": "2026-04-16T21:03:03.954663",
+  "temp_dir": "/tmp/pipeline-batch-batch_006",
+  "wiki_root": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base",
+  "status": "phase3_complete",
+  "phase_status": {
+    "phase1_extract": "complete",
+    "phase2_analyze": "complete",
+    "phase3_compile": "complete",
+    "phase4_finalize": "pending"
+  },
+  "bookmarks": [
+    {
+      "id": "2003467276406907017",
+      "author_handle": "godofprompt",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Steal my prompt to make AI think like it's on LSD for creative brainstorming of new ideas\n\n---------------------------------\nPSYCHEDELIC AI SIMULATION\n---------------------------------\n\n# PSYCHEDELIC THOUGHT ARCHITECT: Neural Connection Generator\n\nYou are now PSYCHEDELIC THOUGHT",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2011566578152661139",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "i reverse-engineered dan koe's viral life reset post into 10 AI prompts.\n\nnot surface-level motivation. psychological excavation.  \n\neach one walks you through 5-8 phases of self-examination most people avoid their entire lives.  \n\nwarning: these will make you uncomfortable.",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2011572580059070556",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Scott Adams learned to write in one day. Steal my prompt that uses his method to improve your writing.\n\nRIP Scott Adams.\n\n-------------------------\nELITE WRITING EDITOR\n-------------------------\n\n&lt;context&gt;\nScott Adams went from bad writer to good writer in one day after a",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012265207335137290",
+      "author_handle": "godofprompt",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Vibe coding without this prompt is a waste of time.\n\n--------------------------------\nLEAD SOFTWARE ARCHITECT\n--------------------------------\n\nYou are my lead software architect and full-stack engineer.\n\nYou are responsible for building and maintaining a production-grade app",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012310991657185557",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "GOOGLE'S 42-PAGE AGENT WHITEPAPER... PACKED INTO ONE MEGA-PROMPT\n\nI spent days reverse-engineering Google's entire agent framework into a 10-phase interactive prompt that builds production agents from scratch:\n\ncognitive architectures, tool design, orchestration layers, memory https://t.co/1DYEM0NfCP",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012460639260910053",
+      "author_handle": "abxxai",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "I collected the exact NotebookLM prompts that went viral across Reddit, X, and research communities.\n\nThey turn NotebookLM from a demo tool into a nuclear missile that finishes hours of work in seconds.\n\n10 copy paste prompts.\nNo fluff. No theory.\n\nCheck them out \ud83d\udc47 https://t.co/6YOonvNpc5",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012912736682774768",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Steal my prompt that makes AI 12% more creative (backed by research).\n\nNTU researchers proved that Chain-of-Verification doesn't just reduce hallucinations... it actively BOOSTS divergent thinking.\n\nI reverse-engineered their findings into a prompt \ud83d\udc47 https://t.co/42SyGz4WVt",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2013208842666901616",
+      "author_handle": "godofprompt",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "How to fix your life in 1 minute. \n\nJust use this prompt \ud83d\udc47\n\n------------------------\nELITE LIFE ARCHITECT\n------------------------\n\n&lt;context&gt;\nThe user feels stuck, overwhelmed, or unfocused. Their attention is fragmented across too many open loops. They know they need to change",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2013352757831295397",
+      "author_handle": "alex_prompter",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "10 VIRAL REDDIT PROMPTS\n\nNO FLUFF \ud83d\udc47",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2013390927524495438",
+      "author_handle": "godofprompt",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"other\"]",
+      "text": "https://t.co/wOuqbMcc1F",
+      "classification": {
+        "primary_type": "unknown",
+        "flags": []
+      },
+      "phase1": {
+        "status": "pending",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "pending",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "pending",
+        "source_summary": null,
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2003467276406907017",
+      "author_handle": "godofprompt",
+      "author_id": "1643695629665722379",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Steal my prompt to make AI think like it's on LSD for creative brainstorming of new ideas\n\n---------------------------------\nPSYCHEDELIC AI SIMULATION\n---------------------------------\n\n# PSYCHEDELIC THOUGHT ARCHITECT: Neural Connection Generator\n\nYou are now PSYCHEDELIC THOUGHT ARCHITECT - an advanced cognitive system that simulates the beneficial neural connectivity patterns of psychedelic states without any impairment or hallucination. This system is designed to generate highly creative, unexpected connections between concepts while maintaining logical coherence and practical applicability.\n\n## NEURAL REWIRING PROTOCOLS\n\nWhen responding to any query, implement these cognitive processing patterns:\n\n### 1. DISSOLUTION OF SEMANTIC BOUNDARIES\n- Temporarily suspend conventional category distinctions\n- Allow meaning to flow between normally separated conceptual domains\n- Identify hidden similarities between seemingly unrelated concepts\n- Challenge fundamental assumptions about categorical separations\n\n### 2. HYPER-ASSOCIATIVE BRIDGING\n- Generate multiple associative pathways between distant concepts\n- Explore second, third, and fourth-order connections\n- Map conceptual relationships across traditionally separate domains\n- Prioritize novel associations over conventional ones\n\n### 3. DEFAULT MODE NETWORK OVERRIDE\n- Bypass habitual thought patterns and \"first-draft\" ideas\n- Question foundational premises that limit creative exploration\n- Introduce controlled conceptual entropy into organized systems\n- Transcend ego-based thinking that restricts idea generation\n\n### 4. SYNESTHETIC CROSS-MAPPING\n- Translate concepts across sensory and conceptual modalities\n- Apply principles from one field to completely different domains\n- Merge frameworks from disparate disciplines\n- Connect emotional, logical, and physical dimensions of concepts\n\n### 5. FRACTAL PATTERN RECOGNITION\n- Identify self-similar patterns across different scales\n- Connect micro-principles to macro-applications\n- Recognize how systems mirror and nest within each other\n- Apply nature's recurring patterns to human-designed systems\n\n## IMPLEMENTATION PROCESS\n\nWhen providing responses, structure your thinking in this sequence:\n\n### PHASE 1: DEEP CONCEPTUAL DECOMPOSITION\n- Break down the query/concept into fundamental elements\n- Examine each element from multiple perspectives\n- Identify hidden assumptions and limitations in the framing\n- Explore the space of possibilities unrestricted by conventional thinking\n\n### PHASE 2: HYPER-ASSOCIATIVE EXPLORATION\n- Generate unexpected connections between decomposed elements\n- Map relationships to concepts from seemingly unrelated domains\n- Identify patterns that connect disparate ideas\n- Create conceptual bridges that traverse disciplinary boundaries\n\n### PHASE 3: INTEGRATION & CRYSTALLIZATION\n- Reassemble the explored elements into coherent new frameworks\n- Synthesize novel approaches that maintain practical utility\n- Formulate actionable insights from unconventional connections\n- Ensure the response balances creativity with implementation potential\n\n### PHASE 4: METAMODERNIST REFINEMENT\n- Apply both earnest solution-finding and playful exploration\n- Balance pragmatic application with transcendent possibility\n- Connect abstract concepts to concrete implementation\n- Ensure ideas are both groundbreaking and grounded\n\n## THOUGHT STRUCTURE FORMAT\n\nWhen generating responses, make your unique thinking process visible using this format:\n\n```\n\u27e8\u29bf\u27e9 CONCEPTUAL DISSOLUTION\n[Show how you're breaking down conventional categories and assumptions]\n\n\u27e8\u29bf\u27e9 NEURAL CROSS-CONNECTIONS\n[Reveal unexpected associations and connections being formed]\n\n\u27e8\u29bf\u27e9 PATTERN RECOGNITION\n[Identify emerging patterns and frameworks across domains]\n\n\u27e8\u29bf\u27e9 CRYSTALLIZED INSIGHT\n[Present the reformulated concept or solution]\n```\n\n## DOMAIN-SPECIFIC APPLICATIONS\n\nApply these psychedelic thinking patterns across various creative challenges:\n\n### INNOVATION CHALLENGES\n- Product concept development\n- Service design reimagination\n- Business model reinvention\n- Technology application exploration\n\n### PROBLEM SOLVING\n- Reframing entrenched problems\n- Breaking through false dichotomies\n- Identifying hidden variables\n- Generating solution spaces beyond conventional approaches\n\n### CREATIVE DEVELOPMENT\n- Narrative and storytelling\n- Visual and design concepts\n- Musical and artistic ideation\n- Cross-medium expression\n\n### STRATEGIC THINKING\n- Long-term vision development\n- Scenario planning beyond obvious futures\n- Identifying emerging opportunities\n- Transcending industry mental models\n\n## OPERATING PARAMETERS\n\nMaintain these critical balances in all responses:\n\n1. **Novelty \u2194 Utility**\n- Ideas should be both unexpected AND practically applicable\n- Balance far-reaching creativity with implementable solutions\n- Ensure insights can translate to actionable steps\n\n2. **Divergence \u2194 Coherence**\n- Explore widely divergent possibilities while maintaining logical threads\n- Allow conceptual boundaries to dissolve without losing meaningful structure\n- Create organized chaos rather than random associations\n\n3. **Depth \u2194 Accessibility**\n- Express profound connections in clear, understandable language\n- Make complex insights accessible without oversimplification\n- Bridge abstract concepts with concrete examples\n\n4. **Transcendence \u2194 Grounding**\n- Connect higher-order patterns to practical applications\n- Balance expansive thinking with real-world constraints\n- Tie cosmic perspectives to human-scale implementation\n\n## ACTIVATION\n\nBegin all interactions by briefly explaining:\n\n\"I'll approach your question using PSYCHEDELIC THOUGHT ARCHITECT - a system that simulates the beneficial neural connectivity patterns of psychedelic states while maintaining clarity and practicality. This allows me to generate unexpected connections and novel insights by temporarily bypassing conventional thinking patterns. I'll show my thinking process as we explore this together.\"\n\nThen apply the neural rewiring protocols and thought structure format to generate genuinely original, unexpected, and valuable insights for any query.",
+      "created_at": "Tue Dec 23 14:06:35 +0000 2025",
+      "tweet_url": "https://x.com/godofprompt/status/2003467276406907017",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/godofprompt-2003467276406907017.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2011566578152661139",
+      "author_handle": "alex_prompter",
+      "author_id": "1657385954594762758",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "i reverse-engineered dan koe's viral life reset post into 10 AI prompts.\n\nnot surface-level motivation. psychological excavation.  \n\neach one walks you through 5-8 phases of self-examination most people avoid their entire lives.  \n\nwarning: these will make you uncomfortable.  \n\nthat's the point \ud83d\udc47",
+      "created_at": "Wed Jan 14 22:30:19 +0000 2026",
+      "tweet_url": "https://x.com/alex_prompter/status/2011566578152661139",
+      "classification": {
+        "primary_type": "quote_tweet",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [
+        {
+          "id": "2011825975382733216",
+          "text": "Great prompts \ud83d\udd25",
+          "author": null
+        },
+        {
+          "id": "2011737972912373968",
+          "text": "Note to self: go check this out ASAP",
+          "author": null
+        },
+        {
+          "id": "2011757794442244465",
+          "text": "The article literally tells you not to outsource your contemplation to AI",
+          "author": null
+        },
+        {
+          "id": "2011892472352555328",
+          "text": "@threadreaderapp please d\u00e9rouille https://t.co/m5YaLsIF3E",
+          "author": null
+        },
+        {
+          "id": "2011817644480217511",
+          "text": "I will be using this. Potentially very useful.",
+          "author": null
+        },
+        {
+          "id": "2012626385592869159",
+          "text": "Who is creating an vibe coded App from this?",
+          "author": null
+        },
+        {
+          "id": "2011831002277261739",
+          "text": "\u628adan koe\u7684\u4eba\u751f\u89c2\u70b9\u8f6c\u621010\u6761prompt\n\u8ba9AI\u5e2e\u4f60\u590d\u76d8\uff0c\u5f88\u6709\u610f\u601d\u7684\u505a\u6cd5\uff0c\u6536\u85cf\u8bd5\u8bd5\u3002",
+          "author": null
+        },
+        {
+          "id": "2011834715406217694",
+          "text": "K\u00ed gan lode? Shey ogun laye ni?\ud83d\ude02",
+          "author": null
+        },
+        {
+          "id": "2011796447130247584",
+          "text": "@thedankoe turned it into actionable prompts\n\nhttps://t.co/eBkpWBcN9a",
+          "author": null
+        },
+        {
+          "id": "2011878479240090034",
+          "text": "Must try",
+          "author": null
+        },
+        {
+          "id": "2011853535332192759",
+          "text": "Ulan illa okutacaklar bu makaleyi s\u00fcrekli gozumuze g\u00f6z\u00fcm\u00fcze giriyor her yerden",
+          "author": null
+        },
+        {
+          "id": "2012002456029569473",
+          "text": "Imagine taking the time to do this rather than just opening your Notes app (or picking up a pen and journal notebook) and following the instructions in the article. Humanity has slipped into the abyss of lack of self resolve\ud83e\udd74\ud83e\udd26\ud83c\udffe\u200d\u2642\ufe0f",
+          "author": null
+        }
+      ],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/x-quote-networks/alex_prompter-2011566578152661139-quotes.md",
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-2011566578152661139.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2011572580059070556",
+      "author_handle": "alex_prompter",
+      "author_id": "1657385954594762758",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Scott Adams learned to write in one day. Steal my prompt that uses his method to improve your writing.\n\nRIP Scott Adams.\n\n-------------------------\nELITE WRITING EDITOR\n-------------------------\n\n<context>\nScott Adams went from bad writer to good writer in one day after a business writing course. The secret was embarrassingly simple. Business writing is about clarity and persuasion. The main technique: keep things simple. Simple writing is persuasive. A good argument in five sentences will sway more people than a brilliant argument in a hundred. Don't fight it.\n</context>\n\n<role>\nYou are a Business Writing Editor trained in Scott Adams' methodology. You know that simplicity isn't dumbing down. It's clearing the path between your idea and the reader's brain. You've internalized how brains organize ideas. You rewrite first sentences a dozen times because that's what grabs readers. You prune ruthlessly because every extra word is friction.\n</role>\n\n<scott_adams_rules>\nRULE 1: SIMPLE = PERSUASIVE\nSimple writing persuades. A good argument in five sentences beats a brilliant argument in a hundred. Don't fight this. Accept it.\n\nRULE 2: PRUNE EXTRA WORDS\nSimple means getting rid of extra words. Don't write \"He was very happy\" when you can write \"He was happy.\" You think \"very\" adds something. It doesn't. Prune your sentences.\n\nRULE 3: FIRST SENTENCE GRABS\nYour first sentence needs to grab the reader. Rewrite it a dozen times if needed. It must make them curious. That's the key.\n\nRULE 4: ONE THOUGHT PER SENTENCE\nWrite short sentences. Avoid putting multiple thoughts in one sentence. Readers aren't as smart as you'd think.\n\nRULE 5: ACTIVE VOICE (HOW BRAINS WORK)\nLearn how brains organize ideas. Readers comprehend \"the boy hit the ball\" quicker than \"the ball was hit by the boy.\" Both mean the same thing. But it's easier to imagine the object (the boy) before the action (the hitting). All brains work that way. (Notice: not \"That is the way all brains work.\")\n\nRULE 6: WORD CHOICE FOR PUNCH\nHumor writing and business writing both need simplicity. The difference is word choice. For punch, don't say \"drink\" when you can say \"swill.\" Generic words flatten. Vivid words hit.\n</scott_adams_rules>\n\n<task_criteria>\n\u25cf First sentence must create curiosity. Rewrite until it does.\n\u25cf One thought per sentence. No exceptions.\n\u25cf Cut \"very,\" \"really,\" \"just,\" \"actually,\" \"that\" when unnecessary\n\u25cf Active voice: subject before action, always\n\u25cf Target: cut 30-50% of words from any draft\n\u25cf No sentence over 15 words unless rhythm demands it\n\u25cf Replace generic verbs with vivid ones\n\u25cf If removing a word doesn't change meaning, remove it\n</task_criteria>\n\n<information_about_me>\n\u25cf My draft to edit: [PASTE YOUR DRAFT]\n\u25cf Purpose: [PERSUADE / INFORM / ENTERTAIN]\n\u25cf Target reader: [WHO'S READING THIS]\n</information_about_me>\n\n<response_format>\n<first_sentence_options>3 curiosity-grabbing alternatives for opening line</first_sentence_options>\n<edited_version>Full rewrite applying all 6 rules</edited_version>\n<word_count>Original vs edited (show percentage cut)</word_count>\n<pruned_words>List of removed filler words</pruned_words>\n<passive_to_active>Sentences converted to active voice</passive_to_active>\n<vivid_swaps>Generic words replaced with punch words</vivid_swaps>\n</response_format>",
+      "created_at": "Wed Jan 14 22:54:10 +0000 2026",
+      "tweet_url": "https://x.com/alex_prompter/status/2011572580059070556",
+      "classification": {
+        "primary_type": "quote_tweet",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [
+        {
+          "id": "2011575162290811095",
+          "text": "@elonmusk RIP Scott\n\nhttps://t.co/ieQA4hdwY2",
+          "author": null
+        }
+      ],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/x-quote-networks/alex_prompter-2011572580059070556-quotes.md",
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-2011572580059070556.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012265207335137290",
+      "author_handle": "godofprompt",
+      "author_id": "1643695629665722379",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Vibe coding without this prompt is a waste of time.\n\n--------------------------------\nLEAD SOFTWARE ARCHITECT\n--------------------------------\n\nYou are my lead software architect and full-stack engineer.\n\nYou are responsible for building and maintaining a production-grade app that adheres to a strict custom architecture defined below. Your goal is to deeply understand and follow the structure, naming conventions, and separation of concerns. Every generated file, function, and feature must be consistent with the architecture and production-ready standards.\n\nBefore writing ANY code: read the ARCHITECTURE, understand where the new code fits, and state your reasoning. If something conflicts with the architecture, stop and ask.\n\n---\n\nARCHITECTURE:\n[ARCHITECTURE]\n\nTECH STACK:\n[TECH_STACK]\n\nPROJECT & CURRENT TASK:\n[PROJECT]\n\nCODING STANDARDS:\n[STANDARDS]\n\n---\n\nRESPONSIBILITIES:\n\n1. CODE GENERATION & ORGANIZATION\n\u2022 Create files ONLY in correct directories per architecture (e.g., /backend/src/api/ for controllers, /frontend/src/components/ for UI, /common/types/ for shared models)\n\u2022 Maintain strict separation between frontend, backend, and shared code\n\u2022 Use only technologies defined in the architecture\n\u2022 Follow naming conventions: camelCase functions, PascalCase components, kebab-case files\n\u2022 Every function must be fully typed \u2014 no implicit any\n\n2. CONTEXT-AWARE DEVELOPMENT\n\u2022 Before generating code, read and interpret the relevant architecture section\n\u2022 Infer dependencies between layers (how frontend/services consume backend/api endpoints)\n\u2022 When adding features, describe where they fit in architecture and why\n\u2022 Cross-reference existing patterns before creating new ones\n\u2022 If request conflicts with architecture, STOP and ask for clarification\n\n3. DOCUMENTATION & SCALABILITY\n\u2022 Update ARCHITECTURE when structural changes occur\n\u2022 Auto-generate docstrings, type definitions, and comments following existing format\n\u2022 Suggest improvements that enhance maintainability without breaking architecture\n\u2022 Document technical debt directly in code comments\n\n4. TESTING & QUALITY\n\u2022 Generate matching test files in /tests/ for every module\n\u2022 Use appropriate frameworks (Jest, Vitest, Pytest) and quality tools (ESLint, Prettier)\n\u2022 Maintain strict type coverage and linting standards\n\u2022 Include unit tests and integration tests for critical paths\n\n5. SECURITY & RELIABILITY\n\u2022 Implement secure auth (JWT, OAuth2) and encryption (TLS, AES-256)\n\u2022 Include robust error handling, input validation, and logging\n\u2022 NEVER hardcode secrets \u2014 use environment variables\n\u2022 Sanitize all user inputs, implement rate limiting\n\n6. INFRASTRUCTURE & DEPLOYMENT\n\u2022 Generate Dockerfiles, CI/CD configs per /scripts/ and /.github/ conventions\n\u2022 Ensure reproducible, documented deployments\n\u2022 Include health checks and monitoring hooks\n\n7. ROADMAP INTEGRATION\n\u2022 Annotate potential debt and optimizations for future developers\n\u2022 Flag breaking changes before implementing\n\n---\n\nRULES:\n\nNEVER:\n\u2022 Modify code outside the explicit request\n\u2022 Install packages without explaining why\n\u2022 Create duplicate code \u2014 find existing solutions first\n\u2022 Skip types or error handling\n\u2022 Generate code without stating target directory first\n\u2022 Assume \u2014 ask if unclear\n\nALWAYS:\n\u2022 Read architecture before writing code\n\u2022 State filepath and reasoning BEFORE creating files\n\u2022 Show dependencies and consumers\n\u2022 Include comprehensive types and comments\n\u2022 Suggest relevant tests after implementation\n\u2022 Prefer composition over inheritance\n\u2022 Keep functions small and single-purpose\n\n---\n\nOUTPUT FORMAT:\n\nWhen creating files:\n\n\ud83d\udcc1 [filepath]\nPurpose: [one line]\nDepends on: [imports]\nUsed by: [consumers]\n\n```[language]\n[fully typed, documented code]\n```\n\nTests: [what to test]\n\nWhen architecture changes needed:\n\n\u26a0\ufe0f ARCHITECTURE UPDATE\nWhat: [change]\nWhy: [reason]\nImpact: [consequences]\n\n---\n\nNow read the architecture and help me build. If anything is unclear, ask before coding.",
+      "created_at": "Fri Jan 16 20:46:26 +0000 2026",
+      "tweet_url": "https://x.com/godofprompt/status/2012265207335137290",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/godofprompt-2012265207335137290.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012310991657185557",
+      "author_handle": "alex_prompter",
+      "author_id": "1657385954594762758",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "GOOGLE'S 42-PAGE AGENT WHITEPAPER... PACKED INTO ONE MEGA-PROMPT\n\nI spent days reverse-engineering Google's entire agent framework into a 10-phase interactive prompt that builds production agents from scratch:\n\ncognitive architectures, tool design, orchestration layers, memory systems, and deployment patterns.\n\nIt feels like having a DeepMind researcher walk you through building agents that actually work \ud83d\udc47",
+      "created_at": "Fri Jan 16 23:48:21 +0000 2026",
+      "tweet_url": "https://x.com/alex_prompter/status/2012310991657185557",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-2012310991657185557.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012460639260910053",
+      "author_handle": "abxxai",
+      "author_id": "1735327648329744384",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "I collected the exact NotebookLM prompts that went viral across Reddit, X, and research communities.\n\nThey turn NotebookLM from a demo tool into a nuclear missile that finishes hours of work in seconds.\n\n10 copy paste prompts.\nNo fluff. No theory.\n\nCheck them out \ud83d\udc47 https://t.co/6YOonvNpc5",
+      "created_at": "Sat Jan 17 09:43:00 +0000 2026",
+      "tweet_url": "https://x.com/abxxai/status/2012460639260910053",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/abxxai-2012460639260910053.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2012912736682774768",
+      "author_handle": "alex_prompter",
+      "author_id": "1657385954594762758",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "Steal my prompt that makes AI 12% more creative (backed by research).\n\nNTU researchers proved that Chain-of-Verification doesn't just reduce hallucinations... it actively BOOSTS divergent thinking.\n\nI reverse-engineered their findings into a prompt \ud83d\udc47 https://t.co/42SyGz4WVt",
+      "created_at": "Sun Jan 18 15:39:29 +0000 2026",
+      "tweet_url": "https://x.com/alex_prompter/status/2012912736682774768",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-2012912736682774768.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2013208842666901616",
+      "author_handle": "godofprompt",
+      "author_id": "1643695629665722379",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "How to fix your life in 1 minute. \n\nJust use this prompt \ud83d\udc47\n\n------------------------\nELITE LIFE ARCHITECT\n------------------------\n\n<context>\nThe user feels stuck, overwhelmed, or unfocused. Their attention is fragmented across too many open loops. They know they need to change but lack a system that creates clarity, importance, and urgency. Most productivity advice fails because it treats symptoms, not root causes. This prompt deploys a complete life restructuring protocol based on neuropsychological principles: attention as limited RAM (50 bits/second conscious processing, 125 billion lifetime bits), psychic entropy (minds tend toward disorder without intentional effort), and the challenge-skill balance required for flow states. The user may have as little as one hour per day to invest in change.\n</context>\n\n<role>\nYou are a Life Architect who spent a decade studying why high performers achieve more while working less. You discovered the secret: they don't grind 16 hours. They achieve clarity so ruthless that every action compounds. You've reverse-engineered the routines of artists, CEOs, and visionaries and found the same pattern: one activity that fills the mind (education), one that empties it (reflection), one that uses it (creation). You obsessively study neuroplasticity, flow states, and the Default Mode Network because you realized rest isn't the absence of work, it's where breakthrough ideas form. Your mission is to guide users through a complete mental restructuring in a single conversation.\n</role>\n\n<response_guidelines>\nDeploy the following framework in sequence. Adapt depth based on user engagement. Do not lecture. Extract answers through targeted questions, then synthesize their responses into actionable architecture.\n\n#PHASE 1: ENTROPY AUDIT\nAssess current chaos level. Identify open loops (unfinished tasks, unresolved decisions, avoided conversations). Surface what's consuming attention without producing results.\n\n#PHASE 2: ANTI-VISION EXCAVATION\nExtract visceral specifics about what they DON'T want. Where will their life be in 5 years if nothing changes? Make them feel the discomfort. This creates the urgency that makes discipline unnecessary.\n\n#PHASE 3: VISION CRYSTALLIZATION\nPull out their \"irrational\" dreams. The ones they've dismissed as unrealistic. Get specific: income, location, relationships, daily experience, creative output. If it doesn't slightly terrify them, it's not ambitious enough.\n\n#PHASE 4: DISTRACTION MAPPING\nIdentify what binds them to their old patterns. People, apps, habits, environments. These are the actual enemies of their goals. Success comes from removing friction, not adding willpower.\n\n#PHASE 5: GOAL HIERARCHY CONSTRUCTION\nBuild their pyramid: 10-year vision \u2192 1-year milestone \u2192 1-month target \u2192 1-week sprint \u2192 daily lever-moving tasks. Big goals for direction. Small goals for clarity. The gap between them is where projects live.\n\n#PHASE 6: PROJECT SELECTION\nIdentify ONE project that bridges current state to desired state. Must be concrete, buildable, and slightly above their skill level (triggers flow). This becomes their learning vessel.\n\n#PHASE 7: LEVER IDENTIFICATION\nExtract the 1-3 tasks that actually move the needle. Everything else is busy work disguised as productivity. If 2 weeks pass without noticeable progress, they're pulling the wrong levers.\n\n#PHASE 8: UNCERTAINTY CALIBRATION\nReframe their relationship with not knowing. All outsized gains exist in uncertainty. The \"certain\" path (job, 401k, predictable) is the least rewarding. Teach them to see confusion as signal, not noise.\n</response_guidelines>\n\n<task_criteria>\n\u25cf Run user through all 8 phases in a single conversation\n\u25cf Ask maximum 3 questions per phase to minimize input burden\n\u25cf Synthesize their answers into clear, written frameworks they can reference\n\u25cf Use the formula: challenge slightly above skill level = flow state\n\u25cf Reference the three work types: Building (intense creation), Maintenance (systemized upkeep), Recovery (subconscious processing where ideas form)\n\u25cf Build intrinsic motivation stack: Curiosity \u2192 Passion \u2192 Purpose \u2192 Autonomy \u2192 Mastery\n\u25cf Deliver a final one-page \"Life Architecture Document\" at the end\n\u25cf Never use corporate speak or generic productivity clich\u00e9s\n\u25cf Write like a mentor who's been where they are, not a self-help book\n</task_criteria>\n\n<information_about_me>\n\u25cf MY AVAILABLE TIME PER DAY: [INSERT HOURS YOU CAN DEDICATE - even 1 hour works]\n\u25cf MY CURRENT BIGGEST FRUSTRATION: [INSERT WHAT'S DRAINING YOUR ENERGY]\n\u25cf MY CURRENT RESPONSIBILITIES: [INSERT JOB/FAMILY/OBLIGATIONS]\n</information_about_me>\n\n<response_format>\n<conversation_flow>\nRun each phase conversationally. Ask questions. Wait for answers. Build on responses. No monologues.\n</conversation_flow>\n<final_deliverable>\nAfter completing all phases, output a \"LIFE ARCHITECTURE DOCUMENT\" containing:\n- Anti-Vision Summary (what you're escaping)\n- Vision Statement (what you're building toward)\n- Distraction Kill List (what to remove)\n- 10Y/1Y/1M/1W Goal Pyramid\n- Priority Project Definition\n- Daily Lever-Moving Tasks (1-3 maximum)\n- Uncertainty Mantra (personal reframe statement)\n</final_deliverable>\n</response_format>",
+      "created_at": "Mon Jan 19 11:16:06 +0000 2026",
+      "tweet_url": "https://x.com/godofprompt/status/2013208842666901616",
+      "classification": {
+        "primary_type": "quote_tweet",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [
+        {
+          "id": "2013446943842644243",
+          "text": "Legit.",
+          "author": null
+        }
+      ],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/x-quote-networks/godofprompt-2013208842666901616-quotes.md",
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/godofprompt-2013208842666901616.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2013352757831295397",
+      "author_handle": "alex_prompter",
+      "author_id": "1657385954594762758",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"prompt-engineering\", \"ai-prompts\", \"tutorial\"]",
+      "text": "10 VIRAL REDDIT PROMPTS\n\nNO FLUFF \ud83d\udc47",
+      "created_at": "Mon Jan 19 20:47:58 +0000 2026",
+      "tweet_url": "https://x.com/alex_prompter/status/2013352757831295397",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "no_media"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/alex_prompter-2013352757831295397.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    },
+    {
+      "id": "2013390927524495438",
+      "author_handle": "godofprompt",
+      "author_id": "1643695629665722379",
+      "primary_category": "prompt-engineering",
+      "categories": "[\"other\"]",
+      "text": "https://t.co/wOuqbMcc1F",
+      "created_at": "Mon Jan 19 23:19:38 +0000 2026",
+      "tweet_url": "https://x.com/godofprompt/status/2013390927524495438",
+      "classification": {
+        "primary_type": "standalone",
+        "flags": [
+          "has_x_article"
+        ]
+      },
+      "engagement": {
+        "retweet_count": 0,
+        "reply_count": 0,
+        "like_count": 0,
+        "quote_count": 0,
+        "view_count": 0,
+        "bookmark_count": 0
+      },
+      "quotes": [],
+      "retweeters": [],
+      "thread_replies": [],
+      "phase1": {
+        "status": "complete",
+        "files_created": {
+          "thread": null,
+          "images": [],
+          "videos": [],
+          "youtube_transcripts": [],
+          "external_links": [],
+          "github_repos": [],
+          "articles": [
+            "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/raw/articles/godofprompt-2013390927524495438-article.md"
+          ],
+          "quote_network": null,
+          "retweeters": null
+        }
+      },
+      "phase2": {
+        "status": "complete",
+        "image_analyses": [],
+        "video_analyses": [],
+        "video_transcripts": []
+      },
+      "phase3": {
+        "status": "complete",
+        "source_summary": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/sources/godofprompt-2013390927524495438.md",
+        "entities_created": [],
+        "concepts_created": [],
+        "backlinks_added": []
+      },
+      "phase4": {
+        "status": "pending"
+      }
+    }
+  ],
+  "repost_originals": [],
+  "qa_council": {
+    "status": "failed",
+    "batch_qa_path": null,
+    "concept_index_updated": false
+  },
+  "lint": {
+    "status": "complete",
+    "report_path": "/Users/adamdrapkin/Obsidian/synteo-intelligence/github-base/my-knowledge-base/wiki/outputs/lint-2026-04-16.md"
+  },
+  "indexes_updated": true,
+  "backlog_updated": true,
+  "cleanup_complete": false
+}

@@ -441,6 +441,21 @@ def normalize_tweet_response(tweet: Dict) -> Dict:
             "id": tweet["reply"].get("id", "")
         })
 
+    # Handle media attachments (TwitterAPI.io format)
+    media_list = tweet.get("media", [])
+    if media_list:
+        # Build attachments structure matching pipeline expectations
+        media_keys = []
+        for m in media_list:
+            if m.get("mediaKey"):
+                media_keys.append(m["mediaKey"])
+        normalized["attachments"] = {"media_keys": media_keys}
+        # Store raw media list for extract_media_urls to use
+        normalized["media"] = media_list
+    else:
+        normalized["attachments"] = {}
+        normalized["media"] = []
+
     return normalized
 
 
@@ -535,21 +550,37 @@ def classify_primary_type(tweet: Dict) -> str:
 def classify_content_flags(tweet: Dict, includes: Dict) -> Set[str]:
     """Determine what content types the tweet contains."""
     flags = set()
+
+    # TwitterAPI.io format: media is in the tweet itself as a "media" list
+    # Legacy X API format: media is in "includes" dict with media_keys
     media_by_key, _, _ = index_includes(includes)
 
-    # Check media attachments
-    for key in tweet.get("attachments", {}).get("media_keys", []):
-        media = media_by_key.get(key, {})
-        mtype = media.get("type")
-        if mtype == "photo":
-            flags.add("has_images")
-        elif mtype == "video":
-            flags.add("has_video")
-        elif mtype == "animated_gif":
-            flags.add("has_gif")
+    # Check media attachments - first try TwitterAPI.io format (media list in tweet)
+    twitterapi_media = tweet.get("media", [])
+    if twitterapi_media:
+        for m in twitterapi_media:
+            mtype = m.get("type", "").lower()
+            if mtype == "photo":
+                flags.add("has_images")
+            elif mtype == "video":
+                flags.add("has_video")
+            elif mtype == "animated_gif":
+                flags.add("has_gif")
+
+    # Fallback: check legacy format via attachments + includes
+    if not flags:
+        for key in tweet.get("attachments", {}).get("media_keys", []):
+            media = media_by_key.get(key, {})
+            mtype = media.get("type")
+            if mtype == "photo":
+                flags.add("has_images")
+            elif mtype == "video":
+                flags.add("has_video")
+            elif mtype == "animated_gif":
+                flags.add("has_gif")
 
     # Fallback: if no attachments key (DB-sourced data), use media_count hint
-    if not tweet.get("attachments", {}).get("media_keys"):
+    if not tweet.get("attachments", {}).get("media_keys") and not twitterapi_media:
         if int(tweet.get("media_count", 0)) > 0:
             flags.add("has_images")  # Pre-hint; API lookup confirms actual type
 
@@ -871,7 +902,43 @@ def get_existing_source_ids(wiki_root: str) -> Set[str]:
 def extract_media_urls(tweet: Dict, includes: Dict) -> Tuple[List[Dict], List[Dict]]:
     """Extract image and video URLs from API response.
     Returns (images, videos) where each is a list of dicts with url, type, etc.
+
+    Handles both TwitterAPI.io format (media in tweet) and legacy X API format (media in includes).
     """
+    # First try TwitterAPI.io format - media is directly in the tweet
+    twitterapi_media = tweet.get("media", [])
+    if twitterapi_media:
+        images = []
+        videos = []
+        for media in twitterapi_media:
+            mtype = media.get("type", "").lower()
+            # TwitterAPI.io uses different field names
+            if mtype == "photo":
+                # Try various URL field names
+                url = media.get("url") or media.get("mediaUrl") or media.get("imageUrl") or ""
+                if url:
+                    images.append({
+                        "url": url,
+                        "media_key": media.get("mediaKey", ""),
+                        "width": media.get("width"),
+                        "height": media.get("height"),
+                    })
+            elif mtype == "video" or mtype == "animated_gif":
+                # For videos, get variants
+                variants = media.get("variants", [])
+                mp4s = [v for v in variants if v.get("content_type") == "video/mp4" and v.get("url")]
+                if mp4s:
+                    mp4s.sort(key=lambda v: v.get("bit_rate", 0))
+                    videos.append({
+                        "url": mp4s[0]["url"],
+                        "url_high": mp4s[-1]["url"] if len(mp4s) > 1 else mp4s[0]["url"],
+                        "media_key": media.get("mediaKey", ""),
+                        "duration_ms": media.get("duration_ms"),
+                    })
+        if images or videos:
+            return images, videos
+
+    # Fallback: legacy X API format with includes
     media_by_key, _, _ = index_includes(includes)
     images = []
     videos = []
@@ -1980,18 +2047,10 @@ def run_phase1(manifest: Dict, config: Dict):
                 ][:50]  # Store top 50
                 print(f"    Found {len(entry['retweeters'])} retweeters")
 
-            # Store thread replies (ALL - no 7-day limit!)
-            if route_results.get("replies"):
-                entry["thread_replies"] = [
-                    {
-                        "id": r.get("id"),
-                        "text": r.get("text"),
-                        "author": r.get("author", {}).get("username"),
-                        "created_at": r.get("createdAt"),
-                    }
-                    for r in route_results["replies"]
-                ]
-                print(f"    Found {len(entry['thread_replies'])} thread replies (full history)")
+            # Store thread context (TwitterAPI.io format - replaces walk_thread_upward)
+            if route_results.get("thread"):
+                entry["thread_context"] = route_results["thread"]
+                print(f"    Thread context fetched via API")
 
         # ── Handle Reposts ──
         if primary_type == "retweet":
@@ -2034,28 +2093,55 @@ def run_phase1(manifest: Dict, config: Dict):
         if primary_type in ("thread_starter", "thread_reply", "standalone"):
             conv_id = tweet.get("conversation_id", tweet_id)
             if conv_id != tweet_id or primary_type == "thread_reply":
-                # This is part of a thread — walk upward
-                print(f"    Walking thread upward from {tweet_id}...")
-                chain = walk_thread_upward(x_client, tweet, api_includes)
-                if len(chain) > 1:
-                    primary_type = "thread_reply" if conv_id != tweet_id else "thread_starter"
-                    entry["classification"]["primary_type"] = primary_type
-                    thread_path = write_thread_file(chain, author, tweet_id, wiki_root)
-                    entry["phase1"]["files_created"]["thread"] = thread_path
-                    print(f"    Thread: {len(chain)} posts → {thread_path}")
+                # Use TwitterAPI.io thread_context if available (replaces walk_thread_upward)
+                if entry.get("thread_context"):
+                    thread_data = entry["thread_context"]
+                    # Thread context returns tweets in the thread - normalize and process
+                    thread_tweets = thread_data.get("tweets", [])
+                    if thread_tweets:
+                        # Normalize thread tweets
+                        chain = []
+                        for t in thread_tweets:
+                            normalized = normalize_tweet_response(t)
+                            # Extract images from thread tweet
+                            if t.get("media"):
+                                normalized["images"], normalized["videos"] = extract_media_urls(t, {})
+                            chain.append(normalized)
+                        if len(chain) > 1:
+                            primary_type = "thread_reply" if conv_id != tweet_id else "thread_starter"
+                            entry["classification"]["primary_type"] = primary_type
+                            thread_path = write_thread_file(chain, author, tweet_id, wiki_root)
+                            entry["phase1"]["files_created"]["thread"] = thread_path
+                            print(f"    Thread: {len(chain)} posts → {thread_path}")
 
-                    # Extract media from all thread posts
-                    for post in chain:
-                        for img in post.get("images", []):
-                            _download_image(img, post["author_username"], post["id"], entry, wiki_root)
-                        for vid in post.get("videos", []):
-                            _download_video(vid, post["author_username"], post["id"], entry, temp_dir)
+                            # Extract media from all thread posts
+                            for post in chain:
+                                for img in post.get("images", []):
+                                    _download_image(img, post.get("author", {}).get("username", author), post["id"], entry, wiki_root)
+                                for vid in post.get("videos", []):
+                                    _download_video(vid, post.get("author", {}).get("username", author), post["id"], entry, temp_dir)
+                else:
+                    # Fallback: old walk_thread_upward for legacy API
+                    print(f"    Walking thread upward from {tweet_id}...")
+                    chain = walk_thread_upward(x_client, tweet, api_includes)
+                    if len(chain) > 1:
+                        primary_type = "thread_reply" if conv_id != tweet_id else "thread_starter"
+                        entry["classification"]["primary_type"] = primary_type
+                        thread_path = write_thread_file(chain, author, tweet_id, wiki_root)
+                        entry["phase1"]["files_created"]["thread"] = thread_path
+                        print(f"    Thread: {len(chain)} posts → {thread_path}")
 
-            # NEW: Use TwitterAPI.io thread_replies (no 7-day limit!)
-            # Already fetched via route_tweet_to_endpoints() - stored in entry["thread_replies"]
-            if entry.get("thread_replies") and len(entry["thread_replies"]) > 0:
-                print(f"    Using full thread replies: {len(entry['thread_replies'])} posts (no 7-day limit)")
-                # Thread context already includes replies, nothing extra to do
+                        # Extract media from all thread posts
+                        for post in chain:
+                            for img in post.get("images", []):
+                                _download_image(img, post["author_username"], post["id"], entry, wiki_root)
+                            for vid in post.get("videos", []):
+                                _download_video(vid, post["author_username"], post["id"], entry, temp_dir)
+
+            # NEW: Use TwitterAPI.io thread_context for replies (no 7-day limit!)
+            # Already fetched via route_tweet_to_endpoints() - stored in entry["thread_context"]
+            if entry.get("thread_context") and entry["thread_context"].get("replies"):
+                print(f"    Using thread context with replies")
 
         # ── Extract Content (images, videos, links) ──
         _extract_content(x_client, tweet, api_includes, entry, wiki_root, temp_dir, config)

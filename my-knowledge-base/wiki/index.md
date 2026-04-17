@@ -12,7 +12,7 @@ status: final
 
 ## Core Structure
 
-### Sources (147)
+### Sources (156)
 X/Twitter source summaries
 
 ### Entities (29)
@@ -52,7 +52,7 @@ Wiki health checks
 
 | Category | Count |
 |----------|-------|
-| Sources | 146 |
+| Sources | 156 |
 | Entities | 29 |
 | Concepts | 142 |
 | QA Batches | 14 |
@@ -65,3 +65,13 @@ Wiki health checks
 ## Maintenance
 
 - [[lint-2026-04-16]] — Latest
+- [[godofprompt-2003467276406907017]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[alex_prompter-2011566578152661139]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[alex_prompter-2011572580059070556]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[godofprompt-2012265207335137290]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[alex_prompter-2012310991657185557]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[abxxai-2012460639260910053]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[alex_prompter-2012912736682774768]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[godofprompt-2013208842666901616]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[alex_prompter-2013352757831295397]] — Source from batch batch_006 _(added 2026-04-16)_
+- [[godofprompt-2013390927524495438]] — Source from batch batch_006 _(added 2026-04-16)_

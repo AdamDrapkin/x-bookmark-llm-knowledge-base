@@ -46,8 +46,8 @@ status: draft
 | Batch 14 | 131-140 | 2026-04-14 | 10 | 140 | processed |
 | Batch 15 | 141-146 | 2026-04-14 | 6 | 146 | processed |
 | Batch 16 | 147+ | - | 0 | 146 | next |
-| Batch 6 | 51-60 | - | - | 60 | not_started |
-| Batch 7 | 61-70 | - | - | 70 | not_started |
+| Batch 6 | 51-60 | - | - | 60 | processed |
+| Batch 7 | 61-70 | - | - | 70 | next |
 | Batch 8 | 71-80 | - | - | 80 | not_started |
 | Batch 9 | 81-90 | - | - | 90 | not_started |
 | Batch 10 | 91-100 | - | - | 100 | not_started |

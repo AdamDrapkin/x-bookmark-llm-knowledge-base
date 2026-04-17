@@ -163,3 +163,25 @@ status: final
 - [[alex_prompter-2011566578152661139]] — i reverse-engineered dan koe's viral life reset post into 10 AI prompts.
 
 not surface-level motivati _(added 2026-04-16)_
+- [[alex_prompter-2011572580059070556]] — Scott Adams learned to write in one day. Steal my prompt that uses his method to improve your writin _(added 2026-04-16)_
+- [[godofprompt-2012265207335137290]] — Vibe coding without this prompt is a waste of time.
+
+--------------------------------
+LEAD SOFTWARE  _(added 2026-04-16)_
+- [[alex_prompter-2012310991657185557]] — GOOGLE'S 42-PAGE AGENT WHITEPAPER... PACKED INTO ONE MEGA-PROMPT
+
+I spent days reverse-engineering G _(added 2026-04-16)_
+- [[abxxai-2012460639260910053]] — I collected the exact NotebookLM prompts that went viral across Reddit, X, and research communities. _(added 2026-04-16)_
+- [[alex_prompter-2012912736682774768]] — Steal my prompt that makes AI 12% more creative (backed by research).
+
+NTU researchers proved that C _(added 2026-04-16)_
+- [[godofprompt-2013208842666901616]] — How to fix your life in 1 minute. 
+
+Just use this prompt 👇
+
+------------------------
+ELITE LIFE ARCH _(added 2026-04-16)_
+- [[alex_prompter-2013352757831295397]] — 10 VIRAL REDDIT PROMPTS
+
+NO FLUFF 👇 _(added 2026-04-16)_
+- [[godofprompt-2013390927524495438]] — https://t.co/wOuqbMcc1F _(added 2026-04-16)_
