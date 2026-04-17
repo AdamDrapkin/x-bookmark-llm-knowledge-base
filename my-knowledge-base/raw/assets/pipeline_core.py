@@ -2052,6 +2052,20 @@ def run_phase1(manifest: Dict, config: Dict):
                 entry["thread_context"] = route_results["thread"]
                 print(f"    Thread context fetched via API")
 
+            # NEW: Also fetch quoted tweet content (the "separate artifact")
+            quoted_tweet_id = None
+            for ref in tweet.get("referenced_tweets", []):
+                if ref.get("type") == "quoted":
+                    quoted_tweet_id = ref.get("id")
+                    break
+            if quoted_tweet_id:
+                print(f"    Fetching quoted tweet {quoted_tweet_id}...")
+                quoted_payload = x_client.get_tweet_by_ids([quoted_tweet_id])
+                quoted_tweets = normalize_tweets_response(quoted_payload)
+                if quoted_tweet_id in quoted_tweets:
+                    entry["quoted_tweet"] = quoted_tweets[quoted_tweet_id]
+                    print(f"    ✓ Quoted tweet content retrieved")
+
         # ── Handle Reposts ──
         if primary_type == "retweet":
             print(f"    Resolving retweet chain...")
@@ -2156,6 +2170,23 @@ def run_phase1(manifest: Dict, config: Dict):
             rt_path = write_retweeter_file(entry["retweeters"], author, tweet_id, wiki_root)
             entry["phase1"]["files_created"]["retweeters"] = rt_path
             print(f"    ✓ Retweeters → {rt_path}")
+
+        # NEW: Process quoted tweet content (images, etc.)
+        if entry.get("quoted_tweet"):
+            qt = entry["quoted_tweet"]
+            qt_author = qt.get("author", {}).get("username", "unknown")
+            qt_id = qt.get("id", "")
+            print(f"    Processing quoted tweet: @{qt_author}/{qt_id}")
+            # Extract images from quoted tweet
+            if qt.get("media"):
+                qt_images, qt_videos = extract_media_urls(qt, {})
+                for img in qt_images:
+                    _download_image(img, qt_author, qt_id, entry, wiki_root)
+                for vid in qt_videos:
+                    _download_video(vid, qt_author, qt_id, entry, temp_dir)
+            # Also extract other content
+            _extract_content(x_client, qt, {}, entry, wiki_root, temp_dir, config)
+            print(f"    ✓ Quoted tweet content processed")
 
         entry["phase1"]["status"] = "complete"
         manifest["bookmarks"].append(entry)
