@@ -24,9 +24,18 @@ Flow:
 """
 
 import argparse
+import multiprocessing
+import os
 import subprocess
 import sys
 from datetime import datetime
+
+# macOS fix: Use spawn instead of fork to avoid crashes with multi-threaded processes
+if sys.platform == "darwin":
+    try:
+        multiprocessing.set_start_method("spawn", force=True)
+    except RuntimeError:
+        pass  # Already set
 
 from pipeline_core import (
     init_environment,

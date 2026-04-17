@@ -10,7 +10,17 @@ Usage:
 """
 
 import argparse
+import multiprocessing
+import os
 import sys
+
+# macOS fix: Use spawn instead of fork to avoid crashes with multi-threaded processes
+# This prevents "fork() in multi-threaded context crashes on macOS ARM"
+if sys.platform == "darwin":
+    try:
+        multiprocessing.set_start_method("spawn", force=True)
+    except RuntimeError:
+        pass  # Already set
 
 from pipeline_core import (
     init_environment,

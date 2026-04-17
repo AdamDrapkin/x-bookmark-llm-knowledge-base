@@ -157,3 +157,9 @@ status: final
 - [[stephenhaney-2036485780961669214]]
 - [[thedankoe-2036824811712942576]]
 - [[vladinfos-2040582401198346751]]
+- [[godofprompt-2003467276406907017]] — Steal my prompt to make AI think like it's on LSD for creative brainstorming of new ideas
+
+--------- _(added 2026-04-16)_
+- [[alex_prompter-2011566578152661139]] — i reverse-engineered dan koe's viral life reset post into 10 AI prompts.
+
+not surface-level motivati _(added 2026-04-16)_
